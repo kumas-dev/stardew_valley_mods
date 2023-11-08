@@ -1,0 +1,9 @@
+# SMAPI
+ConsoleCommands/
+ErrorHandler/
+SaveBackup/
+
+# config
+config/
+config.toml
+config.json
