@@ -5,5 +5,10 @@ SaveBackup/
 
 # config
 config/
+data/
 config.toml
 config.json
+ore_config.json
+
+# temporary
+_Temporary/
