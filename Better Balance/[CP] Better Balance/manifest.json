@@ -1,0 +1,17 @@
+{
+  "Name": "Better Balance",
+  "Author": "Xen0nex",
+  "Version": "1.2.3",
+  "Description": "Rebalances prices, mostly crops, seeds, and animals.",
+  "UniqueID": "Xen0nex.BetterBalanceCP",
+  "UpdateKeys": [ "Nexus:8141" ],
+  "Dependencies": [
+   {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": false,
+   }
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

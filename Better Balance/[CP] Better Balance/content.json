@@ -1,0 +1,33 @@
+{
+   "Format": "1.23.0",
+   "ConfigSchema": {
+      "Use SMAPI changes": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Allow SMAPI to change hard-coded prices, or only use Content Patcher changes."
+      }
+   },
+   "Changes": [
+	  {
+         "Action": "Include",
+         "FromFile": "assets/pricesSMAPI.json",
+		 "When": {
+            "Use SMAPI changes": "true"
+         }
+      },
+	  {
+         "Action": "Include",
+         "FromFile": "assets/pricesBasic.json",
+		 "When": {
+            "Use SMAPI changes": "false"
+         }
+      },
+	  {
+         "Action": "Include",
+         "FromFile": "assets/SVEPatch.json",
+		 "When": {
+            "HasMod": "FlashShifter.SVECode"
+         }
+      }
+   ]
+}
