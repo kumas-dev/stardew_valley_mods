@@ -1,0 +1,11 @@
+{
+	"Name": "Stardew Valley Balance Overhaul",
+	"Author": "Theoddon",
+	"Version": "1.1.2",
+	"Description": "Rebalances sell prices, crafting recipes, community center bundles, and construction prices.",
+	"UniqueID": "Theoddon.BalanceOverhaul",
+	"UpdateKeys": ["Nexus:13426"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+   }
+}
