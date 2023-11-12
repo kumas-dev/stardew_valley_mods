@@ -1,0 +1,20 @@
+{
+  "ShowHoverTooltips": false,
+  "EnableShippingBin": false,
+  "AddOrganizePlayerInventoryButton": false,
+  "Range": "None",
+  "Controls": {
+    "Toggle": "None",
+    "PrevChest": "None",
+    "NextChest": "None",
+    "PrevCategory": "None",
+    "NextCategory": "None",
+    "EditChest": "None",
+    "SortItems": "None",
+    "HoldToMouseWheelScrollChests": "None",
+    "HoldToMouseWheelScrollCategories": "None"
+  },
+  "DisabledInLocations": [
+    "UndergroundMine"
+  ]
+}
