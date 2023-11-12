@@ -9,5 +9,11 @@ config.toml
 config.json
 ore_config.json
 
+# cache
+\[AFM\]\ FarmTypeManager/data
+\[FTM\]\ Stardew Valley Expanded/data
+Better Balance/CustomCrystalariumMod/data
+Grandpa's Farm/\[FTM\] Grandpa's Farm/data
+
 # temporary
 _Temporary/
