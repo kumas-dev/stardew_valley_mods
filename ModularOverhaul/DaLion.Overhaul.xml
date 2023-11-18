@@ -129,11 +129,14 @@
         <member name="P:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.Type">
             <summary>Gets whether this instance pertains to a Scavenger or a Prospector.</summary>
         </member>
-        <member name="P:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.IsActive">
-            <summary>Gets a value indicating whether the <see cref="P:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.TreasureTile"/> is set to a valid target.</summary>
+        <member name="P:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.Location">
+            <summary>Gets the active hunt's <see cref="T:StardewValley.GameLocation"/>.</summary>
         </member>
         <member name="P:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.TreasureTile">
             <summary>Gets the target tile containing treasure.</summary>
+        </member>
+        <member name="P:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.IsActive">
+            <summary>Gets a value indicating whether the <see cref="P:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.TreasureTile"/> is set to a valid target.</summary>
         </member>
         <member name="M:DaLion.Overhaul.API.IModularOverhaul.ITreasureHunt.TryStart(StardewValley.GameLocation)">
             <summary>Try to start a new hunt at the specified location.</summary>
@@ -1817,7 +1820,7 @@
             <inheritdoc />
         </member>
         <member name="T:DaLion.Overhaul.Modules.Combat.Enchantments.RunaanEnchantment">
-            <summary>Fire 2 additional projectiles.</summary>
+            <summary>Summons two "echoes" of the fired projectile. The phantoms automatically aim at the nearest enemy after a short delay.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Enchantments.RunaanEnchantment.GetName">
             <inheritdoc />
@@ -2230,6 +2233,13 @@
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.ReturnedToTitle.CombatReturnedToTitleEvent.OnReturnedToTitleImpl(System.Object,StardewModdingAPI.Events.ReturnedToTitleEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.Saved.CombatSavedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Combat.Events.GameLoop.Saved.CombatSavedEvent"/> class.</summary>
+            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.Saved.CombatSavedEvent.OnSavedImpl(System.Object,StardewModdingAPI.Events.SavedEventArgs)">
             <inheritdoc />
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.SaveLoaded.CombatSaveLoadedEvent.#ctor(DaLion.Shared.Events.EventManager)">
@@ -3055,9 +3065,6 @@
         </member>
         <member name="T:DaLion.Overhaul.Modules.Combat.Extensions.WeaponTypeExtensions">
             <summary>Extensions for the <see cref="T:DaLion.Shared.Enums.WeaponType"/> enum.</summary>
-        </member>
-        <member name="P:DaLion.Overhaul.Modules.Combat.Extensions.WeaponTypeExtensions.StabbingSwords">
-            <summary>Gets or sets the swords that should be converted to Stabbing Swords.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Extensions.WeaponTypeExtensions.GetFinalHitStep(DaLion.Shared.Enums.WeaponType)">
             <summary>Gets the final combo hit of the <see cref="T:DaLion.Shared.Enums.WeaponType"/>.</summary>
@@ -4895,7 +4902,7 @@
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale.IndexOf(DaLion.Overhaul.Modules.Combat.Resonance.Gemstone)">
             <summary>Gets the index of the specified <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the current <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
             <param name="gemstone">Some <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>.</param>
-            <returns>The <see cref="T:System.Int32"/> index of the <paramref name="gemstone"/> in the current <seealso cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</returns>
+            <returns>The <see cref="T:System.Int32"/> index of the <paramref name="gemstone"/> in the current <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</returns>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale.Transpose(System.Int32)">
             <summary>Shift all notes to the left by the specified <paramref name="count"/>.</summary>
@@ -5166,41 +5173,6 @@
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.TopazGemstone.Buffer(DaLion.Overhaul.Modules.Combat.Resonance.StatBuffer,System.Single)">
             <inheritdoc />
         </member>
-        <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber">
-            <summary>The number of steps between two <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>s in a <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Unison">
-            <summary>Zero. Both <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IGemstone"/>s are identical.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Second">
-            <summary>The second <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Third">
-            <summary>The third <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Fourth">
-            <summary>The fourth <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Fifth">
-            <summary>The fifth <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>, also known as the Dominant.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Sixth">
-            <summary>The sixth <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Seventh">
-            <summary>The seventh <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
-        </member>
-        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Octave">
-            <summary>A full scale. Effectively the same as <see cref="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Unison"/>.</summary>
-        </member>
-        <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumberExtensions">
-            <summary>Extensions for the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/> enum.</summary>
-        </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumberExtensions.Inverse(DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber)">
-            <summary>Gets the complement of the specified <paramref name="intervalNumber"/>.</summary>
-            <param name="intervalNumber">The <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/>.</param>
-            <returns>The complement of <paramref name="intervalNumber"/>.</returns>
-        </member>
         <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval">
             <summary>The difference in pitch between a <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> pair.</summary>
         </member>
@@ -5224,20 +5196,20 @@
             <param name="b">The second <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>.</param>
             <returns>The sum of <paramref name="a"/> and <paramref name="b"/>.</returns>
         </member>
-        <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalMatrixExtensions">
-            <summary>Extensions for matrices for <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>.</summary>
+        <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalExtensions">
+            <summary>Extensions for the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/> class.</summary>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalMatrixExtensions.GroupByIntervalNumber(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval[][])">
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalExtensions.GroupByIntervalNumber(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval[][])">
             <summary>Groups the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in the specified <paramref name="intervalMatrix"/> by their respective <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/>s.</summary>
             <param name="intervalMatrix">A 2D matrix of <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in a <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Chord"/>.</param>
             <returns>An <see cref="T:System.Linq.ILookup`2"/> of all <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in the <paramref name="intervalMatrix"/> by their respective <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/>s.</returns>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalMatrixExtensions.GroupByGemstone(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval[][])">
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalExtensions.GroupByGemstone(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval[][])">
             <summary>Groups the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in the specified <paramref name="intervalMatrix"/> by the first <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in each interval pair.</summary>
             <param name="intervalMatrix">A 2D matrix of <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in a <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Chord"/>.</param>
             <returns>An <see cref="T:System.Linq.ILookup`2"/> of all <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in the <paramref name="intervalMatrix"/> by their respective <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/>s.</returns>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalMatrixExtensions.GroupByNotePosition(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval[][])">
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalExtensions.GroupByNotePosition(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval[][])">
             <summary>Groups the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in the specified <paramref name="intervalMatrix"/> by the position of <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.First"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Chord"/>.</summary>
             <param name="intervalMatrix">A 2D matrix of <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in a <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Chord"/>.</param>
             <returns>An <see cref="T:System.Linq.ILookup`2"/> of all <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s in the <paramref name="intervalMatrix"/> by their respective <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/>s.</returns>
@@ -5313,6 +5285,41 @@
             </summary>
             <param name="other">Some other <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>.</param>
             <returns>The <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/> of the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/> between this and <paramref name="other"/>.</returns>
+        </member>
+        <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber">
+            <summary>The number of steps between two <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>s in a <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Unison">
+            <summary>Zero. Both <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>s are identical.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Second">
+            <summary>The second <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Third">
+            <summary>The third <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Fourth">
+            <summary>The fourth <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Fifth">
+            <summary>The fifth <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>, also known as the Dominant.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Sixth">
+            <summary>The sixth <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Seventh">
+            <summary>The seventh <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
+        </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Octave">
+            <summary>One full scale. Effectively the same as <see cref="F:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber.Unison"/>.</summary>
+        </member>
+        <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumberExtensions">
+            <summary>Extensions for the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/> enum.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumberExtensions.Complement(DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber)">
+            <summary>Gets the complement of the specified <paramref name="intervalNumber"/>.</summary>
+            <param name="intervalNumber">The <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.IntervalNumber"/>.</param>
+            <returns>The complement of <paramref name="intervalNumber"/>.</returns>
         </member>
         <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.StatBuffer">
             <summary>A buffer for aggregating stat bonuses.</summary>
@@ -6741,14 +6748,14 @@
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.AmbushUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteUpdateTickedEvent"/> class.</summary>
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteRageUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteRageUpdateTickedEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteUpdateTickedEvent.OnEnabled">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteRageUpdateTickedEvent.OnEnabled">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.BruteRageUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
             <inheritdoc />
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.ConcertoUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
@@ -6765,30 +6772,30 @@
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DemolitionistUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoUpdateTickedEvent"/> class.</summary>
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoOverchargeUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoOverchargeUpdateTickedEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoUpdateTickedEvent.OnEnabled">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoOverchargeUpdateTickedEvent.OnEnabled">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoUpdateTickedEvent.OnDisabled">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoOverchargeUpdateTickedEvent.OnDisabled">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoOverchargeUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.LastDesperadoTargetUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.LastDesperadoTargetUpdateTickedEvent"/> class.</summary>
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoQuickshotUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoQuickshotUpdateTickedEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.LastDesperadoTargetUpdateTickedEvent.OnEnabled">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoQuickshotUpdateTickedEvent.OnEnabled">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.LastDesperadoTargetUpdateTickedEvent.OnDisabled">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoQuickshotUpdateTickedEvent.OnDisabled">
             <inheritdoc />
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.LastDesperadoTargetUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.DesperadoQuickshotUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
             <inheritdoc />
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.GameLoop.UpdateTicked.ManualDetonationUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
@@ -6919,6 +6926,16 @@
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.HostRequestedModMessageReceivedEvent.OnModMessageReceivedImpl(System.Object,StardewModdingAPI.Events.ModMessageReceivedEventArgs)">
             <inheritdoc />
         </member>
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.PrestigeTreasureHuntModMessageReceivedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.PrestigeTreasureHuntModMessageReceivedEvent"/> class.</summary>
+            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
+        </member>
+        <member name="P:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.PrestigeTreasureHuntModMessageReceivedEvent.IsEnabled">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.PrestigeTreasureHuntModMessageReceivedEvent.OnModMessageReceivedImpl(System.Object,StardewModdingAPI.Events.ModMessageReceivedEventArgs)">
+            <inheritdoc />
+        </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.UltimateToggledModMessageReceivedEvent.#ctor(DaLion.Shared.Events.EventManager)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.UltimateToggledModMessageReceivedEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
@@ -6927,6 +6944,16 @@
             <inheritdoc />
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.ModMessageReceived.UltimateToggledModMessageReceivedEvent.OnModMessageReceivedImpl(System.Object,StardewModdingAPI.Events.ModMessageReceivedEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.PeerDisconnected.PrestigeTreasureHuntPeerDisconnectedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.PeerDisconnected.PrestigeTreasureHuntPeerDisconnectedEvent"/> class.</summary>
+            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
+        </member>
+        <member name="P:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.PeerDisconnected.PrestigeTreasureHuntPeerDisconnectedEvent.IsEnabled">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Professions.Events.Multiplayer.PeerDisconnected.PrestigeTreasureHuntPeerDisconnectedEvent.OnPeerDisconnectedImpl(System.Object,StardewModdingAPI.Events.PeerDisconnectedEventArgs)">
             <inheritdoc />
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Events.Player.InventoryChanged.RascalInventoryChangedEvent.#ctor(DaLion.Shared.Events.EventManager)">
@@ -8646,12 +8673,6 @@
         <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.CJBCheatsMenu.ProfessionsCheatSetProfessionPatcher.ProfessionsCheatSetProfessionTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Patch to move bonus health from Defender to Brute.</summary>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.ContentPatcher.SkillLevelValueProviderSkillLevelsPatcher.#ctor">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Patchers.Integration.ContentPatcher.SkillLevelValueProviderSkillLevelsPatcher"/> class.</summary>
-        </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.ContentPatcher.SkillLevelValueProviderSkillLevelsPatcher.SkillLevelValueProviderSkillLevelsTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
-            <summary>Patch to cap Content Patcher's skill level value provider to level 10.</summary>
-        </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.CustomOreNodes.ModEntryReloadOreDataPatcher.#ctor">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Patchers.Integration.CustomOreNodes.ModEntryReloadOreDataPatcher"/> class.</summary>
         </member>
@@ -8679,7 +8700,7 @@
         <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.ProducerFrameworkMod.ProducerRuleControllerProduceOutputPatcher.#ctor">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Professions.Patchers.Integration.ProducerFrameworkMod.ProducerRuleControllerProduceOutputPatcher"/> class.</summary>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.ProducerFrameworkMod.ProducerRuleControllerProduceOutputPatcher.ProducerRuleControllerProduceOutputPostfix(StardewValley.Object,StardewValley.Farmer,StardewValley.Object,System.Boolean)">
+        <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.ProducerFrameworkMod.ProducerRuleControllerProduceOutputPatcher.ProducerRuleControllerProduceOutputPostfix(StardewValley.Object,StardewValley.Farmer,StardewValley.GameLocation,StardewValley.Object,System.Boolean)">
             <summary>Patch to apply modded Artisan perks to PFM artisan machines.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Patchers.Integration.UiInfoSuite.ExperienceBarDrawExperienceBarPatcher.#ctor">
@@ -9757,21 +9778,13 @@
             <summary>Check for completion or failure.</summary>
             <param name="ticks">The number of ticks elapsed since the game started.</param>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.TreasureHunts.TreasureHunt.TryStart">
-            <summary>Rolls the dice for a new treasure hunt or adjusts the odds for the next attempt.</summary>
-            <returns><see langword="true"/> if the dice roll was successful, otherwise <see langword="false"/>.</returns>
-        </member>
-        <member name="M:DaLion.Overhaul.Modules.Professions.TreasureHunts.TreasureHunt.ForceStart">
-            <summary>Forcefully sets the odds for the next hunt start attempt to 100%.</summary>
-        </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.TreasureHunts.TreasureHunt.ChooseTreasureTile(StardewValley.GameLocation)">
-            <summary>Selects a random tile and determines whether it is a valid treasure target.</summary>
             <param name="location">The game location.</param>
             <returns>A <see cref="T:Microsoft.Xna.Framework.Vector2"/> tile.</returns>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.TreasureHunts.TreasureHunt.End(System.Boolean)">
             <summary>Resets treasure tile and releases the treasure hunt update event.</summary>
-            <param name="found">Whether the treasure was successfully found.</param>
+            <param name="success">Whether the treasure was successfully found.</param>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.TreasureHunts.TreasureHunt.OnStarted">
             <summary>Raised when a Treasure Hunt starts.</summary>
@@ -10781,7 +10794,7 @@
         <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.AxeDoFunctionPatcher.#ctor">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Tools.Patchers.AxeDoFunctionPatcher"/> class.</summary>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.AxeDoFunctionPatcher.AxeDoFunctionPostfix(StardewValley.Farmer)">
+        <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.AxeDoFunctionPatcher.AxeDoFunctionPostfix(StardewValley.Tools.Axe,StardewValley.Farmer)">
             <summary>Charge shockwave stamina cost.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.AxeDoFunctionPatcher.AxeDoFunctionTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
@@ -10970,7 +10983,7 @@
         <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.PickaxeDoFunctionPatcher.#ctor">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Tools.Patchers.PickaxeDoFunctionPatcher"/> class.</summary>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.PickaxeDoFunctionPatcher.PickaxeDoFunctionPostfix(StardewValley.Farmer)">
+        <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.PickaxeDoFunctionPatcher.PickaxeDoFunctionPostfix(StardewValley.Tools.Pickaxe,StardewValley.Farmer)">
             <summary>Charge shockwave stamina cost.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Tools.Patchers.PickaxeDoFunctionPatcher.PickaxeDoFunctionTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
@@ -11461,12 +11474,6 @@
         <member name="M:DaLion.Overhaul.Modules.Tweex.Patchers.FruitTreeShakePatcher.FruitTreeShakeTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Customize Fruit Tree age quality.</summary>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Tweex.Patchers.GameLocationDayUpdatePatcher.#ctor">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Tweex.Patchers.GameLocationDayUpdatePatcher"/> class.</summary>
-        </member>
-        <member name="M:DaLion.Overhaul.Modules.Tweex.Patchers.GameLocationDayUpdatePatcher.GameLocationDayUpdatePostfix(StardewValley.GameLocation)">
-            <summary>Spawn crows on Island Farm.</summary>
-        </member>
         <member name="M:DaLion.Overhaul.Modules.Tweex.Patchers.GameLocationExplodePatcher.#ctor">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Tweex.Patchers.GameLocationExplodePatcher"/> class.</summary>
         </member>
@@ -11610,9 +11617,6 @@
                 Gets a list of Artisan machines which should be compatible with
                 LargeDairyYieldsQuantityOverQuality.
             </summary>
-        </member>
-        <member name="P:DaLion.Overhaul.Modules.Tweex.TweexConfig.SpawnCrowsOnTheseMaps">
-            <summary>Gets a set of maps in which to attempt to spawn crows.</summary>
         </member>
         <member name="P:DaLion.Overhaul.Modules.Tweex.TweexConfig.TreeAgingFactor">
             <summary>Gets the degree to which Tree age improves sap quality.</summary>
@@ -12097,7 +12101,13 @@
             <summary>Get a translation equivalent to "Consecutive shots against different enemies within 1 second deal 50% more damage. Can overcharge the slingshot to increase ammo power and cross-section.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Desperado_Desc_Prestiged">
-            <summary>Get a translation equivalent to "Overcharged shots have a chance to pierce enemies.".</summary>
+            <summary>Get a translation equivalent to "Overcharged shots have a chance to pierce through enemies.".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Desperado_Buff_Name">
+            <summary>Get a translation equivalent to "Chain Action".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Desperado_Buff_Desc">
+            <summary>Get a translation equivalent to "+50% ammo damage against a different target.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Piper_Title_Male">
             <summary>Get a translation equivalent to "Slimed Piper".</summary>
@@ -12170,7 +12180,7 @@
             <summary>Get a translation equivalent to "-Statue Of Prestige-^...".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Prestige_DogStatue_Respec">
-            <summary>Get a translation equivalent to "W want to change my Prestige".</summary>
+            <summary>Get a translation equivalent to "I want to change my Prestige".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Prestige_DogStatue_Changeult">
             <summary>Get a translation equivalent to "I want to change my Limit Break".</summary>
@@ -12217,10 +12227,10 @@
             <summary>Get a translation equivalent to "Choose a profession to prestige:".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Prestige_Achievement_Title_Male">
-            <summary>Get a translation equivalent to "Jack-Of-All-Trades".</summary>
+            <summary>Get a translation equivalent to "Master of the Five Trades".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Prestige_Achievement_Title_Female">
-            <summary>Get a translation equivalent to "Jill-Of-All-Trades".</summary>
+            <summary>Get a translation equivalent to "Master of the Five Trades".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Prestige_Achievement_Desc">
             <summary>Get a translation equivalent to "Acquire all professions in every skill.".</summary>
@@ -12397,10 +12407,10 @@
             <summary>Get a translation equivalent to "You feel the Prismatic Shard vibrate...#But nothing happens.#Feels like something is missing.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Mail_Curse_Intro">
-            <summary>Get a translation equivalent to "[letterbg 2]Dear @,^I must speak with you about a matter of utmost urgency.^Please come see me at the tower at your earliest convenience.^   -M. Rasmodius, Wizard[#]The Blade of Ruin".</summary>
+            <summary>Get a translation equivalent to "[letterbg 2]Dear @,^I must speak with you about a matter of utmost urgency.^Please come see me at the tower at your earliest convenience.^   -M. Rasmodius, Wizard[#]Wizard's Urgent Summon".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Mail_Curse_Intro_Witch">
-            <summary>Get a translation equivalent to "[letterbg 2]Dear @,^I must speak with you about a matter of utmost urgency.^Please come see me at the tower at your earliest convenience.^   -M. Rasmodia, Witch[#]The Blade of Ruin".</summary>
+            <summary>Get a translation equivalent to "[letterbg 2]Dear @,^I must speak with you about a matter of utmost urgency.^Please come see me at the tower at your earliest convenience.^   -M. Rasmodia, Witch[#]Wizard's Urgent Summon".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Quests_Forge_Intro">
             <summary>Get a translation equivalent to "Basic/A Dwarven Legacy/Clint told you he'd finish translating that old blueprint in a couple of days./Visit Clint to ask about the blueprint./Blacksmith/-1/0/-1/false".</summary>
@@ -12665,7 +12675,7 @@
             <param name="interest">The value to inject for the <c>{{interest}}</c> token.</param>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Mail_Frs_Notice(System.Object,System.Object)">
-            <summary>Get a translation equivalent to "Department of the Treasury^Ferngill Revenue Service^^^{{honorific}} Taxpayer,^^This letter is to inform you that your total due income tax for the closing season in the amount of {{due}}g has been automatically deducted from your balance.^^Please keep this letter in your permanent records should you need to resolve any questions regarding your fiscal status.^^^Sincerely,^^Laura D. Pretto^Executive Directrice, Ferngill Revenue Service[#]FRS Notice".</summary>
+            <summary>Get a translation equivalent to "Department of the Treasury^Ferngill Revenue Service^^^{{honorific}} Taxpayer,^^This letter is to inform you that your total due income tax for the closing season in the amount of {{due}}g has been automatically deducted from your balance.^^Please keep this letter in your permanent records should you need to resolve any questions regarding your fiscal status.^^^Sincerely,^^Laura D. Pretto^Executive Directrice, Ferngill Revenue Service[#]FRS Monthly Notice".</summary>
             <param name="honorific">The value to inject for the <c>{{honorific}}</c> token.</param>
             <param name="due">The value to inject for the <c>{{due}}</c> token.</param>
         </member>
@@ -12819,7 +12829,7 @@
             <summary>Get a translation equivalent to "Combat".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gmcm_Modules_Cmbt_Desc">
-            <summary>Get a translation equivalent to "A complete overhaul of the combat experience, from rebalanced stats, weapons--both melee and ranged--, rings and enchantments, to entirely new mechanics like status effects, weapon combos and gemstone resonances.".</summary>
+            <summary>Get a translation equivalent to "A complete overhaul of the combat experience, from rebalanced stats, weapons both melee and ranged, rings and enchantments, to entirely new mechanics like status effects, weapon combos and gemstone resonances.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gmcm_Modules_Tols_Name">
             <summary>Get a translation equivalent to "Tools".</summary>
@@ -13180,7 +13190,7 @@
             <summary>Get a translation equivalent to "Enable Stabbing Swords".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gmcm_EnableStabbingSwords_Desc">
-            <summary>Get a translation equivalent to "Replaces the defensive special move of some swords with an offensive lunge move. !! Please disable this setting before deactivating the Combat module. !!".</summary>
+            <summary>Get a translation equivalent to "Replaces the defensive special move of some swords with an offensive lunge move. Requires `Weapon Overhaul` be enabled.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gmcm_StabbingSwords_Title">
             <summary>Get a translation equivalent to "Stabbing Swords".</summary>
@@ -13192,7 +13202,7 @@
             <summary>Get a translation equivalent to "Enable Melee Combo Hits".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gmcm_EnableMeleeComboHits_Desc">
-            <summary>Get a translation equivalent to "Replaces vanilla weapon spam with a more strategic combo system.".</summary>
+            <summary>Get a translation equivalent to "Replaces vanilla weapon spam with a more strategic combo system. Requires `Weapon Overhaul` be enabled.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gmcm_ComboHitsPerWeaponType_StabbingSword_Title">
             <summary>Get a translation equivalent to "Stabbing Sword Combo Hits".</summary>
@@ -14528,6 +14538,16 @@
             <param name="mod">Human-readable name of the providing mod.</param>
             <param name="entry">The <see cref="T:System.String"/> used as entry for all handled <see cref="T:DaLion.Shared.Commands.IConsoleCommand"/>s.</param>
             <param name="conditional">An optional conditional expression that prevents the entry command from being executed.</param>
+            <returns>The <see cref="T:DaLion.Shared.Commands.CommandHandler"/> instance.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Commands.CommandHandler.Handle(DaLion.Shared.Commands.IConsoleCommand)">
+            <summary>Handles the specified <see cref="T:DaLion.Shared.Commands.IConsoleCommand"/> instance.</summary>
+            <param name="command">A <see cref="T:DaLion.Shared.Commands.IConsoleCommand"/>.</param>
+            <returns>The <see cref="T:DaLion.Shared.Commands.CommandHandler"/> instance.</returns>
+        </member>
+        <member name="M:DaLion.Shared.Commands.CommandHandler.Handle``1">
+            <summary>Handles the specified <see cref="T:DaLion.Shared.Commands.IConsoleCommand"/> instance.</summary>
+            <typeparam name="TCommand">A type which implements <see cref="T:DaLion.Shared.Commands.IConsoleCommand"/>.</typeparam>
             <returns>The <see cref="T:DaLion.Shared.Commands.CommandHandler"/> instance.</returns>
         </member>
         <member name="M:DaLion.Shared.Commands.CommandHandler.Register(System.String,System.String,System.Func{System.Boolean})">
