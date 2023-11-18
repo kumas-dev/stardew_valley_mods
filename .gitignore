@@ -8,6 +8,7 @@ config/
 config.toml
 config.json
 ore_config.json
+!_Retexture/**/config.json
 
 # cache
 \[AFM\]\ FarmTypeManager/data
