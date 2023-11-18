@@ -1,0 +1,504 @@
+{
+	"Format": "1.29.0",
+	"ConfigSchema": {
+		"Buildings": {
+			"AllowValues": "extras, lighthouse, morris",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "extras, lighthouse, morris",
+			"Description": "Enable changes to specified buildings.",
+            "Section": "Buildings"},
+		"Shrubbery": {
+			"AllowValues": "false, Simple Foliage, VPR",
+			"AllowBlank": true,
+			"Default": "",
+			"Description": "Manually set bushes outside Olivia's/Victor's house.",
+            "Section": "Buildings"}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "SeasonOverride",
+			"Value": "{{season}}"
+		},
+		{
+			"Name": "SeasonOverride",
+			"Value": "Spring",
+			"When": { "Query: NOT {{IsOutdoors}} OR {{LocationName |contains=Desert}}": true}
+		},
+		{
+			"Name": "SeasonOverride",
+			"Value": "Summer",
+			"When": { "LocationName": "IslandEast, IslandNorth, IslandSouth, IslandSouthEast, IslandWest" }
+		},
+		{
+			"Name": "SVE Map",
+			"Value": "immersive2",
+			"When": {
+				"HasMod": "flashshifter.immersivefarm2remastered",
+				"FarmType": "Standard",
+				"HasMod |contains=flashshifter.GrandpasFarm": false
+			}
+		},
+		{
+			"Name": "SVE Map",
+			"Value": "grandpas",
+			"When": {
+				"HasMod": "flashshifter.GrandpasFarm",
+				"FarmType": "Standard",
+				"HasMod |contains=flashshifter.immersivefarm2remastered": false
+			}
+		},
+		{
+			"Name": "OliVic",
+			"Value": "VPR",
+			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" }
+		},
+		{
+			"Name": "OliVic",
+			"Value": "Simple Foliage",
+			"When": { "HasMod": "Az.Foliage" }
+		},
+		{
+			"Name": "OliVic",
+			"Value": "{{Shrubbery}}",
+			"When": { "Shrubbery |contains=Simple Foliage, VPR": true }
+		}
+	],
+	"Changes": [
+	//LooseSprites
+		//Map
+		{
+			"LogName": "Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Map",
+			"FromFile": "assets/loosesprites/{{Season}}_map.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+	//Maps
+		//Backdrop
+		{
+			"LogName": "Valley Backdrop",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_ValleyBackdrop",
+			"FromFile": "assets/maps/{{season}}_Backdrop.png",
+			"PatchMode": "Replace",
+		},
+		{
+			"LogName": "Highlands Backdrop",
+			"Action": "EditImage",
+			"Target": "Maps/HighlandsBackground",
+			"FromFile": "assets/maps/{{season}}_Backdrop.png",
+			"PatchMode": "Replace",
+		},
+		//Castle Village
+		{
+			"LogName": "Castle Village",
+			"Action": "EditImage",
+			"Target": "Maps/CastleVillage_Tilesheet",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+		},
+		//Crimson Badlands Map
+		{
+			"LogName": "Crimson Badlands",
+			"Action": "EditImage",
+			"Target": "Maps/CrimsonBadlandsMap",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+		},
+		//Iridium Quarry
+		{
+			"LogName": "Iridium Quarry",
+			"Action": "EditImage",
+			"Target": "Maps/IridiumQuarry",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+		},
+		//Lighthouse
+		{
+			"LogName": "Lighthouse",
+			"Action": "EditImage",
+			"Target": "Maps/Lighthouse",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"When": { "Buildings |contains=lighthouse": true }
+		},
+		//Morris' House
+		{
+			"LogName": "Morris' House",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_MorrisModernHouse",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": { "Buildings |contains=morris": true }
+		},
+		//Shearwater Bridge
+		{
+			"LogName": "Shearwater Bridge",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_ShearwaterBridgeRenovated",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+		},
+		//z_CastleVillage
+		{
+			"LogName": "z Castle Village",
+			"Action": "EditImage",
+			"Target": "Maps/z_CastleVillage",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+		},
+		//z_Extras
+		{
+			"LogName": "Extras Overlay",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Crops",
+			"Action": "EditImage",
+			"Target": "Maps/winter_z_extras",
+			"FromFile": "assets/maps/winter_z_extras.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 144, "Y": 0, "Width": 32, "Height": 143 },
+			"ToArea": { "X": 144, "Y": 0, "Width": 32, "Height": 143 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/Extras": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Extras Craftables+",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 64, "Y": 288, "Width": 304, "Height": 32 },
+			"ToArea": { "X": 64, "Y": 288, "Width": 304, "Height": 32 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Oven",
+			"Action": "EditImage",
+			"Target": "Maps/winter_z_extras",
+			"FromFile": "assets/maps/winter_z_extras.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 368, "Y": 288, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 368, "Y": 288, "Width": 32, "Height": 32 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/Extras": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Extras Pelican",
+			"Action": "EditImage",
+			"Target": "Maps/winter_z_extras",
+			"FromFile": "assets/maps/winter_z_extras.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 336, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 336, "Width": 32, "Height": 32 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/Extras": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Extras Display a",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_extras",
+			"FromFile": "assets/maps/spring_z_extras.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 48, "Y": 716, "Width": 48, "Height": 6 },
+			"ToArea": { "X": 48, "Y": 716, "Width": 48, "Height": 6 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/Extras": true,
+				"Season": "spring"
+			}
+		},
+		{
+			"LogName": "Extras Display b",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_extras",
+			"FromFile": "assets/maps/spring_z_extras.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 48, "Y": 768, "Width": 48, "Height": 18 },
+			"ToArea": { "X": 48, "Y": 768, "Width": 48, "Height": 18 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/Extras": true,
+				"Season": "spring"
+			}
+		},
+		{
+			"LogName": "Extras Bin",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 208, "Y": 443, "Width": 32, "Height": 85 },
+			"ToArea": { "X": 208, "Y": 443, "Width": 32, "Height": 85 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Camilla+",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 144, "Y": 912, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 144, "Y": 912, "Width": 48, "Height": 48 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Vines a",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 2112, "Width": 56, "Height": 159 },
+			"ToArea": { "X": 0, "Y": 2112, "Width": 56, "Height": 159 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Vines b",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 56, "Y": 2112, "Width": 40, "Height": 48 },
+			"ToArea": { "X": 56, "Y": 2112, "Width": 40, "Height":  48},
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Vines c",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 96, "Y": 2112, "Width": 48, "Height": 65 },
+			"ToArea": { "X": 96, "Y": 2112, "Width": 48, "Height": 65 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Torches+",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 208, "Y": 2016, "Width": 192, "Height": 240 },
+			"ToArea": { "X": 208, "Y": 2016, "Width": 192, "Height": 240 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Tree a",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 3104, "Width": 112, "Height": 96 },
+			"ToArea": { "X": 112, "Y": 3104, "Width": 112, "Height": 96 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+		{
+			"LogName": "Extras Tree b",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 128, "Y": 3200, "Width": 96, "Height": 16 },
+			"ToArea": { "X": 128, "Y": 3200, "Width": 96, "Height": 16 },
+			"When": { "JefGrizli.RedrawPelicanTownC/Extras": true }
+		},
+			//Buildings
+			{
+				"LogName": "Buildings Overlay",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_z_extras",
+				"FromFile": "assets/maps/{{TargetWithoutPath}}_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Fairhaven ren",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_z_extras",
+				"FromFile": "assets/maps/{{season}}_z_extras_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 1, "Y": 0, "Width": 142, "Height": 144 },
+				"ToArea": { "X": 1, "Y": 0, "Width": 142, "Height": 144 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Fairhaven bro",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_z_extras",
+				"FromFile": "assets/maps/{{season}}_z_extras_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 241, "Y": 400, "Width": 142, "Height": 128 },
+				"ToArea": { "X": 241, "Y": 400, "Width": 142, "Height": 128 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Emerald",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_z_extras",
+				"FromFile": "assets/maps/{{season}}_z_extras_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 224, "Y": 528, "Width": 176, "Height": 112 },
+				"ToArea": { "X": 224, "Y": 528, "Width": 176, "Height": 112 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings OliVic",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_z_extras",
+				"FromFile": "assets/maps/{{season}}_z_extras_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 210, "Y": 640, "Width": 172, "Height": 154 },
+				"ToArea": { "X": 210, "Y": 640, "Width": 172, "Height": 154 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Aurora Bro",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_z_extras",
+				"FromFile": "assets/maps/{{season}}_z_extras_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 224, "Y": 801, "Width": 176, "Height": 146 },
+				"ToArea": { "X": 224, "Y": 801, "Width": 176, "Height": 146 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Emporium",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_z_extras",
+				"FromFile": "assets/maps/{{season}}_z_extras_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 0, "Y": 1785, "Width": 224, "Height": 184 },
+				"ToArea": { "X": 0, "Y": 1785, "Width": 224, "Height": 184 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Aurora Ren",
+				"Action": "EditImage",
+				"Target": "Maps/fall_z_extras",
+				"FromFile": "assets/maps/fall_z_extras_buildings.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 235, "Y": 3231, "Width": 165, "Height": 131 },
+				"ToArea": { "X": 235, "Y": 3231, "Width": 165, "Height": 131 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"Buildings |contains=extras": true,
+					"Season": "fall"
+				}
+			},
+			//Interiors
+			{
+				"LogName": "Interirors",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_z_extras",
+				"FromFile": "assets/maps/z_extras_interiors.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"JefGrizli.RedrawPelicanTownC/Interiors": true,
+					"Season": "fall, summer, winter"
+				}
+			},
+			{
+				"LogName": "Interirors Spring",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_z_extras",
+				"FromFile": "assets/maps/z_extras_interiorsspring.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"JefGrizli.RedrawPelicanTownC/Interiors": true,
+					"Season": "spring"
+				}
+			},
+		//z_SVEbuildingShadow
+		{
+			"LogName": "SVE BS",
+			"Action": "EditImage",
+			"Target": "Maps/z_SVEbuildingShadow, Maps/z_winter_SVEbuildingShadow",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+		},
+		//z_Waterfalls
+		{
+			"LogName": "Falls",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_Waterfalls",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"When": { "HasMod |contains=Neopffe.BetterWater": false }
+		},
+	//Minigames
+		//Boat Journey Map
+		{
+			"LogName": "BJM",
+			"Action": "EditImage",
+			"Target": "Minigames/boatJourneyMap",
+			"FromFile": "assets/minigames/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace"
+		},
+	//Patch Inclusion
+        {
+            "Action": "Include",
+            "FromFile": "assets/data/patches.json",
+			"When": { "HasFile:{{FromFile}}": true }
+        }
+	]
+}

@@ -1,0 +1,1000 @@
+{
+	"Format": "1.29.0",
+	"ConfigSchema": {
+		"Buildings": {
+			"AllowValues": "farm, outdoors, town, warehouse",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "farm, outdoors, town, warehouse",
+			"Description": "Enable changes to specified buildings.",
+			"Section": "Buildings"},
+		"Gold Clock": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggle changes to the gold clock farm building.",
+			"Section": "Buildings"}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "SeasonOverride",
+			"Value": "{{season}}"
+		},
+		{
+			"Name": "SeasonOverride",
+			"Value": "Spring",
+			"When": { "Query: NOT {{IsOutdoors}} OR {{LocationName |contains=Desert}}": true}
+		},
+		{
+			"Name": "SeasonOverride",
+			"Value": "Summer",
+			"When": { "LocationName": "IslandEast, IslandNorth, IslandSouth, IslandSouthEast, IslandWest" }
+		},
+		{
+			"Name": "FarmLayout",
+			"Value": "{{FarmType}}"
+		},
+		{
+			"Name": "FarmLayout",
+			"Value": "JefGrizli.RedrawPelicanTownC/PetBowlShadow",
+			"When": { "JefGrizli.RedrawPelicanTownC/PetBowlShadow": "Beach, Standard, FourCorners" }
+		},
+		{
+			"Name": "FarmLayout",
+			"Value": "void",
+			"When": {
+				"FarmType": "Standard",
+				"HasMod": "flashshifter.GrandpasFarm, flashshifter.immersivefarm2remastered"
+			}
+		}
+	],
+	"Changes": [
+	//Map Edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/mapedits/Town-LampClinic.tmx",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 32, "Y": 55, "Width": 3, "Height": 2 },
+			"When": { "HasMod |contains=DaisyNiko.SVR3": false }
+        },
+	//Buildings
+		{
+			"LogName": "Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Barn",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Big Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Barn",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 0, "Width": 112, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Big Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 240, "Y": 256, "Width": 96, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Big Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Shed",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 224, "Y": 608, "Width": 112, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 240, "Y": 128, "Width": 96, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Deluxe Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 224, "Y": 0, "Width": 112, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Deluxe Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 896, "Width": 96, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Greenhouse",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 608, "Width": 112, "Height": 286 },
+			"ToArea": { "X": 0, "Y": 34, "Width": 112, "Height": 286 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "House 1",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 0, "Width": 144, "Height": 144 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "House 2",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 144, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 144, "Width": 144, "Height": 144 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "House 3",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 176, "Y": 736, "Width": 160, "Height": 144 },
+			"ToArea": { "X": 0, "Y": 288, "Width": 160, "Height": 144 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Log Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 128, "Width": 240, "Height": 112 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Mill",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/buildings/{{season}}_mill.png",
+			"PatchMode": "Replace",
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Plank Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 240, "Width": 240, "Height": 112 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Shed",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 608, "Width": 112, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Silo",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 288, "Y": 464, "Width": 48, "Height": 128 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Slime Hutch",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 160, "Y": 880, "Width": 176, "Height": 144 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Stable",
+			"Action": "EditImage",
+			"Target": "Buildings/Stable",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 736, "Width": 64, "Height": 96 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Stone Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 352, "Width": 240, "Height": 112 },
+			"When": { "Buildings |contains=farm": true }
+		},
+		{
+			"LogName": "Well",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/buildings/{{season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 832, "Width": 48, "Height": 80 },
+			"When": { "Buildings |contains=farm": true }
+		},
+			//Fish Pond
+			{
+				"LogName": "Fish Pond a",
+				"Action": "EditImage",
+				"Target": "Buildings/Fish Pond",
+				"FromFile": "assets/buildings/{{season}}_fish pond.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 84, "Height": 176 },
+				"ToArea": { "X": 0, "Y": 0, "Width": 84, "Height": 176 },
+				"When": { "Buildings |contains=farm": true }
+			},
+			{
+				"LogName": "Fish Pond b",
+				"Action": "EditImage",
+				"Target": "Buildings/Fish Pond",
+				"FromFile": "assets/buildings/{{season}}_fish pond.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 84, "Y": 0, "Width": 76, "Height": 176 },
+				"ToArea": { "X": 84, "Y": 0, "Width": 76, "Height": 176 },
+				"When": { "Buildings |contains=farm": true }
+			},
+			//Gold Clock
+			{
+				"LogName": "Gold Clock",
+				"Action": "EditImage",
+				"Target": "Buildings/Gold Clock",
+				"FromFile": "assets/buildings/{{season}}_buildings.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 240, "Y": 384, "Width": 48, "Height": 80 },
+				"When": {
+					"Buildings |contains=farm": true,
+					"Gold Clock |contains=false": false
+				}
+			},
+			//Obelisks
+			{
+				"LogName": "Desert Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Desert Obelisk",
+				"FromFile": "assets/buildings/{{season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "Buildings |contains=farm": true }
+			},
+			{
+				"LogName": "Earth Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Earth Obelisk",
+				"FromFile": "assets/buildings/{{season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 48, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "Buildings |contains=farm": true }
+			},
+			{
+				"LogName": "Island Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Island Obelisk",
+				"FromFile": "assets/buildings/{{season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 96, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "Buildings |contains=farm": true }
+			},
+			{
+				"LogName": "Water Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Water Obelisk",
+				"FromFile": "assets/buildings/{{season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 144, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "Buildings |contains=farm": true }
+			},
+	
+	//LooseSprites
+		//Cloudy Ocean
+		{
+			"LogName": "Cloudy Ocean",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cloudy_Ocean_BG, LooseSprites/Cloudy_Ocean_BG_Night",
+			"FromFile": "assets/loosesprites/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace"
+		},
+		//Cursors
+		{
+			"LogName": "Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/loosesprites/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 0, "Y": 736, "Width": 639, "Height": 447 }
+		},
+		{
+			"LogName": "Warehouse",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/loosesprites/{{season}}_warehouse.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 25, "Width": 174, "Height": 101 },
+			"ToArea": { "X": 424, "Y": 1275, "Width": 174, "Height": 101 },
+				"When": { "Buildings |contains=(town, warehouse)": true }
+		},
+		{
+			"LogName": "Warehouse Roof",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/loosesprites/winter_warehouse.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 174, "Height": 25 },
+			"ToArea": { "X": 66, "Y": 1678, "Width": 174, "Height": 25 },
+				"When": {
+					"Buildings |contains=(town, warehouse)": true,
+					"Season": "winter"
+					}
+		},
+		//Fences
+		{
+			"LogName": "Fences",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Fence1, LooseSprites/Fence5",
+			"FromFile": "assets/loosesprites/{{SeasonOverride}}_{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+		},
+		//Panorama
+		{
+			"LogName": "Panorama",
+			"Action": "EditImage",
+			"Target": "LooseSprites/stardewPanorama",
+			"FromFile": "assets/loosesprites/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace"
+		},
+	//Maps
+		//HarveyBallon
+		{
+			"LogName": "Ballon",
+			"Action": "EditImage",
+			"Target": "Maps/HarveyBalloonTiles",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+		},
+		//OutdoorsTileSheet
+		{
+			"LogName": "Out Pet Bowl a",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_outdoorsTileSheet",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 192, "Y": 1232, "Width": 32, "Height": 32 }
+		},
+		{
+			"LogName": "Out Pet Bowl b",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_outdoorsTileSheet",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 224, "Y": 1232, "Width": 16, "Height": 16 }
+		},
+		{
+			"LogName": "ots 437",
+			"Action": "EditImage",
+			"Target": "Maps/winter_outdoorsTileSheet",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 272, "Width": 16, "Height": 16 }
+		},
+		//Town
+		{
+			"LogName": "Town Fence a",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_town",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 48, "Y": 0, "Width": 32, "Height": 96 },
+			"ToArea": { "X": 48, "Y": 368, "Width": 32, "Height": 96 }
+		},
+		{
+			"LogName": "Town Fence b",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_town",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 32, "Width": 48, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 400, "Width": 48, "Height": 80 }
+		},
+	//Minigames
+		//Clouds
+		{
+			"LogName": "Clouds a",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/minigames/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width": 512, "Height": 544 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 544 }
+		},
+		{
+			"LogName": "Clouds b",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/minigames/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 544, "Width": 512, "Height": 458 },
+			"ToArea": { "X": 0, "Y": 544, "Width": 512, "Height": 458}
+		},
+		//Intro
+		{
+			"LogName": "Intro",
+			"Action": "EditImage",
+			"Target": "Minigames/Intro",
+			"FromFile": "assets/minigames/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay"
+		},
+	//TileSheets
+		//Bushes
+		{
+			"LogName": "Bush a",
+			"Action": "EditImage",
+			"Target": "TileSheets/bushes",
+			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 48, "Y": 128, "Width": 48, "Height": 48 },
+			"When": {
+				"HasMod |contains=Az.Foliage": false,
+				"JefGrizli.RedrawPelicanTownC/Bushes": true
+			}
+		},
+		
+//Golden Walnut
+//		{
+//			"LogName": "Bush b",
+//			"Action": "EditImage",
+//			"Target": "TileSheets/bushes",
+//			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+//			"PatchMode": "Overlay",
+//			"FromArea": { "X": 0, "Y": 48, "Width": 64, "Height": 32 },
+//			"ToArea": { "X": 0, "Y": 320, "Width": 64, "Height": 32 }
+//		},
+
+	//Snow Overlays
+		//Buildings
+		{
+			"LogName": "Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Barn",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Big Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Barn",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 0, "Width": 112, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Big Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 240, "Y": 256, "Width": 96, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Big Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Shed",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 224, "Y": 608, "Width": 112, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 240, "Y": 128, "Width": 96, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Deluxe Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 224, "Y": 0, "Width": 112, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Deluxe Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 896, "Width": 96, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Greenhouse",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 608, "Width": 112, "Height": 286 },
+			"ToArea": { "X": 0, "Y": 34, "Width": 112, "Height": 286 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "House 1",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 0, "Width": 144, "Height": 144 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "House 2",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 144, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 144, "Width": 144, "Height": 144 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "House 3",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 176, "Y": 736, "Width": 160, "Height": 144 },
+			"ToArea": { "X": 0, "Y": 288, "Width": 160, "Height": 144 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Log Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 128, "Width": 240, "Height": 112 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Mill",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/buildings/mill_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Plank Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 240, "Width": 240, "Height": 112 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Shed",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 608, "Width": 112, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Silo",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 288, "Y": 464, "Width": 48, "Height": 128 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Slime Hutch",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 160, "Y": 880, "Width": 176, "Height": 144 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Stable",
+			"Action": "EditImage",
+			"Target": "Buildings/Stable",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 736, "Width": 64, "Height": 96 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Stone Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 352, "Width": 240, "Height": 112 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Well",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 832, "Width": 48, "Height": 80 },
+			"When": {
+				"Buildings |contains=farm": true,
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+			//Fish Pond
+			{
+				"LogName": "Fish Pond",
+				"Action": "EditImage",
+				"Target": "Buildings/Fish Pond",
+				"FromFile": "assets/buildings/fish pond_snow.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 176 },
+				"When": {
+					"Buildings |contains=farm": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter",
+					"IsOutdoors": true
+				}
+			},
+			//Gold Clock
+			{
+				"LogName": "Gold Clock",
+				"Action": "EditImage",
+				"Target": "Buildings/Gold Clock",
+				"FromFile": "assets/buildings/buildings_snow.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 240, "Y": 384, "Width": 48, "Height": 80 },
+				"When": {
+					"Buildings |contains=farm": true,
+					"Gold Clock |contains=false": false,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter",
+					"IsOutdoors": true
+				}
+			},
+			//Obelisks
+			{
+				"LogName": "Desert Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Desert Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"Buildings |contains=farm": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter",
+					"IsOutdoors": true
+				}
+			},
+			{
+				"LogName": "Earth Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Earth Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 48, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"Buildings |contains=farm": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter",
+					"IsOutdoors": true
+				}
+			},
+			{
+				"LogName": "Island Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Island Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 96, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"Buildings |contains=farm": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter",
+					"IsOutdoors": true
+				}
+			},
+			{
+				"LogName": "Water Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Water Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 144, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"Buildings |contains=farm": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter",
+					"IsOutdoors": true
+				}
+			},
+		//LooseSprites
+		{
+			"LogName": "Snow Fence",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Fence1, LooseSprites/Fence5",
+			"FromFile": "assets/loosesprites/fence_snow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay",
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+			}
+		},
+		{
+			"LogName": "Snow Warehouse Roof",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/loosesprites/warehouse_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 174, "Height": 25 },
+			"ToArea": { "X": 66, "Y": 1678, "Width": 174, "Height": 25 },
+				"When": {
+					"Buildings |contains=(town, warehouse)": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter"
+				}
+		},
+		//Maps
+		{
+			"LogName": "Snow Outdoors",
+			"Action": "EditImage",
+			"Target": "Maps/winter_outdoorsTileSheet",
+			"FromFile": "assets/maps/outdoors_snow.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 128, "Y": 224, "Width": 64, "Height": 64 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+				"Season": "winter",
+				"IsOutdoors": true
+				}
+		},
+		{
+			"LogName": "Snow OutdoorsTilesheet",
+			"Action": "EditImage",
+			"Target": "Maps/winter_outdoorsTileSheet",
+			"FromFile": "assets/maps/outdoorsTileSheet_snow.png",
+			"PatchMode": "Overlay",
+				"When": {
+					"Buildings |contains=outdoors": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter"
+				}
+		},
+		{
+			"LogName": "Snow Town",
+			"Action": "EditImage",
+			"Target": "Maps/winter_town",
+			"FromFile": "assets/maps/town_snow.png",
+			"PatchMode": "Overlay",
+				"When": {
+					"Buildings |contains=town": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter"
+				}
+		},
+		{
+			"LogName": "Snow Town a",
+			"Action": "EditImage",
+			"Target": "Maps/winter_town",
+			"FromFile": "assets/maps/town_snow.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 408, "Y": 0, "Width": 44, "Height": 32 },
+			"ToArea": { "X": 408, "Y": 0, "Width": 44, "Height": 32 },
+				"When": {
+					"Buildings |contains=town": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter"
+				}
+		},
+		{
+			"LogName": "Snow Town b",
+			"Action": "EditImage",
+			"Target": "Maps/winter_town",
+			"FromFile": "assets/maps/town_snow.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 320, "Width": 96, "Height": 16 },
+			"ToArea": { "X": 112, "Y": 320, "Width": 96, "Height": 16 },
+				"When": {
+					"Buildings |contains=town": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter"
+				}
+		},
+		{
+			"LogName": "Snow Town c",
+			"Action": "EditImage",
+			"Target": "Maps/winter_town",
+			"FromFile": "assets/maps/town_snow.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 336, "Width": 112, "Height": 18 },
+			"ToArea": { "X": 112, "Y": 336, "Width": 112, "Height": 18 },
+				"When": {
+					"Buildings |contains=town": true,
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"Season": "winter"
+				}
+		},
+	//Patch Inclusion
+        {
+            "Action": "Include",
+            "FromFile": "assets/data/patches.json",
+			"When": { "HasFile:{{FromFile}}": true }
+        }
+	]
+}

@@ -1,0 +1,324 @@
+{
+	"Changes": [
+	//LooseSprites
+		//Map
+			//Green Fall
+			{
+				"LogName": "Map G",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map",
+				"FromFile": "assets/patches/loosesprites/fall_map_green.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"When": {
+					"Season": "fall",
+					"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+				}
+			},
+			//Green Hills
+			{
+				"LogName": "Map GH",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map",
+				"FromFile": "assets/patches/loosesprites/fall_map_green_hills.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"When": {
+					"Season": "fall",
+					"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+					"JefGrizli.RedrawPelicanTownC/GreenHills": true,
+				}
+			},
+			//Grandpa's Farm | Immersive 2	
+			{
+				"LogName": "GF IF2R",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map",
+				"FromFile": "assets/patches/loosesprites/{{SVE Map}}/{{Season}}_{{SVE Map}}_map.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 0, "Y": 50, "Width": 150, "Height": 69 },
+			},
+				//Green Fall
+				{
+					"LogName": "GF IF2R G",
+					"Action": "EditImage",
+					"Target": "LooseSprites/map",
+					"FromFile": "assets/patches/loosesprites/{{SVE Map}}/fall_{{SVE Map}}_map_green.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"ToArea": { "X": 0, "Y": 50, "Width": 150, "Height": 69 },
+					"When": {
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true
+					},
+				},
+				//Green Hills
+				{
+					"LogName": "GF IF2R GH",
+					"Action": "EditImage",
+					"Target": "LooseSprites/map",
+					"FromFile": "assets/patches/loosesprites/{{SVE Map}}/fall_{{SVE Map}}_map_green_hills.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"ToArea": { "X": 0, "Y": 50, "Width": 150, "Height": 69 },
+					"When": {
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+						"JefGrizli.RedrawPelicanTownC/GreenHills": true,
+					},
+				},
+				//Grandpa's Farm
+				//Grass Crop Field Configuration
+				{
+					"LogName": "GF Crop Field",
+					"Action": "EditImage",
+					"Target": "LooseSprites/map",
+					"FromFile": "assets/patches/loosesprites/{{SVE Map}}/configurations/{{Season}}_grasscropfield.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"ToArea": { "X": 110, "Y": 85, "Width": 28, "Height": 11 },
+					"When": {
+						"SVE Map": "grandpas",
+						"JefGrizli.RedrawPelicanTownC/GrandpasGrass": true,
+						"JefGrizli.RedrawPelicanTownC/GrandpasSandbox": false
+					}
+				},
+					//Green Fall
+					{
+						"LogName": "GF Crop Field G",
+						"Action": "EditImage",
+						"Target": "LooseSprites/map",
+						"FromFile": "assets/patches/loosesprites/{{SVE Map}}/configurations/fall_grasscropfield_green.png",
+						"Update": "OnLocationChange",
+						"PatchMode": "Overlay",
+						"ToArea": { "X": 110, "Y": 85, "Width": 28, "Height": 11 },
+						"When": {
+							"SVE Map": "grandpas",
+							"JefGrizli.RedrawPelicanTownC/GrandpasGrass": true,
+							"JefGrizli.RedrawPelicanTownC/GrandpasSandbox": false,
+							"Season": "fall",
+							"JefGrizli.RedrawPelicanTownC/GreenFall": true
+						}
+					},
+				//Remove Fences Configuration
+				{
+					"LogName": "GF Remove Fence",
+					"Action": "EditImage",
+					"Target": "LooseSprites/map",
+					"FromFile": "assets/patches/loosesprites/{{SVE Map}}/configurations/{{Season}}_removefences.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"ToArea": { "X": 89, "Y": 71, "Width": 17, "Height": 24 },
+					"When": {
+						"SVE Map": "grandpas",
+						"JefGrizli.RedrawPelicanTownC/GrandpasNoFence": true,
+						"JefGrizli.RedrawPelicanTownC/GrandpasSandbox": false
+					}
+				},
+					//Green Fall
+					{
+						"LogName": "GF Remove Fence G",
+						"Action": "EditImage",
+						"Target": "LooseSprites/map",
+						"FromFile": "assets/patches/loosesprites/{{SVE Map}}/configurations/fall_removefences_green.png",
+						"Update": "OnLocationChange",
+						"PatchMode": "Overlay",
+						"ToArea": { "X": 89, "Y": 71, "Width": 17, "Height": 24 },
+						"When": {
+							"SVE Map": "grandpas",
+							"JefGrizli.RedrawPelicanTownC/GrandpasNoFence": true,
+							"JefGrizli.RedrawPelicanTownC/GrandpasSandbox": false,
+							"Season": "fall",
+							"JefGrizli.RedrawPelicanTownC/GreenFall": true
+						}
+					},
+				//Sandbox Layout Configuration
+				{
+					"LogName": "GF Sandbox",
+					"Action": "EditImage",
+					"Target": "LooseSprites/map",
+					"FromFile": "assets/patches/loosesprites/{{SVE Map}}/configurations/{{Season}}_sandboxlayout.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"ToArea": { "X": 89, "Y": 67, "Width": 35, "Height": 30 },
+					"When": { 
+						"SVE Map": "grandpas",
+						"JefGrizli.RedrawPelicanTownC/GrandpasSandbox": true
+					}
+				},
+			//Morris' House
+			{
+				"LogName": "Morris' House",
+				"Action": "EditImage",
+				"Target": "LooseSprites/Map",
+				"FromFile": "assets/patches/loosesprites/{{Season}}_morrishouse.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 227, "Y": 61, "Width": 30, "Height": 20 },
+				"When": {
+					"HasSeenEvent |contains=6663408": true,
+					"HasSeenEvent |contains=5553210": false
+				}
+			},
+				//Green Fall
+				{
+					"LogName": "Morris' House G",
+					"Action": "EditImage",
+					"Target": "LooseSprites/Map",
+					"FromFile": "assets/patches/loosesprites/fall_morrishouse_green.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"ToArea": { "X": 227, "Y": 61, "Width": 30, "Height": 20 },
+					"When": {
+						"HasSeenEvent |contains=6663408": true,
+						"HasSeenEvent |contains=5553210": false,
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true
+					}
+				},
+			//Joja Theater
+			{
+				"LogName": "Joja Theater",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map",
+				"FromFile": "assets/patches/loosesprites/{{season}}_joja.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"When": {
+					"HasSeenEvent": "5553210",
+				}
+			},
+				//Green Fall
+				{
+					"LogName": "Joja Theater G",
+					"Action": "EditImage",
+					"Target": "LooseSprites/map",
+					"FromFile": "assets/patches/loosesprites/fall_joja_green.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"When": {
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+						"HasSeenEvent": "5553210",
+					}
+				},
+	//Maps
+		//z_Extras
+		//Sickly Willow
+		{
+			"LogName": "Extras Tree a",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/patches/maps/Simple Foliage/sickly_willow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 96 },
+			"ToArea": { "X": 112, "Y": 3104, "Width": 112, "Height": 96 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/Extras": true,
+				"HasMod": "Az.Foliage"
+			}
+		},
+		{
+			"LogName": "Extras Tree b",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_z_extras",
+			"FromFile": "assets/patches/maps/Simple Foliage/sickly_willow.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 16, "Y": 96, "Width": 96, "Height": 16 },
+			"ToArea": { "X": 128, "Y": 3200, "Width": 96, "Height": 16 },
+			"When": {
+				"JefGrizli.RedrawPelicanTownC/Extras": true,
+				"HasMod": "Az.Foliage"
+			}
+		},
+			//Oasis Sand
+			{
+				"LogName": "Extras Oasis",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_z_extras",
+				"FromFile": "assets/patches/maps/oasis_sand.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 0, "Y": 3360, "Width": 128, "Height": 64 },
+				"When": {
+					"JefGrizli.RedrawPelicanTownC/Extras": true,
+					"JefGrizli.RedrawPelicanTownC/IridiumOasis": false
+				}
+			},
+			//Buildings
+				//Shrubbery
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/fall_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 0, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"JefGrizli.RedrawPelicanTownC/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/spring_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 20, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"JefGrizli.RedrawPelicanTownC/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/summer_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 40, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"JefGrizli.RedrawPelicanTownC/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/winter_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"Update": "OnLocationChange",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 60, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"JefGrizli.RedrawPelicanTownC/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+	//Minigames
+		//Boat Journey Map
+			{
+				"LogName": "BJM GF IF2R Patch",
+				"Action": "EditImage",
+				"Target": "Minigames/boatJourneyMap",
+				"FromFile": "assets/patches/minigames/{{SVE MAP}}_{{TargetWithoutPath}}.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 211, "Y": 0, "Width": 16, "Height": 12 }
+			}
+	]
+}

@@ -1,0 +1,182 @@
+{
+	"Changes": [
+	//Maps
+		//Beach
+			//Green Fall
+			{
+				"LogName": "beach",
+				"Action": "EditImage",
+				"Target": "Maps/fall_beach",
+				"FromFile": "assets/patches/maps/{{TargetWithoutPath}}_green.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Overlay",
+				"When": {
+					"Season": "fall",
+					"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+				}
+			},
+		//OutdoorsTileSheet
+		{
+			"LogName": "ots",
+			"Action": "EditImage",
+			"Target": "Maps/{{SeasonOverride}}_outdoorsTileSheet",
+			"FromFile": "assets/patches/maps/{{SeasonOverride}}_ots.png",
+			"Update": "OnLocationChange",
+			"PatchMode": "Overlay"
+		},
+			//Green Fall
+			{
+				"LogName": "ots",
+				"Action": "EditImage",
+				"Target": "Maps/fall_outdoorsTileSheet",
+				"FromFile": "assets/patches/maps/fall_ots_green.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"Season": "fall",
+					"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+				}
+			},
+			//Green Fall
+			{
+				"LogName": "Out Pet Bowl",
+				"Action": "EditImage",
+				"Target": "Maps/fall_outdoorsTileSheet",
+				"FromFile": "assets/patches/maps/{{TargetWithoutPath}}_green.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+				"ToArea": { "X": 192, "Y": 1232, "Width": 16, "Height": 32 },
+				"When": {
+					"Season": "fall",
+					"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+				}
+			},
+			//Petbowl
+			{
+				"LogName": "Petbowl a",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_outdoorsTileSheet",
+				"FromFile": "assets/patches/maps/{{SeasonOverride}}_petbowl.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+				"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+				"When": { "FarmLayout |contains=void": false }
+			},
+			{
+				"LogName": "Petbowl b",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_outdoorsTileSheet",
+				"FromFile": "assets/patches/maps/{{SeasonOverride}}_petbowl.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 32, "Y": 0, "Width": 32, "Height": 32 },
+				"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+				"When": { "FarmLayout": "Beach" }
+			},
+			{
+				"LogName": "Petbowl c",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_outdoorsTileSheet",
+				"FromFile": "assets/patches/maps/{{SeasonOverride}}_petbowl.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 32, "Width": 32, "Height": 32 },
+				"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+				"When": { "FarmLayout": "Hilltop, Riverland, Standard, Wilderness" }
+			},
+			{
+				"LogName": "Petbowl d",
+				"Action": "EditImage",
+				"Target": "Maps/{{SeasonOverride}}_outdoorsTileSheet",
+				"FromFile": "assets/patches/maps/{{SeasonOverride}}_petbowl.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 32, "Y": 32, "Width": 32, "Height": 32 },
+				"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+				"When": { "FarmLayout": "FourCorners" }
+			},
+				//Green Fall
+				{
+					"LogName": "Petbowl a",
+					"Action": "EditImage",
+					"Target": "Maps/fall_outdoorsTileSheet",
+					"FromFile": "assets/patches/maps/fall_petbowl_green.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 32 },
+					"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+					"When": {
+						"FarmLayout |contains=void": false,
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+					}
+				},
+				{
+					"LogName": "Petbowl b",
+					"Action": "EditImage",
+					"Target": "Maps/fall_outdoorsTileSheet",
+					"FromFile": "assets/patches/maps/fall_petbowl_green.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 32, "Y": 0, "Width": 32, "Height": 32 },
+					"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+					"When": {
+						"FarmLayout": "Beach",
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+					}
+				},
+				{
+					"LogName": "Petbowl c",
+					"Action": "EditImage",
+					"Target": "Maps/fall_outdoorsTileSheet",
+					"FromFile": "assets/patches/maps/fall_petbowl_green.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 32, "Width": 32, "Height": 32 },
+					"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+					"When": {
+						"FarmLayout": "Hilltop, Riverland, Standard, Wilderness",
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+					}
+				},
+				{
+					"LogName": "Petbowl d",
+					"Action": "EditImage",
+					"Target": "Maps/fall_outdoorsTileSheet",
+					"FromFile": "assets/patches/maps/fall_petbowl_green.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 32, "Y": 32, "Width": 32, "Height": 32 },
+					"ToArea": { "X": 208, "Y": 1232, "Width": 32, "Height": 32 },
+					"When": {
+						"FarmLayout": "FourCorners",
+						"Season": "fall",
+						"JefGrizli.RedrawPelicanTownC/GreenFall": true,
+					}
+				},
+		//Town
+			//Green Fall
+			{
+				"LogName": "Town Fence",
+				"Action": "EditImage",
+				"Target": "Maps/fall_town",
+				"FromFile": "assets/patches/maps/{{TargetWithoutPath}}_green.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 0, "Y": 368, "Width": 80, "Height": 112 },
+				"When": {
+					"Season": "fall",
+					"JefGrizli.RedrawPelicanTownC/GreenFall": true
+				}
+			},
+			//???
+			{
+				"LogName": "???",
+				"Action": "EditImage",
+				"Target": "Maps/winter_town",
+				"FromFile": "assets/maps/town_snow.png",
+				"Update": "OnLocationChange",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 483, "Y": 519, "Width": 27, "Height": 40 },
+				"ToArea": { "X": 206, "Y": 661, "Width": 27, "Height": 40 },
+				"When": {
+					"Season": "winter",
+					"JefGrizli.RedrawPelicanTownC/SnOverlay": true,
+					"JefGrizli.RedrawPelicanTownC/EdNygma": true
+				}
+			}
+	]
+}

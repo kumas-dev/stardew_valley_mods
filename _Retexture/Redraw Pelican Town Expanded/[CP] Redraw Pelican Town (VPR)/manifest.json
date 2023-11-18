@@ -1,0 +1,27 @@
+{
+	"Name": "Redraw Pelican Town (VPR)",
+	"Author": "JefGrizli",
+	"Version": "1.2.3",
+	"Description": "Redrawing/recolouring of missing and outdated vanilla assets for Vibrant Pastoral Recolor. Expanded Edition.",
+	"UniqueID": "JefGrizli.RedrawPelicanTown",
+	"MinimumApiVersion": "3.13.0",
+	"UpdateKeys": [ "Nexus:???" ],
+	"ContentPackFor":
+				{"UniqueID": "Pathoschild.ContentPatcher"
+				},
+	"Dependencies": [
+				{"UniqueID": "FlashShifter.StardewValleyExpandedCP"
+				},
+				{"UniqueID": "grapeponta.VibrantPastoralRecolor"
+				},
+				{"UniqueID": "grapeponta.VibrantPastoralSVE"
+				},
+				{"UniqueID": "JefGrizli.RedrawPelicanTownC"
+				},
+				{"UniqueID": "MixedBag.Tilesheets"
+				},
+				{"UniqueID": "Bouhm.NPCMapLocations",
+				"IsRequired": false,
+				}
+	]
+}
