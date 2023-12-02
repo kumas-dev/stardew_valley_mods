@@ -1,0 +1,16 @@
+﻿[
+	{
+		"ProducerName": "Keg",
+		"InputIdentifier": "340",
+		"MinutesUntilReady": 600,
+		"OutputIdentifier": "459",
+		"OutputName": "{inputName} Mead",
+		"OutputTranslationKey": "Flower.Keg",
+		"OutputGenericParentName": "null", // remove this line if playing in english
+		"OutputGenericParentNameTranslationKey": "Generic.Keg",
+		"KeepInputParentIndex": true,
+		"InputPriceBased": true,
+		"OutputPriceMultiplier": 2, 
+		"Sounds": [ "Ship" ],
+	}
+]
