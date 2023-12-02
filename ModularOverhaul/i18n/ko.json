@@ -129,8 +129,7 @@
   "brute.desc": "피해를 받으면 격노해 자신의 피해량과 공격 속도가 점차 증가합니다. 체력이 25 증가합니다.",
   "brute.desc.prestiged": "분노를 두 배로 유지하세요.",
   "brute.buff.title": "분노",
-  "brute.buff.desc": "대미지 +{{damage}}%.",
-  "brute.buff.desc.prestiged": "대미지 +{{damage}}%, 공격속도 +{{damage}}%.",
+  "brute.buff.desc": "대미지 +{{damage}}%, 공격속도 +{{speed}}%.",
   "poacher.title.male": "약탈자",
   "poacher.title.female": "약탈자",
   "poacher.desc": "치명타 확률 +50%. 치명타시 일정 확률로 적에게서 아이템을 훔칩니다.",
@@ -152,6 +151,10 @@
   "piper.desc.prestiged": "효과가 증가하고 슬라임 효과를 다양하게 물리칠 수 있습니다.",
   "piper.buff": "슬라임화",
 
+  // other
+  "treasure_hunt.broadcast.started": "{{player}}이(가) 보물을 찾고 있습니다!",
+  "treasure_hunt.broadcast.ended.success": "{{player}}님이 보물을 찾았습니다!",
+  "treasure_hunt.broadcast.ended.failure": "{{player}}님이 보물을 찾지 못했습니다...",
 
   // *************** //
   // ** ULTIMATES ** //
@@ -408,6 +411,8 @@
   "ui.buffs.confused": "Disoriented",
   "ui.buffs.warrior.attack": "공격력 +{{value}}",
 
+  "ui.pt.farmer_level": "기술 숙달",
+
 
   // ********* //
   // * PONDS * //
@@ -472,12 +477,14 @@
   "gmcm.chance_to_start_treasure_hunt.desc": "The chance that your Scavenger or Prospector hunt senses will start to tingling.",
   "gmcm.allow_scavenger_hunts_on_farm.title": "Allow Scavenger Hunts on Farm",
   "gmcm.allow_scavenger_hunts_on_farm.desc": "Whether a Scavenger Hunt can trigger while entering the farm map.",
+  "gmcm.scavenger_detection_distance.title": "Scavenger Detection Distance",
+  "gmcm.scavenger_detection_distance.desc": "How close you must be to the treasure tile to reveal it's location, in tiles.",
   "gmcm.scavenger_hunt_handicap.title": "Scavenger Hunt Handicap",
   "gmcm.scavenger_hunt_handicap.desc": "Increase this number if you find that Scavenger hunts end too quickly.",
+  "gmcm.prospector_detection_distance.title": "Prospector Detection Distance",
+  "gmcm.prospector_detection_distance.desc": "How close you must be to the treasure tile to hear the sound cue, in tiles.",
   "gmcm.prospector_hunt_handicap.title": "Prospector Hunt Handicap",
   "gmcm.prospector_hunt_handicap.desc": "Increase this number if you find that Prospector hunts end too quickly.",
-  "gmcm.treasure_detection_distance.title": "Treasure Detection Distance",
-  "gmcm.treasure_detection_distance.desc": "How close you must be to the treasure tile to reveal it's location, in tiles.",
   "gmcm.spelunker_speed_ceiling.title": "Spelunker Speed Ceiling",
   "gmcm.spelunker_speed_ceiling.desc": "The maximum speed a Spelunker can reach in the mines.",
   "gmcm.demolitionist_get_excited.title": "Enable 'Get Excited' Buff",
@@ -537,6 +544,9 @@
   "gmcm.required_exp_per_extended_level.title": "Required Exp per Extended Level",
   "gmcm.required_exp_per_extended_level.desc": "How much skill experience is required for each level-up above level 10.",
 
+  "gmcm.extended_perfection_requirement.title": "Extended Perfection Requirement",
+  "gmcm.extended_perfection_requirement.desc": "If enabled, the Farmer Level perfection requirement is replaced with Skill Mastery, meaning level 20 in all 5 vanilla skills if Extended Progression is enabled, or have obtained all 30 vanilla professions if not.",
+
   "gmcm.sections.prfs.experience": "Skill Experience Multipliers",
   "gmcm.skill_exp_multipliers.title": "Base {{skill}} Exp Multiplier",
   "gmcm.skill_exp_multipliers.desc": "Multiplies all {{skill}} experience gained from the start of the game.",
@@ -549,6 +559,8 @@
   "gmcm.tracking_pointer_bob_rate.desc": "Changes the size of the pointer used to track objects by Prospector and Scavenger professions.",
   "gmcm.disable_always_track.title": "Disable Constant Tracking Arrows",
   "gmcm.disable_always_track.desc": "If enabled, Prospector and Scavenger will only track off-screen objects while Mod Key is held.",
+  "gmcm.use_legacy_prospector_hunt.title": "Use Legacy Prospector Hunt",
+  "gmcm.use_legacy_prospector_hunt.desc": "Enable to restore the legacy purple arrow for Prospector Hunts, instead of the new audio cues.",
   "gmcm.show_fish_collection_max_icon.title": "Show 'MAX' Icon in Fish Collection",
   "gmcm.show_fish_collection_max_icon.desc": "Toggles whether or not to display the 'Max' icon below fish caught at max size.",
 
@@ -608,6 +620,10 @@
   "gmcm.enable_infinity_band.desc": "Makes Iridium Band useless, but adds the almighty Infinity Band. Required for Gemstone Resonance mechanics.",
   "gmcm.enable_gemstone_resonance.title": "Enable Gemstone Resonance",
   "gmcm.enable_gemstone_resonance.desc": "Allows gemstones to harmonize and resonate in close proximity of each other.",
+  "gmcm.play_chord.title": "Play Chord",
+  "gmcm.play_chord.desc": "Hear the chord formed by the Infinity Band every time it is equipped.",
+  "gmcm.chord_sound_duration.title": "Chord Sound Duration",
+  "gmcm.chord_sound_duration.desc": "How long the chord sound should linger, in milliseconds.",
   "gmcm.colorful_resonances.title": "Colorful Resonance Glow",
   "gmcm.colorful_resonances.desc": "Whether the glow light of resonating chords should take after the root note's color.",
   "gmcm.resonance_lightsource_texture.title": "Resonance Glow Texture",
@@ -890,6 +906,8 @@
   "gmcm.deductible_tool_expenses.desc": "What percentage of gold spent on tool purchases and upgrades should be tax-deductible.",
   "gmcm.deductible_extras.title": "Other Deductibles",
   "gmcm.deductible_extras.desc": "What percentage of gold spent on the specific item should be tax-deductible. Items must be added manually to do this list.",
+  "gmcm.deductible_extras.label.key": "Object Name",
+  "gmcm.deductible_extras.label.value": "Deductible Pct",
 
   "gmcm.sections.txs.property": "Property Tax",
   "gmcm.property_tax_lateness_fine.title": "Lateness Fine",
