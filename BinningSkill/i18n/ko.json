@@ -19,6 +19,17 @@
     "reclaimer.name": "회수가",
     "reclaimer.desc": "아이템을 버릴 시 +{{ReclaimerExtraValuePercent}}%의 값을 추가로 받는다.",
 
+    "recycler.prestige.desc": "재활용 기계의 재료를 보다 훨씬 더 싸게 만들 수 있다.",
+    "environmentalist.prestige.desc": "재활용으로 두배의 우정을 얻는다.",
+    "salvager.prestige.desc": "재활용 기계로부터 훨씬 더 좋은 결과물을 얻는다.",
+    "sneak.prestige.desc": "쓰레기통에 갇히면 마을 사람들은 당신이 도움을 주고 쓰레기를 버리는 것이라고 생각합니다.",
+    "upseller.prestige.desc": "마을 사람들은 받은 선물에 대해 최악의 경우 중립적입니다.",
+    "reclaimer.prestige.desc": "아이템을 버릴 시 +{{ReclaimerExtraValuePercent}}% * 1.5의 값을 추가로 받는다.",
+
+    "sneak.prestige.dialogue.child": "Oh you're taking out the trash? I hate having to do that!",
+    "sneak.prestige.dialogue.teen": "I see you're helping out around town. Thanks!",
+    "sneak.prestige.dialogue.adult": "Wow, taking out other peoples trash, how diligent!",
+
     "config.ExperienceFromTrashFail": "쓰레기부터의 경험치",
     "config.ExperienceFromTrashFail.tooltip": "쓰레기를 찾았지만 아무것도 얻지 못한 경우의 경험치",
     "config.ExperienceFromTrashSuccess": "얻은 쓰레기부터의 경험치",

@@ -15,6 +15,13 @@
     "beloved.name": "사랑받는",
     "beloved.desc": "친구들로부터 종종 선물을 받습니다",
 
+    "friendly.prestige.desc": "주민들과 대화할 때 훨씬 더 많은 호감도를 얻을 수 있습니다",
+    "smoothtalker.prestige.desc": "호감도 이벤트에서 호감도를 더 많이 얻고 잃지 않습니다",
+    "gifter.prestige.desc": "선물을 줄 때 훨씬 더 많은 호감도를 얻습니다",
+    "helpful.prestige.desc": "의뢰 보상이 더 많이 증가합니다",
+    "haggler.prestige.desc": "상점 주인과 친할 경우 물건 가격을 할인받습니다",
+    "beloved.prestige.desc": "친구들로부터 자주 선물을 받습니다",
+
     "dialogue.beloved": "받아. 집 근처에서 주웠어.",
     "dialogue.beloved.rare": "{{name}}, 네가 좋아할지도 몰라서 가져왔어.",
     "dialogue.beloved.superrare": "이걸 보자마자 네가 좋아할 것 같아서 가져왔어.",
