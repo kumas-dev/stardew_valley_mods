@@ -1,0 +1,76 @@
+﻿{
+    /*********
+    ** Items
+    *********/
+    // tools
+    "tool.axe.radioactive": "방사능 도끼",
+    "tool.axe.mythicite": "신화 도끼",
+    "tool.wcan.radioactive": "방사능 물뿌리개",
+    "tool.wcan.mythicite": "신화 물뿌리개",
+    "tool.pick.radioactive": "방사능 곡괭이",
+    "tool.pick.mythicite": "신화 곡괭이",
+    "tool.hoe.radioactive": "방사능 괭이",
+    "tool.hoe.mythicite": "신화 괭이",
+    "tool.animal-gauntlets.name": "반중력 건틀릿",
+    "tool.animal-gauntlets.description": "달에 있다면 동물을 집어 옮길 수 있습니다.",
+    "tool.animal-gauntlets.holding": "현재 보유하고 있는 것:",
+    "tool.animal-gauntlets.moon-requirement": "달에 있어야합니다.",
+
+    // items
+    "item.lunar-key.name": "달의 열쇠",
+    "item.necklace.Looting.name": "약탈의 목걸이",
+    "item.necklace.Looting.description": "죽인 몹의 최대 체력에 따라 골드를 얻습니다.",
+    "item.necklace.Shocking.name": "충격의 목걸이",
+    "item.necklace.Shocking.description": "공격 후, 지속 시간에 걸쳐 짧은 피해를 줍니다.",
+    "item.necklace.Speed.name": "속도의 목걸이",
+    "item.necklace.Speed.description": "속도의 목걸이",
+    "item.necklace.Health.name": "체력의 목걸이",
+    "item.necklace.Health.description": "최대 체력이 50% 증가합니다.",
+    "item.necklace.Cooling.name": "냉각의 목걸이",
+    "item.necklace.Cooling.description": "화산 주변의 용암 타일을 식힙니다.",
+    "item.necklace.Lunar.name": "달의 목걸이",
+    "item.necklace.Lunar.description": "회색 소행성을 끌어당기는 자석 효과를 무효화합니다.",
+    "item.necklace.Water.name": "물의 목걸이",
+    "item.necklace.Water.description": "흙을 갈면서 물을 주세요.",
+    "item.necklace.Sea.name": "바다의 목걸이",
+    "item.necklace.Sea.description": "낚시 효율이 대폭 증가합니다.",
+
+    // item enchantments
+    "tooltip.persists": "죽어도 잃을 수 없습니다.",
+
+
+    /*********
+    ** Monsters
+    *********/
+    "monster.boom-eye.name": "붐아이",
+    "monster.lunar-slime.name": "달 슬라임",
+
+
+    /*********
+    ** Interactions
+    *********/
+    // UFO
+    "message.ufo.repair": "방사능 주괴 10개와 갤럭시 소울 1개로 UFO를 수리하시겠습니까?",
+    "message.ufo.repair.lacking": "재료가 부족합니다.",
+    "message.ufo.travel": "UFO에 탑승하시겠습니까?",
+
+    // moon
+    "message.gargoyle": "애완동물을... 가고일? 무슨 일이 일어날지 누가 알겠어요?",
+    "message.dirt-tutorial": "끝을 끊고 앞으로 나아갈 수 있는 도구만 있었다면...",
+    "message.lunar-teleporter-offline": "오프라인인 것 같습니다. 아마도 신화광석이 필요할 것 같습니다.",
+    "message.lunar-temple.locked": "잠겨 있습니다.",
+    "message.necklace-exchange": "루나 목걸이 1개와 소울 사파이어 1개를 무작위 목걸이로 교환하시겠습니까? (루나 제외 총 7종)",
+    "message.necklace-exchange.lacking": "재료가 없습니다.",
+    "message.planet.jump": "도약?",
+    "message.farm.crystal-lock": "일부 신화광석으로 자랄 수도 있습니다.",
+    "message.infuser.1": "천상의 주입기, 1부.^도구에 마법을 부여하여 최대 2개의 주요 마법을 저장할 수 있습니다.^(이미 두 개가 있는 경우 두 번째 마법만 변경됩니다.)",
+    "message.infuser.2": "천상의 주입기, 2부.^소울 사파이어의 에너지로 무한한 잠재력을 지닌 무기를 진정한 형태로 변형시킬 수 있습니다.",
+    "message.infuser.3": "천상의 주입기, 3부.^특정 먼지로 모든 아이템을 강화할 수 있어 죽어도 당신과 함께 있을 수 있습니다.",
+
+
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+    "config.flashing-ufo.name": "Flashing UFO",
+    "config.flashing-ufo.description": "Whether the repaired UFO has flashing lights."
+}
