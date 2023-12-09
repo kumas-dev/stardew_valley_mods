@@ -8,10 +8,12 @@ config/
 config.toml
 config.json
 ore_config.json
-!_Retexture/**/config.json
 !ModularOverhaul/config.json
-!ExcavationSkill/config.json
 !\[CP\] Stardew Valley Expanded/config.json
+!ExcavationSkill/config.json
+!BinningSkill/config.json
+!LoveOfCooking/config.json
+!SocializingSkill/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
