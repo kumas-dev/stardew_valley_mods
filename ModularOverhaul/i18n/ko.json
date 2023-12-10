@@ -173,6 +173,7 @@
 
   "ulti.canteat": "지금은 할 수 없습니다.",
 
+
   // ************** //
   // ** PRESTIGE ** //
   // ************** //
@@ -200,6 +201,7 @@
   "prestige.achievement.title.female": "만능역자",
   "prestige.achievement.desc": "모든 스킬의 모든 직업을 습득하기",
 
+  
   // *********** //
   // * ARSENAL * //
   // *********** //
@@ -252,7 +254,6 @@
   "events.forge.intro": "distantBanjo/3 15/farmer 5 19 0 Clint 3 13 2/pause 1000/speak Clint \"오, 안녕 @.$1\"/move farmer 0 -4 3/move farmer -2 0 0/pause 500/speak Clint \"무슨 일이야, 업그레이드할 도구라도 있어?\"/pause 500/speak Clint \"이건 뭐지, 오래된 설게도?\"/pause 1000/speak Clint \"흠... 나도 정말 도와주고 싶어, @, 하지만 뭐라고 쓰여있는지 전혀 모르겠어...$2\"/pause 1000/speak Clint \"그건 뭐야? 번역서를 가지고 있다고?$0#$b#하지만 해독하는 데는 며칠은 족히 걸릴 거야...$2\"/pause 500/speak Clint \"그래 좋아. 오늘 밤부터 당장 시작할게. 이틀 뒤에 다시 찾아와줘.\"/pause 500/addQuest 144701/end",
   "events.curse.intro": "WizardSong/-1000 -1000/farmer 8 24 0 Wizard 10 15 2/showFrame Wizard 20/viewport 8 18 true/move farmer 0 -3 0/pause 2000/speak Wizard \"@, 와 줘서 고맙네.\"/pause 300/showFrame Wizard 16/pause 500/speak Wizard \"무언가 소란스러움을 느꼈는데, 자네가 오기 전까지는 그게 뭔지 몰랐어.\"/pause 500/showFrame Wizard 0/pause 500/move Wizard -2 0 3/move Wizard 0 3 2/pause 1000/speak Wizard \"그 이상한 검...\"/move Wizard 0 1 2/pause 300/speak Wizard \"말해보게, 어디서 그 검을 얻었지?\"/pause 1500/speak Wizard \"그렇군.\"/pause 500/move Wizard 0 -1 0/speak Wizard \"그 검에서 흘러나오는 악의적인 에너지를 보면 가능성은 하나 뿐이네.\"/pause 500/faceDirection Wizard 2 true/pause 500/speak Wizard \"그 검은 분명 몰락한 영웅의 검일세.$1\"/pause 1000/move Wizard 0 1 2/pause 200/speak Wizard \"이야기는 영웅 비에고가 요바께서 직접 내려주신 황금 검을 휘두른 것에서 시작하네.\"/pause 200/showFrame Wizard 18/pause 200/speak Wizard \"사랑하는 그의 아내가 죽자, 그는 슬픔과 분노에 빠졌지.\"/pause 500/showFrame Wizard 0/pause 500/move Wizard -2 0 3/pause 200/speak Wizard \"그는 아내를 살리는 데에 집착한 나머지 마법사가 되었어.#$b#엄청난 대가를 치렀지만, 결국에는 성공했지.\"/pause 200/move Wizard 2 0 1/pause 200/speak Wizard \"잠시동안, 아내의 몸에서 무시무시한 그림자와 분노의 소용돌이가 일었어.#$b#죽음으로부터 벗어난 것에 혼란스러웠던 나머지, 그녀는 비에고의 칼을 뺏어서 그의 심장을 찔렀지.\"/faceDirection Wizard 2 true/speak Wizard \"그리고 그 순간, 비에고의 흑마법과 요바의 신성한 힘이 충돌해 그의 심장에서는 검은 안개가 흘러나왔고, 그는 죽지 않은 상태에 갇혀 몰락한 영웅이 되었어.\"/move Wizard 0 -1 0/speak Wizard \"나는 그 이야기를 믿지 않았었네. 하지만 만약 그 검이 진짜라면, 비에고는 아직도 어딘가에서 그 검을 찾아다니고 있을지 모르지.\"/pause 1500/move Wizard 0 2 2/speak Wizard \"그 검은 결국 자네를 집어삼킬거야, @.#$b#그 검을 없앨 방법을 찾아야만 하네. 그리고 명심하게, 무슨 일이 있어도 그 검을 사용해서는 안 돼.\"/pause 500/addQuest 144703/end",
   "events.curse.intro.sve": "WizardSong/-1000 -1000/farmer 8 24 0 Wizard 10 15 2/showFrame Wizard 20/viewport 8 18 true/move farmer 0 -3 0/pause 2000/speak Wizard \"@, 와 줘서 고마워.\"/pause 300/showFrame Wizard 16/pause 500/speak Wizard \"무언가 소란스러움을 느꼈는데, 네가 오기 전까지는 그게 뭔지 몰랐어.\"/pause 500/showFrame Wizard 0/pause 500/move Wizard -2 0 3/move Wizard 0 3 2/pause 1000/speak Wizard \"그 이상한 검...\"/move Wizard 0 1 2/pause 300/speak Wizard \"말해봐, 그 검 어디서 얻었어?\"/pause 1500/speak Wizard \"그렇구나.\"/pause 500/move Wizard 0 -1 0/speak Wizard \"그 검에서 흘러나오는 악의적인 에너지를 보면 가능성은 하나 뿐이야.\"/pause 500/faceDirection Wizard 2 true/pause 500/speak Wizard \"그 검은 분명 몰락한 영웅의 검이야.$3\"/pause 1000/move Wizard 0 1 2/pause 200/speak Wizard \"이야기는 영웅 비에고가 요바께서 직접 내려주신 황금 검을 휘두른 것에서 시작해.\"/pause 200/showFrame Wizard 18/pause 200/speak Wizard \"사랑하는 그의 아내가 죽자, 그는 슬픔과 분노에 빠졌지.\"/pause 500/showFrame Wizard 0/pause 500/move Wizard -2 0 3/pause 200/speak Wizard \"그는 아내를 살리는 데에 집착한 나머지 마법사가 되었어.#$b#엄청난 대가를 치렀지만, 결국에는 성공했지.\"/pause 200/move Wizard 2 0 1/pause 200/speak Wizard \"잠시동안, 아내의 몸에서 무시무시한 그림자와 분노의 소용돌이가 일었어.#$b#죽음으로부터 벗어난 것에 혼란스러웠던 나머지, 그녀는 비에고의 칼을 뺏어서 그의 심장을 찔렀지.\"/faceDirection Wizard 2 true/speak Wizard \"그리고 그 순간, 비에고의 흑마법과 요바의 신성한 힘이 충돌해 그의 심장에서는 검은 안개가 흘러나왔고, 그는 죽지 않은 상태에 갇혀 몰락한 영웅이 되었어.\"/move Wizard 0 -1 0/speak Wizard \"나는 그 이야기를 믿지 않았었어. 하지만 만약 그 검이 진짜라면, 비에고는 아직도 어딘가에서 그 검을 찾아다니고 있을지도 몰라.\"/pause 1500/move Wizard 0 2 2/speak Wizard \"그 검은 결국 널 집어삼킬거야, @.#$b#그 검을 없앨 방법을 찾아야만 해. 그리고 명심해, 무슨 일이 있어도 그 검을 사용해서는 안 돼.\"/pause 500/addQuest 144703/end",
-
   "events.100162.sword": "MarlonsTheme/21 9/farmer -100 -100 0 Marlon 23 6 2/addQuest 14/skippable/pause 1000/move Marlon 0 2 2/pause 500/showFrame Marlon 4/pause 1000/speak Marlon \"흠... \"/pause 500/warp farmer 18 13/playSound stoneStep/move farmer 0 -3 1/move farmer 5 0 0/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"...그저 이 광산 갱도를 내려다보고 있었네.#$b#이 갱도는 수십 년동안 버려져 있었지.\"/pause 500/showFrame Marlon 4/speak Marlon \"여전히, 저 아래에는 좋은 광물들이 있어.#$b#하지만 오랫동안 방치된 어두운 곳이야... 광물 말고도 다른 위험이 있을지도 모르네...\"/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"여기, 이걸 받게. 필요할 거야.\"/pause 500/playSound dwop/faceDirection farmer 1 true/pause 50/faceDirection farmer 2/itemAboveHead sword/pause 3300/awardFestivalPrize sword/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 500/speak Marlon \"내 이름은 말론이네. 바깥에 있는 모험가 길드를 운영하고 있지.#$b#자네를 지켜보겠네. 스스로를 증명하게. 그러면 길드의 일원으로 받아줄 수도 있어.\"/pause 500/end",
   "events.100162.no_sword": "MarlonsTheme/21 9/farmer -100 -100 0 Marlon 23 6 2/addQuest 14/skippable/pause 1000/move Marlon 0 2 2/pause 500/showFrame Marlon 4/pause 1000/speak Marlon \"흠... \"/pause 500/warp farmer 18 13/playSound stoneStep/move farmer 0 -3 1/move farmer 5 0 0/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"...그저 이 광산 갱도를 내려다보고 있었네.#$b#이 갱도는 수십 년동안 버려져 있었지.\"/pause 500/showFrame Marlon 4/speak Marlon \"여전히, 저 아래에는 좋은 광물들이 있어.#$b#하지만 오랫동안 방치된 어두운 곳이야... 광물 말고도 다른 위험이 있을지도 모르네...\"/pause 500/showFrame Marlon 0/pause 500/speak Marlon \"무기를 다룰 줄은 알아야 할 텐데. 쓸 일이 있을 거야.\"/pause 500/speak Marlon \"내 이름은 말론이네. 바깥에 있는 모험가 길드를 운영하고 있지.#$b#자네를 지켜보겠네. 스스로를 증명하게. 그러면 길드의 일원으로 받아줄 수도 있어.\"/pause 500/end",
   "events.100162.sword.sve": "MarlonsTheme/21 9/farmer -100 -100 0 MarlonFay 23 6 2/addQuest 14/skippable/pause 1000/move MarlonFay 0 2 2/pause 500/showFrame MarlonFay 19/pause 1000/speak MarlonFay \"흠... \"/pause 500/warp farmer 18 13/playSound stoneStep/move farmer 0 -3 1/move farmer 5 0 0/pause 500/showFrame MarlonFay 0/pause 500/speak MarlonFay \"...이 광산 갱도가 얼마나 깊을지 생각하고 있었네.#$b#여기서 몬스터들이 기어나와 마을로 내려가기 전에 내가 처리하고 있지.$1#$b#걱정되나 보군. 내가 늙었을지는 몰라도, 세월이 내 검술 실력을 앗아가지는 않았네. 아직까지는 말이야.$0\"/pause 500/showFrame MarlonFay 18/pause 2000/showFrame MarlonFay 0/pause 500/speak MarlonFay \"모험가 길드의 수장으로서 나는 많은 전사들을 만나왔네. 자네 눈에서도 전사의 기질이 보여.$2\"/pause 1500/speak MarlonFay \"이걸 받게. 훈련용 무기일세. 별 거 아닌 것 같아 보이겠지만, 이거라면 여기 있는 몬스터들과 싸울 수 있을 걸세.\"/playSound dwop/faceDirection farmer 1 true/pause 50/faceDirection farmer 2/itemAboveHead sword/pause 3300/awardFestivalPrize sword/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/pause 500/speak MarlonFay \"자네를 지켜보겠네. 스스로를 증명해내면 자네를 길드의 일원으로 받아주는 것에 대해 고려해 보도록 하지.\"/pause 750/end",
@@ -269,7 +270,7 @@
 
   "quests.forge.intro": "Basic/드워프의 유산/클린트는 설계도 번역이 이틀 뒤에 끝날 것이라고 말했습니다./클린트를 찾아가 설계도에 대해 묻기./Blacksmith/-1/0/-1/false",
   "quests.forge.next": "Basic/드워프의 유산 II/오래된 설계도는 강력한 고대의 무기 설계도였습니다! 다른 설계도들도 있을까요?/나머지 드워프 설계도를 찾아 클린트에게 가져가기./null/-1/0/-1/false",
-  "quests.hero.intro": "Basic/저주받은 영웅의 검/당신이 발견한 검은 몰락한 영웅의 저주를 담고 있습니다! 이미 생명력을 빼앗기고 있는 것이 느껴집니다. 최대한 빨리 저주를 풀 방법을 찾아야 합니다!/검의 저주를 풀 방법을 찾기./null/-1/0/-1/false",
+  "quests.hero.curse": "Basic/저주받은 영웅의 검/당신이 발견한 검은 몰락한 영웅의 저주를 담고 있습니다! 이미 생명력을 빼앗기고 있는 것이 느껴집니다. 최대한 빨리 저주를 풀 방법을 찾아야 합니다!/검의 저주를 풀 방법을 찾기./null/-1/0/-1/false",
   "quests.hero.reward": "Basic/저주받은 영웅의 검/요바의 은총을 받는 영웅은 악으로부터 보호받는다고 합니다. 그러기 위해 영웅의 5가지 미덕을 증명해야 합니다./저주받은 영웅의 검을 요바의 제단으로 가져가기./null/-1/0/-1/false",
 
   "quests.hero.journey.name": "영웅의 여정",
@@ -296,14 +297,14 @@
   "virtues.valor.flavor": "\"용맹함이 훌륭한 인간을 만들지는 않으나, 훌륭한 자들 중 겁쟁이가 얼마나 있던가? 용맹한 자는 결과에 연연하지 않으며 다수에 맞서기를 주저하지 않는다.\"",
   "virtues.valor.objective": "동료 마을 사람들에게 해를 끼치는 생물을 근절하여 용감하게 마을 사람들을 보호하십시오.",
 
-  "virtues.appreciate.singular": "{{name}} appreciates your {{virtue}}.",
-  "virtues.appreciate.plural": "{{name1}} and {{name2}} appreciate your {{virtue}}.",
-  "virtues.recognize.robin": "Robin recognizes your Generosity.",
-  "virtues.recognize.gil": "Yoba recognizes your Valor.",
-  "virtues.recognize.yoba": "Yoba recognizes your Valor.",
-  "virtues.disapprove.singular": "{{name}} disapproves of your lack of {{virtue}}.",
-  "virtues.disapprove.plural": "{{name1}} and {{name2}} disapprove of your lack of {{virtue}}.",
-  "virtues.proven": "{{player}} has proven their {{virtue}}.",
+  "virtues.appreciate.singular": "{{name}} 님이 귀하의 {{virtue}}에 감사드립니다.",
+  "virtues.appreciate.plural": "{{name1}}님과 {{name2}}님은 귀하의 {{virtue}}에 감사드립니다.",
+  "virtues.recognize.robin": "로빈은 당신의 관대함을 인정합니다.",
+  "virtues.recognize.gil": "요바는 당신의 용기를 인정합니다.",
+  "virtues.recognize.yoba": "요바는 당신의 용기를 인정합니다.",
+  "virtues.disapprove.singular": "{{name}}님은 귀하의 {{virtue}} 부족함을 반대합니다.",
+  "virtues.disapprove.plural": "{{name1}}님과 {{name2}}님은 귀하의 {{virtue}} 부족함을 반대합니다.",
+  "virtues.proven": "{{player}}이(가) 자신의 {{virtue}}을 입증했습니다.",
 
   "pillars.convert_sword": "{{sword}}를 {{type}} 타입으로 변경하시겠습니까?",
 
@@ -317,6 +318,7 @@
   "objects.elderwood.name": "엘더우드",
   "objects.elderwood.description": "고대 마법 종족의 마법이 깃든 나무 조각입니다.",
 
+  
   // ********* //
   // * RINGS * //
   // ********* //
@@ -330,12 +332,12 @@
   "rings.jade.desc": "치명타 위력을 50% 증가시켜줍니다.",
   "rings.topaz.desc.resist": "방어력이 10% 증가합니다.",
   "rings.topaz.desc.defense": "방어력이 1 증가합니다.",
-  "rings.immunity.extra_desc": " Grants complete immunity to debuffs.",
+  "rings.immunity.extra_desc": "디버프에 대한 완전한 면역을 부여합니다.",
   "rings.iridium.desc": "이리듐으로 만든 평범한 반지.",
-  "rings.warrior.desc": "Enemy takedowns grant progressively higher attack.",
-  "rings.yoba.desc": "Grants a shield in a pinch.",
-  "buffs.warrior.desc": "Onslaught",
-  "buffs.yoba.desc": "Lifeline",
+  "rings.warrior.desc": "적을 처치하면 공격력이 점차 높아집니다.",
+  "rings.yoba.desc": "핀치에 방패를 부여합니다.",
+  "buffs.warrior.desc": "맹공격",
+  "buffs.yoba.desc": "생명선",
   "global.infinitycraft": "{{who}}가 인피니티 밴드를 제작했습니다.",
   "resonance": "공명",
 
@@ -403,12 +405,12 @@
   "ui.item_hover.light": "빛을 발산해요",
   "ui.item_hover.magnetic": "자기",
 
-  "ui.buffs.burnt.damage": "-50% Damage",
-  "ui.buffs.burnt.dot": "-{{amount}} health every 3 seconds",
-  "ui.buffs.frozen.stuck": "Cannot move",
-  "ui.buffs.frozen.vulnerable": "Vulnerable to the next attack",
+  "ui.buffs.burnt.damage": "-50% 대미지",
+  "ui.buffs.burnt.dot": "-3초마다 -{{amount}}의 체력",
+  "ui.buffs.frozen.stuck": "이동할 수 없습니다",
+  "ui.buffs.frozen.vulnerable": "다음 공격에 취약",
   "ui.buffs.jinxed.defense": "방어력 -5",
-  "ui.buffs.confused": "Disoriented",
+  "ui.buffs.confused": "방향 감각을 잃다",
   "ui.buffs.warrior.attack": "공격력 +{{value}}",
 
   "ui.pt.farmer_level": "기술 숙달",
