@@ -1081,7 +1081,7 @@
         <member name="P:DaLion.Overhaul.Modules.Combat.CombatConfig.EnableGemstoneResonance">
             <summary>Gets a value indicating whether to allow gemstone resonance to take place.</summary>
         </member>
-        <member name="P:DaLion.Overhaul.Modules.Combat.CombatConfig.PlayChord">
+        <member name="P:DaLion.Overhaul.Modules.Combat.CombatConfig.AudibleGemstones">
             <summary>Gets a value indicating whether to allow gemstone resonance to take place.</summary>
         </member>
         <member name="P:DaLion.Overhaul.Modules.Combat.CombatConfig.ChordSoundDuration">
@@ -2343,6 +2343,22 @@
         <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.FreezeAnimationUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
             <inheritdoc />
         </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.HoldingGemstoneUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.HoldingGemstoneUpdateTickedEvent"/> class.</summary>
+            <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
+        </member>
+        <member name="P:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.HoldingGemstoneUpdateTickedEvent.Gemstone">
+            <summary>Gets or sets the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Chord"/> to be played.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.HoldingGemstoneUpdateTickedEvent.OnEnabled">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.HoldingGemstoneUpdateTickedEvent.OnDisabled">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.HoldingGemstoneUpdateTickedEvent.OnUpdateTickedImpl(System.Object,StardewModdingAPI.Events.UpdateTickedEventArgs)">
+            <inheritdoc />
+        </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.PoisonAnimationUpdateTickedEvent.#ctor(DaLion.Shared.Events.EventManager)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Combat.Events.GameLoop.UpdateTicked.PoisonAnimationUpdateTickedEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
@@ -3497,11 +3513,23 @@
         <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.Enchantments.TopazEnchantmentUnapplyToPatcher.TopazEnchantmentUnapplyPostfix(StardewValley.Item)">
             <summary>Reset cached stats.</summary>
         </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.FarmerCurrentToolIndexSetterPatcher.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Combat.Patchers.FarmerCurrentToolIndexSetterPatcher"/> class.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.FarmerCurrentToolIndexSetterPatcher.FarmerCurrentToolIndexPostfix(StardewValley.Farmer,System.Int32@)">
+            <summary>Trigger playback of gemstone vibration.</summary>
+        </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.FarmerMovePositionImplPatcher.#ctor">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Combat.Patchers.FarmerMovePositionImplPatcher"/> class.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.FarmerMovePositionImplPatcher.FarmerMovePosition(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Confusion effect.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.FarmerShiftToolbarPatcher.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Combat.Patchers.FarmerShiftToolbarPatcher"/> class.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.FarmerShiftToolbarPatcher.FarmerShiftToolbarPostfix(StardewValley.Farmer)">
+            <summary>Trigger playback of gemstone vibration.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Patchers.FarmerTakeDamagePatcher.#ctor">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Overhaul.Modules.Combat.Patchers.FarmerTakeDamagePatcher"/> class.</summary>
@@ -4876,7 +4904,7 @@
             <param name="location">The left location.</param>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Chord.PlayCues">
-            <summary>Starts playing sound cues.</summary>
+            <summary>Begins playback of the sine wave <see cref="T:StardewValley.ICue"/> for each note in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Chord"/>.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Chord.Update(StardewValley.Farmer)">
             <summary>Updates resonance effects.</summary>
@@ -4896,7 +4924,7 @@
             <summary>Evaluate the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s between <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.Chord.Notes"/> and the resulting harmonies.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Chord.StopCues">
-            <summary>Starts playing sound cues.</summary>
+            <summary>Ceases playback of the sine wave <see cref="T:StardewValley.ICue"/> for each note in the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Chord"/>.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Chord.FadeCues">
             <summary>Fades out the sound cue volumes.</summary>
@@ -4978,8 +5006,11 @@
         <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.Topaz">
             <summary>The Topaz gemstone.</summary>
         </member>
+        <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.FromObjectDict">
+            <summary>Look-up to obtain the corresponding <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> from a <see cref="T:StardewValley.Object"/> index.</summary>
+        </member>
         <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.FromRingDict">
-            <summary>Look-up to obtain the corresponding <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> from a ring index.</summary>
+            <summary>Look-up to obtain the corresponding <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> from a <see cref="T:StardewValley.Objects.Ring"/> index.</summary>
         </member>
         <member name="F:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.RubyScale">
             <summary>The canonical <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/> with <see cref="F:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.Ruby"/> as the root.</summary>
@@ -5008,6 +5039,9 @@
         </member>
         <member name="P:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.Harmonics">
             <summary>Gets the pitch adjustments for every note in the corresponding <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
+        </member>
+        <member name="P:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.Cue">
+            <summary>Gets the <see cref="T:StardewValley.ICue"/> of the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>'s vibration.</summary>
         </member>
         <member name="P:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.GlowFrequency">
             <summary>Gets the characteristic frequency with which the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> vibrates.</summary>
@@ -5057,6 +5091,17 @@
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.CompareTo(DaLion.Overhaul.Modules.Combat.Resonance.Gemstone)">
             <inheritdoc />
         </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.FromObject(System.Int32)">
+            <summary>Gets the gemstone associated with the specified object index.</summary>
+            <param name="objectIndex">The index of an object.</param>
+            <returns>The <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> which embedded in the <see cref="T:StardewValley.Object"/> with the specified <paramref name="objectIndex"/>.</returns>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.TryFromObject(System.Int32,DaLion.Overhaul.Modules.Combat.Resonance.Gemstone@)">
+            <summary>Try to get the gemstone associated with the specified object index.</summary>
+            <param name="objectIndex">The index of an object.</param>
+            <param name="gemstone">The matched gemstone, if any.</param>
+            <returns><see langword="true"/> if a matching gemstone exists, otherwise <see langword="false"/>.</returns>
+        </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.FromRing(System.Int32)">
             <summary>Gets the gemstone associated with the specified ring index.</summary>
             <param name="ringIndex">The index of a gemstone ring.</param>
@@ -5090,6 +5135,18 @@
             <summary>Adds the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>'s stat bonus to a buffer.</summary>
             <param name="buffer">Shared buffer of aggregated stat modifiers.</param>
             <param name="magnitude">A multiplier over the base stat modifiers.</param>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.PlayCue">
+            <summary>Begins playback of the sine wave <see cref="T:StardewValley.ICue"/> for this <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.StopCue">
+            <summary>Ceases playback of the sine wave <see cref="T:StardewValley.ICue"/> for this <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.FadeIn">
+            <summary>Fades in the sine wave <see cref="T:StardewValley.ICue"/> volume.</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.Modulate">
+            <summary>Modulates the sine wave <see cref="T:StardewValley.ICue"/> pitch.</summary>
         </member>
         <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone.RubyGemstone">
             <inheritdoc cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/>
@@ -5238,36 +5295,22 @@
         <member name="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Number">
             <summary>Gets the number of steps between <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.First"/> and <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Second"/> in a <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.DiatonicScale"/>.</summary>
         </member>
-        <member name="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Pitch">
-            <summary>Gets or sets the sin wave pitch.</summary>
-        </member>
-        <member name="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Cue">
-            <summary>Gets the sin wave <see cref="T:StardewValley.ICue"/>.</summary>
-        </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.op_Addition(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval,DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval)">
             <summary>Adds two <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>s.</summary>
             <param name="a">The first <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>.</param>
             <param name="b">The second <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/>.</param>
             <returns>The sum of <paramref name="a"/> and <paramref name="b"/>.</returns>
         </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Play">
-            <summary>Plays a sine wave at the corresponding <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Pitch"/>.</summary>
-        </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.PlayAfterDelay(System.Int32)">
-            <summary>Plays the <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Cue"/> at the corresponding <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Pitch"/>.</summary>
-            <param name="delay">The delay in milliseconds.</param>
-        </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Stop">
-            <summary>Stops playing the <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Cue"/>.</summary>
-        </member>
-        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.StepFade">
-            <summary>Fades out the <see cref="P:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Cue"/> one step.</summary>
-        </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Equals(DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval)">
             <inheritdoc />
         </member>
         <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.GetHashCode">
             <inheritdoc />
+        </member>
+        <member name="M:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval.Deconstruct(DaLion.Overhaul.Modules.Combat.Resonance.Gemstone@,DaLion.Overhaul.Modules.Combat.Resonance.Gemstone@)">
+            <summary>Deconstructs the instance.</summary>
+            <param name="first">The first <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the pair.</param>
+            <param name="second">The second <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.Gemstone"/> in the pair.</param>
         </member>
         <member name="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicIntervalExtensions">
             <summary>Extensions for the <see cref="T:DaLion.Overhaul.Modules.Combat.Resonance.HarmonicInterval"/> class.</summary>
@@ -8132,8 +8175,8 @@
                 in the latter, and elements 2 and 3 correspond to branches of element 1.
             </remarks>
         </member>
-        <member name="P:DaLion.Overhaul.Modules.Professions.ISkill.ExperienceByLevel">
-            <summary>Gets the experience required for each level.</summary>
+        <member name="P:DaLion.Overhaul.Modules.Professions.ISkill.ExperienceCurve">
+            <summary>Gets the experience required for each level up.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.ISkill.AddExperience(System.Int32)">
             <summary>Adds experience points for this skill.</summary>
@@ -9272,6 +9315,9 @@
         </member>
         <member name="P:DaLion.Overhaul.Modules.Professions.Profession.Skill">
             <inheritdoc />
+        </member>
+        <member name="P:DaLion.Overhaul.Modules.Professions.Profession.IsPrestiged">
+            <summary>Whether the local player has prestiged this <see cref="T:DaLion.Overhaul.Modules.Professions.Profession"/>.</summary>
         </member>
         <member name="M:DaLion.Overhaul.Modules.Professions.Profession.TryFromLocalizedName(System.String,System.Boolean,DaLion.Overhaul.Modules.Professions.Profession@)">
             <summary>Gets the <see cref="T:DaLion.Overhaul.Modules.Professions.Profession"/> with the specified localized name.</summary>
@@ -11880,6 +11926,12 @@
         <member name="M:DaLion.Overhaul.I18n.Agriculturist_Title_Female">
             <summary>Get a translation equivalent to "Agriculturist".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Agriculturist_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Cropwhisperer".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Agriculturist_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Cropwhisperer".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Agriculturist_Desc">
             <summary>Get a translation equivalent to "Crops grow 10% faster. Grow best-quality crops organically without fertilizer.".</summary>
         </member>
@@ -11891,6 +11943,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Artisan_Title_Female">
             <summary>Get a translation equivalent to "Artisan".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Artisan_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Mastercrafter".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Artisan_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Mastercrafter".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Artisan_Desc">
             <summary>Get a translation equivalent to "All artisan machines work 10% faster. Machine output quality can be as good as input ingredient quality.".</summary>
@@ -11916,6 +11974,12 @@
         <member name="M:DaLion.Overhaul.I18n.Breeder_Title_Female">
             <summary>Get a translation equivalent to "Breeder".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Breeder_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Progenitor".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Breeder_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Progenitor".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Breeder_Desc">
             <summary>Get a translation equivalent to "Incubation 2× faster and natural pregnancy 3× more likely. Increase value of animals at high friendship.".</summary>
         </member>
@@ -11927,6 +11991,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Producer_Title_Female">
             <summary>Get a translation equivalent to "Producer".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Producer_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Yieldmeister".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Producer_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Yieldmeister".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Producer_Desc">
             <summary>Get a translation equivalent to "Happy animals produce 2× as frequently. Produce worth 5% more for every full barn or coop.".</summary>
@@ -11952,6 +12022,12 @@
         <member name="M:DaLion.Overhaul.I18n.Ecologist_Title_Female">
             <summary>Get a translation equivalent to "Ecologist".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Ecologist_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Bioharmonist".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Ecologist_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Bioharmonist".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Ecologist_Desc">
             <summary>Get a translation equivalent to "Wild berries restore 50% more health and energy. Progressively identify forage of higher quality.".</summary>
         </member>
@@ -11963,6 +12039,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Scavenger_Title_Female">
             <summary>Get a translation equivalent to "Scavenger".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Scavenger_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Relicseeker".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Scavenger_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Relicseeker".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Scavenger_Desc">
             <summary>Get a translation equivalent to "Location of forageable items revealed. Occasionally detect buried treasure.".</summary>
@@ -11994,17 +12076,29 @@
         <member name="M:DaLion.Overhaul.I18n.Arborist_Title_Female">
             <summary>Get a translation equivalent to "Arborist".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Arborist_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Silviculturist".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Arborist_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Silviculturist".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Arborist_Desc">
-            <summary>Get a translation equivalent to "All trees grow faster. Normal trees can drop hardwood.".</summary>
+            <summary>Get a translation equivalent to "All trees grow faster and have a chance to drop hardwood.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Arborist_Desc_Prestiged">
-            <summary>Get a translation equivalent to "Normal trees drop twice as much hardwood.".</summary>
+            <summary>Get a translation equivalent to "All trees can drop twice as much hardwood.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Tapper_Title_Male">
             <summary>Get a translation equivalent to "Tapper".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Tapper_Title_Female">
             <summary>Get a translation equivalent to "Tapper".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Tapper_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Syrupwright".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Tapper_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Syrupwright".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Tapper_Desc">
             <summary>Get a translation equivalent to "Tappers are cheaper to craft. Tapped trees give syrup 25% faster.".</summary>
@@ -12030,11 +12124,17 @@
         <member name="M:DaLion.Overhaul.I18n.Spelunker_Title_Female">
             <summary>Get a translation equivalent to "Spelunker".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Spelunker_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Cavewarden".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Spelunker_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Cavewarden".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Spelunker_Desc">
             <summary>Get a translation equivalent to "Chance to find ladders and shafts increases every mine level. Speed increases every 5 levels.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Spelunker_Desc_Prestiged">
-            <summary>Get a translation equivalent to "Also restore some health and energy with every mine level.".</summary>
+            <summary>Get a translation equivalent to "Restore some health and energy upon reaching a new mine level.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Spelunker_Buff_Desc(System.Object,System.Object)">
             <summary>Get a translation equivalent to "Ladder chance +{{ladderChance}}. +{{speed}} Speed.".</summary>
@@ -12046,6 +12146,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Prospector_Title_Female">
             <summary>Get a translation equivalent to "Prospector".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Prospector_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Archaeologist".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Prospector_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Archaeologist".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Prospector_Desc">
             <summary>Get a translation equivalent to "Locations of ladders and mining nodes revealed. Occasionally detect rocks with valuable minerals.".</summary>
@@ -12077,6 +12183,12 @@
         <member name="M:DaLion.Overhaul.I18n.Demolitionist_Title_Female">
             <summary>Get a translation equivalent to "Demolitionist".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Demolitionist_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Pyrotechnician".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Demolitionist_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Pyrotechnician".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Demolitionist_Desc">
             <summary>Get a translation equivalent to "Bomb radius +1. Exploded rocks yield 20% more resources.".</summary>
         </member>
@@ -12091,6 +12203,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gemologist_Title_Female">
             <summary>Get a translation equivalent to "Gemologist".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Gemologist_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Crystallographer".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Gemologist_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Crystallographer".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gemologist_Desc">
             <summary>Get a translation equivalent to "Progressively identify minerals of higher quality. Crystalariums produce 25% faster.".</summary>
@@ -12116,6 +12234,12 @@
         <member name="M:DaLion.Overhaul.I18n.Angler_Title_Female">
             <summary>Get a translation equivalent to "Angler".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Angler_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Rodmancer".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Angler_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Rodmancer".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Angler_Desc">
             <summary>Get a translation equivalent to "Fish are 0.5% more valuable for every unique species caught. Fully-expending a tackle causes it's effects to linger on the fishing rod.".</summary>
         </member>
@@ -12127,6 +12251,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Aquarist_Title_Female">
             <summary>Get a translation equivalent to "Aquarist".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Aquarist_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Ichthyologist".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Aquarist_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Ichthyologist".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Aquarist_Desc">
             <summary>Get a translation equivalent to "Fish pond max capacity +2. Catching bar decreases slower for every unique fish species raised in a Fish Pond.".</summary>
@@ -12152,6 +12282,12 @@
         <member name="M:DaLion.Overhaul.I18n.Luremaster_Title_Female">
             <summary>Get a translation equivalent to "Luremaster".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Luremaster_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Baitweaver".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Luremaster_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Baitweaver".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Luremaster_Desc">
             <summary>Get a translation equivalent to "Crab pots with bait can trap 2x per day. Unlock new bait effects.".</summary>
         </member>
@@ -12163,6 +12299,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Conservationist_Title_Female">
             <summary>Get a translation equivalent to "Conservationist".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Conservationist_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Oceanographer".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Conservationist_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Oceanographer".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Conservationist_Desc">
             <summary>Get a translation equivalent to "Crab pots without bait can trap junk. Clean the Valley's waters earn village favor and merit tax deductions.".</summary>
@@ -12202,6 +12344,12 @@
         <member name="M:DaLion.Overhaul.I18n.Brute_Title_Female">
             <summary>Get a translation equivalent to "Amazon".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Brute_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Wildheart".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Brute_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Wildheart".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Brute_Desc">
             <summary>Get a translation equivalent to "Become enraged as you suffer damage, gradually increasing your own damage and attack speed. +25 HP.".</summary>
         </member>
@@ -12221,6 +12369,12 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Poacher_Title_Female">
             <summary>Get a translation equivalent to "Bushwhacker".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Poacher_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Saboteur".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Poacher_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Saboteur".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Poacher_Desc">
             <summary>Get a translation equivalent to "Crit. chance +50%. Chance to poach an item from enemies on each attack.".</summary>
@@ -12246,6 +12400,12 @@
         <member name="M:DaLion.Overhaul.I18n.Desperado_Title_Female">
             <summary>Get a translation equivalent to "Desperada".</summary>
         </member>
+        <member name="M:DaLion.Overhaul.I18n.Desperado_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Deadeye".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Desperado_Title_Prestiged_Female">
+            <summary>Get a translation equivalent to "Deadeye".</summary>
+        </member>
         <member name="M:DaLion.Overhaul.I18n.Desperado_Desc">
             <summary>Get a translation equivalent to "Consecutive shots against different enemies within 1 second deal 50% more damage. Can overcharge the slingshot to increase ammo power and cross-section.".</summary>
         </member>
@@ -12262,6 +12422,12 @@
             <summary>Get a translation equivalent to "Slimed Piper".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Piper_Title_Female">
+            <summary>Get a translation equivalent to "Slimed Siren".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Piper_Title_Prestiged_Male">
+            <summary>Get a translation equivalent to "Slime Conductor".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Piper_Title_Prestiged_Female">
             <summary>Get a translation equivalent to "Slime Enchantress".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Piper_Desc">
@@ -12272,6 +12438,9 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Piper_Buff">
             <summary>Get a translation equivalent to "Slimed".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Prestiged_Title">
+            <summary>Get a translation equivalent to "Expert ".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.TreasureHunt_Broadcast_Started(System.Object)">
             <summary>Get a translation equivalent to "{{player}} is hunting for treasure!".</summary>
@@ -12768,6 +12937,18 @@
         </member>
         <member name="M:DaLion.Overhaul.I18n.Resonance">
             <summary>Get a translation equivalent to "Resonance".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Emily_Exposition1">
+            <summary>Get a translation equivalent to "Have you ever noticed how gemstones can evoke different feelings? Like the calmness of a topaz or the vibrant energy of a ruby. Gemstones have this incredible way of resonating with our energies. It's like nature's palette of emotions.".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Emily_Exposition2">
+            <summary>Get a translation equivalent to "Every gemstone has a different vibration. When you connect with a gemstone, they resonate with the frequencies of our own internal emotions. If you listen closely, you can even hear them!".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Emily_Exposition3">
+            <summary>Get a translation equivalent to "How do you connect with a gemstone? By keeping it close to you, of course! You can wear it as a necklace or a ring and carry it around with you. It's like having a little piece of nature's harmony with you wherever you go!".</summary>
+        </member>
+        <member name="M:DaLion.Overhaul.I18n.Emily_Exposition4">
+            <summary>Get a translation equivalent to "Most jewelry can only house one gemstone. Clint says it's because most metals aren't strong enough to resist the vibrations of multiple gemstones. Maybe with some cosmic mojo".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gems_Garnet_Name">
             <summary>Get a translation equivalent to "Garnet".</summary>
@@ -13471,10 +13652,10 @@
         <member name="M:DaLion.Overhaul.I18n.Gmcm_EnableGemstoneResonance_Desc">
             <summary>Get a translation equivalent to "Allows gemstones to harmonize and resonate in close proximity of each other.".</summary>
         </member>
-        <member name="M:DaLion.Overhaul.I18n.Gmcm_PlayChord_Title">
-            <summary>Get a translation equivalent to "Play Resonating Chord".</summary>
+        <member name="M:DaLion.Overhaul.I18n.Gmcm_AudibleGemstones_Title">
+            <summary>Get a translation equivalent to "Audible Gemstones".</summary>
         </member>
-        <member name="M:DaLion.Overhaul.I18n.Gmcm_PlayChord_Desc">
+        <member name="M:DaLion.Overhaul.I18n.Gmcm_AudibleGemstones_Desc">
             <summary>Get a translation equivalent to "Hear the chord formed by the Infinity Band every time it is equipped.".</summary>
         </member>
         <member name="M:DaLion.Overhaul.I18n.Gmcm_ChordSoundDuration_Title">
