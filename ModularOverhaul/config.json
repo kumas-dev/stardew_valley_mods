@@ -170,7 +170,7 @@
     "CraftableGemstoneRings": true,
     "EnableInfinityBand": true,
     "EnableGemstoneResonance": true,
-    "PlayChord": true,
+    "AudibleGemstones": true,
     "ChordSoundDuration": 1000,
     "ColorfulResonances": true,
     "ResonanceLightsourceTexture": "Patterned",
@@ -399,12 +399,12 @@
     },
     "Scythe": {
       "RegularScytheRadius": 2,
-      "GoldScytheRadius": 4,
+      "GoldScytheRadius": 2,
       "ClearTreeSaplings": true,
-      "HarvestCrops": false,
+      "HarvestCrops": true,
       "HarvestFlowers": false,
       "HarvestForage": false,
-      "GoldScytheOnlyHarvest": false,
+      "GoldScytheOnlyHarvest": true,
       "AllowHaymakerEnchantment": true
     }
   },
