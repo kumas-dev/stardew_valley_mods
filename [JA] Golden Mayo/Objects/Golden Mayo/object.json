@@ -4,5 +4,13 @@
 	"Category": "ArtisanGoods", 
 	"Edibility": -300, 
 	"Price": 2500,
-	"HideFromShippingCollection": true
+	"HideFromShippingCollection": true,
+	"NameLocalization":
+	{
+		"ko": "황금 마요네즈"
+	},
+	"DescriptionLocalization":
+	{
+		"ko": "마이다스 왕의 샌드위치에 적합합니다."
+	},
 }

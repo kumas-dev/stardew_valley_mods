@@ -3,5 +3,13 @@
 	"Description": "This is an absolutely absurd amount of mayonnaise...", 
 	"Category": "ArtisanGoods", 
 	"Edibility": -300, 
-	"Price": 2000
+	"Price": 2000,
+	"NameLocalization":
+	{
+		"ko": "타조 마요네즈"
+	},
+	"DescriptionLocalization":
+	{
+		"ko": "이건 정말 터무니없는 양의 마요네즈..."
+	},
 }
