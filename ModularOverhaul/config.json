@@ -397,8 +397,8 @@
       "PreventSaltWaterRefill": true
     },
     "Scythe": {
-      "RegularScytheRadius": 2,
-      "GoldScytheRadius": 2,
+      "RegularScytheRadius": 1,
+      "GoldScytheRadius": 1,
       "ClearTreeSaplings": true,
       "HarvestCrops": true,
       "HarvestFlowers": false,
