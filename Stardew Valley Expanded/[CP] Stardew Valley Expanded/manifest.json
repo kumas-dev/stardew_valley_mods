@@ -1,0 +1,30 @@
+{
+  "Name": "Stardew Valley Expanded",
+  "Author": "FlashShifter",
+  "Version": "1.14.32",
+  "Description": "An expansive fanmade mod for ConcernedApe's Stardew Valley.",
+  "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+  "MinimumApiVersion": "3.0",
+  "UpdateKeys": [ "Nexus:???" ],
+  "ContentPackFor": {
+  "UniqueID": "Pathoschild.ContentPatcher",
+   },
+  "Dependencies": [
+   {
+      "UniqueID": "MoreFish",
+      "IsRequired": false,
+   },
+   {
+      "UniqueID": "Tanpoponoko.SeasonalOutfits",
+      "IsRequired": false,
+   },
+   {
+      "UniqueID": "Gweniaczek.Medieval_Craftables",
+      "IsRequired": false,
+   },
+   {
+      "UniqueID": "Rose.craftables",
+      "IsRequired": false,
+   },
+  ]
+}

@@ -1,0 +1,397 @@
+{
+
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_ClaireShop": {
+                    "Owners": [
+                        {
+                            "Name": "Claire",
+                            "Portrait": "{{InternalAssetKey: assets/CharacterFiles/Shops/Joja/Claire_Vendor.png}}",
+                            "Dialogues": [
+                                {
+                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                "Dialogue": "{{i18n:ShopsDialogue.Claire}}",
+                                },
+                            ]
+                        }
+                    ],
+
+                    "Items": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Auto-Petter",
+                            "ItemId": "(BC)272",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 50000,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Joja_Cola",
+                            "ItemId": "167",
+                            "Price": 75,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_J._Cola_Light",
+                            "ItemId": "1609",
+                            "Price": 600,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Wheat_Flour",
+                            "ItemId": "246",
+                            "Price": 90,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Oil",
+                            "ItemId": "247",
+                            "Price": 180,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Rice",
+                            "ItemId": "423",
+                            "Price": 180,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Vinegar",
+                            "ItemId": "419",
+                            "Price": 180,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Sugar",
+                            "ItemId": "245",
+                            "Price": 110,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Grass_Starter",
+                            "ItemId": "297",
+                            "Price": 100,
+                        }, 
+
+                        //Spring Items
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Parsnip_Seeds",
+                            "ItemId": "472",
+                            "Condition": "SEASON Spring, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 18,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Potato_Seeds",
+                            "ItemId": "475",
+                            "Condition": "SEASON Spring, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 45,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Cauliflower_Seeds",
+                            "ItemId": "474",
+                            "Condition": "SEASON Spring, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 70,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Tulip_Bulb",
+                            "ItemId": "427",
+                            "Condition": "SEASON Spring, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 18,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Jazz_Seeds",
+                            "ItemId": "429",
+                            "Condition": "SEASON Spring, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 27,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Kale_Seeds",
+                            "ItemId": "477",
+                            "Condition": "SEASON Spring, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 64,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Bean_Starter",
+                            "ItemId": "473",
+                            "Condition": "SEASON Spring, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 50,
+                        }, 
+
+                        //Summer
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Melon_Seeds",
+                            "ItemId": "479",
+                            "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 70,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Tomato_Seeds",
+                            "ItemId": "480",
+                            "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 43,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Blueberry_Seeds",
+                            "ItemId": "481",
+                            "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 72,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Pepper_Seeds",
+                            "ItemId": "482",
+                            "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 35,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Wheat_Seeds",
+                            "ItemId": "483",
+                            "Condition": "SEASON Summer Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 8,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Radish_Seeds",
+                            "ItemId": "484",
+                            "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 35,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Corn_Seeds",
+                            "ItemId": "487",
+                            "Condition": "SEASON Summer Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 135,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Hops_Starter",
+                            "ItemId": "302",
+                            "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 90,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Spangle_Seeds",
+                            "ItemId": "455",
+                            "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 44,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Sunflower_Seeds",
+                            "ItemId": "431",
+                            "Condition": "SEASON Summer Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 180,
+                        }, 
+
+                        //Fall Seeds
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Pumpkin_Seeds",
+                            "ItemId": "490",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 88,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Eggplant_Seeds",
+                            "ItemId": "488",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 17,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Bok_Choy",
+                            "ItemId": "491",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 43,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Amaranth_Seeds",
+                            "ItemId": "299",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 64,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Yam_Seeds",
+                            "ItemId": "492",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 55,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Cranberry_Seeds",
+                            "ItemId": "493",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 220,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Fairy_Seeds",
+                            "ItemId": "425",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 180,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Grape_Starter",
+                            "ItemId": "301",
+                            "Condition": "SEASON Fall, !PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 55,
+                        }, 
+
+
+                        //Year-round Seeds - Player completed joja warehouse
+                         //Spring Items
+                         {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Parsnip_Seeds",
+                            "ItemId": "472",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 18,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Potato_Seeds",
+                            "ItemId": "475",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 45,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Cauliflower_Seeds",
+                            "ItemId": "474",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 70,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Tulip_Bulb",
+                            "ItemId": "427",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 18,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Jazz_Seeds",
+                            "ItemId": "429",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 27,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Kale_Seeds",
+                            "ItemId": "477",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 64,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Bean_Starter",
+                            "ItemId": "473",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 50,
+                        }, 
+
+                        //Summer
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Melon_Seeds",
+                            "ItemId": "479",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 70,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Tomato_Seeds",
+                            "ItemId": "480",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 43,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Blueberry_Seeds",
+                            "ItemId": "481",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 72,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Pepper_Seeds",
+                            "ItemId": "482",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 35,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Wheat_Seeds",
+                            "ItemId": "483",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 8,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Radish_Seeds",
+                            "ItemId": "484",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 35,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Corn_Seeds",
+                            "ItemId": "487",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 135,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Hops_Starter",
+                            "ItemId": "302",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 53,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Poppy_Seeds",
+                            "ItemId": "453",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 90,
+                        }, 
+
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Spangle_Seeds",
+                            "ItemId": "455",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 44,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Sunflower_Seeds",
+                            "ItemId": "431",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 180,
+                        }, 
+
+                        //Fall Seeds
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Pumpkin_Seeds",
+                            "ItemId": "490",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 88,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Eggplant_Seeds",
+                            "ItemId": "488",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 17,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Bok_Choy",
+                            "ItemId": "491",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 43,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Amaranth_Seeds",
+                            "ItemId": "299",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 64,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Yam_Seeds",
+                            "ItemId": "492",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 55,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Cranberry_Seeds",
+                            "ItemId": "493",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 220,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Fairy_Seeds",
+                            "ItemId": "425",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 180,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Grape_Starter",
+                            "ItemId": "301",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 55,
+                        }, 
+
+                        
+                    ]
+                }
+            }
+        }
+    ]
+}

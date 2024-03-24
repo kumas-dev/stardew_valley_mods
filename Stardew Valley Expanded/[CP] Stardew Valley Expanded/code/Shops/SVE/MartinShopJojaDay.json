@@ -1,0 +1,213 @@
+{
+
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When":{
+                "DayEvent": "JojaDay",
+
+            },
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_JojaDay_MartinShop": {
+                    "Owners": [
+                        {
+                            "Name": "Martin",
+                            "Portrait": "{{InternalAssetKey: assets/CharacterFiles/Shops/Joja/Martin_Vendor.png}}",
+                            "Dialogues": [
+                                {
+                                "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Default",
+                                "Dialogue": "{{i18n:ShopsDialogue.MartinJoja}}",
+                                },
+                            ]
+                        }
+                    ],
+
+                    "Items": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Auto-Petter",
+                            "ItemId": "(BC)272",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261",
+                            "Price": 40000,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Joja_Cola",
+                            "ItemId": "167",
+                            "Price": 60,
+                        }, 
+                        //J. Cola Light for 500 in STF? What is this? 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Wheat_Flour",
+                            "ItemId": "246",
+                            "Price": 70,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Oil",
+                            "ItemId": "247",
+                            "Price": 150,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Rice",
+                            "ItemId": "423",
+                            "Price": 150,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Vinegar",
+                            "ItemId": "419",
+                            "Price": 150,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Sugar",
+                            "ItemId": "245",
+                            "Price": 90,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Grass_Starter",
+                            "ItemId": "297",
+                            "Price": 80,
+                        }, 
+  
+                         //Spring Items
+                         {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Parsnip_Seeds",
+                            "ItemId": "472",
+                            "Price": 15,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Potato_Seeds",
+                            "ItemId": "475",
+                            "Price": 36,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Cauliflower_Seeds",
+                            "ItemId": "474",
+                            "Price": 56,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Tulip_Bulb",
+                            "ItemId": "427",
+                            "Price": 15,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Jazz_Seeds",
+                            "ItemId": "429",
+                            "Price": 22,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Kale_Seeds",
+                            "ItemId": "477",
+                            "Price": 52,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Bean_Starter",
+                            "ItemId": "473",
+                            "Price": 40,
+                        }, 
+
+                        //Summer
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Melon_Seeds",
+                            "ItemId": "479",
+                            "Price": 56,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Tomato_Seeds",
+                            "ItemId": "480",
+                            "Price": 35,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Blueberry_Seeds",
+                            "ItemId": "481",
+                            "Price": 58,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Pepper_Seeds",
+                            "ItemId": "482",
+                            "Price": 28,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Wheat_Seeds",
+                            "ItemId": "483",
+                            "Price": 7,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Radish_Seeds",
+                            "ItemId": "484",
+
+                            "Price": 28,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Corn_Seeds",
+                            "ItemId": "487",
+                            "Price": 108,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Hops_Starter",
+                            "ItemId": "302",
+                            "Price": 43,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Poppy_Seeds",
+                            "ItemId": "376",
+                            "Price": 72,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Spangle_Seeds",
+                            "ItemId": "455",
+                            "Price": 35,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Sunflower_Seeds",
+                            "ItemId": "431",
+                            "Price": 144,
+                        }, 
+
+                        //Fall Seeds
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Pumpkin_Seeds",
+                            "ItemId": "490",
+                            "Price": 70,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Eggplant_Seeds",
+                            "ItemId": "488",
+                            "Price": 14,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Bok_Choy",
+                            "ItemId": "491",
+                            "Price": 35,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Amaranth_Seeds",
+                            "ItemId": "299",
+                            "Price": 51,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Yam_Seeds",
+                            "ItemId": "492",
+                            "Price": 44,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Cranberry_Seeds",
+                            "ItemId": "493",
+                            "Price": 176,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Fairy_Seeds",
+                            "ItemId": "425",
+                            "Price": 144,
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Grape_Starter",
+                            "ItemId": "301",
+                            "Price": 44,
+                        }, 
+
+                        
+                    ]
+                }
+            }
+        }
+    ]
+}
