@@ -574,7 +574,7 @@
       "Action": "EditData",
       "Target": "data/events/farm",
       "When": {
-        "HasFlag": "jojaMember, ccMovieTheaterJoja",
+        "HasFlag": "ccMovieTheaterJoja",
       },
       "Entries": {
         "6663406/H/f MorrisTod 1250/t 600 1100": "continue/-500 -500/farmer -200 -200 0 MorrisTod -30 -30 0/skippable/pause 1500/speak MorrisTod \"{{i18n:Morris.Townhouse1.01}}\"/pause 500/end"

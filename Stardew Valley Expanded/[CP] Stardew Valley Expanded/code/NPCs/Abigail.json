@@ -67,7 +67,6 @@
             "Target": "characters/schedules/Abigail",
             "Entries": {
                 "20": "800 SeedShop 35 5 2/1000 SeedShop 9 5 0/1230 SebastianRoom 3 10 0/2100 SeedShop 1 9 3 abigail_sleep",
-                "marriage_Fri": "800 SeedShop 36 9 0 \"Strings\\schedules\\Abigail:marriage_Fri.000\"/1100 Mountain 49 31 2 abigail_flute/1500 Saloon 42 17 2 abigail_sit_down \"Strings\\schedules\\Abigail:marriage_Fri.001\"/2030 BusStop -1 23 3",
                 "6": "900 SeedShop 39 5 0/1030 SeedShop 2 20 3/1200 Mountain 49 31 2 abigail_flute/2000 SeedShop 1 9 3 abigail_sleep",
             },
         },
@@ -75,7 +74,7 @@
             "Action": "EditData",
             "Target": "characters/schedules/Abigail",
             "Entries": {
-                "marriage_{{Season}}_20": "1100 SebastianRoom 3 10 0/2100 BusStop -1 23 3",
+                "marriage_{{Season}}_20": "1100 SebastianRoom 3 10 0/2100 Bed",
             },
         },
         { //ABIGAIL DIALOGUE

@@ -21,7 +21,7 @@
           "CanBeRomanced": false,
           "LoveInterest": "",
           "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
+          "SocialTab": "HiddenUntilMet",
           "SpouseAdopts": false,
           "SpouseWantsChildren": false,
           "SopuseGetsJealous": false,

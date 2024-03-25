@@ -62,7 +62,7 @@
         "married_Victor": "{{i18n:Sophia.MarriedVictor}}",
         "divorced_Victor": "{{i18n:Sophia.DivorcedVictor}}",
         "structureBuilt_Stable": "{{i18n:Sophia.BuiltStable}}",
-        "dating_Sophia_memory_twoweeks": "{{i18n:Sophia.DatingTwoWeeks}}",
+        "dating_Sophia_memory_twoweeks": "{{i18n:Sophia.datingSophiatwoweeks}}",
         "dating_Sophia_memory_oneyear": "{{i18n:Sophia.DatingOneYear}}",
         "movieTheater_memory_oneweek": "{{i18n:Sophia.TheaterOneWeek}}",
         "DesertFestival_Sophia": "{{i18n:DesertFestival_Sophia}}",
