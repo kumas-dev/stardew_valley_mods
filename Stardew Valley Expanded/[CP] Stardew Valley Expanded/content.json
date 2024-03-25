@@ -1236,7 +1236,7 @@
     // INCLUDES
     {
       "Action": "Include",
-      "FromFile": "code/Items/BigCraftables.json, code/Items/Objects.json, code/Items/Weapons.json, code/Items/Crops.json, code/Items/CookingRecipes.json, code/Items/UniversalGiftTaste.json"
+      "FromFile": "code/Items/BigCraftables.json, code/Items/Objects.json, code/Items/Weapons.json, code/Items/Crops.json, code/Items/CookingRecipes.json, code/Items/UniversalGiftTaste.json, code/Items/Furniture.json"
     },
     {
       "Action": "Include",
@@ -1244,7 +1244,7 @@
     },
     {
       "Action": "Include",
-      "FromFile": "code/Shops/Vanilla/Joja.json, code/Shops/Vanilla/Willy.json, code/Shops/vanilla/Gus.json, code/Shops/vanilla/Krobus.json, code/Shops/vanilla/Marlon.json, code/Shops/vanilla/hospital.json, code/Shops/vanilla/casino.json, code/Shops/SVE/AuroraLedger.json, code/Shops/SVE/SophiaLedger.json, code/Shops/SVE/AlesiaVendor.json, code/Shops/SVE/IsaacVendor.json, code/Shops/SVE/CamillaVendor.json, code/Shops/SVE/HighlandsDwarfShop.json, code/Shops/SVE/AdventurerLedger.json, code/Shops/SVE/BearVendor.json, code/Shops/SVE/BlueJunimoVendor.json, code/Shops/SVE/GreyJunimoVendor.json, code/Shops/SVE/RedJunimoVendor.json, code/Shops/SVE/YellowJunimoVendor.json, code/Shops/SVE/OrangeJunimoVendor.json, code/Shops/SVE/PurpleJunimoVendor.json, code/Shops/SVE/BrooklynVendor.json, code/Shops/SVE/ZoeyVendor.json, code/Shops/SVE/ChloeVendor1.json, code/Shops/SVE/ChloeVendor2.json, code/Shops/SVE/ChloeVendor3.json, code/Shops/SVE/ChloeVendor4.json, code/Shops/SVE/JaceVendor.json, code/Shops/SVE/AxelVendor1.json, code/Shops/SVE/AxelVendor2.json, code/Shops/SVE/LewisLedger.json, code/Shops/SVE/MorrisLedger.json ",
+      "FromFile": "code/Shops/vanilla/Suki.json, code/Shops/vanilla/Joja.json, code/Shops/vanilla/Willy.json, code/Shops/vanilla/Gus.json, code/Shops/vanilla/Krobus.json, code/Shops/vanilla/Marlon.json, code/Shops/vanilla/hospital.json, code/Shops/vanilla/casino.json, code/Shops/SVE/AuroraLedger.json, code/Shops/SVE/SophiaLedger.json, code/Shops/SVE/AlesiaVendor.json, code/Shops/SVE/IsaacVendor.json, code/Shops/SVE/CamillaVendor.json, code/Shops/SVE/HighlandsDwarfShop.json, code/Shops/SVE/AdventurerLedger.json, code/Shops/SVE/BearVendor.json, code/Shops/SVE/BlueJunimoVendor.json, code/Shops/SVE/GreyJunimoVendor.json, code/Shops/SVE/RedJunimoVendor.json, code/Shops/SVE/YellowJunimoVendor.json, code/Shops/SVE/OrangeJunimoVendor.json, code/Shops/SVE/PurpleJunimoVendor.json, code/Shops/SVE/BrooklynVendor.json, code/Shops/SVE/ZoeyVendor.json, code/Shops/SVE/ChloeVendor1.json, code/Shops/SVE/ChloeVendor2.json, code/Shops/SVE/ChloeVendor3.json, code/Shops/SVE/ChloeVendor4.json, code/Shops/SVE/JaceVendor.json, code/Shops/SVE/AxelVendor1.json, code/Shops/SVE/AxelVendor2.json, code/Shops/SVE/LewisLedger.json, code/Shops/SVE/MorrisLedger.json ",
     },
     {
       "Action": "Include",

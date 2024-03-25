@@ -58,7 +58,7 @@
         "Rainy_Day_2": "{{i18n:Lance.MarriageDialogue.048}}",
         "Rainy_Day_3": "{{i18n:Lance.MarriageDialogue.049}}",
         //NIGHT DIALOGUE
-        "indoor_Night_Lance": "{{i18n:Lance.MarriageDialogue.050}}",
+        "Indoor_Night_Lance": "{{i18n:Lance.MarriageDialogue.050}}",
         "Indoor_Night_0": "{{i18n:Lance.MarriageDialogue.051}}",
         "Indoor_Night_1": "{{i18n:Lance.MarriageDialogue.052}}",
         "Indoor_Night_2": "{{i18n:Lance.MarriageDialogue.053}}",

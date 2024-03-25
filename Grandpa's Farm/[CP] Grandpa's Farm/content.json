@@ -128,20 +128,6 @@
       "FromFile": "assets/Maps/GrandpasFarm.tbin",
     },
     //Configurations
-    { //Sandbox Layout
-      "Action": "EditMap",
-      "Target": "Maps/Farm,Maps",
-      "FromFile": "assets/Maps/GrandpasFarm_SandboxLayout.tbin",
-      "When": {
-        "SandboxLayout": "true"
-      },
-      "ToArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 140,
-        "Height": 85
-      }
-    },
     { //Remove Static Fences
       "Action": "EditMap",
       "Target": "Maps/Farm,Maps",
@@ -238,6 +224,20 @@
         "FarmType": "Standard",
         "HeavyDebris": "true",
         "RemoveFences": "true",
+      }
+    },
+	{ //Sandbox Layout
+      "Action": "EditMap",
+      "Target": "Maps/Farm,Maps",
+      "FromFile": "assets/Maps/GrandpasFarm_SandboxLayout.tbin",
+      "When": {
+        "SandboxLayout": "true"
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 140,
+        "Height": 85
       }
     },
     //Load greenhouse

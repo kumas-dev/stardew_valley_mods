@@ -316,7 +316,7 @@
       "Entries": {
         "Mon": "600 Custom_JenkinsHouse 19 5 1 Olivia_Sleep/610 Custom_JenkinsHouse 5 8 0/700 Custom_JenkinsHouse 34 37 0 Olivia_Wash/1320 Town 24 72 3/1600 Town 59 47 2/1900 Custom_JenkinsHouse 16 12 0 Olivia_Art/2200 Custom_JenkinsHouse 19 5 1 Olivia_Sleep",
         "Thu": "600 Custom_JenkinsHouse 19 5 1 Olivia_Sleep/610 Custom_JenkinsHouse 5 8 0/700 Custom_JenkinsHouse 34 37 0 Olivia_Wash/1030 Custom_JenkinsHouse 16 12 0 Olivia_Art/1310 Town 24 72 3/1600 Town 59 47 2/1900 Custom_JenkinsHouse 16 12 0 Olivia_Art/2200 Custom_JenkinsHouse 19 5 1 Olivia_Sleep",
-        "marriage_Mon": "800 SeedShop 3 23 0 \"Strings\\schedules\\Olivia:marriage.001\"/1130 SeedShop 12 23 0 \"Strings\\schedules\\Olivia:marriage.001\"/1230 Town 24 72 3 \"Strings\\schedules\\Olivia:marriage.002\"/1600 Town 72 54 2 \"Strings\\schedules\\Olivia:marriage.003\"/2000 Bed"
+        "marriage_Mon": "800 SeedShop 3 23 0 \"Strings\\schedules\\Olivia:marriage.001\"/1130 SeedShop 12 23 0 \"Strings\\schedules\\Olivia:marriage.001\"/1230 Town 24 72 3 \"Strings\\schedules\\Olivia:marriage.002\"/1600 Town 72 54 2 \"Strings\\schedules\\Olivia:marriage.003\"/2000 bed"
       }
     },
     {

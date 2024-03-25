@@ -5,6 +5,9 @@
 
 			"Action": "EditData", 
 			"Target": "Data/PassiveFestivals",
+			"When": {
+				"HasSeenEvent": "191393",
+			},
 			"Entries": {
 				"FlashShifter.StardewValleyExpandedCP_CommunityDay": {
 					"DisplayName": "{{i18n:CommunityDay_Name}}",
@@ -372,7 +375,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"Marriage_Mon": "1100 CommunityCenter 2 5 2 shane_drink \"Strings\\schedules\\Shane:CommunityDay_Shane_Married\"/1840 CommunityCenter 11 12 2 \"Strings\\schedules\\Shane:CommunityDay_Shane_Married\"/1900 Bed",
+				"Marriage_Mon": "1100 CommunityCenter 2 5 2 shane_drink \"Strings\\schedules\\Shane:CommunityDay_Shane_Married\"/1840 CommunityCenter 11 12 2 \"Strings\\schedules\\Shane:CommunityDay_Shane_Married\"/1900 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -657,7 +660,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"Marriage_Mon": "1030 CommunityCenter 5 7 2 \"Strings\\schedules\\Harvey:CommunityDay_Harvey_Married\"/1820 Bed",
+				"Marriage_Mon": "1030 CommunityCenter 5 7 2 \"Strings\\schedules\\Harvey:CommunityDay_Harvey_Married\"/1820 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -821,7 +824,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 17 19 2 penny_read \"Strings\\schedules\\Penny:CommunityDay_Penny_Married\"/1840 Bed",
+				"marriage_Mon": "1030 CommunityCenter 17 19 2 penny_read \"Strings\\schedules\\Penny:CommunityDay_Penny_Married\"/1840 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -987,7 +990,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 9 19 2 Sophia_read \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1410 CommunityCenter 9 20 3 \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1430 CommunityCenter 9 19 2 Sophia_read \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1540 CommunityCenter 10 19 0 \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1620 CommunityCenter 9 19 2 Sophia_read \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1820 Bed",
+				"marriage_Mon": "1030 CommunityCenter 9 19 2 Sophia_read \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1410 CommunityCenter 9 20 3 \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1430 CommunityCenter 9 19 2 Sophia_read \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1540 CommunityCenter 10 19 0 \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1620 CommunityCenter 9 19 2 Sophia_read \"Strings\\schedules\\Sophia:CommunityDay_Sophia_Married\"/1820 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -1098,7 +1101,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 3 10 0 \"Strings\\schedules\\Maru:CommunityDay_Maru_Married\"/1820 Bed",
+				"marriage_Mon": "1030 CommunityCenter 3 10 0 \"Strings\\schedules\\Maru:CommunityDay_Maru_Married\"/1820 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -1317,7 +1320,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 37 13 3 \"Strings\\schedules\\Sebastian:CommunityDay_Sebastian_Married\"/1550 Bed",
+				"marriage_Mon": "1030 CommunityCenter 37 13 3 \"Strings\\schedules\\Sebastian:CommunityDay_Sebastian_Married\"/1550 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -1481,7 +1484,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 9 20 3 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1400 CommunityCenter 10 27 3 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1440 CommunityCenter 11 26 0 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1520 CommunityCenter 11 26 3 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1610 CommunityCenter 12 26 2 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1820 Bed",
+				"marriage_Mon": "1030 CommunityCenter 9 20 3 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1400 CommunityCenter 10 27 3 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1440 CommunityCenter 11 26 0 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1520 CommunityCenter 11 26 3 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1610 CommunityCenter 12 26 2 \"Strings\\schedules\\Haley:CommunityDay_Haley_Married\"/1820 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -1592,7 +1595,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 9 26 0 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1350 CommunityCenter 9 28 0 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1520 CommunityCenter 10 26 1 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1610 CommunityCenter 12 28 0 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1820 Bed",
+				"marriage_Mon": "1030 CommunityCenter 9 26 0 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1350 CommunityCenter 9 28 0 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1520 CommunityCenter 10 26 1 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1610 CommunityCenter 12 28 0 \"Strings\\schedules\\Emily:CommunityDay_Emily_Married\"/1820 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -1757,7 +1760,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 36 12 2 \"Strings\\schedules\\Alex:CommunityDay_Alex_Married\"/1810 CommunityCenter 34 10 0/1910 Bed",
+				"marriage_Mon": "1030 CommunityCenter 36 12 2 \"Strings\\schedules\\Alex:CommunityDay_Alex_Married\"/1810 CommunityCenter 34 10 0/1910 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -1977,7 +1980,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 27 19 2 Victor_Book2 \"Strings\\schedules\\Victor:CommunityDay_Victor_Married\"/1710 Bed",
+				"marriage_Mon": "1030 CommunityCenter 27 19 2 Victor_Book2 \"Strings\\schedules\\Victor:CommunityDay_Victor_Married\"/1710 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -2088,7 +2091,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1000 CommunityCenter 26 9 2 Olivia_Wine2/1310 CommunityCenter 26 9 3 \"Strings\\schedules\\Olivia:CommunityDay_Olivia_Married\"/1730 Bed",
+				"marriage_Mon": "1000 CommunityCenter 26 9 2 Olivia_Wine2/1310 CommunityCenter 26 9 3 \"Strings\\schedules\\Olivia:CommunityDay_Olivia_Married\"/1730 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -2381,7 +2384,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 35 13 1 \"Strings\\schedules\\Sam:CommunityDay_Sam_Married\"/1730 Bed",
+				"marriage_Mon": "1030 CommunityCenter 35 13 1 \"Strings\\schedules\\Sam:CommunityDay_Sam_Married\"/1730 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -2491,7 +2494,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 36 14 0 \"Strings\\schedules\\Abigail:CommunityDay_Abigail_Married\"/1730 Bed",
+				"marriage_Mon": "1030 CommunityCenter 36 14 0 \"Strings\\schedules\\Abigail:CommunityDay_Abigail_Married\"/1730 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -2710,7 +2713,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 24 17 2 elliott_read \"Strings\\schedules\\Elliott:CommunityDay_Elliott_Married\"/1600 CommunityCenter 23 18 3 \"Strings\\schedules\\Elliott:CommunityDay_Elliott_Married\"/1650 CommunityCenter 24 17 2 elliott_read \"Strings\\schedules\\Elliott:CommunityDay_Elliott_Married\"/1900 Bed",
+				"marriage_Mon": "1030 CommunityCenter 24 17 2 elliott_read \"Strings\\schedules\\Elliott:CommunityDay_Elliott_Married\"/1600 CommunityCenter 23 18 3 \"Strings\\schedules\\Elliott:CommunityDay_Elliott_Married\"/1650 CommunityCenter 24 17 2 elliott_read \"Strings\\schedules\\Elliott:CommunityDay_Elliott_Married\"/1900 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED
@@ -2874,7 +2877,7 @@
 				"Day": "22"
 			},
 			"Entries": {
-				"marriage_Mon": "1030 CommunityCenter 36 17 1 \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1410 CommunityCenter 38 16 2 \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1430 CommunityCenter 41 14 2 leah_draw \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1700 CommunityCenter 41 16 2 \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1740 Bed",
+				"marriage_Mon": "1030 CommunityCenter 36 17 1 \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1410 CommunityCenter 38 16 2 \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1430 CommunityCenter 41 14 2 leah_draw \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1700 CommunityCenter 41 16 2 \"Strings\\schedules\\Leah:CommunityDay_Leah_Married\"/1740 bed",
 			},
 		},
 		{ //Spring Dialogue - MARRIED

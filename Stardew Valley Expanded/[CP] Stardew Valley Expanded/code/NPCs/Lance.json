@@ -264,7 +264,7 @@
         "Season": "Winter"
       },
       "Entries": {
-        "marriage_Wed": "800 Town 34 81 0 \"Strings\\schedules\\Lance:marriage.007\"/1800 Bed",
+        "marriage_Wed": "800 Town 34 81 0 \"Strings\\schedules\\Lance:marriage.007\"/1800 bed",
       }
     },
     {
@@ -515,9 +515,9 @@
         "Season": "Winter"
       },
       "Entries": {
-        "marriage_Mon": "1500 Beach 29 34 2 \"Strings\\schedules\\Lance:NightMarket.001\"/2310 Bed",
-        "marriage_Tue": "1500 Beach 30 34 2 \"Strings\\schedules\\Lance:NightMarket.002\"/2320 Bed",
-        "marriage_Wed": "1500 Beach 30 34 2 \"Strings\\schedules\\Lance:NightMarket.003\"/2300 Bed",
+        "marriage_Mon": "1500 Beach 29 34 2 \"Strings\\schedules\\Lance:NightMarket.001\"/2310 bed",
+        "marriage_Tue": "1500 Beach 30 34 2 \"Strings\\schedules\\Lance:NightMarket.002\"/2320 bed",
+        "marriage_Wed": "1500 Beach 30 34 2 \"Strings\\schedules\\Lance:NightMarket.003\"/2300 bed",
       }
     },
     /*{
@@ -586,7 +586,7 @@
         "Day": "4"
       },
       "Entries": {
-        "LanceInBed": "{{i18n:LanceinBed1}}"
+        "LanceInbed": "{{i18n:LanceinBed1}}"
       }
     },
     { //Day 11 patch
@@ -596,7 +596,7 @@
         "Day": "11"
       },
       "Entries": {
-        "LanceInBed": "{{i18n:LanceinBed2}}"
+        "LanceInbed": "{{i18n:LanceinBed2}}"
       }
     },
     { //Day 18 patch
@@ -606,7 +606,7 @@
         "Day": "18"
       },
       "Entries": {
-        "LanceInBed": "{{i18n:LanceinBed3}}"
+        "LanceInbed": "{{i18n:LanceinBed3}}"
       }
     },
     { //Day 25 patch
@@ -616,7 +616,7 @@
         "Day": "25"
       },
       "Entries": {
-        "LanceInBed": "{{i18n:LanceinBed4}}"
+        "LanceInbed": "{{i18n:LanceinBed4}}"
       }
     },
     {

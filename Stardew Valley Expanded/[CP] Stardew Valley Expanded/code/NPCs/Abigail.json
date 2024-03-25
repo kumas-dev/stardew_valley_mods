@@ -74,7 +74,7 @@
             "Action": "EditData",
             "Target": "characters/schedules/Abigail",
             "Entries": {
-                "marriage_{{Season}}_20": "1100 SebastianRoom 3 10 0/2100 Bed",
+                "marriage_{{Season}}_20": "1100 SebastianRoom 3 10 0/2100 bed",
             },
         },
         { //ABIGAIL DIALOGUE

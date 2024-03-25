@@ -769,7 +769,7 @@
         "Spouse": "Victor"
       },
       "Entries": {
-        "Sat": "1000 SebastianRoom 5 9 3/2100 Bed",
+        "Sat": "1000 SebastianRoom 5 9 3/2100 bed",
       }
     },
     {
@@ -797,7 +797,7 @@
         "fall_1": "600 Custom_JenkinsHouse 31 5 1 Victor_Sleep/700 Custom_JenkinsHouse 6 8 0/900 Custom_JenkinsHouse 30 37 2/1000 Town 30 78 1/1400 Custom_JenkinsHouse 35 37 0/2000 Custom_JenkinsHouse 23 25 2 Victor_Book2/2200 Custom_JenkinsHouse 31 5 1 Victor_Sleep",
         "winter_1": "600 Custom_JenkinsHouse 31 5 1 Victor_Sleep/700 Custom_JenkinsHouse 6 8 0/900 Custom_JenkinsHouse 30 37 0/1020 Town 30 78 1/1430 Custom_JenkinsHouse 35 37 0/2000 Custom_JenkinsHouse 18 27 1 Victor_Book2/2210 Custom_JenkinsHouse 31 5 1 Victor_Sleep",
         "winter_24": "600 Custom_JenkinsHouse 31 5 1 Victor_Sleep/700 Custom_JenkinsHouse 6 8 0/900 Custom_JenkinsHouse 30 37 2/1010 Town 30 78 1/1500 Custom_JenkinsHouse 35 37 0/2000 Custom_JenkinsHouse 23 25 2 Victor_Book2/2230 Custom_JenkinsHouse 31 5 1 Victor_Sleep",
-        "marriage_Fri": "830 Custom_JenkinsHouse 31 37 1 \"Strings\\schedules\\Victor:marriage.004\"/1200 Town 75 54 2 \"Strings\\schedules\\Victor:marriage.005\"/1400 Town 25 29 0 \"Strings\\schedules\\Victor:marriage.006\"/1600 Saloon 40 18 2 \"Strings\\schedules\\Victor:marriage.007\"/2100 Bed"
+        "marriage_Fri": "830 Custom_JenkinsHouse 31 37 1 \"Strings\\schedules\\Victor:marriage.004\"/1200 Town 75 54 2 \"Strings\\schedules\\Victor:marriage.005\"/1400 Town 25 29 0 \"Strings\\schedules\\Victor:marriage.006\"/1600 Saloon 40 18 2 \"Strings\\schedules\\Victor:marriage.007\"/2100 bed"
       }
     },
     {
@@ -1393,13 +1393,13 @@
         "HasSeenEvent |contains=2000009": false,
       },
       "Entries": {
-        "marriage_Mon": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 Bed",
-        "marriage_Tue": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard1 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 Bed",
-        "marriage_Wed": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 Bed",
-        "marriage_Thu": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard1 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 Bed",
-        "marriage_Fri": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 Bed",
-        "marriage_Sat": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard1 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 Bed",
-        "marriage_Sun": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 Bed"
+        "marriage_Mon": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 bed",
+        "marriage_Tue": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard1 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 bed",
+        "marriage_Wed": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 bed",
+        "marriage_Thu": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard1 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 bed",
+        "marriage_Fri": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 bed",
+        "marriage_Sat": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard1 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 bed",
+        "marriage_Sun": "730 Custom_ShearwaterBridge 32 20 2 Victor_Clipboard2 \"Strings\\schedules\\Victor:ShearwaterBridgeRenovation.001\"/1700 bed"
       }
     },
    

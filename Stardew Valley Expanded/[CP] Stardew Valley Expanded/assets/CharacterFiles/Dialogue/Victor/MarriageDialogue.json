@@ -56,7 +56,7 @@
         "Rainy_Day_2": "{{i18n:Victor.MarriageDialogue.046}}",
         "Rainy_Day_3": "{{i18n:Victor.MarriageDialogue.047}}",
         //NIGHT DIALOGUE
-        "indoor_Night_Victor": "{{i18n:Victor.MarriageDialogue.048}}",
+        "Indoor_Night_Victor": "{{i18n:Victor.MarriageDialogue.048}}",
         "Indoor_Night_0": "{{i18n:Victor.MarriageDialogue.049}}",
         "Indoor_Night_1": "{{i18n:Victor.MarriageDialogue.050}}",
         "Indoor_Night_2": "{{i18n:Victor.MarriageDialogue.051}}",

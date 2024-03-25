@@ -71,7 +71,7 @@
                 "Day |contains=22": true
             },
             "Entries": {
-                "marriage_Mon": "830 Mountain 48 26 1 \"Strings\\schedules\\Sebastian:marriage_Mon.000\"/1300 ScienceHouse 6 20 0 \"Strings\\schedules\\Sebastian:marriage_Mon.001\"/1700 Bed",
+                "marriage_Mon": "830 Mountain 48 26 1 \"Strings\\schedules\\Sebastian:marriage_Mon.000\"/1300 ScienceHouse 6 20 0 \"Strings\\schedules\\Sebastian:marriage_Mon.001\"/1700 bed",
             },
         },
         { //SEBASTIAN SCHEDULE EDITS
@@ -92,7 +92,7 @@
                 "Spouse": "Sebastian"
             },
             "Entries": {
-                "Sat": "730 ScienceHouse 27 9 0/1200 SebastianRoom 6 12 0/1400 SebastianRoom 3 7 2/2100 Bed",
+                "Sat": "730 ScienceHouse 27 9 0/1200 SebastianRoom 6 12 0/1400 SebastianRoom 3 7 2/2100 bed",
             },
         },
         { //SEBASTIAN SCHEDULE DIALOGUE

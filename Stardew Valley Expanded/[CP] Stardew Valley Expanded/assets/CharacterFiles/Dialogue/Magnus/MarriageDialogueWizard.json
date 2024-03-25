@@ -57,7 +57,7 @@
         "Rainy_Day_2": "{{i18n:Magnus.MarriageDialogue.047}}",
         "Rainy_Day_3": "{{i18n:Magnus.MarriageDialogue.048}}",
         //NIGHT DIALOGUE
-        "indoor_Night_Wizard": "{{i18n:Magnus.MarriageDialogue.049}}",
+        "Indoor_Night_Wizard": "{{i18n:Magnus.MarriageDialogue.049}}",
         "Indoor_Night_0": "{{i18n:Magnus.MarriageDialogue.050}}",
         "Indoor_Night_1": "{{i18n:Magnus.MarriageDialogue.051}}",
         "Indoor_Night_2": "{{i18n:Magnus.MarriageDialogue.052}}",

@@ -455,7 +455,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)136",
@@ -600,16 +600,16 @@
                             "Condition": "LOCATION_Season Here Summer",
                         },
                         {
-                            "Id": "FlashShifter.StardewValleyExpandedCP_SeaJelly",
+                            "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "FishAreaID": "River",
-                            "ItemId": "(O)SeaJelly",
-                            "Chance": 0.05
+                            "ItemId": "(O)RiverJelly",
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_SeaJelly",
                             "FishAreaID": "Ocean",
                             "ItemId": "(O)SeaJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)129",
@@ -908,7 +908,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_SeaJelly",
                             "ItemId": "(O)SeaJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)128",
@@ -1031,7 +1031,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
@@ -1200,7 +1200,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
@@ -1354,7 +1354,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
@@ -1592,7 +1592,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)136",
@@ -1715,7 +1715,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_CaveJelly",
                             "ItemId": "(O)CaveJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)158",
@@ -1764,7 +1764,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)136",
@@ -1861,7 +1861,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
@@ -1996,7 +1996,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
@@ -2128,7 +2128,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
-                            "Chance": 0.05
+                            "Chance": 0.06
                         },
                     ],
                     "ArtifactSpots": [

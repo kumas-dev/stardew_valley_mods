@@ -591,11 +591,11 @@
         "DayEvent |contains=flower dance, dance of the moonlight jellies, egg festival, feast of the winter star, festival of ice, luau, stardew valley fair, spirit's eve": false
       },
       "Entries": {
-        "marriage_Mon": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.000\"/1900 Bed",
-        "marriage_Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.000\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 Bed",
-        "marriage_Wed": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.001\"/1900 Bed",
-        "marriage_Thu": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.002\"/1900 Bed",
-        "marriage_Sun": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.003\"/1900 Bed"
+        "marriage_Mon": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.000\"/1900 bed",
+        "marriage_Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.000\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 bed",
+        "marriage_Wed": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.001\"/1900 bed",
+        "marriage_Thu": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.002\"/1900 bed",
+        "marriage_Sun": "740 JojaMart 9 25 1 \"Strings\\schedules\\Claire:JojaMart.003\"/1900 bed"
       }
     },
     {
@@ -608,11 +608,11 @@
         "DayEvent |contains=flower dance, dance of the moonlight jellies, egg festival, feast of the winter star, festival of ice, luau, stardew valley fair, spirit's eve": false
       },
       "Entries": {
-        "marriage_Mon": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.000\"/2100 BusStop 22 8 0/2310 Bed",
-        "marriage_Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.000\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 Bed",
-        "marriage_Wed": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.001\"/2100 BusStop 22 8 0/2310 Bed",
-        "marriage_Thu": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.002\"/2100 BusStop 22 8 0/2310 Bed",
-        "marriage_Sun": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.003\"/2100 BusStop 22 8 0/2310 Bed",
+        "marriage_Mon": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.000\"/2100 BusStop 22 8 0/2310 bed",
+        "marriage_Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.000\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 bed",
+        "marriage_Wed": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.001\"/2100 BusStop 22 8 0/2310 bed",
+        "marriage_Thu": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.002\"/2100 BusStop 22 8 0/2310 bed",
+        "marriage_Sun": "640 Town 92 44 2/850 MovieTheater 7 5 2 Claire_Blink \"Strings\\schedules\\Claire:MovieTheater.003\"/2100 BusStop 22 8 0/2310 bed",
       }
     },
     {
@@ -625,7 +625,7 @@
         "HasSeenEvent |contains=4269703": true
       },
       "Entries": {
-        "marriage_Wed": "800 BusStop 22 8 0/850 Custom_DayEnd_WarpRoom 2 2 0/2030 BusStop 22 8 2/2050 Bed",
+        "marriage_Wed": "800 BusStop 22 8 0/850 Custom_DayEnd_WarpRoom 2 2 0/2030 BusStop 22 8 2/2050 bed",
       }
     },
     {
@@ -1247,7 +1247,7 @@
       },
       "Entries": {
         "Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.002\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 BusStop 22 8 0/1740 Custom_DayEnd_WarpRoom 2 2 0",
-        "marriage_Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.000\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 Bed",
+        "marriage_Tue": "1030 SeedShop 26 17 1 \"Strings\\schedules\\Claire:AerobicsClass.000\"/1300 SeedShop 23 18 2 Claire_Dance \"Strings\\schedules\\Claire:AerobicsClass.001\"/1600 bed",
       }
     },
     {
