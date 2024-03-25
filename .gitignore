@@ -7,20 +7,12 @@ SaveBackup/
 config/
 config.toml
 config.json
-ore_config.json
-!ModularOverhaul/config.json
-!\[CP\] Stardew Valley Expanded/config.json
-!ExcavationSkill/config.json
-!BinningSkill/config.json
-!LoveOfCooking/config.json
-!SocializingSkill/config.json
+!Stardew Valley Expanded/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
 \[FTM\] Stardew Valley Expanded/data
-Better Balance/CustomCrystalariumMod/data
 Grandpa's Farm/\[FTM\] Grandpa's Farm/data
-AnimalHusbandryMod/data
 
 # temporary
 _Temporary/
