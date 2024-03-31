@@ -1,0 +1,33 @@
+{
+    // Config settings
+    "config.option.prompt_speak.name": "주민과 대화하라는 메시지 표시",
+    "config.option.prompt_speak.description": "오늘 주민과 대화가 이루어지지 않은 경우 표시기를 표시합니다.",
+
+    "config.option.gift_preference.name": "선물 제안 기본 설정",
+    "config.option.gift_preference.description": "선물 제안에 원하는 가장 낮은 일치 수준입니다. 선물 제안은 수신자의 선물 선호도, 항목 품질 및 가장 저렴한 가격에 따라 정렬된 현재 인벤토리에 있는 항목에서 제공됩니다.",
+    "config.option.gift_preference.value.love": "사랑하는 선물만 표시",
+    "config.option.gift_preference.value.like": "좋아하는 선물 이상 표시",
+    "config.option.gift_preference.value.neutral": "중립 선물 및 그 이상 표시",
+    "config.option.gift_preference.value.none": "모든 제안 숨기기",
+
+    "config.option.gift_max_count.name": "표시할 최대 선물",
+    "config.option.gift_max_count.description": "순환할 선물 제안의 최대 개수입니다.",
+
+    "config.option.gift_display_time.name": "선물 표시 시간(ms)",
+    "config.option.gift_display_time.description": "각 추천 선물을 표시하는 시간(밀리초)입니다.",
+
+    "config.option.gift_generic_prompts.name": "일반 선물 프롬프트 표시",
+    "config.option.gift_generic_prompts.description": "주민이 선물을 받을 수 있지만 인벤토리에 주민의 취향과 일치하는 것이 없으면 일반 선물 표시기를 표시합니다.",
+
+    "config.option.ignore_maxed.name": "최대 우정 무시",
+    "config.option.ignore_maxed.description": "감소되지 않는 관계에 대한 제안 및 프롬프트를 숨깁니다.",
+
+    "config.option.spouse_prompts.name": "항상 배우자 프롬프트 표시",
+    "config.option.spouse_prompts.description": "배우자에 대한 선물 및 대화 프롬프트를 항상 표시하도록 다른 설정을 재정의합니다.",
+
+    "config.option.only_highest_quality.name": "최고 품질만 표시",
+    "config.option.only_highest_quality.description": "사용 가능한 최고 품질 버전의 항목만 표시합니다. 예를 들어 금색과 은색 품질 고추가 모두 있는 경우 금색 품질 고추만 제안됩니다.",
+
+    "config.option.enable_bubbles.name": "[!] 제안 풍선 활성화",
+    "config.option.enable_bubbles.description": "주민 위에 떠다니는 거품을 표시할 수 있습니다. 경고: 이 기능을 끄면 이 모드에서 활성화한 모든 떠다니는 거품(대화 프롬프트, 선물 제안 등)이 숨겨집니다."
+}

@@ -1,0 +1,31 @@
+{
+    // Config settings
+    "config.option.failed_harvest.name": "실패한 수확 방지",
+    "config.option.failed_harvest.description": "유효한 동물을 선택하지 않은 경우 실패한 착유/전단 애니메이션과 음향 효과를 방지합니다. 참고: Android에서 '탭하여 이동 및 자동 공격' 제어 방식을 사용하는 경우 이 기능을 비활성화합니다. .",
+    "config.option.animal_produce.name": "동물 생산 표시",
+    "config.option.animal_produce.description": "수확할 준비가 되면 동물 위에 농산물을 표시합니다.",
+    "config.option.hearts_animal.name": "농장 동물 하트 표시",
+    "config.option.hearts_animal.description": "아직 쓰다듬지 않은 농장 동물(소, 오리 등) 위에 하트를 표시합니다.",
+    "config.option.hearts_pet.name": "애완동물 하트 표시",
+    "config.option.hearts_pet.description": "아직 쓰다듬지 않은 애완동물(개, 고양이 등) 위에 하트를 표시합니다.",
+    "config.option.hearts_enabled.name": "[!] 하트 활성화",
+    "config.option.hearts_enabled.description": "동물 위에 하트를 표시할 수 있습니다. 경고: 이 기능을 끄면 이 모드로 활성화된 모든 떠다니는 하트(동물, 애완동물 등)가 숨겨집니다.",
+    "config.option.hearts_max_friendship.name": "최대 우정이 있는 하트 숨기기",
+    "config.option.hearts_max_friendship.description": "동물이나 애완동물과의 우정이 최대 수준일 때 하트를 숨깁니다. 경고: 친구를 쓰다듬지 않으면 하루가 끝날 때 우정이 떨어지기 때문에 주의하세요.!",
+
+    // Other messages
+    "notification.inventory_full": "인벤토리가 가득 참",
+
+    "action.out_of_range.milk": "젖 짜기",
+    "action.out_of_range.shear": "깎기",
+    "notification.out_of_range": "{{ranchActionPresent}} 범위를 벗어났습니다.",
+
+    "product.milk": "우유",
+    "product.wool": "양모",
+
+    "notification.util_action": "아기 {{Name}}이(가) {{Days}}일 안에 {{Product}}을(를) 생산할 것입니다.",
+
+    "action.unable.milk": "우유",
+    "action.unable.shear": "깎기",
+    "notification.unable": "{{Action}}에 대한 작업 없음"
+}

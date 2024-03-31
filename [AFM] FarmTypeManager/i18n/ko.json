@@ -1,0 +1,12 @@
+{
+  "Config.EnableConsoleCommands.Name": "콘솔 명령 활성화",
+  "Config.EnableConsoleCommands.Desc": "FTM의 콘솔 명령을 활성화합니다.\n이것은 Stardew Valley가 다시 시작될 때까지 적용되지 않습니다.",
+  "Config.EnableContentPacks.Name": "콘텐츠 팩 활성화",
+  "Config.EnableContentPacks.Desc": "모든 FTM 콘텐츠 팩을 활성화합니다.\n이 기능을 비활성화하면 FarmTypeManager/data에 있는 파일만 사용됩니다.",
+  "Config.EnableTraceLogMessages.Name": "추적 로그 메시지 활성화",
+  "Config.EnableTraceLogMessages.Desc": "SMAPI 로그 파일에서 FTM의 [TRACE] 메시지를 활성화합니다.\n이 옵션을 비활성화하면 로그 파일은 더 작아지지만 FTM에 대한 정보는 더 적게 제공됩니다.",
+  "Config.EnableEPUDebugMessages.Name": "EPU 디버그 메시지 활성화",
+  "Config.EnableEPUDebugMessages.Desc": "EPU(확장 전제 조건 유틸리티) 디버그 메시지를 활성화합니다.\n이는 전제 조건이 있는 모드를 생성할 때 도움이 될 수 있습니다.",
+  "Config.MonsterLimitPerLocation.Name": "위치당 몬스터 제한",
+  "Config.MonsterLimitPerLocation.Desc": "FTM이 단일 지도에서 동시에 허용하는 최대 몬스터 수입니다.\n낮은 숫자를 사용하면 게임의 프레임 속도가 향상될 수 있습니다. 50이 일반적으로 권장됩니다.\n무제한 몬스터를 허용하려면 NULL을 입력하세요."
+}
