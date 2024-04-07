@@ -16,7 +16,7 @@
 	"setting.theme-desc": "이 UI 테마는 더 나은 제작의 버튼에 사용됩니다. Better Crafting의 UI는 대부분 표준 게임 텍스처에서 가져온 것입니다.",
 
 	"theme.automatic": "자동",
-	"theme.default": "Default",
+	"theme.default": "기본",
 
 	"setting.gift-taste-style": "선물 취향 스타일",
 	"setting.gift-taste-style.heads": "머리",
@@ -266,6 +266,8 @@
 	"tooltip.quality-unsupported": "이 레시피는 품질 설정을 지원하지 않습니다.",
 
 	"ingredient.error": "잘못된 재료",
+
+	"error.locking": "일부 인벤토리에 액세스할 수 없습니다.",
 
 	// Bulk Crafting
 	"bulk.crafting": "대량 제작",
