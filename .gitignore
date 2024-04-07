@@ -8,7 +8,6 @@ config/
 config.toml
 config.json
 !Stardew Valley Expanded/**/config.json
-!Grandpa's Farm/**/config.json
 !Stardew Valley Balance Overhaul/**/config.json
 
 # cache
