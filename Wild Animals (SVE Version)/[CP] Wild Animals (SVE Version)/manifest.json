@@ -1,0 +1,26 @@
+{
+	"Name": "SmolHooman's Wild Animals (SVE Version)",
+	"Author": "SmolHooman",
+	"Version": "1.2.1",
+	"Description": "Spawns more wild animals in your game.",
+	"UniqueID": "SmolHooman.WildAnimalsSVE",
+	"UpdateKeys": [ "Nexus:9063" ],		
+	"MinimumApiVersion": "3.6.0",
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+   "Dependencies": [
+	   {
+		"UniqueID": "PeacefulEnd.CustomCompanions",
+		"IsRequired": true,
+	   },
+	   {
+		"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+		"IsRequired": true,
+	   }, 
+	   {
+		"UniqueID": "spacechase0.GenericModConfigMenu",
+		"IsRequired": false,
+	   },
+   ]
+}
