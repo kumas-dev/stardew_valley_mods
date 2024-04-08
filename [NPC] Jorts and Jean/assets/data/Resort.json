@@ -1,0 +1,125 @@
+{
+	"Changes": [
+	
+		//Removes Resort from NPC Exclusions
+		{
+			"LogName": "Jorts and Jean NPC exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+                "JortsCat": "ShopDialog WinterStar ItemDelivery MovieInvite",
+                "JeanCat": "ShopDialog WinterStar ItemDelivery MovieInvite",
+			},
+		},
+		
+	
+		//Adds Jorts/Jean group to GIMA
+		{
+			"Action": "EditData",
+			"LogName": "Cats GI group",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_groups",
+			"Entries": {
+				"HelperCats": "JortsCat, JeanCat"
+			}
+		},
+		
+		//Cats will still escort Pam home
+		{
+			"Action": "EditData",
+			"LogName": "Jorts GIRemainder",
+			"Target": "Characters/schedules/JortsCat",
+			"Entries": {
+				"GIRemainder": "1800 Town 51 71 1 JortsCat_cleaning/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap"
+			}
+		},
+		{
+			"Action": "EditData",
+			"LogName": "Jean GIRemainder",
+			"Target": "Characters/schedules/JeanCat",
+			"Entries": {
+				"GIRemainder": "1800 Town 52 71 3 JeanCat_cleaning/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap"
+			}
+		},
+		
+		//Jorts cannot be left unattended
+		{
+			"Action": "EditData",
+			"LogName": "Cats GI Exclusions",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_exclusions",
+			"Entries": {
+				"JortsCat": "neveralone",
+				"JeanCat": "neveralone",
+			}
+		},
+
+		//Cats can explore
+		{
+        "LogName": "Kitty GI Explorers",
+        "Action": "EditData",
+        "Target": "Mods/atravita_Ginger_Island_Adjustments_explorers", 
+        "Entries": {
+            "HelperCats": "JortsCat, JeanCat",
+			}
+		},
+		
+		//Cats resort dialogue
+		{
+        "LogName": "Jorts GI dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/JortsCat", 
+        "Entries": {
+				//vanilla
+            	"Resort_Entering": "{{Random: 모래가 바다처럼 위아래로 움직이고 있어!#$b$%조츠는 비틀거리며 얼굴을 모래해변에 파묻습니다. 아직 육지에 적응 하지 못한 거 같다. && 오 이런, 으아, 으아아!$h && 이제 즐길 시간이야! 아주 최고로 즐겁게 즐겨주겠어. |inputSeparator=&&}}",
+				"Resort_Leaving": "{{Random: 으아아, 또 위아래로 움직이고 있어! && 가서 진을 좀 눕혀놓고 올게, 배를 별로 좋아하지 않는거 같아. && 배를 타고 왔어, 농부 형아!$h^배를 타고 왔어, 농부 누나!$h |inputSeparator=&&}}",
+				"Resort_Shore": "{{Random: 사람은 항상 여기서 '내 집이 보인다!' 라고 했어!#$b#나 눈이 정말 좋다고 생각했는데, 전혀 안보이네.$4 && 이거 봐, @, 발자국을 남기고 있어! 탐정처럼 내 흔적을 따라 갈 수 있을거야! && 바닷물은 깨끗하지만 맛은 그렇게 좋지 않은 거 같아. |inputSeparator=&&}}",
+				"Resort_Chair": "{{Random: 이 의자에서는 햇볕이 너무 따뜻해...나, 그냥...잠깐 눈 좀 쉬게 해줄래... && 같이 앉을래, @? 내가 무릎 위에 앉으면 될 거 같은데!$h && 흠, 이 의자 나한테 딱 맞는 걸!$h |inputSeparator=&&}}",
+				"Resort_Bar": "{{Random: 정말 그거 마시려고, @? 피에르가 창문을 청소할 때 나는 냄새가 나는데.$4 && 우유 좀 마셔도 돼? 진이 조금은 괜찮다고 했어! && 난 누군가가 바의 반대편에 서 있을때가 제일 좋아! 그럼 모두가 행복한 표정을 짓거든! |inputSeparator=&&}}",
+				"Resort": "{{Random: 여기 우다다가 있다!$h && 이건 지저분해! 저것도 지저분해! 모든 게 지저분하네!$h && 모래가 너무 많아! 아무대나 화장실로 쓸 수 있어! && 너무 너무 신나서 모든 걸 얼굴에 문지르고 싶어.$h && 모래성 일은 미안해. 내가 장난치던 쪽에 있었어! |inputSeparator=&&}}",
+				//GIMA
+				"Resort_IslandNorth": "{{Random: 저기 봐봐, @, 원숭이들이야! 되게 큰게 널 생각나게 했어!$h && 여기 무릎에 앉힐 고양이가 필요하신 분?#$b#안돼, 안돼, 조츠. 넌 쉬어야 해!. && 새에에에에들아! 새들아, 내 친구가 되어 줘! 진이 너희를 잡아 먹지 못하게 도와줄게! |inputSeparator=&&}}", 
+				"Resort_Adventure": "{{Random: 오, 여기엔 뭐가 있을까? && 우리는 모험을 떠나는거야, @! && 어서, 진, 나도 냄새 맡고 싶어! |inputSeparator=&&}}", 
+				"Resort_Volcano": "{{Random: 와, 정말 크다. 만드는데 얼마나 걸렸을까? && 진의 교수 친구 한 사람이 이 곳에 드워프가 살지도 모른다고 했어!#$b#드워프는 새랑 비슷한 건가? && 나도 안을 들어가 보고 싶었는데 진이 바닥이 전부 용암이라고 했어. 난 그게 놀이턴 줄 알았거든?$4 |inputSeparator=&&}}", 
+				"Resort_Tent": "{{Random: 버섯 냄새가 나는 사람이 있나?$4 && 테이블 위에 멋진 장난감들 봐봐! 나눠달라고 하면 나눠줄까? && 진은 이 텐트를 사용하는 사람은 똑똑하다고 했어. 진 만큼은 아닐 거 같지만 뭐, 괜찮네. && Hello, boney friend!$h |inputSeparator=&&}}",
+				"Resort_Left": "{{Random: 멋진 모험이었어! 내일은 마을에서 또 다른 모험이 시작되겠지! && 열대 섬에서 막 돌아왔어, @. 오늘은 뭘 할꺼야? && 아직도 섬의 냄새가 온몸에 배여 있어. 자, 내 냄새를 맡아 봐! |inputSeparator=&&}}",
+				"Resort_Approach": "{{Random: 진이 오늘 휴가를 가도 된다고 해서 보트를 타러 왔어!$h && 오늘 탐험하러 갈거야, @! 너도 같이 갈래? && 진이 쉬는 날이라고 아무대나 앉아 있어도 좋다고 했어!#$b#음, 거의 어디든 말이야. 성게는 아직도 출입 금지야.  |inputSeparator=&&}}", 
+				
+			}
+		},		
+		
+		{
+        "LogName": "Jean GI dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/JeanCat", 
+        "Entries": {
+				//vanilla
+            	"Resort_Entering": "{{Random: 고양이도 멀미를 할 수 있다는 사실을 알고 계셨나요, @? 보통 스트레스로 인해 악화되는 경우만 그렇지만요.#$b#*한숨* 제가 어떻게 아는지 물어 볼 생각 하지마세요...$s && 오는 길에 흥미로운 물고기를 많이 봤어요. 어떤 물고기를 잡을 수 있을지 빨리 보고 싶네요.$h && 남쪽으로 오면서 바닷바람 냄새가 어떻게 바뀌어 가는지 흥미롭지 않나요?#$b#아, 인간의 코로는 알기 어렵겠네요.$h |inputSeparator=&&}}",
+				"Resort_Leaving": "{{Random: %진이 혼잣말로 중얼거리고 있습니다.#$b#잠깐 보트 타는 것 뿐이야. 긴장하지 말고 생선을 배에 채워두자. && 마을에서 다시 볼 수 있을까요? 너무 늦게까지 있지 마세요, @. |inputSeparator=&&}}",
+				"Resort_Shore": "{{Random: 물에 들어가는 걸 조심하고 있어요. 저랑 조츠의 소금까지 핥아 먹으면 탈수가 올 거 같아서요. && 흠...여기서 낚시를 해볼까?. && 주변 경치를 좀 둘러보셨나요, @? 가끔은 가만히 앉아서 자연의 예술을 감상하는 것도 중요해요.$h |inputSeparator=&&}}",
+				"Resort_Chair": "{{Random: 이건 제 의자에요. 이제 내 의자죠.$6 && %진은 편안해 보이지 않는 비뚤어진 자세로 자고 있다. && 찾으시는 고양이는 없습니다, 나중에 다시 시도 해 보세요.$6 |inputSeparator=&&}}",
+				"Resort_Bar": "{{Random: 술이라고요? 해변에 오면 해산물을 먹어야죠, 안그래요? && 신선한 파인애플을 조금 썰어주실래요, @?#$b#생강을 조금 갈아 넣으면 정말 맛있거든요.$h && 제발 카레는 주지 말아요. 제 혀는 고양이 혀에요.$s |inputSeparator=&&}}",
+				"Resort": "{{Random: 생각보다 훨씬 더 다양한 생물이 살고 있는 거 같네요.#$b#위험한 생물은 없길 바래요.$3 && 모래가 뜨겁다고요? 아뇨, 제 발가락 콩에 딱 맞는 온도에요.$h && 조츠에게 우다다를 맡길게요, 나중에 나무에 올라갈지도 모르지만.#$b#걱정 마세요, 저도 충분히 내려오게 할 수 있어요. |inputSeparator=&&}}",
+				//GIMA
+				"Resort_IslandNorth": "{{Random: 나무가 우거져 있어서 해안가가 조금 더 시원해요. 습도도 알맞고요. && 해안에서 조금만 멀어져도 변해가는 동식물들이 인상적이지 않나요. && 앵무새들은 꽤 똑똑해보여요. 하지만 그말은 앵무새를 잡기 어렵다는 뜻이 되기도 하죠. |inputSeparator=&&}}", 
+				"Resort_Adventure": "{{Random: 조츠, 너무 멀리 돌아다니지 마. 나중에 보트로 돌아 갈 시간은 있어야지...$s && 조츠, 조츠, 안 돼. 조츠, 그만해.$s && 조츠, 날 두고 가면 안 돼!$4 |inputSeparator=&&}}", 
+				"Resort_Volcano": "{{Random: 화산을 가까이서 볼 기회는 많지 않죠. 여기서도 화산의 열기가 느껴지네요. && 땀을 흘릴 수 있었다면 여기 서 있는 것 만으로도 익사 했을 거에요...$s && 계속 무슨 소리가 들려요. 저기 저 안에...뭐가 살고 있나요?$4 && 누군가 가까운 미래에 화산 폭발이 있을지 알아보기 위해 지질 활동을 확인 했겠죠?$3|inputSeparator=&&}}", 
+				"Resort_Tent": "{{Random: 여기서 공부하고 있는 학자가 있다고 들었어요. 저랑 얘기를 나눌 의향이 있는지 궁금하네요. && 생태학 연구도 중요하지만 교수님이 이 모든 걸 싣고 펀길 박물관에 전시할 예정이 아니었으면 좋겠네요. && 그 안에 있는 뼈들을 보니 멸종한게 정말 다행이라고 생각되네요.#$b#...정말로요.$4 |inputSeparator=&&}}",
+				"Resort_Fishing": "{{Random: 이 참치들 정말 맛있어 보이는데요... 곧 제가 가지게 될 거에요.$h && 여기, @, 이거 가져도 돼요. 먹으면 안 될 거 같아서. [837] && 아직 아무것도 잡지 못했지만 괜찮아요. 낚시는 인내의 문제니까요. && 아무것도 잡지 못해도 괜찮아요. 윌리가 게를 줄 때까지 슬픈 눈빛을 보내면 되거든요.$h |inputSeparator=&&}}",
+				"Resort_Left": "{{Random: 음, 아직 인간들이 깨어 있을때 한바퀴 돌 시간은 있는 거 같네요. 낮 시간을 낭비하는건 말이 안 돼죠. && 멋진 휴식이었어요.$h#$b#아름다운 섬이지만, 일하지 않을 수 있도록 스스로에게 허락 받는 거도 중요하죠. && 좋아, 조츠. 모래를 다 털어내자. |inputSeparator=&&}}",
+				"Resort_Approach": "{{Random: 오늘은 쉬는 날이라서 도움이 필요한 일이 있으면 내일 알려주세요.$h && 조츠는 일을 일로 여기지 않아서, 때로는 일 중독에 빠질까 걱정이 되요. 저는 그에게 적당한 휴식을 취하게 해줘야 해요.$h && 오늘은 휴식의 날이에요. 휴식은 중요하죠, @.#$b#그리고 꼭 '쟁취'할 필요가 없는거란 것도 기억하세요. 음식과 쉼터만큼이나 필수니까요. && 오늘은 섬 리조트를 방문 할 예정이에요.#$b#그 곳을 만드는데 노력하셨다고 들었는데요? 가끔 가서 즐기시길 바라요.$h |inputSeparator=&&}}",
+				
+			}
+		},
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	]
+}

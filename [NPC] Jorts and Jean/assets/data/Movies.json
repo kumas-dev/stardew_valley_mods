@@ -1,0 +1,400 @@
+{ 
+	"Changes": [
+		
+		{   "LogName": "Movie Theatre Jorts",
+			"Action": "EditData", 
+			"Target": "Data/MoviesReactions",	 
+			"Entries": {
+				
+				//Jorts
+				"JortsCat": {
+				"NPCName": "JortsCat",
+				"Reactions": [
+					{
+						"Tag": "spring_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "애니메이션 영화 되게 훌륭하지 않아? 진짜 다채롭고 종종 보이는 이야기들은 너무 행복해져.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"조츠는 묘목의 성공을 위해 두 발을 모으며 몰입 해 있습니다.\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "나 애니메이션 영화를 되게 좋아하는데, 이 영화는 더더욱 마음에 들었어!$h"
+							}
+						},
+						"ID": "reaction_0"
+					},
+					{
+						"Tag": "summer_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "이거 술집에서 하는 게임 아니야? 우리도 버튼을 눌러야 해?$4",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"조츠가 마치 버튼을 누르는 것 처럼 의자에 꾹꾹이를 하고 있다.\"/emote JortsCat 52",
+								"Text": "빨리, @! 우리가 도와줘야 해!"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "야호! 우리가 이겼어! 함께 여기까지 와서 기뻐!$h"
+							}
+						},
+						"ID": "reaction_1"
+					},
+					{
+						"Tag": "fall_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "이 영화는 대체 무슨 내용일까?$4#$b#그래서 미스테리 영화 인가봐!$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JortsCat 8",
+								"Text": "하나도 이해 못했어!.$4#$b#근데 재밌어!$h#$b#물론 하나도 이해 못했지만.$4"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "무슨 일이 일어났는지 하나도 모르겠지만 진이 설명 해 줄 수 있겠지. 고마워, @!"
+							}
+						},
+						"ID": "reaction_2"
+					},
+					{
+						"Tag": "winter_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "우, 배우들이 추워 보이는 걸. 모두 따뜻하게 지냈으면 좋겠어.",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"조츠가 옆구리를 밀며 그르릉 거립니다.",
+								"Text": "난 그들이 괜찮을 거라고 믿어, @."
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "너 괜찮아, @? 아직도 슬프면 더 쓰다듬어도 돼."
+							}
+						},
+						"ID": "reaction_3"
+					},
+					{
+						"Tag": "spring_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "포스터의 화려한 색들 좀 봐! 정말 재밌을 거 같아!",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"조츠가 별처럼 빛나는 눈으로 화면 속 새들을 바라보고 있습니다.",
+								"Text": "친구들!!!$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "정말 멋진 새들이었어! 언젠가 만날 수 있을까?"
+							}
+						},
+						"ID": "reaction_4"
+					},
+					{
+						"Tag": "summer_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "그는 되게 말랑해보여! 꾹꾹이 해보고 싶어.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "하하하! 진짜 윔버스 답네!$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "이거 진짜 웃겼어! 난 재밌는게 좋아."
+							}
+						},
+						"ID": "reaction_5"
+					},
+					{
+						"Tag": "fall_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "소리 지르고 싶으면 지르자, 알았지?",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"조츠는 당신의 다리를 보호하는 발 보호대가 됐다.\"",
+								"Text": "걱정 마, @, 내가 지켜줄게."
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "지키고 있느라 소리 지르는 걸 깜빡 했어, 난 좋았거든 @, 근데 진은 안 좋아할거 같아."
+							}
+						},
+						"ID": "reaction_6"
+					},
+					{
+						"Tag": "winter_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "showFrame JortsCat 36/message \"조츠가 잠들었습니다.\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "낮잠 자기에 정말 좋은 영화였네. 조용하고 차분했어.$h"
+							}
+						},
+						"ID": "reaction_7"
+					},
+				],
+				},
+			},
+		},
+		{   "LogName": "Movie Theatre Jorts",
+			"Action": "EditData", 
+			"Target": "Data/MoviesReactions",	 
+			"Entries": {
+				
+				//Jean
+				"JeanCat": {
+				"NPCName": "JeanCat",
+				"Reactions": [
+					{
+						"Tag": "spring_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "이 영화는 전에 들어본 적이 있지만 애니메이션으론 처음이네요. 흥미로울 거 같아요.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "오, 조츠가 좋아할 거 같아요.$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "역경을 딛고 일어서는 이야기는 누구나 좋아하지 않을까요?$h#$b#초대해주셔서 고마워요."
+							}
+						},
+						"ID": "reaction_0"
+					},
+					{
+						"Tag": "summer_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "아, 이건 애비게일이 항상 하는 게임이네요. 영화는 게임보다 쉽게 진행 됐으면 좋겠어요.$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 32",
+								"Text": "풋, 뭐 대충 예상 할 수 있는 내용이지만, 그들의 노력에 감사를 드리죠.$h"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "새롭거나 놀라운 내용은 없었지만, 게임 팬들에겐 최고의 선물이 되겠네요.$h#$b#초대해주셔서 고마워요, @."
+							}
+						},
+						"ID": "reaction_1"
+					},
+					{
+						"Tag": "fall_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "저는 미스터리는 좋아하지만 오컬트 쪽 요소는 별로에요.#$b#그래도 포스터로 영화를 판단하는 것은 의미가 없겠죠?$h",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 40",
+								"Text": "그들이 무엇을 하려는지는 알겠는데, 정말 혼란스럽네요. 뭐 발전한 게 없는걸요.$3"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "조금 더 다듬었으면 좋았을 거 같은데, 내러티브 분석에 대해서는 좋은 참고가 됐네요. 초대해주셔서 고마워요.$h"
+							}
+						},
+						"ID": "reaction_2"
+					},
+					{
+						"Tag": "winter_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "따뜻한 영화가 쏟아져 나오는 계절이네요, 그렇죠?",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 28",
+								"Text": "그게 요점은 아니지만 이 시나리오를 피할 방법은 무궁무진하게 많았어요.$3"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "뭐, 이 정도면 충분히 귀여웠어요. 초대해줘서 고마워요.#$b#근데 저는 여전히 부자들을 잡아먹는 기분 좋은 결말이 보고 싶네요.$6"
+							}
+						},
+						"ID": "reaction_3"
+					},
+					{
+						"Tag": "spring_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "오, 저는 다큐멘터리를 좋아해요. 항상 배움이 가득한 시간이죠. 거기다 정말 퀄리티 좋은 영상처럼 보이네요.",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "shake JeanCat 3000/pause 500/message \"진은 계속 웅크리고 꼬리를 흔들고 있다...\"",
+								"Text": "미안해요, 고양이 본능이라서. 정말 생동감 넘치지 않나요?$3"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "초대해줘서 고마워요, @. 정말 재밌게 봤어요.#$b#그리고 화면으로 자꾸 튀어나가서 죄송합니다.$3#$b#...네 번이나...$s"
+							}
+						},
+						"ID": "reaction_4"
+					},
+					{
+						"Tag": "summer_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "엉뚱한 코미디라고요? 그건 쉽지 않은 도전이 되겠는데요.",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"진이 얼굴에 발을 얹고 있다. 화가 났는지 즐거워 하는지 알 수가 없다.",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "글쎄요, 그건 확실히...영화는 맞아요.$3#$b#조츠를 한 번 데려와 보세요. 정말 좋아할 거에요."
+							}
+						},
+						"ID": "reaction_5"
+					},
+					{
+						"Tag": "fall_movie_1",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "공포 영화요? 글쎄...진짜 같은 건 아니니까요, 뭐...$3",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "warp JeanCat -999 -999/emote farmer 16/message \"진??\"/pause 500/emote farmer 40/message \"그녀는 좌석 아래로 숨었다.",
+								"Text": "조츠! 조츠, 나쁜 것들을 다 없애 줘!$4"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "...죄송합니다, @. 이건 제 취향이 아니었나봐요.$s"
+							}
+						},
+						"ID": "reaction_6"
+					},
+					{
+						"Tag": "winter_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "클래식의 조건은 무엇이라고 생각하시나요, @?",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"진은 꼬리를 만족스럽게 흔들며 집중해서 보고 있다.",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "정말 즐거웠어요, @. 필모그래피에 대해선 잘 모르지만 그때와 지금이 어떻게 다른지 보는 것은 흥미로운 것 같아요."
+							}
+						},
+						"ID": "reaction_7"
+					},
+				]
+			},
+			},
+		}
+		
+	]
+}
