@@ -1,15 +1,16 @@
 {
-	"Name": "Beaver_WA",
+	"Name": "Raccoon_WA",
 	"Type": "Walking",
 	"EnableSpawnAtDayStart": false,
 	"EnableCharacterCollision": true,
-	"EnableFarmerCollision": true,
+	"EnableFarmerCollision": false,
 	"TravelSpeed": 2,
 	"MaxIdleDistance": -1,
 	"MaxDistanceBeforeTeleport": -1,
 	"IdleBehavior": "Wander",
 	"FrameSizeWidth": 32,
 	"FrameSizeHeight": 32,
+	"TileSheetPath": "Characters\\Raccoon_WA",
 
 	// This plays when the companion travels upwards
 	"UpAnimation": {
@@ -23,16 +24,32 @@
         "Duration": 3000,
 		},
 		{
-        "Frame": 28,
-        "Duration": 100,
+        "Frame": 24,
+        "Duration": 150,
 		},
 		{
         "Frame": 8,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
-        "Frame": 29,
-        "Duration": 100,
+        "Frame": 25,
+        "Duration": 150,
+		},
+		{
+        "Frame": 8,
+        "Duration": 150,
+		},
+		{
+        "Frame": 24,
+        "Duration": 150,
+		},
+		{
+        "Frame": 8,
+        "Duration": 150,
+		},
+		{
+        "Frame": 25,
+        "Duration": 150,
 		},
     ],
     }
@@ -50,127 +67,63 @@
 		},
 		{
         "Frame": 12,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
         "Frame": 13,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
         "Frame": 14,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
         "Frame": 15,
+        "Duration": 150,
+		},
+		{
+        "Frame": 16,
+        "Duration": 150,
+		},
+		{
+        "Frame": 17,
+        "Duration": 150,
+		},
+		{
+        "Frame": 18,
+        "Duration": 500,
+		},
+		{
+        "Frame": 19,
         "Duration": 1000,
 		},
 		{
-        "Frame": 16,
-        "Duration": 100,
+        "Frame": 18,
+        "Duration": 500,
 		},
 		{
         "Frame": 17,
-        "Duration": 100,
-		},
-		{
-        "Frame": 18,
-        "Duration": 100,
-		},
-		{
-        "Frame": 19,
-        "Duration": 100,
-		},
-		{
-        "Frame": 20,
-        "Duration": 100,
-		},
-		{
-        "Frame": 21,
-        "Duration": 100,
-		},
-		{
-        "Frame": 22,
-        "Duration": 100,
-		},
-		{
-        "Frame": 23,
-        "Duration": 100,
-		},
-		{
-        "Frame": 22,
-        "Duration": 100,
-		},
-		{
-        "Frame": 23,
-        "Duration": 100,
-		},
-		{
-        "Frame": 22,
-        "Duration": 100,
-		},
-		{
-        "Frame": 23,
-        "Duration": 100,
-		},
-		{
-        "Frame": 22,
-        "Duration": 100,
-		},
-		{
-        "Frame": 23,
-        "Duration": 100,
-		},
-		{
-        "Frame": 22,
-        "Duration": 100,
-		},
-		{
-        "Frame": 23,
-        "Duration": 100,
-		},
-		{
-        "Frame": 22,
-        "Duration": 100,
-		},
-		{
-        "Frame": 21,
-        "Duration": 100,
-		},
-		{
-        "Frame": 20,
-        "Duration": 100,
-		},
-		{
-        "Frame": 19,
-        "Duration": 100,
-		},
-		{
-        "Frame": 18,
-        "Duration": 100,
-		},
-		{
-        "Frame": 17,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
         "Frame": 16,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
         "Frame": 15,
-        "Duration": 1000,
+        "Duration": 150,
 		},
 		{
         "Frame": 14,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
         "Frame": 13,
-        "Duration": 100,
+        "Duration": 150,
 		},
 		{
         "Frame": 12,
-        "Duration": 100,
+        "Duration": 150,
 		},
     ],
     }
@@ -207,48 +160,58 @@
 		"Flip": true
 		},
 		{
-        "Frame": 24,
-        "Duration": 100,
+        "Frame": 20,
+        "Duration": 150,
 		"Flip": true
 		},
 		{
-        "Frame": 25,
+        "Frame": 21,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 22,
         "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 26,
-        "Duration": 100,
+        "Frame": 23,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 25,
-        "Duration": 100,
+        "Frame": 22,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 26,
-        "Duration": 100,
+        "Frame": 23,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 25,
-        "Duration": 100,
+        "Frame": 22,
+        "Duration": 150,
 		"Flip": true
 		},
 		{
-        "Frame": 26,
-        "Duration": 100,
+        "Frame": 23,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 25,
-        "Duration": 100,
+        "Frame": 22,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 24,
-        "Duration": 100,
+        "Frame": 21,
+        "Duration": 150,
+		"Flip": true
+		},
+		{
+        "Frame": 20,
+        "Duration": 150,
 		"Flip": true
 		},
     ],
@@ -263,43 +226,51 @@
 		"ManualFrames": [
 		{
         "Frame": 4,
-        "Duration": 3000
+        "Duration": 3000,
 		},
 		{
-        "Frame": 24,
-        "Duration": 100
+        "Frame": 20,
+        "Duration": 150,
 		},
 		{
-        "Frame": 25,
-        "Duration": 250
+        "Frame": 21,
+        "Duration": 150,
 		},
 		{
-        "Frame": 26,
-        "Duration": 100
+        "Frame": 22,
+        "Duration": 250,
 		},
 		{
-        "Frame": 25,
-        "Duration": 100
+        "Frame": 23,
+        "Duration": 250,
 		},
 		{
-        "Frame": 26,
-        "Duration": 100
+        "Frame": 22,
+        "Duration": 250,
 		},
 		{
-        "Frame": 25,
-        "Duration": 100
+        "Frame": 23,
+        "Duration": 250,
 		},
 		{
-        "Frame": 26,
-        "Duration": 100
+        "Frame": 22,
+        "Duration": 250,
 		},
 		{
-        "Frame": 25,
-        "Duration": 100
+        "Frame": 23,
+        "Duration": 250,
 		},
 		{
-        "Frame": 24,
-        "Duration": 100
+        "Frame": 22,
+        "Duration": 250,
+		},
+		{
+        "Frame": 21,
+        "Duration": 150,
+		},
+		{
+        "Frame": 20,
+        "Duration": 150,
 		},
     ],
     }
@@ -307,10 +278,10 @@
 
 "Sounds": [
 	{
-	"SoundName": "rabbit",
+	"SoundName": "Raccoon",
 	"WhenToPlay": "Idle",
 	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.2
+	"ChanceOfPlaying": 0.3
 	}
 ]  
 }

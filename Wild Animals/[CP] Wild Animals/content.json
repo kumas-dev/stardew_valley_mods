@@ -36,6 +36,11 @@
             "Default": "true",
 			"Description": "Junimos will hold leaf umbrellas when it's raining outside if toggled on."
 		},
+        "Raccoon Colors": {
+            "AllowValues": "Vanilla, Original",
+            "Default": "Vanilla",
+			"Description": "Chooses the color of the raccoons spawned from this mod. 'Vanilla' matches the raccoons in the vanilla game, while 'Original' is the old colors that Wild Animals' raccoons came with."
+		},
         "Load Wild Armadillos": {
             "AllowValues": "true, false",
             "Default": "true"
@@ -208,6 +213,7 @@
 
 	"Changes": [
 
+// Vanilla Map Patches
 	{
 		"Action": "Include",
 		"FromFile": "assets/Map_Patch_High.json",
@@ -215,6 +221,7 @@
 		"When": {
 			"Enable mod?": "true",
 			"Animal Abundance Level": "High",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 		}
 	},
 	{
@@ -224,6 +231,7 @@
 		"When": {
 			"Enable mod?": "true",
 			"Animal Abundance Level": "Low",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 		}
 	},
 	{
@@ -233,6 +241,7 @@
 		"When": {
 			"Enable mod?": "true",
 			"Animal Abundance Level": "Vanilla",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 		}
 	},
 	{
@@ -242,14 +251,104 @@
 		"When": {
 			"Enable mod?": "true",
 			"Allow Bonus Animals": "true",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
 		}
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/Map_Patch_Custom.json",
+		"FromFile": "assets/Map_Patch_Island_High.json",
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
+			"Animal Abundance Level": "High",
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_Island_Low.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Animal Abundance Level": "Low",
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_Island_Vanilla.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Animal Abundance Level": "Vanilla",
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_Island.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+		}
+	},
+
+// Lnh Ginger Island Overhaul Map Patches
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_LGIO_Island.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"HasMod |contains=Lnh.IslandOverhaul": true,
+		}
+	},
+
+// SVE Map Patches
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_SVE_High.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Animal Abundance Level": "High",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_SVE_Low.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Animal Abundance Level": "Low",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_SVE_Vanilla.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Animal Abundance Level": "Vanilla",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_SVE_Extras.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Allow Bonus Animals": "true",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/Map_Patch_SVE_Custom.json",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
 		}
 	},
 
@@ -308,6 +407,26 @@
 		"Update": "OnLocationChange",
 		"When": {
 			"Enable mod?": "true",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Raccoon_WA",
+		"FromFile": "assets/animals/Raccoon_Vanilla.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Raccoon Colors": "Vanilla",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Raccoon_WA",
+		"FromFile": "assets/animals/Raccoon_WA.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable mod?": "true",
+			"Raccoon Colors": "Original",
 		}
 	},
 	{

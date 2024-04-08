@@ -34,6 +34,11 @@
 	"config.Give Junimos Leaf Umbrellas.values.false": "false",
     "config.Give Junimos Leaf Umbrellas.description": "Junimos will hold leaf umbrellas when it's raining outside if toggled on.",
 
+	"config.Raccoon Colors.name": "Raccoon Colors",
+	"config.Raccoon Colors.values.Vanilla": "Vanilla",
+	"config.Raccoon Colors.values.Original": "Original",
+    "config.Raccoon Colors.description": "Chooses the color of the raccoons spawned from this mod. 'Vanilla' matches the raccoons in the vanilla game, while 'Original' is the old colors that Wild Animals' raccoons came with.",
+
 	"config.Load Wild Armadillos.name": "Load Wild Armadillos",
 	"config.Load Wild Armadillos.values.true": "true",
 	"config.Load Wild Armadillos.values.false": "false",

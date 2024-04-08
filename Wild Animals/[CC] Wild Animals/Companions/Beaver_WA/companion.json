@@ -1,9 +1,9 @@
 {
-	"Name": "Raccoon_WA",
+	"Name": "Beaver_WA",
 	"Type": "Walking",
 	"EnableSpawnAtDayStart": false,
 	"EnableCharacterCollision": true,
-	"EnableFarmerCollision": false,
+	"EnableFarmerCollision": true,
 	"TravelSpeed": 2,
 	"MaxIdleDistance": -1,
 	"MaxDistanceBeforeTeleport": -1,
@@ -23,32 +23,16 @@
         "Duration": 3000,
 		},
 		{
-        "Frame": 24,
-        "Duration": 150,
+        "Frame": 28,
+        "Duration": 100,
 		},
 		{
         "Frame": 8,
-        "Duration": 150,
+        "Duration": 100,
 		},
 		{
-        "Frame": 25,
-        "Duration": 150,
-		},
-		{
-        "Frame": 8,
-        "Duration": 150,
-		},
-		{
-        "Frame": 24,
-        "Duration": 150,
-		},
-		{
-        "Frame": 8,
-        "Duration": 150,
-		},
-		{
-        "Frame": 25,
-        "Duration": 150,
+        "Frame": 29,
+        "Duration": 100,
 		},
     ],
     }
@@ -78,7 +62,7 @@
 		},
 		{
         "Frame": 15,
-        "Duration": 150,
+        "Duration": 1000,
 		},
 		{
         "Frame": 16,
@@ -90,15 +74,79 @@
 		},
 		{
         "Frame": 18,
+        "Duration": 150,
+		},
+		{
+        "Frame": 19,
+        "Duration": 150,
+		},
+		{
+        "Frame": 20,
+        "Duration": 500,
+		},
+		{
+        "Frame": 21,
+        "Duration": 100,
+		},
+		{
+        "Frame": 22,
+        "Duration": 100,
+		},
+		{
+        "Frame": 23,
+        "Duration": 100,
+		},
+		{
+        "Frame": 22,
+        "Duration": 100,
+		},
+		{
+        "Frame": 23,
+        "Duration": 100,
+		},
+		{
+        "Frame": 22,
+        "Duration": 100,
+		},
+		{
+        "Frame": 23,
+        "Duration": 100,
+		},
+		{
+        "Frame": 22,
+        "Duration": 100,
+		},
+		{
+        "Frame": 23,
+        "Duration": 100,
+		},
+		{
+        "Frame": 22,
+        "Duration": 100,
+		},
+		{
+        "Frame": 23,
+        "Duration": 100,
+		},
+		{
+        "Frame": 22,
+        "Duration": 100,
+		},
+		{
+        "Frame": 21,
+        "Duration": 100,
+		},
+		{
+        "Frame": 20,
         "Duration": 500,
 		},
 		{
         "Frame": 19,
-        "Duration": 1000,
+        "Duration": 150,
 		},
 		{
         "Frame": 18,
-        "Duration": 500,
+        "Duration": 150,
 		},
 		{
         "Frame": 17,
@@ -110,7 +158,7 @@
 		},
 		{
         "Frame": 15,
-        "Duration": 150,
+        "Duration": 1000,
 		},
 		{
         "Frame": 14,
@@ -159,58 +207,48 @@
 		"Flip": true
 		},
 		{
-        "Frame": 20,
-        "Duration": 150,
+        "Frame": 24,
+        "Duration": 100,
 		"Flip": true
 		},
 		{
-        "Frame": 21,
-        "Duration": 150,
-		"Flip": true
-		},
-		{
-        "Frame": 22,
+        "Frame": 25,
         "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 23,
+        "Frame": 26,
         "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 22,
+        "Frame": 25,
         "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 23,
+        "Frame": 26,
         "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 22,
-        "Duration": 150,
-		"Flip": true
-		},
-		{
-        "Frame": 23,
+        "Frame": 25,
         "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 22,
+        "Frame": 26,
         "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 21,
-        "Duration": 150,
+        "Frame": 25,
+        "Duration": 250,
 		"Flip": true
 		},
 		{
-        "Frame": 20,
-        "Duration": 150,
+        "Frame": 24,
+        "Duration": 100,
 		"Flip": true
 		},
     ],
@@ -225,51 +263,43 @@
 		"ManualFrames": [
 		{
         "Frame": 4,
-        "Duration": 3000,
+        "Duration": 3000
 		},
 		{
-        "Frame": 20,
-        "Duration": 150,
+        "Frame": 24,
+        "Duration": 100
 		},
 		{
-        "Frame": 21,
-        "Duration": 150,
+        "Frame": 25,
+        "Duration": 250
 		},
 		{
-        "Frame": 22,
-        "Duration": 250,
+        "Frame": 26,
+        "Duration": 250
 		},
 		{
-        "Frame": 23,
-        "Duration": 250,
+        "Frame": 25,
+        "Duration": 250
 		},
 		{
-        "Frame": 22,
-        "Duration": 250,
+        "Frame": 26,
+        "Duration": 250
 		},
 		{
-        "Frame": 23,
-        "Duration": 250,
+        "Frame": 25,
+        "Duration": 250
 		},
 		{
-        "Frame": 22,
-        "Duration": 250,
+        "Frame": 26,
+        "Duration": 250
 		},
 		{
-        "Frame": 23,
-        "Duration": 250,
+        "Frame": 25,
+        "Duration": 250
 		},
 		{
-        "Frame": 22,
-        "Duration": 250,
-		},
-		{
-        "Frame": 21,
-        "Duration": 150,
-		},
-		{
-        "Frame": 20,
-        "Duration": 150,
+        "Frame": 24,
+        "Duration": 100
 		},
     ],
     }
@@ -277,10 +307,10 @@
 
 "Sounds": [
 	{
-	"SoundName": "Raccoon",
+	"SoundName": "rabbit",
 	"WhenToPlay": "Idle",
 	"TimeBetweenSound": 5000,
-	"ChanceOfPlaying": 0.3
+	"ChanceOfPlaying": 0.2
 	}
 ]  
 }

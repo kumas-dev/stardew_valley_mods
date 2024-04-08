@@ -120,29 +120,6 @@
 		"When": {
 			"Load Wild Squirrels + Chipmunks": "true",
 			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "false",
-			"Weather": "Sun, Wind",
-			"Year |contains=1": "false",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add squirrels and chipmunks in the backwoods",
-		"Action": "EditMap",
-		"Target": "Maps/Backwoods",
-		"MapTiles": [
-            {
-               "Position": { "X": 43, "Y": 14 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_WA, Squirrel_WA, Squirrel_Friendly_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Squirrels + Chipmunks": "true",
-			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "true",
 			"Weather": "Sun, Wind",
 			"Year |contains=1": "false",
 			},
@@ -209,7 +186,6 @@
          ],
 		"When": {
 			"Load Wild Gembirds": "true",
-			"IsCommunityCenterComplete": "true",
 			"Time": "{{Range: 0600, 1800}}",
 			"Weather": "Rain",
 			},
@@ -227,7 +203,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Pelican_WA, Pelican_WA, Seagull_Friendly_WA, Seagull_WA, Seagull_WA, PelicanPouch_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Pelican_WA, Pelican_WA, Seagull_WA, Seagull_WA, PelicanPouch_WA}}"
                },
             },
             {
@@ -281,8 +257,7 @@
          ],
 		"When": {
 			"Load Wild Otters": "true",
-			"IsCommunityCenterComplete": "true",
-			"Weather": "Rain, Snow, Sun, Wind",	
+			"Weather": "Rain, Snow, Sun, Wind",
 			},
 		"Update": "OnLocationChange"
 	},
@@ -401,7 +376,6 @@
          ],
 		"When": {
 			"Load Wild Turtles": "true",
-			"IsCommunityCenterComplete": "true",
 			"Season": "Summer",
 			"Time": "{{Range: 1800, 2600}}",
 			"Weather": "Sun, Wind",
@@ -427,29 +401,6 @@
 		"When": {
 			"Load Wild Squirrels + Chipmunks": "true",
 			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "false",
-			"Weather": "Sun, Wind",
-			"Year |contains=1": "false",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add squirrels and chipmunks in the bus stop",
-		"Action": "EditMap",
-		"Target": "Maps/BusStop",
-		"MapTiles": [
-            {
-               "Position": { "X": 19, "Y": 16 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_WA, Squirrel_WA, Squirrel_Friendly_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Squirrels + Chipmunks": "true",
-			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "true",
 			"Weather": "Sun, Wind",
 			"Year |contains=1": "false",
 			},
@@ -466,7 +417,7 @@
                "Position": { "X": 26, "Y": 18 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Rat_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Rat_WA"
                },
             },
          ],
@@ -506,7 +457,7 @@
                "Position": { "X": 15, "Y": 35 },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Coyote_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Coyote_WA"
                },
             },
          ],
@@ -638,7 +589,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Bobcat_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Bobcat_WA"
                },
             },
          ],
@@ -661,7 +612,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.DuckDrake_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.DuckDrake_WA"
                },
             },
             {
@@ -671,7 +622,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Duck_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Duck_WA"
                },
             },
             {
@@ -706,7 +657,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: DuckDrake_WA, DuckDrake_WA, DuckDrake_Friendly_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: DuckDrake_WA, DuckDrake_WA, DuckDrake_Friendly_WA}}"
                },
             },
             {
@@ -716,7 +667,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Duck_WA, Duck_WA, Duck_Friendly_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Duck_WA, Duck_WA, Duck_Friendly_WA}}"
                },
             },
             {
@@ -780,32 +731,6 @@
 		"When": {
 			"Load Wild Foxes": "true",
 			"Season": "Summer, Fall, Winter",
-			"HasWalletItem |contains=BearsKnowledge": "false",
-			"Weather": "Snow, Sun, Wind",
-			"Year |contains=1": "false",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add friendly fox kits in the forest",
-		"Action": "EditMap",
-		"Target": "Maps/Forest",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 74, 70, 13 |key=forest coordinates}}",
-					"Y": "{{Random: 39, 28, 87 |key=forest coordinates}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 2, 3 |key=Foxes}} SmolHooman.WildAnimalsCC.{{Random: FoxKit_WA, FoxKit_WA, FoxKit_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Foxes": "true",
-			"Season": "Summer, Fall, Winter",
-			"HasWalletItem |contains=BearsKnowledge": "true",
 			"Weather": "Snow, Sun, Wind",
 			"Year |contains=1": "false",
 			},
@@ -876,7 +801,6 @@
          ],
 		"When": {
 			"Load Wild Pine Martens": "true",
-			"IsCommunityCenterComplete": "true",
 			"Time": "{{Range: 1800, 2600}}",
 			"Weather": "Snow, Sun, Wind",
 			},
@@ -910,7 +834,7 @@
 		"Target": "Maps/Forest",
 		"MapTiles": [
             {
-               "Position": { "X": 46, "Y": 86 },
+                "Position": { "X": 46, "Y": 86 },
                "Layer": "Back",
                "SetProperties": {
                   "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.PlatypusSwimming_WA"
@@ -1038,7 +962,6 @@
          ],
 		"When": {
 			"Load Wild Otters": "true",
-			"IsCommunityCenterComplete": "true",
 			"Season": "Spring, Summer, Fall",
 			"Time": "{{Range: 1800, 2600}}",
 			"Weather": "Sun, Wind, Rain",
@@ -1063,7 +986,6 @@
          ],
 		"When": {
 			"Load Wild Otters": "true",
-			"IsCommunityCenterComplete": "true",
 			"Season": "Winter",
 			"Time": "{{Range: 0600, 1800}}",
 			"Weather": "Sun",	
@@ -1128,7 +1050,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Squirrel_Timid_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Squirrel_Timid_WA"
                },
             },
          ],
@@ -1152,39 +1074,13 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_Timid_WA, Chipmunk_Timid_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_Timid_WA, Chipmunk_Timid_WA}}"
                },
             },
          ],
 		"When": {
 			"Load Wild Squirrels + Chipmunks": "true",
 			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "false",
-			"Weather": "Sun, Wind",
-			"Year |contains=1": "false",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add squirrels and chipmunks in the forest",
-		"Action": "EditMap",
-		"Target": "Maps/Forest",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 65, 89, 14 |key=forest coordinate}}",
-					"Y": "{{Random: 27, 67, 85 |key=forest coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_WA, Squirrel_WA, Squirrel_Friendly_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Squirrels + Chipmunks": "true",
-			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "true",
 			"Weather": "Sun, Wind",
 			"Year |contains=1": "false",
 			},
@@ -1202,7 +1098,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Swan_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Swan_WA"
                },
             },
             {
@@ -1228,7 +1124,6 @@
          ],
 		"When": {
 			"Load Wild Swans": "true",
-			"IsCommunityCenterComplete": "true",
 			"Season": "Spring, Summer, Fall",
 			"Time": "{{Range: 0600, 1800}}",
 			"Weather": "Rain, Sun, Wind",
@@ -1247,7 +1142,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Tortoise_Timid_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Tortoise_Timid_WA"
                },
             },
          ],
@@ -1271,7 +1166,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Tortoise_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Tortoise_WA"
                },
             },
          ],
@@ -1361,8 +1256,8 @@
          ],
 		"When": {
 			"Load Wild Ducks": "true",
-			"IsJojaMartComplete": "false",
 			"HasWalletItem |contains=SpringOnionMastery": "false",
+			"IsJojaMartComplete": "false",
 			"Season": "Spring, Summer, Fall",
 			"Time": "{{Range: 0600, 1800}}",
 			"Weather": "Rain, Sun, Wind",
@@ -1476,31 +1371,6 @@
 		"When": {
 			"Load Wild Owls": "true",
 			"Time": "{{Range: 1800, 2600}}",
-			"HasWalletItem |contains=DarkTalisman": "false",
-			"Weather": "Snow, Sun, Wind",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add friendly owls on the mountain",
-		"Action": "EditMap",
-		"Target": "Maps/Mountain",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 9, 11 |key=mountain owls coordinate}}",
-					"Y": "{{Random: 28, 7 |key=mountain owls coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Owl_WA, Owl_WA, Owl_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Owls": "true",
-			"Time": "{{Range: 1800, 2600}}",
-			"HasWalletItem |contains=DarkTalisman": "true",
 			"Weather": "Snow, Sun, Wind",
 			},
 		"Update": "OnLocationChange"
@@ -1517,7 +1387,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Squirrel_Timid_WA"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Squirrel_Timid_WA"
                },
             },
          ],
@@ -1541,39 +1411,13 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_Timid_WA, Chipmunk_Timid_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_Timid_WA, Squirrel_Timid_WA, Chipmunk_Timid_WA}}"
                },
             },
          ],
 		"When": {
 			"Load Wild Squirrels + Chipmunks": "true",
 			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "false",
-			"Weather": "Sun, Wind",
-			"Year |contains=1": "false",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add squirrels and chipmunks on the mountain",
-		"Action": "EditMap",
-		"Target": "Maps/Mountain",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 37, 86, 18 |key=mountain squirrels coordinate}}",
-					"Y": "{{Random: 23, 22, 30 |key=mountain squirrels coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_WA, Squirrel_WA, Squirrel_Friendly_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Squirrels + Chipmunks": "true",
-			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "true",
 			"Weather": "Sun, Wind",
 			"Year |contains=1": "false",
 			},
@@ -1595,7 +1439,6 @@
 		"When": {
 			"Load Wild Weasels": "true",
 			"HasWalletItem |contains=BearsKnowledge": "false",
-			"IsCommunityCenterComplete": "true",
 			"Time": "{{Range: 1800, 2600}}",
 			"Weather": "Snow, Sun, Wind",	
 			},
@@ -1617,577 +1460,8 @@
 		"When": {
 			"Load Wild Weasels": "true",
 			"HasWalletItem |contains=BearsKnowledge": "true",
-			"IsCommunityCenterComplete": "true",
 			"Time": "{{Range: 1800, 2600}}",
 			"Weather": "Snow, Sun, Wind",	
-			},
-		"Update": "OnLocationChange"
-	},
-
-// ISLAND ANIMALS
-	{
-		"LogName": "Add boars in the east of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_E",
-		"MapTiles": [
-            {
-               "Position": { "X": 22, "Y": 37 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Boar_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Boars": "true",
-			"Time": "{{Range: 0600, 1800}}",
-			"Weather": "Sun, Wind, Rain",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add crabs in south of the island (normal)",
-		"Action": "EditMap",
-		"Target": "Maps/Island_S",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 33, 13 |key=island s crabs coordinate}}",
-					"Y": "{{Random: 29, 28 |key=island s crabs coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab_WA"
-               },
-            },
-         ],
-		"When": {
-			"Allow Bonus Animals": "false",
-			"Load Wild Crabs": "true",
-			"Weather": "Sun, Wind, Rain",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add crabs in southeast of the island (normal)",
-		"Action": "EditMap",
-		"Target": "Maps/Island_SE",
-		"MapTiles": [
-            {
-               "Position": { "X": 22, "Y": 27 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab_WA"
-               },
-            },
-         ],
-		"When": {
-			"Allow Bonus Animals": "false",
-			"Load Wild Crabs": "true",
-			"Weather": "Sun, Wind, Rain",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add crabs in west of the island (normal)",
-		"Action": "EditMap",
-		"Target": "Maps/Island_W",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 37, 19, 79 |key=island w crabs coordinate}}",
-					"Y": "{{Random: 84, 43, 87 |key=island w crabs coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab_WA"
-               },
-            },
-         ],
-		"When": {
-			"Allow Bonus Animals": "false",
-			"Load Wild Crabs": "true",
-			"Weather": "Sun, Wind, Rain",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add lemurs in the west of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_W",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 73, 36 |key=island w lemurs coordinate}}",
-					"Y": "{{Random: 13, 28 |key=island w lemurs coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 2, 3}} SmolHooman.WildAnimalsCC.Lemur_WA"
-               },
-            },
-            {
-               "Position": {
-					"X": "{{Random: 73, 36 |key=island w lemurs coordinate}}",
-					"Y": "{{Random: 14, 27 |key=island w lemurs coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Lemur_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Lemurs": "true",
-			"Time": "{{Range: 0600, 1800}}",
-			"Weather": "Sun, Wind",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add timid monkeys on the north of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_N",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 35, 55, 49  |key=island n monkeys coordinate}}",
-					"Y": "{{Random: 77, 80, 54 |key=island n monkeys coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Monkey_Timid_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Monkeys": "true",
-			"HasWalletItem |contains=SpringOnionMastery": "false",
-			"Weather": "Sun, Wind",
-			"Time": "{{Range: 0600, 1800}}",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add monkeys on the north of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_N",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 35, 55, 49  |key=island n monkeys coordinate}}",
-					"Y": "{{Random: 77, 80, 54 |key=island n monkeys coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Monkey_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Monkeys": "true",
-			"HasWalletItem |contains=SpringOnionMastery": "true",
-			"Weather": "Sun, Wind",
-			"Time": "{{Range: 0600, 1800}}",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Adds moonlight jellies in the west of the island's waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_W",
-		"MapTiles": [
-            {
-               "Position": { "X": 82, "Y": 98 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 12, "Y": 86 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 62, "Y": 101 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild MoonlightJellies": "true",	
-			"Season": "Spring",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Adds moonlight jellies in the south of the island's waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_S",
-		"MapTiles": [
-            {
-               "Position": { "X": 8, "Y": 51 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 36, "Y": 54 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild MoonlightJellies": "true",	
-			"Season": "Spring",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Adds moonlight jellies in the southeast of the island's waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_SE",
-		"MapTiles": [
-            {
-               "Position": { "X": 38, "Y": 34 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 25, "Y": 36 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-            {
-               "Position": { "X": 26, "Y": 54 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.MoonlightJellyGreen_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild MoonlightJellies": "true",	
-			"Season": "Spring",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Adds moonlight jellies in the west of the island's waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_W",
-		"MapTiles": [
-            {
-               "Position": { "X": 82, "Y": 98 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 12, "Y": 86 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 13, "Y": 52 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 49, "Y": 100 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 9, "Y": 20 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 62, "Y": 101 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-            {
-               "Position": { "X": 58, "Y": 104 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-            {
-               "Position": { "X": 9, "Y": 41 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild MoonlightJellies": "true",	
-			"Season": "Summer",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Adds moonlight jellies in the south of the island's waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_S",
-		"MapTiles": [
-            {
-               "Position": { "X": 8, "Y": 51 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 9, "Y": 43 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 36, "Y": 54 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-            {
-               "Position": { "X": 12, "Y": 54 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild MoonlightJellies": "true",	
-			"Season": "Summer",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Adds moonlight jellies in the southeast of the island's waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_SE",
-		"MapTiles": [
-            {
-               "Position": { "X": 38, "Y": 34 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 25, "Y": 38 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly_WA"
-               },
-            },
-            {
-               "Position": { "X": 25, "Y": 36 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-            {
-               "Position": { "X": 28, "Y": 52 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall_WA"
-               },
-            },
-            {
-               "Position": { "X": 26, "Y": 54 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.MoonlightJellyGreen_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild MoonlightJellies": "true",	
-			"Season": "Summer",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add pelicans and seagulls on the island's waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_S",
-		"MapTiles": [
-            {
-               "Position": { "X": 33, "Y": 40 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: PelicanSwimming_WA, PelicanSwimming_WA, SeagullSwimming_WA, SeagullSwimming_WA, SeagullSwimming_WA, PelicanPouchSwimming_WA}}"
-               },
-            },
-            {
-               "Position": { "X": 30, "Y": 43 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.SeagullSwimming_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Pelicans + Seagulls": "true",
-			"Time": "{{Range: 0600, 1800}}",
-			"Weather": "Rain, Sun, Wind",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add ostriches in the north of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_N",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 58, 43, 30 |key=island n ostriches coordinate}}",
-					"Y": "{{Random: 21, 30, 26 |key=island n ostriches coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Ostrich_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Ostriches": "true",		
-			"Weather": "Sun, Wind",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add baby ostriches in the north of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_N",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 57, 38, 32 |key=island n ostriches coordinate}}",
-					"Y": "{{Random: 24, 29, 27 |key=island n ostriches coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 2, 3}} SmolHooman.WildAnimalsCC.OstrichChick_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Ostriches": "true",		
-			"Weather": "Sun, Wind",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add wild peafowls in the north of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_N",
-		"MapTiles": [
-            {
-               "Position": { "X": 60, "Y": 60 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.Peacock_WA"
-               },
-            },
-            {
-               "Position": { "X": 62, "Y": 61 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Peahen_WA"
-               },
-            },
-            {
-               "Position": { "X": 59, "Y": 59 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 3}} SmolHooman.WildAnimalsCC.Chick_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Peafowls": "true",	
-			"IsJojaMartComplete": "false",
-			"Weather": "Sun, Wind",
-			"Time": "{{Range: 0600, 1800}}",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add sea otters in the west of the island waters",
-		"Action": "EditMap",
-		"Target": "Maps/Island_W",
-		"MapTiles": [
-            {
-               "Position": { "X": 9, "Y": 24 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.OtterSea_WA"
-               },
-            },
-            {
-               "Position": { "X": 9, "Y": 26 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: OtterSea_WA, OtterSea_WA, OtterSeaPup_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Otters": "true",
-			"Weather": "Sun, Wind, Rain",	
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add wombats in the east of the island",
-		"Action": "EditMap",
-		"Target": "Maps/Island_E",
-		"MapTiles": [
-            {
-               "Position": { "X": 13, "Y": 45 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Wombat_WA"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Wombats": "true",
-			"Weather": "Sun, Wind",
-			"Time": "{{Range: 1800, 2600}}",
 			},
 		"Update": "OnLocationChange"
 	},
@@ -2230,28 +1504,6 @@
 		"When": {
 			"Load Wild Crows": "true",
 			"Time": "{{Range: 1800, 2600}}",
-			"HasWalletItem |contains=DarkTalisman": "false",
-			"Weather": "Snow, Sun, Wind",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add friendly crows in the town",
-		"Action": "EditMap",
-		"Target": "Maps/Town",
-		"MapTiles": [
-            {
-               "Position": { "X": 47, "Y": 89 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Crow_WA, Crow_WA, Crow_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Crows": "true",
-			"Time": "{{Range: 1800, 2600}}",
-			"HasWalletItem |contains=DarkTalisman": "true",
 			"Weather": "Snow, Sun, Wind",
 			},
 		"Update": "OnLocationChange"
@@ -2446,7 +1698,7 @@
 		"Update": "OnLocationChange"
 	},
 	{
-		"LogName": "Add friendly rats in the town",
+		"LogName": "Add more rats in the town",
 		"Action": "EditMap",
 		"Target": "Maps/Town",
 		"MapTiles": [
@@ -2457,7 +1709,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Rat_Friendly_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA}}"
                },
             },
          ],
@@ -2470,7 +1722,7 @@
 		"Update": "OnLocationChange"
 	},
 	{
-		"LogName": "Add friendly rats in the town (2)",
+		"LogName": "Add more rats in the town (2)",
 		"Action": "EditMap",
 		"Target": "Maps/Town",
 		"MapTiles": [
@@ -2481,7 +1733,7 @@
             },
                "Layer": "Back",
                "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA, Rat_Friendly_WA}}"
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Rat_WA, Rat_WA}}"
                },
             },
          ],
@@ -2550,39 +1802,6 @@
 		"When": {
 			"Load Wild Squirrels + Chipmunks": "true",
 			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "false",
-			"Weather": "Sun, Wind",
-			"Year |contains=1": "false",
-			},
-		"Update": "OnLocationChange"
-	},
-	{
-		"LogName": "Add squirrels and chipmunks in the town",
-		"Action": "EditMap",
-		"Target": "Maps/Town",
-		"MapTiles": [
-            {
-               "Position": {
-					"X": "{{Random: 30, 8, 74 |key=town squirrels coordinate}}",
-					"Y": "{{Random: 16, 21, 22 |key=town squirrels coordinate}}"
-            },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_WA, Squirrel_WA, Squirrel_Friendly_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
-               },
-            },
-            {
-               "Position": { "X": 102, "Y": 93 },
-               "Layer": "Back",
-               "SetProperties": {
-                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_WA, Squirrel_WA, Squirrel_Friendly_WA, Chipmunk_WA, Chipmunk_Friendly_WA}}"
-               },
-            },
-         ],
-		"When": {
-			"Load Wild Squirrels + Chipmunks": "true",
-			"Season": "Spring, Summer, Fall",
-			"HasWalletItem |contains=SpringOnionMastery": "true",
 			"Weather": "Sun, Wind",
 			"Year |contains=1": "false",
 			},

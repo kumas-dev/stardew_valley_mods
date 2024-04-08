@@ -1,9 +1,9 @@
 {
-	"Name": "SmolHooman's Wild Animals (SVE Version)",
-	"Author": "SmolHooman",
-	"Version": "1.2.1",
+	"Name": "SmolHooman's Wild Animals",
+	"Author": "plurffle",
+	"Version": "1.2.2",
 	"Description": "Spawns more wild animals in your game.",
-	"UniqueID": "SmolHooman.WildAnimalsSVE",
+	"UniqueID": "SmolHooman.WildAnimals",
 	"UpdateKeys": [ "Nexus:9063" ],		
 	"MinimumApiVersion": "3.6.0",
 	"ContentPackFor": {
@@ -16,8 +16,12 @@
 	   },
 	   {
 		"UniqueID": "FlashShifter.StardewValleyExpandedCP",
-		"IsRequired": true,
-	   }, 
+		"IsRequired": false,
+	   },
+	   {
+		"UniqueID": "Lnh.IslandOverhaul",
+		"IsRequired": false,
+	   },
 	   {
 		"UniqueID": "spacechase0.GenericModConfigMenu",
 		"IsRequired": false,
