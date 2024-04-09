@@ -504,7 +504,7 @@
                     "DisplayName": "{{i18n:object.dulse-seaweed.name}}",
                     "Description": "{{i18n:object.dulse-seaweed.description}}",
                     "Type": "Fish",
-                    "Category": -4,
+                    "Category": 0,
                     "Price": 35,
                     "Texture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Dulse Seaweed",
                     "SpriteIndex": 0,
@@ -1269,6 +1269,9 @@
                     "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": false,
                     "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "edible_mushroom"
+                    ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest": {
                     "Name": "Ornate Treasure Chest",

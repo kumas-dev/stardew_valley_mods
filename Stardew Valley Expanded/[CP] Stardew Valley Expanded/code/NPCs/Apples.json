@@ -105,8 +105,13 @@
       "FromFile": "assets/CharacterFiles/OverworldSprites/Apples/Apples.png"
     },
     {
-      //Apples' Schedule
       "Action": "Load",
+      "Target": "Characters/schedules/Apples",
+      "FromFile": "Assets/Blank.json"
+    },
+    /*{
+      //Apples' Schedule
+      "Action": "EditData",
       "Target": "Characters/schedules/Apples",
       "When": {
         "ApplesHere": "true",
@@ -117,7 +122,7 @@
     },
     {
       //Apples' Schedule - with Peaches
-      "Action": "Load",
+      "Action": "EditData",
       "Target": "Characters/schedules/Apples",
       "When": {
         "ApplesHere": "true",
@@ -128,7 +133,7 @@
     },
     {
       //Apples' Schedule - moved to Junimo Woods
-      "Action": "Load",
+      "Action": "EditData",
       "Target": "Characters/schedules/Apples",
       "When": {
         "ApplesHere": "true",
@@ -136,7 +141,7 @@
         "HasSeenEvent |contains=7776012": true
       },
       "FromFile": "assets/CharacterFiles/Schedules/Apples/ScheduleJunimoWoods.json"
-    },
+    },*/
     {
       "Action": "EditData",
       "Target": "Strings/StringsFromCSFiles",

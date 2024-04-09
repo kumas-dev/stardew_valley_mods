@@ -74,8 +74,13 @@
       "FromFile": "Assets/CharacterFiles/Portraits/Peaches/Peaches.png"
     },
     {
-      //Peaches' schedule 
       "Action": "Load",
+      "Target": "Characters/schedules/Peaches",
+      "FromFile": "Assets/Blank.json"
+    },
+    /*{
+      //Peaches' schedule 
+      "Action": "EditData",
       "Target": "Characters/schedules/Peaches",
       "When": {
         "HasSeenEvent |contains=7776006": true,
@@ -85,14 +90,14 @@
     },
     {
       //Peaches' schedule - JunimoWoods
-      "Action": "Load",
+      "Action": "EditData",
       "Target": "Characters/schedules/Peaches",
       "When": {
         "HasSeenEvent |contains=7776006": true,
         "HasSeenEvent |contains=7776012": true
       },
       "FromFile": "assets/CharacterFiles/Schedules/Peaches/ScheduleJunimoWoods.json"
-    },
+    },*/
     {
       //Peaches schedule - roommates with apples
       "Action": "EditData",

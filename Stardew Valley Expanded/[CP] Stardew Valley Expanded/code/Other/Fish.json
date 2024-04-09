@@ -340,7 +340,8 @@
             "FlashShifter.StardewValleyExpandedCP_Minnow": {
                "ID": "FlashShifter.StardewValleyExpandedCP_Minnow",
                "RequiredTags": [
-                  "item_minnow"
+                  "item_minnow",
+                  "fish_river",
                ],
                "SpawnTime": -1,
                "ProducedItems": [
@@ -385,7 +386,8 @@
             "FlashShifter.StardewValleyExpandedCP_Starfish": {
                "ID": "FlashShifter.StardewValleyExpandedCP_Starfish",
                "RequiredTags": [
-                  "item_starfish"
+                  "item_starfish",
+                  "fish_ocean"
                ],
                "SpawnTime": -1,
                "ProducedItems": [
@@ -1382,7 +1384,8 @@
             "FlashShifter.StardewValleyExpandedCP_Bull_Trout": {
                "ID": "FlashShifter.StardewValleyExpandedCP_Bull_Trout",
                "RequiredTags": [
-                  "item_bull_trout"
+                  "item_bull_trout",
+                  "fish_lake"
                ],
                "SpawnTime": -1,
                "ProducedItems": [

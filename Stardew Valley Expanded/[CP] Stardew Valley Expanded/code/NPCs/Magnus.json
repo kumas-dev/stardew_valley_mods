@@ -13,7 +13,7 @@
             "Wizard",
             1
           ],
-          "Value": "FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aegis_Elixir",
+          "Value": "IceRod BasiliskPaw MagicHairGel FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aegis_Elixir",
           "Delimiter": " "
         }
         /*Like*/ ,
@@ -267,14 +267,19 @@
       },
     },
     {
-      //Wizard's Schedule
       "Action": "Load",
+      "Target": "Characters/schedules/Wizard",
+      "FromFile": "Assets/Blank.json"
+    },
+    /*{
+      //Wizard's Schedule
+      "Action": "EditData",
       "Target": "Characters/schedules/Wizard",
       "When": {
         "HasSeenEvent": "112"
       },
       "FromFile": "assets/CharacterFiles/Schedules/Magnus/WizardSchedule.json"
-    },
+    },*/
     //WIZARD SCHEDULE: Morgan = 'true'
     {
       "Action": "EditData",
@@ -620,24 +625,13 @@
         "1724099/O Wizard/f Wizard 3500/t 1800 2600/e 1724098": "none/-500 -500/farmer 11 5 3 Wizard 4 5 0/makeInvisible 4 5 8 1/pause 750/playMusic 50s/pause 500/positionOffset Wizard 0 -13/skippable/viewport 5 5 true/speed farmer 1/move farmer -5 0 3/pause 800/faceDirection Wizard 1 true/pause 500/speak Wizard \"{{i18n:Wizard.14hearts1.01}}\"/pause 500/emote farmer 8 true/pause 1000/speak Wizard \"{{i18n:Wizard.14hearts1.02}}\"/pause 500/globalFade/viewport -1000 -1000/end dialogue Wizard \"{{i18n:Wizard.14hearts1.03}}\""
       },
     },
-    { //Wizard 14 heart event - part 1 - (farmhouse level III)
-      "Action": "EditData",
-      "Target": "data/events/farmhouse",
-      "When": {
-        "HasSeenEvent": "1724098",
-        "FarmhouseUpgrade": 2,
-        "HasFlag |contains=Island_UpgradeHouse": true
-      },
-      "Entries": {
-        "1724099/O Wizard/f Wizard 3500/t 1800 2600/e 1724098": "none/-500 -500/farmer 14 14 3 Wizard 7 14 0/skippable/makeInvisible 7 14 8 1/pause 750/playMusic 50s/pause 500/viewport 8 14 true/speed farmer 1/move farmer -5 0 3/pause 800/faceDirection Wizard 1 true/pause 500/speak Wizard \"{{i18n:Wizard.14hearts1.01}}\"/pause 500/emote farmer 8 true/pause 1000/speak Wizard \"{{i18n:Wizard.14hearts1.02}}\"/pause 500/globalFade/viewport -1000 -1000/end dialogue Wizard \"{{i18n:Wizard.14hearts1.03}}\""
-      },
-    },
+
     { //Wizard 14 heart event - part 1 - Farmhouse level (IV)
       "Action": "EditData",
       "Target": "data/events/farmhouse",
       "When": {
         "HasSeenEvent": "1724098",
-        "FarmhouseUpgrade": 3,
+        "FarmhouseUpgrade|contains=2, 3": true,
         "HasFlag |contains=Island_UpgradeHouse": true
       },
       "Entries": {

@@ -130,8 +130,13 @@
       "FromFile": "assets/CharacterFiles/OverworldSprites/Morris/Morris.png"
     },
     {
-      //Morris' Schedule
       "Action": "Load",
+      "Target": "Characters/schedules/MorrisTod",
+      "FromFile": "Assets/Blank.json"
+    },/*
+    {
+      //Morris' Schedule
+      "Action": "EditData",
       "Target": "Characters/schedules/MorrisTod",
       "When": {
         "HasSeenEvent |contains=5553210": false
@@ -140,13 +145,13 @@
     },
     {
       //Morris' Mayor Schedule
-      "Action": "Load",
+      "Action": "EditData",
       "Target": "Characters/schedules/MorrisTod",
       "When": {
         "HasSeenEvent: anyPlayer| contains=5553210": true,
       },
       "FromFile": "assets/CharacterFiles/Schedules/Morris/ScheduleMayor.json"
-    },
+    },*/
     { //Morris' Townhouse Schedule
       "Action": "EditData",
       "Target": "characters/schedules/MorrisTod",

@@ -298,7 +298,7 @@
           "ExcludeFromPerfectionScore": false,
           "EndSlideShow": "MainGroup",
           "FriendsAndFamily": {},
-          "UnlockConditions": null,
+          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 3691371",
           "SpawnIfMissing": true,
           "Home": [
             {
@@ -414,14 +414,19 @@
       "FromFile": "assets/CharacterFiles/Portraits/Scarlett/Scarlett_Cosplay.png"
     },
     {
-      //Scarlett's schedule
       "Action": "Load",
+      "Target": "Characters/schedules/Scarlett",
+      "FromFile": "Assets/Blank.json"
+    },
+   /* {
+      //Scarlett's schedule
+      "Action": "EditData",
       "Target": "Characters/schedules/Scarlett",
       "FromFile": "assets/CharacterFiles/Schedules/Scarlett/Schedule.json",
       "When": {
         "HasSeenEvent": "3691371"
       }
-    },
+    },*/
     {
       //Scarlett's fall blue moon vineyard farmhand schedule (Married to Sophia)
       "Action": "EditData",

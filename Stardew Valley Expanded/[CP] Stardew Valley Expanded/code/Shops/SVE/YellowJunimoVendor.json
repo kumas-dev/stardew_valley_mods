@@ -2,6 +2,11 @@
 
     "Changes": [
         {
+            "Action": "Load",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/YellowJunimo",
+            "FromFile": "assets/CharacterFiles/Shops/Junimos/YellowJunimo.png"
+        },
+        {
             "Action": "EditData",
             "Target": "Data/Shops",
             "Entries": {
@@ -9,7 +14,7 @@
                     "Owners": [
                         {
                             "Name": "AnyOrNone",
-                            "Portrait": "{{InternalAssetKey: assets/CharacterFiles/Shops/Junimos/YellowJunimo.png}}",
+                            "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\YellowJunimo",
                             "Dialogues": [
                                 {
                                 "Id": "FlashShifter.StardewValleyExpandedCP_Default",

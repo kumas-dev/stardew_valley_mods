@@ -1,6 +1,16 @@
 {
     "Changes": [
         {
+            "Action": "Load",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Martin_Vendor",
+            "FromFile": "assets/CharacterFiles/Shops/Joja/Martin_Vendor.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Claire_Vendor",
+            "FromFile": "assets/CharacterFiles/Shops/Joja/Claire_Vendor.png"
+        },
+        {
             "Action": "EditData",
             "Target": "Data/Shops",
             "TargetField": [
@@ -33,7 +43,7 @@
 
                     {
                         "Name": "Martin",
-                        "Portrait": "{{InternalAssetKey: assets/CharacterFiles/Shops/Joja/Martin_Vendor.png}}",
+                        "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\Martin_Vendor",
                         "Dialogues": [
                             {
                                 "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Default",
@@ -48,7 +58,7 @@
                     },
                     {
                         "Name": "Claire",
-                        "Portrait": "{{InternalAssetKey: assets/CharacterFiles/Shops/Joja/Claire_Vendor.png}}",
+                        "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\Claire_Vendor",
                         "Dialogues": [
                             {
                                 "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Default",

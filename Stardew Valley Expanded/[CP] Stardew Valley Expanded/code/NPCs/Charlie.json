@@ -1,5 +1,10 @@
 {
   "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/CharlieChicken",
+      "FromFile": "Assets/Blank.json"
+    },
     { //DA CHICKEN SCHEDULE - Jas
       "Action": "EditData",
       "Target": "characters/schedules/CharlieChicken",
@@ -86,15 +91,15 @@
       "Target": "Portraits/CharlieChicken",
       "FromFile": "Assets/CharacterFiles/Portraits/NoPortraits/Charlie.png"
     },
-    {
+   /* {
       //Charlie's schedule
-      "Action": "Load",
+      "Action": "EditData",
       "Target": "Characters/schedules/CharlieChicken",
       "When": {
         "HasSeenEvent |contains=3900074": true
       },
       "FromFile": "assets/CharacterFiles/Schedules/Charlie/Schedule.json"
-    },
+    },*/
     { //New Saturday schedule if player married Shane
       "Action": "EditData",
       "Target": "characters/schedules/CharlieChicken",

@@ -56,7 +56,7 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "Entries": {
-        "GuntherSilvian": "{{i18n:Gunther.Gifts.Loved}}/207 557 212 104 106 107 108 109 121 122 124 125 578/{{i18n:Gunther.Gifts.Liked}}/72 96 97 98 99 100 101 103 105 110 111 112 113 114 115 116 117 118 119 120 123 126 127 579 580 581 582 583 584 585 586 587 588 589 -2 -7 -12 -75 -79 -80 FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch/{{i18n:Gunther.Gifts.Disliked}}/346 -4 FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Galdoran_Gem FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed/{{i18n:Gunther.Gifts.Hated}}/167 78 FlashShifter.StardewValleyExpandedCP_Daggerfish/{{i18n:Gunther.Gifts.Neutral}}/-15 -28 -81/"
+        "GuntherSilvian": "{{i18n:Gunther.Gifts.Loved}}/GoldenSpur 207 557 212 104 106 107 108 109 121 122 124 125 578/{{i18n:Gunther.Gifts.Liked}}/72 96 97 98 99 100 101 103 105 110 111 112 113 114 115 116 117 118 119 120 123 126 127 579 580 581 582 583 584 585 586 587 588 589 -2 -7 -12 -75 -79 -80 FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Dried_Sand_Dollar FlashShifter.StardewValleyExpandedCP_Big_Conch/{{i18n:Gunther.Gifts.Disliked}}/346 -4 FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Sports_Drink FlashShifter.StardewValleyExpandedCP_Galdoran_Gem FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed/{{i18n:Gunther.Gifts.Hated}}/167 78 FlashShifter.StardewValleyExpandedCP_Daggerfish/{{i18n:Gunther.Gifts.Neutral}}/-15 -28 -81/"
       }
     },
     {
@@ -91,8 +91,13 @@
       "FromFile": "assets/CharacterFiles/OverworldSprites/Gunther/Gunther.png"
     },
     {
-      //Gunther's Schedule
       "Action": "Load",
+      "Target": "Characters/schedules/GuntherSilvian",
+      "FromFile": "Assets/Blank.json"
+    },
+   /* {
+      //Gunther's Schedule
+      "Action": "EditData",
       "Target": "Characters/schedules/GuntherSilvian",
       "When": {
         "GuntherUnlocked": "true"
@@ -101,13 +106,13 @@
     },
     {
       //Gunther's Fake Schedule
-      "Action": "Load",
+      "Action": "EditData",
       "Target": "Characters/schedules/GuntherSilvian",
       "When": {
         "GuntherUnlocked": "false"
       },
       "FromFile": "assets/CharacterFiles/Schedules/Gunther/FakeSchedule.json"
-    },
+    },*/
    
     //MOVIE THEATER
     {

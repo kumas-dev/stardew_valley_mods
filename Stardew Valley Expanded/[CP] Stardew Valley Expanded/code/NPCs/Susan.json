@@ -124,8 +124,13 @@
       "FromFile": "assets/CharacterFiles/OverworldSprites/Susan/Susan_Beach.png"
     },
     {
-      //Susan's Fake Schedule
       "Action": "Load",
+      "Target": "Characters/schedules/Susan",
+      "FromFile": "Assets/Blank.json"
+    },
+    /*{
+      //Susan's Fake Schedule
+      "Action": "EditData",
       "Target": "Characters/schedules/Susan",
       "When": {
         "HasSeenEvent |contains=1000077": false
@@ -134,13 +139,13 @@
     },
     {
       //Susan's Schedule
-      "Action": "Load",
+      "Action": "EditData",
       "Target": "Characters/schedules/Susan",
       "When": {
         "HasSeenEvent": "1000077"
       },
       "FromFile": "assets/CharacterFiles/Schedules/Susan/Schedule.json"
-    },
+    },*/
     //MOVIE THEATER
     {
       "Action": "EditData",

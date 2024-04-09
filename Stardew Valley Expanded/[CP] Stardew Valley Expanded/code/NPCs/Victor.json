@@ -1172,35 +1172,11 @@
       },
     },
     {
-      //VICTOR 12 HEART EVENT - part 1 (community center route, house upgrade = 2)
-      "Action": "EditData",
-      "Target": "Data/Events/farmhouse",
-      "When": {
-        "FarmhouseUpgrade": 2,
-        "IsCommunityCenterComplete": true
-      },
-      "Entries": {
-        "2000005/O Victor/f Victor 3000/w sunny/t 600 800": "none/-500 -500/farmer 14 14 3 Victor 7 14 0/skippable/makeInvisible 7 14 8 1/pause 750/playMusic 50s/pause 500/ignoreCollisions Victor/viewport 8 14 true/speed farmer 1/move farmer -5 0 3/pause 800/faceDirection Victor 1 true/pause 500/speak Victor \"{{i18n:victor12hearts.01}}\"/pause 400/emote farmer 8/speak Victor \"{{i18n:victor12hearts.CC.02}}\"/pause 1000/speak Victor \"{{i18n:victor12hearts.03}}\"/pause 500/end dialogue Victor \"{{i18n:victor12hearts.04}}\""
-      },
-    },
-    {
-      //VICTOR 12 HEART EVENT - part 1 (joja route, house upgrade = 2)
-      "Action": "EditData",
-      "Target": "Data/Events/farmhouse",
-      "When": {
-        "FarmhouseUpgrade": 2,
-        "IsJojaMartComplete": true
-      },
-      "Entries": {
-        "2000005/O Victor/f Victor 3000/w sunny/t 600 800": "none/-500 -500/farmer 14 14 3 Victor 7 14 0/skippable/makeInvisible 7 14 8 1/pause 750/playMusic 50s/pause 500/ignoreCollisions Victor/viewport 8 14 true/speed farmer 1/move farmer -5 0 3/pause 800/faceDirection Victor 1 true/pause 500/speak Victor \"{{i18n:victor12hearts.01}}\"/pause 400/emote farmer 8/speak Victor \"{{i18n:victor12hearts.02}}\"/pause 1000/speak Victor \"{{i18n:victor12hearts.03}}\"/pause 500/end dialogue Victor \"{{i18n:victor12hearts.04}}\""
-      },
-    },
-    {
       //VICTOR 12 HEART EVENT - part 1 (community center route, house upgrade = 3)
       "Action": "EditData",
       "Target": "Data/Events/farmhouse",
       "When": {
-        "FarmhouseUpgrade": 3,
+        "FarmhouseUpgrade|contains=2, 3": true,
         "IsCommunityCenterComplete": true
       },
       "Entries": {
@@ -1212,7 +1188,7 @@
       "Action": "EditData",
       "Target": "Data/Events/farmhouse",
       "When": {
-        "FarmhouseUpgrade": 3,
+        "FarmhouseUpgrade|contains=2, 3": true,
         "IsJojaMartComplete": true
       },
       "Entries": {
