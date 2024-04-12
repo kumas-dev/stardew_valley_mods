@@ -1,0 +1,74 @@
+{
+	"Changes": [
+		// Cloth vanilla description changes
+		{
+			"Action": "EditData",
+			"Target": "Strings/Objects",
+			//"When": {"Enable Essential Pack": true},
+			"Entries": {
+				"Cloth_Description": "{{i18n:Cloth_description}}"
+			}
+		},
+		// Grape Starter changes
+		{
+			"Action": "EditImage",
+			"Target": "maps/springobjects",
+			"FromFile": "assets/objects.png",
+			"When": {
+				"Enable Extended Crops Pack": true,
+				"Disable Grape Bushes": false
+			},
+			"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 16 }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Enable Extended Crops Pack": true,
+				"Disable Grape Bushes": false
+			},
+			"Fields": { 
+				"301": {
+					"Price": 300,
+					"DisplayName": "{{i18n:GrapeSeeds_name}}",
+					"Description": "{{i18n:GrapeSeeds_description}}"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"When": {
+				"Enable Extended Crops Pack": true,
+				"Disable Grape Bushes": false
+			},
+			"Fields": {
+				"(O)301": {
+					"Condition": "SEASON spring summer fall winter",
+					"ApplyProfitMargins": false,
+				},
+			},
+			"MoveEntries": [
+				{
+					"Id": "(O)301",
+					"BeforeId": "Cornucopia_WhiteGrapeSeeds"
+				}
+			]
+		},
+		{
+			//Add cocoa pod to chocolate cake recipe
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Fields": {
+				"Chocolate Cake": {
+					"0": "Cornucopia_CocoaPod 1 246 1 245 1 -5 1"
+				}
+			}
+		}
+	]
+}
