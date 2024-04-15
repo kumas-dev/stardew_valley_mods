@@ -78,6 +78,7 @@
 					"Price": 855,
 					"Edibility": 40,
 					"IsDrink": true,
+					"ExcludeFromShippingCollection": true,
 					"ContextTags": [
 						"color_yellow",
 						"mayo_item"
