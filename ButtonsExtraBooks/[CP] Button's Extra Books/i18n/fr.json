@@ -1,0 +1,59 @@
+{
+	// POWER LIST //
+	"Power.Luck.Name": "Chance du Débutant",
+	"Power.Luck.Description": "Chance augmentée en permanence d'une petite quantité.",
+	
+	"Power.ExtraGifts.Name": "Livre de l'Altruisme",
+	"Power.ExtraGifts.Description": "Les villageois acceptent plus de deux cadeaux par semaine.",
+	
+	"Power.TreesIgnoreSeason.Name": "Sylviculture d'Hiver",
+	"Power.TreesIgnoreSeason.Description": "Les arbres poussent toute l'année.",
+	
+	"Power.ArtisanMachines.Name": "Manuel de la guilde des artisans",
+	"Power.ArtisanMachines.Description": "Les machines produisent des produits artisanaux beaucoup plus rapidement.",
+	
+	"Power.GiantCrops.Name": "Gros Melons",
+	"Power.GiantCrops.Description": "Les cultures géantes ont plus de chances de pousser pendant la nuit.",
+
+	// TODO //////////////////////////////////////////////
+	"Power.Popularity.Name": "Friendship 202",
+	"Power.Popularity.Description": "Your friends are more likely to send you gifts in the mail.",
+	// TODO //////////////////////////////////////////////
+	
+	// BOOK ITEMS //
+	"Book.Luck.Name": "Chance du Débutant",
+	"Book.Luck.Description": "Lisez ce livre pour obtenir une augmentation mineure et permanente de chance.",
+	
+	"Book.ExtraGifts.Name": "Livre de l'Altruisme",
+	"Book.ExtraGifts.Description": "Après avoir lu ce livre, les villageois accepteront plus de deux cadeaux par semaine de votre part.",
+	
+	"Book.TreesIgnoreSeason.Name": "Sylviculture d'Hiver",
+	"Book.TreesIgnoreSeason.Description": "La lecture de ce livre vous apprendra à cultiver des arbres pendant la saison hivernale.",
+
+	"Book.ArtisanMachines.Name": "Manuel de la guilde des artisans",
+	"Book.ArtisanMachines.Description": "Les techniques contenues dans ce livre vous aideront à produire des produits artisanaux beaucoup plus rapidement.",
+	
+	"Book.GiantCrops.Name": "Gros Melons!",
+	"Book.GiantCrops.Description": "Après avoir lu ce livre, vous serez plus enclin à cultiver des récoltes géantes.",
+
+	// TODO //////////////////////////////////////////////
+	"Book.Popularity.Name": "Friendship 202",
+	"Book.Popularity.Description": "Your friends will be more likely to send you gifts.",
+	// TODO //////////////////////////////////////////////
+
+	// MAIL //
+	"Mail.ArtisanGrange.Text": "La Guilde des Artisans de la République de Ferngill est fière de reconnaître votre engagement pour des produits artisanaux de qualité. Pour vous remercier de votre récente exposition à la Foire de Stardew Valley, nous vous joignons un manuel qui, nous l'espérons, vous aidera à utiliser plus efficacement vos machines.",
+	"Mail.ArtisanGrange.Title": "Guilde des Artisans",
+
+	// MISC DIALOGUE CHANGES //
+	"Dialogue.EnoughGifts": "Vous avez offert suffisamment de cadeaux à ({0}) pour l'instant!",
+
+	// CONFIG OPTIONS //
+	"Config.TimeGate": "Si activé, un certain temps doit passer pour que certains livres soient disponibles.",
+	
+	// DEBUG //
+	"Debug.Book.RemoveAll.Name": "Suppression BEB",
+	"Debug.Book.RemoveAll.Description": "Retire tous les pouvoirs qui vous ont été accordés par le mod Button's Extra Books et vous rembourse les livres correspondants.",
+}
+
+// Thank you Schneitizel on Nexusmods!

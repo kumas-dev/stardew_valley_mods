@@ -1,0 +1,38 @@
+{
+  // UI //
+  "Config.SectionTitle.General": "General Settings",
+  "Config.SectionTitle.Books": "Book Settings",
+  "Config.SectionTitle.Debug": "Debug Settings",
+  
+  // GENERAL CONFIG //
+  "Config.General.AlwaysAvailable.Name": "Books Always Available",
+  "Config.General.AlwaysAvailable.Description": "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
+  
+  "Config.General.Enabled.Name": "Enabled",
+  "Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+  
+  // BOOK SETTINGS //
+  "Config.Books.Luck.Title": "Beginner's Luck",
+  "Config.Books.LuckBonus.Name": "Luck Bonus",
+  "Config.Books.LuckBonus.Description": "How much luck is added after reading the Beginner's Luck book.",
+  
+  "Config.Books.ExtraGifts.Title": "Book of Altruism",
+  
+  "Config.Books.TreesIgnoreSeason.Title": "Winter Forestry",
+  
+  "Config.Books.ArtisanMachines.Title": "Artisans Guild Manual",
+  "Config.Books.ArtisanMachinesGrangeMustWin.Name": "Grange Display Must Win",
+  "Config.Books.ArtisanMachinesGrangeMustWin.Description": "If enabled, your grange display must place 1st on top of having 6+ artisan goods.",
+  "Config.Books.ArtisanMachinesBonus.Name": "Machine Speed Bonus",
+  "Config.Books.ArtisanMachinesBonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
+  
+  "Config.Books.GiantCrops.Title": "Big Melons!",
+  "Config.Books.GiantCropsBonus.Name": "Giant Crop Chance",
+  "Config.Books.GiantCropsBonus.Description": "Percent chance that crops will form a giant crop overnight.",
+  
+  "Config.Books.Popularity.Title": "Friendship 202",
+  
+  // DEBUG SETTINGS //
+  "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
+  "Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."
+}

@@ -1,0 +1,147 @@
+{
+	"Changes": [
+		// BEGINNER'S LUCK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Luck": {
+					"Price": 25000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Luck",
+					"ItemId": "(O){{ModId}}_Book_Luck",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck}}"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck": true
+			},
+			"Update": "OnTimeChange, OnLocationChange"
+		},
+		
+		// BOOK OF ALTRUISM //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_ExtraGifts": {
+					"Price": 50000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_ExtraGifts",
+					"ItemId": "(O){{ModId}}_Book_ExtraGifts",
+					"Condition": 'ANY "YEAR 3" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts}}'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
+			},
+			"Update": "OnTimeChange, OnLocationChange"
+		},
+		
+		// WINTER FORESTRY //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_TreesIgnoreSeason": {
+					"Price": 20000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_TreesIgnoreSeason",
+					"ItemId": "(O){{ModId}}_Book_TreesIgnoreSeason",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason}}",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason": true
+			},
+			"Update": "OnTimeChange, OnLocationChange"
+		},
+		
+		// ARTISANS GUILD MANUAL //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_ArtisanMachines": {
+					"Price": 100000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_ArtisanMachines",
+					"ItemId": "(O){{ModId}}_Book_ArtisanMachines",
+					"Condition": 'ANY "PLAYER_HAS_MAIL Any {{ModId}}_Mail_ArtisanGrange Received" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines}}'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines": true
+			},
+			"Update": "OnTimeChange, OnLocationChange"
+		},
+
+		// BIG MELONS! //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_GiantCrops": {
+					"Price": 30000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_GiantCrops",
+					"ItemId": "(O){{ModId}}_Book_GiantCrops",
+					"Condition": 'ANY "YEAR 2" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops}}'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
+			},
+			"Update": "OnTimeChange, OnLocationChange"
+		},
+
+		// FRIENDSHIP 102 //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Popularity": {
+					"Price": 35000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Popularity",
+					"ItemId": "(O){{ModId}}_Book_Popularity",
+					"Condition": 'ANY "PLAYER_STAT Current Book_Friendship 1" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity}}'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
+			},
+			"Update": "OnTimeChange, OnLocationChange"
+		},
+		
+		// BEB POWER REMOVAL //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SeedShop", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_DebugRemoveAll": {
+					"Price": 50,
+					"Id": "(O){{ModId}}_Debug_RemoveAll",
+					"ItemId": "(O){{ModId}}_Debug_RemoveAll"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableDebugBook": true
+			},
+			"Update": "OnTimeChange, OnLocationChange"
+		},
+	]
+}
