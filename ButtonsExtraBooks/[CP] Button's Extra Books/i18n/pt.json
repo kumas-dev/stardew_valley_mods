@@ -51,9 +51,6 @@
 
 	// MISC DIALOGUE CHANGES //
 	"Dialogue.EnoughGifts": "Você já deu presentes demais para {0} por enquanto! Chega.",
-
-	// CONFIG OPTIONS //
-	"Config.TimeGate": "Se certos livros estarão indisponíveis ou não, a menos que tenha passado tempo suficiente.",
 	
 	// DEBUG //
 	////////////////////////////////////////////////////////////////////////

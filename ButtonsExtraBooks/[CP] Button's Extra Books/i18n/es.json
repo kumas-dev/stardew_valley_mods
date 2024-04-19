@@ -43,9 +43,6 @@
     
     // MISC DIALOGUE CHANGES //
     "Dialogue.EnoughGifts": "Has dado {0} ¡Suficientes regalos por ahora!",
-    
-    // CONFIG OPTIONS //
-    "Config.TimeGate": "Si ciertos libros no están disponibles o no a menos que haya transcurrido suficiente tiempo.",
 	
 	// DEBUG //
 	"Debug.Book.RemoveAll.Name": "Eliminación de beneficios BEB",

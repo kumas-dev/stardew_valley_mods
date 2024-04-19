@@ -708,55 +708,55 @@
     },
     //Loads Spouse Room
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Maps/Custom_VictorsRoom",
       "FromFile": "Assets/Maps/SpouseRooms/VictorsRoom.tbin",
     },
     //Loads Spouse Patio
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Maps/Victor_Spouse_Area",
       "FromFile": "Assets/Maps/SpouseRooms/Victor_Spouse_Area.tbin"
     },
     {
       //Victor's portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Victor",
       "FromFile": "assets/CharacterFiles/Portraits/Victor/Victor.png"
     },
     {
       //Victor's sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Victor",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Victor/Victor.png"
     },
     {
       //Victor's portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Victor_Winter",
       "FromFile": "assets/CharacterFiles/Portraits/Victor/Victor_Winter.png"
     },
     {
       //Victor's sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Victor_Winter",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Victor/Victor_Winter.png"
     },
     {
       //Victor's beach portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Victor_Beach",
       "FromFile": "assets/CharacterFiles/Portraits/Victor/Victor_Beach.png"
     },
     {
       //Victor's beach sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Victor_Beach",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Victor/Victor_Beach.png"
     },
     {
       //Victor's schedule
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/schedules/Victor",
       "FromFile": "assets/CharacterFiles/Schedules/Victor/Schedule.json"
     },
@@ -1233,12 +1233,12 @@
     },
     //Load temporary actors for Victor 12 heart event
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Dewey",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Animals/Dewey.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Luna",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Animals/Luna.png"
     },
@@ -1507,7 +1507,7 @@
     },
     //Loads Victor's Spaghetti Dinner Table (69x45), which is a meal I totally would want to eat. Wouldn't you?
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/VictorSpaghettiDinnerTable",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/VictorSpaghettiDinnerTable.png"
     },

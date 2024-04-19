@@ -14,11 +14,9 @@
 	
 	"Power.GiantCrops.Name": "Gros Melons",
 	"Power.GiantCrops.Description": "Les cultures géantes ont plus de chances de pousser pendant la nuit.",
-
-	// TODO //////////////////////////////////////////////
-	"Power.Popularity.Name": "Friendship 202",
-	"Power.Popularity.Description": "Your friends are more likely to send you gifts in the mail.",
-	// TODO //////////////////////////////////////////////
+	
+	"Power.Popularity.Name": "Amitiés 202",
+	"Power.Popularity.Description": "Vos amis sont plus enclins à vous envoyer des cadeaux par courrier.",
 	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "Chance du Débutant",
@@ -35,11 +33,9 @@
 	
 	"Book.GiantCrops.Name": "Gros Melons!",
 	"Book.GiantCrops.Description": "Après avoir lu ce livre, vous serez plus enclin à cultiver des récoltes géantes.",
-
-	// TODO //////////////////////////////////////////////
-	"Book.Popularity.Name": "Friendship 202",
-	"Book.Popularity.Description": "Your friends will be more likely to send you gifts.",
-	// TODO //////////////////////////////////////////////
+	
+	"Book.Popularity.Name": "Amitiés 202",
+	"Book.Popularity.Description": "Vos amis sont plus enclins à vous envoyer des cadeaux.",
 
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "La Guilde des Artisans de la République de Ferngill est fière de reconnaître votre engagement pour des produits artisanaux de qualité. Pour vous remercier de votre récente exposition à la Foire de Stardew Valley, nous vous joignons un manuel qui, nous l'espérons, vous aidera à utiliser plus efficacement vos machines.",
@@ -47,9 +43,6 @@
 
 	// MISC DIALOGUE CHANGES //
 	"Dialogue.EnoughGifts": "Vous avez offert suffisamment de cadeaux à ({0}) pour l'instant!",
-
-	// CONFIG OPTIONS //
-	"Config.TimeGate": "Si activé, un certain temps doit passer pour que certains livres soient disponibles.",
 	
 	// DEBUG //
 	"Debug.Book.RemoveAll.Name": "Suppression BEB",

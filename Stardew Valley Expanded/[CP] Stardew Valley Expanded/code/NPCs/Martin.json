@@ -74,13 +74,13 @@
     },
     {
       //Martin's Portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Martin",
       "FromFile": "Assets/CharacterFiles/Portraits/Martin/Martin.png"
     },
     {
       //Martin's Sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Martin",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Martin/Martin.png"
     },
@@ -186,13 +186,13 @@
     },
     {
       //Martin's Winter Portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Martin_Winter",
       "FromFile": "assets/CharacterFiles/Portraits/Martin/Martin_Winter.png"
     },
     {
       //Andy's Winter Sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Martin_Winter",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Martin/Martin_Winter.png"
     },
@@ -208,7 +208,7 @@
       }
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/schedules/Martin",
       "FromFile": "Assets/Blank.json"
     },
@@ -773,22 +773,22 @@
       },
     },
     { //theater temp actor loads
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/**Martin**",
       "FromFile": "Assets/CharacterFiles/Portraits/Martin/Martin_Theater.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/**Martin**",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Martin/Martin_Theater.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/**Claire**",
       "FromFile": "Assets/CharacterFiles/Portraits/Claire/Claire_Theater.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/**Claire**",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Claire/Claire_Theater.png"
     },
@@ -800,7 +800,7 @@
       },
     },
     {
-      "Action": "Load", //16x16
+      "Action": "Load", "Priority": "Low", //16x16
       "Target": "Characters/GenealogyBook",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/GenealogyBook.png"
     },

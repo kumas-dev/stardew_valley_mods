@@ -30,9 +30,7 @@
   "Config.Books.GiantCropsBonus.Name": "大甜瓜！额外奖励",
   "Config.Books.GiantCropsBonus.Description": "作物过夜形成巨大作物的几率百分比。",
 
-  // TODO ///////////////////////////////////////////
-  "Config.Books.Popularity.Title": "Friendship 202",
-  ///////////////////////////////////////////////////
+  "Config.Books.Popularity.Title": "友谊202",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "开启排错之书",

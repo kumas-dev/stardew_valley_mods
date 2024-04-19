@@ -1,52 +1,52 @@
 {
   "Changes": [
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/CrimsonBadlands",
       "FromFile": "assets/Maps/WorldMaps/CrimsonBadlands.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/FableReef",
       "FromFile": "assets/Maps/WorldMaps/FableReef.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/spring_GrampletonSuburbs",
       "FromFile": "assets/Maps/WorldMaps/GrampletonSuburbs/spring_GrampletonSuburbs_Worldmap.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/summer_GrampletonSuburbs",
       "FromFile": "assets/Maps/WorldMaps/GrampletonSuburbs/summer_GrampletonSuburbs_Worldmap.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/fall_GrampletonSuburbs",
       "FromFile": "assets/Maps/WorldMaps/GrampletonSuburbs/fall_GrampletonSuburbs_Worldmap.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/",
       "FromFile": "assets/Maps/WorldMaps/GrampletonSuburbs/winter_GrampletonSuburbs_Worldmap.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/spring_Highlands",
       "FromFile": "assets/Maps/WorldMaps/Highlands/spring_Highlands_WorldMap.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/summer_Highlands",
       "FromFile": "assets/Maps/WorldMaps/Highlands/summer_Highlands_WorldMap.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/fall_Highlands",
       "FromFile": "assets/Maps/WorldMaps/Highlands/fall_Highlands_WorldMap.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/winter_Highlands",
       "FromFile": "assets/Maps/WorldMaps/Highlands/winter_Highlands_WorldMap.png"
     },

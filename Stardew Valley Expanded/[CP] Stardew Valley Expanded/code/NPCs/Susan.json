@@ -89,42 +89,42 @@
     },
     {
       //Susan's Portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Susan",
       "FromFile": "assets/CharacterFiles/Portraits/Susan/Susan.png"
     },
     {
       //Susan's Sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Susan",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Susan/Susan.png"
     },
     {
       //Susan's Portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Susan_Winter",
       "FromFile": "assets/CharacterFiles/Portraits/Susan/Susan_Winter.png"
     },
     {
       //Susan's Sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Susan_Winter",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Susan/Susan_Winter.png"
     },
     {
       //Susan's beach portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Susan_Beach",
       "FromFile": "assets/CharacterFiles/Portraits/Susan/Susan_Beach.png"
     },
     {
       //Susan's beach sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Susan_Beach",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Susan/Susan_Beach.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/schedules/Susan",
       "FromFile": "Assets/Blank.json"
     },
@@ -347,7 +347,7 @@
     },
     //Load temporary actor for Susan 10 heart event
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/GrampletonWardrobe",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/GrampletonWardrobe.png"
     },

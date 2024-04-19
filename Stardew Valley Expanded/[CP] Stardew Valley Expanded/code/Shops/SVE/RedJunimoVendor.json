@@ -2,9 +2,21 @@
 
     "Changes": [
         {
-            "Action": "Load",
+            "Action": "Load", "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/RedJunimo",
-            "FromFile": "assets/CharacterFiles/Shops/Junimos/RedJunimo.png"
+            "FromFile": "assets/CharacterFiles/Shops/Junimos/blank.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/RedJunimo",
+            "FromFile": "assets/CharacterFiles/Shops/Junimos/Junimos.png",
+            "FromArea": {
+                "X": 64,
+                "Y": 64,
+                "Width": 64,
+                "Height": 64
+
+            }
         },
         {
             "Action": "EditData",

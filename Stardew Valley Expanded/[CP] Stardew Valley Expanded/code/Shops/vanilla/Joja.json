@@ -1,12 +1,12 @@
 {
     "Changes": [
         {
-            "Action": "Load",
+            "Action": "Load", "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Martin_Vendor",
             "FromFile": "assets/CharacterFiles/Shops/Joja/Martin_Vendor.png"
         },
         {
-            "Action": "Load",
+            "Action": "Load", "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Claire_Vendor",
             "FromFile": "assets/CharacterFiles/Shops/Joja/Claire_Vendor.png"
         },
@@ -40,7 +40,6 @@
                 ],
                 "PriceModifierMode": "Stack",
                 "Owners": [
-
                     {
                         "Name": "Martin",
                         "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\Martin_Vendor",
@@ -326,6 +325,8 @@
                         "Id": "FlashShifter.StardewValleyExpandedCP_Sunflower_Seeds",
                         "ItemId": "(O)431",
                         "Condition": "SEASON Summer Fall, !PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
+                        "Price": 180,
+                        "IgnoreShopPriceModifiers": true
                     },
                     //Fall Seeds
                     {
@@ -460,6 +461,8 @@
                         "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Sunflower_Seeds",
                         "ItemId": "(O)431",
                         "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
+                        "IgnoreShopPriceModifiers": true,
+                        "Price": 180
                     },
                     //Fall Seeds
                     {
@@ -589,12 +592,14 @@
                     {
                         "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Spangle_Seeds",
                         "ItemId": "(O)455",
-                        "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"
+                        "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
                     },
                     {
                         "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Sunflower_Seeds",
                         "ItemId": "(O)431",
-                        "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"
+                        "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
+                        "IgnoreShopPriceModifiers": true,
+                        "Price": 180
                     },
                     //Fall Seeds
                     {

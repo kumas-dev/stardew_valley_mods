@@ -29,10 +29,8 @@
   "Config.Books.GiantCrops.Title": "Gros Melons!",
   "Config.Books.GiantCropsBonus.Name": "Chance de Culture Géante",
   "Config.Books.GiantCropsBonus.Description": "Pourcentage de chance que les cultures forment une culture géante pendant la nuit.",
-
-  // TODO ////////////////////////////////////
-  "Config.Books.Popularity.Title": "Friendship 202",
-  ////////////////////////////////////////////
+  
+  "Config.Books.Popularity.Title": "Amitiés 202",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "Activer Livre de Débogage",

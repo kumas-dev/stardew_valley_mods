@@ -54,42 +54,42 @@
          }
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/AquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish.png"
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/GingerIslandAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_GingerIsland.png",
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/DaggerAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_Daggerfish.png",
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SpriteSpringAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_SpriteSpring.png",
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/WeirdAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_WeirdOnes.png"
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SecretWoodsAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_SecretWoods.png",
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/WaterGrubAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_WaterGrub.png",
       },
       {
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SnatcherWormAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_Aquarium_SnatcherWorm.png",
       },
@@ -136,7 +136,7 @@
          "Update": "OnTimeChange"
       },
       { //Add Kittyfish image to aquarium tilesheet
-         "Action": "Load",
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/KittyfishAquariumFish",
          //"When": { "HasSeenEvent": "69069247" },
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_Kittyfish.png",

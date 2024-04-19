@@ -120,33 +120,38 @@
     {
       //Marlon's Portraits
       "Action": "Load",
+      "Priority": "Low",
       "Target": "Portraits/MarlonFay",
       "FromFile": "assets/CharacterFiles/Portraits/Marlon/Marlon.png"
     },
     {
       //Marlon's Sprites
       "Action": "Load",
+      "Priority": "Low",
       "Target": "Characters/MarlonFay",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Marlon/Marlon.png"
     },
     {
       //Marlon's Portraits
       "Action": "Load",
+      "Priority": "Low",
       "Target": "Portraits/MarlonFay_Winter",
       "FromFile": "assets/CharacterFiles/Portraits/Marlon/MarlonFay_Winter.png"
     },
     {
       //Marlon's Sprites
       "Action": "Load",
+      "Priority": "Low",
       "Target": "Characters/MarlonFay_Winter",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Marlon/MarlonFay_Winter.png"
     },
     {
       "Action": "Load",
+      "Priority": "Low",
       "Target": "Characters/schedules/MarlonFay",
       "FromFile": "Assets/Blank.json"
     },
-   /* {
+    /* {
       //Marlon's Schedule
       "Action": "EditData",
       "Target": "Characters/schedules/MarlonFay",

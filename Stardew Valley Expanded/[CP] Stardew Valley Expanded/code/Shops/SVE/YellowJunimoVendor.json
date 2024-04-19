@@ -2,9 +2,21 @@
 
     "Changes": [
         {
-            "Action": "Load",
+            "Action": "Load", "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/YellowJunimo",
-            "FromFile": "assets/CharacterFiles/Shops/Junimos/YellowJunimo.png"
+            "FromFile": "assets/CharacterFiles/Shops/Junimos/blank.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/YellowJunimo",
+            "FromFile": "assets/CharacterFiles/Shops/Junimos/Junimos.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 65,
+                "Width": 64,
+                "Height": 64
+
+            }
         },
         {
             "Action": "EditData",
@@ -32,7 +44,7 @@
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Ancient_Seeds",
-                            "ItemId": "114",
+                            "ItemId": "499",
                             "Price": 8000,
                             "AvailableStock": 10,
                         }, 

@@ -183,60 +183,60 @@
     },
     //Spouse Room
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Maps/Custom_LancesRoom",
       "FromFile": "Assets/Maps/SpouseRooms/LancesRoom.tbin",
     },
     //Spouse Patio
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Maps/Lance_Spouse_Area",
       "FromFile": "Assets/Maps/SpouseRooms/Lance_Spouse_Area.tbin"
     },
     {
       //Lance's sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Lance",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Lance/Lance.png"
     },
     {
       //Lance's beach sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Lance_Beach",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Lance/Lance_Beach.png"
     },
     {
       //Lance's beach sprites (for character events)
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/LanceBeach",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Lance/Lance_Beach.png"
     },
     {
       //Lance's portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Lance",
       "FromFile": "Assets/CharacterFiles/Portraits/Lance/Lance.png"
     },
     {
       //Lance's Winter Portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Lance_Winter",
       "FromFile": "assets/CharacterFiles/Portraits/Lance/Lance_Winter.png"
     },
     {
       //Lance's Winter Sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Lance_Winter",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Lance/Lance_Winter.png"
     },
     {
       //Lance's beach portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Lance_Beach",
       "FromFile": "Assets/CharacterFiles/Portraits/Lance/Lance_Beach.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/schedules/Lance",
       "FromFile": "Assets/Blank.json"
     },
@@ -807,7 +807,7 @@
       },
     },
     { //Blink Relic image load
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Mods/FlashShifter.StardewValleyExpandedCP/BlinkRelic",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/BlinkRelic.png"
     },
@@ -884,60 +884,60 @@
     ///// Lance 6 heart temp actor loads /////
     //Wilderness Golems
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/WildernessGolemActor1",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/WildernessGolemActor1.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/WildernessGolemActor2",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/WildernessGolemActor2.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/WildernessGolemActor3",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/WildernessGolemActor3.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/WildernessGolemActor4",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/WildernessGolemActor4.png"
     },
     //Slimes
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/SlimeActor1",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/SlimeActor1.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/SlimeActor2",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/SlimeActor2.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/SlimeActor3",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/SlimeActor3.png"
     },
     //Baby Slime
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/BabySlimeActor",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/BabySlimeActor.png"
     },
     //Monster Mushrooms
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/MushroomMonsterActor1",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/MushroomMonsterActor1.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/MushroomMonsterActor2",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/MushroomMonsterActor2.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/MushroomMonsterActor3",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/MushroomMonsterActor3.png"
     },
@@ -1381,62 +1381,62 @@
       }
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor1",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor1.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor2",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor2.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor3",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor3.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor4",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor4.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor5",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor5.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor6",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor6.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor7",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor7.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor8",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor8.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor9",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor9.png"
     },
     {
-      "Action": "Load", //42x32
+      "Action": "Load", "Priority": "Low", //42x32
       "Target": "Characters/TorpedoTroutActor10",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/TorpedoTroutActor10.png"
     },
     {
-      "Action": "Load", //14x25
+      "Action": "Load", "Priority": "Low", //14x25
       "Target": "Characters/CampfireActor",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/CampfireActor.png"
     },
     {
-      "Action": "Load", //28x28
+      "Action": "Load", "Priority": "Low", //28x28
       "Target": "Characters/CoralActor",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/CoralActor.png"
     },
@@ -1648,7 +1648,7 @@
       },
       "FromFile": "assets/CharacterFiles/Schedules/Krobus/Schedule.json"
     },*/
-    {
+    /*{
       //Krobus' doesn't meet with Lance on the 24th
       "Action": "EditData",
       "Target": "Characters/Schedules/Krobus",
@@ -1661,7 +1661,7 @@
       "Entries": {
         "Wed": "0 Custom_Krobus_WarpRoom 3 3 2/1940 Forest 97 90 2"
       },
-    },
+    },*/
     {
       //Krobus' dialogue
       "Action": "EditData",

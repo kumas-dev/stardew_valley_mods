@@ -342,25 +342,25 @@
     },
     //Spouse Room
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Maps/Custom_ClairesRoom",
       "FromFile": "Assets/Maps/SpouseRooms/ClairesRoom.tbin",
     },
     //Spouse Patio
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Maps/Claire_Spouse_Area",
       "FromFile": "Assets/Maps/SpouseRooms/Claire_Spouse_Area.tbin"
     },
     {
       //Claire's Portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Claire",
       "FromFile": "Assets/CharacterFiles/Portraits/Claire/Claire.png"
     },
     {
       //Claire's Sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Claire",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Claire/Claire.png"
     },
@@ -376,25 +376,25 @@
     },
     {
       //Claire's Winter Portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Claire_Winter",
       "FromFile": "assets/CharacterFiles/Portraits/Claire/Claire_Winter.png"
     },
     {
       //Claire's Winter Sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Claire_Winter",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Claire/Claire_Winter.png"
     },
     {
       //Claire's beach portraits
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/Claire_Beach",
       "FromFile": "assets/CharacterFiles/Portraits/Claire/Claire_Beach.png"
     },
     {
       //Claire's beach sprites
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/Claire_Beach",
       "FromFile": "assets/CharacterFiles/OverworldSprites/Claire/Claire_Beach.png"
     },
@@ -513,7 +513,7 @@
       }
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/schedules/Claire",
       "FromFile": "Assets/Blank.json"
     },
@@ -1115,7 +1115,7 @@
     },
     {
       //load shane joja uniform temp actor
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/ShaneJoja",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/ShaneJoja.png"
     },
@@ -1138,7 +1138,7 @@
       },
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/ClaireJoja",
       "FromFile": "assets/CharacterFiles/Portraits/NoPortraits/ClaireJoja.png"
     },
@@ -1179,20 +1179,20 @@
     },
     {
       //load claire joja uniform temp actor
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/ClaireJoja",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/ClaireJoja.png"
     },
     {
       //load claire theater uniform temp actor
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/ClaireTheater",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/ClaireTheater.png"
     },
     //fake portrait
     {
       //load claire theater uniform temp actor
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Portraits/ClaireTheater",
       "FromFile": "Assets/CharacterFiles/Portraits/NoPortraits/ClaireTheater.png"
     },
@@ -1386,12 +1386,12 @@
       },
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/ClaireProp1",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/ClaireProp1.png"
     },
     {
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/ClaireProp2",
       "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/ClaireProp2.png"
     },
@@ -1607,12 +1607,12 @@
       },
     },
     { //90x150
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/ClaireMovieScenes",
       "FromFile": "Assets/Tilesheets/ClaireMovieScenes.png"
     },
     { //96x192
-      "Action": "Load",
+      "Action": "Load", "Priority": "Low",
       "Target": "Characters/MovieProjectorLight",
       "FromFile": "Assets/Tilesheets/MovieProjectorLight.png"
     },

@@ -64,7 +64,7 @@
 			},
 		},
 		{
-			"Action": "Load",
+			"Action": "Load", "Priority": "Low",
 			"Target": "Maps/CommunityCenter_Ruins",
 			"When": {
 				"HasSeenEvent": "191393"
@@ -72,7 +72,7 @@
 			"FromFile": "Assets/Maps/MapPatches/CommunityCenter_Refurbished.tbin"
 		},
 		{
-			"Action": "Load",
+			"Action": "Load", "Priority": "Low",
 			"Target": "Maps/CommunityCenter_Refurbished",
 			"When": {
 				"HasSeenEvent": "191393"

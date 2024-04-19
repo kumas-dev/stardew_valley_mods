@@ -2,7 +2,7 @@
 
     "Changes": [
         {
-            "Action": "Load",
+            "Action": "Load", "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/adventurerLedger",
             "FromFile": "assets/CharacterFiles/Shops/Ledgers/AdventurerLedger.png"
         },

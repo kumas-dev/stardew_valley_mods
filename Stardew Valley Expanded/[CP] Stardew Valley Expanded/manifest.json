@@ -1,10 +1,10 @@
 {
   "Name": "Stardew Valley Expanded",
   "Author": "FlashShifter",
-  "Version": "1.14.39",
+  "Version": "1.14.41",
   "Description": "An expansive fanmade mod for ConcernedApe's Stardew Valley.",
   "UniqueID": "FlashShifter.StardewValleyExpandedCP",
-  "MinimumApiVersion": "3.0",
+  "MinimumApiVersion": "4.0.7",
   "UpdateKeys": [ "Nexus:???" ],
   "ContentPackFor": {
   "UniqueID": "Pathoschild.ContentPatcher",

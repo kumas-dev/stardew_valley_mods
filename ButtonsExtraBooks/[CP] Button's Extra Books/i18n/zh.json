@@ -14,11 +14,9 @@
 	
 	"Power.GiantCrops.Name": "大甜瓜",
 	"Power.GiantCrops.Description": "巨大作物过夜成长的几率更高。",
-
-	// TODO ///////////////////////////////////////
-	"Power.Popularity.Name": "Friendship 202",
-	"Power.Popularity.Description": "Your friends are more likely to send you gifts in the mail.",
-	// TODO ///////////////////////////////////////
+	
+	"Power.Popularity.Name": "友谊202",
+	"Power.Popularity.Description": "你的朋友更有可能通过邮件给你送礼物。",
 	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "初学者的运气",
@@ -35,11 +33,9 @@
 	
 	"Book.GiantCrops.Name": "大甜瓜!",
 	"Book.GiantCrops.Description": "读完这本书后，你将更有可能生长出巨大作物。",
-
-	// TODO ///////////////////////////////////////
-	"Book.Popularity.Name": "Friendship 202",
-	"Book.Popularity.Description": "Your friends will be more likely to send you gifts.",
-	// TODO ///////////////////////////////////////
+	
+	"Book.Popularity.Name": "友谊202",
+	"Book.Popularity.Description": "你的朋友更有可能给你送礼物。",
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "芬吉尔共和国工匠协会非常骄傲的认可您对于高品质工匠物品的奉献。为了表示对您最近在星露谷展览会展览的感谢，我们随信附赠一本手册，希望能帮助你更高效的利用机器。",
@@ -47,9 +43,6 @@
 	
 	// MISC DIALOGUE CHANGES //
 	"Dialogue.EnoughGifts": "你今天已经给予了 {0} 足够多的礼物了!",
-	
-	// CONFIG OPTIONS //
-	"Config.TimeGate": "除非您在星露谷中已经经历过了足够的时间，否则某些书籍将会不可用。",
 	
 	// DEBUG //
 	"Debug.Book.RemoveAll.Name": "BEB能力消除",

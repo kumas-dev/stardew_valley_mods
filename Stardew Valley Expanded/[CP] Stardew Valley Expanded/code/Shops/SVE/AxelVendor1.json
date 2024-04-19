@@ -2,7 +2,7 @@
 
     "Changes": [
         {
-            "Action": "Load",
+            "Action": "Load", "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Axel_Vendor",
             "FromFile": "assets/CharacterFiles/Shops/Joja/Axel_Vendor.png"
         },

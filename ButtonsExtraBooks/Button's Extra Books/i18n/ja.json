@@ -29,10 +29,8 @@
   "Config.Books.GiantCrops.Title": "大きなメロン！",
   "Config.Books.GiantCropsBonus.Name": "巨大な作物の発生率",
   "Config.Books.GiantCropsBonus.Description": "作物が一夜にして巨大な作物を形成する確率。",
-
-  // TODO ///////////////////////////////////////////
-  "Config.Books.Popularity.Title": "Friendship 202",
-  ///////////////////////////////////////////////////
+  
+  "Config.Books.Popularity.Title": "親友のつくり方",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",

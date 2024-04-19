@@ -44,9 +44,6 @@
 	// MISC DIALOGUE CHANGES //
 	"Dialogue.EnoughGifts": "You've given {0} enough gifts for now!",
 	
-	// CONFIG OPTIONS //
-	"Config.TimeGate": "Whether or not certain books are unavailable unless enough time has passed.",
-	
 	// DEBUG //
 	"Debug.Book.RemoveAll.Name": "BEB Power Removal",
 	"Debug.Book.RemoveAll.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
