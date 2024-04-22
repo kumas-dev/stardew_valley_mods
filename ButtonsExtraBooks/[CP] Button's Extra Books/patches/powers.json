@@ -2,15 +2,11 @@
 	"Changes": [
 		{
 			"Action": "EditData",
-			"Target": "SpecialPowerUtilities/Categories",
+			"Target": "Spiderbuttons.SpecialPowerUtilities/PowerSections",
 			"Entries": {
 				"{{ModId}}": {
-					"CategoryName": "Button's Extra Books",
+					"SectionName": "Button's Extra Books",
 					"IconPath": "Mods/{{ModId}}/Icons/PowersTab",
-					"IconPosition": {
-						"X": 0,
-						"Y": 0,
-					}
 				}
 			}
 		},
@@ -18,7 +14,7 @@
 		// BEGINNER'S LUCK //
 		{
 			"Action": "EditData",
-			"Target": "Data/Powers, SpecialPowerUtilities/Powers",
+			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_Luck": {
 					"DisplayName": "{{i18n: Power.Luck.Name}}",
@@ -29,19 +25,17 @@
 						"Y": 0,
 					},
 					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Luck 1",
-					"Category": "Button's Extra Books"
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// BOOK OF ALTRUISM //
 		{
 			"Action": "EditData",
-			"Target": "Data/Powers, SpecialPowerUtilities/Powers",
+			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_ExtraGifts": {
 					"DisplayName": "{{i18n: Power.ExtraGifts.Name}}",
@@ -52,19 +46,17 @@
 						"Y": 0,
 					},
 					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_ExtraGifts 1",
-					"Category": "Button's Extra Books"
 				},
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// WINTER FORESTRY //
 		{
 			"Action": "EditData",
-			"Target": "Data/Powers, SpecialPowerUtilities/Powers",
+			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_TreesIgnoreSeason": {
 					"DisplayName": "{{i18n: Power.TreesIgnoreSeason.Name}}",
@@ -75,19 +67,17 @@
 						"Y": 0,
 					},
 					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_TreesIgnoreSeason 1",
-					"Category": "Button's Extra Books"
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// ARTISANS GUILD MANUAL //
 		{
 			"Action": "EditData",
-			"Target": "Data/Powers, SpecialPowerUtilities/Powers",
+			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_ArtisanMachines": {
 					"DisplayName": "{{i18n: Power.ArtisanMachines.Name}}",
@@ -98,19 +88,17 @@
 						"Y": 0,
 					},
 					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_ArtisanMachines 1",
-					"Category": "Button's Extra Books"
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 
 		// BIG MELONS! //
 		{
 			"Action": "EditData",
-			"Target": "Data/Powers, SpecialPowerUtilities/Powers",
+			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_GiantCrops": {
 					"DisplayName": "{{i18n: Power.GiantCrops.Name}}",
@@ -121,19 +109,17 @@
 						"Y": 0,
 					},
 					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_GiantCrops 1",
-					"Category": "Button's Extra Books"
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 
 		// FRIENDSHIP 202 //
 		{
 			"Action": "EditData",
-			"Target": "Data/Powers, SpecialPowerUtilities/Powers",
+			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_Popularity": {
 					"DisplayName": "{{i18n: Power.Popularity.Name}}",
@@ -144,13 +130,11 @@
 						"Y": 0,
 					},
 					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Popularity 1",
-					"Category": "Button's Extra Books"
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 	]
 }
