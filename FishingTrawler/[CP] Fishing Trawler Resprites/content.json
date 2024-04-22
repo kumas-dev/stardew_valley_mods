@@ -1,0 +1,104 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "Murphy's Trawler": {
+            "AllowValues": "New, Original",
+            "Default": "New",
+            "Section": "Fishing Trawler Resprites"
+        },
+        "Murphy's Portraits": {
+            "AllowValues": "New, Original",
+            "Default": "New",
+            "Section": "Fishing Trawler Resprites"
+        },
+        "Murphy's Overworld Sprites": {
+            "AllowValues": "New, Original",
+            "Default": "New",
+            "Section": "Fishing Trawler Resprites"
+        },
+        "Bailing Bucket": {
+            "AllowValues": "New, Original",
+            "Default": "New",
+            "Section": "Fishing Trawler Resprites"
+        },
+        "Trident": {
+            "AllowValues": "New, Original",
+            "Default": "New",
+            "Section": "Fishing Trawler Resprites"
+        }
+    },
+    "Changes": [
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/SurfaceTiles",
+         "FromFile": "assets/SurfaceTiles.png",
+         "When": {
+            "Murphy's Trawler": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/TrawlerTiles",
+         "FromFile": "assets/TrawlerTiles.png",
+         "When": {
+            "Murphy's Trawler": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/TrawlerHull",
+         "FromFile": "assets/TrawlerHull.png",
+         "When": {
+            "Murphy's Trawler": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/Trawler",
+         "FromFile": "assets/Trawler.png",
+         "When": {
+            "Murphy's Trawler": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/MurphyPortrait",
+         "FromFile": "assets/MurphyPortrait.png",
+         "When": {
+            "Murphy's Portraits": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/TrawlerCabin",
+         "FromFile": "assets/TrawlerCabin.png",
+         "When": {
+            "Murphy's Overworld Sprites": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/Murphy",
+         "FromFile": "assets/Murphy.png",
+         "When": {
+            "Murphy's Overworld Sprites": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/BailingBucket",
+         "FromFile": "assets/BailingBucket.png",
+         "When": {
+            "Bailing Bucket": "New"
+         }
+      },
+      {
+         "Action": "Load",
+         "Target": "PeacefulEnd/FishingTrawler/Framework/Assets/Trident",
+         "FromFile": "assets/Trident.png",
+         "When": {
+            "Trident": "New"
+         }
+      }
+   ]
+}

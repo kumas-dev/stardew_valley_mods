@@ -1,0 +1,18 @@
+{
+  "config.section.Fishing Trawler Resprites.name": "Resprites für Fishing Trawler",
+  "config.Murphy's Trawler.name": "Murphy's Schiff",
+  "config.Murphy's Trawler.values.New": "Neu",
+  "config.Murphy's Trawler.values.Original": "Original (Vanilla)",
+  "config.Murphy's Portraits.name": "Murphy's Porträts",
+  "config.Murphy's Portraits.values.New": "Neu",
+  "config.Murphy's Portraits.values.Original": "Original (Vanilla)",
+  "config.Murphy's Overworld Sprites.name": "Murphy's Aussehen in der Spielwelt",
+  "config.Murphy's Overworld Sprites.values.New": "Neu",
+  "config.Murphy's Overworld Sprites.values.Original": "Original (Vanilla)",
+  "config.Bailing Bucket.name": "Schöpfeimer",
+  "config.Bailing Bucket.values.New": "Neu",
+  "config.Bailing Bucket.values.Original": "Original (Vanilla)",
+  "config.Trident.name": "Dreizack",
+  "config.Trident.values.New": "Neu",
+  "config.Trident.values.Original": "Original (Vanilla)",
+}
