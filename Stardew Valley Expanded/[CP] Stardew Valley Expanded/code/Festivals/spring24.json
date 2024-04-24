@@ -632,7 +632,7 @@
         },
         {
             "Action": "EditMap",
-            "Target": "Maps/Forest-FlowerFestival",
+            "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
             "FromFile": "Assets/Maps/FestivalMaps/Positions/Wizard_RemoveFestivalPosition.tbin",
             "ToArea": {
                 "X": 15,
@@ -984,7 +984,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-                    "Value": "Morgan 9 11 left",
+                    "Value": "Morgan 25 27 left",
                     "Delimiter": "/"
                 },
                 {
@@ -993,7 +993,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Morgan 17 11 down",
+                    "Value": "Morgan 25 27 left",
                     "Delimiter": "/"
                 },
             ]
@@ -1071,7 +1071,7 @@
         },
         { //Wizard flower dance festival
             "Action": "EditMap",
-            "Target": "Maps/Forest-FlowerFestival",
+            "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
             "FromFile": "Assets/Maps/FestivalMaps/Positions/Wizard_Forest-FlowerFestival.tbin",
             "ToArea": {
                 "X": 25,
@@ -1089,7 +1089,7 @@
         },
         {
             "Action": "EditMap",
-            "Target": "Maps/Forest-FlowerFestival",
+            "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
             "FromFile": "Assets/Maps/FestivalMaps/Positions/Wizard_Forest-FlowerFestival.tbin",
             "ToArea": {
                 "X": 25,
@@ -1107,7 +1107,7 @@
         },
         {
             "Action": "EditMap",
-            "Target": "Maps/Forest-FlowerFestival",
+            "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
             "FromFile": "Assets/Maps/FestivalMaps/Positions/Wizard_RemoveFestivalPosition.tbin",
             "ToArea": {
                 "X": 15,

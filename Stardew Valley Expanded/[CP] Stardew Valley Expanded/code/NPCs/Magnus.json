@@ -315,11 +315,11 @@
     {
       "Action": "EditData",
       "Target": "Characters/Schedules/Wizard",
-      "When": {
-        "Spouse |contains=Olivia, Wizard": false,
-        "Relationship:Wizard |contains=Dating": false,
-        "Season |contains=Summer": true,
-        "Day |contains=25": true
+      "When": {  
+        "Relationship:Wizard": "unmet, friendly",  
+        "Relationship:Olivia": "unmet, friendly",  
+        "Season |contains=Summer": true,  
+        "Day |contains=25": true  
       },
       "Entries": {
         "25": "630 WizardHouse 10 17 2 Wizard_Meditate/1210 WizardHouse 10 29 0/1240 WizardHouse 11 32 1/1300 WizardHouse 7 32 3/1320 WizardHouse 2 29 0/1340 WizardHouse 2 29 3/1400 WizardHouse 5 17 2/2230 WizardHouse 7 21 1 \"Strings\\schedules\\Wizard:OliviaVisitWhichTotallyIsNotWhatYouThinkItIs.001\"/2250 WizardHouse 2 4 1 Wizard_Sleep \"Strings\\schedules\\Wizard:OliviaVisitWhichTotallyIsNotWhatYouThinkItIs.002\""
@@ -328,11 +328,11 @@
     {
       "Action": "EditData",
       "Target": "Strings/Schedules/Wizard",
-      "When": {
-        "Spouse |contains=Olivia, Wizard": false,
-        "Relationship:Wizard |contains=Dating": false,
-        "Season |contains=Summer": true,
-        "Day |contains=25": true
+      "When": {  
+        "Relationship:Wizard": "unmet, friendly",  
+        "Relationship:Olivia": "unmet, friendly",  
+        "Season |contains=Summer": true,  
+        "Day |contains=25": true  
       },
       "Entries": {
         "OliviaVisitWhichTotallyIsNotWhatYouThinkItIs.001": "{{i18n:WizardOlivia.01}}",
@@ -343,11 +343,11 @@
     {
       "Action": "EditData",
       "Target": "Characters/Schedules/Olivia",
-      "When": {
-        "Spouse |contains=Olivia, Wizard": false,
-        "Relationship:Olivia |contains=Dating": false,
-        "Season |contains=Summer": true,
-        "Day |contains=25": true
+      "When": {  
+        "Relationship:Wizard": "unmet, friendly",  
+        "Relationship:Olivia": "unmet, friendly",  
+        "Season |contains=Summer": true,  
+        "Day |contains=25": true  
       },
       "Entries": {
         "25": "0 Custom_JenkinsHouse 19 5 0/610 Custom_JenkinsHouse 5 8 0/700 Custom_JenkinsHouse 34 37 0 Olivia_Wash/1030 Custom_JenkinsHouse 16 12 0 Olivia_Art/1310 Town 24 72 3/1600 Custom_JenkinsHouse 32 37 2 Olivia_Wine2/1910 WizardHouse 9 21 3 \"Strings\\schedules\\Olivia:WizardVisitWhichTotallyIsNotWhatYouThinkItIs.001\"/2250 WizardHouse 3 4 1 Olivia_Sleep \"Strings\\schedules\\Olivia:WizardVisitWhichTotallyIsNotWhatYouThinkItIs.002\""
@@ -356,11 +356,11 @@
     {
       "Action": "EditData",
       "Target": "Strings/Schedules/Olivia",
-      "When": {
-        "Spouse |contains=Olivia, Wizard": false,
-        "Relationship:Olivia |contains=Dating": false,
-        "Season |contains=Summer": true,
-        "Day |contains=25": true
+      "When": {  
+        "Relationship:Wizard": "unmet, friendly",  
+        "Relationship:Olivia": "unmet, friendly",  
+        "Season |contains=Summer": true,  
+        "Day |contains=25": true  
       },
       "Entries": {
         "WizardVisitWhichTotallyIsNotWhatYouThinkItIs.001": "{{i18n:WizardOlivia.03}}",
@@ -510,7 +510,7 @@
       "Action": "EditData",
       "Target": "data/events/forest",
       "Entries": {
-        "1000075/f Wizard 500/w sunny/t 600 1800": "spring_day_ambient/-500 -500/farmer 77 118 3 Wizard 54 118 0 Andy 58 20 0 Krobus 10 5 0/changeLocation Custom_ForestWest/skippable/showFrame Wizard 17/viewport 67 118 true/viewport move -1 0 9000 true/move farmer -18 0 3 true/pause 3500/playSound healSound/glow 135 206 235/pause 2500/playSound healSound/glow 65 105 225/pause 3000/playSound healSound/glow 176 224 230/pause 1000/emote farmer 8 true/pause 1350/showFrame Wizard 8/pause 800/move Wizard 0 0 1/pause 900/speak Wizard \"...\"/pause 1500/speak Wizard \"{{i18n:Wizard.2Hearts.01}}\"/pause 800/faceDirection Wizard 2 true/pause 600/showFrame Wizard 16/pause 1200/shake Wizard 500/pause 500/emote farmer 8/pause 500/move farmer -2 0 3/pause 1250/showFrame Wizard 0/pause 1000/faceDirection Wizard 1 true/pause 800/speak Wizard \"{{i18n:Wizard.2Hearts.02}}\"/pause 500/emote farmer 8/pause 1000/speak Wizard \"{{i18n:Wizard.2Hearts.03}}\"/pause 250/emote farmer 16/pause 1200/speak Wizard \"{{i18n:Wizard.2Hearts.04}}\"/pause 1000/speak Wizard \"{{i18n:Wizard.2Hearts.05}}\"/pause 600/emote Wizard 40 true/pause 750/speak Wizard \"{{i18n:Wizard.2Hearts.06}}\"/pause 750/faceDirection Wizard 2 true/pause 500/showFrame Wizard 16/pause 750/screenFlash 1/playSound wand/warp Wizard -200 -200/pause 1450/globalFade/viewport -1000 -1000/pause 1000/end dialogue Wizard \"{{i18n:Wizard.2Hearts.07}}\"",
+        "1000075/f Wizard 500/w sunny/t 600 1800": "spring_day_ambient/-500 -500/farmer 76 118 3 Wizard 54 118 0 Andy 58 20 0 Krobus 10 5 0/changeLocation Custom_ForestWest/skippable/showFrame Wizard 17/viewport 67 118 true/viewport move -1 0 9000 true/move farmer -17 0 3 true/pause 3500/playSound healSound/glow 135 206 235/pause 2500/playSound healSound/glow 65 105 225/pause 3000/playSound healSound/glow 176 224 230/pause 1000/emote farmer 8 true/pause 1350/showFrame Wizard 8/pause 800/move Wizard 0 0 1/pause 900/speak Wizard \"...\"/pause 1500/speak Wizard \"{{i18n:Wizard.2Hearts.01}}\"/pause 800/faceDirection Wizard 2 true/pause 600/showFrame Wizard 16/pause 1200/shake Wizard 500/pause 500/emote farmer 8/pause 500/move farmer -2 0 3/pause 1250/showFrame Wizard 0/pause 1000/faceDirection Wizard 1 true/pause 800/speak Wizard \"{{i18n:Wizard.2Hearts.02}}\"/pause 500/emote farmer 8/pause 1000/speak Wizard \"{{i18n:Wizard.2Hearts.03}}\"/pause 250/emote farmer 16/pause 1200/speak Wizard \"{{i18n:Wizard.2Hearts.04}}\"/pause 1000/speak Wizard \"{{i18n:Wizard.2Hearts.05}}\"/pause 600/emote Wizard 40 true/pause 750/speak Wizard \"{{i18n:Wizard.2Hearts.06}}\"/pause 750/faceDirection Wizard 2 true/pause 500/showFrame Wizard 16/pause 750/screenFlash 1/playSound wand/warp Wizard -200 -200/pause 1450/globalFade/viewport -1000 -1000/pause 1000/end dialogue Wizard \"{{i18n:Wizard.2Hearts.07}}\"",
       },
     },
     { //WIZARD 4 HEART EVENT - 'Shrine of Illusions' (Female)

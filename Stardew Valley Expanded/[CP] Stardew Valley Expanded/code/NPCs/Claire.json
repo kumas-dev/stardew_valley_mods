@@ -1421,7 +1421,7 @@
       },
     },
     {
-      //Claire 12 heart event - part 2 - works at theater  
+      //Claire 12 heart event - part 2 - works at theater
       "Action": "EditData",
       "Target": "data/events/farmhouse",
       "When": {
@@ -1541,7 +1541,7 @@
       },
     },
     {
-      //Claire 14 heart event - part 1 - 'You Know How to Whistle, Don't You?' (standard farm)
+      //Claire 14 heart event - part 1 - 'You Know How to Whistle, Don't You?'
       "Action": "EditData",
       "Target": "data/events/farmhouse",
       "When": {

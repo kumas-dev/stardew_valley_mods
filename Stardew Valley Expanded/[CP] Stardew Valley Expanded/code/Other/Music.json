@@ -12,7 +12,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/CrimsonSands.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Crimson Badlands Cave theme - Alesia&Isaac Event 
@@ -22,7 +22,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/OminousCavern.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Castle Village Mage theme - Event # 3 - Junimo scroll event (special orders)
@@ -32,7 +32,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/EnchantedWaltz.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Vanilla Fireplace sound effect  - - same as below, but for maps.
@@ -42,7 +42,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/SDV_Fireplace.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Vanilla Fireplace sound effect  - death scene (highlands) (others file), susan's special order event, marlon's special order, lance 2 heart part 1
@@ -52,7 +52,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/SDV_Fireplace.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 
@@ -63,7 +63,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/CamillasTower.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Saddest theme of them all - victor 12 heart part 2, sophia 6 heart
@@ -73,7 +73,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/Lament.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 //*******************************************************************
@@ -84,7 +84,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/HaruhiViolinSolo.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Magic  - enchanted grove
@@ -94,7 +94,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/NewMagicLearned.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Enchanted Grove - enchanted grove
@@ -104,7 +104,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/Nexus.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Galdora Ambient - for background
@@ -114,7 +114,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/CastleVillageOutpostAmbience.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Galdora Ambient - enchanted grove & death scene - for events.
@@ -124,7 +124,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/CastleVillageOutpostAmbience.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Wizard 10-Heart Scene - and enchanted grove
@@ -134,7 +134,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/GrenvilleFalls.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Wizard 14-Heart Scene
@@ -144,7 +144,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/Atlantis.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Olivia 14-Heart Scene
@@ -154,7 +154,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/DistantTrain.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": false
                 },
                 // Olivia 14-Heart Scene
@@ -164,7 +164,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/GrampletonTrainStationArrival.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": false
                 },
                 // Olivia 14-Heart Scene
@@ -174,7 +174,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/GrampletonTrainStationAmbience.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Olivia 14-Heart Scene
@@ -184,7 +184,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/Taxi.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": false
                 },
                 // Olivia 12-Heart Scene 
@@ -194,7 +194,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/SDV_Aerobics_Looped.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Sophia 14-Heart Scene
@@ -204,7 +204,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/BusDrivingOnHighway.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Sophia 14-Heart Scene
@@ -214,7 +214,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/ZCCC_Applause.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": false
                 },
                 // Sophia 14-Heart Scene
@@ -224,7 +224,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/ZCCC_Cheering.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": false
                 },
                 // Sophia 14-Heart Scene
@@ -234,7 +234,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/ZCCC_Crowd_Ambience.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Sophia 14-Heart Scene
@@ -244,7 +244,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/ZuzuCity_Ambience.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                // Highlands Cavern - 
@@ -254,7 +254,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/SDVMagicalShoes.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // First Slash Theme --- Lance 8 heart
@@ -264,7 +264,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/FirstSlashTheme.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // StardewValleyExpandedTrailer Soundtrack - for Jukebox only
@@ -274,7 +274,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/StardewValleyExpandedTrailer.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Scarlett 8-Heart Scene
@@ -284,7 +284,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/TruckStartUp.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Scarlett 8-Heart Scene
@@ -294,7 +294,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/TruckOnHighway.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
                 // Scarlett 8-Heart Scene
@@ -304,7 +304,7 @@
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/GrampletonCoastline.wav}}"
                     ],
-                    "StreamedVorbis": true,
+                    "StreamedVorbis": false,
                     "Looped": true
                 },
             },
