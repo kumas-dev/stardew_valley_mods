@@ -4,16 +4,13 @@ ErrorHandler/
 SaveBackup/
 
 # config
-config/
 config.toml
 config.json
 !Stardew Valley Expanded/**/config.json
-!HelpWanted/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
 Stardew Valley Expanded/\[FTM\] Stardew Valley Expanded/data
-Grandpa's Farm/\[FTM\] Grandpa's Farm/data
 
 # temporary
 _Temporary/
