@@ -8,7 +8,7 @@ config/
 config.toml
 config.json
 !Stardew Valley Expanded/**/config.json
-!FerngillSimpleEconomy/**/config.json
+!HelpWanted/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
