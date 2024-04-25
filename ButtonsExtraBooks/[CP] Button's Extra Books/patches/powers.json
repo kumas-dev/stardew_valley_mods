@@ -136,5 +136,47 @@
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
 			},
 		},
+
+		// BUS DRIVING FOR DUMMIES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_BusDriving": {
+					"DisplayName": "{{i18n: Power.BusDriving.Name}}",
+					"Description": "{{i18n: Power.BusDriving.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 0,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_BusDriving 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableBusDriving": true
+			},
+		},
+
+		// MR. QI'S NOTEBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_QiNotebook": {
+					"DisplayName": "{{i18n: Power.QiNotebook.Name}}",
+					"Description": "{{i18n: Power.QiNotebook.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 16,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_QiNotebook 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
+			},
+		},
 	]
 }

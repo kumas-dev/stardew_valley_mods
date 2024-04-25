@@ -18,6 +18,12 @@
 	"Power.Popularity.Name": "Friendship 202",
 	"Power.Popularity.Description": "Your friends are more likely to send you gifts in the mail.",
 	
+	"Power.BusDriving.Name": "Bus Driving for Dummies",
+	"Power.BusDriving.Description": "You can drive the bus to Calico Desert yourself.",
+	
+	"Power.QiNotebook.Name": "Mr. Qi's Notebook",
+	"Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
+	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "Beginner's Luck",
 	"Book.Luck.Description": "Read this book to gain a permanent, minor increase to your luck stat.",
@@ -36,6 +42,12 @@
 	
 	"Book.Popularity.Name": "Friendship 202",
 	"Book.Popularity.Description": "Your friends will be more likely to send you gifts.",
+	
+	"Book.BusDriving.Name": "Bus Driving for Dummies",
+	"Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
+	
+	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
+	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",

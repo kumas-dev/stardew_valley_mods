@@ -23,7 +23,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// BOOK OF ALTRUISM //
@@ -49,7 +48,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// WINTER FORESTRY //
@@ -75,7 +73,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// ARTISANS GUILD MANUAL //
@@ -101,7 +98,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 
 		// BIG MELONS! //
@@ -127,7 +123,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 
 		// FRIENDSHIP 202 //
@@ -153,7 +148,56 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
+		},
+
+		// BUS DRIVING FOR DUMMIES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_BusDriving": {
+					"Name": "{{ModId}}_Book_BusDriving",
+					"DisplayName": "{{i18n: Book.BusDriving.Name}}",
+					"Description": "{{i18n: Book.BusDriving.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"color_yellow",
+						"book_item"
+					],
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
+			},
+		},
+
+		// MR. QI'S NOTEBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_QiNotebook": {
+					"Name": "{{ModId}}_Book_QiNotebook",
+					"DisplayName": "{{i18n: Book.QiNotebook.Name}}",
+					"Description": "{{i18n: Book.QiNotebook.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"color_cyan",
+						"book_item"
+					],
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
+			},
 		},
 		
 		// BEB POWER REMOVAL //
@@ -179,7 +223,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableDebugBook": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		}
 	]
 }

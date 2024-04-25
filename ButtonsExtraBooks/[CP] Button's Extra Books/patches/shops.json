@@ -7,7 +7,7 @@
 			"TargetField": [ "Bookseller", "Items" ],
 			"Entries": {
 				"{{ModId}}_ShopEntry_Luck": {
-					"Price": 25000,
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceLuck}}",
 					"AvailableStock": 1,
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_Luck",
@@ -18,7 +18,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// BOOK OF ALTRUISM //
@@ -28,18 +27,17 @@
 			"TargetField": [ "Bookseller", "Items" ],
 			"Entries": {
 				"{{ModId}}_ShopEntry_ExtraGifts": {
-					"Price": 50000,
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceExtraGifts}}",
 					"AvailableStock": 1,
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_ExtraGifts",
 					"ItemId": "(O){{ModId}}_Book_ExtraGifts",
-					"Condition": 'ANY "YEAR 3" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts}}'
+					"Condition": 'ANY "YEAR 3" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// WINTER FORESTRY //
@@ -49,7 +47,7 @@
 			"TargetField": [ "Bookseller", "Items" ],
 			"Entries": {
 				"{{ModId}}_ShopEntry_TreesIgnoreSeason": {
-					"Price": 20000,
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceTreesIgnoreSeason}}",
 					"AvailableStock": 1,
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_TreesIgnoreSeason",
@@ -60,7 +58,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 		
 		// ARTISANS GUILD MANUAL //
@@ -70,18 +67,17 @@
 			"TargetField": [ "Bookseller", "Items" ],
 			"Entries": {
 				"{{ModId}}_ShopEntry_ArtisanMachines": {
-					"Price": 100000,
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceArtisanMachines}}",
 					"AvailableStock": 1,
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_ArtisanMachines",
 					"ItemId": "(O){{ModId}}_Book_ArtisanMachines",
-					"Condition": 'ANY "PLAYER_HAS_MAIL Any {{ModId}}_Mail_ArtisanGrange Received" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines}}'
+					"Condition": 'ANY "PLAYER_HAS_MAIL Any {{ModId}}_Mail_ArtisanGrange Received" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 
 		// BIG MELONS! //
@@ -91,39 +87,78 @@
 			"TargetField": [ "Bookseller", "Items" ],
 			"Entries": {
 				"{{ModId}}_ShopEntry_GiantCrops": {
-					"Price": 30000,
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceGiantCrops}}",
 					"AvailableStock": 1,
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_GiantCrops",
 					"ItemId": "(O){{ModId}}_Book_GiantCrops",
-					"Condition": 'ANY "YEAR 2" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops}}'
+					"Condition": 'ANY "YEAR 2" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 
-		// FRIENDSHIP 102 //
+		// FRIENDSHIP 202 //
 		{
 			"Action": "EditData",
 			"Target": "Data/Shops",
 			"TargetField": [ "Bookseller", "Items" ],
 			"Entries": {
 				"{{ModId}}_ShopEntry_Popularity": {
-					"Price": 35000,
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPricePopularity}}",
 					"AvailableStock": 1,
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_Popularity",
 					"ItemId": "(O){{ModId}}_Book_Popularity",
-					"Condition": 'ANY "PLAYER_STAT Current Book_Friendship 1" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}, {{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity}}'
+					"Condition": 'ANY "PLAYER_STAT Current Book_Friendship 1" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
 				}
 			},
 			"When": {
-				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
+		},
+
+		// BUS DRIVING FOR DUMMIES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_BusDriving": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceBusDriving}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_BusDriving",
+					"ItemId": "(O){{ModId}}_Book_BusDriving",
+					"Condition": 'ANY "IS_COMMUNITY_CENTER_COMPLETE" "IS_JOJA_MART_COMPLETE" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableBusDriving": true
+			},
+		},
+
+		// MR. QI'S NOTEBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "QiGemShop", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_QiNotebook": {
+					"TradeItemId": "(O)858",
+					"TradeItemAmount": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceQiNotebook}}",
+					"Price": -1,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "None",
+					"Id": "(O){{ModId}}_Book_QiNotebook",
+					"ItemId": "(O){{ModId}}_Book_QiNotebook",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
+			},
 		},
 		
 		// BEB POWER REMOVAL //
@@ -141,7 +176,6 @@
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableDebugBook": true
 			},
-			"Update": "OnTimeChange, OnLocationChange"
 		},
 	]
 }

@@ -18,6 +18,14 @@
 	"Power.Popularity.Name": "親友のつくり方",
 	"Power.Popularity.Description": "仲良くなった住民からプレゼントが送られてくる確率を高める。",
 	
+	// TODO ////////////////////////////////////////////
+	"Power.BusDriving.Name": "Bus Driving for Dummies",
+	"Power.BusDriving.Description": "You can drive the bus to Calico Desert yourself.",
+
+	"Power.QiNotebook.Name": "Mr. Qi's Notebook",
+	"Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
+	////////////////////////////////////////////////////
+	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "ビギナーズラック",
 	"Book.Luck.Description": "この本を読めば、運のステータスが永続的に少し上昇する。",
@@ -36,6 +44,14 @@
 	
 	"Book.Popularity.Name": "親友のつくり方",
 	"Book.Popularity.Description": "仲良くなった住民からプレゼントが送られてくる可能性が高まるだろう。",
+	
+	// TODO ////////////////////////////////////////////
+	"Book.BusDriving.Name": "Bus Driving for Dummies",
+	"Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
+
+	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
+	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
+	////////////////////////////////////////////////////
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "ファーンギル共和国職人ギルドは、皆様の職人技による高品質な商品へのこだわりを誇りに思います。先日のスターデューバレーまつりでの展示に感謝の意を表し、加工設備をより効率的に活用するためのマニュアルを同封いたします。",

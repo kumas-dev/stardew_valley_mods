@@ -1,7 +1,11 @@
 {
   // UI //
   "Config.SectionTitle.General": "基本設定",
-  "Config.SectionTitle.Books": "本の設定",
+  // TODO ///////////////////////////////////////////////////////////
+  "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
+  "Config.SectionTitle.Prices": "Change Book Prices",
+  "Config.SectionTitle.Adjustments": "Adjust Book Powers",
+  ///////////////////////////////////////////////////////////////////
   "Config.SectionTitle.Debug": "デバッグ設定",
   
   // GENERAL CONFIG //
@@ -31,6 +35,14 @@
   "Config.Books.GiantCropsBonus.Description": "作物が一夜にして巨大な作物を形成する確率。",
   
   "Config.Books.Popularity.Title": "親友のつくり方",
+  
+  // TODO ///////////////////////////////////////////////////////////
+  "Config.Books.BusDriving.Title": "Bus Driving for Dummies",
+
+  "Config.Books.QiNotebook.Title": "Mr. Qi's Notebook",
+  "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
+  "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
+  ///////////////////////////////////////////////////////////////////
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",

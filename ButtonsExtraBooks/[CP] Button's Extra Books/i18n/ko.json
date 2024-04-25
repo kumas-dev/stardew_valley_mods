@@ -17,6 +17,12 @@
 
 	"Power.Popularity.Name": "우정 202",
 	"Power.Popularity.Description": "친구들이 당신에게 우편으로 선물을 보낼 가능성이 더 높아집니다.",
+
+	"Power.BusDriving.Name": "초보자를 위한 버스 운전",
+	"Power.BusDriving.Description": "칼리코 사막까지 버스를 직접 운전할 수 있습니다.",
+
+	"Power.QiNotebook.Name": "미스터 치의 노트",
+	"Power.QiNoteBook.Description": "무작위 치 보석을 찾을 확률이 높아집니다.",
 	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "초심자의 행운",
@@ -36,6 +42,12 @@
 
 	"Book.Popularity.Name": "우정 202",
 	"Book.Popularity.Description": "친구들이 당신에게 선물을 보낼 가능성이 더 높아집니다.",
+
+	"Book.BusDriving.Name": "초보자를 위한 버스 운전",
+	"Book.BusDriving.Description": "이 책에는 버스를 운전하는 데 필요한 모든 정보가 담겨 있습니다.",
+
+	"Book.QiNotebook.Name": "미스터 치의 노트",
+	"Book.QiNotebook.Description": "이 메모는 더 많은 무작위 치 보석을 찾는 데 도움이 됩니다.",
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "저희 펀길 공화국의 장인 조합은 귀하가 양질의 장인 생산품을 만든 것에 대한 헌신과 노고를 인정하는바, 저희는 귀하를 자랑스럽게 여기고 있습니다. 최근 스타듀밸리 박람회에서 귀하의 장인 생산품 전시에 감사를 표하기 위해, 귀하가 장비를 좀 더 효율적으로 활용할 수 있도록 도와줄 지침서를 동봉했습니다.",

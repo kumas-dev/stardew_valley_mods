@@ -1,7 +1,11 @@
 {
   // UI //
   "Config.SectionTitle.General": "常规设置",
-  "Config.SectionTitle.Books": "书籍设置",
+  // TODO //////////////////////////////////////////////////////////
+  "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
+  "Config.SectionTitle.Prices": "Change Book Prices",
+  "Config.SectionTitle.Adjustments": "Adjust Book Powers",
+  //////////////////////////////////////////////////////////////////
   "Config.SectionTitle.Debug": "排错设置",
   
   // GENERAL CONFIG //
@@ -31,6 +35,14 @@
   "Config.Books.GiantCropsBonus.Description": "作物过夜形成巨大作物的几率百分比。",
 
   "Config.Books.Popularity.Title": "友谊202",
+  
+  // TODO //////////////////////////////////////////////////////////
+  "Config.Books.BusDriving.Title": "Bus Driving for Dummies",
+
+  "Config.Books.QiNotebook.Title": "Mr. Qi's Notebook",
+  "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
+  "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
+  //////////////////////////////////////////////////////////////////
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "开启排错之书",

@@ -17,6 +17,14 @@
   
     "Power.Popularity.Name": "Amistad 202",
     "Power.Popularity.Description": "Es más probable que tus amigos te envíen regalos.",
+  
+    // TODO ///////////////////////////////////////////////////////
+    "Power.BusDriving.Name": "Bus Driving for Dummies",
+    "Power.BusDriving.Description": "You can drive the bus to Calico Desert yourself.",
+  
+    "Power.QiNotebook.Name": "Mr. Qi's Notebook",
+    "Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
+    ///////////////////////////////////////////////////////////////
     
     // BOOK ITEMS //
     "Book.Luck.Name": "Suerte del principiante",
@@ -36,7 +44,15 @@
   
     "Book.Popularity.Name": "Amistad 202",
     "Book.Popularity.Description": "Es más probable que tus amigos te envíen regalos.",
-	
+
+    // TODO ///////////////////////////////////////////////////////
+    "Book.BusDriving.Name": "Bus Driving for Dummies",
+    "Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
+  
+    "Book.QiNotebook.Name": "Mr. Qi's Notebook",
+    "Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
+    ///////////////////////////////////////////////////////////////
+  
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "El Gremio de Artesanos de la República Ferngill se enorgullece de reconocer su compromiso con los productos artesanales de calidad. Como muestra de nuestro agradecimiento por su reciente exhibición en la Feria de Stardew Valley, adjuntamos un manual que esperamos le ayude a utilizar su maquinaria de una manera más eficiente.",
 	"Mail.ArtisanGrange.Title": "Gremio de artesanos",
