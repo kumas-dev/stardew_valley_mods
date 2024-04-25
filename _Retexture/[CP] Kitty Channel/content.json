@@ -1,0 +1,100 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+    //Kitty Greeny Rain
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/newweatherfortune.png",
+            "PatchMode": "Replace",
+            "FromArea": {
+                "X": 213,
+                "Y": 335,
+                "Width": 43,
+                "Height": 28
+            },
+            "ToArea": {
+                "X": 213,
+                "Y": 335,
+                "Width": 43,
+                "Height": 28
+            }
+        },
+    //Weather Greeny Rain
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/newweatherfortune.png",
+            "PatchMode": "Replace",
+            "FromArea": {
+                "X": 178,
+                "Y": 363,
+                "Width": 78,
+                "Height": 13
+            },
+            "ToArea": {
+                "X": 178,
+                "Y": 363,
+                "Width": 78,
+                "Height": 13
+            }
+        },
+    //Another Channel on Greeny Rain
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/newweatherfortune.png",
+            "PatchMode": "Replace",
+            "FromArea": {
+                "X": 386,
+                "Y": 334,
+                "Width": 126,
+                "Height": 38
+            },
+            "ToArea": {
+                "X": 386,
+                "Y": 334,
+                "Width": 126,
+                "Height": 38
+            }
+        },
+    //Kitty Good Luck Background
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/newweatherfortune.png",
+            "PatchMode": "Replace",
+            "FromArea": {
+                "X": 424,
+                "Y": 447,
+                "Width": 42,
+                "Height": 28
+            },
+            "ToArea": {
+                "X": 424,
+                "Y": 447,
+                "Width": 42,
+                "Height": 28
+            }
+        },
+    //Kitty Bad Luck Background
+    {
+        "Action": "EditImage",
+        "Target": "LooseSprites/Cursors_1_6",
+        "FromFile": "assets/newweatherfortune.png",
+        "PatchMode": "Replace",
+        "FromArea": {
+            "X": 424,
+            "Y": 476,
+            "Width": 42,
+            "Height": 28
+        },
+        "ToArea": {
+            "X": 424,
+            "Y": 476,
+            "Width": 42,
+            "Height": 28
+        }
+    }
+    ]
+}

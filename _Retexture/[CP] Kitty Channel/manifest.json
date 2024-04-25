@@ -1,0 +1,18 @@
+{
+	"Name": "[CP] Kitty Channel 1.6 Fix Update by SD",
+	"Author": "Sashaldystauns",
+	"Version": "1.0.0",
+	"Description": "A fix for the new 1.6 TV channel updates for Kitty Channels from Maraluna7.",
+	"UniqueID": "sashaldystauns.kittyfix",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": ["Nexus:22609"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "Amaryn.KittyChannels",
+			"IsRequired": true
+		},
+	]
+}
