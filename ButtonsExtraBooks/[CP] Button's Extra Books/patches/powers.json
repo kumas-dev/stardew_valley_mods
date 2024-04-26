@@ -178,5 +178,26 @@
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
 			},
 		},
+
+		// PAWSITIVE REINFORCEMENT //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_PetGifts": {
+					"DisplayName": "{{i18n: Power.PetGifts.Name}}",
+					"Description": "{{i18n: Power.PetGifts.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 32,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_PetGifts 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePetGifts": true
+			},
+		},
 	]
 }

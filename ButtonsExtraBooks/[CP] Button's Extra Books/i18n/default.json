@@ -24,6 +24,9 @@
 	"Power.QiNotebook.Name": "Mr. Qi's Notebook",
 	"Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
 	
+	"Power.PetGifts.Name": "Pawsitive Reinforcement",
+	"Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
+	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "Beginner's Luck",
 	"Book.Luck.Description": "Read this book to gain a permanent, minor increase to your luck stat.",
@@ -48,6 +51,9 @@
 	
 	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
 	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
+	
+	"Book.PetGifts.Name": "Pawsitive Reinforcement",
+	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",

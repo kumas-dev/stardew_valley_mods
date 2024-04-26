@@ -160,6 +160,26 @@
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
 			},
 		},
+
+		// PAWSITIVE REINFORCEMENT //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_PetGifts": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPricePetGifts}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_PetGifts",
+					"ItemId": "(O){{ModId}}_Book_PetGifts",
+					"Condition": 'ANY "YEAR 2" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePetGifts": true
+			},
+		},
 		
 		// BEB POWER REMOVAL //
 		{

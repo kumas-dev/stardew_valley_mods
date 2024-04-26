@@ -199,6 +199,31 @@
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
 			},
 		},
+
+		// PAWSITIVE REINFORCEMENT //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_PetGifts": {
+					"Name": "{{ModId}}_Book_PetGifts",
+					"DisplayName": "{{i18n: Book.PetGifts.Name}}",
+					"Description": "{{i18n: Book.PetGifts.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 10,
+					"ContextTags": [
+						"color_gray",
+						"book_item"
+					],
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePetGifts": true
+			},
+		},
 		
 		// BEB POWER REMOVAL //
 		{

@@ -18,13 +18,16 @@
 	"Power.Popularity.Name": "友谊202",
 	"Power.Popularity.Description": "你的朋友更有可能通过邮件给你送礼物。",
 	
-	// TODO /////////////////////////////////////////////////////
-	"Power.BusDriving.Name": "Bus Driving for Dummies",
-	"Power.BusDriving.Description": "You can drive the bus to Calico Desert yourself.",
+	"Power.BusDriving.Name": "傻瓜式巴士驾驶手册",
+	"Power.BusDriving.Description": "你可以自己开车去卡利科沙漠。",
 
-	"Power.QiNotebook.Name": "Mr. Qi's Notebook",
-	"Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
-	/////////////////////////////////////////////////////////////
+	"Power.QiNotebook.Name": "齐先生的笔记本",
+	"Power.QiNoteBook.Description": "增加发现齐钻的概率。",
+
+	// TODO ///////////////////////////////////////////////////////
+	"Power.PetGifts.Name": "Pawsitive Reinforcement",
+	"Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
+	///////////////////////////////////////////////////////////////
 	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "初学者的运气",
@@ -45,13 +48,16 @@
 	"Book.Popularity.Name": "友谊202",
 	"Book.Popularity.Description": "你的朋友更有可能给你送礼物。",
 	
-	// TODO /////////////////////////////////////////////////////
-	"Book.BusDriving.Name": "Bus Driving for Dummies",
-	"Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
+	"Book.BusDriving.Name": "傻瓜式巴士驾驶手册",
+	"Book.BusDriving.Description": "这本书或多或少地包含了驾驶公交车所需的所有信息。",
 
-	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
-	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
-	/////////////////////////////////////////////////////////////
+	"Book.QiNotebook.Name": "齐先生的笔记本",
+	"Book.QiNotebook.Description": "这本笔记将帮助你寻找到更多随机的齐钻。",
+
+	// TODO ///////////////////////////////////////////////////////
+	"Book.PetGifts.Name": "Pawsitive Reinforcement",
+	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
+	///////////////////////////////////////////////////////////////
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "芬吉尔共和国工匠协会非常骄傲的认可您对于高品质工匠物品的奉献。为了表示对您最近在星露谷展览会展览的感谢，我们随信附赠一本手册，希望能帮助你更高效的利用机器。",
