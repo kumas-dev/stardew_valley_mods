@@ -59,11 +59,10 @@
       "Target": "Portraits/Alesia",
       "FromFile": "Assets/CharacterFiles/Portraits/Alesia/Alesia.png"
     },
-    {
-      //Alesia's schedule
+	{
       "Action": "Load", "Priority": "Low",
-      "Target": "Characters/schedules/Alesia",
-      "FromFile": "assets/CharacterFiles/Schedules/Alesia/Alesia.json"
+      "Target": "Strings/Schedules/Alesia",
+      "FromFile": "Assets/Blank.json"
     },
     { //Alesia visits the adventurer guild
       "Action": "EditData",
@@ -80,7 +79,6 @@
         "28": "0 Custom_Alesia_WarpRoom 3 3 2/610 AdventureGuild 7 12 2",
         "DesertFestival_1": "0 Desert 12 7 1/610 Desert 12 7 1 \"Strings\\schedules\\Alesia:DesertFestival_Alesia\"",
         "DesertFestival_2": "0 Desert 12 7 1/610 Desert 12 7 1 \"Strings\\schedules\\Alesia:DesertFestival_Alesia\"",
-        "DesertFestival_3": "0 Desert 12 7 1/610 Desert 12 7 1 \"Strings\\schedules\\Alesia:DesertFestival_Alesia\"",
       }
     },
     {

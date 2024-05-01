@@ -23,11 +23,9 @@
 
 	"Power.QiNotebook.Name": "齐先生的笔记本",
 	"Power.QiNoteBook.Description": "增加发现齐钻的概率。",
-
-	// TODO ///////////////////////////////////////////////////////
-	"Power.PetGifts.Name": "Pawsitive Reinforcement",
-	"Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
-	///////////////////////////////////////////////////////////////
+	
+	"Power.PetGifts.Name": "强化爪爪",
+	"Power.PetGifts.Description": "你的宠物更有可能给你带来更好的礼物。",
 	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "初学者的运气",
@@ -53,11 +51,9 @@
 
 	"Book.QiNotebook.Name": "齐先生的笔记本",
 	"Book.QiNotebook.Description": "这本笔记将帮助你寻找到更多随机的齐钻。",
-
-	// TODO ///////////////////////////////////////////////////////
-	"Book.PetGifts.Name": "Pawsitive Reinforcement",
-	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
-	///////////////////////////////////////////////////////////////
+	
+	"Book.PetGifts.Name": "强化爪爪",
+	"Book.PetGifts.Description": "这本书将教你如何训练你的宠物给你带来更好的礼物。",
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "芬吉尔共和国工匠协会非常骄傲的认可您对于高品质工匠物品的奉献。为了表示对您最近在星露谷展览会展览的感谢，我们随信附赠一本手册，希望能帮助你更高效的利用机器。",

@@ -313,6 +313,23 @@
                     "Height": 12
                }
           },
+		  
+		  /*{ //Prevents debris from appearing at the location "Custom_GrandpasShedOutside"
+               "Action": "EditMap",
+               "Target": "Maps/Custom_GrandpasShedOutside",
+               "FromFile": "Assets/Maps/GrandpasShed/GrandpasShedOutsidePaths.tbin",
+               "When": {
+                    "Season": "Spring",
+					"Year |contains=1": false
+               },
+               "ToArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 50,
+                    "Height": 30
+               }
+          },*/
+		  
           //Grandpa's Farm Patch found in content json >>> quest continued (3 more parts)
           { //If players updated to SVE 1.12.13 and lost their Grandpa Shed quest progress (hardwood manifest complete, no iron )
                "Action": "EditData",

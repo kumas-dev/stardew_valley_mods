@@ -23,11 +23,9 @@
 
 	"Power.QiNotebook.Name": "ミスターQiのノート",
 	"Power.QiNoteBook.Description": "モンスターを倒した時にQiジェムが見つかる確率を高める。",
-
-	// TODO ///////////////////////////////////////////////////////
-	"Power.PetGifts.Name": "Pawsitive Reinforcement",
-	"Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
-	///////////////////////////////////////////////////////////////
+	
+	"Power.PetGifts.Name": "ぺっとのきもち",
+	"Power.PetGifts.Description": "ペットから貰えるアイテムのレア率を高める。",
 	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "ビギナーズラック",
@@ -53,11 +51,9 @@
 
 	"Book.QiNotebook.Name": "ミスターQiのノート",
 	"Book.QiNotebook.Description": "これらのメモは、あなたがQiジェムを見つけるのに役立ちます。",
-
-	// TODO ///////////////////////////////////////////////////////
-	"Book.PetGifts.Name": "Pawsitive Reinforcement",
-	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
-	///////////////////////////////////////////////////////////////
+	
+	"Book.PetGifts.Name": "ぺっとのきもち",
+	"Book.PetGifts.Description": "この本には、ペットから貰えるアイテムが良くなるしつけ方法が書かれている。",
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "ファーンギル共和国職人ギルドは、皆様の職人技による高品質な商品へのこだわりを誇りに思います。先日のスターデューバレーまつりでの展示に感謝の意を表し、加工設備をより効率的に活用するためのマニュアルを同封いたします。",
@@ -70,3 +66,5 @@
 	"Debug.Book.RemoveAll.Name": "Button's Extra Booksの力を除去",
 	"Debug.Book.RemoveAll.Description": "Button's Extra Booksによって与えられたすべての力を削除し、対応する本の代金を返金する。",
 }
+
+// Thank you mitekano23 on Nexusmods!

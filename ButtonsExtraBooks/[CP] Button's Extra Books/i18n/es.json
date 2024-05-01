@@ -23,11 +23,9 @@
   
     "Power.QiNotebook.Name": "El cuaderno del Señor Qi",
     "Power.QiNoteBook.Description": "Mayores probabilidades de encontrar gemas Qi.",
-
-    // TODO ///////////////////////////////////////////////////////
-    "Power.PetGifts.Name": "Pawsitive Reinforcement",
-    "Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
-    ///////////////////////////////////////////////////////////////
+  
+    "Power.PetGifts.Name": "Refuerzo positivo",
+    "Power.PetGifts.Description": "Es más probable que tus mascotas te brinden mejores regalos.",
     
     // BOOK ITEMS //
     "Book.Luck.Name": "Suerte del principiante",
@@ -54,10 +52,8 @@
     "Book.QiNotebook.Name": "El cuaderno del Señor Qi",
     "Book.QiNotebook.Description": "Estas notas te ayudarán a encontrar más gemas Qi.",
   
-    // TODO ///////////////////////////////////////////////////////
-    "Book.PetGifts.Name": "Pawsitive Reinforcement",
-    "Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
-    ///////////////////////////////////////////////////////////////
+    "Book.PetGifts.Name": "Refuerzo positivo",
+    "Book.PetGifts.Description": "Este libro le enseñará cómo entrenar a sus mascotas para que le brinden mejores regalos.",
   
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "El Gremio de Artesanos de la República Ferngill se enorgullece de reconocer su compromiso con los productos artesanales de calidad. Como muestra de nuestro agradecimiento por su reciente exhibición en la Feria de Stardew Valley, adjuntamos un manual que esperamos le ayude a utilizar su maquinaria de una manera más eficiente.",

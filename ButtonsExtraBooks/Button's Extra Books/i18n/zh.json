@@ -39,10 +39,8 @@
   "Config.Books.QiNotebook.Title": "齐先生的笔记本",
   "Config.Books.QiNotebookBonus.Name": "齐钻概率",
   "Config.Books.QiNotebookBonus.Description": "调整齐钻的概率。",
-
-  // TODO ///////////////////////////////////////////////////////
-  "Config.Books.PetGifts.Title": "Pawsitive Reinforcement",
-  ///////////////////////////////////////////////////////////////
+  
+  "Config.Books.PetGifts.Title": "强化爪爪",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "开启排错之书",

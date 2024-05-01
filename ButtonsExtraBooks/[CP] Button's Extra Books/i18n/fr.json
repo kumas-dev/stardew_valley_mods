@@ -18,16 +18,14 @@
 	"Power.Popularity.Name": "Amitiés 202",
 	"Power.Popularity.Description": "Vos amis sont plus enclins à vous envoyer des cadeaux par courrier.",
 	
-	// TODO /////////////////////////////////////////////////////
-	"Power.BusDriving.Name": "Bus Driving for Dummies",
-	"Power.BusDriving.Description": "You can drive the bus to Calico Desert yourself.",
+	"Power.BusDriving.Name": "La conduite du bus pour les nuls",
+	"Power.BusDriving.Description": "Vous pouvez conduire la bus pour le désert de Calico vous-même.",
 
-	"Power.QiNotebook.Name": "Mr. Qi's Notebook",
-	"Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
+	"Power.QiNotebook.Name": "Carnet de M. Qi",
+	"Power.QiNoteBook.Description": "Augmente les chances d'obtenir aléatoirement des Gemmes Qi.",
 
-	"Power.PetGifts.Name": "Pawsitive Reinforcement",
-	"Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
-	//////////////////////////////////////////////////////////////
+	"Power.PetGifts.Name": "Renforcement Patte-ibulaire",
+	"Power.PetGifts.Description": "Vos animaux domestiques sont plus susceptibles de vous offrir de beaux cadeaux.",
 	
 	// BOOK ITEMS //
 	"Book.Luck.Name": "Chance du Débutant",
@@ -49,14 +47,14 @@
 	"Book.Popularity.Description": "Vos amis sont plus enclins à vous envoyer des cadeaux.",
 	
 	// TODO /////////////////////////////////////////////////
-	"Book.BusDriving.Name": "Bus Driving for Dummies",
-	"Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
+	"Book.BusDriving.Name": "La conduite du bus pour les nuls",
+	"Book.BusDriving.Description": "Ce livre contient toutes les informations nécessaires pour conduire un bus, plus ou moins.",
 
-	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
-	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
+	"Book.QiNotebook.Name": "Carnet de M. Qi",
+	"Book.QiNotebook.Description": "Ces notes vous aideront à trouver plus de Gemmes Qi aléatoires.",
 	
-	"Book.PetGifts.Name": "Pawsitive Reinforcement",
-	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
+	"Book.PetGifts.Name": "Renforcement Patte-ibulaire",
+	"Book.PetGifts.Description": "Ce livre vous apprendra à dresser vos animaux domestiques pour qu'ils vous apportent de meilleurs cadeaux.",
 	///////////////////////////////////////////////////////////
 
 	// MAIL //

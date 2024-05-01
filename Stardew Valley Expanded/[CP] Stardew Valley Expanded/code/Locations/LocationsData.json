@@ -1760,12 +1760,12 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Goldenfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Goldenfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Meteor_Carp",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Meteor_Carp",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                         },
                         //Vanilla Fish
                         {

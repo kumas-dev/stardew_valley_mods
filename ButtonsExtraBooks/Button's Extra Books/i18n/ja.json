@@ -39,10 +39,8 @@
   "Config.Books.QiNotebook.Title": "ミスターQiのノート",
   "Config.Books.QiNotebookBonus.Name": "Qiジェムのドロップボーナス値。",
   "Config.Books.QiNotebookBonus.Description": "モンスターを倒した時にドロップするQiジェムのドロップボーナス値。",
-
-  // TODO ///////////////////////////////////////////////////////
-  "Config.Books.PetGifts.Title": "Pawsitive Reinforcement",
-  ///////////////////////////////////////////////////////////////
+  
+  "Config.Books.PetGifts.Title": "ぺっとのきもち",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",
