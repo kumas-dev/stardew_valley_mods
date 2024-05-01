@@ -7,7 +7,7 @@ SaveBackup/
 config.toml
 config.json
 !Stardew Valley Expanded/**/config.json
-!_Retexture/**/config.json
+!FerngillSimpleEconomy/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
