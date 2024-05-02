@@ -1,0 +1,23 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Aimon111.swamp1": "{{i18n:i18n_key_1}}",
+                "Aimon111.swamp2": "{{i18n:i18n_key_2}}",
+                "Aimon111.swamp3": "{{i18n:i18n_key_3}}",
+                "Aimon111.swamp4": "{{i18n:i18n_key_4}}",
+                "Aimon111.swamp5": "{{i18n:i18n_key_5}}",
+                "Aimon111.swamp6": "{{i18n:i18n_key_6}}",
+                "Aimon111.swamp7": "{{i18n:i18n_key_7}}",
+                "Aimon111.swamp8": "{{i18n:i18n_key_8}}",
+                "Aimon111.swamp9": "{{i18n:i18n_key_9}}",
+                "Aimon111.swamp10": "{{i18n:i18n_key_10}}",
+                "Aimon111.swamp2.n": "{{i18n:i18n_key_11}}",
+                "Aimon111.swamp3.n": "{{i18n:i18n_key_12}}",
+                "Aimon111.swamp7.n": "{{i18n:i18n_key_13}}"
+            }
+        }
+    ]
+}
