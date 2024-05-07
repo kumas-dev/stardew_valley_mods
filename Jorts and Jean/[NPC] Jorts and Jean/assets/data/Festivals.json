@@ -12,13 +12,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 29 62 right",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 30 62 left",
    				    "Delimiter": "/"
 				},
@@ -26,13 +26,13 @@
    				//MainEvent
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 57 21 left",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 57 22 right",
    				    "Delimiter": "/"
 				},
@@ -56,13 +56,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 22 41 up",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 23 41 down",
    				    "Delimiter": "/"
 				},
@@ -85,13 +85,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 33 42 up",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 34 42 down",
    				    "Delimiter": "/"
 				},
@@ -122,14 +122,14 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
-   				    "Value": "JortsCat 22 41 up",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 42 25 up",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
-   				    "Value": "JeanCat 23 41 down",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 41 25 down",
    				    "Delimiter": "/"
 				},
 				//Jean animation 
@@ -157,26 +157,26 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 28 13 left",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 29 13 left",
    				    "Delimiter": "/"
 				},
 				//MainEvent
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 28 13 left",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 29 13 left",
    				    "Delimiter": "/"
 				},
@@ -200,13 +200,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 36 24 up",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 36 25 up",
    				    "Delimiter": "/"
 				},
@@ -222,13 +222,13 @@
    			[
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 30 22 down",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 29 22 down",
    				    "Delimiter": "/"
 				},
@@ -252,13 +252,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 67 36 up",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 66 36 down",
    				    "Delimiter": "/"
 				},
@@ -274,13 +274,13 @@
 				//SetUp (SVE)
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 68 55 left",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 68 56 right",
    				    "Delimiter": "/"
 				},
@@ -291,7 +291,7 @@
 		"Action": "EditData",
 		"Target": "Data/Festivals/fall27",
 		"Entries": 
-			{ "JortsCat": "괜찮아, 진! 난 여깄고 용감한 귀도 가지고 있어!$h",
+			{ "JortsCat": "괜찮아, 진! 난 여기있고 용감한 귀도 가지고 있어!$h",
 			  "JeanCat": "아, 저거 싫네요... 무서운 소리가 나는데...$4"},
 	},
 	{	
@@ -303,13 +303,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 75 36 down",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 76 36 down",
    				    "Delimiter": "/"
 				},
@@ -339,13 +339,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 24 56 right",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 23 56 up",
    				    "Delimiter": "/"
 				},
@@ -361,13 +361,13 @@
 				//SetUp (SVE)
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 23 57 left",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 24 58 left",
    				    "Delimiter": "/"
 				},
@@ -392,13 +392,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 78 51 up",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 79 51 up",
    				    "Delimiter": "/"
 				},
@@ -423,13 +423,13 @@
    				//SetUp
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JortsCat 38 34 down",
    				    "Delimiter": "/"
 				},
 				{
    				    "Operation": "Append",
-   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
    				    "Value": "JeanCat 39 34 down",
    				    "Delimiter": "/"
 				},
@@ -442,7 +442,7 @@
 		"Target": "Data/Festivals/winter28",
 		"Entries": 
 			{ "JortsCat": "저 거대한 캣타워에 오르지 못하게 할거면, 왜 그렇게 멋지게 만든거야?$4",
-			  "JeanCat": "방금 뭐였죠?!$4#$b#이 산은 정말 소름끼치는 소리가 들리네...$s"},
+			  "JeanCat": "방금 뭐였죠?!$4#$b#이 산은 정말 소름끼치는 소리가 들리네....$s"},
 	},
 	
 	

@@ -11,21 +11,21 @@
 			"AllowValues": "true, false",
 			"Default": "true",
 			"AllowBlank": false,
-			"Description": "라이너스의 쓰레기 이벤트를 조츠가 포함되게 설정합니다."
+			"Description": "Tweaks Linus's garbage event to include Jorts."
 		},
 		"PierreEventTweak":
 		{
 			"AllowValues": "true, false",
 			"Default": "true",
 			"AllowBlank": false,
-			"Description": "피에르의 비밀 쪽지 이벤트를 상자 이벤트로 변경합니다."
+			"Description": "Tweaks Pierre's secret stash event."
 		},
 		"LastingCTs":
 		{
 			"AllowValues": "true, false",
 			"Default": "false",
 			"AllowBlank": false,
-			"Description": "대화가 무한정 지속되도록 설정하기 (LastingCT가 설치되어 있지 않으면 false으로 설정합니다.)"
+			"Description": "Allow for conversations to last indefinitely (leave false if you don't have Lasting CTs installed.)"
 		},
 	},
 	
@@ -107,11 +107,11 @@
 		  	"Target": "Strings/Schedules/JortsCat",
             "Entries": 
             {
-                "Trash.000": "{{Random: 진...진...도와줘...$s && 나는 냄새나고 지저분한 곳에서 수영하고 있어!$h && 음...어쩌지 막힌거 같은데.$s && 진! 진, 나 생선을 찾았어!$h && 누군가 또 뚜껑을 열어놓고 간거 같은데 어떻게 하지? && 방금 뭔가 움직인거 같아! 내가 잡을게! ...아 내 꼬리였네. |inputSeparator=&&}}",
-				"ColaShop.000": "{{Random: 난 컵캣이야, 펠리컨 마을의 주인이지!$3 && 모자가 생겼다! 고마워, 빈센트! 그래도 눈 구멍은 필요할 거 같아.$3 && 허, 오늘 날씨가 좀 어두운 거 같지 않아?$3 && 봐, 재활용 하고 있어!$3 && 이건 쓰레기통 사고로 치지 않는거지?$3 |inputSeparator=&&}}",
-				"Kevin.000": "{{Random: 어디서 찾은거야? 너무 반짝반짝거려!$1 && 치즈칩과 치즈 크런치 다 너무 맛있어! 그치만 역시 망고가 최고지.$3 && 그녀가 너가 그걸 쪼아먹길 원하지 않았다면 왜 빼 놨을까?$4 && 내가 진을 좋아하는 것처럼 너도 타티아나를 좋아해?$1 && 와아! 케빈, 진짜 멋지다! 다음은 어떻게 됐어?$1 && 겨울엔 춥지 않아? 혹시 들어오고 싶으면 말만 해, 알았지? &&  자, 케빈, 내가 이걸 구해왔어! 어때? 진짜 지저분하지?$h |inputSeparator=&&}}",
-				"CatCafe.000": "{{Random: 으으음...너무 졸려서...눈을 못 뜨겠어...떠야 하는데...$7 && Zzz... 아니, 난 졸린 고양이가 아니야...이건 주머니 괴물이야...$7 && 음...그래, 내 배를 쓰다듬어도 돼, 스트레스가 해소 되거든... zzz$7 && 응, 차를 쏟았어...어쩌지...으악.$7 && Zzz... 큰 스프를 만들어야 겠는걸...물론, 나눠줄게...$7 && 천장에 뭐가 있는 줄 알아?#$b#벌레인가? 벌레가 아니길 바래. |inputSeparator=&&}}",
-				"Pride.000": "모두가 자신을 사랑할 수 있는 파티야! 이런게 최고의 파티지!$1#$b#내가 널 사랑한다는 걸 잊지마, @!",
+                "Trash.000": "{{Random: Jean...Jean, help....$s && I am SWIMMING in scrungy smells!$h && Um... I might be stuck.$s && Jean! Jean, I found a fish!$h && Someone just left the lid unfastened on this, what else was I supposed to do? && Something just moved! I'mma get it! ...Oh, it was my tail. |inputSeparator=&&}}",
+				"ColaShop.000": "{{Random: I AM CUPCAT, MASTER OF PELICAN TOWN!$3 && I've got a hat! Thanks Vincent! I think it needs eyeholes though.$3 && Huh, it's kinda dark out today, isn't it?$3 && Look, I'm recycling!$3 && This doesn't count as a trashcan mishap, right?$3 |inputSeparator=&&}}",
+				"Kevin.000": "{{Random: Where did you find that?? IT'S SO SPARKLY!$1 && Cheesy chips and cheesy crunchies are both good! But mango is my favorite.$3 && If she didn't want you pecking at it, why did she leave it out?$4 && Do you like Tatiana as much as I like Jean?$1 && Oh wow! Kevin, you're so cool! What happened next?$1 && Do you ever get cold in winter? Let me know if you need to come in, all right? &&  Here, Kevin, I saved you this! What do you think? Super scrungy, right?$h |inputSeparator=&&}}",
+				"CatCafe.000": "{{Random: Mmm... so sleepy... can't keep eyes... open....$7 && Zzz... no, I'm not a sleepy kitty... that's a pocket monster...$7 && Hnn... yes, you can pet my belly, it's stress relieving... zzz$7 && Yes, I spilled the tea... what about it... snrrr$7 && Zzz... I'm gonna make a big soup... yes, I'll share....$7 && What do you think is on the ceiling?#$b#Is it a bug? I hope it's a bug. |inputSeparator=&&}}",
+				"Pride.000": "It's a party for everybody to love who they are! That's the best kind!$1#$b#Don't forget that I love you too, @!",
 			},
 		},
 		{
@@ -119,13 +119,13 @@
 		  	"Target": "Strings/Schedules/JeanCat",
             "Entries": 
             {
-                "Trash2.000": "{{Random: 뭐...'쓰레기통 사고 이후의 일 수'를 다시 0으로 적어야겠네...$3 && 정말 조츠 답네...$3 && 조츠, 넌 쓰레기통 안에 있더라도 적어도 쓰레기는 아니야.$3 && 조츠, 그거 절대 먹지마. && 이번엔 뭘 닦아줘야 할 지 생각 하기도 싫네.$3 && 적어도 스스로 정리되는 문제였네.$3 |inputSeparator=&&}}",
-				"Ginger.000": "{{Random: 그래서 조츠는 옷장에 갇혔고...$6 && 저기, 그냥 말을 걸어보세요, 아이들은 뭐든지 관심을 가지니까.$6 && 붉은 띠 농어는 농어를 대체할 수 없어요, 이야기 끝.$6 && 그 피에르는...제가 생각해 봤는데, 언제 한번 밤에 몰래 들어가서 그가 좋아하는 모든 것에 오줌을 싸버리죠.$6 && 언젠가 그 개가 풀려나거든 울면서 나를 찾지 마세요.$6 && 그녀는 지금 당신을 뭐라고 부르나요?$6 && 그럼, 셰인이 최근에 한 일 중에 가장 재미있던 일은 뭐였나요? 캣닙을 쏟으며. && 하지만 저희가 뭘 알겠어요, 저흰 그냥 고양이잖아요.$6 |inputSeparator=&&}}",
-				"Tatiana.000": "{{Random: 그래서 조츠는 옷장에 갇히고...$6 && 아모르 지역에서 온 거라면 정말 '사랑'의 물약이고 그렇지 않다면 반짝이는 광기일 뿐이겠죠.$6 && 붉은 띠 농어는 농어를 대체할 수 없어요, 이야기 끝.$6 && 레이지가 가진 로브 멋지네요, 그렇죠? 그들에게 무슨 일이 생기면 안타까울 거에요.$6 && 봐요, 인간은 조츠만큼 쉽게 설명할 수 없어요.$6 && 그녀는 지금 당신을 뭐라고 부르나요?$6 && 아하하하! 진짜 케빈답네!$6 && 하지만 저희가 뭘 알겠어요, 저흰 그냥 동물이잖아요.$6 |inputSeparator=&&}}",
-				"HotGoss.000": "{{Random: 그래서 조츠는 옷장에 갇히고...$6 && Look, just try talking to her. Kids pay attention, you know.$6 && 아모르 지역에서 온 거라면 정말 '사랑'의 물약이고 그렇지 않다면 반짝이는 광기일 뿐이겠죠.$6 && 붉은 띠 농어는 농어를 대체할 수 없어요, 이야기 끝.$6 && 레이지가 가진 로브 멋지네요, 그렇죠? 그들에게 무슨 일이 생기면 안타까울 거에요.$6 && 그 피에르는...제가 생각해 봤는데, 언제 한번 밤에 몰래 들어가서 그가 좋아하는 모든 것에 오줌을 싸버리죠.$6 언젠가 그 개가 풀려나거든 울면서 나를 찾지 마세요.$6 && 녀는 지금 당신을 뭐라고 부르나요?$6 && 아하하하! 진짜 케빈답네!$6 && 그럼, 셰인이 최근에 한 일 중에 가장 재미있던 일은 뭐였나요? 캣닙을 쏟으며. && 봐요, 인간은 조츠만큼 쉽게 설명할 수 없어요.$6 && 하지만 저희가 뭘 알겠어요, 저흰 그냥 동물이잖아요.$6 |inputSeparator=&&}}",
-				"ColaShop2.000": "{{Random: 빈센트, 생각해 주는 건 고마운데 그건 모자가 아니야.$3 && 정말 조츠 답네...$3 && 샘, 여기 좀 도와줄래요?$3 && 적어도 조자 컵은 아니겠지.$3 |inputSeparator=&&}}",
-				"CatCafe2.000": "{{Random: 전 괜찮아요. 그냥 캣닙을 조금 맡았을 뿐이에요.$3 && 네, 부드럽게 쓰다듬어 주세요.$6 &&  여기 고양이들은 현지인에게 최고의 차를 대접하고 있어요.$6 && 내 양심에 걸고, 발톱을 깨끗하게 하는 것 뿐이야. $h && %진이 기둥을 긁으며 혼잣말을 하고 있다.#$b#가장 부드러운 발이지만 발톱이 될 수 있어요~$h && 조츠가 낮잠을 자는 동안에 고급스러운 그루밍을 즐겨봐요.$6 |inputSeparator=&&}}",
-				"Pride2.000": "잊지 마세요, @, 프라이드는 폭동에서 시작되었습니다. 자신이 누구인지 자랑스러워하는 것은 좋지만, 혐오가 자신을 억압하지 않도록 하는 것도 중요합니다.",
+                "Trash2.000": "{{Random: Well... setting the 'days since a trash can mishap' count back to zero...$3 && Classic Jorts...$3 && Well Jorts, you may be IN trash, but at least you AREN'T trash.$3 && Jorts, absolutely do not eat that. && I don't even want to think about what I'll have to clean off him this time.$3 && At least it's a disaster that mostly cleans up after itself.$3 |inputSeparator=&&}}",
+				"Ginger.000": "{{Random: So then Jorts got locked in the closet...$6 && Look, just try talking to her. Kids pay attention, you know.$6 && A redbanded perch is NOT a replacement for a sea bass, end of story.$6 && That Pierre... I'm telling you, we need to slip in one night and pee on everything he loves.$6 && When that dog get loose one day, don't come crying to me.$6 && She named you WHAT, now?$6 && So, what's Shane done lately that's entertaining? Spill the catnip. && But what would WE know about that, we're just cats.$6 |inputSeparator=&&}}",
+				"Tatiana.000": "{{Random: So then Jorts got locked in the closet...$6 && It's really only a 'love' potion if it's from the Amor region, otherwise it's just sparkling infatuation.$6 && A redbanded perch is NOT a replacement for a sea bass, end of story.$6 && That's some nice robes Razzy has, huh? Would be a shame if something happened to them.$6 && Look, humans can't be explained as easily as Jorts.$6 && She named you WHAT, now?$6 && Ahahaha! Classic Kevin!$6 && But what would WE know about that, we're just animals.$6 |inputSeparator=&&}}",
+				"HotGoss.000": "{{Random: So then Jorts got locked in the closet...$6 && Look, just try talking to her. Kids pay attention, you know.$6 && It's really only a 'love' potion if it's from the Amor region, otherwise it's just sparkling infatuation.$6 && A redbanded perch is NOT a replacement for a sea bass, end of story.$6 && That's some nice robes Razzy has, huh? Would be a shame if something happened to them.$6 && That Pierre... I'm telling you, we need to slip in one night and pee on everything he loves.$6 When that dog gets loose one day, don't come crying to me.$6 && She named you WHAT, now?$6 && Ahahaha! Classic Kevin!$6 && So, what's Shane done lately that's entertaining? Spill the catnip. && Look, humans can't be explained as easily as Jorts.$6 && But what would WE know about that, we're just animals.$6 |inputSeparator=&&}}",
+				"ColaShop2.000": "{{Random: Vincent, I appreciate the thought, but that's not a hat.$3 && Classic Jorts...$3 && Sam, uh, a little help here?$3 && At least it's not a Joja cup, I suppose.$3 |inputSeparator=&&}}",
+				"CatCafe2.000": "{{Random: I'm fine. I've only had a LITTLE catnip.$3 && Yes, you may brush me, if you're gentle.$6 &&  The cats here have the BEST tea about the locals, you know.$6 && Just keeping my conscience clean and my claws sharp. $h && %Jean is singing to herself while she scratches the post.#$b#The softest paw can become a claw~$h && Just getting in some quality grooming while Jorts naps.$6 |inputSeparator=&&}}",
+				"Pride2.000": "Never forget, @, Pride started as a riot. It's good to be proud of who you are, but also important not to let hate oppress you.",
 			},
 		},
 		
@@ -262,6 +262,21 @@
 		},
 		
 		{
+			"Name": "FestivalYear",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "FestivalYear",
+			"Value": "_y2", 
+			"When":
+			{
+				"Query: {{Year}} % 2 = 0": true,
+			}
+		},
+		
+		//Jojamart Event Tokens
+		{
 			"Name": "JojaMartCat_SetUp",
 			"Value": "farmer 18 41 0 JortsCat 25 30 1 Sam 999 200 0 Morris 999 200 0 JeanCat 27 30 3 Shane 199 999 2"
 		},
@@ -326,7 +341,7 @@
 		
 		{
 			"Name": "ClaireDoorMat",
-			"Value": "클레어는 아무런 불평도 하지 않네요.#$b#",
+			"Value": "Claire's a doormat.#$b#",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -339,7 +354,7 @@
 		
 		{
 			"Name": "JulietCatRuns",
-			"Value": "그리고 줄리엣은 당신보다 더 나아질 수 있는 기회에서 도망치고요.#$b#",
+			"Value": "And Juliet runs from good life choices even more than you do.#$b#",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -668,7 +683,7 @@
 		
 		{
 			"Name": "ClaireCatSigh",
-			"Value": "pause 300/textAboveHead Claire \"한숨\"",
+			"Value": "pause 300/textAboveHead Claire \"Sigh.\"",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -689,7 +704,7 @@
 		
 		{
 			"Name": "MartinStrike",
-			"Value": "textAboveHead Martin \"파업이다!!\"",
+			"Value": "textAboveHead Martin \"Strike!\"",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -697,7 +712,7 @@
 		
 		{
 			"Name": "JulietStrike",
-			"Value": "textAboveHead Juliet \"파업이다!!\"",
+			"Value": "textAboveHead Juliet \"Strike!\"",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -723,7 +738,7 @@
 		
 		{
 			"Name": "JulietHatesIt",
-			"Value": "pause 1000/textAboveHead Juliet \"여기 진짜 싫어.\"",
+			"Value": "pause 1000/textAboveHead Juliet \"I hate it here.\"",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -749,7 +764,7 @@
 		
 		{
 			"Name": "JulietsLuck",
-			"Value": "pause 1/speak Juliet \"뭐...내 운이 그럼 그렇지.$3\"/pause 1",
+			"Value": "pause 1/speak Juliet \"Well... that's about on par with my luck, honestly.$3\"/pause 1",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -777,7 +792,7 @@
 		
 		{
 			"Name": "MartinNoWay",
-			"Value": "speak Martin \"안돼...이렇게 끝내고 싶지는 않아...$2\"/pause 1",
+			"Value": "speak Martin \"No way... I don't want it to end like this....$2\"/pause 1",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -804,7 +819,7 @@
 		
 		{
 			"Name": "MartinTalkCatA",
-			"Value": "faceDirection Shane 1/speak Shane \"마틴!\"/faceDirection Martin 3 true/jump Martin/speak Martin \"네, 넷...! 선생님?\"/pause 1",
+			"Value": "faceDirection Shane 1/speak Shane \"Martin!\"/faceDirection Martin 3 true/jump Martin/speak Martin \"Y-yessir?\"/pause 1",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -817,7 +832,7 @@
 		
 		{
 			"Name": "MartinTalkCatB",
-			"Value": "speak Shane \"주주에서 아르바이트를 구해봐. 여기보다 더 나쁜 통근은 없을거야. 학교를 마치고 이 작은 마을보다 더 넓은 세상을 경험해보길 바라.\"/pause 1",
+			"Value": "speak Shane \"Get a part time job in Zuzu. Can't be a worse commute than here. Finish your schooling and see a bit more of the world than this tiny place.\"/pause 1",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -830,7 +845,7 @@
 		
 		{
 			"Name": "MartinTalkCatC",
-			"Value": "speak Shane \"그리고 또래 여자애들을 만나, 나이 두배나 많은 사람을 쫒아 다니진 말고 진짜 여자친구를 사귀어.\"/speak Martin \"...$4\"/pause 1",
+			"Value": "speak Shane \"And meet some girls your own age and get a real girlfriend instead of pining after someone twice your age.\"/speak Martin \"...$4\"/pause 1",
 			"When": {
 				"HasMod": "FlashShifter.StardewValleyExpandedCP"
 			}
@@ -857,7 +872,7 @@
 		
 		{
 			"Name": "JessieJulesTalkA",
-			"Value": "faceDirection Shane 3/speak Shane \"줄리엣.\"/speak Juliet \"제발 나를 더 슬프게 하지 말아줘. 물고를 사서 너한테 던지기 전에.$5\"/pause 1",
+			"Value": "faceDirection Shane 3/speak Shane \"Juliet.\"/speak Juliet \"Please don't get sappy on me. I will go get a fish from seafood just so I can throw it at you.$5\"/pause 1",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -870,7 +885,7 @@
 		
 		{
 			"Name": "JessieJulesTalkB",
-			"Value": "speak Shane \"적어도 나보단 덜 엉망이 되려고 노력해 줄 수는 없겠어?$2\"/pause 1",
+			"Value": "speak Shane \"Can you at least try and be less of a screwup than me?$2\"/pause 1",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -883,7 +898,7 @@
 		
 		{
 			"Name": "JessieJulesTalkC",
-			"Value": "speak Juliet \"풋, 그건 너무 어려운 부탁이네요, 보스 선생님.$1\"/pause 1",
+			"Value": "speak Juliet \"Pfft, that's a tall order, boss man.$1\"/pause 1",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -896,7 +911,7 @@
 		
 		{
 			"Name": "JessieJulesTalkC1",
-			"Value": "speak Juliet \"하지만 시도해 볼 시간은 많이 있겠네, 말 그대로 잃을 것도 없으니까.$1\"/pause 1",
+			"Value": "speak Juliet \"But I guess I'll have lots of free time on my hands to make an attempt. Literally nothing to lose, right?$1\"/pause 1",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -909,7 +924,7 @@
 		
 		{
 			"Name": "JessieJulesTalkD",
-			"Value": "speak Jessie \"내가 바쁘게 해줄게.$1\"/animate Juliet true true 100 20 20 20/speak Juliet \"...더 많은 직소 퍼즐이 필요하겠는걸, 그렇지?$2\"/pause 1",
+			"Value": "speak Jessie \"I'll keep her busy.$1\"/animate Juliet true true 100 20 20 20/speak Juliet \"...this is going to involve more jigsaw puzzles, isn't it.$2\"/pause 1",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
@@ -922,7 +937,7 @@
 		
 		{
 			"Name": "JessieJulesTalkE",
-			"Value": "speak Jessie \"그리고 쿠키도.\"/speak Juliet \"뭐, 쿠키만 있으면 견딜 수 있지.\"/stopAnimation Juliet/showFrame Juliet 20 true/pause 1",
+			"Value": "speak Jessie \"And cookies.\"/speak Juliet \"Well, all right. As long as there's cookies.\"/stopAnimation Juliet/showFrame Juliet 20 true/pause 1",
 			"When": {
 				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
