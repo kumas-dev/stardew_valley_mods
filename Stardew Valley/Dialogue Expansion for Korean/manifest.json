@@ -1,0 +1,11 @@
+{
+   "Name": "Dialogue Expansion for All Friend-able Characters for Korean",
+   "Author": "gizzymo (dialogue), paradigmnomad (coding), jolifils21, Marina, BeuBeu (Translators), Forest (Previous Translator).",
+   "Description": "Adds about 2500 new lines of dialogue across all 34 characters who have a heart level",
+   "Version": "2.2.1",
+   "UniqueID": "gizzymo.canonfriendlyexpansion.KorTransltion",
+   "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    },
+   "UpdateKeys": [ "Nexus:7749" ]
+}
