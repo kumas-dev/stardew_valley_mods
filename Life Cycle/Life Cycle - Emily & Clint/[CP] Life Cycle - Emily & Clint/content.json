@@ -1,0 +1,335 @@
+// Korean Translation By 아빠양
+{
+"Format": "2.0.0",
+"ConfigSchema": {
+    "Version": {
+			"AllowValues": "dating, married",
+			"Default": "dating"
+		    },
+    "Save": {
+			"AllowValues": "new, old",
+			"Default": "new"
+		    },
+    },
+"Changes": [
+         
+        //      D   A   T   I   N   G       V   E   R   S   I   O   N
+    
+//  O   L   D       A   N   D       N   E   W       S   A   V   E
+    
+//Emily and Clint dialogue | 6 hearts event
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/Emily",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020010"
+		},
+"Entries": {
+            "Tue4": "너도 그램플턴 축제에 한번 가봐.$0#$b#클린트랑 가봤는데 정말 재밌었어!$1",
+            "Sat4": "클린트가 그램플턴 축제의 바위 내려치기에서 최고 점수를 받았어..$1#$b#굉장하지, 안 그래?$1"
+			}
+},
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/Clint",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020010"
+		},
+"Entries": {
+			"Mon4": "안녕, @.$1#$e#저번에 에밀리한테 그램플턴 축제에 함께 가자고 말해보라 권유 해줘서 고마워.$0#$b#정말 좋아하더라!$1",
+            "Wed4": "어쩌면 에밀리는 내게 과분할지도 몰라...$2"
+			}
+},
+//Emily and Clint dialogue | 7 hearts event
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/Emily",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020011"
+		},
+"Entries": {
+            "Mon6": "두 영혼은 단순한 우연으로 만나진 않아...$4",
+            "Tue6": "얼마 전, 꿈에 클린트가 나타났어.$0#$b#어떤 신호일지도 몰라...$4",
+            "Fri6": "클린트랑 난 친구지만, 요바가 바라는 만큼 우리가 친하진 않은 것 같아.$2#$e#대장간에 들러서 인사라도 해야겠어.$0",
+            "Sun6": "내 삶에 큰 변화가 다가오는 게 느껴져...$3"
+			}
+},
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/Clint",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020011"
+		},
+"Entries": {
+			"Mon6": "두 번 다시는 에밀리한테 데이트 신청을 할 용기가 절대 안 날 것 같아...$2#$e#적어도 친구로는 지낼 수 있겠지...$2",
+            "Thu6": "@, 혹시 에밀리 만나면 이 토파즈 좀 줄 수 있어?[68]$0#$b#내가 준 거라곤 말하지 말고!$0",
+            "Fri6": "주점에 더 자주 갈 수 있다면 좋겠는데.$0#$b#거스 씨가 부러워, 매일 에밀리를 볼 수 있으니까.$3",
+            "Sun6": "지난주 금요일에 주점에 갔는데, 에밀리가 날 피하는 것 같았어...$2#$b#혹시 나랑 그램플턴 축제에 간 게 싫었나...$2"
+			}
+},
+//Dialogues | 8 hearts event
+    //Emily
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/Emily",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020012"
+		},
+"Entries": {
+            "Mon8": "클린트와 함께 삶의 길을 걸어가다 보니 예전엔 내게 뭔가 없었다는 걸 깨달았어.$0#$b#살면서 이렇게 행복했던 적이 없어.$4",
+            "Tue8": "클린트와 당장 아이를 가질 생각은 없어.$0#$e#하지만 언젠가 그런 날이 오게 된다면, 우리 아이는 착하고 사려 깊게 키워야지.$1#$b#사람에게 있어서 그 부분이 가장 중요하다고 생각해.$1",
+            "Wed8": "안녕, @.$1#$e#어젯밤 클린트와 이야기를 해봤는데, 내가 마을에 옷 가게를 여는 게 어떠냐고 하더라.$0#$b#한 번도 생각해본 적은 없지만, 좋은 아이디어야!$1#$b#분명 모두 좋아할 거야, 하지만 일단 돈을 좀 모아야 해.$0",
+            "Thu8": "시간 나면 클린트와 함께 모닥불을 피울 생각이야.$0#$b#춤도 추고 명상도 할 수 있어!$1",
+            "Fri8": "샌디가 어서 클린트를 만나보고 싶대.$0#$e#정말 멋질 거야, 둘 다 내 절친이니까.$0#$e#둘이 잘 지낼 거라 믿어.$0#$e거기다, 샌디한테는 클린트가 깨줄 수 있는 전정동석도 많은걸.$1",
+            "Sat8": "안녕, @.$0#$e#어떤 사람들은 아무리 노력해도 그 기운이 맞지 않아 친해질 수 없어.$0#$b#하지만 다행히도, 클린트와 내 기운은 완벽하게 잘 섞여.$1",
+            "Sun8": "어쩌면 곧 주점 일을 그만두고 재봉 일에 전념하게 될지도 몰라.$0#$e#하지만 주점에서 일했던 경험이 내게 얼마나 중요했는지 절대 잊지 않을 거야.$0#$b#그곳에서 클린트를 만나게 됐으니까...$4",
+            "spring_Mon8": "거스 씨와 일하는 것도 재밌지만, 내 진짜 꿈은 재봉 일에 내 모든 걸 쏟아붓는 거야.$0#$e#클린트는 늘 내가 재능이 있다고 해.$1#$b#마을에 옷 가게를 열어보는 게 어떻겠냐고 말할 정도야.$1",
+            "spring_Tue8": "우리 모두의 영혼은 각자의 여행을 하며 사는 거지.$0#$b#하지만 함께할 동반자를 찾을 수도 있어.$1",
+            "spring_Fri8": "부모님께서 언제 여행에서 돌아오실진 모르겠지만, 빨리 오셔서 클린트를 만나보셨으면 해.$0",
+            "summer_Mon8": "클린트는 내게 정말 친절해.$4#$b#저번 주에는 새 드레스에 쓸 옷감이 필요하다고 했는데, 어제 하나 가져다준 것 있지!$1",
+            "summer_Wed8": "내 영혼은 그 누구보다도 클린트와 가장 강력하게 연결되어 있어.$4",
+            "summer_Thu8": "안녕, @.$0#$e#요즘 클린트와 명상을 해보고 있어.$0#$b#하지만 클린트는 마음을 비우는 게 도통 쉽지 않은가봐...$2",
+            "fall_Tue8": "안녕, @.$0#$e#넌 미래에 대해 생각해본 적 있어?$3#$e#난 그런 것에 신경 쓰지 않아. 운명이 알아서 그 마법을 발휘하길 기다리곤 했었지.$0#$b#하지만 이제 클린트를 만났으니, 우리 둘 다 정착해야지.$0",
+            "fall_Fri8": "안녕, @.$0#$e#넌 모를 수도 있겠지만, 모두 각자의 영혼에 에너지가 있어.$0#$b#그리고 클린트의 에너지는 내 에너지와 맞물려서 서로의 부족한 부분을 채워줘...$4",
+            "fall_Sun8": "안녕, @.$0#$e#클린트가 자기 광물로 나한테 목걸이랑 귀걸이를 만들어주는 걸 좋아한다고 말했던가?$0#$b#뭐, 예쁘긴 한데 몇 개는 나한테는 별로 어울리는 것 같지 않아서, 요즘은 같이 만들고 있어.$1#$b#내가 디자인을 하면 클린트가 만드는 거지.$1",
+            "winter_Wed8": "클린트와 함께하는 매일은 요바의 축복이지.$4#$e#아, @, 네 하루는 어때?$0",
+            "winter_Sat8": "내 운명은 영원히 클린트와 함께하는 것이라고 믿어.$4#$e#너도 그런 느낌이 드는 사람이 있어?$0",
+            "winter_Sun8": "클린트 옆에 있는 게 좋아, 클린트에게는 긍정적인 에너지가 많거든!$1",
+            "spring_12": "달걀 축제를 좋아하지만 참가해본 적은 없어.$0#$b#올해는 클린트와 함께 참가해볼까 해.$1",
+            "fall_15": "분명 관광객들도 내일 품평회에서 클린트의 전시물을 좋아할 거야.$1",
+            "winter_7": "클린트도 나도 얼음 축제를 정말 좋아해.$1#$b#아 참, 낚시 대회 잘하고 와, @.$0",
+            "winter_26": "클린트의 생일이 겨울 별의 만찬 바로 다음 날이라 좋아.$0#$b#행복이 두 배가 되잖아!$1#$e#뭘 주는 게 좋을까...$0",
+            "spring_12_2": "달걀 축제를 좋아하지만 참가해본 적은 없어.$0#$b#올해는 클린트와 함께 참가해볼까 해.$1",
+            "fall_15_2": "분명 관광객들도 내일 품평회에서 클린트의 전시물을 좋아할 거야.$1",
+            "winter_7_2": "클린트도 나도 얼음 축제를 정말 좋아해.$1#$b#아 참, 낚시 대회 잘하고 와, @.$0",
+            "winter_26_2": "클린트의 생일이 겨울 별의 만찬 바로 다음 날이라 좋아.$0#$b#행복이 두 배가 되잖아!$1#$e#뭘 주는 게 좋을까...$0",
+			}
+},
+     //Clint
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/Clint",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020012"
+		},
+"Entries": {
+            "Mon10": "에밀리가 내가 예전에 쓰다 만 편지를 봐버렸어.$0#$b#얼마나 창피하던지...$2",
+            "Tue10": "에밀리가 나한테 고백했을 때, 난 걔가 장난치는 줄 알았어.$2#$e#그런 게 아니라서 정말 다행이야.$1",
+            "Wed10": "에밀리는 자주 날 찾아와.$1#$b#내가 외로울까 봐 걱정되나 봐.$0",
+            "Thu10": "안녕, @.$0#$e#와서 도구 강화라도 하는 건 어때?$0#$b#에밀리가 옷 가게 여는 걸 도와주려고 돈을 모으는 중이거든.$1",
+            "Fri10": "난 마을 주민 대부분과 별로 안 친해.$0#$b#하지만 에밀리를 만났을 때, 그 앤 뭔가 다르단 걸 알았지.$1",
+            "Sat10": "아직도 에밀리랑 대화할 때면 긴장돼.#$e#다행히 걘 그런 점이 귀엽대.$4",
+            "Sun10": "에밀리는 내게 너무 소중해.$1#$b#늘 함께 있고 싶어. 날 굉장히 행복하게 해준다니까.$1",
+            "spring_Wed10": "에밀리는 나한테 있어서 가장 중요한 거야.$1#$e#내 삶의 의미를 주는 사람이지.$4",
+            "spring_Thu10": "에밀리한테 춤을 가르쳐달라고 했어.$0#$e#딱히 해보고 싶은 건 아니지만 에밀리랑 더 많은 시간을 보낼 수 있으니까.$4",
+            "spring_Sun10": "안녕, @.$0#$e#오늘 에밀리랑 영화를 보기로 했어.$0#$b#많이 기대하더라, 주인공 역할을 맡은 이가 좋아하는 배우라던데.$1",
+            "summer_Tue10": "나도 내가 가끔 심술쟁이라는 걸 알아, 그래서 에밀리가 늘 날 이해해주니까 다행이지.$1",
+            "summer_Thu10": "에밀리가 내 여자친구라고 생각하면서 일어나면 마치 꿈에서 깨어나지 않는 것 같아.$4",
+            "summer_Sat10": "@, 혹시 에밀리가 옥 귀걸이를 좋아할까?$1",
+            "fall_Mon10": "이제 에밀리랑 사귀게 되었으니, 더 노력해서 좋은 사람이 되어주고 싶어.$1",
+            "fall_Fri10": "에밀리와 함께하며 진정한 행복이 뭔지 깨달았어.$4#$b#매일 아침 해가 더 밝게 빛나는 것 같아.$1",
+            "fall_Sun10": "에밀리를 좋아하는 이유 중 하나는 그 애가 친절하기 때문이야.$1",
+            "winter_Wed10": "올해는 멋지고 보람 있는 해였어.$0#$e#다 에밀리 덕분이지.$1",
+            "winter_Fri10": "에밀리한테 그램플턴 축제에 다시 가자고 했어.$1#$b#뭐, 좋은 추억을 상기시키기 위해서지.$1",
+            "winter_Sun10": "난 에밀리 때문에 아쿠아마린을 좋아하는 거야, 내가 대장장이라서가 아니라.$4",
+            "spring_23": "마침내 에밀리와 봄꽃 무도회에서 춤출 수 있어!$1",
+            "spring_27": "에밀리가 보석을 좋아하고 내가 대장장이라 좋아.$0#$b#생일 선물로 옥과 에메랄드 장신구를 만들어줬어.$1",
+            "spring_23_2": "마침내 에밀리와 봄꽃 무도회에서 춤출 수 있어!$1",
+            "spring_27_2": "에밀리가 보석을 좋아하고 내가 대장장이라 좋은 점이 많아.$0#$b#생일 선물로 옥과 에메랄드 장신구를 만들어줬어.$1",
+			}
+},    
+     //Haley
+{
+"Action": "EditData",
+"Target": "Characters/Dialogue/Haley",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020012"
+		},
+"Entries": {
+            "Mon2": "으... 클린트가 우리 집에 자주 오지 말았으면 좋겠어.$2#$b#아니면 적어도 오기 전에 샤워라도 하고 오든가.$2",
+            "Mon8": "언니가 이렇게 그리워질 날이 올 줄 몰랐어.$2#$b#같이 살긴 하는데, 클린트와 많은 시간을 보내다 보니까.$2#$e#물론 언니가 좋아하니까 기뻐.$0",
+            "Tue4": "언니가 클린트한테 화장이라도 시켜줬으면 좋겠다.$0#$b#면도도 좀 하고.$0",
+            "Wed8": "저번에 클린트가 우리 집에 왔는데, 언니가 그렇게 행복해하는 건 처음 봤어!$1",
+            "Thu2": "언니가 클린트와 사귀다니.$3#$b#패션 센스가 정말 끔찍한 남자던데!$3",
+            "Thu8": "안녕, @.$0#$e#클린트와 언니가 만나기 시작할 때 함부로 그를 판단하지 말 걸... 하고 생각하고 있었어...$2#$b#언니를 정말 행복하게 해주는 사람인데 내가 처음엔 너무 무례했어...$2",
+            "Fri8": "클린트가 언니랑 나한테 한 쌍의 목걸이를 줬어.$1#$b#직접 만들었다고 하더라.$1",
+            "Sat2": "클린트는 직업이 좀...$3#$e#언니는 대체 뭐가 좋다는 건지.$3",
+            "Sat6": "클린트와 언니가 거의 매일 만나고 있어.$0#$e#좋은 건지 나쁜 건지 모르겠네.$0",
+            "Sun4": "언니한테 클린트에게 줄 옷을 좀 만들어보라고 했어.$7#$b#하지만 언니는 있는 그대로가 좋대$0",
+			}
+},
+     //Festivals
+{
+"Action": "EditData",
+"Target": "Data/Festivals/spring24.xnb",
+"When": {
+	"HasSeenEvent": "59020012"
+		},
+"Entries": {
+            "Clint": "에밀리가 엄청 아름다워 보여.$4"
+			}
+},
+{
+"Action": "EditData",
+"Target": "Data/Festivals/winter8.xnb",
+"When": {
+	"HasSeenEvent": "59020012"
+		},
+"Entries": {
+            "Clint": "에밀리랑 같이 샨티라는 이름을 지어줬어.$0#$b#마치 우리 아이같아!$1",
+            "Emily": "@!$1#$e#여기 와서 우리 샨티 좀 봐.$1"
+			}
+},
+{
+"Action": "EditData",
+"Target": "Data/Festivals/winter25.xnb",
+"When": {
+	"HasSeenEvent": "59020012"
+		},
+"Entries": {
+            "Clint": "이 축제는 늘 날 우울하게 하곤 했었지.$2#$b#하지만 이제 내겐 에밀리가 있어.$1"
+			}
+},
+//Schedules | 8 hearts event
+     //Emily
+{
+"Action": "EditData",
+"Target": "Strings/schedules/Emily",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020012"
+		},
+"Entries":  {
+            "spring.001": "클린트랑 같이 자연과 소통하고 있어.$0",
+            "spring.002": "여긴 치유 효과가 있는 영혼의 에너지가 있어.$0#$b#그래서 클린트한테 같이 오자고 한 거야.$0",
+            "summer.001": "거스 씨에게 오늘은 좀 늦어도 된다고 허락을 받았어.$1",
+            "summer.002": "하루 쉬고 클린트랑 해변에서 하루를 보내야겠어.$0#$b#바다도 자연의 신비에 포함되거든.$1",
+            "fall.001": "이따가 주점까지 같이 걸어가자, 클린트.$1",
+            "fall.002": "캠핑하기 딱 좋은 시기지.$0#$b#안 그래, 클린트?$1",
+            "winter.001": "클린트가 가끔 질투를 해, 얘기를 좀 해봐야겠어...$3",
+            "winter.002": "오, 안녕, @...$4"
+            },
+},
+{
+"Action": "EditData",
+"Target": "Characters/schedules/Emily",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020012"
+		},
+"Entries":  {
+            "spring_Mon": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 Woods 10 18 2 \"Strings\\schedules\\Emily:spring.001\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep",
+            "spring_Sat": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 Forest 103 96 2 \"Strings\\schedules\\Emily:spring.002\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep",
+            "summer_Tue": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 Town 79 95 2 \"Strings\\schedules\\Emily:summer.001\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep",
+            "summer_Sun": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 Beach 83 40 2 \"Strings\\schedules\\Emily:summer.002\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep",
+            "fall_Wed": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 Town 90 5 1 \"Strings\\schedules\\Emily:fall.001\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep",
+            "fall_Sun": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 Woods 10 18 2 \"Strings\\schedules\\Emily:fall.002\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep",
+            "winter_Fri": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 HaleyHouse 17 5 2 \"Strings\\schedules\\Emily:winter.001\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep",
+            "winter_Sun": "900 HaleyHouse 16 5 2/1000 HaleyHouse 3 16 0/1330 Blacksmith 11 15 2 \"Strings\\schedules\\Emily:winter.002\"/1730 Saloon 15 17 0 square_5_1_0/2400 HaleyHouse 21 4 1 emily_sleep"
+            },
+},
+    //Clint
+{
+"Action": "EditData",
+"Target": "Strings/schedules/Clint",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020012"
+		},
+"Entries":  {
+            "spring.001": "난 보통 밖에는 나가지 않는 편이야.$0#$b#근데 너도 알다시피, 에밀리가 자연을 좋아하니까.$1",
+            "spring.002": "에밀리는 자연을 좋아해.$0#$b#그래서 전에는 밖에 잘 안 나갔었지만... 요즘은 좀 나가고 있는 편이야.$0",
+            "summer.001": "안녕, @.$1#$b#정동석 깨러 왔다면 미안.$0#$b#에밀리랑 같이 하루 쉬고 있어.$0",
+            "summer.002": "해변을 좋아하진 않지만, 에밀리가 오자고 해서.$0",
+            "fall.001": "에밀리의 눈은 정말 아름다워...$4",
+            "fall.002": "캠핑 한번 가자.$1#$b#모닥불을 피울 수도 있고.$1",
+            "winter.001": "@, 여기서 뭐 하고 있는 거야?$3#$b#여긴 에밀리 방이잖아.$3",
+            "winter.002": "아, @.$0#$b#필요한 게 있다면, 내일 다시 와줄래?$4"
+            },
+},
+{
+"Action": "EditData",
+"Target": "Characters/schedules/Clint",
+"When": {
+    "Version": "dating",
+	"HasSeenEvent": "59020012"
+		},
+"Entries":  {
+            "spring_Mon": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 Woods 11 18 2 \"Strings\\schedules\\Clint:spring.001\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep",
+            "spring_Sat": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 Forest 104 96 2 \"Strings\\schedules\\Clint:spring.002\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep",
+            "summer_Tue": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 Town 80 95 2 \"Strings\\schedules\\Clint:summer.001\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep",
+            "summer_Sun": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 Beach 84 40 2 \"Strings\\schedules\\Clint:summer.002\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep",
+            "fall_Wed": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 Town 90 4 1 \"Strings\\schedules\\Clint:fall.001\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep",
+            "fall_Sun": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 Woods 11 18 2 \"Strings\\schedules\\Clint:fall.002\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep",
+            "winter_Fri": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 HaleyHouse 16 5 2 \"Strings\\schedules\\Clint:winter.001\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep",
+            "winter_Sun": "850 Blacksmith 3 13 2/1100 Blacksmith 8 12 1 clint_hammer/1330 Blacksmith 10 15 2 \"Strings\\schedules\\Clint:winter.002\"/1730 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep"
+            },
+},
+//Events
+     //Emily's House | 7 hearts
+{
+"Action": "EditData",
+"Target": "Data/Events/HaleyHouse",
+"Entries": {
+            "59020011/e 59020010/F/f Emily 1750/f Clint 1750/o Emily/t 1900 2000": "nightTime/-1000 -1000/Clint -100 -100 0 Emily 20 4 3 farmer 1000 1000 0/skippable/showFrame Emily 33/specificTemporarySprite EmilySleeping/viewport 19 4 true/pause 3000/emote Emily 24/pause 2000/emote Emily 24/pause 1500/viewport move 0 -1 3900/pause 900/globalFade .004/viewport -1000 -1000/playMusic EmilyDream/changeToTemporaryMap EmilyDreamscape false/viewport -1000 -1000/pause 1000/warp Emily 21 11/warp Clint 22 15/animate Emily false true 500 24 25/globalFadeToClear .005 true/viewport move 0 -1 7000/viewport 21 18/pause 5000/speak Emily \"무이-와...$7\"/pause 3000/speak Emily \"무이-와...$7\"/pause 5000/playSound yoba/move Clint -2 0 0/pause 1000/stopAnimation Emily/pause 500/showFrame Emily 26/jump Emily/shake Emily 850/pause 900/showFrame Emily 0/pause 800/move Emily -1 0 2/move Emily 0 1 2/pause 800/emote Emily 8/pause 500/speak Emily \"클린트?$6#$b#왜 여기 있어?$4\"/pause 1000/move Emily 0 2 2/viewport move 0 1 2500/move Emily -1 0 2/move Emily 0 1 1/pause 600/faceDirection Clint 3/pause 1000/emote Emily 40/pause 1200/speak Emily \"@ (과)와도 이런 일이 있지 않았었나?$3\"/pause 1000/faceDirection Emily 3/pause 800/speak Emily \"내가 틀렸던 건가...?$3\"/pause 1000/faceDirection Emily 1/pause 800/speak Emily \"클린트...$4\"/pause 700/speak Emily \"무이-와...$7\"/pause 1000/speak Emily \"운명의 바람은 예기치 못할 때 찾아오지...$3\"/pause 1200/playSound coin/warp Clint -1000 -1000/pause 500/emote Emily 16/pause 350/faceDirection Emily 2/pause 120/faceDirection Emily 3/pause 120/faceDirection Emily 0/pause 250/faceDirection Emily 1/pause 700/viewport move 0 1 3800/pause 900/globalFade .005/viewport -2000 -2000/pause 2000/changeLocation HaleyHouse/warp Emily 20 4/globalFadeToClear .005 true/viewport 19 4/pause 2800/move Emily -4 0 2/move Emily 0 1 2/pause 2000/speak Emily \"운명의 바람을 거스를 순 없어...$3\"/pause 2000/end dialogue Emily \"어떤 것들은 처음부터 그럴 운명인 거야...$4\""
+            },
+},
+     //Secret Woods | 8 hearts
+{
+"Action": "EditData",
+"Target": "Data/Events/Woods",
+"Entries": {
+            "59020012/e 59020011/e 2123243/F/f Emily 2000/f Clint 2500/o Emily/w sunny/t 1500 1700": "EmilyTheme/-1000 -1000/farmer 1000 1000 2 Clint 29 14 3 Emily 26 14 1/specificTemporarySprite EmilyCamping/viewport 27 15 true/pause 3500/speak Emily \"나랑 캠핑을 와주다니 기뻐, 클린트.$1\"/pause 700/speak Emily \"난 여기 오는 걸 좋아해.$0#$b#여기엔 강력한 에너지가 많이 있거든.$1\"/pause 600/speak Emily \"그래서 너한테 보여주려고 한 거야.$4#$b#어때?$1\"/pause 800/speak Clint \"그-그래...$4\"/pause 600/emote Emily 32/pause 1700/speak Emily \"음, 클린트... 사실 너한테 할 말이 있어...$3\"/pause 900/speak Emily \"지난 며칠 간 생각도 해보고 명상도 해봤어...$3\"/pause 800/speak Emily \"저번에 꿈을 꿨는데 네가 나타났거든...$3\"/pause 220/shake Clint 800/pause 180/speak Emily \"...그리고 난 그게 운명의 신호라고 생각해.$4\"/pause 300/shake Clint 800/pause 150/speak Emily \"우리같은 영혼들은 단순 우연으로 마주치지 않거든, 알아?$4#$b#그리고 우리 둘은 더 특별해, 서로 얽혀있으니까, 난 그게 느껴져.$4\"/pause 800/speak Emily \"내 삶에 네가 있어서 정말 기뻐, 클린트.$4#$b#그래서 우리가 친구 이상의 사이였으면 해...$4\"/pause 280/emote Clint 16/shake Clint 2500/pause 80/showFrame Clint 43/pause 100/shake Clint 2000/speed Emily 5/pause 80/speak Emily \"클린트, 괜찮아?$6\"/pause 50/move Emily 0 1 1/move Emily 3 0 0/pause 50/speak Emily \"클린트?!$6\"/pause 500/speak Clint \"이... 이... 이건 꿈인가...?$4\"/pause 380/speak Emily \"당연히 아니지!$4#$b#이리 와, 이쪽으로 와, 클린트.$4\"/pause 350/showFrame Emily 16/pause 200/showFrame Clint 0/specificTemporarySprite heart 29 14/pause 1800/end dialogue Clint \"방-방금 그거 진짜야...?$4\""
+            },
+},
+    
+//  O   L   D       S   A   V   E
+    
+//Events
+     //Clint's 6 hearts event
+{
+"Action": "EditData",
+"Target": "Data/Events/Town",
+"When": {
+    "Save": "old"
+		},
+"Entries": {
+            "59020046/F/f Clint 1500/e 97/o Emily/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"@!$4#$b#...들켰네.$s\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"에밀리한테 데이트를 신청하려고 했어. 문 앞까지 가서 막 말하려고 했는데... 캐롤라인이 오는 소리를 듣고 바로 이 덤불에 뛰어들었어.$s#$b#둘의 얘기가 끝나서 몰래 집에 갈 수 있게 기다리는 중이야.$s\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"뭐라고? 데이트 신청을 안 하면 다시는 도구를 업그레이드하러 오지 않겠다고?$s\"/faceDirection Clint 1/pause 1500/speak Clint \"너 정말 사악하다, @.#$b#*한숨* ...알았어, 할게.$s\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"@(이/가) 주점에서 해준 조언을 기억해야지.\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"저... 에밀리?\"/pause 800/faceDirection Emily 3/pause 800/faceDirection Emily 1/speak Emily \"미안해요, 캐롤라인 아주머니. 클린트와 잠깐 얘기 좀 해도 될까요?\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"응, 클린트?\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"혹시 나랑 내... 내일... 같이... *꿀꺽*$4\"/pause 200/faceDirection Clint 3/pause 300/emote Emily 8/pause 300/faceDirection Clint 1/pause 500/jump Clint/pause 800/speak Clint \"내일 그램플턴 카니발에 갈 수 있는 표가 두 장 있어. 나.. 나랑 같이 갈래? $4\"/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"물론이지, 클린트! 재밌겠다!$h\"/pause 800/speak Clint \"정말? 알았어! 다섯 시에 데리러 올게.$h\"/speak Emily \"그래! 내일 봐!\"/move Emily 7 0 1/faceDirection Caroline 3/speed Clint 4/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"방금 봤어?! 내일 저녁에 데이트를 할 거야!$h\"/pause 500/jump farmer/pause 1000/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"세상에...너무 긴장돼.$s\"/end dialogue Clint \"아까 그렇게 하라고 시켜서 고마워. 좀 무섭긴 한데, 정말 행복해.$h\""
+            },
+},  
+     //Train station | 6 hearts
+{
+"Action": "EditData", 
+"Target": "Data/Events/Railroad",
+"When": {
+    "Save": "old"
+		},
+"Entries": {
+            "59020010/e 59020046/F/f Emily 1500/f Clint 1500/d Fri/w sunny/t 1900 2100": "event2/39 42/Clint 40 41 3 Emily 38 41 1 farmer 1000 1000 2 Marnie 119 122 3 Pam 117 118 1 Lewis 118 122 1 Pierre 114 122 2 Demetrius 113 123 1 Gus 114 118 2/skippable/pause 2000/speak Emily \"축제 정말 재밌었어, 클린트!$1\"/pause 100/speak Emily \"공중 곡예사 봤어? 진짜 잘하더라!$1#$b#그리고 그 하늘 놀이기구도! 네 얼굴을 네가 봤어야 했는데, 엄청 겁먹어 보였거든.$1#$b#나 거기 있던 점쟁이랑 얘기도 했는데, 상당히 흥미로운 얘기를 하더라고.$1\"/pause 680/speak Clint \"다행이다, 에밀리.$1#$b#네가 싫어할까봐 걱정했었어.$2\"/pause 500/speak Emily \"그럴리가, 클린트, 너무 신나는 시간이었어!$1\"/pause 580/speak Clint \"그럼, 지-지금 주점에 같이 갈래, 에-에밀리?$4\"/pause 500/speak Emily \"그래, 손님으로서 가는 건 처음이네.$1\"/pause 600/globalFade .007/changeLocation Saloon/warp Clint 19 23 3/warp Emily 18 22 2/warp Marnie 7 22 3/warp Pam 7 18 1/warp Lewis 8 22 1/warp Pierre 4 22 2/warp Demetrius 3 23 1/warp Gus 16 18 2/warp farmer 20 19 3/animate Gus false true 250 18 19 20/animate Lewis false true 150 19 19 19 19 19 19 19 19 19 19 19 19 19 19 22 23 23 23/animate Marnie false true 150 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 22 23 23/playMusic Saloon1/faceDirection Emily 2/viewport 14 22/globalFadeToClear .006/pause 1800/speak Emily \"아하하 클린트, 너 진짜 웃기다!$1\"/pause 600/speak Clint \"저-정말?$4\"/pause 500/speak Emily \"당연하지!$1\"/pause 580/speak Emily \"우리 종종 이렇게 같이 놀자.$1#$b#뭐, 내가 여기서 매일 일하고 있기는 하지만...$3\"/pause 600/speak Emily \"그런 생각은 나중에 하고 일단 이 순간을 즐기자.$0\"/pause 380/faceDirection Emily 0/pause 150/speak Emily \"거스 씨, 여기 에일 두 잔 더, 부탁해요!$1\"/pause 320/speak Gus \"갑니다!$1\"/pause 380/faceDirection Emily 2/pause 700/speak Emily \"그래서, 그 친구가 어쨌다고?$1\"/pause 600/globalFade .006/warp Marnie 119 122 3/warp farmer 120 119 3/warp Lewis 118 122 1/warp Pierre 114 122 2/warp Demetrius 113 123 1/globalFadeToClear .004/pause 800/emote Emily 40/pause 200/emote Clint 40/move Pam -1 0 2/move Pam 0 2 1/move Pam 5 0 2/move Pam 0 1 1/move Pam 3 0 2/move Pam 0 3 0/playSound doorOpen/warp Pam 110 20 0/pause 600/speak Emily \"아, 팸 씨까지 가버렸네.$3#$b#우리도 이만 돌아가자.$0\"/pause 300/speak Clint \"그래...$2\"/emote Clint 28/pause 380/speak Emily \"너무 슬퍼하지 마, 클린트, 넌 여기 매일 오잖아.$0#$b#네가 원한다면 날 바래다 주면서 좀 더 얘기해도 돼.$1\"/pause 200/emote Clint 16/pause 500/speak Clint \"무-물론이지, 에밀리!$4\"/pause 500/speak Emily \"아하하, 너 진짜 귀엽다.$1\"/pause 270/emote Clint 60/pause 1380/end warpOut"
+            },
+},    
+    
+//  N   E   W        S   A   V   E
+    
+//Events
+     //Train station | 6 hearts
+{
+"Action": "EditData",
+"Target": "Data/Events/Railroad",
+"When": {
+    "Save": "new"
+		},
+"Entries": {
+            "59020010/e 101/F/f Emily 1500/f Clint 1500/d Fri/w sunny/t 1900 2100": "event2/39 42/Clint 40 41 3 Emily 38 41 1 farmer 1000 1000 2 Marnie 119 122 3 Pam 117 118 1 Lewis 118 122 1 Pierre 114 122 2 Demetrius 113 123 1 Gus 114 118 2/skippable/pause 2000/speak Emily \"축제 정말 재밌었어, 클린트!$1\"/pause 100/speak Emily \"공중 곡예사 봤어? 진짜 잘하더라!$1#$b#그리고 그 하늘 놀이기구도! 네 얼굴을 네가 봤어야 했는데, 엄청 겁먹어 보였거든.$1#$b#나 거기 있던 점쟁이랑 얘기도 했는데, 상당히 흥미로운 얘기를 하더라고.$1\"/pause 680/speak Clint \"다행이다, 에밀리.$1#$b#네가 싫어할까봐 걱정했었어.$2\"/pause 500/speak Emily \"그럴리가, 클린트, 너무 신나는 시간이었어!$1\"/pause 580/speak Clint \"그럼, 지-지금 주점에 같이 갈래, 에-에밀리?$4\"/pause 500/speak Emily \"그래, 손님으로서 가는 건 처음이네.$1\"/pause 600/globalFade .007/changeLocation Saloon/warp Clint 19 23 3/warp Emily 18 22 2/warp Marnie 7 22 3/warp Pam 7 18 1/warp Lewis 8 22 1/warp Pierre 4 22 2/warp Demetrius 3 23 1/warp Gus 16 18 2/warp farmer 20 19 3/animate Gus false true 250 18 19 20/animate Lewis false true 150 19 19 19 19 19 19 19 19 19 19 19 19 19 19 22 23 23 23/animate Marnie false true 150 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 22 23 23/playMusic Saloon1/faceDirection Emily 2/viewport 14 22/globalFadeToClear .006/pause 1800/speak Emily \"아하하 클린트, 너 진짜 웃기다!$1\"/pause 600/speak Clint \"저-정말?$4\"/pause 500/speak Emily \"당연하지!$1\"/pause 580/speak Emily \"우리 종종 이렇게 같이 놀자.$1#$b#뭐, 내가 여기서 매일 일해야 하긴 하지만...$3\"/pause 600/speak Emily \"그런 생각은 나중에 하고 일단 이 순간을 즐기자.$0\"/pause 380/faceDirection Emily 0/pause 150/speak Emily \"거스 씨, 여기 에일 두 잔 더, 부탁해요!$1\"/pause 320/speak Gus \"갑니다!$1\"/pause 380/faceDirection Emily 2/pause 700/speak Emily \"그래서, 그 친구가 어쨌다고?$1\"/pause 600/globalFade .006/warp Marnie 119 122 3/warp farmer 120 119 3/warp Lewis 118 122 1/warp Pierre 114 122 2/warp Demetrius 113 123 1/globalFadeToClear .004/pause 800/emote Emily 40/pause 200/emote Clint 40/move Pam -1 0 2/move Pam 0 2 1/move Pam 5 0 2/move Pam 0 1 1/move Pam 3 0 2/move Pam 0 3 0/playSound doorOpen/warp Pam 110 20 0/pause 600/speak Emily \"아, 팸까지 가버렸네.$3#$b#우리도 이만 돌아가자.$0\"/pause 300/speak Clint \"그래...$2\"/emote Clint 28/pause 380/speak Emily \"너무 슬퍼하지 마, 클린트, 넌 여기 매일 오잖아.$0#$b#네가 원한다면 날 바래다 주면서 좀 더 얘기해도 돼.$1\"/pause 200/emote Clint 16/pause 500/speak Clint \"무-물론이지, 에밀리!$4\"/pause 500/speak Emily \"아하하, 너 진짜 귀엽다.$1\"/pause 270/emote Clint 60/pause 1380/end warpOut"
+            },
+}, 
+    
+   ]
+}
