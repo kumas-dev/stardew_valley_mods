@@ -1,3 +1,9 @@
+VERSION 2.1.2 // Released May 4, 2024 (from Lorre)
+- ACTUAL hotfix to fix error item Slime Heart Seeds recipe, so sorry!
+
+VERSION 2.1.1 // Released May 2, 2024 (from Lorre)
+- Attempted hotfix to fix error item Slime Heart Seeds recipe
+
 VERSION 2.1.0 // Released May 1, 2024 (from Lorre)
 
 - Made the i18n file to allow translations! (finally cause this took foreverrr)
