@@ -319,7 +319,7 @@
       		},
    		],
 	     "When": {
-			"HasFlag: hostPlayer |contains=choseZinnia, choseGabriel": "true",
+			"HasFlag: currentPlayer |contains=choseZinnia, choseGabriel": "true",
 		},
 	},
 
@@ -623,7 +623,7 @@
         	 	"Operation": "Append",
          		"Target": ["MapProperties", "NPCWarp"],
          		"Value": "20 22 Custom_GE_MonsterHouse 10 4",
-         		"Delimiter": " " // if there are already values, add a space between them and the new ones
+         		"Delimiter": " " 
       			},
    			],
 	     	},
@@ -675,10 +675,10 @@
             "Action": "EditData",
             "Target": "Mods/shekurika.EventLookup/locationnames",
             "Entries": {
-                "Custom_GE_MonsterResearchWing": "Monster Research Wing",
-		"Custom_GE_ZinniaRoom": "Gabriel and Zinnia's Room",
-		"Custom_GE_FlowerParadise": "Flower Paradise",
-		"Custom_GE_MonsterHouse": "Monster Basement",
+                "Custom_GE_MonsterResearchWing": "{{i18n:Custom_GE_MonsterResearchWing.Name}}",
+		"Custom_GE_ZinniaRoom": "{{i18n:Custom_GE_ZinniaRoom.Name}}",
+		"Custom_GE_FlowerParadise": "{{i18n:Custom_GE_FlowerParadise.Name}}",
+		"Custom_GE_MonsterHouse": "{{i18n:Custom_GE_MonsterHouse.Name}}",
             },
 	    "When": {
 		"HasMod": "shekurika.EventLookup",

@@ -1,3 +1,15 @@
+VERSION 2.1.3 // Releaed May 8, 2023 (from Lorre)
+- (Maybe) Fixed the multiplayer issue so now both hosts and clients can experience the mod!
+- Fixed Silly's missing loved gift tastes
+
+i18n changes (for translators!):
+- Removed "{{PlayerName}}" in line "9280013.10"
+- Added new section after Config for NPC display names
+- Added new section after NPC display names for Map Location Names
+- Added missing lines in events 9280005 (9280005.3), 9280007 (9280007.2), 9280008 (9280008.4), 8280011 (8280011.10)
+- Fixed typo in event line "8280011.15"
+- Added back missing lines for Gabriel's marriage dialogue for nights indoors (you can find them by searching "gabrielmarriagedialogue.Indoor_Night":
+
 VERSION 2.1.2 // Released May 4, 2024 (from Lorre)
 - ACTUAL hotfix to fix error item Slime Heart Seeds recipe, so sorry!
 

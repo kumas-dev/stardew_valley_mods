@@ -8,13 +8,13 @@
 	"AllowFestivals": {
             "AllowValues": "true, false",
             "Default": true,
-	     "Description": "Allow new NPCs to visit festivals. True by default, but can be disabled if there are tile conflicts.",
+	     "Description": "{{i18n:config.AllowFestivals.description}}",
         },
 
 	"FarmBasementEntrance": {
             "AllowValues": "true, false",
             "Default": true,
-	     "Description": "Toggles the farmhouse entrance for the Monster Basement. I recommend turning off if you have a custom farm map.",
+	     "Description": "{{i18n:config.FarmBasementEntrance.description}}",
         },
 
     },

@@ -8,7 +8,7 @@
                     "HasSeenEvent: anyPlayer |contains=9280002": true },
 		"Entries": {
 			"Gabriel": {
-                             "DisplayName": "Gabriel",
+                             "DisplayName": "{{i18n:gabrielNPCnamedisplay}}",
                              "Gender": "Male",
                              "Age": "Adult",
                              "Manner": "Neutral",
@@ -68,7 +68,7 @@
 
                              }, 
 			"Zinnia": {
-                             "DisplayName": "Zinnia",
+                             "DisplayName": "{{i18n:zinniaNPCnamedisplay}}",
                              "Gender": "Female",
                              "Age": "Teen",
                              "Manner": "Polite",

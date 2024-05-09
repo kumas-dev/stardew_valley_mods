@@ -10,7 +10,7 @@
                 "Update": "OnTimeChange, OnLocationChange",
 		"Entries": {
 			"Silly": {
-                             "DisplayName": "Silly",
+                             "DisplayName": "{{i18n:sillyNPCnamedisplay}}",
                              "Gender": "Undefined",
                              "Age": "Child",
                              "Manner": "Polite",
@@ -109,15 +109,10 @@
             	"Fields": {
                 	"Silly": {
 				0: "{{i18n:GiftReactionSillyAlt.love}}",
-				1: "{{i18n:GiftReactionSillyAlt.love}}",
 				2: "{{i18n:GiftReactionSillyAlt.like}}",
-				3: "{{i18n:GiftReactionSillyAlt.like}}",
 				4: "{{i18n:GiftReactionSillyAlt.dislike}}",
-				5: "{{i18n:GiftReactionSillyAlt.dislike}}",
 				6: "{{i18n:GiftReactionSillyAlt.hate}}",
-				7: "{{i18n:GiftReactionSillyAlt.hate}}",
 				8: "{{i18n:GiftReactionSillyAlt.neutral}}",
-				9: "{{i18n:GiftReactionSillyAlt.neutral}}",
 			},
             	},
 	    	"When": {

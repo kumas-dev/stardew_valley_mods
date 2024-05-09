@@ -63,7 +63,7 @@
 	
 		},
 	    "When": {
-		"HasFlag: hostPlayer |contains=choseZinnia, finishedGabriel": "true",
+		"HasFlag: currentPlayer |contains=choseZinnia, finishedGabriel": "true",
 		},
 	},
 
