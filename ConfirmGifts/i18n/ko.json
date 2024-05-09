@@ -1,0 +1,13 @@
+﻿{
+	// Generic Mod Config Menu
+	"config.show-likes.label": "선호도 표시",
+	"config.show-likes.desc": "선물에 대한 NPC의 선호도를 표시합니다.",
+
+	// In-Game Text
+	"dialogue.confirmation": "{{nPCName}}에게 {{itemName}}을(를) 선물할까요?  {{likesText}}",
+	"likes.loved": "사랑함",
+	"likes.liked": "좋아함",
+	"likes.neutral": "평범함",
+	"likes.disliked": "싫어함",
+	"likes.hated": "혐오함"
+}
