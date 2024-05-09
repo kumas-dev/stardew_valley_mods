@@ -1,0 +1,29 @@
+{
+  "WeatherForYesterday": "Sun",
+  "LNOSCounter": {},
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "WitchSwamp",
+      "Name": "257",
+      "Tile": "23, 7",
+      "Type": "Forage",
+      "ID": "257",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "WitchSwamp",
+      "Name": "257",
+      "Tile": "16, 24",
+      "Type": "Forage",
+      "ID": "257",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": null,
+      "MonType": null
+    }
+  ]
+}
