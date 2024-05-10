@@ -14,6 +14,7 @@
 		"Fri": "{{i18n:sillydialogue.notalk.{{Random:00,01,02,03,04 }} }}",
 		"Sat": "{{i18n:sillydialogue.notalk.{{Random:00,01,02,03,04 }} }}",
 		"Sun": "{{i18n:sillydialogue.notalk.{{Random:00,01,02,03,04 }} }}",
+                "AcceptGift_(O)StardropTea": "{{i18n:sillydialogue.stardroptea.notalk}}",
 
 		},
 		"When": {
@@ -82,10 +83,9 @@
 	"winter_28_2": "{{i18n:silly.winter_28_2.dialogue}}",
 	"BeachNightMarket": "{{i18n:silly.BeachNightMarket.dialogue}}",
 
-
 	//special
 	"sillyRevealed": "{{i18n:sillydialogue.sillyRevealed}}",
-
+        "AcceptGift_(O)StardropTea": "{{i18n:sillydialogue.stardroptea}}",
 	
 	//Base Dialogue
 	"Mon": "{{i18n:sillydialogue.Mon}}",

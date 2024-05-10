@@ -121,6 +121,7 @@
 	"Resort": "{{i18n:gabrieldialogue.Resort}}",
 	"sillyRevealed": "{{i18n:gabrieldialogue.sillyRevealed}}",
 	"gabeFinished": "{{i18n:gabrieldialogue.gabeFinished}}",
+        "AcceptGift_(O)StardropTea": "{{i18n:gabrieldialogue.stardroptea}}",
 
 		},
 	},

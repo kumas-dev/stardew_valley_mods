@@ -2024,6 +2024,8 @@
 
 "gabrieldialoguerain": "비가 와도 상관없어요. 어차피 대부분의 날은 실내에 있는 것을 선호합니다.",
 
+"gabrieldialogue.stardroptea": "이거 준다고요? 정말 특별한 대접이네요! 감사합니다, @!$h#$b#커피가 아닌데... 그래도 계속 좋아할 것 같아요!$h",
+
 "gabrielmarriagedialogue.spring_1": "새해 복 많이 받으세요, @. 당신과 함께 또 한 해를 보내고 싶어요...#$b#올해는 드디어 내가 놀라운 것을 발견하는 해가 될지도 몰라요!$h#$b#당신만 빼고요...$l",
 "gabrielmarriagedialogue.spring_13": "에그 페스티벌이 오늘입니다, @. 우승할 수 있도록 응원할게요!$h#$b#난 할 수 있어, 여보!",
 "gabrielmarriagedialogue.spring_24": "꽃춤은 오늘이야, 여보...$l#$b#당신이 없을 때 몰래 춤 연습을 했어요... 당신을 감동시켰으면 좋겠어요!",
@@ -2293,6 +2295,8 @@
 
 "zinniadialoguerain": "비가 오면 항상 기분이 우울해지는 것 같아요. 아빠가 저를 선샤인 걸이라고 부르는 데는 다 이유가 있는 것 같아요!",
 
+"zinniadialogue.stardroptea": "헉! 나는? 야, 보라색이야! 이거 대박이야, @! 고마워! $h",
+
 "zinniamarriagedialogue.spring_1": "새로운 한 해의 시작입니다! 올해는 특히 여러분과 함께라면 최고의 한 해가 될 것입니다!",
 "zinniamarriagedialogue.spring_13": "오늘은 에그 페스티벌이에요, 자기야! 아침 일 끝나고 거기서 만나자 #$b#에그 헌트에서 우승할 수 있도록 응원할게요!$h",
 "zinniamarriagedialogue.spring_24": "오늘은 플라워 댄스입니다!$h#$b#당신만을 위한 최고의 드레스를 골랐어요, 사랑.$l",
@@ -2437,6 +2441,8 @@
 "sillydialogue.notalk.03": "*스퀴시*! *스퀴시*!#$b#%실리는 당신을 만나서 기뻐하는 것 같습니다.",
 "sillydialogue.notalk.04": "*스퀴시* *스퀴시*$s#$b#%실리가 뭔가 말하려는 것 같습니다. 무슨 말인지 잘 모르겠군요.",
 
+"sillydialogue.stardroptea.notalk": "*Squishy Squishy!* *Squishy!* $h#$b#%실리는 당신의 선물을 매우 고마워하는 것 같습니다!",
+
 "sillydialogue.marriedzinnia.00": "안녕하세요!#$b#지니아가 떠난 후 조금 더 외로워졌어요.#$b#그러나 지니아가 @를 웃게 해줘서 바보같이 행복해요!",
 "sillydialogue.marriedzinnia.01": "실리는 '결혼'을 이해하지 못해요...#$b#그게 무슨 뜻이에요, @? @와 지니아가 '결혼'했어요...#$b#실리도 다른 슬라임과 결혼할 수 있을까요?",
 
@@ -2538,6 +2544,8 @@
 "sillyfreedialogue.Resort": "이 섬에 새로운 종류의 슬라임이 있다고 들었는데 #$b#@ 아직 만나보지 못했나요? '호랑이' 슬라임이라니 바보 같긴...",
 
 "sillydialoguerain": "비가 너무 재미있어요! 어리석은 사람은 왜 인간이 좋아하지 않는지 이해하지 못합니다 ...",
+
+"sillydialogue.stardroptea": "와우! 바보같은 사랑! $h#$b#어쩌면 술을 마신 후에 실리가 보라색이 될지도...?",
 
 //SECRET NOTES
 
