@@ -7,16 +7,14 @@ SaveBackup/
 config.toml
 config.json
 !Stardew Valley Expanded/**/config.json
-!ConfirmGifts/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
 MasteryExtended/data
 Stardew Valley Expanded/\[FTM\] Stardew Valley Expanded/data
-Distant Lands - Witch Swamp Overhaul/\[FTM\] Distant Lands - Witch Swamp Overhaul/data
+Distant Lands/\[FTM\] Distant Lands - Witch Swamp Overhaul/data
 
 # temporary
 _Temporary/
 
 .DS_Store
-._.DS_Store
