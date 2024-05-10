@@ -9,7 +9,7 @@ config.json
 !Stardew Valley Expanded/**/config.json
 
 # cache
-\[AFM\] FarmTypeManager/data
+.Module/FarmTypeManager/data
 MasteryExtended/data
 Stardew Valley Expanded/\[FTM\] Stardew Valley Expanded/data
 Distant Lands/\[FTM\] Distant Lands - Witch Swamp Overhaul/data
