@@ -3,11 +3,6 @@ ConsoleCommands/
 ErrorHandler/
 SaveBackup/
 
-# config
-config.toml
-config.json
-!Stardew Valley Expanded/**/config.json
-
 # cache
 \[AFM\] FarmTypeManager/data
 MasteryExtended/data
