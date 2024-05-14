@@ -33,33 +33,43 @@
 	// BOOK ITEMS //
 	"Book.Luck.Name": "Beginner's Luck",
 	"Book.Luck.Description": "Read this book to gain a permanent, minor increase to your luck stat.",
+	"Book.Luck.Message": "You feel luckier!",
 	
 	"Book.ExtraGifts.Name": "Book of Altruism",
 	"Book.ExtraGifts.Description": "After reading this book, villagers will accept more than two gifts per week from you.",
+	"Book.ExtraGifts.Message": "You're a real people pleaser!",
 	
 	"Book.TreesIgnoreSeason.Name": "Winter Forestry",
 	"Book.TreesIgnoreSeason.Description": "Reading this book will teach you how to grow trees during the winter season.",
+	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
 	
 	"Book.ArtisanMachines.Name": "Artisans Guild Manual",
 	"Book.ArtisanMachines.Description": "The techniques contained within this book will help you produce artisan goods much quicker.",
+	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
 	
 	"Book.GiantCrops.Name": "Big Melons!",
 	"Book.GiantCrops.Description": "You will be more likely to grow giant crops after reading this book.",
+	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
 	
 	"Book.Popularity.Name": "Friendship 202",
 	"Book.Popularity.Description": "Your friends will be more likely to send you gifts.",
+	"Book.Popularity.Message": "Your friends love you!",
 	
 	"Book.BusDriving.Name": "Bus Driving for Dummies",
 	"Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
+	"Book.BusDriving.Message": "You've learned how to drive!",
 	
 	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
 	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
+	"Book.QiNotebook.Message": '"Good luck, kid."',
 	
 	"Book.PetGifts.Name": "Pawsitive Reinforcement",
 	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
+	"Book.PetGifts.Message": "Your pet REALLY loves you!",
 	
 	"Book.CheatCodes.Name": "Secret Codes for Arcade Machines",
 	"Book.CheatCodes.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
+	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
 	
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",
@@ -71,4 +81,5 @@
 	// DEBUG //
 	"Debug.Book.RemoveAll.Name": "BEB Power Removal",
 	"Debug.Book.RemoveAll.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
+	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
 }

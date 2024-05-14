@@ -2,10 +2,10 @@
 	"Changes": [
 		{
 			"Action": "EditData",
-			"Target": "Spiderbuttons.SpecialPowerUtilities/PowerSections",
+			"Target": "Spiderbuttons.SpecialPowerUtilities/PowerTabs",
 			"Entries": {
 				"{{ModId}}": {
-					"SectionName": "Button's Extra Books",
+					"TabDisplayName": "Button's Extra Books",
 					"IconPath": "Mods/{{ModId}}/Icons/PowersTab",
 				}
 			}

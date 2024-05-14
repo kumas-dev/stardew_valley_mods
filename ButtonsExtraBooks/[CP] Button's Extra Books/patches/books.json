@@ -18,6 +18,9 @@
 						"color_green",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Luck.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -43,6 +46,9 @@
 						"color_white",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.ExtraGifts.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -66,8 +72,11 @@
 					"SpriteIndex": 3,
 					"ContextTags": [
 						"color_light_cyan",
-						"book_item"
+						"book_item",
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.TreesIgnoreSeason.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -91,8 +100,11 @@
 					"SpriteIndex": 4,
 					"ContextTags": [
 						"color_brown",
-						"book_item"
+						"book_item",
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.ArtisanMachines.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -118,6 +130,9 @@
 						"color_dark_purple",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.GiantCrops.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -143,6 +158,9 @@
 						"color_pink",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Popularity.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -168,6 +186,9 @@
 						"color_yellow",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.BusDriving.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -193,6 +214,9 @@
 						"color_cyan",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.QiNotebook.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -218,6 +242,9 @@
 						"color_gray",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.PetGifts.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -243,6 +270,9 @@
 						"color_green",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.CheatCodes.Message}}"
+					},
 				},
 			},
 			"When": {
@@ -268,6 +298,9 @@
 						"color_dark_pink",
 						"book_item"
 					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Debug.Book.RemoveAll.Message}}"
+					},
 				},	
             },
 			"When": {
