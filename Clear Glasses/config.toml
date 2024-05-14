@@ -257,7 +257,7 @@ DataStoreOverride = ""
 
 		[Config.Resample.Filters]
 		# Enable colour filters applied to all resampled textures
-		Enabled = true
+		Enabled = false
 		Saturation = -20
 		Brightness = 0
 		Temperature = 0
