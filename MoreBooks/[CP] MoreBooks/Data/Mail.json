@@ -1,0 +1,28 @@
+{
+    "Changes": [
+        {
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"{{ModId}}_LewisMail": "{{i18n: Mail.Lewis.Text}}%item id {{ModId}}_Book_Lewis_shorts 1%%[#]{{i18n: Mail.Lewis.Title}}",
+                "{{ModId}}_LinusMail": "{{i18n: Mail.Linus.Text}}%item id {{ModId}}_Book_Garbage_Can 1%%[#]{{i18n: Mail.Linus.Title}}",
+                "{{ModId}}_CarolineMail": "{{i18n: Mail.Caroline.Text}}%item id {{ModId}}_Book_Green_Tea 1%%[#]{{i18n: Mail.Caroline.Title}}",
+                "{{ModId}}_PierreMail": "{{i18n: Mail.Pierre.Text}}%item id {{ModId}}_Book_Rice 1%%[#]{{i18n: Mail.Pierre.Title}}",
+                "{{ModId}}_RobinMail": "{{i18n: Mail.Robin.Text}}%item id {{ModId}}_Book_Carpenter_Catalogue 1%%[#]{{i18n: Mail.Robin.Title}}",
+                "{{ModId}}_ClintMail": "{{i18n: Mail.Clint.Text}}%item id {{ModId}}_Book_Ore_Catalogue 1%%[#]{{i18n: Mail.Clint.Title}}",
+			}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "{{ModId}}_LewisMailEvent/f Lewis 2500/x {{ModId}}_LewisMail": "null",
+                "{{ModId}}_LinusMailEvent/f Linus 2500/x {{ModId}}_LinusMail": "null",
+                "{{ModId}}_CarolineMailEvent/f Caroline 2500/x {{ModId}}_CarolineMail": "null",
+                "{{ModId}}_PierreMailEvent/f Pierre 2500/x {{ModId}}_PierreMail": "null",
+                "{{ModId}}_RobinMailEvent/f Robin 2500/x {{ModId}}_RobinMail": "null",
+                "{{ModId}}_ClintMailEvent/f Clint 2500/x {{ModId}}_ClintMail": "null",
+            },
+        },
+    ]
+}

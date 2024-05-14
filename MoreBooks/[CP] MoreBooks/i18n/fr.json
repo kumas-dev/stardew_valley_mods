@@ -1,0 +1,79 @@
+{
+    "Book.Immunity.Name": "Renforcement d'immunité",
+    "Book.Immunity.Description": "Lisez ce livre pour gagner +1 d'immunité de manière permanente.",
+    "Power.Immunity.Name": "Renforcement d'immunité",
+    "Power.Immunity.Description": "Gagnez +1 d'immunité.",
+
+    "Book.Luck.Name": "Guide de la Fortune",
+    "Book.Luck.Description": "Lisez ce livre pour gagner +1 de chance de manière permanente.",
+    "Power.Luck.Name": "Guide de la Fortune",
+    "Power.Luck.Description": "Gagnez +1 de chance.",
+
+    "Book.Speed.Name": "Guide de Hâte",
+    "Book.Speed.Description": "Lisez ce livre pour gagner +0,5 de vitesse de manière permanente.",
+    "Power.Speed.Name": "Guide de Hâte",
+    "Power.Speed.Description": "Gagnez +0,5 de vitesse.",
+
+    "Book.Fishing.Name": "Guide du Pêcheur",
+    "Book.Fishing.Description": "Lisez ce livre pour gagner +1 niveau de pêche de manière permanente.",
+    "Power.Fishing.Name": "Guide du Pêcheur",
+    "Power.Fishing.Description": "Gagnez +1 niveau de pêche.",
+
+    "Book.Magnet.Name": "Manuel de Maîtrise Magnétique",
+    "Book.Magnet.Description": "Lisez ce livre pour augmenter la magnétisme de 2 cases de manière permanente.",
+    "Power.Magnet.Name": "Manuel de Maîtrise Magnétique",
+    "Power.Magnet.Description": "Augmentez la magnétisme de 2 cases.",
+
+    "Book.LewisShorts.Name": "Mystère du Short Chanceux",
+    "Book.LewisShorts.Description": "Lisez ce livre pour découvrir des mystères sur les shorts chanceux.",
+    "Power.LewisShorts.Name": "Mystère du Short Chanceux",
+    "Power.LewisShorts.Description": "Maintenant, vous pouvez vendre des shorts chanceux.",
+
+    "Book.CarpenterCatalogue.Name": "Catalogue du Charpentier",
+    "Book.CarpenterCatalogue.Description": "Lisez ce livre pour améliorer vos compétences en menuiserie.",
+    "Power.CarpenterCatalogue.Name": "Catalogue du Charpentier",
+    "Power.CarpenterCatalogue.Description": "Vous pouvez maintenant acheter du bois dur auprès de Robin, et vous bénéficiez d'une réduction de 10% dans son magasin.",
+
+    "Book.OreCatalogue.Name": "Catalogue de Minerais",
+    "Book.OreCatalogue.Description": "Lisez ce livre pour en savoir plus sur les minerais.",
+    "Power.OreCatalogue.Name": "Catalogue de Minerais",
+    "Power.OreCatalogue.Description": "Vous pouvez maintenant acheter du minerai d'iridium chez Clint, et vous bénéficiez d'une réduction de 10% dans son magasin.",
+
+    "Book.Rice.Name": "Excellence en Cultivation de Riz",
+    "Book.Rice.Description": "Lisez ce livre pour apprendre à cultiver du riz de qualité.",
+    "Power.Rice.Name": "Excellence en Cultivation de Riz",
+    "Power.Rice.Description": "Le riz non décortiqué est maintenant vendu à 100g, tandis que le riz décortiqué coûte 200g.",
+
+    "Book.Dagger.Name": "Guide de Maîtrise de la Dague",
+    "Book.Dagger.Description": "Lisez ce livre pour acquérir des connaissances sur l'utilisation des dagues.",
+    "Power.Dagger.Name": "Guide de Maîtrise de la Dague",
+    "Power.Dagger.Description": "Les dagues infligent des dégâts 1,5 fois supérieurs.",
+
+    "Book.GreenTea.Name": "L'Art de la Culture du Thé",
+    "Book.GreenTea.Description": "Lisez ce livre pour apprendre à améliorer la culture des feuilles de thé et perfectionner vos compétences en fabrication de thé.",
+    "Power.GreenTea.Name": "L'Art de la Culture du Thé",
+    "Power.GreenTea.Description": "Les feuilles de thé et le Thé Vert coûtent désormais le double.",
+
+    "Book.GarbageCan.Name": "Le Buffet de Ruelle pt.2",
+    "Book.GarbageCan.Description": "Lisez ce livre pour apprendre à fouiller efficacement dans les poubelles.",
+    "Power.GarbageCan.Name": "Le Buffet de Ruelle pt.2",
+    "Power.GarbageCan.Description": "Il y a désormais 7% de chances de trouver des pierres précieuses (émeraude, aigue-marine, rubis, améthyste, topaze, jade ou diamant) dans la poubelle.",
+
+    "Mail.Lewis.Text": "Cher @,^^ J'ai découvert que quelqu'un volait mes vêtements dans mon sous-sol, alors afin d'empêcher que d'autres ne les récupèrent, je suis prêt à les acheter pour 1000 G chacun. Cependant, abstiens-toi de les utiliser comme ingrédients pour le Luau. Lis ce livre pour comprendre les détails. ^^- Amitiés, Lewis",
+    "Mail.Lewis.Title": "Lewis",
+
+    "Mail.Linus.Text": "Cher @,^^ J'ai récemment découvert une méthode efficace et discrète pour fouiller dans les poubelles, alors j'ai écrit un livre à ce sujet et te l'ai envoyé en signe d'amitié. Bonne lecture ! ^^- Amitiés, Linus",
+    "Mail.Linus.Title": "Linus",
+
+    "Mail.Caroline.Text": "Cher @,^^ Je voulais t'informer que j'ai récemment écrit un livre sur l'art de la culture des feuilles de thé et de la fabrication du thé. J'ai consacré beaucoup de temps à perfectionner cette compétence, et j'aimerais que tu, mon meilleur ami, y jettes un œil. Bonne lecture ! ^^Ta Caroline",
+    "Mail.Caroline.Title": "Caroline",
+    
+    "Mail.Pierre.Text": "Cher @,^^ J'aimerais te recommander un excellent livre écrit par mon ami, un expert en culture du riz, car tu es un cher ami à moi. De plus, je te fournirai les contacts de personnes ayant un besoin urgent de riz de haute qualité comme le tien. J'espère que ce livre te plaira ! ^^-Ton Pierre",
+    "Mail.Pierre.Title": "Pierre",
+
+    "Mail.Robin.Text": "Cher @,^^ J'aimerais partager mon livre exclusif avec toi, qui contient des informations précieuses sur l'art de la menuiserie. Une fois que tu l'auras lu, je te considérerai comme mon véritable âme-sœur et t'offrirai même une réduction dans mon magasin. Profite de la lecture ! ^^-Ta Robin",
+    "Mail.Robin.Title": "Robin",
+     
+    "Mail.Clint.Text": "Cher @,^^ Je suis ravi de partager mon livre préféré avec toi, qui regorge de connaissances sur les minerais et la forge. Après l'avoir lu, je te considérerai comme un esprit affin et t'offrirai une réduction dans mon magasin. Régale-toi en explorant son contenu ! ^^-Ton Clint",
+    "Mail.Clint.Title": "Clint",
+}
