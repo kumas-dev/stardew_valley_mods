@@ -12,10 +12,16 @@
                     "Id": 709,
                     "ItemId": 709,
                     "Price": 1000,
+                },
+                "330": {
+                    "Id": 330,
+                    "ItemId": 330,
+                    "Price": 200,
                 }
             },
             "MoveEntries": [
-                { "Id": "709", "BeforeId": "(O)390" }
+                { "Id": "709", "BeforeId": "(O)390" },
+                { "Id": "330", "BeforeId": "(O)390" }
             ],
             "When": {
                 "jeWel.MoreBooksCode/ConfigCarpenterCatalogueRead": true

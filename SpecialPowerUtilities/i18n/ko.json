@@ -10,6 +10,9 @@
   
   "Config.UseVanillaMenu.Name": "바닐라 메뉴 사용",
   "Config.UseVanillaMenu.Description": "특수 아이템 및 파워 탭에 바닐라 메뉴를 사용할지 여부입니다. 활성화하면 특수 파워 유틸리티의 사용자 지정 메뉴가 사용되지 않습니다. 카테고리가 표시되지 않으며 모드 작성자가 사용할 수 없다고 표시한 모든 파워도 표시되지 않습니다. 그러나 모든 효과는 계속 적용됩니다.",
+    
+  "Config.StripelessBooks.Name": "줄무늬 없는 책",
+  "Config.StripelessBooks.Description": "책을 읽을 때 재생되는 애니메이션에서 책의 줄무늬 두 개를 제거할지 여부입니다.",
   
   "HoverText.StardewValley": "스타듀 밸리",
   "HoverText.Misc": "기타",
