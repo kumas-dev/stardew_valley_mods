@@ -89,5 +89,5 @@
     "config.BloodMoonMusic.name": "블러드 문 음악",
     "config.BloodMoonMusic.description": "블러드 문 동안 재생되는 추가 음악 트랙을 활성화/비활성화합니다.",
     "config.BloodMoonSoundEffect.name": "블러드 문 음향 효과",
-    "config.BloodMoonSoundEffect.description": "Enable/Disable the sound effect that plays together with the blood moon HUD message."
+    "config.BloodMoonSoundEffect.description": "블러드 문 HUD 메시지와 함께 재생되는 효과음을 활성화/비활성화합니다."
 }
