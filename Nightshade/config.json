@@ -6,8 +6,8 @@
   "ColorizerActiveProfile": 3,
   "ColorizerProfiles": [
     {
-      "Saturation": 0.0,
-      "Lightness": 0.0,
+      "Saturation": -0.2,
+      "Lightness": -0.05,
       "Contrast": 0.0,
       "Luma": "BT709",
       "ShadowR": 0.0,
@@ -21,8 +21,8 @@
       "HighlightB": 0.0
     },
     {
-      "Saturation": 0.0,
-      "Lightness": 0.0,
+      "Saturation": -0.2,
+      "Lightness": -0.05,
       "Contrast": 0.0,
       "Luma": "BT709",
       "ShadowR": 0.0,
@@ -36,8 +36,8 @@
       "HighlightB": 0.0
     },
     {
-      "Saturation": 0.0,
-      "Lightness": 0.0,
+      "Saturation": -0.2,
+      "Lightness": -0.05,
       "Contrast": 0.0,
       "Luma": "BT709",
       "ShadowR": 0.0,
@@ -51,8 +51,8 @@
       "HighlightB": 0.0
     },
     {
-      "Saturation": 0.0,
-      "Lightness": 0.0,
+      "Saturation": -0.2,
+      "Lightness": -0.05,
       "Contrast": 0.0,
       "Luma": "BT709",
       "ShadowR": 0.0,
