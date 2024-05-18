@@ -1,8 +1,21 @@
 {
 	"mod.name": "구름 낀 하늘",
 
-	"setting.weather-tooltip": "날씨 관련 툴팁을 표기합니다.",
-	"setting.weather-tooltip.about": "활성화 하면, 게임 화면의 시계 쪽 날씨 표기란에 마우스를 가져다 대면 그 날의 날씨 상태가 뜹니다.",
+	"setting.shaders.enable": "쉐이더 허용",
+	"setting.shaders.enable.about": "사용자 정의 날씨 유형에서 셰이더를 사용할 수 있도록 허용할지 여부. 이것이 비활성화되면 셰이더 레이어가 렌더링되지 않습니다.",
+
+	"setting.shaders": "쉐이더 세팅",
+	"setting.shaders.description": "쉐이더를 완전히 비활성화하거나 여기서 특정 쉐이더를 비활성화할 수 있습니다.",
+
+	"setting.shaders.specific": "특정 쉐이더",
+
+	"setting.shader.Blur": "블러",
+	"setting.shader.Distortion": "왜곡",
+	"setting.shader.Colorize": "컬러라이즈",
+	"setting.shader.Palettize": "팔레티즈",
+	"setting.shader.Pixelate": "픽셀레이트",
+
+	"setting.development": "개발/디버그 설정",
 
 	"setting.debug": "디버깅 타이밍 표시",
 	"setting.debug.about": "활성화 하면, 날씨의 업데이트 및 랜더링에 걸리는 시간을 보여주는 타이머가 나타납니다. 이는 커스텀 날씨 조건을 만들 시 인 게임 시간이 얼마나 지연되는지 확인하는데 도움이 됩니다.",

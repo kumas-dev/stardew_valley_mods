@@ -25,7 +25,7 @@
 	"config.Buildings.description": "Buildings that directly affect profits cost more while others cost less.",
 	"config.Museum Rewards.description": "Changes museum rewards to be in a better order and more rewarding.",
 	"config.Shops.description": "Changes shop prices and inventories.",
-	"config.Limited Shop Inventories.description": "Changes daily purchase amounts of some items sold by shops.",
+	"config.Limited Shop Inventories.description": "Changes daily purchase amount of items sold by shops.",
 	"config.Artisan Goods Gain Quantity.description": "Changes artisan goods to have a chance to increase in quantity based on ingredient quality.",
 	"config.Merchants Buy More Items.description": "Willy buys fishing poles, Marnie buys shears & milk pails, Clint buys weapons and armor.",
 	"config.Marnie Sells Auto-Petter.description": "Marnie sells auto-petter after community center completion.",

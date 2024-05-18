@@ -8,7 +8,7 @@
                     "ID": "AlissaConcert",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/AlissaConcert.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/AlissaConcert.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -17,7 +17,7 @@
                     "ID": "AlissaVocals",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/AlissaVocals.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/AlissaVocals.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -26,7 +26,7 @@
                     "ID": "AlissaWithPiano",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/AlissaWithPiano.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/AlissaWithPiano.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -35,7 +35,7 @@
                     "ID": "YsaDance",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/YsaDance.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/YsaDance.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -44,7 +44,7 @@
                     "ID": "EmberNight",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/EmberNight.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/EmberNight.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -53,7 +53,7 @@
                     "ID": "WinterMountain",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/WinterMountain.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/WinterMountain.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -62,7 +62,7 @@
                     "ID": "CaveDrip",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/CaveDrip.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/CaveDrip.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -71,7 +71,7 @@
                     "ID": "AlissaSerenade",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/AlissaSerenade.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/AlissaSerenade.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -80,7 +80,7 @@
                     "ID": "AweAmbience",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/AweAmbience.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/AweAmbience.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -89,7 +89,7 @@
                     "ID": "HypeUpShutUp",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/HypeUpShutUp.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/HypeUpShutUp.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
@@ -98,7 +98,7 @@
                     "ID": "doremi",
                     "Category": "Music",
                     "FilePaths": [
-                        "{{AbsoluteFilePath: Assets/Music/DoReMi.ogg}}"
+                        "{{AbsoluteFilePath: Assets/Music/DoReMi.wav}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true

@@ -1,8 +1,0 @@
-{
-  "ShowSchedulesKey": "V",
-  "DisableHover": true,
-  "UseLargerFontForScheduleDetails": false,
-  "NPCSortOrder": "HeartsDescending",
-  "OnlyShowMetNPCs": false,
-  "OnlyShowSocializableNPCs": true
-}

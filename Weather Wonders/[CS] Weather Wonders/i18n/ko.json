@@ -10,7 +10,7 @@
     "Weather.DryLightning.Forecast": "기상 특보입니다. 내일은 다량의 건조성 벼락이 발생할 것입니다. 나무 및 건물의 낙뢰 피해에 대비하세요.",
     "Weather.Mist": "안개",
     "Weather.Mist.Forecast": "내일은 안개가 심하게 낄 예정입니다. 가시거리가 매우 안 좋을 것으로 예상되니 야외 활동에 주의해 주세요.",
-    "Weather.MuddyRain": "붉은 비", // NEW
+    "Weather.MuddyRain": "진흙비", // NEW
     "Weather.MuddyRain.Forecast": "내일은 사막으로부터 날아온 광물질 입자들이 흘러들어오면서 먼지가 예상됩니다. 이 광물질은 우리의 농작물에 활력을 불어넣을 것 입니다.", // NEW
     "Weather.Hailstorm": "우박",
     "Weather.Hailstorm.Forecast": "기상 특보입니다. 내일은 다량의 우박을 동반한 강한 바람이 예상됩니다. 야외 활동을 자제하고 낙하 피해 방지를 위해 충분한 준비를 해 주세요.",
@@ -50,8 +50,8 @@
     "config.Heatwave.description": "폭염 날씨 유형을 활성화/비활성화합니다.",
     "config.Mist.name": "안개",
     "config.Mist.description": "안개 날씨 유형을 활성화/비활성화합니다.",
-    "config.MuddyRain.name": "붉은 비",
-    "config.MuddyRain.description": "붉은 비 날씨 유형을 활성화/비활성화합니다.",
+    "config.MuddyRain.name": "진흙비",
+    "config.MuddyRain.description": "진흙비 날씨 유형을 활성화/비활성화합니다.",
     "config.RainSnowMix.name": "진눈깨비",
     "config.RainSnowMix.description": "진눈깨비 날씨 유형을 사용/사용 안 함으로 설정합니다.",
     // Config: Nightly Events
@@ -72,7 +72,7 @@
     "config.HeatwaveMoreFireflies.description": "폭염 기간 동안 추가로 생성되는 반딧불이를 활성화/비활성화합니다.",
     "config.HeatwaveDrainsStamina.name": "폭염으로 인한 체력 소모",
     "config.HeatwaveDrainsStamina.description": "폭염으로 인한 체력 소모를 활성화/비활성화합니다.",
-    "config.MuddyRainBoostGrow.name": "붉은 비 부스트 성장",
+    "config.MuddyRainBoostGrow.name": "진흙비 부스트 성장",
     "config.MuddyRainBoostGrow.description": "농작물, 나무, 과일 나무에 진흙탕 비로 인한 성장 촉진 기능을 활성화/비활성화합니다.",
     // Config: Visuals
     "config.section.Visuals.name": "비주얼",
