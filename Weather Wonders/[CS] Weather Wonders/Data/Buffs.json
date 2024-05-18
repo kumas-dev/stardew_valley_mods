@@ -1,0 +1,55 @@
+{
+	"Changes": [
+		{
+			"LogName": "Load WW's Buffs Cold",
+			"Action": "EditData",
+			"Target": "Data/Buffs",
+			"Entries": {
+				"Kana.WeatherWonders_Cold": {
+					"DisplayName": "{{i18n: Buff.Cold}}",
+					"Description": "{{i18n: Buff.Cold.description}}",
+					"IconTexture": "Mods/Kana.WeatherWonders/Buffs",
+					"IconSpriteIndex": 0,
+					"GlowColor": null,
+					"IsDebuff": false,
+					"LingerDuration": 3000,
+					"LingerMaxDuration": 5000,
+					"Effects": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"LuckLevel": 0.0,
+						"MiningLevel": 0.0,
+						"Attack": 0.0,
+						"Defense": 0.0,
+						"MagneticRadius": 0.0,
+						"MaxStamina": 0.0,
+						"Speed": -2.0
+					}
+				},
+				"Kana.WeatherWonders_Hot": {
+					"DisplayName": "{{i18n: Buff.Hot}}",
+					"Description": "{{i18n: Buff.Hot.description}}",
+					"IconTexture": "Mods/Kana.WeatherWonders/Buffs",
+					"IconSpriteIndex": 1,
+					"GlowColor": null,
+					"IsDebuff": false,
+					"LingerDuration": 3000,
+					"LingerMaxDuration": 5000,
+					"Effects": {
+						"FarmingLevel": 0.0,
+						"FishingLevel": 0.0,
+						"ForagingLevel": 0.0,
+						"LuckLevel": 0.0,
+						"MiningLevel": 0.0,
+						"Attack": 0.0,
+						"Defense": 0.0,
+						"MagneticRadius": 0.0,
+						"MaxStamina": -34.0,
+						"Speed": 0.0
+					}
+				}
+			}
+		}
+	]
+}

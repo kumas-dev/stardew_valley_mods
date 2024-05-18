@@ -1,0 +1,21 @@
+{
+    "Weather.Blizzard": "Blizzard",
+    "Weather.Blizzard.Forecast": "Préparez-vous, car il semble qu'une tempête de neige se profile à l'horizon. Il va falloir affronter des chutes de neige et des vents violents.",
+    "Weather.Deluge": "Déluge",
+    "Weather.Deluge.Forecast": "Demain il y aura des pluies torrentielles, avec un déluge sur toute la région. Le pays sera saturé d'eau pendant que le ciel déverse son déluge.",
+    "Weather.Drizzle": "Pluie fine",
+    "Weather.Drizzle.Forecast": "Prévoyez une légère bruine tout au long de la journée, un temps parfait pour se blottir à l'intérieur avec un bon livre.",
+    "Weather.DryLightning": "Orage",
+    "Weather.DryLightning.Forecast": "Il semble qu’un orage sans pluie arrive demain, promettant des éclairs et des grondements lointains.",
+    "Weather.Mist": "Brume",
+    "Weather.Mist.Forecast": "Il semble que de la brume arrive dans la vallée. La visibilité sera réduite donc tenez-en compte pour les activités extérieures.",
+    "Weather.Hailstorm": "Averse de grêle",
+    "Weather.Hailstorm.Forecast": "Il semble qu'une tempête de grêle se prépare. Des grêlons et des conditions venteuses sont prévus pour demain.",
+    "Weather.RainSnowMix": "Mélange de pluie et et de neige",
+    "Weather.RainSnowMix.Forecast": "Demain, il y aura un mélange de pluie et de neige, créant des conditions variées tout au long de la journée. Soyez prêt pour des précipitations à la fois mouillées et glacées.",
+    "Weather.Wind.ForecastSpring": "Partiellement nuageux avec une légère brise. Attendez-vous à beaucoup de pollen !",
+    "Weather.Wind.ForecastFall": "Il va faire nuageux, avec des souffles de vent la journée.",
+    "Weather.Snow.Forecast": "Attendez-vous à quelques centimètres de neige demain.",
+    "Buff.Cold": "Frigorifié",
+    "Buff.Cold.description": "Il fait si froid dehors… Brr…"
+}

@@ -1,0 +1,27 @@
+{
+	"Name": "[CS] Weather Wonders",
+	"Author": "Kanadeyoru",
+	"Version": "1.2.0",
+	"Description": "Expansion for the weather system, everything made to be vanilla-friendly!",
+	"UniqueID": "Kana.WeatherWonders",
+	"UpdateKeys": [
+		"Nexus:23868"
+	],
+	"Dependencies": [
+		{
+			"UniqueID": "leclair.cloudyskies"
+		},
+		{
+			"UniqueID": "Esca.FarmTypeManager"
+		},
+		{
+			"UniqueID": "spacechase0.SpaceCore"
+		},
+		{
+			"UniqueID": "leclair.morenightlyevents"
+		}
+	],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "Weather.Blizzard": "Nevasca",
+    "Weather.Blizzard.Forecast": "Preparem-se, pois parece que uma nevasca se avizinha no horizonte. Preparem-se para a chegada da nevasca e ventos ferozes.",
+    "Weather.Deluge": "Dilúvio",
+    "Weather.Deluge.Forecast": "Parece que amanhã haverá chuvas extremas, com fortes ventanias e intensa queda de raios! Preparem-se para um dilúvio!",
+    "Weather.Drizzle": "Sereno",
+    "Weather.Drizzle.Forecast": "Antecipem um sereno suave ao longo do dia, clima perfeito para se aconchegar em casa com um bom livro.",
+    "Weather.DryLightning": "Raio Seco",
+    "Weather.DryLightning.Forecast": "Tirem os aparelhos da tomada, parece que amanhã teremos raios secos! O dia promete relâmpagos e trovões sem precipitação.",
+    "Weather.Mist": "Nevoeiro",
+    "Weather.Mist.Forecast": "Parece que teremos um dia nebuloso pela frente. A visibilidade pode estar reduzida, então planejem-se adequadamente para quaisquer atividades ao ar livre.",
+    "Weather.Hailstorm": "Chuva de Granizo",
+    "Weather.Hailstorm.Forecast": "Parece que uma tempestade de granizo está se formando. Cuidado redobrado é indicado, pois as pedras de granizo podem causar danos a plantações!",
+    "Weather.RainSnowMix": "Chuva com Neve",
+    "Weather.RainSnowMix.Forecast": "Amanhã teremos uma mistura de chuva com neve, criando condições variadas ao longo do dia. Estejam preparados para precipitações geladas!",
+    "Weather.Wind.ForecastSpring": "Parcialmente nublado com uma leve brisa. Espere bastante pólen!",
+    "Weather.Wind.ForecastFall": "Nublado, com rajadas de vento o dia todo.",
+    "Weather.Snow.Forecast": "Espere alguns centímetros de neve amanhã.",
+    "Buff.Cold": "Frio",
+    "Buff.Cold.description": "Está frio lá fora..."
+}

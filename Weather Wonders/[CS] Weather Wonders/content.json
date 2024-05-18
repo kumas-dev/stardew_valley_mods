@@ -1,0 +1,862 @@
+// cs_list
+// cs_tomorrow Kana.WeatherWonders_Blizzard
+// patch reload Kana.WeatherWonders
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		// Config: Weather Types
+		"Blizzard": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"Deluge": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"Drizzle": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"DryLightning": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"Hailstorm": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"Heatwave": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"Mist": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"MuddyRain": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"RainSnowMix": {
+			"Section": "WeatherTypes",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Nightly Events
+		"Earthquake": {
+			"Section": "NightlyEvents",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Weather Consequences
+		"BlizzardSlowdownPlayer": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"DelugeSpawnDebris": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HailstormDamageCrops": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HailstormDamagePlayer": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveMoreFireflies": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveDrainsStamina": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"MuddyRainBoostGrow": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveDryWater": {
+			"Section": "WeatherConsequences",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Visuals
+		"Wind": {
+			"Section": "Visuals",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"AlternateSnow": {
+			"Section": "Visuals",
+			"AllowValues": "true, false",
+			"Default": false
+		},
+		// Config: Audio
+		"MistMusic": {
+			"Section": "Audio",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveMusic": {
+			"Section": "Audio",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BloodMoonMusic": {
+			"Section": "Audio",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BloodMoonSoundEffect": {
+			"Section": "Audio",
+			"AllowValues": "true, false",
+			"Default": true
+		}
+	},
+	"Changes": [
+		// Load Assets
+		{
+			"LogName": "Load WW's Icons",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Icons",
+			"FromFile": "assets/Icons.png"
+		},
+		{
+			"LogName": "Load WW's TV",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/TV",
+			"FromFile": "assets/TV.png"
+		},
+		{
+			"LogName": "Load WW's Clouds",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Clouds",
+			"FromFile": "assets/Clouds.png"
+		},
+		{
+			"LogName": "Load WW's Fog",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Fog",
+			"FromFile": "assets/Fog.png"
+		},
+		{
+			"LogName": "Load WW's Wind Blown",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/WindBlown",
+			"FromFile": "assets/WindBlown.png"
+		},
+		{
+			"LogName": "Load WW's Long Wind Blown",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/LongWindBlown",
+			"FromFile": "assets/LongWindBlown.png"
+		},
+		{
+			"LogName": "Load WW's Heat Distortion",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/HeatDistortion",
+			"FromFile": "assets/HeatDistortion.png"
+		},
+		{
+			"LogName": "Load WW's Reversed Heat Distortion",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/ReversedHeatDistortion",
+			"FromFile": "assets/ReversedHeatDistortion.png"
+		},
+		{
+			"LogName": "Load WW's Buffs Effects",
+			"Action": "Include",
+			"FromFile": "Data/Buffs.json"
+		},
+		{
+			"LogName": "Load WW's Buffs Icons",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Buffs",
+			"FromFile": "assets/Buffs.png"
+		},
+		{
+			"LogName": "Load WW's Weather Consequences",
+			"Action": "Include",
+			"FromFile": "Data/Consequences.json"
+		},
+		{
+			"LogName": "Load WW's Musics",
+			"Action": "Include",
+			"FromFile": "Data/Musics.json"
+		},
+		{
+			"LogName": "Load WW's Critters",
+			"Action": "Include",
+			"FromFile": "Data/Critters.json"
+		},
+		// Load Weathers
+		{
+			"LogName": "Load WW's Blizzard",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Blizzard.json",
+			"When": {
+				"Blizzard": true
+			}
+		},
+		{
+			"LogName": "Load WW's Deluge",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Deluge.json",
+			"When": {
+				"Deluge": true
+			}
+		},
+		{
+			"LogName": "Load WW's Drizzle",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Drizzle.json",
+			"When": {
+				"Drizzle": true
+			}
+		},
+		{
+			"LogName": "Load WW's Dry Lightning",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/DryLightning.json",
+			"When": {
+				"DryLightning": true
+			}
+		},
+		{
+			"LogName": "Load WW's Hailstorm",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Hailstorm.json",
+			"When": {
+				"Hailstorm": true
+			}
+		},
+		{
+			"LogName": "Load WW's Heatwave",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Heatwave.json",
+			"When": {
+				"Heatwave": true
+			}
+		},
+		{
+			"LogName": "Load WW's Mist",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Mist.json",
+			"When": {
+				"Mist": true
+			}
+		},
+		{
+			"LogName": "Load WW's Muddy Rain",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/MuddyRain.json",
+			"When": {
+				"MuddyRain": true
+			}
+		},
+		{
+			"LogName": "Load WW's Rain-Snow Mix",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/RainSnowMix.json",
+			"When": {
+				"RainSnowMix": true
+			}
+		},
+		{
+			"LogName": "Load WW's Wind",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Wind.json",
+			"When": {
+				"Wind": true
+			}
+		},
+		{
+			"LogName": "Load WW's Alternative Snow",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Snow.json",
+			"When": {
+				"AlternateSnow": true
+			}
+		},
+		// Load Nightly Events
+		{
+			"LogName": "Load WW's Earthquake",
+			"Action": "Include",
+			"FromFile": "Data/NightlyEvents/Earthquake.json"
+		},
+		// Load Astronomical Events
+		{
+			"LogName": "Load WW's Blood Moon",
+			"Action": "Include",
+			"FromFile": "Data/AstronomicalEvents/BloodMoon.json"
+		},
+		// Weather Contexts - Valley
+		{
+			"LogName": "Load WW's Weathers on the Valley (Deluge With Debris)",
+			"Action": "EditData",
+			"When": {
+				"DelugeSpawnDebris": true
+			},
+			"Target": "Data/LocationContexts",
+			"TargetField": [
+				"Default",
+				"WeatherConditions"
+			],
+			"Entries": {
+				"Kana.WeatherWonders_HailstormStart": {
+					"Id": "Kana.WeatherWonders_HailstormStart",
+					"Condition": "SEASON summer fall, RANDOM 0.15, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day custom_location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_Hailstorm"
+				},
+				"Kana.WeatherWonders_BlizzardStart": {
+					"Id": "Kana.WeatherWonders_BlizzardStart",
+					"Condition": "SEASON winter, SYNCED_RANDOM day location_weather 0.10, !IS_PASSIVE_FESTIVAL_TODAY NightMarket, !IS_PASSIVE_FESTIVAL_TODAY SquidFest",
+					"Weather": "Kana.WeatherWonders_Blizzard"
+				},
+				"Kana.WeatherWonders_DelugeStart": {
+					"Id": "Kana.WeatherWonders_DelugeStart",
+					"Condition": "SEASON spring summer fall, RANDOM 0.1, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day custom_location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_Deluge"
+				},
+				"Kana.WeatherWonders_DrizzleStart": {
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"Condition": "SEASON spring summer fall, RANDOM 0.15, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_Drizzle"
+				},
+				"Kana.WeatherWonders_DryLightningStart": {
+					"Id": "Kana.WeatherWonders_DryLightningStart",
+					"Condition": "SEASON spring summer fall, RANDOM 0.05, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2",
+					"Weather": "Kana.WeatherWonders_DryLightning"
+				},
+				"Kana.WeatherWonders_MistStart": {
+					"Id": "Kana.WeatherWonders_MistStart",
+					"Condition": "SEASON spring fall, RANDOM 0.15, DAYS_PLAYED 7, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day custom_location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_Mist"
+				},
+				"Kana.WeatherWonders_MuddyRainStart": {
+					"Id": "Kana.WeatherWonders_MuddyRainStart",
+					"Condition": "SEASON spring summer, RANDOM 0.05, DAYS_PLAYED 7",
+					"Weather": "Kana.WeatherWonders_MuddyRain"
+				},
+				"Kana.WeatherWonders_RainSnowMixStart": {
+					"Id": "Kana.WeatherWonders_RainSnowMixStart",
+					"Condition": "SEASON winter, SYNCED_RANDOM day location_weather 0.30",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				"Kana.WeatherWonders_BloodMoonStart": {
+					"Id": "Kana.WeatherWonders_BloodMoonStart",
+					"Condition": "SEASON spring summer fall winter, RANDOM 0.01, DAYS_PLAYED 28, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !IS_PASSIVE_FESTIVAL_TODAY NightMarket, !IS_PASSIVE_FESTIVAL_TODAY SquidFest", // MUDAR
+					"Weather": "Kana.WeatherWonders_BloodMoon"
+				},
+				// Special
+				"Kana.WeatherWonders_RainSnowMixStartFall": {
+					"Id": "Kana.WeatherWonders_RainSnowMixStartFall",
+					"Condition": "SEASON fall, RANDOM 0.35, DAY_OF_MONTH 28, DAY_OF_MONTH 27, DAY_OF_MONTH 26, DAY_OF_MONTH 25, DAY_OF_MONTH 24",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				"Kana.WeatherWonders_RainSnowMixStartSpring": {
+					"Id": "Kana.WeatherWonders_RainSnowMixStartSpring",
+					"Condition": "SEASON spring, RANDOM 0.35, DAYS_PLAYED 28, DAY_OF_MONTH 1, DAY_OF_MONTH 2, DAY_OF_MONTH 3, DAY_OF_MONTH 4, DAY_OF_MONTH 5",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				"Kana.WeatherWonders_DryLightningStartWinter": {
+					"Id": "Kana.WeatherWonders_DryLightningStartWinter",
+					"Condition": "SEASON winter, RANDOM 0.02, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2",
+					"Weather": "Kana.WeatherWonders_DryLightning"
+				},
+				"Kana.WeatherWonders_HeatwaveStartSummer": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "SEASON summer, RANDOM 0.06, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby",
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				},
+				"Kana.WeatherWonders_HeatwaveStartSpring": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "SEASON spring, RANDOM 0.05, DAYS_PLAYED 14, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, !DAY_OF_MONTH 3, !DAY_OF_MONTH 4, !DAY_OF_MONTH 5, !DAY_OF_MONTH 6, !DAY_OF_MONTH 7, !DAY_OF_MONTH 8, !DAY_OF_MONTH 9, !DAY_OF_MONTH 10, !DAY_OF_MONTH 11, !DAY_OF_MONTH 12, !DAY_OF_MONTH 13, !DAY_OF_MONTH 14, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival", // MUDAR
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				},
+				// Scripted
+				"Kana.WeatherWonders_HailstormScripted": {
+					"Id": "Kana.WeatherWonders_HailstormScripted",
+					"Condition": "SEASON_DAY fall 7, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Hailstorm"
+				},
+				"Kana.WeatherWonders_BlizzardScripted": {
+					"Id": "Kana.WeatherWonders_BlizzardScripted",
+					"Condition": "SEASON_DAY winter 7, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Blizzard"
+				},
+				"Kana.WeatherWonders_DelugeScripted": {
+					"Id": "Kana.WeatherWonders_DelugeScripted",
+					"Condition": "SEASON_DAY spring 24, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Deluge"
+				},
+				"Kana.WeatherWonders_DrizzleScripted": {
+					"Id": "Kana.WeatherWonders_DrizzleScripted",
+					"Condition": "SEASON_DAY spring 9, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Drizzle"
+				},
+				"Kana.WeatherWonders_DryLightningScripted": {
+					"Id": "Kana.WeatherWonders_DryLightningScripted",
+					"Condition": "SEASON_DAY summer 16, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_DryLightning"
+				},
+				"Kana.WeatherWonders_MistScripted": {
+					"Id": "Kana.WeatherWonders_MistScripted",
+					"Condition": "SEASON_DAY fall 28, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Mist"
+				},
+				"Kana.WeatherWonders_MuddyRainScripted": {
+					"Id": "Kana.WeatherWonders_MuddyRainScripted",
+					"Condition": "SEASON_DAY summer 10, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_MuddyRain"
+				},
+				"Kana.WeatherWonders_RainSnowMixScripted": {
+					"Id": "Kana.WeatherWonders_RainSnowMixScripted",
+					"Condition": "SEASON_DAY winter 1, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				"Kana.WeatherWonders_HeatwaveScripted": {
+					"Id": "Kana.WeatherWonders_HeatwaveScripted",
+					"Condition": "SEASON_DAY spring 24, YEAR 1 1", // MUDAR
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "Kana.WeatherWonders_HailstormStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BlizzardStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DelugeStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DryLightningStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MistStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MuddyRainStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixStartFall",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixStartSpring",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HailstormScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BlizzardScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DelugeScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DrizzleScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DryLightningScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MistScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MuddyRainScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveScripted",
+					"BeforeId": "Default"
+				}
+			]
+		},
+		// Weather Contexts - Valley
+		{
+			"LogName": "Load WW's Weathers on the Valley (Deluge Without Debris)",
+			"Action": "EditData",
+			"When": {
+				"DelugeSpawnDebris": false
+			},
+			"Target": "Data/LocationContexts",
+			"TargetField": [
+				"Default",
+				"WeatherConditions"
+			],
+			"Entries": {
+				"Kana.WeatherWonders_HailstormStart": {
+					"Id": "Kana.WeatherWonders_HailstormStart",
+					"Condition": "SEASON summer fall, RANDOM 0.15, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day custom_location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_Hailstorm"
+				},
+				"Kana.WeatherWonders_BlizzardStart": {
+					"Id": "Kana.WeatherWonders_BlizzardStart",
+					"Condition": "SEASON winter, SYNCED_RANDOM day location_weather 0.10, !IS_PASSIVE_FESTIVAL_TODAY NightMarket, !IS_PASSIVE_FESTIVAL_TODAY SquidFest",
+					"Weather": "Kana.WeatherWonders_Blizzard"
+				},
+				"Kana.WeatherWonders_DelugeNoDebrisStart": {
+					"Id": "Kana.WeatherWonders_DelugeNoDebrisStart",
+					"Condition": "SEASON spring summer fall, RANDOM 0.1, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day custom_location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_DelugeNoDebris"
+				},
+				"Kana.WeatherWonders_DrizzleStart": {
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"Condition": "SEASON spring summer fall, RANDOM 0.15, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_Drizzle"
+				},
+				"Kana.WeatherWonders_DryLightningStart": {
+					"Id": "Kana.WeatherWonders_DryLightningStart",
+					"Condition": "SEASON spring summer fall, RANDOM 0.05, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2",
+					"Weather": "Kana.WeatherWonders_DryLightning"
+				},
+				"Kana.WeatherWonders_MistStart": {
+					"Id": "Kana.WeatherWonders_MistStart",
+					"Condition": "SEASON spring fall, RANDOM 0.15, DAYS_PLAYED 7, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, SYNCED_RANDOM day custom_location_weather 0.183",
+					"Weather": "Kana.WeatherWonders_Mist"
+				},
+				"Kana.WeatherWonders_MuddyRainStart": {
+					"Id": "Kana.WeatherWonders_MuddyRainStart",
+					"Condition": "SEASON spring summer, RANDOM 0.05, DAYS_PLAYED 7",
+					"Weather": "Kana.WeatherWonders_MuddyRain"
+				},
+				"Kana.WeatherWonders_RainSnowMixStart": {
+					"Id": "Kana.WeatherWonders_RainSnowMixStart",
+					"Condition": "SEASON winter, SYNCED_RANDOM day location_weather 0.30",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				// Special
+				"Kana.WeatherWonders_RainSnowMixStartFall": {
+					"Id": "Kana.WeatherWonders_RainSnowMixStartFall",
+					"Condition": "SEASON fall, RANDOM 0.35, DAY_OF_MONTH 28, DAY_OF_MONTH 27, DAY_OF_MONTH 26, DAY_OF_MONTH 25, DAY_OF_MONTH 24",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				"Kana.WeatherWonders_RainSnowMixStartSpring": {
+					"Id": "Kana.WeatherWonders_RainSnowMixStartSpring",
+					"Condition": "SEASON spring, RANDOM 0.35, DAYS_PLAYED 28, DAY_OF_MONTH 1, DAY_OF_MONTH 2, DAY_OF_MONTH 3, DAY_OF_MONTH 4, DAY_OF_MONTH 5",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				"Kana.WeatherWonders_DryLightningStartWinter": {
+					"Id": "Kana.WeatherWonders_DryLightningStartWinter",
+					"Condition": "SEASON winter, RANDOM 0.02, DAYS_PLAYED 28, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2",
+					"Weather": "Kana.WeatherWonders_DryLightning"
+				},
+				"Kana.WeatherWonders_HeatwaveStartSummer": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "SEASON summer, RANDOM 0.06, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby",
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				},
+				"Kana.WeatherWonders_HeatwaveStartSpring": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "SEASON spring, RANDOM 0.05, DAYS_PLAYED 14, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, !DAY_OF_MONTH 3, !DAY_OF_MONTH 4, !DAY_OF_MONTH 5, !DAY_OF_MONTH 6, !DAY_OF_MONTH 7, !DAY_OF_MONTH 8, !DAY_OF_MONTH 9, !DAY_OF_MONTH 10, !DAY_OF_MONTH 11, !DAY_OF_MONTH 12, !DAY_OF_MONTH 13, !DAY_OF_MONTH 14, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival", // MUDAR
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				},
+				// Scripted
+				"Kana.WeatherWonders_HailstormScripted": {
+					"Id": "Kana.WeatherWonders_HailstormScripted",
+					"Condition": "SEASON_DAY fall 7, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Hailstorm"
+				},
+				"Kana.WeatherWonders_BlizzardScripted": {
+					"Id": "Kana.WeatherWonders_BlizzardScripted",
+					"Condition": "SEASON_DAY winter 7, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Blizzard"
+				},
+				"Kana.WeatherWonders_DelugeNoDebrisScripted": {
+					"Id": "Kana.WeatherWonders_DelugeNoDebrisScripted",
+					"Condition": "SEASON_DAY spring 24, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_DelugeNoDebris"
+				},
+				"Kana.WeatherWonders_DrizzleScripted": {
+					"Id": "Kana.WeatherWonders_DrizzleScripted",
+					"Condition": "SEASON_DAY spring 9, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Drizzle"
+				},
+				"Kana.WeatherWonders_DryLightningScripted": {
+					"Id": "Kana.WeatherWonders_DryLightningScripted",
+					"Condition": "SEASON_DAY summer 16, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_DryLightning"
+				},
+				"Kana.WeatherWonders_MistScripted": {
+					"Id": "Kana.WeatherWonders_MistScripted",
+					"Condition": "SEASON_DAY fall 28, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_Mist"
+				},
+				"Kana.WeatherWonders_MuddyRainScripted": {
+					"Id": "Kana.WeatherWonders_MuddyRainScripted",
+					"Condition": "SEASON_DAY summer 10, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_MuddyRain"
+				},
+				"Kana.WeatherWonders_RainSnowMixScripted": {
+					"Id": "Kana.WeatherWonders_RainSnowMixScripted",
+					"Condition": "SEASON_DAY winter 1, YEAR 1 1",
+					"Weather": "Kana.WeatherWonders_RainSnowMix"
+				},
+				"Kana.WeatherWonders_HeatwaveScripted": {
+					"Id": "Kana.WeatherWonders_HeatwaveScripted",
+					"Condition": "SEASON_DAY spring 24, YEAR 1 1", // MUDAR
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "Kana.WeatherWonders_HailstormStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BlizzardStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DelugeNoDebrisStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DryLightningStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MistStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MuddyRainStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixStart",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixStartFall",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixStartSpring",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HailstormScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BlizzardScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DelugeNoDebrisScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DrizzleScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DryLightningScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MistScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_MuddyRainScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_RainSnowMixScripted",
+					"BeforeId": "SummerStorm"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveScripted",
+					"BeforeId": "Default"
+				}
+			]
+		},
+		// Weather Contexts - Island
+		{
+			"LogName": "Load WW's Weathers on the Island (Deluge With Debris)",
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"When": {
+				"DelugeSpawnDebris": true
+			},
+			"TargetField": [
+				"Island",
+				"WeatherConditions"
+			],
+			"Entries": {
+				"Kana.WeatherWonders_DelugeIslandStart": {
+					"Id": "Kana.WeatherWonders_DelugeIslandStart",
+					"Condition": "RANDOM .06",
+					"Weather": "Kana.WeatherWonders_DelugeIsland"
+				},
+				"Kana.WeatherWonders_DrizzleStart": {
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"Condition": "RANDOM .12",
+					"Weather": "Kana.WeatherWonders_Drizzle"
+				},
+				// Special
+				"Kana.WeatherWonders_HeatwaveStart": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "RANDOM .01",
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "Kana.WeatherWonders_DelugeIslandStart",
+					"BeforeId": "Rain"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"BeforeId": "Rain"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"BeforeId": "Rain"
+				}
+			]
+		},
+		{
+			"LogName": "Load WW's Weathers on the Island (Deluge Without Debris)",
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"When": {
+				"DelugeSpawnDebris": false
+			},
+			"TargetField": [
+				"Island",
+				"WeatherConditions"
+			],
+			"Entries": {
+				"Kana.WeatherWonders_DelugeIslandNoDebrisStart": {
+					"Id": "Kana.WeatherWonders_DelugeIslandNoDebrisStart",
+					"Condition": "RANDOM .06",
+					"Weather": "Kana.WeatherWonders_DelugeIslandNoDebris"
+				},
+				"Kana.WeatherWonders_DrizzleStart": {
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"Condition": "RANDOM .12",
+					"Weather": "Kana.WeatherWonders_Drizzle"
+				},
+				// Special
+				"Kana.WeatherWonders_HeatwaveStart": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "RANDOM .01",
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "Kana.WeatherWonders_DelugeIslandNoDebrisStart",
+					"BeforeId": "Rain"
+				},
+				{
+					"Id": "Kana.WeatherWonders_DrizzleStart",
+					"BeforeId": "Rain"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"BeforeId": "Rain"
+				}
+			]
+		},
+		// Weather Contexts - Desert
+		{
+			"LogName": "Load WW's Weathers on the Desert",
+			"Action": "EditData",
+			"Target": "Data/LocationContexts",
+			"TargetField": [
+				"Desert",
+				"WeatherConditions"
+			],
+			"Entries": {
+				// Special
+				"Kana.WeatherWonders_HeatwaveStartSummer": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "SEASON summer, RANDOM 0.06, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby",
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				},
+				"Kana.WeatherWonders_HeatwaveStartSpring": {
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"Condition": "SEASON spring, RANDOM 0.05, DAYS_PLAYED 14, !DAY_OF_MONTH 1, !DAY_OF_MONTH 2, !DAY_OF_MONTH 3, !DAY_OF_MONTH 4, !DAY_OF_MONTH 5, !DAY_OF_MONTH 6, !DAY_OF_MONTH 7, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival", // MUDAR
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				},
+				// Scripted
+				"Kana.WeatherWonders_HeatwaveScripted": {
+					"Id": "Kana.WeatherWonders_HeatwaveScripted",
+					"Condition": "SEASON_DAY spring 24, YEAR 1 1", // MUDAR
+					"Weather": "Kana.WeatherWonders_Heatwave"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveStart",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HeatwaveScripted",
+					"BeforeId": "Default"
+				}
+			]
+		}
+	]
+}

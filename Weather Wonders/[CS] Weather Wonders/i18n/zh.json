@@ -1,0 +1,21 @@
+{
+    "Weather.Blizzard": "暴风雪",
+    "Weather.Blizzard.Forecast": "准备好，暴风雪即将来临。请做好准备，迎接降雪和狂风的袭击。",
+    "Weather.Deluge": "暴雨",
+    "Weather.Deluge.Forecast": "明天将有大雨，预计洪水将淹没整个地区。当倾盆大雨降临时，请准备好迎接积水。",
+    "Weather.Drizzle": "细雨",
+    "Weather.Drizzle.Forecast": "预计全天将有细雨，是在室内舒适地读一本好书的理想天气。",
+    "Weather.DryLightning": "干闪电",
+    "Weather.DryLightning.Forecast": "明天似乎会有干闪电袭来，可能出现闪烁的电和遥远的雷声。",
+    "Weather.Mist": "雾",
+    "Weather.Mist.Forecast": "看来我们将迎来多雾的一天。能见度可能会降低，请在进行户外活动时做好相应计划。",
+    "Weather.Hailstorm": "冰雹",
+    "Weather.Hailstorm.Forecast": "看来一场冰雹风暴正在酝酿之中。预计明天将出现冰雹和阵风天气。",
+    "Weather.RainSnowMix": "雨夹雪",
+    "Weather.RainSnowMix.Forecast": "明天将出现雨雪混合天气，全天情况各不相同。请做好应对潮湿和结冰降水的准备。",
+    "Weather.Wind.ForecastSpring": "部分地区多云，并伴有微风。空气中会有大量花粉！",
+    "Weather.Wind.ForecastFall": "明天多云，一整天都会狂风大作。",
+    "Weather.Snow.Forecast": "明天的降雪可能会达到几英尺。",
+    "Buff.Cold": "冷",
+    "Buff.Cold.description": "外面很冷…"
+}

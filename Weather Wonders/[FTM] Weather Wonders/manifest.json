@@ -1,0 +1,20 @@
+{
+	"Name": "[FTM] Weather Wonders",
+	"Author": "Kanadeyoru",
+	"Version": "1.2.0",
+	"Description": "Expansion for the weather system, everything made to be vanilla-friendly!",
+	"UniqueID": "Kana.WeatherWonders.FTM",
+	"UpdateKeys": [
+		"Nexus:23868"
+	],
+	"Dependencies": [
+		{
+			"UniqueID": "Kana.WeatherWonders"
+		}
+	],
+	"MinimumApiVersion": "3.0.0",
+	"ContentPackFor": {
+		"UniqueID": "Esca.FarmTypeManager",
+		"MinimumVersion": "1.10.1"
+	}
+}

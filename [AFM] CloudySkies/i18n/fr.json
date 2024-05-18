@@ -1,0 +1,24 @@
+{
+	"mod.name": "Cloudy Skies",
+
+	"setting.weather-tooltip": "Info-bulle Temps",
+	"setting.weather-tooltip.about": "Si activé, une info-bulle s’affichera lorsque vous survolez l’icône du temps de l’horloge avec le nom des conditions météorologiques actuelles.",
+
+	"setting.debug": "Débugage : chrononomètre",
+	"setting.debug.about": "Si activé, un chronomètre s’affichera à l’écran pour montrer combien de temps a été dépensé pour mettre à jour et le rendu du temps. Peut être utile pour être sûr que vous n’allez pas trop loin avec des conditions météorologiques personnalisées",
+
+	"setting.replace-tv-menu": "Modifier la Chaîne Météo TV",
+	"setting.replace-tv-menu.about": "Si activé, remplace la Chaîne Météo de la télévision avec une version personnalisée qui permet de montrer la météo de plusieurs lieux",
+
+	"tv.select-location": "Sélectionnez un lieu :",
+
+	"location.stardew-valley": "Stardew Valley",
+
+	"weather.sunny": "ensoleillé",
+	"weather.rain": "pluvieux",
+	"weather.debris": "venteux",
+	"weather.lightning": "avis de tempête",
+	"weather.festival": "ensoleillé",
+	"weather.snow": "neige",
+	"weather.green": "pluie verte"
+}

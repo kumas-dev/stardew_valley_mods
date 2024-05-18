@@ -1,0 +1,93 @@
+{
+    // Content: Custom Weathers
+    "Weather.Blizzard": "Blizzard",
+    "Weather.Blizzard.Forecast": "Prepare yourselves, for it seems a blizzard looms on the horizon. Brace for the onslaught of snowfall and fierce winds.",
+    "Weather.Deluge": "Deluge",
+    "Weather.Deluge.Forecast": "Tomorrow brings heavy rain, with a deluge expected to drench the area. Prepare for waterlogged landscapes as the skies release their downpour.",
+    "Weather.Drizzle": "Drizzle",
+    "Weather.Drizzle.Forecast": "Anticipate a gentle drizzle throughout the day, perfect weather for cozying up indoors with a good book.",
+    "Weather.DryLightning": "Dry Lightning",
+    "Weather.DryLightning.Forecast": "It seems dry lightning is rolling in tomorrow, promising flashes of lightning and distant rumbles.",
+    "Weather.Mist": "Mist",
+    "Weather.Mist.Forecast": "Looks like we're in for a misty day ahead. Visibility might be reduced, so plan accordingly for any outdoor activities.",
+    "Weather.MuddyRain": "Muddy Rain", // NEW
+    "Weather.MuddyRain.Forecast": "Tomorrow, anticipate dusty rain showers as mineral particles from the desert drift in! These mineral-rich raindrops promise a boost for our crops!", // NEW
+    "Weather.Hailstorm": "Hailstorm",
+    "Weather.Hailstorm.Forecast": "It appears a hailstorm is brewing. Hailstones and gusty conditions are expected for tomorrow.",
+    "Weather.Heatwave": "Heatwave", // NEW
+    "Weather.Heatwave.Forecast": "Brace for scorching heat and relentless sunshine as a heatwave grips our region.", // NEW
+    "Weather.RainSnowMix": "Rain-Snow Mix",
+    "Weather.RainSnowMix.Forecast": "Tomorrow there will be a mix of rain and snow, creating varied conditions throughout the day. Be prepared for both wet and icy precipitation.",
+    "Weather.BloodMoon": "Blood Moon", // NEW
+    // Content: Vanilla Weathers
+    "Weather.Wind": "Wind", // NEW
+    "Weather.Wind.ForecastSpring": "Partially cloudy with a light breeze. Expect lots of pollen!",
+    "Weather.Wind.ForecastFall": "It's going to be cloudy, with gusts of wind throughout the day.",
+    "Weather.Snow": "Snow", // NEW
+    "Weather.Snow.Forecast": "Expect a few inches of snow tomorrow.",
+    "Weather.Sunny": "Sunny", // NEW
+    "Weather.Sunny.Forecast": "It's going to be a beautiful, sunny day tomorrow!", // NEW
+    // Content: Custom Nightly Events
+    "Nightly.Earthquake.Message": "Wow! An intense earthquake struck overnight.", // NEW
+    // Content: Custom Buffs
+    "Buff.Cold": "Cold",
+    "Buff.Cold.description": "It's cold outside...",
+    "Buff.Hot": "Hot", // NEW
+    "Buff.Hot.description": "It's too hot today!", // NEW
+    // Config: Weather Types
+    "config.section.WeatherTypes.name": "Weather Types",
+    "config.Blizzard.name": "Blizzard",
+    "config.Blizzard.description": "Enable/Disable the blizzard weather type.",
+    "config.Deluge.name": "Deluge",
+    "config.Deluge.description": "Enable/Disable the deluge weather type.",
+    "config.Drizzle.name": "Drizzle",
+    "config.Drizzle.description": "Enable/Disable the drizzle weather type.",
+    "config.DryLightning.name": "Dry Lightning",
+    "config.DryLightning.description": "Enable/Disable the dry lightning weather type.",
+    "config.Hailstorm.name": "Hailstorm",
+    "config.Hailstorm.description": "Enable/Disable the hailstorm weather type.",
+    "config.Heatwave.name": "Heatwave",
+    "config.Heatwave.description": "Enable/Disable the heatwave weather type.",
+    "config.Mist.name": "Mist",
+    "config.Mist.description": "Enable/Disable the mist weather type.",
+    "config.MuddyRain.name": "Muddy Rain",
+    "config.MuddyRain.description": "Enable/Disable the muddy rain weather type.",
+    "config.RainSnowMix.name": "Rain-Snow Mix",
+    "config.RainSnowMix.description": "Enable/Disable the rain-snow mix weather type.",
+    // Config: Nightly Events
+    "config.section.NightlyEvents.name": "Nightly Events",
+    "config.Earthquake.name": "Earthquake",
+    "config.Earthquake.description": "Enable/Disable the earthquake nightly event.",
+    // Config: Weather Consequences
+    "config.section.WeatherConsequences.name": "Weather Consequences",
+    "config.BlizzardSlowdownPlayer.name": "Blizzard Slowdown Player",
+    "config.BlizzardSlowdownPlayer.description": "Enable/Disable the slowdown effect caused by blizzards on players.",
+    "config.DelugeSpawnDebris.name": "Deluge Spawn Debris",
+    "config.DelugeSpawnDebris.description": "Enable/Disable the debris and trash that spawn during deluges.",
+    "config.HailstormDamageCrops.name": "Hailstorm Damage Crops",
+    "config.HailstormDamageCrops.description": "Enable/Disable the damage caused by hailstorms on crops.",
+    "config.HailstormDamagePlayer.name": "Hailstorm Damage Player",
+    "config.HailstormDamagePlayer.description": "Enable/Disable the damage caused by hailstorms on players.",
+    "config.HeatwaveMoreFireflies.name": "Heatwave More Fireflies",
+    "config.HeatwaveMoreFireflies.description": "Enable/Disable the additional fireflies that spawn during heatwaves.",
+    "config.HeatwaveDrainsStamina.name": "Heatwave Drains Stamina",
+    "config.HeatwaveDrainsStamina.description": "Enable/Disable the drain of stamina caused by heatwaves.",
+    "config.MuddyRainBoostGrow.name": "Muddy Rain Boost Grow",
+    "config.MuddyRainBoostGrow.description": "Enable/Disable the boosted growth caused by muddy rain on crops, trees and fruit trees.",
+    // Config: Visuals
+    "config.section.Visuals.name": "Visuals",
+    "config.Wind.name": "Visual Wind",
+    "config.Wind.description": "Enable/Disable the visual wind from appearing during vanilla windy weather.",
+    "config.AlternateSnow.name": "Alternate Snow",
+    "config.AlternateSnow.description": "Enable/Disable the alternate snow visuals for the vanilla snow weather.",
+    // Config: Audio
+    "config.section.Audio.name": "Audio",
+    "config.MistMusic.name": "Mist Music",
+    "config.MistMusic.description": "Enable/Disable the extra music track for mist days.",
+    "config.HeatwaveMusic.name": "Heatwave Music",
+    "config.HeatwaveMusic.description": "Enable/Disable the extra music track for heatwave days.",
+    "config.BloodMoonMusic.name": "Blood Moon Music",
+    "config.BloodMoonMusic.description": "Enable/Disable the extra music track that plays during blood moons.",
+    "config.BloodMoonSoundEffect.name": "Blood Moon Sound Effect",
+    "config.BloodMoonSoundEffect.description": "Enable/Disable the sound effect that plays together with the blood moon HUD message."
+}

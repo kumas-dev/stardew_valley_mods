@@ -1,0 +1,21 @@
+{
+    "Weather.Blizzard": "吹雪",
+    "Weather.Blizzard.Forecast": "吹雪が近づいているようです。降雪と猛風が予想されるでしょう。",
+    "Weather.Deluge": "大雨",
+    "Weather.Deluge.Forecast": "明日は大雨が予想されます。雨具の準備を忘れないでください！",
+    "Weather.Drizzle": "霧雨",
+    "Weather.Drizzle.Forecast": "明日は一日中、小雨になりそうですね。室内で本を読むには最高の天気ですね！",
+    "Weather.DryLightning": "乾雷",
+    "Weather.DryLightning.Forecast": "明日は乾雷が発生する見通しです。火事にならないよう、燃えやすいものは片付けておきましょう！",
+    "Weather.Mist": "霧",
+    "Weather.Mist.Forecast": "明日は霧の多い一日になりそうです。視界が悪くなるので、屋外での活動される方は気をつけてください。",
+    "Weather.Hailstorm": "ひょう",
+    "Weather.Hailstorm.Forecast": "明日は降ひょうが予想されます。屋外での活動をされる場合は、頭上に気をつけてください。",
+    "Weather.RainSnowMix": "みぞれ",
+    "Weather.RainSnowMix.Forecast": "明日は雨と雪が入り混じり、一日を通して様々な天候となるようです。濡れと寒さの両方に備えましょう。",
+    "Weather.Wind.ForecastSpring": "部分的に曇りで、少し風が吹くでしょう。花粉に気をつけてください！",
+    "Weather.Wind.ForecastFall": "明日は一日中曇りで、風が吹くことになるでしょう。",
+    "Weather.Snow.Forecast": "明日は数センチの積雪が予想されるでしょう。",
+    "Buff.Cold": "寒気",
+    "Buff.Cold.description": "寒い…"
+}

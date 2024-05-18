@@ -1,0 +1,67 @@
+{
+	"Changes": [
+		// Blood Moon Assets
+		{
+			"LogName": "Load WW's Blood Moon Sound Effect",
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"Kana.WeatherWonders_BloodMoonSoundEffect": {
+					"ID": "Kana.WeatherWonders_BloodMoonSoundEffect",
+					"Category": "Sound",
+					"FilePaths": [
+						"{{AbsoluteFilePath: assets/BloodMoonSoundEffect.ogg}}"
+					],
+					"StreamedVorbis": true,
+					"Looped": false
+				}
+			}
+		},
+		// Blood Moon Weather
+		{
+			"LogName": "Load WW's Blood Moon Astronomical Event",
+			"Action": "EditData",
+			"Update": "OnLocationChange",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {
+				"Kana.WeatherWonders_BloodMoon": {
+					"Id": "Kana.WeatherWonders_BloodMoon",
+					"DisplayName": "{{i18n: Weather.Sunny}}",
+					"Forecast": "{{i18n: Weather.Sunny.Forecast}}",
+					"IconTexture": "LooseSprites/Cursors",
+					"IconSource": {
+						"X": 341,
+						"Y": 421
+					},
+					"TVTexture": "LooseSprites/Cursors",
+					"TVSource": {
+						"X": 413,
+						"Y": 333
+					},
+					"UseNightTiles": true,
+					"SpawnCritters": true,
+					"SpawnFrogs": true,
+					"SpawnClouds": false,
+					"Layers": [
+						{
+							"Id": "BloodMoonTint1",
+							"Type": "Color",
+							"Mode": "Normal",
+							"Condition": "TIME 2000 2600",
+							"Color": "255, 0, 0",
+							"Opacity": 0.25
+						}
+					],
+					"Lighting": [
+						{
+							"Id": "BloodMoonTint1",
+							"TimeOfDay": 2000,
+							"PostLightingTint": "221, 0, 0",
+							"PostLightingTintOpacity": 0.22
+						}
+					]
+				}
+			}
+		}
+	]
+}

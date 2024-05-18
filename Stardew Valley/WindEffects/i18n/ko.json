@@ -1,0 +1,12 @@
+{
+        "config.wind_prob_name": "바람이 불 확률",
+	"config.wind_prob_tooltip": "그 날이 바람부는 날이 될 확률을 설정합니다 [기본: 0.5(50%)]",
+        "config.wind_bushes_name": "덤불 흔들림",
+	"config.wind_bushes_tooltip": "바람부는 날일 경우 덤불이 흔들리는 효과의 적용 여부를 설정합니다. [기본 : 활성화]",
+        "config.wind_crops_name": "작물 흔들림",
+	"config.wind_crops_tooltip": "바람부는 날일 경우 작물이 흔들리는 효과의 적용 여부를 설정합니다 [기본 : 활성화]",
+        "config.wind_grass_name": "잔디 흔들림",
+	"config.wind_grass_tooltip": "바람부는 날일 경우 잔디가 흔들리는 효과의 적용 여부를 설정합니다 [기본 : 활성화]",
+        "config.wind_trees_name": "나무 흔들림",
+	"config.wind_trees_tooltip": "바람부는 날일 경우 나무가 흔들리는 효과의 적용 여부를 설정합니다 [기본 : 활성화]"
+}
