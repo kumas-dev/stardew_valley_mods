@@ -2,7 +2,7 @@
   "ShowSchedulesKey": "V",
   "DisableHover": true,
   "UseLargerFontForScheduleDetails": false,
-  "NPCSortOrder": "AlphabeticalAscending",
+  "NPCSortOrder": "HeartsDescending",
   "OnlyShowMetNPCs": false,
   "OnlyShowSocializableNPCs": true
 }
