@@ -1,0 +1,23 @@
+{
+    "skulltalk.000": "{{i18n:i18n_key_56}}",
+    "portaltalk.000": "{{i18n:i18n_key_57}}",
+    "portaltalk.001": "{{i18n:i18n_key_58}}",
+    "givefishtalk.000": "{{i18n:i18n_key_59}}",
+    "givefoodtalk1.000": "{{i18n:i18n_key_60}}",
+    "givefoodtalk.000": "{{i18n:i18n_key_61}}",
+    "giveshroomtalk.000": "{{i18n:i18n_key_62}}",
+    "giveshroomtalk1.000": "{{i18n:i18n_key_63}}",
+    "noforage.000": "{{i18n:i18n_key_64}}",
+    "nofish.000": "{{i18n:i18n_key_65}}",
+    "hutstare.000": "{{i18n:i18n_key_66}}",
+    "hutstare2.000": "{{i18n:i18n_key_67}}",
+    "hutstare3.000": "{{i18n:i18n_key_68}}",
+    "gardening1.000": "{{i18n:i18n_key_69}}",
+    "gardening2.000": "{{i18n:i18n_key_70}}",
+    "gardening3.000": "{{i18n:i18n_key_71}}",
+    "surfacetalk.000": "{{i18n:i18n_key_72}}",
+    "surfacetalktrash.000": "{{i18n:i18n_key_73}}",
+    "surfacetalk.002": "{{i18n:i18n_key_74}}",
+    "surfacetalkWinter.001": "{{i18n:i18n_key_75}}",
+    "surfacetalkWinter.002": "{{i18n:i18n_key_76}}"
+}

@@ -3,11 +3,10 @@ ConsoleCommands/
 ErrorHandler/
 SaveBackup/
 
+
 # cache
 \[AFM\] FarmTypeManager/data
-MasteryExtended/data
-Stardew Valley Expanded/\[FTM\] Stardew Valley Expanded/data
-Distant Lands/\[FTM\] Distant Lands - Witch Swamp Overhaul/data
+*_SaveData.save
 
 # temporary
 _Temporary/
