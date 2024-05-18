@@ -101,6 +101,10 @@
 			"AllowValues": "false, true",
 			"Default": "true",	
 			"Section": "Balance Changes"},
+		"Limited Shop Inventories": {
+			"AllowValues": "false, true",
+			"Default": "true",	
+			"Section": "Balance Changes"},
 		"Artisan Goods Gain Quantity": {
 			"AllowValues": "false, true",
 			"Default": "true",	
@@ -152,13 +156,13 @@
 				"192": {"Price": "95"}, //Potato
 				"252": {"Price": "215"}, //Rhubarb
 				"400": {"Price": "75"}, //Strawberry
-				"433": {"Price": "5"}, //Coffee Bean
+				"433": {"Price": "6"}, //Coffee Bean
 				"454": {"Price": "160"}, //Ancient Fruit
 				"90": {"Price": "50"}, //Cactus Fruit
-				"Carrot": {"Price": "55"}, //Carrot
+				"Carrot": {"Price": "60"}, //Carrot
 				"258": {"Price": "30"}, //Blueberry
 				"270": {"Price": "70"}, //Corn
-				"304": {"Price": "20"}, //Hops
+				"304": {"Price": "22"}, //Hops
 				"260": {"Price": "40"}, //Hot Pepper
 				"254": {"Price": "190"}, //Melon
 				"264": {"Price": "100"}, //Radish
@@ -213,7 +217,7 @@
 				"928": {"Price": "300"}, //Golden Egg
 				"184": {"Price": "75"}, //Milk
 				"436": {"Price": "150"}, //Goat Milk
-				"430": {"Price": "170"}, //Truffle
+				"430": {"Price": "190"}, //Truffle
 				"289": {"Price": "1100"}, //Ostrich Egg
 				"174": {"Price": "130"}, //Large Egg
 				"182": {"Price": "130"}, //Large Egg
@@ -230,7 +234,7 @@
 				"6480.blueegg_GoldenMayo": {"Price": "440"}, //Golden Mayonnaise
 				"424": {"Price": "165"}, //Cheese
 				"426": {"Price": "330"}, //Goat Cheese
-				"432": {"Price": "370"}, //Truffle Oil
+				"432": {"Price": "415"}, //Truffle Oil
 			},
 			"When": {"Animals": true}
 		},
@@ -254,7 +258,6 @@
             "Target": "Data/Objects",
             "Fields": {             
 				"74": {"Price": "1500"}, //Prismatic Shard
-				"72": {"Price": "300"}, //Diamond
 				"70": {"Price": "200"}, //Jade
 				"68": {"Price": "150"}, //Topaz
 				"66": {"Price": "150"}, //Amethyst
@@ -380,6 +383,22 @@
 				"553": {"Price": "400"}, //Neptunite
 			},
 			"When": {"Mines": true}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {             
+				"72": {"Price": "500"}, //Diamond
+			},
+			"When": {"HasMod|contains=Lumisteria.GlimmeringClumpsNodes": false, "Mines": true}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {             
+				"72": {"Price": "300"}, //Diamond
+			},
+			"When": {"HasMod|contains=Lumisteria.GlimmeringClumpsNodes": true, "Mines": true}
 		},
         {
             "Action": "EditData",
@@ -626,7 +645,7 @@
             "Action": "EditData",
             "Target": "Data/Objects",
             "Fields": {
-				"395": {"Price": "100"}, //Coffee
+				"395": {"Price": "110"}, //Coffee
 				"303": {"Price": "90"}, //Pale Ale
 				"346": {"Price": "180"}, //Beer
 				"614": {"Price": "150"}, //Green Tea
@@ -666,7 +685,29 @@
 				"486": {"Price": "50"}, //Starfruit Seeds
 			},
 			"When": {"Crops": true}
-		},
+		},		
+		//Animal Prices
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Fields": {
+				"White Chicken": {"PurchasePrice": "750", "SellPrice": "1500"},
+				"Brown Chicken": {"SellPrice": "1500"},
+				"Blue Chicken": {"SellPrice": "1500"},
+				"Void Chicken": {"SellPrice": "1500"},
+				"Golden Chicken": {"SellPrice": "8000"},
+				"Duck": {"PurchasePrice": "1000", "SellPrice": "2000"},
+				"Rabbit": {"PurchasePrice": "2000", "SellPrice": "4000"},
+				"Dinosaur": {"SellPrice": "4000"},
+				"White Cow": {"PurchasePrice": "1000", "SellPrice": "2000"},
+				"Brown Cow": {"SellPrice": "2000"},
+				"Goat": {"PurchasePrice": "1500", "SellPrice": "3000"},
+				"Sheep": {"PurchasePrice": "2000", "SellPrice": "4000"},
+				"Pig": {"PurchasePrice": "4000", "SellPrice": "8000"},
+				"Ostrich": {"SellPrice": "8000"},
+			},
+			"When": {"Animals": true}
+		},	
 		//Food Buffs
 		{
 			"Action": "EditData",
@@ -1341,7 +1382,7 @@
 			"Target": "Data/Buildings",
 			"Fields": {	
 				"Coop": {
-					"BuildCost": "5000",
+					"BuildCost": "2000",
 					"BuildMaterials": [
 						{"ItemId": "(O)388","Amount": "250"}, //Wood
 						{"ItemId": "(O)390","Amount": "100"}, //Stone
@@ -1362,7 +1403,7 @@
 					],
 				},
 				"Barn": {
-					"BuildCost": "8000",
+					"BuildCost": "3000",
 					"BuildMaterials": [
 						{"ItemId": "(O)388","Amount": "300"}, //Wood
 						{"ItemId": "(O)390","Amount": "100"}, //Stone
@@ -1566,53 +1607,329 @@
 			},
 			"When": {"Animals": true}
 		},
-		//Shops
+		//Shops (Prices)
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
-			"Fields": { 
-				"Blacksmith": {"SalableItemTags": ["category_weapon", "category_boots", "category_ring", "category_trinket", "category_minerals", "category_gem", "category_metal_resources"]},
-				"FishShop": {"SalableItemTags": ["item_bamboopole", "item_trainingrod", "item_fiberglassrod", "item_iridiumrod", "category_bait", "category_fish", "category_sell_at_fish_shop", "category_tackle"]},
-				"AnimalShop": {"SalableItemTags": ["item_shears", "item_milkpail", "category_sell_at_pierres_and_marnies", "category_milk", "category_egg", "category_meat"]},
+			"TargetField": ["Joja","Items"],
+			"Fields": {
+				"RandomWallpaper": {"Price": "50"}, //Wallpaper
+				"RandomFlooring": {"Price": "50"}, //Flooring
+				"(BC)272": {"Price": "100000"}, //Auto-Petter
 			},
-            "When": {"Merchants Buy More Items": true}		
-		},
-        {
-            "Action": "EditData",
-            "Target": "Data/Tools",
-            "Fields": {
-				"BambooPole": {"SalePrice": "400"},
-				"TrainingRod": {"SalePrice": "20"},
-				"FiberglassRod": {"SalePrice": "1600"},
-				"IridiumRod": {"SalePrice": "6000"},
-				"MilkPail": {"SalePrice": "500"},
-				"Shears": {"SalePrice": "500"},
-			},
-			"When": {"Merchants Buy More Items": true}	
+            "When": {"HasMod|contains=FlashShifter.StardewValleyExpandedCP": false, "Shops": true}		
 		},
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
-			"TargetField": ["AnimalShop", "Items"],
-			"Entries":
-				{ "theoddon.AutoPetter": {
-                    "Id": "theoddon.AutoPetter",
-                    "ItemId": "(BC)272",
-                    "Condition": "IS_COMMUNITY_CENTER_COMPLETE",
-                    "Price": "100000",
-					}
+			"TargetField": ["Saloon","Items"],
+			"Fields": {
+				"(O)346": {"Price": "400", "IgnoreShopPriceModifiers": true}, //Beer
+				"(O)196": {"Price": "300", "IgnoreShopPriceModifiers": true}, //Salad
+				"(O)216": {"Price": "180", "IgnoreShopPriceModifiers": true}, //Bread
+				"(O)224": {"Price": "320", "IgnoreShopPriceModifiers": true}, //Spaghetti
+				"(O)206": {"Price": "600", "IgnoreShopPriceModifiers": true}, //Pizza
+				"(O)395": {"Price": "300", "IgnoreShopPriceModifiers": true}, //Coffee
 			},
-            "When": {"Marnie Sells Auto-Petter": true}		
+            "When": {"Shops": true}	
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop","Items"],
+			"Fields": {
+				"(O)368": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Basic Fertilizer 
+				"(O)369": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Quality Fertilizer
+				"(O)370": {"Price": "30", "IgnoreShopPriceModifiers": true}, //Basic Retaining Soil
+				"(O)371": {"Price": "70", "IgnoreShopPriceModifiers": true}, //Quality Retaining Soil
+				"(O)465": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Speed-Gro
+				"(O)466": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Deluxe Speed-Gro
+				"RandomWallpaper": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Wallpaper
+				"RandomFlooring": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Flooring
+			},
+            "When": {"Shops": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["FishShop","Items"],
+			"Fields": {
+				"(O)219": {"Price": "400", "IgnoreShopPriceModifiers": true}, //Trout Soup
+				"(O)685": {"Price": "10", "IgnoreShopPriceModifiers": true}, //Bait
+				"(O)DeluxeBait": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Deluxe Bait
+				"(O)710": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Crab Pot
+				"(O)SonarBobber": {"Price": "250", "IgnoreShopPriceModifiers": true}, //Sonar Bobber
+				"(O)686": {"Price": "250", "IgnoreShopPriceModifiers": true}, //Spinner
+				"(O)694": {"Price": "250", "IgnoreShopPriceModifiers": true}, //Trap Bobber
+				"(O)693": {"Price": "300", "IgnoreShopPriceModifiers": true}, //Treasure Hunter
+				"(O)695": {"Price": "350", "IgnoreShopPriceModifiers": true}, //Cork Bobber
+				"(O)691": {"Price": "350", "IgnoreShopPriceModifiers": true}, //Barbed Hook
+				"(O)687": {"Price": "500", "IgnoreShopPriceModifiers": true}, //Dressed Spinner
+				"(O)703": {"Price": "150", "IgnoreShopPriceModifiers": true}, //Magnet
+			},
+            "When": {"Shops": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Blacksmith","Items"],
+			"Fields": {
+				"CopperOre_YearOne": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Copper Ore Year 1
+				"IronOre_YearOne": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Iron Ore Year 1
+				"Coal_YearOne": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Coal Year 1
+				"GoldOre_YearOne": {"Price": "200", "IgnoreShopPriceModifiers": true}, //Gold Ore Year 1
+				"CopperOre_AfterYearOne": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Copper Ore Year 2
+				"IronOre_AfterYearOne": {"Price": "200", "IgnoreShopPriceModifiers": true}, //Iron Ore Year 2
+				"Coal_AfterYearOne": {"Price": "200", "IgnoreShopPriceModifiers": true}, //Coal Year 2
+				"GoldOre_AfterYearOne": {"Price": "400", "IgnoreShopPriceModifiers": true}, //Gold Ore Year 2
+			},
+            "When": {"Shops": true}		
 		},
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
 			"TargetField": ["Hospital","Items"],
-			"Entries": {
-				"(O)773": {"Id": "(O)773", "ItemId": "(O)773", "Price": "1000", "AvailableStock": "2", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Add Life Elixir
+			"Fields": {
+				"(O)349": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Energy Tonic
+				"(O)351": {"Price": "500", "IgnoreShopPriceModifiers": true}, //Muscle Remedy
 			},
-            "When": {"Harvey's Clinic Sells Life Elixirs": true}		
+            "When": {"Shops": true}		
 		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["AdventureShop","Items"],
+			"Fields": {
+				"(W)44": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Cutlass
+				"(W)27": {"Price": "1250", "IgnoreShopPriceModifiers": true}, //Wood Mallet
+				"(W)10": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Claymore
+				"(W)7": {"Price": "2000", "IgnoreShopPriceModifiers": true}, //Templar's Blade
+				"(W)5": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Bone Sword
+				"(W)50": {"Price": "4500", "IgnoreShopPriceModifiers": true}, //Steel Falchion
+				"(W)9": {"Price": "20000", "IgnoreShopPriceModifiers": true}, //Lava Katana
+				"(W)4": {"Price": "40000", "IgnoreShopPriceModifiers": true}, //Galaxy Sword
+				"(W)23": {"Price": "40000", "IgnoreShopPriceModifiers": true}, //Galaxy Dagger
+				"(W)29": {"Price": "40000", "IgnoreShopPriceModifiers": true}, //Galaxy Hammer
+				"(B)508": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Combat Boots
+				"(B)512": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Firewalker Boots
+				"(B)511": {"Price": "2000", "IgnoreShopPriceModifiers": true}, //Dark Boots
+				"(B)514": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Space Boots
+				"(O)529": {"Price": "500", "IgnoreShopPriceModifiers": true}, //Amethyst Ring
+				"(O)530": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Topaz Ring
+				"(O)531": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Aquamarine RIng
+				"(O)532": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Jade Ring
+				"(O)533": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Emerald Ring
+				"(O)534": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Ruby Ring
+			},
+            "When": {"Shops": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Dwarf","Items"],
+			"Fields": {
+				"(O)773": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Life Elixir
+				"(O)772": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Oil of Garlic
+				"(O)243": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Miner's Treat
+				"(O)286": {"Price": "300", "IgnoreShopPriceModifiers": true}, //Cherry Bomb
+				"(O)287": {"Price": "700", "IgnoreShopPriceModifiers": true}, //Bomb
+				"(O)288": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Mega Bomb
+			},
+            "When": {"Shops": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["VolcanoShop","Items"],
+			"Fields": {
+				"(O)244|(O)237": {"Price": "1200", "IgnoreShopPriceModifiers": true}, //Roots Platter & Super Meal
+				"(O)286": {"Price": "300", "IgnoreShopPriceModifiers": true}, //Cherry Bomb
+				"(O)287": {"Price": "700", "IgnoreShopPriceModifiers": true}, //Bomb
+				"(O)288": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Mega Bomb
+			},
+            "When": {"Shops": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["ResortBar","Items"],
+			"Fields": {
+				"(O)873": {"Price": "1200", "IgnoreShopPriceModifiers": true}, //Pina Colada
+				"(O)346": {"Price": "500", "IgnoreShopPriceModifiers": true}, //Beer
+				"(O)303": {"Price": "500", "IgnoreShopPriceModifiers": true}, //Pale Ale
+				"(O)459": {"Price": "800", "IgnoreShopPriceModifiers": true}, //Mead
+				"(O)612": {"Price": "600", "IgnoreShopPriceModifiers": true}, //Cranberry Candy
+				"MangoWine": {"Price": "2000", "IgnoreShopPriceModifiers": true}, //Mango Wine
+			},
+            "When": {"Shops": true}		
+		},
+		//Shops (Limited Inventories)
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Saloon","Items"],
+			"Fields": {
+				"(O)346": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Beer
+				"(O)196": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Salad
+				"(O)216": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Bread
+				"(O)224": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Spaghetti
+				"(O)206": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Pizza
+				"(O)395": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Coffee
+			},
+            "When": {"Limited Shop Inventories": true}	
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["FishShop","Items"],
+			"Fields": {
+				"(O)219": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Trout Soup
+				"(O)685": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Bait
+				"(O)DeluxeBait": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Deluxe Bait
+				"(O)710": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Crab Pot
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Blacksmith","Items"],
+			"Fields": {
+				"CopperOre_YearOne": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Copper Ore Year 1
+				"IronOre_YearOne": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Iron Ore Year 1
+				"Coal_YearOne": {"AvailableStock": "10", "AvailableStockLimit": "Player"}, //Coal Year 1
+				"GoldOre_YearOne": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Gold Ore Year 1
+				"CopperOre_AfterYearOne": {"AvailableStock": "30", "AvailableStockLimit": "Player"}, //Copper Ore Year 2
+				"IronOre_AfterYearOne": {"AvailableStock": "30", "AvailableStockLimit": "Player"}, //Iron Ore Year 2
+				"Coal_AfterYearOne": {"AvailableStock": "15", "AvailableStockLimit": "Player"}, //Coal Year 2
+				"GoldOre_AfterYearOne": {"AvailableStock": "30", "AvailableStockLimit": "Player"}, //Gold Ore Year 2
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Carpenter","Items"],
+			"Fields": {
+				"(O)388": {"AvailableStock": "200", "AvailableStockLimit": "Player"}, //Wood
+				"(O)390": {"AvailableStock": "200", "AvailableStockLimit": "Player"}, //Stone
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Hospital","Items"],
+			"Fields": {
+				"(O)349": {"AvailableStock": "2", "AvailableStockLimit": "Player"}, //Energy Tonic
+				"(O)351": {"AvailableStock": "1", "AvailableStockLimit": "Player"}, //Muscle Remedy
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Dwarf","Items"],
+			"Fields": {
+				"(O)773": {"AvailableStock": "2", "AvailableStockLimit": "Player"}, //Life Elixir
+				"(O)772": {"AvailableStock": "2", "AvailableStockLimit": "Player"}, //Oil of Garlic
+				"(O)243": {"AvailableStock": "1", "AvailableStockLimit": "Player"}, //Miner's Treat
+				"(O)286": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Cherry Bomb
+				"(O)287": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Bomb
+				"(O)288": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Mega Bomb
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["VolcanoShop","Items"],
+			"Fields": {
+				"(O)244|(O)237": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Roots Platter & Super Meal
+				"(O)286": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Cherry Bomb
+				"(O)287": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Bomb
+				"(O)288": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Mega Bomb
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["ResortBar","Items"],
+			"Fields": {
+				"(O)873": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Pina Colada
+				"(O)346": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Beer
+				"(O)303": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Pale Ale
+				"(O)459": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Mead
+				"(O)612": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Cranberry Candy
+				"MangoWine": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Mango Wine
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["DesertTrade","Items"],
+			"Fields": {
+				"(O)253": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Triple Shot Espresso
+				"(O)226": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Spicy Eel
+				"(O)288": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Mega Bomb
+				"(O)287": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Bomb
+				"(BC)71": {"AvailableStock": "10", "AvailableStockLimit": "Player"}, //Staircase
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["DesertFestival_EggShop","Items"],
+			"Fields": {
+				"(O)288": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Mega Bomb
+				"StrawberrySeeds_Monday": {"AvailableStock": "30", "AvailableStockLimit": "Player"}, //Starberry Seeds
+				"StrawberrySeeds_Wednesday": {"AvailableStock": "30", "AvailableStockLimit": "Player"}, //Starberry Seeds
+				"(O)SkillBook_2": {"AvailableStock": "1", "AvailableStockLimit": "Player"}, //Woodcutter's Weekly
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["DesertFestival_Pam","Items"],
+			"Fields": {
+				"(O)346": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Beer
+				"(O)459": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Mead
+				"(O)303": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Pale Ale
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["ShadowShop","Items"],
+			"Fields": {
+				"(O)770": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Mixed Seeds
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Casino","Items"],
+			"Fields": {
+				"(O)688": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Warp Totem: Farm
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["IceCreamStand","Items"],
+			"Fields": {
+				"(O)233": {"AvailableStock": "5", "AvailableStockLimit": "Player"}, //Ice Cream
+			},
+            "When": {"Limited Shop Inventories": true}		
+		},
+		//Shops (Crops/Flowers/Fruit Trees)
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
@@ -1699,17 +2016,6 @@
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
-			"TargetField": ["Joja","Items"],
-			"Fields": {
-				"RandomWallpaper": {"Price": "50"}, //Wallpaper
-				"RandomFlooring": {"Price": "50"}, //Flooring
-				"(BC)272": {"Price": "100000"}, //Auto-Petter
-			},
-            "When": {"HasMod|contains=FlashShifter.StardewValleyExpandedCP": false, "Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
 			"TargetField": ["SeedShop","Items"],
 			"Fields": {
 				"(O)629": {"Price": "2300", "IgnoreShopPriceModifiers": true}, //Apricot Sapling
@@ -1731,222 +2037,52 @@
 			},
             "When": {"Fruit Trees": true}		
 		},
+		//Shops (Quality of Life)
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
-			"TargetField": ["Saloon","Items"],
-			"Fields": {
-				"(O)346": {"Price": "400", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Beer
-				"(O)196": {"Price": "300", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Salad
-				"(O)216": {"Price": "180", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Bread
-				"(O)224": {"Price": "320", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Spaghetti
-				"(O)206": {"Price": "600", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Pizza
-				"(O)395": {"Price": "300", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Coffee
+			"Fields": { 
+				"Blacksmith": {"SalableItemTags": ["category_weapon", "category_boots", "category_ring", "category_trinket", "category_minerals", "category_gem", "category_metal_resources"]},
+				"FishShop": {"SalableItemTags": ["item_bamboopole", "item_trainingrod", "item_fiberglassrod", "item_iridiumrod", "category_bait", "category_fish", "category_sell_at_fish_shop", "category_tackle"]},
+				"AnimalShop": {"SalableItemTags": ["item_shears", "item_milkpail", "category_sell_at_pierres_and_marnies", "category_milk", "category_egg", "category_meat"]},
 			},
-            "When": {"Shops": true}	
+            "When": {"Merchants Buy More Items": true}		
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Tools",
+            "Fields": {
+				"BambooPole": {"SalePrice": "400"},
+				"TrainingRod": {"SalePrice": "20"},
+				"FiberglassRod": {"SalePrice": "1600"},
+				"IridiumRod": {"SalePrice": "6000"},
+				"MilkPail": {"SalePrice": "500"},
+				"Shears": {"SalePrice": "500"},
+			},
+			"When": {"Merchants Buy More Items": true}	
 		},
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
-			"TargetField": ["SeedShop","Items"],
-			"Fields": {
-				"(O)368": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Basic Fertilizer 
-				"(O)369": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Quality Fertilizer
-				"(O)370": {"Price": "30", "IgnoreShopPriceModifiers": true}, //Basic Retaining Soil
-				"(O)371": {"Price": "70", "IgnoreShopPriceModifiers": true}, //Quality Retaining Soil
-				"(O)465": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Speed-Gro
-				"(O)466": {"Price": "100", "IgnoreShopPriceModifiers": true}, //Deluxe Speed-Gro
-				"RandomWallpaper": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Wallpaper
-				"RandomFlooring": {"Price": "50", "IgnoreShopPriceModifiers": true}, //Flooring
+			"TargetField": ["AnimalShop", "Items"],
+			"Entries":
+				{ "theoddon.AutoPetter": {
+                    "Id": "theoddon.AutoPetter",
+                    "ItemId": "(BC)272",
+                    "Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+                    "Price": "100000",
+					}
 			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["FishShop","Items"],
-			"Fields": {
-				"(O)219": {"Price": "400", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Trout Soup
-				"(O)685": {"Price": "10", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Bait
-				"(O)DeluxeBait": {"Price": "100", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Deluxe Bait
-				"(O)710": {"Price": "1500", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Crab Pot
-				"(O)SonarBobber": {"Price": "250", "IgnoreShopPriceModifiers": true}, //Sonar Bobber
-				"(O)686": {"Price": "250", "IgnoreShopPriceModifiers": true}, //Spinner
-				"(O)694": {"Price": "250", "IgnoreShopPriceModifiers": true}, //Trap Bobber
-				"(O)693": {"Price": "300", "IgnoreShopPriceModifiers": true}, //Treasure Hunter
-				"(O)695": {"Price": "350", "IgnoreShopPriceModifiers": true}, //Cork Bobber
-				"(O)691": {"Price": "350", "IgnoreShopPriceModifiers": true}, //Barbed Hook
-				"(O)687": {"Price": "500", "IgnoreShopPriceModifiers": true}, //Dressed Spinner
-				"(O)703": {"Price": "150", "IgnoreShopPriceModifiers": true}, //Magnet
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["Blacksmith","Items"],
-			"Fields": {
-				"CopperOre_YearOne": {"Price": "50", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Copper Ore Year 1
-				"IronOre_YearOne": {"Price": "100", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Iron Ore Year 1
-				"Coal_YearOne": {"Price": "150", "AvailableStock": "10", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Coal Year 1
-				"GoldOre_YearOne": {"Price": "175", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Gold Ore Year 1
-				"CopperOre_AfterYearOne": {"Price": "100", "AvailableStock": "30", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Copper Ore Year 2
-				"IronOre_AfterYearOne": {"Price": "200", "AvailableStock": "30", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Iron Ore Year 2
-				"Coal_AfterYearOne": {"Price": "300", "AvailableStock": "15", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Coal Year 2
-				"GoldOre_AfterYearOne": {"Price": "350", "AvailableStock": "30", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Gold Ore Year 2
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["Carpenter","Items"],
-			"Fields": {
-				"(O)388": {"AvailableStock": "200", "AvailableStockLimit": "Player"}, //Wood
-				"(O)390": {"AvailableStock": "200", "AvailableStockLimit": "Player"}, //Stone
-			},
-            "When": {"Shops": true}		
+            "When": {"Marnie Sells Auto-Petter": true}		
 		},
         {
 			"Action": "EditData",
 			"Target": "Data/Shops",
 			"TargetField": ["Hospital","Items"],
-			"Fields": {
-				"(O)349": {"Price": "1000", "AvailableStock": "2", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Energy Tonic
-				"(O)351": {"Price": "1000", "AvailableStock": "1", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Muscle Remedy
+			"Entries": {
+				"(O)773": {"Id": "(O)773", "ItemId": "(O)773", "Price": "1000", "AvailableStock": "2", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Add Life Elixir
 			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["AdventureShop","Items"],
-			"Fields": {
-				"(W)44": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Cutlass
-				"(W)27": {"Price": "1250", "IgnoreShopPriceModifiers": true}, //Wood Mallet
-				"(W)10": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Claymore
-				"(W)7": {"Price": "2000", "IgnoreShopPriceModifiers": true}, //Templar's Blade
-				"(W)5": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Bone Sword
-				"(W)50": {"Price": "4500", "IgnoreShopPriceModifiers": true}, //Steel Falchion
-				"(W)9": {"Price": "20000", "IgnoreShopPriceModifiers": true}, //Lava Katana
-				"(W)4": {"Price": "40000", "IgnoreShopPriceModifiers": true}, //Galaxy Sword
-				"(W)23": {"Price": "40000", "IgnoreShopPriceModifiers": true}, //Galaxy Dagger
-				"(W)29": {"Price": "40000", "IgnoreShopPriceModifiers": true}, //Galaxy Hammer
-				"(B)508": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Combat Boots
-				"(B)512": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Firewalker Boots
-				"(B)511": {"Price": "2000", "IgnoreShopPriceModifiers": true}, //Dark Boots
-				"(B)514": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Space Boots
-				"(O)529": {"Price": "500", "IgnoreShopPriceModifiers": true}, //Amethyst Ring
-				"(O)530": {"Price": "1000", "IgnoreShopPriceModifiers": true}, //Topaz Ring
-				"(O)531": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Aquamarine RIng
-				"(O)532": {"Price": "1500", "IgnoreShopPriceModifiers": true}, //Jade Ring
-				"(O)533": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Emerald Ring
-				"(O)534": {"Price": "3000", "IgnoreShopPriceModifiers": true}, //Ruby Ring
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["Dwarf","Items"],
-			"Fields": {
-				"(O)773": {"Price": "800", "AvailableStock": "2", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Life Elixir
-				"(O)772": {"Price": "1500", "AvailableStock": "2", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Oil of Garlic
-				"(O)243": {"Price": "1000", "AvailableStock": "1", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Miner's Treat
-				"(O)286": {"Price": "300", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Cherry Bomb
-				"(O)287": {"Price": "700", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Bomb
-				"(O)288": {"Price": "1000", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mega Bomb
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["VolcanoShop","Items"],
-			"Fields": {
-				"(O)244|(O)237": {"Price": "1200", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Roots Platter & Super Meal
-				"(O)286": {"Price": "300", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Cherry Bomb
-				"(O)287": {"Price": "700", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Bomb
-				"(O)288": {"Price": "1000", "AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mega Bomb
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["ResortBar","Items"],
-			"Fields": {
-				"(O)873": {"Price": "1200", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Pina Colada
-				"(O)346": {"Price": "500", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Beer
-				"(O)303": {"Price": "500", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Pale Ale
-				"(O)459": {"Price": "800", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mead
-				"(O)612": {"Price": "600", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Cranberry Candy
-				"MangoWine": {"Price": "2000", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mango Wine
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["DesertTrade","Items"],
-			"Fields": {
-				"(O)253": {"AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Triple Shot Espresso
-				"(O)226": {"AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Spicy Eel
-				"(O)288": {"AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mega Bomb
-				"(O)287": {"AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Bomb
-				"(BC)71": {"AvailableStock": "10", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Staircase
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["DesertFestival_EggShop","Items"],
-			"Fields": {
-				"(O)288": {"AvailableStock": "20", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mega Bomb
-				"StrawberrySeeds_Monday": {"AvailableStock": "30", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Starberry Seeds
-				"StrawberrySeeds_Wednesday": {"AvailableStock": "30", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Starberry Seeds
-				"(O)SkillBook_2": {"AvailableStock": "1", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Woodcutter's Weekly
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["DesertFestival_Pam","Items"],
-			"Fields": {
-				"(O)346": {"AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Beer
-				"(O)459": {"AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mead
-				"(O)303": {"AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Pale Ale
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["ShadowShop","Items"],
-			"Fields": {
-				"(O)770": {"Price": "30", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Mixed Seeds
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["Casino","Items"],
-			"Fields": {
-				"(O)688": {"AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Warp Totem: Farm
-			},
-            "When": {"Shops": true}		
-		},
-        {
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["IceCreamStand","Items"],
-			"Fields": {
-				"(O)233": {"Price": "250", "AvailableStock": "5", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Ice Cream
-			},
-            "When": {"Shops": true}		
+            "When": {"Harvey's Clinic Sells Life Elixirs": true}		
 		},
 		//Crystalarium
 		{
@@ -2002,8 +2138,15 @@
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)21", "ReadyTimeModifiers", "Diamond"],
+			"Entries": {"Amount": "5000"},
+			"When": {"HasMod|contains=Lumisteria.GlimmeringClumpsNodes": false, "Mines": true}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)21", "ReadyTimeModifiers", "Diamond"],
 			"Entries": {"Amount": "3000"},
-			"When": {"Mines": true}
+			"When": {"HasMod|contains=Lumisteria.GlimmeringClumpsNodes": true, "Mines": true}
 		},
 		{
 			"Action": "EditData",
@@ -2233,12 +2376,24 @@
 			"Target": "Data/Shops",
 			"TargetField": ["Saloon","Items"],
 			"Fields": {
-				"FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken": {"Price": "650", "AvailableStock": "3", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true},	
-				"FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger": {"Price": "1500", "AvailableStock": "1", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true},
-				"FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie": {"Price": "1200", "AvailableStock": "1", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true},
-				"FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish": {"Price": "1200", "AvailableStock": "1", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true},				
+				"FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken": {"Price": "650", "IgnoreShopPriceModifiers": true},	
+				"FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger": {"Price": "1500", "IgnoreShopPriceModifiers": true},
+				"FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie": {"Price": "1200", "IgnoreShopPriceModifiers": true},
+				"FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish": {"Price": "1200", "IgnoreShopPriceModifiers": true},				
 			},
             "When": {"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true, "Stardew Valley Expanded": true, "Shops": true}	
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Saloon","Items"],
+			"Fields": {
+				"FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken": {"AvailableStock": "3", "AvailableStockLimit": "Player"},	
+				"FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger": {"AvailableStock": "1", "AvailableStockLimit": "Player"},
+				"FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie": {"AvailableStock": "1", "AvailableStockLimit": "Player"},
+				"FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish": {"AvailableStock": "1", "AvailableStockLimit": "Player"},				
+			},
+            "When": {"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true, "Stardew Valley Expanded": true, "Limited Shop Inventories": true}	
 		},
 		//Ridgeside Village
 		{
@@ -2769,7 +2924,7 @@
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)16", "OutputRules", "Default_LargeGoatMilk", "OutputItem", "#0"],
-			"Entries": {"MinStack": "2", "MaxStack": "2", "Quality": "0", "StackModifiers": [{"Id": "DoubleQuality1","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "1.5","RandomAmount": null}, {"Id": "DoubleQuality2","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "1.5","RandomAmount": null}]},
+			"Entries": {"MinStack": "2", "MaxStack": "2", "Quality": "0", "StackModifiers": [{"Id": "DoubleQuality1","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Add","Amount": "1","RandomAmount": null}, {"Id": "DoubleQuality2","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Add","Amount": "1","RandomAmount": null}]},
 			"When": {"Artisan Goods Gain Quantity": true}
 		},
 		{
@@ -2783,7 +2938,7 @@
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)16", "OutputRules", "Default_LargeMilk", "OutputItem", "#0"],
-			"Entries": {"MinStack": "2", "MaxStack": "2", "Quality": "0", "StackModifiers": [{"Id": "DoubleQuality1","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "1.5","RandomAmount": null}, {"Id": "DoubleQuality2","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "1.5","RandomAmount": null}]},
+			"Entries": {"MinStack": "2", "MaxStack": "2", "Quality": "0", "StackModifiers": [{"Id": "DoubleQuality1","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Add","Amount": "1","RandomAmount": null}, {"Id": "DoubleQuality2","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Add","Amount": "1","RandomAmount": null}]},
 			"When": {"Artisan Goods Gain Quantity": true}
 		},
 		{
@@ -2853,7 +3008,7 @@
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)24", "OutputRules", "Default_LargeEgg", "OutputItem", "#0"],
-			"Entries": {"MinStack": "2","MaxStack": "2","Quality": "0", "StackModifiers": [{"Id": "DoubleQuality1","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "1.5","RandomAmount": null}, {"Id": "DoubleQuality2","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "1.5","RandomAmount": null}]},
+			"Entries": {"MinStack": "2","MaxStack": "2","Quality": "0", "StackModifiers": [{"Id": "DoubleQuality1","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Add","Amount": "1","RandomAmount": null}, {"Id": "DoubleQuality2","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Add","Amount": "1","RandomAmount": null}]},
 			"When": {"Artisan Goods Gain Quantity": true}
 		},
 		{
