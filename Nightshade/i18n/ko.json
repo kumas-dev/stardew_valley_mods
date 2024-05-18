@@ -1,0 +1,32 @@
+{
+  "menu.Colorizer.Text": "컬러화:",
+  "menu.Colorize세계.Text": "World",
+  "menu.ColorizeWorld.Hover": "월드 레이어에 컬러 셰이더를 적용합니다.",
+  "menu.ColorizeUI.Text": "UI",
+  "menu.ColorizeUI.Hover": "UI 레이어(메뉴, HUD)에 컬러 셰이더를 적용합니다.",
+  "menu.ColorizeBySeason.Text": "계절별 컬러화",
+  "menu.ColorizeBySeason.Hover": "이 기능을 활성화하면 봄, 여름, 가을, 겨울에 각각 네 가지 프로필이 자동으로 사용됩니다.",
+
+  "menu.Saturation.Text": "채도",
+  "menu.Lightness.Text": "가벼움",
+  "menu.Contrast.Text": "대비",
+  "menu.ColorBalance.Hover": "색상 균형^각 색상 그룹(시안-빨강, 마젠타-녹색, 노랑-파랑)에서 세 개의 슬라이더는 각각 그림자, 중간 톤 및 하이라이트를 제어합니다.",
+  "menu.RevertButton.Hover": "되돌리기^모든 색상 슬라이더를 이 프로필을 로드할 때의 상태로 초기화합니다.",
+  "menu.ClearButton.Hover": "지우기^모든 색상 슬라이더를 0으로 초기화합니다.",
+  "menu.CopyButton.Hover": "복사^색상 슬라이더의 상태를 복사합니다.",
+  "menu.PasteButton.Hover": "붙여넣기^색상 슬라이더의 상태를 붙여넣습니다.",
+  "menu.PreviewToggle.Hover": "미리보기^활성화되면 색상 슬라이더의 현재 상태를 적용합니다(토글하여 시작 상태와 현재 설정 사이를 전환합니다).",
+
+  "menu.EnableDepthOfField.Text": "피사계 심도",
+  "menu.Field.Text": "필드",
+  "menu.Field.Hover": "피사계 심도: 화면의 얼마나 많은 부분이 완전히 초점이 맞는지(흐림 없이) 확인할 수 있습니다.",
+  "menu.Intensity.Text": "강도",
+  "menu.Intensity.Hover": "흐림 효과의 강도를 설정합니다(최대값).",
+  "menu.Save.Text": "저장",
+
+  "gmcm.MenuKeybind.name": "메뉴키 바인드",
+  "gmcm.MenuKeybind.tooltip": "나이트쉐이드 메뉴를 여는 키 바인딩입니다.",
+  "gmcm.Explainer.text": "나이트셰이드에는 슬라이더 설정의 실시간 미리보기를 제공하는 자체 설정 메뉴가 있습니다. 적절한 키 바인딩을 구성한 후 해당 메뉴를 사용하세요.",
+
+  "EOF": ""
+}
