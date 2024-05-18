@@ -1,9 +1,0 @@
-{
-    "invest-button": "투자",
-    "back-button": "뒤로",
-    "next-button": "다음",
-    "menu-title-skills": "마스터리 포인트 투자",
-    "menu-title-profession": "{{skill}} 투자",
-    "hover-skill": "{{skill}} 잠금 해제 업그레이드",
-    "added-profession": "{{skill}}: {{prof}} 직업이 추가되었습니다."
-}
