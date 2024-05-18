@@ -1,7 +1,7 @@
 {
-	"Name": "[CS] Weather Wonders",
+	"Name": "Weather Wonders",
 	"Author": "Kanadeyoru",
-	"Version": "1.2.0",
+	"Version": "1.2.1",
 	"Description": "Expansion for the weather system, everything made to be vanilla-friendly!",
 	"UniqueID": "Kana.WeatherWonders",
 	"UpdateKeys": [

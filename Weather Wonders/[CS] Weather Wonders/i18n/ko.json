@@ -10,30 +10,30 @@
     "Weather.DryLightning.Forecast": "기상 특보입니다. 내일은 다량의 건조성 벼락이 발생할 것입니다. 나무 및 건물의 낙뢰 피해에 대비하세요.",
     "Weather.Mist": "안개",
     "Weather.Mist.Forecast": "내일은 안개가 심하게 낄 예정입니다. 가시거리가 매우 안 좋을 것으로 예상되니 야외 활동에 주의해 주세요.",
-    "Weather.MuddyRain": "진흙비", // NEW
-    "Weather.MuddyRain.Forecast": "내일은 사막으로부터 날아온 광물질 입자들이 흘러들어오면서 먼지가 예상됩니다. 이 광물질은 우리의 농작물에 활력을 불어넣을 것 입니다.", // NEW
+    "Weather.MuddyRain": "진흙비",
+    "Weather.MuddyRain.Forecast": "내일은 사막으로부터 날아온 광물질 입자들이 흘러들어오면서 먼지가 예상됩니다. 이 광물질은 우리의 농작물에 활력을 불어넣을 것 입니다.",
     "Weather.Hailstorm": "우박",
     "Weather.Hailstorm.Forecast": "기상 특보입니다. 내일은 다량의 우박을 동반한 강한 바람이 예상됩니다. 야외 활동을 자제하고 낙하 피해 방지를 위해 충분한 준비를 해 주세요.",
-    "Weather.Heatwave": "폭염", // NEW
-    "Weather.Heatwave.Forecast": "기상 특보입니다. 내일은 폭염이 우리 지역을 덮치면서 찌는 듯한 더위가 예상됩니다. 야외 활동에 주의하세요!", // NEW
+    "Weather.Heatwave": "폭염",
+    "Weather.Heatwave.Forecast": "기상 특보입니다. 내일은 폭염이 우리 지역을 덮치면서 찌는 듯한 더위가 예상됩니다. 야외 활동에 주의하세요!",
     "Weather.RainSnowMix": "진눈깨비",
     "Weather.RainSnowMix.Forecast": "내일은 계곡 전역에 진눈깨비가 내릴 예정입니다. 눈과 비가 섞여 내리기 때문에,냉해와 호우 피해 양측에 모두 대비가 필요합니다.",
-    "Weather.BloodMoon": "적월", // NEW
+    "Weather.BloodMoon": "적월",
     // Content: Vanilla Weathers
-    "Weather.Wind": "흐림", // NEW
+    "Weather.Wind": "흐림",
     "Weather.Wind.ForecastSpring": "강한 바람을 동반한 약간의 흐린 날씨가 예측됩니다. 꽃가루가 심하게 발생할 수 있으니, 알레르기가 있으신 분들은 야외 활동시 주의해 주세요.",
     "Weather.Wind.ForecastFall": "흐린 날씨와 더불어 강한 돌풍이 예상됩니다. 안전에 유의해 주세요.",
-    "Weather.Snow": "눈", // NEW
+    "Weather.Snow": "눈",
     "Weather.Snow.Forecast": "내일은 약 5~10cm 정도의 눈이 내릴 것으로 예상됩니다.",
-    "Weather.Sunny": "맑음", // NEW
-    "Weather.Sunny.Forecast": "내일은 아름답고 맑은날이 될 것으로 예상됩니다.", // NEW
+    "Weather.Sunny": "맑음",
+    "Weather.Sunny.Forecast": "내일은 아름답고 맑은날이 될 것으로 예상됩니다.",
     // Content: Custom Nightly Events
-    "Nightly.Earthquake.Message": "와! 밤사이에 강력한 지진이 일어났습니다.", // NEW
+    "Nightly.Earthquake.Message": "와! 밤사이에 강력한 지진이 일어났습니다.",
     // Content: Custom Buffs
     "Buff.Cold": "추위",
     "Buff.Cold.description": "밖은 너무 추워...",
-    "Buff.Hot": "더위", // NEW
-    "Buff.Hot.description": "오늘 너무 더워요!", // NEW
+    "Buff.Hot": "더위",
+    "Buff.Hot.description": "오늘 너무 더워요!",
     // Config: Weather Types
     "config.section.WeatherTypes.name": "날씨 유형",
     "config.Blizzard.name": "눈보라",

@@ -10,30 +10,30 @@
     "Weather.DryLightning.Forecast": "It seems dry lightning is rolling in tomorrow, promising flashes of lightning and distant rumbles.",
     "Weather.Mist": "Mist",
     "Weather.Mist.Forecast": "Looks like we're in for a misty day ahead. Visibility might be reduced, so plan accordingly for any outdoor activities.",
-    "Weather.MuddyRain": "Muddy Rain", // NEW
-    "Weather.MuddyRain.Forecast": "Tomorrow, anticipate dusty rain showers as mineral particles from the desert drift in! These mineral-rich raindrops promise a boost for our crops!", // NEW
+    "Weather.MuddyRain": "Muddy Rain",
+    "Weather.MuddyRain.Forecast": "Tomorrow, anticipate dusty rain showers as mineral particles from the desert drift in! These mineral-rich raindrops promise a boost for our crops!",
     "Weather.Hailstorm": "Hailstorm",
     "Weather.Hailstorm.Forecast": "It appears a hailstorm is brewing. Hailstones and gusty conditions are expected for tomorrow.",
-    "Weather.Heatwave": "Heatwave", // NEW
-    "Weather.Heatwave.Forecast": "Brace for scorching heat and relentless sunshine as a heatwave grips our region.", // NEW
+    "Weather.Heatwave": "Heatwave",
+    "Weather.Heatwave.Forecast": "Brace for scorching heat and relentless sunshine as a heatwave grips our region.",
     "Weather.RainSnowMix": "Rain-Snow Mix",
     "Weather.RainSnowMix.Forecast": "Tomorrow there will be a mix of rain and snow, creating varied conditions throughout the day. Be prepared for both wet and icy precipitation.",
-    "Weather.BloodMoon": "Blood Moon", // NEW
+    "Weather.BloodMoon": "Blood Moon",
     // Content: Vanilla Weathers
-    "Weather.Wind": "Wind", // NEW
+    "Weather.Wind": "Wind",
     "Weather.Wind.ForecastSpring": "Partially cloudy with a light breeze. Expect lots of pollen!",
     "Weather.Wind.ForecastFall": "It's going to be cloudy, with gusts of wind throughout the day.",
-    "Weather.Snow": "Snow", // NEW
+    "Weather.Snow": "Snow",
     "Weather.Snow.Forecast": "Expect a few inches of snow tomorrow.",
-    "Weather.Sunny": "Sunny", // NEW
-    "Weather.Sunny.Forecast": "It's going to be a beautiful, sunny day tomorrow!", // NEW
+    "Weather.Sunny": "Sunny",
+    "Weather.Sunny.Forecast": "It's going to be a beautiful, sunny day tomorrow!",
     // Content: Custom Nightly Events
-    "Nightly.Earthquake.Message": "Wow! An intense earthquake struck overnight.", // NEW
+    "Nightly.Earthquake.Message": "Wow! An intense earthquake struck overnight.",
     // Content: Custom Buffs
     "Buff.Cold": "Cold",
     "Buff.Cold.description": "It's cold outside...",
-    "Buff.Hot": "Hot", // NEW
-    "Buff.Hot.description": "It's too hot today!", // NEW
+    "Buff.Hot": "Hot",
+    "Buff.Hot.description": "It's too hot today!",
     // Config: Weather Types
     "config.section.WeatherTypes.name": "Weather Types",
     "config.Blizzard.name": "Blizzard",
@@ -72,6 +72,8 @@
     "config.HeatwaveMoreFireflies.description": "Enable/Disable the additional fireflies that spawn during heatwaves.",
     "config.HeatwaveDrainsStamina.name": "Heatwave Drains Stamina",
     "config.HeatwaveDrainsStamina.description": "Enable/Disable the drain of stamina caused by heatwaves.",
+    "config.HeatwaveDryWater.name": "Heatwave Dries Water", //NEW
+    "config.HeatwaveDryWater.description": "Enable/Disable the water from crops and pet bowls drying during heatwaves. Sprinklers won't water you crops, you will have to water them manually.", //NEW
     "config.MuddyRainBoostGrow.name": "Muddy Rain Boost Grow",
     "config.MuddyRainBoostGrow.description": "Enable/Disable the boosted growth caused by muddy rain on crops, trees and fruit trees.",
     // Config: Visuals

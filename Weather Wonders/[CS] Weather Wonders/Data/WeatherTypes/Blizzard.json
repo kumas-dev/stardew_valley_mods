@@ -155,7 +155,7 @@
 							"Id": "BlizzardEffect1",
 							"Type": "Buff",
 							"BuffId": "Kana.WeatherWonders_Cold",
-							"Condition": "LOCATION_IS_OUTDOORS Here"
+							"Condition": "LOCATION_IS_OUTDOORS Here, PLAYER_LOCATION_CONTEXT Current Default"
 						}
 					]
 				}
