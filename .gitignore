@@ -4,6 +4,10 @@ ErrorHandler/
 SaveBackup/
 
 
+# config
+config.toml
+config.json
+
 # cache
 \[AFM\] FarmTypeManager/data
 *_SaveData.save
