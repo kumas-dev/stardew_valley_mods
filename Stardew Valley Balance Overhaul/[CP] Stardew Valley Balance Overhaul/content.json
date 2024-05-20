@@ -104,11 +104,11 @@
 		"Limited Shop Inventories": {
 			"AllowValues": "false, true",
 			"Default": "true",	
-			"Section": "Balance Changes"},
+			"Section": "Gameplay Changes"},
 		"Artisan Goods Gain Quantity": {
 			"AllowValues": "false, true",
 			"Default": "true",	
-			"Section": "Balance Changes"},	
+			"Section": "Gameplay Changes"},	
 		"Merchants Buy More Items": {
 			"AllowValues": "false, true",
 			"Default": "true",	
@@ -964,7 +964,7 @@
 			    "Seed Maker": {0:"388 30 338 1 336 1 726 1"},
 			    "Oil Maker": {0:"766 50 709 20 336 2 725 2"},
 			    "Loom": {0:"388 50 771 20 725 1 726 1"},
-				"Dehydrator": {0:"388 30 330 3 82 1 725 1"},
+				"Dehydrator": {0:"388 30 330 2 82 1 86 1"},
 				"Mushroom Log": {0:"709 20 Moss 15 770 2"},
 				"Sprinkler": {0:"334 1 338 1"},
 				"Stone Chest": {0:"390 30"},
@@ -985,7 +985,7 @@
 			    "Oil Maker": {0:"766 50 709 25 336 3 725 3"},
 			    "Loom": {0:"388 60 771 30 725 2 726 1"},	
 				"Keg": {0:"388 40 334 2 335 2 725 2"},
-				"Dehydrator": {0:"388 40 330 4 82 2 725 2"},
+				"Dehydrator": {0:"388 40 330 3 82 2 86 1"},
 				"Cask": {0:"388 30 709 2 726 1"},
 			    "Furnace": {0:"378 25 390 40"},
 			    "Lightning Rod": {0:"335 2 338 2 767 10"},
@@ -1007,14 +1007,14 @@
 			"Target": "Data/CraftingRecipes",
 			"Fields": {
 			    "Preserves Jar": {0:"388 60 390 50 709 15 726 3"},
-			    "Mayonnaise Machine": {0:"388 50 390 50 338 5 724 4"},
-			    "Cheese Press": {0:"388 60 709 20 336 5 724 4"},
+			    "Mayonnaise Machine": {0:"388 50 390 50 338 4 724 4"},
+			    "Cheese Press": {0:"388 60 709 20 336 4 724 4"},
 			    "Bee House": {0:"388 60 709 20 336 3 724 3"},
 			    "Seed Maker": {0:"388 50 338 3 336 3 726 3"},
-			    "Oil Maker": {0:"766 60 709 30 336 5 725 4"},
+			    "Oil Maker": {0:"766 60 709 30 336 4 725 4"},
 			    "Loom": {0:"388 70 771 40 725 2 726 2"},
 				"Keg": {0:"388 50 334 3 335 3 725 3"},
-				"Dehydrator": {0:"388 50 330 5 82 3 725 3"},
+				"Dehydrator": {0:"388 50 330 4 82 2 86 2"},
 				"Cask": {0:"388 50 709 3 726 2"},
 			    "Furnace": {0:"378 35 390 50"},
 			    "Lightning Rod": {0:"335 3 338 3 767 15"},
@@ -1891,7 +1891,7 @@
 			"TargetField": ["FishShop","Items"],
 			"Fields": {
 				"(O)219": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Trout Soup
-				"(O)685": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Bait
+				"(O)685": {"AvailableStock": "30", "AvailableStockLimit": "Player"}, //Bait
 				"(O)DeluxeBait": {"AvailableStock": "20", "AvailableStockLimit": "Player"}, //Deluxe Bait
 				"(O)710": {"AvailableStock": "3", "AvailableStockLimit": "Player"}, //Crab Pot
 			},
@@ -2079,9 +2079,18 @@
 			"Target": "Data/Shops",
 			"TargetField": ["Hospital","Items"],
 			"Entries": {
-				"(O)773": {"Id": "(O)773", "ItemId": "(O)773", "Price": "1000", "AvailableStock": "2", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Add Life Elixir
+				"(O)773": {"Id": "(O)773", "ItemId": "(O)773", "Price": "1000", "AvailableStock": "2", "AvailableStockLimit": "Player", "IgnoreShopPriceModifiers": true}, //Add Life Elixir (Limited)
 			},
-            "When": {"Harvey's Clinic Sells Life Elixirs": true}		
+            "When": {"Harvey's Clinic Sells Life Elixirs": true, "Limited Shop Inventories": true}		
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Hospital","Items"],
+			"Entries": {
+				"(O)773": {"Id": "(O)773", "ItemId": "(O)773", "Price": "1000", "IgnoreShopPriceModifiers": true}, //Add Life Elixir (Unlimited)
+			},
+            "When": {"Harvey's Clinic Sells Life Elixirs": true, "Limited Shop Inventories": false}		
 		},
 		//Crystalarium
 		{
