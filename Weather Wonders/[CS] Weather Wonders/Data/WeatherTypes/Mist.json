@@ -1,5 +1,27 @@
 {
 	"Changes": [
+		// Mist Assets
+		{
+			"LogName": "Load WW's Mist Music",
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"Kana.WeatherWonders_MistMusic": {
+					"ID": "Kana.WeatherWonders_MistMusic",
+					"Category": "Ambient",
+					"FilePaths": [
+						"{{AbsoluteFilePath: assets/MistMusic.ogg}}"
+					],
+					"StreamedVorbis": true,
+					"Looped": true
+				}
+			},
+			"When": {
+				"MistMusic": true,
+				"Weather": "Kana.WeatherWonders_Mist"
+			}
+		},
+		// Mist Weather
 		{
 			"LogName": "Load WW's Mist Weather",
 			"Action": "EditData",
@@ -8,6 +30,13 @@
 				"Kana.WeatherWonders_Mist": {
 					"Id": "Kana.WeatherWonders_Mist",
 					"DisplayName": "{{i18n: Weather.Mist}}",
+					"SoftMusicOverrides": [
+						{
+							"ID": "Kana.WeatherWonders_MistMusic",
+							"Track": "Kana.WeatherWonders_MistMusic",
+							"Condition": "TIME 0600 1940"
+						}
+					],
 					"Forecast": "{{i18n: Weather.Mist.Forecast}}",
 					"IconTexture": "Mods/Kana.WeatherWonders/Icons",
 					"IconSource": {

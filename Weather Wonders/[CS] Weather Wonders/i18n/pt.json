@@ -80,5 +80,8 @@
     "config.BloodMoonMusic.name": "Música da Lua de Sangue",
     "config.BloodMoonMusic.description": "Ativar/Desativar a faixa de música extra que toca durante as luas de sangue.",
     "config.BloodMoonSoundEffect.name": "Efeito Sonoro da Lua de Sangue",
-    "config.BloodMoonSoundEffect.description": "Ativar/Desativar o efeito sonoro que toca junto com a mensagem de HUD da lua de sangue."
+    "config.BloodMoonSoundEffect.description": "Ativar/Desativar o efeito sonoro que toca junto com a mensagem de HUD da lua de sangue.",
+    "config.section.AstronomicalEvents.name": "Eventos Astronômicos",
+    "config.BloodMoon.name": "Lua de Sangue",
+    "config.BloodMoon.description": "Ativar/Desativar a Lua de Sangue."
 }

@@ -1445,9 +1445,7 @@
         "MinimumSpawnsPerDay": 50,
         "MaximumSpawnsPerDay": 100,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -1561,9 +1559,7 @@
         "MinimumSpawnsPerDay": 25,
         "MaximumSpawnsPerDay": 75,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -1713,9 +1709,7 @@
         "MinimumSpawnsPerDay": 100,
         "MaximumSpawnsPerDay": 200,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -1865,9 +1859,7 @@
         "MinimumSpawnsPerDay": 5,
         "MaximumSpawnsPerDay": 25,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -2017,9 +2009,7 @@
         "MinimumSpawnsPerDay": 25,
         "MaximumSpawnsPerDay": 100,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -2169,9 +2159,7 @@
         "MinimumSpawnsPerDay": 25,
         "MaximumSpawnsPerDay": 100,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -2321,9 +2309,7 @@
         "MinimumSpawnsPerDay": 25,
         "MaximumSpawnsPerDay": 100,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
@@ -2473,9 +2459,7 @@
         "MinimumSpawnsPerDay": 5,
         "MaximumSpawnsPerDay": 25,
         "IncludeTerrainTypes": [
-          "Diggable",
-          "Dirt",
-          "Grass"
+          "All"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],

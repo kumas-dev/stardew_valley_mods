@@ -13,7 +13,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -36,7 +36,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 2, 3, 4, 5}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -59,7 +59,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -82,7 +82,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -105,7 +105,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -128,7 +128,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -151,7 +151,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -174,7 +174,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],
@@ -197,7 +197,7 @@
 					},
 					"Layer": "Back",
 					"SetProperties": {
-						"CustomCompanions": "Spawn {{Random: 1, 2, 3, 4}} Kana.WeatherWonders.CC.Firefly"
+						"CustomCompanions": "Spawn {{Random: 3, 4, 5, 6}} Kana.WeatherWonders.CC.Firefly"
 					}
 				}
 			],

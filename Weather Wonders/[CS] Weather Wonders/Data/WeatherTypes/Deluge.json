@@ -19,7 +19,7 @@
 		},
 		// Deluge Weather
 		{
-			"LogName": "Load WW's Deluge Weather (Valley)",
+			"LogName": "Load WW's Deluge Weather",
 			"Action": "EditData",
 			"Target": "Mods/leclair.cloudyskies/WeatherData",
 			"Entries": {

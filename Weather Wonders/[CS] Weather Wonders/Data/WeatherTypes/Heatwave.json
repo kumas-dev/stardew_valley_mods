@@ -1,5 +1,27 @@
 {
 	"Changes": [
+		// Heatwave Assets
+		{
+			"LogName": "Load WW's Heatwave Music",
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"Kana.WeatherWonders_HeatwaveMusic": {
+					"ID": "Kana.WeatherWonders_HeatwaveMusic",
+					"Category": "Ambient",
+					"FilePaths": [
+						"{{AbsoluteFilePath: assets/HeatwaveMusic.ogg}}"
+					],
+					"StreamedVorbis": true,
+					"Looped": true
+				}
+			},
+			"When": {
+				"HeatwaveMusic": true,
+				"Weather": "Kana.WeatherWonders_Heatwave"
+			}
+		},
+		// Heatwave Weather
 		{
 			"LogName": "Load WW's Heatwave Weather",
 			"Action": "EditData",
@@ -8,6 +30,13 @@
 				"Kana.WeatherWonders_Heatwave": {
 					"Id": "Kana.WeatherWonders_Heatwave",
 					"DisplayName": "{{i18n: Weather.Heatwave}}",
+					"SoftMusicOverrides": [
+						{
+							"ID": "Kana.WeatherWonders_HeatwaveMusic",
+							"Track": "Kana.WeatherWonders_HeatwaveMusic",
+							"Condition": "TIME 0600 1930"
+						}
+					],
 					"Forecast": "{{i18n: Weather.Heatwave.Forecast}}",
 					"IconTexture": "Mods/Kana.WeatherWonders/Icons",
 					"IconSource": {
@@ -78,6 +107,69 @@
 			},
 			"When": {
 				"HeatwaveDrainsStamina": true
+			}
+		},
+		{
+			"LogName": "Load WW's Heatwave Weather (No Stamina Drain Effect)",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {
+				"Kana.WeatherWonders_Heatwave": {
+					"Id": "Kana.WeatherWonders_Heatwave",
+					"DisplayName": "{{i18n: Weather.Heatwave}}",
+					"SoftMusicOverrides": [
+						{
+							"ID": "Kana.WeatherWonders_HeatwaveMusic",
+							"Track": "Kana.WeatherWonders_HeatwaveMusic",
+							"Condition": "TIME 0600 1940"
+						}
+					],
+					"Forecast": "{{i18n: Weather.Heatwave.Forecast}}",
+					"IconTexture": "Mods/Kana.WeatherWonders/Icons",
+					"IconSource": {
+						"X": 96,
+						"Y": 0
+					},
+					"TVTexture": "Mods/Kana.WeatherWonders/TV",
+					"TVSource": {
+						"X": 0,
+						"Y": 104
+					},
+					"UseNightTiles": false,
+					"SpawnCritters": true,
+					"SpawnFrogs": true,
+					"SpawnClouds": false,
+					"Layers": [
+						{
+							"Id": "HeatwaveHeatDistortion1",
+							"Type": "Shader",
+							"Shader": "Distortion",
+							"Strength": 0.002,
+							"Frequency": 100
+						},
+						{
+							"Id": "HeatwaveTint1",
+							"Type": "Color",
+							"Mode": "Normal",
+							"Condition": "TIME 600 1800",
+							"Color": "255, 140, 0",
+							"Opacity": 0.25
+						},
+						{
+							"Id": "HeatwaveTint2",
+							"Type": "Color",
+							"Mode": "Normal",
+							"Condition": "TIME 1810 2600",
+							"Color": "255, 140, 0",
+							"Opacity": 0.3
+						}
+					],
+					"Lighting": [],
+					"Effects": []
+				}
+			},
+			"When": {
+				"HeatwaveDrainsStamina": false
 			}
 		}
 	]

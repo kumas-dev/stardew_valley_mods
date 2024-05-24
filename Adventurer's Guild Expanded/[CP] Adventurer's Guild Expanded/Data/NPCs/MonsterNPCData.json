@@ -125,6 +125,13 @@
                 "Update": "OnTimeChange, OnLocationChange",
 		"Entries": {
 			"Silly": {
+                             "DisplayName": "{{i18n:sillyNPCnamedisplay}}",
+                             "Gender": "Undefined",
+                             "Age": "Child",
+                             "Manner": "Polite",
+                             "SocialAnxiety": "Shy",
+                             "Optimism": "Positive",
+                             "HomeRegion": "Town",
                              "CanGreetNearbyCharacters": true,
                              "CanVisitIsland": true,
                              "WinterStarParticipant": true,

@@ -1,4 +1,17 @@
-VERSION 2.2.0 // Released May 18, 2023 (from Lorre)
+VERSION 2.2.2 // Released May 22, 2024 (from Lorre)
+- Hotfix fixing event 8280012 mismatched dialogue
+
+VERSION 2.2.1 // Released May 21, 2024 (from Lorre)
+- Changed Linus's position in the event 9280017 to try and avoid clipping
+- Fixed Zinnia Seeds just being called Zinnia
+- Fixed a few more typos
+- Changed an event's dialogue to flow smoother
+
+i18n changes (for translators!):
+- Fixed missing words in 9280027.2
+- Added missing line in event 8280012 and changed some of the dialogue to flow smoother
+
+VERSION 2.2.0 // Released May 18, 2024 (from Lorre)
 - Added new configuration for the monster basement. You can now change the location of both the entrances at the bus stop and at the farm (thank you to NoraCharles for helping me figure this out!)
 - Fixed all instances of {{PlayerName}} just actually showing up as {{PlayerName}} in the game (hopefully. I might have missed some).
 - Fixed Silly showing up in the social tab when you choose Gabriel's questline.

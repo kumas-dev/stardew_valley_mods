@@ -33,7 +33,13 @@
     "Buff.Cold": "Cold",
     "Buff.Cold.description": "It's cold outside...",
     "Buff.Hot": "Hot",
-    "Buff.Hot.description": "It's too hot today!",
+    "Buff.Hot.description": "It's too hot today!", // NEW
+    "Buff.BlueMoon": "Blue Moon", // NEW
+    "Buff.BlueMoon.description": "Under the Blue Moon's glow, luck finds its way to you.", // NEW
+    "Buff.HarvestMoon": "Harvest Moon", // NEW
+    "Buff.HarvestMoon.description": "Under the Harvest Moon's light, your crops thrive with renewed might.", // NEW
+    "Buff.BloodMoon": "Blood Moon", // NEW
+    "Buff.BloodMoon.description": "Under the Blood Moon's curse, you feel the shadows stir, you started feeling weak.", // NEW
     // Config: Weather Types
     "config.section.WeatherTypes.name": "Weather Types",
     "config.Blizzard.name": "Blizzard",
@@ -58,6 +64,26 @@
     "config.section.NightlyEvents.name": "Nightly Events",
     "config.Earthquake.name": "Earthquake",
     "config.Earthquake.description": "Enable/Disable the earthquake nightly event.",
+    // Config: Astronomical Events
+    "config.section.AstronomicalEvents.name": "Astronomical Events", //NEW
+    "config.BloodMoon.name": "Blood Moon", //NEW
+    "config.BloodMoon.description": "Enable/Disable the Blood Moon astronomical event.", //NEW
+    "config.BlueMoon.name": "Blue Moon", //NEW
+    "config.BlueMoon.description": "Enable/Disable the Blue Moon astronomical event.", //NEW
+    "config.HarvestMoon.name": "Harvest Moon", //NEW
+    "config.HarvestMoon.description": "Enable/Disable the Harvest Moon astronomical event.", //NEW
+    // Config: Astronomical Events Consequences
+    "config.section.AstronomicalEventsConsequences.name": "Astronomical Events Consequences", //NEW
+    "config.BloodMoonSpawnMonsters.name": "Blood Moon Spawn Monsters", //NEW
+    "config.BloodMoonSpawnMonsters.description": "Enable/Disable the monsters that spawn during blood moons.", //NEW
+    "config.BloodMoonSkillDebuff.name": "Blood Moon Skill Debuff", //NEW
+    "config.BloodMoonSkillDebuff.description": "Enable/Disable the combat and defense debuff applied during blood moons.", //NEW
+    "config.BlueMoonLuckBuff.name": "Blue Moon Luck Buff", //NEW
+    "config.BlueMoonLuckBuff.description": "Enable/Disable the luck buff applied during blue moons.", //NEW
+    "config.HarvestMoonBoostGrow.name": "Harvest Moon Boost Growth", //NEW
+    "config.HarvestMoonBoostGrow.description": "Enable/Disable the growth boost applied to crops, trees and fruit trees during harvest moons.", //NEW
+    "config.HarvestMoonSkillBuff.name": "Harvest Moon Skill Debuff", //NEW
+    "config.HarvestMoonSkillBuff.description": "Enable/Disable the farming and foraging buff applied during harvest moons.", //NEW
     // Config: Weather Consequences
     "config.section.WeatherConsequences.name": "Weather Consequences",
     "config.BlizzardSlowdownPlayer.name": "Blizzard Slowdown Player",
@@ -74,8 +100,8 @@
     "config.HeatwaveDrainsStamina.description": "Enable/Disable the drain of stamina caused by heatwaves.",
     "config.HeatwaveDryWater.name": "Heatwave Dries Water", //NEW
     "config.HeatwaveDryWater.description": "Enable/Disable the water from crops and pet bowls drying during heatwaves. Sprinklers won't water you crops, you will have to water them manually.", //NEW
-    "config.MuddyRainBoostGrow.name": "Muddy Rain Boost Grow",
-    "config.MuddyRainBoostGrow.description": "Enable/Disable the boosted growth caused by muddy rain on crops, trees and fruit trees.",
+    "config.MuddyRainFertilizeDirt.name": "Muddy Rain Fertilize Dirt", // NEW -- (changed actually)
+    "config.MuddyRainFertilizeDirt.description": "Enable/Disable muddy rain fertilizing dirt.", // NEW -- (changed actually)
     // Config: Visuals
     "config.section.Visuals.name": "Visuals",
     "config.Wind.name": "Visual Wind",
@@ -91,5 +117,13 @@
     "config.BloodMoonMusic.name": "Blood Moon Music",
     "config.BloodMoonMusic.description": "Enable/Disable the extra music track that plays during blood moons.",
     "config.BloodMoonSoundEffect.name": "Blood Moon Sound Effect",
-    "config.BloodMoonSoundEffect.description": "Enable/Disable the sound effect that plays together with the blood moon HUD message."
+    "config.BloodMoonSoundEffect.description": "Enable/Disable the sound effect that plays together with the blood moon HUD message.",
+    "config.BlueMoonMusic.name": "Blue Moon Music", // NEW
+    "config.BlueMoonMusic.description": "Enable/Disable the extra music track that plays during blue moons.", // NEW
+    "config.BlueMoonSoundEffect.name": "Blue Moon Sound Effect", // NEW
+    "config.BlueMoonSoundEffect.description": "Enable/Disable the sound effect that plays together with the blue moon HUD message.", // NEW
+    "config.HarvestMoonMusic.name": "Harvest Moon Music", // NEW
+    "config.HarvestMoonMusic.description": "Enable/Disable the extra music track that plays during harvest moons.", // NEW
+    "config.HarvestMoonSoundEffect.name": "Harvest Moon Sound Effect", // NEW
+    "config.HarvestMoonSoundEffect.description": "Enable/Disable the sound effect that plays together with the harvest moon HUD message." // NEW
 }
