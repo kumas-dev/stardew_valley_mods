@@ -12,7 +12,6 @@
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_Luck",
 					"ItemId": "(O){{ModId}}_Book_Luck",
-					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck}}"
 				}
 			},
 			"When": {
@@ -52,7 +51,6 @@
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_TreesIgnoreSeason",
 					"ItemId": "(O){{ModId}}_Book_TreesIgnoreSeason",
-					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason}}",
 				}
 			},
 			"When": {
@@ -117,6 +115,25 @@
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
+			},
+		},
+
+		// OPTIMIZED SDV++ //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Popularity": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceOptimization}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Optimization",
+					"ItemId": "(O){{ModId}}_Book_Optimization",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableOptimization": true
 			},
 		},
 
@@ -198,6 +215,85 @@
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCheatCodes": true
+			},
+		},
+		
+		// JUNIMO SCRAPBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_JunimoScrap": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceJunimoScrap}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_JunimoScrap",
+					"ItemId": "(O){{ModId}}_Book_JunimoScrap",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableJunimoScrap": true
+			},
+		},
+		
+		// BOOK OF CAROLS //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Carols": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceCarols}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Carols",
+					"ItemId": "(O){{ModId}}_Book_Carols",
+					"Condition": 'ANY "SEASON winter" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCarols": true
+			},
+		},
+		
+		// THE STRONGEST BREW //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Coffee": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceCoffee}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Coffee",
+					"ItemId": "(O){{ModId}}_Book_Coffee",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCoffee": true
+			},
+		},
+		
+		// CHILDREN'S SKETCHBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Sketchbook": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceSketchbook}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Sketchbook",
+					"ItemId": "(O){{ModId}}_Book_Sketchbook",
+					"Condition": 'ANY "PLAYER_STAT Current {{ModId}}_Book_Sketchbook 1" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook": true
 			},
 		},
 		
