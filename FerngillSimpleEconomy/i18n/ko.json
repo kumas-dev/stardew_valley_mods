@@ -29,6 +29,7 @@
 	"fse.config.EnableMenuTab": "메뉴에 탭 표시",
 	"fse.config.EnableShopDisplay": "상점에서 미리보기 표시",
 	"fse.config.ResetEconomy": "경제 초기화(게임 내 전용)",
+	"fse.config.hotkey.openMenu": "메뉴 열기",
 	"fse.config.Reset": "초기화",
 	"fse.config.category.header": "경제 카테고리",
 	"fse.config.category.subtitle": "이름을 변경한 후에는 게임을 다시 시작해야 합니다. 게임에서 참조하는 방식에 따라 이름이 중복되어 표시될 수 있습니다. 자세한 내용은 위키를 확인하세요.."
