@@ -8,7 +8,7 @@
                 "Music": "FlashShifter.StardewValleyExpandedCP_Nexus"
             }
         },
-        { //Enchanted Grove - part 1 (no grandpas farm) - player is not married to the wizard
+        { //Enchanted Grove - part 1 - player is not married to the wizard
             "Action": "EditData",
             "Target": "data/events/farm",
             "When": {
@@ -910,7 +910,7 @@
             "When": {
                 "LocationName": "Custom_SpriteSpring2",
                 "HasSeenEvent": "908072",
-                "HasSeenEvent |contains=908076": false
+                "HasSeenEvent: anyPlayer|contains=908076": false
             },
             "Update": "OnLocationChange"
         },
@@ -925,7 +925,7 @@
                 "Height": 3
             },
             "When": {
-                "HasSeenEvent": "908076",
+                "HasSeenEvent: anyPlayer|contains=908076": true,
                 "Season |contains=Winter": false
             },
             "Update": "OnLocationChange"
@@ -941,7 +941,7 @@
                 "Height": 3
             },
             "When": {
-                "HasSeenEvent": "908076",
+                "HasSeenEvent: anyPlayer|contains=908076": true,
                 "Season": "Winter"
             },
             "Update": "OnLocationChange"
@@ -950,7 +950,7 @@
             "Action": "EditMap",
             "Target": "Maps/Custom_SpriteSpring2",
             "When": {
-                "HasSeenEvent": "908076"
+                "HasSeenEvent: anyPlayer|contains=908076": true,
             },
             "TextOperations": [
                 {
@@ -975,7 +975,7 @@
                 "Height": 15
             },
             "When": {
-                "HasSeenEvent |contains=908076": false
+                "HasSeenEvent: anyPlayer|contains=908076": false,
             },
             "Update": "OnLocationChange",
             "PatchMode": "Overlay"
@@ -991,7 +991,7 @@
                 "Height": 5
             },
             "When": {
-                "HasSeenEvent": "908076"
+                "HasSeenEvent: anyPlayer|contains=908076": true,
             },
             "Update": "OnLocationChange"
         },
