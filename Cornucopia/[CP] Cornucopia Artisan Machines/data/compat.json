@@ -1,0 +1,16 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"HasMod|contains=wildflour.atelierfloral": true
+			},
+			"Entries": {
+				"Cornucopia_DriedFlower": {
+					"ExcludeFromShippingCollection": true,
+				}
+			}
+		}
+	]
+}

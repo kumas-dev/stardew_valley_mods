@@ -1,0 +1,21 @@
+{
+	"Name": "Cornucopia More Crops Rebalance",
+	"Author": "Minothilos",
+	"Version": "1.0.4",
+	"Description": "Changes buy and sell prices of Cornucopia Crops to match Balance Overhaul.",
+	"UniqueID": "minothilos.CornucopiaCropsRebalance",
+	"MinimumGameVersion": "1.6.4",
+    "UpdateKeys": ["Nexus: 23747"],
+	"ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher"},
+	"Dependencies": [
+		{
+		"UniqueID": "Theoddon.BalanceOverhaul",
+		"IsRequired": false
+		},
+		{
+		"UniqueID": "Cornucopia.MoreCrops",
+		"IsRequired": false
+		},
+
+	]
+}

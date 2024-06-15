@@ -1,0 +1,31 @@
+{
+	"Name": "Cornucopia Artisan Machines Rebalance",
+	"Author": "Minothilos",
+	"Version": "1.0.0",
+	"Description": "Changes sell prices of Cornucopia Artisan Machines items to match Balance Overhaul.",
+	"UniqueID": "minothilos.CornucopiaArtisanMachinesRebalance",
+	"MinimumGameVersion": "1.6.4",
+	"UpdateKeys": [ "Nexus: 25120" ],
+	"ContentPackFor": { "UniqueID": "Pathoschild.ContentPatcher" },
+	"Dependencies": [
+		{
+			"UniqueID": "Theoddon.BalanceOverhaul",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Cornucopia.MoreCrops",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Cornucopia.ArtisanMachines",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "selph.ExtraMachineConfig",
+			"IsRequired": true
+		}
+
+
+
+	]
+}
