@@ -8,6 +8,7 @@ SaveBackup/
 config.toml
 config.json
 !SkipFishingMinigameDotnet5/config.json
+!DaLion/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
