@@ -330,7 +330,7 @@
         <member name="T:DaLion.Enchantments.Framework.Enchantments.MammoniteEnchantment">
             <summary>
                 Attacks that would leave an enemy below 10% max health immediately execute the enemy, converting the remaining health into gold.
-                Consecutive takedowns without taking damage increase this health threshold by 1%.
+                Consecutive takedowns without taking damage increase the health threshold by 1%.
             </summary>
         </member>
         <member name="M:DaLion.Enchantments.Framework.Enchantments.MammoniteEnchantment.GetName">
@@ -371,6 +371,20 @@
             <summary>Cannot crit. Converts critical strike chance and power into raw damage.</summary>
         </member>
         <member name="M:DaLion.Enchantments.Framework.Enchantments.SteadfastEnchantment.GetName">
+            <inheritdoc />
+        </member>
+        <member name="T:DaLion.Enchantments.Framework.Enchantments.SunburstEnchantment">
+            <summary>
+                Attacks fire a short-range beam of solar energy. Prevents mummies from resurrecting.
+            </summary>
+        </member>
+        <member name="M:DaLion.Enchantments.Framework.Enchantments.SunburstEnchantment.GetName">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Enchantments.Framework.Enchantments.SunburstEnchantment._OnDealDamage(StardewValley.Monsters.Monster,StardewValley.GameLocation,StardewValley.Farmer,System.Int32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:DaLion.Enchantments.Framework.Enchantments.SunburstEnchantment._OnSwing(StardewValley.Tools.MeleeWeapon,StardewValley.Farmer)">
             <inheritdoc />
         </member>
         <member name="T:DaLion.Enchantments.Framework.Enchantments.VampiricEnchantment">
@@ -648,6 +662,13 @@
         <member name="M:DaLion.Enchantments.Framework.Patchers.MeleeWeaponGetAreaOfEffectPatcher.MeleeWeaponGetAreaOfEffectPrefix(StardewValley.Tools.MeleeWeapon,Microsoft.Xna.Framework.Rectangle@,System.Int32,System.Int32,System.Int32,Microsoft.Xna.Framework.Vector2@,Microsoft.Xna.Framework.Vector2@,Microsoft.Xna.Framework.Rectangle)">
             <summary>Fix stabby lunge hitbox.</summary>
         </member>
+        <member name="M:DaLion.Enchantments.Framework.Patchers.MummyTakeDamagePatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Enchantments.Framework.Patchers.MummyTakeDamagePatcher"/> class.</summary>
+            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
+        </member>
+        <member name="M:DaLion.Enchantments.Framework.Patchers.MummyTakeDamagePatcher.MummyTakeDamageTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase)">
+            <summary>Crusader effect for Sunburst enchantment.</summary>
+        </member>
         <member name="M:DaLion.Enchantments.Framework.Patchers.ProjectileDrawPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Enchantments.Framework.Patchers.ProjectileDrawPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
@@ -699,6 +720,20 @@
             <param name="firer">The <see cref="T:StardewValley.Farmer"/> who fired the shot.</param>
         </member>
         <member name="M:DaLion.Enchantments.Framework.Projectiles.RunaanProjectile.update(Microsoft.Xna.Framework.GameTime,StardewValley.GameLocation)">
+            <inheritdoc />
+        </member>
+        <member name="T:DaLion.Enchantments.Framework.Projectiles.SunburstProjectile">
+            <summary>A sunlight projectile fired by a <see cref="T:StardewValley.Tools.MeleeWeapon"/> which has the <see cref="T:DaLion.Enchantments.Framework.Enchantments.SunburstEnchantment"/>.</summary>
+        </member>
+        <member name="M:DaLion.Enchantments.Framework.Projectiles.SunburstProjectile.#ctor(StardewValley.Farmer,StardewValley.Tools.MeleeWeapon,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Enchantments.Framework.Projectiles.SunburstProjectile"/> class.</summary>
+            <param name="firer">The <see cref="T:StardewValley.Farmer"/> who fired this projectile.</param>
+            <param name="weapon">The <see cref="T:StardewValley.Tools.MeleeWeapon"/> from which this projectile was fired.</param>
+            <param name="origin">The projectile's starting position.</param>
+            <param name="velocity">The projectile's starting velocity.</param>
+            <param name="rotationVelocity">The projectile's starting rotational velocity.</param>
+        </member>
+        <member name="M:DaLion.Enchantments.Framework.Projectiles.SunburstProjectile.behaviorOnCollisionWithMonster(StardewValley.NPC,StardewValley.GameLocation)">
             <inheritdoc />
         </member>
         <member name="T:DaLion.Enchantments.Framework.SoundBox">
@@ -788,6 +823,9 @@
         </member>
         <member name="M:DaLion.Enchantments.I18n.Enchantments_Steadfast_Name">
             <summary>Get a translation equivalent to "Steadfast".</summary>
+        </member>
+        <member name="M:DaLion.Enchantments.I18n.Enchantments_Sunburst_Name">
+            <summary>Get a translation equivalent to "Sunburst".</summary>
         </member>
         <member name="M:DaLion.Enchantments.I18n.Enchantments_Vampiric_Name">
             <summary>Get a translation equivalent to "Vampiric".</summary>

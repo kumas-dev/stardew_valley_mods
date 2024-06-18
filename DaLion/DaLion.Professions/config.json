@@ -1,8 +1,8 @@
 {
   "Skills": {
-    "EnableSkillReset": false,
+    "EnableSkillReset": true,
     "SkillResetCostMultiplier": 1.0,
-    "ForgetRecipesOnSkillReset": true,
+    "ForgetRecipesOnSkillReset": false,
     "AllowMultipleResets": false,
     "SkillExpMultiplierPerReset": 1.25,
     "BaseMultipliers": {

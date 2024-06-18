@@ -6,8 +6,9 @@
   "enchantments.explosive.name": "폭파",
   "enchantments.explosive.desc": "폭발 반경: {{counter}}",
   "enchantments.mammonite.name": "탐욕", // alternates: "Greedy"
-  "enchantments.stabbing.name": "돌진", // alternates: "Fencing", "Lunging"
+  "enchantments.stabbing.name": "돌진", // alternates: "Fencing", "Lunging", "Stabbing"
   "enchantments.steadfast.name": "Steadfast",
+  "enchantments.sunburst.name": "불꽃",
   "enchantments.vampiric.name": "흡혈", // alternates: "Bloodthirsty"
   "enchantments.wabbajack.name": "광기",
   "enchantments.chilling.name": "냉각", // alternates: "Freljord"

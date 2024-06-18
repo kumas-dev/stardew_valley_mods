@@ -9,6 +9,7 @@ config.toml
 config.json
 !SkipFishingMinigameDotnet5/config.json
 !DaLion/**/config.json
+!MasteryExtended/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data

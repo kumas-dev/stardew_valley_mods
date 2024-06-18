@@ -1871,15 +1871,6 @@
             <param name="tile">The <see cref="T:Microsoft.Xna.Framework.Vector2"/> tile.</param>
             <param name="color">The desired color for the pointer.</param>
         </member>
-        <member name="T:DaLion.Professions.Framework.FakeFarmer">
-            <summary>A wrapper for fake <see cref="T:StardewValley.Farmer"/> instances used for faking typically farmer-only interactions.</summary>
-        </member>
-        <member name="M:DaLion.Professions.Framework.FakeFarmer.#ctor">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.FakeFarmer"/> class.</summary>
-        </member>
-        <member name="P:DaLion.Professions.Framework.FakeFarmer.IsEnemy">
-            <summary>Gets or sets a value indicating whether the <see cref="T:DaLion.Professions.Framework.FakeFarmer"/> is an enemy to be targeted.</summary>
-        </member>
         <member name="T:DaLion.Professions.Framework.Integrations.EnchantmentsIntegration">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Integrations.EnchantmentsIntegration"/> class.</summary>
         </member>
@@ -2048,15 +2039,19 @@
             <remarks>Will not affect professions or recipes.</remarks>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.CanReset">
-            <summary>Determines whether this skill can be reset for Masteries.</summary>
+            <summary>Determines whether this skill can be reset.</summary>
             <returns><see langword="true"/> if the local player meets all reset conditions, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="M:DaLion.Professions.Framework.ISkill.HasBeenReset">
+            <summary>Determines whether this skill has been reset at least once.</summary>
+            <returns><see langword="true"/> if the local player has reset this skill at least once, otherwise <see langword="false"/>.</returns>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.GetResetCost">
             <summary>Gets the cost of resetting this skill.</summary>
             <returns>A sum of gold to be paid.</returns>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.Reset">
-            <summary>Resets the skill for Masteries.</summary>
+            <summary>Resets the skill.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.ForgetRecipes">
             <summary>Removes all recipes associated with this skill from the local player.</summary>
@@ -2069,9 +2064,14 @@
             <summary>Determines whether this skill's level matches the expected level for the current experience, and if not fixes those levels.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.CanReset(DaLion.Professions.Framework.ISkill)">
-            <summary>Determines whether this skill can be reset.</summary>
+            <summary>Determines whether the <paramref name="skill"/> can be reset.</summary>
             <param name="skill">The <see cref="T:DaLion.Professions.Framework.ISkill"/>.</param>
             <returns><see langword="true"/> if the local player meets all reset conditions, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="M:DaLion.Professions.Framework.ISkill.HasBeenReset(DaLion.Professions.Framework.ISkill)">
+            <summary>Determines whether the <paramref name="skill"/> has been reset at least once.</summary>
+            <param name="skill">The <see cref="T:DaLion.Professions.Framework.ISkill"/>.</param>
+            <returns><see langword="true"/> if the <paramref name="skill"/> has been reset at least once, otherwise <see langword="false"/>.</returns>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.GetResetCost(DaLion.Professions.Framework.ISkill)">
             <summary>Gets the cost of resetting this skill.</summary>
@@ -2079,7 +2079,7 @@
             <returns>A sum of gold to be paid.</returns>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.CanResetAny">
-            <summary>Determines whether any skill at all can be reset for Masteries.</summary>
+            <summary>Determines whether any skill at all can be reset.</summary>
             <returns><see langword="true"/> if at least one vanilla or loaded custom skill can be reset, otherwise <see langword="false"/>.</returns>
         </member>
         <member name="M:DaLion.Professions.Framework.ISkill.RevalidateAll">
@@ -3345,6 +3345,13 @@
         <member name="M:DaLion.Professions.Framework.Patchers.Integration.UiInfoSuite.ExperienceBarGetExperienceRequiredToLevelPatcher.ExperienceBarGetExperienceRequiredToLevelPrefix(System.Int32@,System.Int32)">
             <summary>Patch to reflect adjusted base experience + extended progression experience.</summary>
         </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.LevelUpMenuAddMissedProfessionChoicesPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.LevelUpMenuAddMissedProfessionChoicesPatcher"/> class.</summary>
+            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
+        </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.LevelUpMenuAddMissedProfessionChoicesPatcher.LevelUpMenuAddProfessionDescriptionsPrefix(StardewValley.Farmer)">
+            <summary>Debug issues with repeated level ups.</summary>
+        </member>
         <member name="M:DaLion.Professions.Framework.Patchers.LevelUpMenuAddProfessionDescriptionsPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.LevelUpMenuAddProfessionDescriptionsPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
@@ -3591,24 +3598,24 @@
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuCtorPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
         </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuCtorPatcher.LevelUpMenuCtorTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase)">
+        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuCtorPatcher.SkillLevelUpMenuCtorTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Patch to prevent duplicate profession acquisition + display end of level up dialogues.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuDrawPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuDrawPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
         </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuDrawPatcher.LevelUpMenuDrawPrefix(SpaceCore.Interface.SkillLevelUpMenu,System.Int32,System.String,System.String,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.String},System.Collections.Generic.List{StardewValley.TemporaryAnimatedSprite},Microsoft.Xna.Framework.Color,System.Int32,SpaceCore.Skills.Skill.ProfessionPair,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuDrawPatcher.SkillLevelUpMenuDrawPrefix(SpaceCore.Interface.SkillLevelUpMenu,System.Int32,System.String,System.String,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.String},System.Collections.Generic.List{StardewValley.TemporaryAnimatedSprite},Microsoft.Xna.Framework.Color,System.Int32,SpaceCore.Skills.Skill.ProfessionPair,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
             <summary>Patch to increase the height of Level Up Menu to fit longer profession descriptions.</summary>
         </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuDrawPatcher.LevelUpMenuDrawTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
+        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuDrawPatcher.SkillLevelUpMenuDrawTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Patch to draw acquired profession tooltips during profession selection.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuUpdatePatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuUpdatePatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
         </member>
-        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuUpdatePatcher.LevelUpMenuUpdatePrefix(SpaceCore.Interface.SkillLevelUpMenu,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{StardewValley.TemporaryAnimatedSprite},System.Collections.Generic.List{StardewValley.CraftingRecipe},System.Int32,System.String,System.Boolean@,System.Boolean@,System.Int32@,System.String@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{System.String}@,Microsoft.Xna.Framework.Input.MouseState@,SpaceCore.Skills.Skill.ProfessionPair@,Microsoft.Xna.Framework.GameTime)">
+        <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuUpdatePatcher.SkillLevelUpMenuUpdatePrefix(SpaceCore.Interface.SkillLevelUpMenu,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{StardewValley.TemporaryAnimatedSprite},System.Collections.Generic.List{StardewValley.CraftingRecipe},System.Int32,System.String,System.Boolean@,System.Boolean@,System.Int32@,System.String@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{System.String}@,Microsoft.Xna.Framework.Input.MouseState@,SpaceCore.Skills.Skill.ProfessionPair@,Microsoft.Xna.Framework.GameTime)">
             <summary>Patch to idiot-proof the level-up menu. </summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Prestige.Integration.SkillLevelUpMenuUpdatePatcher.SkillLevelUpMenuUpdateTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator,System.Reflection.MethodBase)">
