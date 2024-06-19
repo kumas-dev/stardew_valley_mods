@@ -512,5 +512,6 @@
 	"WholeGrainFlour_name": "Whole-Grain Flour",
 	"WholeGrainFlour_description": "A cooking ingredient made from whole kernels of grain.",
 	"OilmakerInvalidCount_Olives": "Requires 4 Olives",
-	"CheesePressInvalidCount_Soybeans": "Requires 2 Soybeans"
+	"CheesePressInvalidCount_Soybeans": "Requires 2 Soybeans",
+	"LoomInvalidCount_CottonBoll": "Requires 3 Cotton Bolls"
 }
