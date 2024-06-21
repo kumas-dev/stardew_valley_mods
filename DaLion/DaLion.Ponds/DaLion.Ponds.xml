@@ -73,6 +73,12 @@
             <param name="pond">The <see cref="T:StardewValley.Buildings.FishPond"/>.</param>
             <returns><see langword="true"/> if the <paramref name="pond"/> houses a mutant or radioactive fish species, otherwise <see langword="false"/>.</returns>
         </member>
+        <member name="M:DaLion.Ponds.Framework.Extensions.FishPondExtensions.GetProduce(StardewValley.Buildings.FishPond,System.Random)">
+            <summary>Performs object production.</summary>
+            <param name="pond">The <see cref="T:StardewValley.Buildings.FishPond"/>.</param>
+            <param name="r">Optional <see cref="T:System.Random"/> number generator.</param>
+            <returns>The most valuable produce <see cref="T:StardewValley.Item"/>, if any.</returns>
+        </member>
         <member name="M:DaLion.Ponds.Framework.Extensions.FishPondExtensions.GetEnrichmentTime(StardewValley.Buildings.FishPond,StardewValley.Object)">
             <summary>Gets the number of days required to enrich a given <paramref name="metal"/> resource.</summary>
             <param name="pond">The <see cref="T:StardewValley.Buildings.FishPond"/>.</param>
@@ -180,17 +186,11 @@
             <summary>Initializes a new instance of the <see cref="T:DaLion.Ponds.Framework.Patchers.FishPondDayUpdatePatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
         </member>
-        <member name="M:DaLion.Ponds.Framework.Patchers.FishPondDayUpdatePatcher.FishPondDayUpdatePrefix(StardewValley.Buildings.FishPond)">
+        <member name="M:DaLion.Ponds.Framework.Patchers.FishPondDayUpdatePatcher.FishPondDayUpdatePrefix(StardewValley.Buildings.FishPond,StardewValley.Item@)">
             <summary>Reset held items each morning.</summary>
         </member>
-        <member name="M:DaLion.Ponds.Framework.Patchers.FishPondDayUpdatePatcher.FishPondDayUpdatePostfix(StardewValley.Buildings.FishPond,StardewValley.GameData.FishPonds.FishPondData@)">
+        <member name="M:DaLion.Ponds.Framework.Patchers.FishPondDayUpdatePatcher.FishPondDayUpdatePostfix(StardewValley.Buildings.FishPond,StardewValley.Item,StardewValley.GameData.FishPonds.FishPondData@)">
             <summary>Spontaneously grow algae.</summary>
-        </member>
-        <member name="M:DaLion.Ponds.Framework.Patchers.FishPondDayUpdatePatcher.FishPondDayUpdateTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
-            <summary>
-                Removes population-based roll from <see cref="M:StardewValley.Buildings.FishPond.dayUpdate(System.Int32)"/> (moved to
-                <see cref="M:StardewValley.Buildings.FishPond.GetFishProduce(System.Random)"/>).
-            </summary>
         </member>
         <member name="M:DaLion.Ponds.Framework.Patchers.FishPondDoActionPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Ponds.Framework.Patchers.FishPondDoActionPatcher"/> class.</summary>
@@ -208,13 +208,6 @@
         </member>
         <member name="M:DaLion.Ponds.Framework.Patchers.FishPondDoFishSpecificWaterColoringPatcher.FishPondDoFishSpecificWaterColoringPostfix(StardewValley.Buildings.FishPond)">
             <summary>Recolor for algae/seaweed.</summary>
-        </member>
-        <member name="M:DaLion.Ponds.Framework.Patchers.FishPondGetFishProducePatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
-            <summary>Initializes a new instance of the <see cref="T:DaLion.Ponds.Framework.Patchers.FishPondGetFishProducePatcher"/> class.</summary>
-            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
-        </member>
-        <member name="M:DaLion.Ponds.Framework.Patchers.FishPondGetFishProducePatcher.FishPondGetFishProducePrefix(StardewValley.Buildings.FishPond,StardewValley.Item@,System.Random)">
-            <summary>Replace single production with multi-yield production.</summary>
         </member>
         <member name="M:DaLion.Ponds.Framework.Patchers.FishPondJumpFishPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Ponds.Framework.Patchers.FishPondJumpFishPatcher"/> class.</summary>
@@ -243,6 +236,10 @@
         </member>
         <member name="M:DaLion.Ponds.Framework.Patchers.FishPondUpdateMaximumOccupancyPatcher.FishPondUpdateMaximumOccupancyPostfix(StardewValley.Buildings.FishPond,System.Int32)">
             <summary>Fix for Professions compatibility.</summary>
+        </member>
+        <member name="M:DaLion.Ponds.Framework.Patchers.InventoryMenuHoverPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
+            <summary>Initializes a new instance of the <see cref="T:DaLion.Ponds.Framework.Patchers.InventoryMenuHoverPatcher"/> class.</summary>
+            <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
         </member>
         <member name="M:DaLion.Ponds.Framework.Patchers.ItemGrabMenuCtorPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Ponds.Framework.Patchers.ItemGrabMenuCtorPatcher"/> class.</summary>
