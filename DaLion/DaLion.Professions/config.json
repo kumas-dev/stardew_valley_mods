@@ -1,6 +1,6 @@
 {
   "Skills": {
-    "EnableSkillReset": true,
+    "EnableSkillReset": false,
     "SkillResetCostMultiplier": 1.0,
     "ForgetRecipesOnSkillReset": false,
     "AllowMultipleResets": false,
@@ -22,7 +22,7 @@
     "LimitDrainFactor": 1.0,
     "LimitRespecCost": 0,
     "LimitGaugeOffset": "0, 0",
-    "EnablePrestigeLevels": true,
+    "EnablePrestigeLevels": false,
     "ExpPerPrestigeLevel": 5000,
     "PrestigeRespecCost": 20000,
     "PrestigeProfessionIconStyle": "MetallicGold",
