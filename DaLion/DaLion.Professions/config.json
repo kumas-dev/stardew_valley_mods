@@ -44,7 +44,7 @@
     "(BC)Cornucopia_WaxBarrel",
     "(BC)Cornucopia_YogurtJar"
   ],
-  "EnableGoldenOstrichMayo": true,
+  "EnableGoldenOstrichMayo": false,
   "ImmersiveDairyYield": true,
   "AnimalDerivedGoods": [
     "(O)ExampleMod.ExampleProduce"

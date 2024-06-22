@@ -4,5 +4,5 @@
   "IsRemoveAutoHook": false,
   "IsIgnoreTreasureChests": false,
   "MinimumCatchesRequired": 0,
-  "PerfectCatchChance": 80
+  "PerfectCatchChance": 30
 }
