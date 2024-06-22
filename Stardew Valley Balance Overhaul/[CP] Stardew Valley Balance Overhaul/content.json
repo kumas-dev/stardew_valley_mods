@@ -231,10 +231,11 @@
 				"307": {"Price": "460"}, //Duck Mayonnaise
 				"428": {"Price": "700"}, //Cloth
 				"807": {"Price": "2000"}, //Dinosaur Mayonnaise
-				"6480.blueegg_GoldenMayo": {"Price": "440"}, //Golden Mayonnaise
+				"6480.blueegg_GoldenMayo": {"Price": "660"}, //Golden Mayonnaise
 				"424": {"Price": "165"}, //Cheese
 				"426": {"Price": "330"}, //Goat Cheese
 				"432": {"Price": "415"}, //Truffle Oil
+				"6480.blueegg_OstrichMayo": {"Price": "2100"}, //OstrichMayo Mayonnaise
 			},
 			"When": {"Animals": true}
 		},
@@ -1324,6 +1325,7 @@
 				"812": {"Category": "-4", "ExcludeFromFishingCollection": true}, //Roe
 				"447": {"Category": "-4", "ExcludeFromFishingCollection": true}, //Aged Roe
 				"445": {"Category": "-4", "ExcludeFromFishingCollection": true}, //Caviar
+				"6480.blueegg_OstrichMayo": {"Category": "-18"}, //OstrichMayo
 			},
 			"When": {"Item Categories": true}
 		},
@@ -2385,6 +2387,13 @@
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)24", "OutputRules", "6480.blueegg_GoldenEgg", "OutputItem", "#0"], //Mayonnaise Machine - Golden Eggs
+			"Entries": {"Quality": "0", "StackModifiers": [{"Id": "DoubleQuality","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "2","RandomAmount": null}]},
+			"When": {"Artisan Goods Gain Quantity": true}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)24", "OutputRules", "6480.blueegg_OstrichEgg", "OutputItem", "#0"], //Mayonnaise Machine - Golden Eggs
 			"Entries": {"Quality": "0", "StackModifiers": [{"Id": "DoubleQuality","Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"","Modification": "Multiply","Amount": "2","RandomAmount": null}]},
 			"When": {"Artisan Goods Gain Quantity": true}
 		},

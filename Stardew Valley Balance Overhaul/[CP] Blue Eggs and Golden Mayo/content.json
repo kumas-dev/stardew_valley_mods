@@ -1,5 +1,22 @@
 {
 	"Format": "2.0",
+	"ConfigSchema": {
+		"Blue Mayo": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows processing blue eggs into blue mayo. When false, blue eggs make normal mayo."
+		},
+		"Golden Mayo": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows processing golden eggs into golden mayo."
+		},
+		"Ostrich Mayo": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows processing ostrich eggs into ostrich mayo."
+		}
+	},
 	"Changes": [
 		{
 			"LogName": "Load textures",
@@ -50,7 +67,17 @@
 						"egg_item",
 						"color_blue"
 					]
-				},
+				}
+			}
+		},
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Blue Mayo": true
+			},
+			"Entries": {
 				"6480.blueegg_BlueMayo": {
 					"Name": "6480.blueegg_BlueMayo",
 					"Type": "Basic",
@@ -66,7 +93,17 @@
 						"color_blue",
 						"mayo_item"
 					]
-				},
+				}
+			}
+		},
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Golden Mayo": true
+			},
+			"Entries": {
 				"6480.blueegg_GoldenMayo": {
 					"Name": "6480.blueegg_GoldenMayo",
 					"Type": "Basic",
@@ -87,9 +124,38 @@
 			}
 		},
 		{
-			"LogName": "Modify mayonnaise machine rules",
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Ostrich Mayo": true
+			},
+			"Entries": {
+				"6480.blueegg_OstrichMayo": {
+					"Name": "6480.blueegg_OstrichMayo",
+					"Type": "Basic",
+					"Category": -26,
+					"SpriteIndex": 3,
+					"DisplayName": "{{i18n:OstrichMayo_Name}}",
+					"Description": "{{i18n:OstrichMayo_description}}",
+					"Texture": "6480.blueegg/Objects",
+					"Price": 1900,
+					"Edibility": 100,
+					"IsDrink": true,
+					"ContextTags": [
+						"color_pink",
+						"mayo_item"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Modify mayonnaise machine rules (Blue Mayo)",
 			"Action": "EditData",
 			"Target": "Data/Machines",
+			"When": {
+				"Blue Mayo": true
+			},
 			"TargetField": [
 				"(BC)24",
 				"OutputRules"
@@ -111,7 +177,27 @@
 						}
 					],
 					"MinutesUntilReady": 180
-				},
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "6480.blueegg_BlueEgg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify mayonnaise machine rules (Golden Mayo)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Golden Mayo": true
+			},
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
 				"6480.blueegg_GoldenEgg": {
 					"Id": "6480.blueegg_GoldenEgg",
 					"Triggers": [
@@ -132,12 +218,46 @@
 			},
 			"MoveEntries": [
 				{
-					"Id": "6480.blueegg_BlueEgg",
-					"BeforeId": "Default_Egg"
-				},
-				{
 					"Id": "6480.blueegg_GoldenEgg",
-					"BeforeId": "Default_GoldenEgg"
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify mayonnaise machine rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Ostrich Mayo": true
+			},
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"6480.blueegg_OstrichEgg": {
+					"Id": "6480.blueegg_OstrichEgg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)289",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)6480.blueegg_OstrichMayo",
+							"ItemId": "(O)6480.blueegg_OstrichMayo",
+							"CopyQuality": true,
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "6480.blueegg_OstrichEgg",
+					"ToPosition": "Top"
 				}
 			]
 		}
