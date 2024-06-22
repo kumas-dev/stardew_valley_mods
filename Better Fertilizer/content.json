@@ -1,0 +1,12 @@
+{
+   "Format": "1.18.0",
+   "Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/cursors.png",
+			"FromArea": { "X": 173, "Y": 462, "Width": 46, "Height": 46 },
+			"ToArea": { "X": 173, "Y": 462, "Width": 46, "Height": 46 }
+		}
+   ]
+}
