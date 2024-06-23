@@ -23,7 +23,7 @@
     "LimitRespecCost": 0,
     "LimitGaugeOffset": "0, 0",
     "EnablePrestigeLevels": false,
-    "ExpPerPrestigeLevel": 5000,
+    "ExpPerPrestigeLevel": 100000000,
     "PrestigeRespecCost": 20000,
     "PrestigeProfessionIconStyle": "MetallicGold",
     "MasteredSkillIconStyle": "SiliconGold"
