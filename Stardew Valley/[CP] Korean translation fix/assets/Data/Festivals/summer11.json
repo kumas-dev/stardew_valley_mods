@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "When": {
+        "Language": "ko"
+      },
+      "entries": {
+        "governorReaction6": "pause 1000/playMusic ocean/speak Governor \"음... 조금 톡 쏘는 맛이 있는데 맛은 꽤 좋네요!\"/pause 600/emote Governor 8/speak Governor \"잠시만요... 수프 안에 뭔가 특이한 게 들어있네요... 이게 뭘까요?$2\"/pause 500/showFrame Governor 14/playSound slimeHit/jump Governor/pause 500/showFrame Lewis 24/jump Lewis/textAboveHead Lewis \"와앗?!\"/showFrame Emily 26/pause 1000/showFrame Marnie 16/jump Marnie/textAboveHead Marnie \"*헐떡거림*\"/pause 1000/shake Governor 2000/emote Governor 12/pause 500/showFrame Emily 4/showFrame Marnie 8/speak Governor \"이건... 이건 말도 안 돼요!$1#$b#내 평생 이렇게 모욕당한 적은 처음이에요!$1\"/pause 600/showFrame Governor 13/playSound throw/specificTemporarySprite luauShorts/pause 500/jump Lewis/pause 1000/speak Governor \"으웩... 혀가 부어오르는데... 토할 것 같아요.$u\"/pause 400/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/playSound slimedead/faceDirection Lewis 2/viewport Lewis clamp true/pause 1000/speak Lewis \"이 끔찍한 행위에 가담한 사람은 누구나 비난 받을 만해요. 제 아주 사적인 물건을 이런 목적에 사용하다니!$4#$b#그리고 완벽하게 좋은 수프를 망치기 위해... 용서할 수 없어요! 이 공동체가 이보다 더 부끄러워진 적이 없어요... 정말 역겹습니다.$4\"/pause 500/faceDirection Lewis 0/emote Lewis 12/speak Lewis \"집에 가세요, 축제는 끝났습니다.$s\"/pause 500/globalFade/viewport -1000 -1000/message \"'짓궂은 장난'이 잘 먹히지 않았나 보네요...\"/pause 500/message \"집에 갈 시간이다.\"/waitForOtherPlayers festivalEnd/end",
+      },
+    }
+  ]
+}

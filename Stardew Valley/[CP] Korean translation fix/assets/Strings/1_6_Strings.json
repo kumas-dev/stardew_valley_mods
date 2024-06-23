@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/1_6_Strings",
+      "When": {
+        "Language": "ko"
+      },
+      "entries": {
+        "ForestPylonEvent": "communityCenter/-2000 -2000/farmer 16 5 0 Wizard -1000 -1000 2/pause 1000/viewport 16 5 true/move farmer -2 0 1/pause 4000/playSound terraria_warp/specificTemporarySprite terraria_warp_begin/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/faceDirection farmer 1/pause 3600/playSound coin/pause 100/awardFestivalPrize meowmere/pause 1000/specificTemporarySprite terraria_cat_leave/pause 5000/emote farmer 8/pause 500/warp Wizard 4 4/playSound doorClose/pause 400/faceDirection Wizard 1/emote Wizard 12/speak Wizard \"손대지 마!\"/faceDirection farmer 3/emote farmer 16 true/end",
+      }
+    }
+  ]
+}

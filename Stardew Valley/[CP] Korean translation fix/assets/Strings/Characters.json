@@ -1,0 +1,27 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/Characters",
+      "When": {
+        "Language": "ko"
+      },
+      "entries": {
+        "JunimoTextAboveHead1": "주니모!",
+        "JunimoTextAboveHead2": "별!",
+        "MovieInvite_Spouse_Abigail": "영화? 물론 좋지! 극장에서 만나자. $h#$e#재미있는 영화였으면 좋겠다.",
+        "MovieInvite_Spouse_Penny": "영화 티켓이요? 네, 가고 싶어요! 극장에서 만나요, 여보.$h",
+        "MovieInvite_Spouse_Haley": "어... 밤 데이트, 어? 나 좀 씻고 나서, 극장에서 만나자.$h",
+        "MovieInvite_Spouse_Emily": "아, 영화 티켓! 하루 종일 영화 생각만 하고 있었는데. 내 마음을 읽었나 봐! h#$e# 극장에서 보자.",
+        "MovieInvite_Spouse_Leah": "아, 영화? 물론 재미있겠다.. 다시 연애하는 것 같아, 헤헤. $h#$e#극장에서 만나자.",
+        "MovieInvite_Spouse_Maru": "오!  밤 데이트를 계획했다고? $h#$b#가고 싶어! 극장에서 보자.$h",
+        "MovieInvite_Spouse_Alex": "야, 재밌을 것 같아! 이거 보고 싶었는데... 같이 보고 싶다! #$b#극장에서 만나자.",
+        "MovieInvite_Spouse_Sam": "좋아! 티켓 구했어? 최고! 극장에서 기다릴게.$h",
+        "MovieInvite_Spouse_Sebastian": "아, 영화 보러 가고 싶어? 좋아. 거기서 만나자.$h",
+        "MovieInvite_Spouse_Shane": "오, 영화 보고 싶구나? 간식 사준다면, 헤헤...$h#$e#거기서 만나자.",
+        "MovieInvite_Spouse_Elliott": "그래, 자기야, 나도 자기랑 영화 보고 싶어! 극장에서 만나자.",
+        "MovieInvite_Spouse_Harvey": "영화 티켓이요? 음... 네, 같이 가고 싶어요! $h#$e#, 결혼 생활이 지루해 지지 않으려면, 이런 일들을 하는 것은 좋아요 !",
+      },
+    }
+  ]
+}

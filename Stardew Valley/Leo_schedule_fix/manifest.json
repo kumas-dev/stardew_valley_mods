@@ -1,0 +1,11 @@
+{
+   "Name": "Leo schedule fix",
+   "Author": "Faure",
+   "Description": "Leo schedule fix",
+   "Version": "1.0.0",
+   "UniqueID": "Faure.Leoschedulefix",
+   "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    },
+   "UpdateKeys": [ "" ],
+}
