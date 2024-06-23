@@ -130,7 +130,7 @@
 					"Delimiter": " "
 				}
 			]
-		}
+		},
 		{
 			"LogName": "Add new items",
 			"Action": "EditData",
@@ -283,7 +283,7 @@
 						{
 							"Id": "(O)6480.blueegg_OstrichMayo",
 							"ItemId": "(O)6480.blueegg_OstrichMayo",
-							"CopyQuality": true,
+							"CopyQuality": true
 						}
 					],
 					"MinutesUntilReady": 180
