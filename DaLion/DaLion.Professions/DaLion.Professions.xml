@@ -360,17 +360,6 @@
         <member name="P:DaLion.Professions.Framework.CustomSkill.ProfessionPairByRoot">
             <inheritdoc />
         </member>
-        <member name="P:DaLion.Professions.Framework.CustomSkill.Loaded">
-            <summary>Gets the currently loaded <see cref="T:DaLion.Professions.Framework.CustomSkill"/>s.</summary>
-        </member>
-        <member name="M:DaLion.Professions.Framework.CustomSkill.Initialize(System.String)">
-            <summary>Initializes the custom SpaceCore skill with specified <see cref="T:System.String"/> <paramref name="id"/>.</summary>
-            <param name="id">The <see cref="T:System.String"/> ID of the custom SpaceCore skill.</param>
-        </member>
-        <member name="M:DaLion.Professions.Framework.CustomSkill.Initialize(SpaceCore.Skills.Skill)">
-            <summary>Initializes the custom SpaceCore skill from the <see cref="T:SpaceCore.Skills.Skill"/> instance of the custom SpaceCore skill.</summary>
-            <param name="scSkill">The <see cref="T:SpaceCore.Skills.Skill"/> instance the custom SpaceCore skill.</param>
-        </member>
         <member name="M:DaLion.Professions.Framework.CustomSkill.GetFromSpaceCore(SpaceCore.Skills.Skill)">
             <summary>Gets the <see cref="T:DaLion.Professions.Framework.CustomSkill"/> equivalent to the specified <see cref="T:SpaceCore.Skills.Skill"/>.</summary>
             <param name="scSkill">The <see cref="T:SpaceCore.Skills.Skill"/>.</param>
@@ -401,6 +390,17 @@
             <summary>Gets the <see cref="T:SpaceCore.Skills.Skill"/> equivalent to this <see cref="T:DaLion.Professions.Framework.CustomSkill"/>.</summary>
             <returns>The equivalent <see cref="T:SpaceCore.Skills.Skill"/>.</returns>
         </member>
+        <member name="P:DaLion.Professions.Framework.CustomSkill.Loaded">
+            <summary>Gets the currently loaded <see cref="T:DaLion.Professions.Framework.CustomSkill"/>s.</summary>
+        </member>
+        <member name="M:DaLion.Professions.Framework.CustomSkill.Initialize(System.String)">
+            <summary>Initializes the custom SpaceCore skill with specified <see cref="T:System.String"/> <paramref name="id"/>.</summary>
+            <param name="id">The <see cref="T:System.String"/> ID of the custom SpaceCore skill.</param>
+        </member>
+        <member name="M:DaLion.Professions.Framework.CustomSkill.Initialize(SpaceCore.Skills.Skill)">
+            <summary>Initializes the custom SpaceCore skill from the <see cref="T:SpaceCore.Skills.Skill"/> instance of the custom SpaceCore skill.</summary>
+            <param name="scSkill">The <see cref="T:SpaceCore.Skills.Skill"/> instance the custom SpaceCore skill.</param>
+        </member>
         <member name="T:DaLion.Professions.Framework.Events.Content.ProfessionAssetRequestedEvent">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Events.Content.ProfessionAssetRequestedEvent"/> class.</summary>
             <param name="manager">The <see cref="T:DaLion.Shared.Events.EventManager"/> instance that manages this event.</param>
@@ -416,7 +416,7 @@
             <summary>Patches achievements data with prestige achievements.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Events.Content.ProfessionAssetRequestedEvent.EditBigCraftablesData(StardewModdingAPI.IAssetData)">
-            <summary>Patches new mayo objects.</summary>
+            <summary>Removes Heavy Tapper multiplier.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Events.Content.ProfessionAssetRequestedEvent.EditBuffsIconsTileSheets(StardewModdingAPI.IAssetData)">
             <summary>Patches buffs icons with modded profession buff icons.</summary>
@@ -1888,7 +1888,7 @@
             <param name="yVelocity">The projectile's starting velocity in the vertical direction.</param>
             <param name="rotationVelocity">The projectile's starting rotational velocity.</param>
             <param name="scale">The projectile's starting scale.</param>
-            <returns>The amount of income tax due in gold, along with total income, business expenses, eligible deductions and total taxable amount (in that order).</returns>
+            <returns>A new instance of a Quincy projectile.</returns>
         </member>
         <member name="T:DaLion.Professions.Framework.Integrations.ItemExtensionsIntegration">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Integrations.ItemExtensionsIntegration"/> class.</summary>
@@ -1911,10 +1911,11 @@
         </member>
         <member name="M:DaLion.Professions.Framework.Integrations.SpaceCoreIntegration.GetNewLevels">
             <summary>Gets SpaceCore's internal list of unrealized new levels.</summary>
-            <returns>A <see cref="T:System.Collections.Generic.List`1"/> of <see cref="T:System.Collections.Generic.KeyValuePair"/>s with <see cref="T:SpaceCore.Skills.Skill"/> ID <see cref="T:System.String"/> keys and <see cref="T:System.Int32"/> level values.</returns>
+            <returns>A <see cref="T:System.Collections.Generic.List`1"/> of <see cref="T:System.Collections.Generic.KeyValuePair`2"/>s with <see cref="T:SpaceCore.Skills.Skill"/> ID <see cref="T:System.String"/> keys and <see cref="T:System.Int32"/> level values.</returns>
         </member>
         <member name="M:DaLion.Professions.Framework.Integrations.SpaceCoreIntegration.SetNewLevels(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}})">
             <summary>Sets SpaceCore's internal list of unrealized new levels.</summary>
+            <param name="newLevels">A <see cref="T:System.Collections.Generic.KeyValuePair`2"/> of <see cref="T:System.String"/> skill ID keys and corresponding <see cref="T:System.Int32"/> new level.</param>
         </member>
         <member name="M:DaLion.Professions.Framework.Integrations.SpaceCoreIntegration.RegisterImpl">
             <inheritdoc />
@@ -3081,6 +3082,9 @@
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher.#ctor(DaLion.Shared.Harmony.Harmonizer)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher"/> class.</summary>
             <param name="harmonizer">The <see cref="T:DaLion.Shared.Harmony.Harmonizer"/> instance that manages this patcher.</param>
+        </member>
+        <member name="M:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher.FishingRodDoDoneFishingPostfix(StardewValley.Tools.FishingRod,System.Boolean)">
+            <summary>Patch to consume Angler tackle uses.</summary>
         </member>
         <member name="M:DaLion.Professions.Framework.Patchers.Fishing.FishingRodDoDoneFishingPatcher.FishingRodDoDoneFishingTranspiler(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.MethodBase)">
             <summary>Patch to record Angler tackle uses.</summary>
@@ -4263,6 +4267,8 @@
         </member>
         <member name="M:DaLion.Professions.Framework.UI.MasteryWarningBox.#ctor(StardewValley.GameLocation,StardewValley.Menus.MasteryTrackerMenu)">
             <summary>Initializes a new instance of the <see cref="T:DaLion.Professions.Framework.UI.MasteryWarningBox"/> class.</summary>
+            <param name="location">The <see cref="T:StardewValley.GameLocation"/>.</param>
+            <param name="masteryTrackerMenu">The <see cref="T:StardewValley.Menus.MasteryTrackerMenu"/>.</param>
         </member>
         <member name="M:DaLion.Professions.Framework.UI.MasteryWarningBox.draw(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
             <inheritdoc />
@@ -4559,9 +4565,9 @@
             <returns>A percentage between 0 and 1.</returns>
         </member>
         <member name="M:DaLion.Professions.IProfessionsApi.IsHuntActive(StardewValley.Farmer)">
-            <inheritdoc cref="P:DaLion.Professions.Framework.TreasureHunts.ITreasureHunt.IsActive"/>
+            <summary>Checks whether any <see cref="T:DaLion.Professions.Framework.TreasureHunts.ITreasureHunt"/> instance is currently active for the <paramref name="farmer"/>.</summary>
             <param name="farmer">The <see cref="T:StardewValley.Farmer"/>.</param>
-            <returns><see langword="true"/> if the specified <see cref="T:DaLion.Professions.Framework.TreasureHunts.ITreasureHunt"/> <paramref name="type"/> is currently active, otherwise <see langword="false"/>.</returns>
+            <returns><see langword="true"/> if the <paramref name="farmer"/> is currently searching for either Prospector or Scavenger treasure, otherwise <see langword="false"/>.</returns>
         </member>
         <member name="M:DaLion.Professions.IProfessionsApi.RegisterTreasureHuntStartedEvent(System.Action{System.Object,DaLion.Professions.Framework.TreasureHunts.Events.ITreasureHuntStartedEventArgs})">
             <summary>Registers a new instance of an event raised when a <see cref="T:DaLion.Professions.Framework.TreasureHunts.ITreasureHunt"/> begins.</summary>
@@ -5183,7 +5189,7 @@
             <summary>Get a translation equivalent to "Rodmancer".</summary>
         </member>
         <member name="M:DaLion.Professions.I18n.Angler_Desc">
-            <summary>Get a translation equivalent to "Fish are 0.5% more valuable for every unique max-sized species caught. Fully-expending a tackle causes it's effects to linger on the fishing rod.".</summary>
+            <summary>Get a translation equivalent to "Fish are 1% more valuable for every unique max-sized species caught. Fully-expending a tackle causes it's effects to linger on the fishing rod.".</summary>
         </member>
         <member name="M:DaLion.Professions.I18n.Angler_Desc_Prestiged">
             <summary>Get a translation equivalent to "Up to two tackle effects can linger on the fishing rod. Can re-encounter legendary fish.".</summary>
@@ -5630,7 +5636,7 @@
             <summary>Get a translation equivalent to "Allow Scavenger Hunts on Farm".</summary>
         </member>
         <member name="M:DaLion.Professions.I18n.Gmcm_AllowScavengerHuntsOnFarm_Desc">
-            <summary>Get a translation equivalent to "Whether a Scavenger Hunt can trigger while entering the farm map.".</summary>
+            <summary>Get a translation equivalent to "Whether a Scavenger Hunt can trigger while on the farm map.".</summary>
         </member>
         <member name="M:DaLion.Professions.I18n.Gmcm_ScavengerDetectionDistance_Title">
             <summary>Get a translation equivalent to "Scavenger Detection Distance".</summary>
@@ -5828,7 +5834,7 @@
             <summary>Get a translation equivalent to "Limit Activation Delay".</summary>
         </member>
         <member name="M:DaLion.Professions.I18n.Gmcm_HoldDelayMilliseconds_Desc">
-            <summary>Get a translation equivalent to "How long the key should be held before the Limit Break is activated, in seconds.".</summary>
+            <summary>Get a translation equivalent to "How long the key should be held before the Limit Break is activated, in milliseconds.".</summary>
         </member>
         <member name="M:DaLion.Professions.I18n.Gmcm_LimitGainFactor_Title">
             <summary>Get a translation equivalent to "Gain Factor".</summary>

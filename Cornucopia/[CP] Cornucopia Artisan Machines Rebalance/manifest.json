@@ -1,7 +1,7 @@
 {
 	"Name": "Cornucopia Artisan Machines Rebalance",
 	"Author": "Minothilos",
-	"Version": "1.0.0",
+	"Version": "1.0.1",
 	"Description": "Changes sell prices of Cornucopia Artisan Machines items to match Balance Overhaul.",
 	"UniqueID": "minothilos.CornucopiaArtisanMachinesRebalance",
 	"MinimumGameVersion": "1.6.4",

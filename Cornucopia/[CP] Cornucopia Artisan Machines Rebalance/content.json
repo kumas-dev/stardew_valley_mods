@@ -3,7 +3,7 @@
   "ConfigSchema": {
     "Large Animal Products make 2": {
       "AllowValues": "false, true",
-      "Default": "true",
+      "Default": "false",
       "Section": "Balance Changes" },
     "Quick Snack Cheese": {
       "AllowValues": "false, true",
@@ -203,20 +203,19 @@
       "Entries": { "InvalidCountMessage": "{{i18n: MayonnaiseMachineInvalidCount_Garlic}}" },
       "When": { "Large Animal Products make 2": true }
     },
-    // Garlic Mayo brown egg double output
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeBrownEgg", "CustomData" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeEgg", "CustomData" ],
       "Entries": {
-        "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -225,50 +224,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true }
-    },
-    // Garlic Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_GarlicMayonnaise", "OutputItem", "Cornucopia_GarlicMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -297,19 +262,19 @@
       "Entries": { "InvalidCountMessage": "{{i18n: MayonnaiseMachineInvalidCount_Spicy}}" },
       "When": { "Large Animal Products make 2": true }
     },
-    // Spicy Mayo brown egg double output
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -318,50 +283,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true }
-    },
-    // Spicy Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_SpicyMayonnaise", "OutputItem", "Cornucopia_SpicyMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -390,19 +321,19 @@
       "Entries": { "InvalidCountMessage": "{{i18n: MayonnaiseMachineInvalidCount_Truffle}}" },
       "When": { "Large Animal Products make 2": true }
     },
-    // Truffle Mayo brown egg double output
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -411,50 +342,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true }
-    },
-    // Truffle Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_TruffleMayonnaise", "OutputItem", "Cornucopia_TruffleMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -483,19 +380,19 @@
       "Entries": { "InvalidCountMessage": "{{i18n: MayonnaiseMachineInvalidCount_Avocado}}" },
       "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
     },
-    // Avocado Mayo brown egg double output
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -504,50 +401,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    // Avocado Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_AvocadoMayonnaise", "OutputItem", "Cornucopia_AvocadoMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -580,15 +443,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -597,50 +461,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    // BlackPepper Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_BlackPepperMayonnaise", "OutputItem", "Cornucopia_BlackPepperMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -673,15 +503,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -690,50 +521,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    // OliveOil Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasMod|contains=Cornucopia.MoreCrops": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_OliveOilMayonnaise", "OutputItem", "Cornucopia_OliveOilMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -766,15 +563,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -783,50 +581,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true }
-    },
-    // Wasabi Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_WasabiMayonnaise", "OutputItem", "Cornucopia_WasabiMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -859,15 +623,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)182",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_large_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "1",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
@@ -876,50 +641,16 @@
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallBrownEgg" ],
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallEgg" ],
       "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
       "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true }
     },
     {
       "Action": "EditData",
       "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallBrownEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)180",
-        "selph.ExtraMachineConfig.RequirementCount.1": "2",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true }
-    },
-    // Dill Mayo white egg double output
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseLargeWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)174",
-        "selph.ExtraMachineConfig.RequirementCount.1": "1",
-        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
-      },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallWhiteEgg" ],
-      "Entries": { "MinStack": "2", "MaxStack": "2", "Quality": "0" },
-      "When": { "Large Animal Products make 2": true, "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Machines",
-      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallWhiteEgg", "CustomData" ],
-      "Entries": { "selph.ExtraMachineConfig.RequirementId.1": "(O)176",
+      "TargetField": [ "(BC)24", "OutputRules", "Cornucopia_DillMayonnaise", "OutputItem", "Cornucopia_DillMayonnaiseSmallEgg", "CustomData" ],
+      "Entries": {
+        "selph.ExtraMachineConfig.RequirementTags.1": "item_egg",
         "selph.ExtraMachineConfig.RequirementCount.1": "2",
         "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MayonnaiseMachineFuelNeededMessage}}"
       },
