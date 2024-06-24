@@ -131,10 +131,16 @@
 	"SpicyMayonnaise_description": "마요네즈인데 매워요!",
 	"StinkyTofu_name": "취두부",
 	"StinkyTofu_description": "악취가 나는 두부이지만.. 독특한 맛을 가졌습니다.",
+  "SunflowerButter_name": "해바라기 버터",
+  "SunflowerButter_description": "고소한 맛의 땅콩버터 대용품입니다.",
+  "TapiocaPearls_name": "타피오카 펄",
+  "TapiocaPearls_description": "쫄깃한 식감의 젤라틴과 유사한 물질입니다.",
 	"TruffleMayonnaise_name": "트러플 마요네즈",
 	"TruffleMayonnaise_description": "풍부하고 예술적인 마요네즈.",
 	"Umeboshi_name": "우메보시",
 	"Umeboshi_description": "숙성 과정으로 시큼한 맛이 나는 어린 자두.",
+  "VanillaYogurt_name": "바닐라 요거트",
+  "VanillaYogurt_description": "부드러운 맛의 요거트입니다.",
 	"WasabiMayonnaise_name": "와사비 마요네즈",
 	"WasabiMayonnaise_description": "아주 강력한 맛이 나는 마요네즈!",
 	"WasabiPaste_name": "와사비 페이스트",
@@ -161,6 +167,8 @@
 	"WholeGrainNoodles_description": "식감이 풍부한 홀그레인 국수 묶음 한개.",
 	"GlassNoodles_name": "당면",
 	"GlassNoodles_description": "전분으로 만든 투명한 국수 한 묶음.",
+  
+  //Artisan machines
 	"Alembic_name": "증류기",
 	"Alembic_description": "꽃, 과일, 허브 및 채소를 에센셜 오일 또는 추출물로 증류합니다.",
 	"ButterChurn_name": "버터 교반기",
@@ -181,8 +189,11 @@
 	"WaxBarrel_description": "양초를 만들 수 있는 통입니다.",
 	"YogurtJar_name": "요구르트 항아리",
 	"YogurtJar_description": "우유가 요구르트로 발효되도록 하는 항아리.",
+
+  //For flavored goods, use {0} to indicate where the flavor text for the input item will appear in the phrase.
 	"Candles_flavored": "{0} 양초",
 	"WaxMelts_flavored": "{0} 왁스멜트",
+  "DriedFruitFix": "말린 {0}",
 	"EssentialOil_flavored": "{0} 에센셜 오일",
 	"FlavoredYogurt_flavored": "{0} 요커트",
 	"FlavoredYogurt_Honeyflavored": "{0} 꿀 요거트",
@@ -201,6 +212,8 @@
 	"NutMilk_Oats": "귀리 치즈",
 	"NutMilk_Soybeans": "대두 치즈",
 	"NutMilk_PineNuts": "잣 치즈",
+  
+  //Strings
 	"YogurtJarFuelNeededMessage": "플레인 요거트 1개 필요",
 	"MayonnaiseMachineFuelNeededMessage": "계란 또는 큰 계란 1개 필요",
 	"WaxBarrelFuelNeededMessage": "밀랍 1개 필요",
@@ -219,20 +232,26 @@
 	"Ingredient_EggAny": "알 (아무거나)",
 	"Ingredient_MilkAny": "우유 (아무거나)",
 	"Ingredient_CheeseAny": "치즈 (아무거나)",
+  
+  //Special Orders
 	"Mail_PierreDehydratorAlternate": "안녕 @,^ 그냥 탈수기의 대체로 쓸수있는 제작 방법을 알려주고 싶었어. 그냥 건조대를 다른 용도로 쓰는거지. 후원해 줘서 고마워!^- 피에르 %item craftingRecipe Cornucopia_Dehydrator %%[#]Alternative Dehydrator Recipe",
+  
 	"MarnieSpecialOrder_name": "요구르트 문화",
 	"MarnieSpecialOrder_text": "저는 예전에 요구르트 문화를 계속 유지해 왔고 그 취미를 다시 시작할까 생각 중이지만, 시작하려면 아무 종류의 우유가 필요해요. 도와주실 분 있나요?",
 	"MarnieSpecialOrder_objective0": "우유 50병을 모으기.",
 	"MarnieSpecialOrder_objective1": "우유를 마니의 부엌에 두세요.",
 	"MarnieSpecialOrder_letter": "안녕 @,^ 요전날 얼마나 고마웠는지는 말로 못해. 재스와 셰인이 함께 요구르트를 만드는 건 정말 멋진 추억이 되었어. 너가 없었다면 힘들었을 거야. 너가 직접 요구르트 항아리를 만들 수 있게 제조법을 알려줄께!^-Marnie %item craftingRecipe Cornucopia_YogurtJar %%[#]Yogurt Jar Recipe",
+  
 	"EmilySpecialOrder_name": "오일 에센셜",
 	"EmilySpecialOrder_text": "안녕하세요 여러분! 저는 다양한 꽃의 에센셜 오일과 에센스 등을 사용하여 새로운 채널링 기술을 실험하고 있습니다. 새로운 흥미로운 재료를 수집하는 데 도움이 될 수 있습니다. 도와주실 수 있나요?",
 	"EmilySpecialOrder_objective": "에밀리의 스튜디오에 {Crop:Text} 15개를 전달.",
 	"EmilySpecialOrder_letter": "@!^ 고마워 @, 너는 내가 나의 가장 깊은 에너지와 연결될 수 있도록 도와줬어(그리고 예상치 않게 언니와도!) 너가 자신만의 에센셜 오일을 만들 수 있도록 감사의 선물을 주고 싶어. 궁금한게 있으면 언제든지 물어봐!^-에밀리 %item craftingRecipe Cornucopia_Alembic %%[#]Alembic Recipe",
+  
 	"GusSpecialOrder_name": "지평선 위의 스모키한 맛",
 	"GusSpecialOrder_text": "나는 훈제 생선을 이용한 새로운 요리 한두 가지를 시도해 보려고 해. 누군가 훈제 생선을 배송해 줄 수 있다면, 아마도 나는 시장에서 필요한 것을 더 사서 내 창의적인 열정을 요리로 바꾸어 낼수 있을거 같아.",
 	"GusSpecialOrder_objective": "훈제 생선 25마리 배송.",
 	"GusSpecialOrder_letter": "@,^ 너 때문에 새로운 훈제 생선 요리법을 몇 가지 시도해 볼 수 있었어. 다른 농산물도 훈제할 수 있도록 생선 훈제기를 더욱 좋게 만드는 방법이 적힌 노트를 줄께.^-Gus ",
+  
 	"GeorgeSpecialOrder_name": "에블린을 위한 선물",
 	"GeorgeSpecialOrder_text": "잘 들어봐! 이제는 에블린이 내게 배푼 은혜를 갚아야 할 때가 된 것 같아. 에블린이 좋아하는 선물이나 너가 가지고 있는 다른 감상적인 수단을 가져와줘.",
 	"GeorgeSpecialOrder_objective0_fairyrose": "요정 장미 10송이 모으기.",
@@ -243,14 +262,8 @@
 	"GeorgeSpecialOrder_objective4": "베리 10개 모으기.",
 	"GeorgeSpecialOrder_objective5": "조지와 에블린의 부엌으로 베리를 가져오세요.",
 	"GeorgeSpecialOrder_letter": "@:^에게 도와줘서 고마워.. 너에게 빛을 졌군. 여기 밀랍 통을 만드는 방법에 대한 몇 가지 참고 사항이 있어. 양초와 다른 것들을 만드는 데 사용할수 있지. - 조지 %item craftingRecipe Cornucopia_WaxBarrel %%[#]Wax Barrel Recipe",
-	"config.Enable Vinegar Keg.name": "식초 통 활성화",
-	"config.Enable Vinegar Keg.description": "포도, 사과, 갈리지 않은 쌀을 식초로 만들 수 있는 더 작은 술통을 추가합니다.",
-	"config.Enable Vegetable Wine.name": "야채 와인 활성화",
-	"config.Enable Vegetable Wine.description": "야채 와인이 통에서 생성되도록 허용합니다. 야채 주스는 여전히 착즙기에서 나옵니다.",
-	"config.Enable Vanilla Recipe Changes.name": "바닐라 레시피 변경 사용",
-	"config.Enable Vanilla Recipe Changes.description": "풍요의 뿔의 레시피를 사용하기 위해 몇 가지 바닐라 레시피 재료를 대체합니다(예: 코코넛 대신 코코넛 밀크 사용).",
-	"config.Enable Flexible Recipes.name": "유연한 레시피 사용",
-	"config.Enable Flexible Recipes.description": "(Spacecore 필요) 치즈를 사용하는 바닐라 레시피에 염소 치즈와 식물성 치즈를 포함한 대체 치즈를 사용하는 것을 허용합니다. 또한 우유를 사용하는 바닐라 레시피에 식물성 우유를 사용하는 것을 허용합니다.",
+
+  //Events
 	"CulturedYogurt_Marnie.1": "아! 제가 요청한 우유인가 보네요.",
 	"CulturedYogurt_Marnie.2": "자, 내가 그 오래된 것을 어디에 두었더라?",
 	"CulturedYogurt_Jas.1": "마니 이모, 그게 뭐예요?",
@@ -270,6 +283,7 @@
 	"CulturedYogurt_Marnie.11": "음, @, 너는 요구르트에 맛을 내는 방법을 알고 있니?",
 	"CulturedYogurt_Marnie.12": "그렇게 하면 수익을 높일 수 있을꺼야, 방법을 알려줄께! 잘 봐.",
 	"CulturedYogurt_Marnie.13": "그냥 이렇게...",
+
 	"OilsEssential_Emily.1": "이것들을 사용할 시간이 왔어...",
 	"OilsEssential_Emily.2": "이걸 좀 움직여야 하는데...",
 	"OilsEssential_Emily.3": "왜이리 무거운거야!?",
@@ -291,6 +305,7 @@
 	"OilsEssential_Emily.12": "그것들이 명상을 도와주기를 바라지만, 뭐 아니더라도 향이 좋으니까!",
 	"OilsEssential_Haley.8": "이것들을 만드는 방법을 가르쳐줘주면 고마울거 같아!",
 	"OilsEssential_Emily.13": "물론이야!",
+
 	"GiftsForEvelyn_George.1": "이제 막 끝났군...",
 	"GiftsForEvelyn_George.2": "슬슬 올 때가 됬는데, @.",
 	"GiftsForEvelyn_George.3": "음...",
@@ -308,5 +323,15 @@
 	"GiftsForEvelyn_Evelyn.8": "오, 조지...",
 	"GiftsForEvelyn_Evelyn.9": "나도 사랑해...",
 	"GiftsForEvelyn_Evelyn.10": "고마워!",
-	"GiftsForEvelyn_George.5": "흠"
+	"GiftsForEvelyn_George.5": "흠",
+
+	// CONFIG
+	"config.Enable Vinegar Keg.name": "식초 통 활성화",
+	"config.Enable Vinegar Keg.description": "포도, 사과, 갈리지 않은 쌀을 식초로 만들 수 있는 더 작은 술통을 추가합니다.",
+	"config.Enable Vegetable Wine.name": "야채 와인 활성화",
+	"config.Enable Vegetable Wine.description": "야채 와인이 통에서 생성되도록 허용합니다. 야채 주스는 여전히 착즙기에서 나옵니다.",
+	"config.Enable Vanilla Recipe Changes.name": "바닐라 레시피 변경 사용",
+	"config.Enable Vanilla Recipe Changes.description": "풍요의 뿔의 레시피를 사용하기 위해 몇 가지 바닐라 레시피 재료를 대체합니다(예: 코코넛 대신 코코넛 밀크 사용).",
+	"config.Enable Flexible Recipes.name": "유연한 레시피 사용",
+	"config.Enable Flexible Recipes.description": "(Spacecore 필요) 치즈를 사용하는 바닐라 레시피에 염소 치즈와 식물성 치즈를 포함한 대체 치즈를 사용하는 것을 허용합니다. 또한 우유를 사용하는 바닐라 레시피에 식물성 우유를 사용하는 것을 허용합니다.",
 }
