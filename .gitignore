@@ -15,6 +15,7 @@ config.json
 !Stardew Valley Expanded/**/config.json
 !Informant/**/config.json
 !Weather Wonders/**/config.json
+!WearMoreRings/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
