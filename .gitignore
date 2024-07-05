@@ -14,6 +14,7 @@ config.json
 !Lnh's Island Overhaul/**/config.json
 !Stardew Valley Expanded/**/config.json
 !Informant/**/config.json
+!Weather Wonders/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data

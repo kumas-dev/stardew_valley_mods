@@ -1,0 +1,20 @@
+{
+  "AddWeather": "rainy, sandy, blizzy, dry, hail, heat, starry, hurry, firerain, dark, muddy, ash, north, wildfire, meatball, locust, nado, smog, fog, sleet",
+  "FallingSnow": "true",
+  "ThickFoggy": "true",
+  "StarryRain": "wind",
+  "PretendFlooding": "true",
+  "PretendHeatWave": "true",
+  "SprinklerDrought": "true",
+  "PretendHurricane": "true",
+  "PretendLava": "true",
+  "PretendFire": "true",
+  "PostWeather": "true",
+  "NightEvents": "true",
+  "ChangeVanilla": "true",
+  "DangerWeather": "true",
+  "NoDanger": "false",
+  "NoDebuffs": "false",
+  "ChangeMusic": "true",
+  "CreepyMusic": "true"
+}
