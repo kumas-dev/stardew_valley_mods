@@ -1,6 +1,0 @@
-{
-
-    "config.Enable this mod.name": "Enable this mod.",
-    "config.Enable this mod.description": "On/Off setting of this mod itself. If an object remains out of range when used in an existing game, temporarily turn it off and remove the object.",
-
-}
