@@ -1,0 +1,31 @@
+{
+  "Format": "2.0",
+
+
+
+    "ConfigSchema": {
+
+        "Enable this mod": { 
+            "AllowValues": "true,false" ,
+            "Default": "true" 
+        }
+
+    },//▼"ConfigSchema"の終了▼
+
+
+
+    "Changes": [
+
+
+
+    //●グリーンハウスのマップを上書き
+      {
+        "Action": "Load",
+        "Target": "Maps/greenhouse",
+        "FromFile": "assets/Ts_Greenhouse.tmx"
+      }
+
+
+
+    ]//▼▼"Changes"の終了▼▼
+}

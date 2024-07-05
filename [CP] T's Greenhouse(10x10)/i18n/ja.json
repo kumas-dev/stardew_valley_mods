@@ -1,0 +1,6 @@
+{
+
+    "config.Enable this mod.name": "MODを有効にする",
+    "config.Enable this mod.description": "このMOD自体のOn/Off設定です。既存のゲームで使用する際、範囲外にオブジェクトが残ってしまう場合は一時的にOFFにして物を取り除いてください。",
+
+}
