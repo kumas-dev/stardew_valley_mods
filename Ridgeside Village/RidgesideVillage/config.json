@@ -1,5 +1,5 @@
 {
-  "ShowVillagersOnMap": true,
+  "ShowVillagersOnMap": false,
   "ProgressiveStory": true,
   "RepeatCableCarCutscene": true,
   "EnableOtherNPCsInCableCar": true,
@@ -11,5 +11,5 @@
   "PoleAtBackwoods": true,
   "SeasonalRSVMap": true,
   "EnableTouristNPCs": true,
-  "ShowRSVCustomMap": true
+  "ShowRSVCustomMap": false
 }
