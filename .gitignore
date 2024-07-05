@@ -11,11 +11,11 @@ config.json
 !DaLion/**/config.json
 !MasteryExtended/**/config.json
 !Stardew Valley Balance Overhaul/**/config.json
-!Lnh's Island Overhaul/**/config.json
 !Stardew Valley Expanded/**/config.json
 !Informant/**/config.json
 !Weather Wonders/**/config.json
 !WearMoreRings/**/config.json
+!Tiny Totem Statue Obelisks/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
