@@ -11,6 +11,8 @@ config.json
 !DaLion/**/config.json
 !MasteryExtended/**/config.json
 !Stardew Valley Balance Overhaul/**/config.json
+!Ridgeside Village/**/config.json
+!Stardew Valley Expanded/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
