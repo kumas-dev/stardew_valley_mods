@@ -1,0 +1,27 @@
+{
+  "DisplayIds": {
+    "animal": true,
+    "crop": true,
+    "fruit-tree": true,
+    "machine": true,
+    "tea-bush": true,
+    "tree": true,
+    "bundles": true,
+    "fieldoffice": true,
+    "museum": true,
+    "new-recipe": true,
+    "rarecrow": true,
+    "seed": true,
+    "sell-price": false,
+    "shipping": true
+  },
+  "TooltipTrigger": "Hover",
+  "TooltipTriggerButton": "MouseRight",
+  "HideMachineTooltips": "ForNonMachines",
+  "ShippingBinTracking": "Collection",
+  "DecorateFertilizer": true,
+  "DecoratePet": true,
+  "DecorateLockedBundles": true,
+  "DecorateUnqualifiedBundles": true,
+  "ShowTreeGrowthStage": false
+}

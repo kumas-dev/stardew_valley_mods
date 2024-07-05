@@ -13,6 +13,7 @@ config.json
 !Stardew Valley Balance Overhaul/**/config.json
 !Ridgeside Village/**/config.json
 !Stardew Valley Expanded/**/config.json
+!Informant/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
