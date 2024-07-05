@@ -1,0 +1,152 @@
+{
+	"Changes": [
+		{
+      			"LogName": "The Weather Data Eclipse",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {		
+				"kath.weathering_NorthernLights": {
+					"Id": "kath.weathering_NorthernLights",
+					"DisplayName": "{{i18n: Weather.North}}",
+
+					"Forecast": "{{i18n: Weather.North.Forecast}}",
+					"ForecastByContext": 
+						{"Island": "{{i18n: Weather.North.ForecastIsland}}", "Desert": "{{i18n: Weather.North.ForecastDesert}}",},
+					
+					"UseNightTiles": false,
+					"IsSnowing": false,
+					"IsRaining": false,
+					"IsDebrisWeather": false,
+					"IsLightning": false,
+					"SpawnCritters": false,
+					"SpawnFrogs": false,
+					"SpawnClouds": false,
+
+					"IconTexture": "Mods/kath.weathering/Icons",
+					"IconSource": {"X": 12, "Y": 24},
+
+					"TVTexture": "Mods/kath.weathering/TV",
+					"TVSource": {"X": 52, "Y": 0},
+					"TVFrames": 4,
+
+					"TotemMessage": "{{i18n: Weather.NorthTotem}}",
+					"TotemScreenTint": "white",
+					"TotemSound": "wind",
+
+					"Lighting": [],
+
+					"Effects":[
+						{
+							"Id": "CTFlag",
+							"Type": "Trigger",
+							"ApplyActions": [
+								"AddConversationTopic WCDNorthLight 3",
+							],
+						},
+						{
+							"Id": "FeelingLucky",
+							"Type": "Buff",
+							"BuffId": "FeelingLucky2",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Island Desert, TIME 1900 2600, LOCATION_IS_OUTDOORS Here",
+						},
+					],//close effect
+
+
+
+					"Layers": [
+						{
+							"Id": "somelight",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Island Desert, LOCATION_IS_OUTDOORS Here, TIME 1800 2600, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "Color",
+							"Mode": "Lighting",
+							"Color": "16, 13, 0",
+							"Opacity": 0.1
+						},
+						{
+							"Id": "somelight2",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Island Desert, LOCATION_IS_OUTDOORS Here, TIME 1830 2600, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "Color",
+							"Mode": "Lighting",
+							"Color": "16, 13, 0",
+							"Opacity": 0.15
+						},
+						{
+							"Id": "somelight3",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Island Desert, LOCATION_IS_OUTDOORS Here, TIME 1900 2600, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "Color",
+							"Mode": "Lighting",
+							"Color": "16, 13, 0",
+							"Opacity": 0.25
+						},
+						{
+							"Id": "PreLights1",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Island Desert, TIME 1800 1820, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Lights",
+							"Source": {"X": 0, "Y": 0, "Width": 3600, "Height": 2400 },
+							"Frames": "1",
+							"Speed": "-0.05, 0",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2,
+							"Color": null,
+							"Opacity": 0.25,
+						},
+						{
+							"Id": "PreLights2",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Island Desert, TIME 1820 1840, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Lights",
+							"Source": {"X": 0, "Y": 0, "Width": 3600, "Height": 2400 },
+							"Frames": "1",
+							"Speed": "-0.05, 0",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2,
+							"Color": null,
+							"Opacity": 0.5,
+						},						
+						{
+							"Id": "PreLights3",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Desert, TIME 1840 1900, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Lights",
+							"Source": {"X": 0, "Y": 0, "Width": 3600, "Height": 2400 },
+							"Frames": "1",
+							"Speed": "-0.05, 0",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2,
+							"Color": null,
+							"Opacity": 0.75,
+						},
+						{
+							"Id": "Lights1",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp Desert, TIME 1900 2600, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Lights",
+							"Source": {"X": 0, "Y": 0, "Width": 3600, "Height": 2400 },
+							"Frames": "1",
+							"Speed": "-0.05, 0",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2,
+							"Color": null,
+							"Opacity": 1,
+						},
+						{
+							"Id": "Lights2",
+							"Condition": "LOCATION_CONTEXT Here Default Island, TIME 1840 2600, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Lights",
+							"Source": {"X": 0, "Y": 0, "Width": 3600, "Height": 2400 },
+							"Frames": "1",
+							"Speed": "-0.05, 0",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2,
+							"Color": null,
+							"Opacity": 0.65,
+						},
+					]//close layers
+				}//close in-entry
+			}//close entry
+		}//close edit
+//End
+]
+}

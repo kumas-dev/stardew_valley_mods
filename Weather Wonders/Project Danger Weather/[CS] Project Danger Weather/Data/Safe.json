@@ -1,0 +1,190 @@
+{//NoDanger
+	"Changes": [
+		{
+      	    "LogName": "Add Rainy Very",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/rainy.json",
+			"When": {
+			"AddWeather": "rainy",
+			},
+		},
+		{
+      	    "LogName": "Add Sandstorm",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/sandy.json",
+			"When": {
+			"AddWeather": "sandy",
+			},
+		},
+		{
+      	    "LogName": "Add Blizzard",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/blizzard.json",
+			"When": {
+			"AddWeather": "blizzy",
+			},
+		},
+		{
+      	    "LogName": "Add Dry Lightning",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/drystorm.json",
+			"When": {
+			"AddWeather": "dry",
+			},
+		},
+		{
+      	    "LogName": "Add Hail",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/hail.json",
+			"When": {
+			"AddWeather": "hail",
+			},
+		},
+		{
+      	    "LogName": "Add Heat Wave",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/heatwave.json",
+			"When": {
+			"AddWeather": "heat",
+			},
+		},
+		{
+      	    "LogName": "Add Star Fall",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/starry.json",
+			"When": {
+			"StarryRain": "wind",
+			"AddWeather": "starry",
+			},
+		},
+		{
+      	    "LogName": "Add Star Rain Fall",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/starryrain.json",
+			"When": {
+			"StarryRain": "rain",
+			"AddWeather": "starry",
+			},
+		},
+		{
+      	    "LogName": "Add Windy",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/hurry.json",
+			"When": {
+			"AddWeather": "hurry",
+			},
+		},
+		{
+      	    "LogName": "Add Acid Rain",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/firerain.json",
+			"When": {
+			"AddWeather": "firerain",
+			},
+		},
+		{
+      	    "LogName": "Add Solar Eclipse",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/darkness.json",
+			"When": {
+			"ChangeMusic": "true",
+			"CreepyMusic": "false",
+			"AddWeather": "dark",
+			},
+		},
+		{
+      	    "LogName": "Add Solar Eclipse1",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/darkness1.json",
+			"When": {
+			"ChangeMusic": "false",
+			"CreepyMusic": "false",
+			"AddWeather": "dark",
+			},
+		},
+		{
+      	    "LogName": "Add Solar Eclipse2",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/darkness2.json",
+			"When": {
+			"CreepyMusic": "true",
+			"AddWeather": "dark",
+			},
+		},
+		{
+      	    "LogName": "Add Mud Rain",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/muddy.json",
+			"When": {
+			"AddWeather": "muddy",
+			},
+		},
+		{
+      	    "LogName": "Add Ash",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/ash.json",
+			"When": {
+			"AddWeather": "ash",
+			},
+		},
+		{
+      	    "LogName": "Add Northern Light",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/northlights.json",
+			"When": {
+			"AddWeather": "north",
+			},
+		},
+		{
+      	    "LogName": "Add Wildfires",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/wildfire.json",
+			"When": {
+			"AddWeather": "wildfire",
+			},
+		},
+		{
+      	    "LogName": "Add Meatballs",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/meatballs.json",
+			"When": {
+			"AddWeather": "meatball",
+			},
+		},
+		{
+      	    "LogName": "Add Locust Swarm",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/locust.json",
+			"When": {
+			"AddWeather": "locust",
+			},
+		},		
+		{
+      	    "LogName": "Add Tornado",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/nado.json",
+			"When": {
+			"AddWeather": "nado",
+			},
+		},
+		{
+      	    "LogName": "Add Smog",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/smog.json",
+			"When": {
+			"AddWeather": "smog",
+			"HasFlag |contains=jojaMember": false,
+			},
+		},
+		{
+      	    "LogName": "Add Smog",
+			"Action": "Include",
+			"FromFile": "Data/NoDanger/smogjoja.json",
+			"When": {
+			"AddWeather": "smog",
+			"HasFlag |contains=jojaMember": true,
+			},
+		},	
+//End
+]
+}

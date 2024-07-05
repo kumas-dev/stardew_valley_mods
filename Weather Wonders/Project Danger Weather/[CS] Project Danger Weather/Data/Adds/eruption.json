@@ -1,0 +1,109 @@
+{
+	"Changes": [	
+	{
+      	    "LogName": "Add Warning Farm Island",
+            "Action": "EditMap",
+            "Target": "Maps/Island_W",
+			"FromFile": "assets/lavapostfarm.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 71, "Y": 41, "Width": 1, "Height": 2 },
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+	},
+    {
+      	    "LogName": "Add Lava Maps",
+            "Action": "EditMap",
+            "Target": "Maps/Island_N",
+			"FromFile": "assets/lava/{{TargetWithoutPath}}.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 57, "Height": 31 },
+			"ToArea": { "X": 9, "Y": 0, "Width": 57, "Height": 31 },
+			"When": {
+				"HasFlag |contains=VolcanoEruption, VolcanoEruptionOnce": true,
+			},
+			"Priority": "Default",
+	},
+	{
+      	    "LogName": "Add Warning Lava Maps1",
+            "Action": "EditMap",
+            "Target": "Maps/Island_N",
+			"FromFile": "assets/lava/warnpost.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 7, "Height": 2 },
+			"ToArea": { "X": 37, "Y": 34, "Width": 7, "Height": 2 },
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": {
+				"HasFlag |contains=VolcanoEruption, VolcanoEruptionOnce": true,
+			},
+	},	
+	{
+      	    "LogName": "Add Warning Lava Maps2",
+            "Action": "EditMap",
+            "Target": "Maps/Island_N",
+			"FromFile": "assets/lava/warnpost.tmx",
+			"FromArea": { "X": 3, "Y": 2, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 11, "Y": 31, "Width": 1, "Height": 2 },
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": {
+				"HasFlag |contains=VolcanoEruption, VolcanoEruptionOnce": true,
+			},
+	},
+	{
+      	    "LogName": "Add Light to Lava",
+            "Action": "EditMap",
+            "Target": "Maps/Island_N",
+			"When": {
+				"HasFlag |contains=VolcanoEruption, VolcanoEruptionOnce": true,
+			},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["MapProperties", "Light" ],
+						"Value": "24 18 4 27 24 4 31 27 4 36 28 4 40 28 4 44 28 4 48 27 4 51 26 4 52 24 4 56 23 4 59 21 4 61 19 4 26 14 4 32 7 4 35 0 4 41 0 4 44 8 4 47 12 4 50 21 4",
+						"Delimiter": " ",
+				},
+	    ],
+	},
+		{	
+		"LogName": "Not in the lava Lance",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Lance",
+		"When": {
+				"HasFlag |contains=VolcanoEruption, VolcanoEruptionOnce": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+			},
+		"Entries": {
+			"Thu": "GOTO Wed",
+			"Fri": "GOTO Wed",
+			},
+		},
+	{
+      	    "LogName": "Add Light to Lava",
+            "Action": "EditMap",
+            "Target": "Maps/Island_N",
+			"When": {
+				"HasFlag |contains=VolcanoEruption, VolcanoEruptionOnce": true,
+			},
+			"MapProperties": {
+                "forceLoadPathLayerLights": "T"
+            },
+	},	
+	{
+      	    "LogName": "Add Warning Lava Maps4",
+            "Action": "EditMap",
+            "Target": "Maps/Caldera",
+			"FromFile": "assets/lava/{{TargetWithoutPath}}.tmx",
+			"FromArea": { "X": 3, "Y": 2, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 11, "Y": 31, "Width": 1, "Height": 2 },
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": {
+				"HasFlag |contains=VolcanoEruption, VolcanoEruptionOnce": true,
+			},
+	},	
+//Post Heat Wave EMP
+
+
+//End
+]
+}

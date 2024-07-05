@@ -1,0 +1,190 @@
+{
+	"Changes": [
+		{
+      	    "LogName": "Add Rainy Very",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/rainy.json",
+			"When": {
+			"AddWeather": "rainy",
+			},
+		},
+		{
+      	    "LogName": "Add Sandstorm",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/sandy.json",
+			"When": {
+			"AddWeather": "sandy",
+			},
+		},
+		{
+      	    "LogName": "Add Blizzard",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/blizzard.json",
+			"When": {
+			"AddWeather": "blizzy",
+			},
+		},
+		{
+      	    "LogName": "Add Dry Lightning",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/drystorm.json",
+			"When": {
+			"AddWeather": "dry",
+			},
+		},
+		{
+      	    "LogName": "Add Hail",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/hail.json",
+			"When": {
+			"AddWeather": "hail",
+			},
+		},
+		{
+      	    "LogName": "Add Heat Wave",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/heatwave.json",
+			"When": {
+			"AddWeather": "heat",
+			},
+		},
+		{
+      	    "LogName": "Add Star Fall",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/starry.json",
+			"When": {
+			"StarryRain": "wind",
+			"AddWeather": "starry",
+			},
+		},
+		{
+      	    "LogName": "Add Star Rain Fall",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/starryrain.json",
+			"When": {
+			"StarryRain": "rain",
+			"AddWeather": "starry",
+			},
+		},
+		{
+      	    "LogName": "Add Windy",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/hurry.json",
+			"When": {
+			"AddWeather": "hurry",
+			},
+		},
+		{
+      	    "LogName": "Add Acid Rain",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/firerain.json",
+			"When": {
+			"AddWeather": "firerain",
+			},
+		},
+		{
+      	    "LogName": "Add Solar Eclipse",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/darkness.json",
+			"When": {
+			"ChangeMusic": "true",
+			"CreepyMusic": "false",
+			"AddWeather": "dark",
+			},
+		},
+		{
+      	    "LogName": "Add Solar Eclipse1",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/darkness1.json",
+			"When": {
+			"ChangeMusic": "false",
+			"CreepyMusic": "false",
+			"AddWeather": "dark",
+			},
+		},
+		{
+      	    "LogName": "Add Solar Eclipse2",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/darkness2.json",
+			"When": {
+			"CreepyMusic": "true",
+			"AddWeather": "dark",
+			},
+		},
+		{
+      	    "LogName": "Add Mud Rain",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/muddy.json",
+			"When": {
+			"AddWeather": "muddy",
+			},
+		},
+		{
+      	    "LogName": "Add Ash",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/ash.json",
+			"When": {
+			"AddWeather": "ash",
+			},
+		},
+		{
+      	    "LogName": "Add Northern Light",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/northlights.json",
+			"When": {
+			"AddWeather": "north",
+			},
+		},
+		{
+      	    "LogName": "Add Wildfires",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/wildfire.json",
+			"When": {
+			"AddWeather": "wildfire",
+			},
+		},
+		{
+      	    "LogName": "Add Meatballs",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/meatballs.json",
+			"When": {
+			"AddWeather": "meatball",
+			},
+		},	
+		{
+      	    "LogName": "Add Smog",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/smog.json",
+			"When": {
+			"AddWeather": "smog",
+			"HasFlag |contains=jojaMember": false,
+			},
+		},
+		{
+      	    "LogName": "Add Smog",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/smogjoja.json",
+			"When": {
+			"AddWeather": "smog",
+			"HasFlag |contains=jojaMember": true,
+			},
+		},		
+		{
+      	    "LogName": "Add Locust Swarm",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/locust.json",
+			"When": {
+			"AddWeather": "locust",
+			},
+		},		
+		{
+      	    "LogName": "Add Tornado",
+			"Action": "Include",
+			"FromFile": "Data/Weathering/nado.json",
+			"When": {
+			"AddWeather": "nado",
+			},
+		},
+//End
+]
+}

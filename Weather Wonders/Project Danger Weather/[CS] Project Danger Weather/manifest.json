@@ -1,0 +1,55 @@
+{
+	"Name": "Project Danger Weather for Cloudy Skies",
+	"Author": "Kath40",
+	"Version": "1.2.12",
+	"Description": "Adds more weather to the game, weather that is angry at you.",
+	"UniqueID": "kath.weathering",
+	"UpdateKeys": ["Nexus:23734"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "leclair.cloudyskies"
+		},
+		{
+			"UniqueID": "leclair.morenightlyevents",
+			"IsRequired": false,
+		},		
+//Compat Patches
+		{
+			"UniqueID": "Lnh.IslandOverhaul",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "flashshifter.GrandpasFarm",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "flashshifter.immersivefarm2remastered",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "flashshifter.GrampletonFields",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "NoraCharles.MapTweaks",
+			"IsRequired": false,
+		},		
+		{
+			"UniqueID": "Liliet.ImprovedCindersapForest",
+			"IsRequired": false,
+		},
+//Preventing Weather Clash
+		{
+			"UniqueID": "Kana.WeatherWonders",
+			"IsRequired": false,
+		},
+	],
+
+}

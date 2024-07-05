@@ -1,0 +1,80 @@
+{
+	"Changes": [	
+		{
+      	    "LogName": "Add Fog and Sleet - Snow is Scroll",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/{{Random:changed, changed, vanilla, vanilla, vanilla}}.json",
+			"When": {
+				"AddWeather": "fog",
+				"AddWeather": "sleet",
+				"FallingSnow": "false",
+			},
+		},
+		{
+      	    "LogName": "Add Fog Only - Snow is Scroll",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/{{Random:fog, fog, vanilla, vanilla, vanilla}}.json",
+			"When": {
+				"AddWeather": "fog",
+				"FallingSnow": "false",
+			},
+		},		
+		{
+      	    "LogName": "Add Sleet Only - Snow is Scroll",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/{{Random:sleet, sleet, vanilla, vanilla, vanilla}}.json",
+			"When": {
+				"AddWeather": "sleet",
+				"FallingSnow": "false",
+			},
+		},				
+		{
+      	    "LogName": "Snow is Scroll Only",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/vanilla.json",
+			"When": {
+				"AddWeather |contains=fog, sleet": false,
+				"FallingSnow": "false",
+			},
+		},
+		
+		{
+      	    "LogName": "Add Fog and Sleet - Snow is Fluff",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/{{Random:changedfluff, changedfluff, fluff, fluff, fluff}}.json",
+			"When": {
+				"AddWeather": "fog",
+				"AddWeather": "sleet",
+				"FallingSnow": "true",
+			},
+		},
+		{
+      	    "LogName": "Add Fog Only - Snow is Fluff",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/{{Random:fogfluff, fogfluff, fluff, fluff, fluff}}.json",
+			"When": {
+				"AddWeather": "fog",
+				"FallingSnow": "true",
+			},
+		},
+		{
+      	    "LogName": "Add Sleet Only - Snow is Fluff",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/{{Random:sleetfluff, sleetfluff, fluff, fluff, fluff}}.json",
+			"When": {
+				"AddWeather": "sleet",
+				"FallingSnow": "true",
+			},
+		},
+		{
+      	    "LogName": "Snow is Fluff Only",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla/fluff.json",
+			"When": {
+				"AddWeather |contains=fog, sleet": false,
+				"FallingSnow": "true",
+			},
+		},
+//End
+]
+}

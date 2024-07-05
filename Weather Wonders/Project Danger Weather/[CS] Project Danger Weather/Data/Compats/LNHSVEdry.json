@@ -1,0 +1,29 @@
+{
+	"Changes": [
+	{
+      	    "LogName": "Stop Sprinklers LNH Island Overhaul",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Island_W",
+			"FromFile": "assets/LNH/dry/{{TargetWithoutPath}}.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+				"Weather": "kath.weathering_HeatWave",
+			},
+	},
+    {
+      	    "LogName": "Add Dry Maps LNH Island Overhaul",
+            "Action": "EditMap",
+            "Target": "Maps/Island_N",
+			"FromFile": "assets/LNH/dry/northgap.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 8 },
+			"ToArea": { "X": 30, "Y": 48, "Width": 6, "Height": 8 },
+			"Priority": "Default",
+	},
+//Post Heat Wave
+	
+	
+//End
+]
+}
