@@ -1,0 +1,964 @@
+{
+	"Changes": [
+		//Icon Patch Mid Day
+		{
+			"LogName": "Sun Icon Change",
+			"Action": "EditImage",
+			"Target": "Mods/kath.weathering/Icons",
+			"FromFile": "assets/vanillaicons.png",
+			"Update": "OnTimeChange",
+			"FromArea": { "X": 24, "Y": 0, "Width": 12, "Height": 8 },
+			"ToArea": { "X": 0, "Y": 56, "Width": 12, "Height": 8 },
+			"When": {
+			"Time": "{{Range: 1000, 2600}}",
+			"LocationContext |contains=Desert,Island": false,
+			"Weather": "Sun",
+			},
+		},
+		{
+			"LogName": "Rain Icon Change",
+			"Action": "EditImage",
+			"Target": "Mods/kath.weathering/Icons",
+			"FromFile": "assets/vanillaicons.png",
+			"Update": "OnTimeChange",
+			"FromArea": { "X": 48, "Y": 0, "Width": 12, "Height": 8 },
+			"ToArea": { "X": 0, "Y": 64, "Width": 12, "Height": 8 },
+			"When": {
+			"Time": "{{Range: 1000, 2600}}",
+			"LocationContext |contains=Island": false,
+			"Weather": "Rain",
+			},
+		},
+		{
+			"LogName": "Rain Icon Change",
+			"Action": "EditImage",
+			"Target": "Mods/kath.weathering/Icons",
+			"FromFile": "assets/vanillaicons.png",
+			"Update": "OnTimeChange",
+			"FromArea": { "X": 60, "Y": 0, "Width": 12, "Height": 8 },
+			"ToArea": { "X": 12, "Y": 64, "Width": 12, "Height": 8 },
+			"When": {
+			"Time": "{{Range: 1000, 2600}}",
+			"LocationContext |contains=Island": false,
+			"Weather": "Storm",
+			},
+		},
+		
+		//Name Tooltip Patch Mid Day PLEASE IGNORE THIS
+		/*{
+      		"LogName": "Name Patch Sun",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Update": "OnTimeChange",
+			"When": {
+			"Time": "{{Range: 1000, 2600}}",
+			"LocationContext |contains=Desert,Island": false,
+			},
+			"Entries": {
+				"Sun":{
+				"DisplayName": "{{i18n: Patch.Sun}}",	
+				},
+			},
+		},
+		{
+      		"LogName": "Name Patch Sun",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Update": "OnLocationChange",
+			"When": {
+			"LocationContext |contains=Desert,Island": true,
+			},
+
+			"Entries": {
+				"Sun":{
+				"DisplayName": "{{i18n: Patch.Sun}}",	
+				},
+			},
+		},
+		{
+      		"LogName": "Name Patch Rain",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Update": "OnTimeChange",
+			"When": {
+			"Time": "{{Range: 1200, 2600}}",
+			"Weather": "Rain",
+			},
+			"TargetField": ["Entries", "Rain",],
+
+			"Entries": {
+				"RenameRain":{
+				"DisplayName": "{{i18n: Patch.Rain}}",	
+				},
+			},
+		},
+		{
+      		"LogName": "Name Patch Rain",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Update": "OnLocationChange",
+			"When": {
+			"LocationContext |contains=Desert,Island": true,
+			"Weather": "Rain",
+			},
+			"TargetField": ["Entries", "Rain",],
+			"Entries": {
+				"RenameRain":{
+				"DisplayName": "{{i18n: Patch.Rain}}",	
+				},
+			},
+		},*/
+		
+		//Data Weather
+		{
+      		"LogName": "The Weather Data Vanilla Changes",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {	
+				"Storm": {
+					"Id": "Storm",
+					"DisplayName": "{{i18n: Patch.Storm}}",
+
+					"Forecast": "{{i18n: Weather.Storm.Forecast}}",		
+					"ForecastByContext": 
+						{"Island": "{{i18n: Weather.Storm.Forecast}}", "Desert": "{{i18n: Weather.Storm.Forecast}}",},		
+						
+					"UseNightTiles":true,
+					"IsSnowing": false,
+					"IsRaining": true,
+					"IsLightning": true,
+					"IsDebrisWeather": false,
+					"SpawnCritters": true,
+					"SpawnFrogs": true,
+					"SpawnClouds": null,
+
+					"AmbientColor": "255, 200, 80",
+
+					"LightingTint": "orangered",
+					"LightingTintOpacity": 0.45,
+					"PostLightingTint": "blue",
+					"PostLightingTintOpacity": 0.22,
+					
+					"TVTexture": "LooseSprites/Cursors",
+					"TVSource": {"X": 413, "Y": 346},
+
+					"Effects":[
+						{
+							"Id": "CTFlag",
+							"Type": "Trigger",
+							"ApplyActions": [
+								"AddConversationTopic WCDFoggy 2",
+							],
+						},					
+					],//close effect
+
+
+
+					"Layers": [
+						//Forest
+						{
+							"Id": "FoggyWoodsMorn",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 600 630\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 600 630\"  \"LOCATION_NAME Target IslandEast, TIME 600 630\" \"LOCATION_NAME Target IslandShrine, TIME 600 630\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.5,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyWoods1",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 640 700\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 640 700\"  \"LOCATION_NAME Target IslandEast, TIME 640 700\" \"LOCATION_NAME Target IslandShrine, TIME 640 700\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.45,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "FoggyWoods2",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 710 730\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 710 730\"  \"LOCATION_NAME Target IslandEast, TIME 710 730\" \"LOCATION_NAME Target IslandShrine, TIME 710 730\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.3,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "FoggyWoods2",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 740 800\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 740 800\" \"LOCATION_NAME Target IslandEast, TIME 740 800\" \"LOCATION_NAME Target IslandShrine, TIME 740 800\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.25,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},						
+						{
+							"Id": "FoggyWoodsLateMorn",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 810 830\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 810 830\" \"LOCATION_NAME Target IslandEast, TIME 810 830\" \"LOCATION_NAME Target IslandShrine, TIME 810 830\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.2,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},						
+						{
+							"Id": "FoggyWoodsLateMornBuffer",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 840 900\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 840 900\" \"LOCATION_NAME Target IslandEast, TIME 840 900\" \"LOCATION_NAME Target IslandShrine, TIME 840 900\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.15,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						
+						//Outside
+						{
+							"Id": "FoggyMorn",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 600 630, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{MornFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy1",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 640 700, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog1}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy2",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 710 730, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog2}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy3",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 740 800, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog3}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy4",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 810 830, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog4}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy5",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 840 930, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog5}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy6",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 910 930, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog6}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyLast",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 940 1000, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{LastFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyLateMornBuffer",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 1010 1030, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{BufferFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "Blurry",
+							"Type": "Shader",
+							"Shader": "Blur",
+							"Condition": "{{Blurred}}",
+							"Distance": 1.0,
+							"UseWeights": false,
+						},	
+				//Rain
+						{
+							"Id": "defaultraincanopy",
+							"Type": "Rain",
+							"Condition": "!LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine",
+						},
+						{
+							"Id": "defaultraincanopy",
+							"Type": "Rain",
+							"Condition": "ANY \"LOCATION_NAME Target Woods\" \"LOCATION_NAME Target Custom_SpriteSpring2\" \"LOCATION_NAME Target IslandEast\" \"LOCATION_NAME Target IslandShrine\"",
+							"Count": 50,
+						},
+					]
+				},			
+				"Rain": {
+					"Id": "Rain",
+					"DisplayName": "{{i18n: Patch.Rain}}",
+
+					"Forecast": "{{i18n: Weather.Rain.Forecast}}",		
+					"ForecastByContext": 
+						{"Island": "{{i18n: Weather.Rain.Forecast}}", "Desert": "{{i18n: Weather.Rain.Forecast}}",},	
+					
+					"UseNightTiles":true,
+					"IsSnowing": false,
+					"IsRaining": true,
+					"IsLightning": false,
+					"IsDebrisWeather": false,
+					"SpawnCritters": true,
+					"SpawnFrogs": true,
+					"SpawnClouds": null,
+
+					"AmbientColor": "255, 200, 80",
+
+					"LightingTint": "orangered",
+					"LightingTintOpacity": 0.45,
+					"PostLightingTint": "blue",
+					"PostLightingTintOpacity": 0.22,
+					
+					"TVTexture": "LooseSprites/Cursors",
+					"TVSource": {"X": 465, "Y": 333},
+
+					"Effects":[
+						{
+							"Id": "CTFlag",
+							"Type": "Trigger",
+							"ApplyActions": [
+								"AddConversationTopic WCDFoggy 2",
+							],
+						},		
+					],//close effect
+
+
+
+					"Layers": [
+						//Forest
+						{
+							"Id": "FoggyWoodsMorn",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 600 630\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 600 630\"  \"LOCATION_NAME Target IslandEast, TIME 600 630\" \"LOCATION_NAME Target IslandShrine, TIME 600 630\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.5,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyWoods1",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 640 700\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 640 700\"  \"LOCATION_NAME Target IslandEast, TIME 640 700\" \"LOCATION_NAME Target IslandShrine, TIME 640 700\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.45,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "FoggyWoods2",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 710 730\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 710 730\"  \"LOCATION_NAME Target IslandEast, TIME 710 730\" \"LOCATION_NAME Target IslandShrine, TIME 710 730\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.3,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "FoggyWoods2",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 740 800\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 740 800\" \"LOCATION_NAME Target IslandEast, TIME 740 800\" \"LOCATION_NAME Target IslandShrine, TIME 740 800\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.25,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},						
+						{
+							"Id": "FoggyWoodsLateMorn",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 810 830\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 810 830\" \"LOCATION_NAME Target IslandEast, TIME 810 830\" \"LOCATION_NAME Target IslandShrine, TIME 810 830\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.2,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},						
+						{
+							"Id": "FoggyWoodsLateMornBuffer",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 840 900\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 840 900\" \"LOCATION_NAME Target IslandEast, TIME 840 900\" \"LOCATION_NAME Target IslandShrine, TIME 840 900\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.15,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						
+						//Outside
+						{
+							"Id": "FoggyMorn",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 600 630, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{MornFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy1",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 640 700, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog1}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy2",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 710 730, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog2}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy3",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 740 800, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog3}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy4",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 810 830, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog4}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy5",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 840 930, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog5}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy6",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 910 930, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog6}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyLast",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 940 1000, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{LastFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyLateMornBuffer",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 1010 1030, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{BufferFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "Blurry",
+							"Type": "Shader",
+							"Shader": "Blur",
+							"Condition": "{{Blurred}}",
+							"Distance": 1.0,
+							"UseWeights": false,
+						},	
+				//Rain
+						{
+							"Id": "defaultraincanopy",
+							"Type": "Rain",
+							"Condition": "!LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine",
+						},
+						{
+							"Id": "defaultraincanopy",
+							"Type": "Rain",
+							"Condition": "ANY \"LOCATION_NAME Target Woods\" \"LOCATION_NAME Target Custom_SpriteSpring2\" \"LOCATION_NAME Target IslandEast\" \"LOCATION_NAME Target IslandShrine\"",
+							"Count": 50,
+						},
+					]
+				},
+				"Sun": {
+					"Id": "Sun",
+					"DisplayName": "{{i18n: Patch.Sun}}",
+
+					"Forecast": "{{i18n: Weather.Sun.Forecast{{Random: 1,2}} }}",
+					"ForecastByContext": 
+						{"Island": "{{i18n: Weather.Sun.Forecast{{Random: 1,2}} }}", "Desert": "{{i18n: Weather.Sun.Forecast{{Random: 1,2}} }}",},		
+					
+					"UseNightTiles":false,
+					"IsSnowing": false,
+					"IsRaining": false,
+					"IsLightning": false,
+					"IsDebrisWeather": false,
+					"SpawnCritters": true,
+					"SpawnFrogs": null,
+					"SpawnClouds": null,
+					
+					"TVTexture": "LooseSprites/Cursors",
+					"TVSource": {"X": 413, "Y": 333},
+
+					"Effects":[
+						{
+							"Id": "CTFlag",
+							"Type": "Trigger",
+							"ApplyActions": [
+								"AddConversationTopic WCDFoggy 2",
+							],
+						},		
+					],//close effect
+
+
+
+					"Layers": [
+						//Forest
+						{
+							"Id": "FoggyWoodsMorn",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 600 630\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 600 630\"  \"LOCATION_NAME Target IslandEast, TIME 600 630\" \"LOCATION_NAME Target IslandShrine, TIME 600 630\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.5,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyWoods1",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 640 700\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 640 700\"  \"LOCATION_NAME Target IslandEast, TIME 640 700\" \"LOCATION_NAME Target IslandShrine, TIME 640 700\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.45,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "FoggyWoods2",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 710 730\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 710 730\"  \"LOCATION_NAME Target IslandEast, TIME 710 730\" \"LOCATION_NAME Target IslandShrine, TIME 710 730\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.3,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "FoggyWoods2",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 740 800\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 740 800\" \"LOCATION_NAME Target IslandEast, TIME 740 800\" \"LOCATION_NAME Target IslandShrine, TIME 740 800\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.25,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},						
+						{
+							"Id": "FoggyWoodsLateMorn",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 810 830\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 810 830\" \"LOCATION_NAME Target IslandEast, TIME 810 830\" \"LOCATION_NAME Target IslandShrine, TIME 810 830\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.2,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},						
+						{
+							"Id": "FoggyWoodsLateMornBuffer",
+							"Condition": "ANY \"LOCATION_NAME Target Woods, TIME 840 900\" \"LOCATION_NAME Target Custom_SpriteSpring2, TIME 840 900\" \"LOCATION_NAME Target IslandEast, TIME 840 900\" \"LOCATION_NAME Target IslandShrine, TIME 840 900\"",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": 0.15,
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						
+						//Outside
+						{
+							"Id": "FoggyMorn",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 600 630, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{MornFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy1",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 640 700, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog1}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy2",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 710 730, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog2}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy3",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 740 800, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog3}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy4",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 810 830, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog4}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy5",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 840 930, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog5}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "Foggy6",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 910 930, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{Fog6}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyLast",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 940 1000, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{LastFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},
+						{
+							"Id": "FoggyLateMornBuffer",
+							"Condition": "LOCATION_IS_OUTDOORS Here, TIME 1010 1030, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2, !LOCATION_NAME Target IslandEast, !LOCATION_NAME Target IslandShrine, !LOCATION_CONTEXT Here Desert",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Fog",
+							"Source": {"X": 0, "Y": 0, "Width": 1200, "Height": 1200 },
+							"Color": "White",
+							"Opacity": "{{BufferFog}}",
+							"Speed": "-0.03, -0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 2
+						},	
+						{
+							"Id": "Blurry",
+							"Type": "Shader",
+							"Shader": "Blur",
+							"Condition": "{{Blurred}}",
+							"Distance": 1.0,
+							"UseWeights": false,
+						},						
+					]
+				},
+			},
+		},
+
+		{
+      		"LogName": "The Weather Data Vanilla Changes Snow",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"When": {"HasMod |contains=Kana.WeatherWonders": false,},
+			"Entries": {	
+				"Snow": {
+					"Id": "Snow",
+					"DisplayName": "{{i18n: Weather.Sleet}}",
+
+					"Forecast": "{{i18n: Weather.Snow.Forecast{{Random: 1,2}} }}",
+					"ForecastByContext": 
+						{"Island": "{{i18n: Weather.Snow.Forecast{{Random: 1,2}} }}", "Desert": "{{i18n: Weather.Snow.Forecast{{Random: 1,2}} }}",},					
+					
+					"UseNightTiles":true,
+					"IsSnowing": false,
+					"IsRaining": true,
+					"IsLightning": false,
+					"IsDebrisWeather": false,
+					"SpawnCritters": false,
+					"SpawnFrogs": null,
+					"SpawnClouds": null,
+
+					//"LightingTint": "orangered",
+					//"LightingTintOpacity": 0.35,
+					//"PostLightingTint": "blue",
+					//"PostLightingTintOpacity": 0.16,
+					
+					"TVTexture": "LooseSprites/Cursors",
+					"TVSource": {"X": 465, "Y": 346},
+					
+					"IconTexture": "Mods/kath.weathering/Icons",
+					"IconSource": {"X": 0, "Y": 72},
+
+					"Effects":[
+						{
+							"Id": "CTFlag",
+							"Type": "Trigger",
+							"ApplyActions": [
+								"AddConversationTopic WCDSleet 2",
+							],
+						},		
+					],//close effect
+
+
+
+					"Layers": [
+						{
+							"Id": "SnowPart1",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Blizzard",
+							"Source": {"X": 48, "Y": 16, "Width": 16, "Height": 16 },
+							"Speed": "-0.02, 0.03",
+							"ViewSpeed": "-1, -1",
+							"Opacity": 0.85,
+							"Scale": 5,
+						},	
+						{
+							"Id": "SnowPart2",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Blizzard",
+							"Source": {"X": 16, "Y": 16, "Width": 16, "Height": 16 },
+							"Speed": "0.01, 0.02",
+							"ViewSpeed": "-1, -1",
+							"Opacity": 1.0,
+							"Scale": 6,
+						},	
+						{
+							"Id": "SnowPart3",
+							"Condition": "LOCATION_CONTEXT Here Default Lemurkat_EastScarp, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "TextureScroll",
+							"Texture": "Mods/kath.weathering/Blizzard",
+							"Source": {"X": 16, "Y": 16, "Width": 16, "Height": 16 },
+							"Speed": "-0.02, 0.02",
+							"ViewSpeed": "-1, -1",
+							"Opacity": 0.75,
+							"Scale": 7,
+						},	
+						{
+							"Id": "SnowyPart1",
+							"Condition": "ANY \"LOCATION_NAME Target Woods\" \"LOCATION_NAME Target Custom_SpriteSpring2\"",
+							"Type": "Snow",
+							"Texture": "Mods/kath.weathering/Blizzard",
+							"Source": {"X": 48, "Y": 16, "Width": 16, "Height": 16 },
+							"Speed": "0, 0.03",
+							"ViewSpeed": "-1, -1",
+							"Scale": 4,
+							"Opacity": 0.85
+						},	
+						{
+							"Id": "SnowyPart2",
+							"Condition": "ANY \"LOCATION_NAME Target Woods\" \"LOCATION_NAME Target Custom_SpriteSpring2\"",
+							"Type": "Snow",
+							"Texture": "Mods/kath.weathering/Blizzard",
+							"Source": {"X": 16, "Y": 16, "Width": 16, "Height": 16 },
+							"Speed": "-0.03, 0.02",
+							"ViewSpeed": "-1, -1",
+							"Scale": 6,
+							"Opacity": 0.75
+						},	
+						{
+							"Id": "RainPart1",
+							"Condition": "ANY \"LOCATION_NAME Target Woods\" \"LOCATION_NAME Target Custom_SpriteSpring2\"",
+							"Type": "Rain",
+							"Count": 30,
+						},
+						{
+							"Id": "RainPart2",
+							"Condition": "LOCATION_CONTEXT Here Default, LOCATION_IS_OUTDOORS Here, !LOCATION_NAME Target Woods, !LOCATION_NAME Target Custom_SpriteSpring2",
+							"Type": "Rain",
+							"Count": 50,
+						},
+						{
+							"Id": "Tinting",
+							"Type": "Color",
+							"Mode": "Lighting",
+							"Color": "41, 50, 50",
+							"Opacity": 0.63
+						}
+					]//close layers
+				}//close in-entry
+			}//close entry
+		}//close edit
+//End
+]
+}

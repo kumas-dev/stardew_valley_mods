@@ -10,6 +10,10 @@ config.json
 !SkipFishingMinigameDotnet5/config.json
 !DaLion/**/config.json
 !MasteryExtended/**/config.json
+!Stardew Valley Balance Overhaul/**/config.json
+!Lnh's Island Overhaul/**/config.json
+!Stardew Valley Expanded/**/config.json
+!Informant/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data

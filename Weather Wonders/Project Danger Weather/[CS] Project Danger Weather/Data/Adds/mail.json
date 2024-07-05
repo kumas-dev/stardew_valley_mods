@@ -1,0 +1,361 @@
+{
+	"Changes": [
+//Main
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			"kath.weathering_NadoOnce": {
+				"Id": "kath.weathering_NadoOnce",
+                "Trigger": "DayStarted",
+                "Condition": "WEATHER Here kath.weathering_Tornado",
+                "Actions": [
+					"AddMail Current NadoOnce Now",
+                    ],
+				},	
+			"kath.weathering_StopNadoOnce": {
+				"Id": "kath.weathering_StopNadoOnce",
+                "Trigger": "DayStarted",
+                "Condition": "PLAYER_HAS_MAIL Current TriggerStopNadoOnce",
+                "Actions": [
+					"RemoveMail Current NadoOnce All",
+                    ],
+				},
+			"kath.weathering_AcidRainSoil": {
+				"Id": "kath.weathering_AcidRainSoil",
+                "Trigger": "DayEnding",
+                "Condition": "WEATHER Town kath.weathering_AcidRain",
+                "Actions": [
+                    "If !PLAYER_HAS_MAIL Current AcidRainSoil ## AddMail Current AcidRainSoil",
+					"MarkActionApplied Current kath.weathering_AcidRainSoil_RemoveFlag false",
+                    ],
+				},
+			"kath.weathering_AcidRainSoil_RemoveFlag": {
+				"Id": "kath.weathering_AcidRainSoil_RemoveFlag",
+                "Trigger": "DayEnding",
+                "Condition": "!WEATHER Here kath.weathering_AcidRain",
+                "Actions": [
+                    "MarkActionApplied Current kath.weathering_AcidRainSoil false",
+                    ],
+				},
+			"kath.weathering_MudRainSoil": {
+				"Id": "kath.weathering_MudRainSoil",
+                "Trigger": "DayEnding",
+                "Condition": "WEATHER Town kath.weathering_MudRain",
+                "Actions": [
+                    "If !PLAYER_HAS_MAIL Current MudRainSoil ## AddMail Current MudRainSoil",
+					"MarkActionApplied Current kath.weathering_MudRainSoil_RemoveFlag false",
+                    ],
+				},
+			"kath.weathering_MudRainSoil_RemoveFlag": {
+				"Id": "kath.weathering_MudRainSoil_RemoveFlag",
+                "Trigger": "DayEnding",
+                "Condition": "!WEATHER Here kath.weathering_MudRain",
+                "Actions": [
+                    "MarkActionApplied Current kath.weathering_MudRainSoil false",
+                    ],
+				},					
+			},
+		},
+//For Drought
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+			"When": {
+					"SprinklerDrought": "true",
+					"AddWeather": "heat",
+				},
+            "Entries": {
+			"kath.weathering_NoSprinklers": {
+				"Id": "kath.weathering_NoSprinklers",
+                "Trigger": "LocationChanged",
+                "Condition": "WEATHER Here kath.weathering_HeatWave, YEAR 1",
+                "Actions": [
+                    "AddMail Current NoSprinklersToday"
+                    ],
+				},			
+			"kath.weathering_NoSprinklersSubsidy": {
+				"Id": "kath.weathering_NoSprinklersSubsidy",
+                "Trigger": "DayEnding",
+                "Condition": "SEASON summer, DAY_OF_MONTH 23, YEAR 2",
+                "Actions": [
+                    "AddMail Current NoSprinklersSub",
+					"AddConversationTopic WCDFarmerAid1 3"
+                    ],
+				},	
+			"kath.weathering_NoSprinklersSubsidyLong": {
+				"Id": "kath.weathering_NoSprinklersSubsidyLong",
+                "Trigger": "DayEnding",
+                "Condition": "SEASON summer, DAY_OF_MONTH 16, YEAR 4",
+                "Actions": [
+					"If PLAYER_HAS_MAIL Current NoSprinklersSub ## AddMail Current NoSprinklersSubAgain ## AddMail Current NoSprinklersSub",
+					"AddConversationTopic WCDFarmerAid2 3"
+                    ],
+				},					
+			"kath.weathering_NoSprinklersLong": {
+				"Id": "kath.weathering_NoSprinklersLong",
+                "Trigger": "LocationChanged",
+                "Condition": "WEATHER Here kath.weathering_HeatWave, !YEAR 1 4",
+                "Actions": [
+                    "If PLAYER_HAS_MAIL Current NoSprinklersToday ## AddMail Current NoSprinklersAgain ## AddMail Current NoSprinklersToday",
+					"MarkActionApplied Current kath.weathering_NoSprinklersLong_RemoveFlag false",
+                    ],
+				},
+			"kath.weathering_NoSprinklersLong_RemoveFlag": {
+				"Id": "kath.weathering_NoSprinklersLong_RemoveFlag",
+                "Trigger": "DayEnding",
+                "Condition": "!WEATHER Here kath.weathering_HeatWave, !YEAR 1 4",
+                "Actions": [
+                    "MarkActionApplied Current kath.weathering_NoSprinklersLong false",
+					"RemoveMail Current NoSprinklersAgain"
+                    ],
+				},
+			},
+		},
+//For Maps
+	//Flood Heavy Rains
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+			"When": {
+					"PretendFlooding": "true",
+				},
+            "Entries": {
+			"kath.weathering_HeavyRainMapOn": {
+				"Id": "kath.weathering_HeavyRainMapOn",
+                "Trigger": "DayStarted",
+                "Condition": "!WEATHER Here kath.weathering_HeavyRain, CS_WEATHER Town -1 kath.weathering_HeavyRain",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_HeavyRainMapOff false",
+					"AddMail Current HeavyRainMapFlag received",
+                    ],
+				},
+			"kath.weathering_HeavyRainMapOff": {
+				"Id": "kath.weathering_HeavyRainMapOff",
+                "Trigger": "DayEnding",
+                "Condition": "!WEATHER Here kath.weathering_HeavyRain, CS_WEATHER Town -2 kath.weathering_HeavyRain",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_HeavyRainMapOn false",
+					"RemoveMail Current HeavyRainMapFlag All",
+                    ],
+				},
+			},
+		},
+	//Flood Hurricane
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+			"When": {
+					"PretendHurricane": "true",
+				},
+            "Entries": {
+			"kath.weathering_HurryMapOn": {
+				"Id": "kath.weathering_HurryMapOn",
+                "Trigger": "DayStarted",
+                "Condition": "!WEATHER Here kath.weathering_Hurry, CS_WEATHER Town -1 kath.weathering_Hurry",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_HurryMapOff false",
+					"AddMail Current HurryMapFlag received",
+                    ],
+				},
+			"kath.weathering_HurryMapOff": {
+				"Id": "kath.weathering_HurryMapOff",
+                "Trigger": "DayEnding",
+                "Condition": "!WEATHER Here kath.weathering_Hurry, CS_WEATHER Town -2 kath.weathering_Hurry",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_HurryMapOn false",
+					"RemoveMail Current HurryMapFlag All",
+                    ],
+				},
+			},
+		},
+	//Dry Heat Waves
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+			"When": {
+					"PretendHeatWave": "true",
+				},
+            "Entries": {
+			"kath.weathering_HeatWaveMapOn": {
+				"Id": "kath.weathering_HeatWaveMapOn",
+                "Trigger": "DayStarted",
+                "Condition": "!WEATHER Here kath.weathering_HeatWave, CS_WEATHER Town -1 kath.weathering_HeatWave",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_HeatWaveMapOff false",
+					"AddMail Current HeatWaveMapFlag received",
+                    ],
+				},
+			"kath.weathering_HeatWaveMapOff": {
+				"Id": "kath.weathering_HeatWaveMapOff",
+                "Trigger": "DayEnding",
+                "Condition": "!WEATHER Here kath.weathering_HeatWave, CS_WEATHER Town -2 kath.weathering_HeatWave",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_HeatWaveMapOn false",
+					"RemoveMail Current HeatWaveMapFlag All",
+                    ],
+				},
+			},
+		},
+	//Wildfire
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+			"When": {
+					"PretendFire": "true",
+				},
+            "Entries": {
+			"kath.weathering_WildfireMapOn": {
+				"Id": "kath.weathering_WildfireMapOn",
+                "Trigger": "DayStarted",
+                "Condition": "!WEATHER Here kath.weathering_Wildfire, CS_WEATHER Town -1 kath.weathering_Wildfire",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_WildfireMapOff false",
+					"AddMail Current WildfireMapFlag received",
+                    ],
+				},
+			"kath.weathering_WildfireMapOff": {
+				"Id": "kath.weathering_WildfireMapOff",
+                "Trigger": "DayEnding",
+                "Condition": "!WEATHER Here kath.weathering_Wildfire, CS_WEATHER Town -2 kath.weathering_Wildfire",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_WildfireMapOn false",
+					"RemoveMail Current WildfireMapFlag All",
+                    ],
+				},
+			},
+		},
+//For Earthquake (THIS ONE made my head hurt)
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+			"When": {
+					"AddWeather": "ash",
+					"NightEvents": "true",
+				},
+            "Entries": {
+			"kath.weathering_EarthquakeStart": {
+				"Id": "kath.weathering_EarthquakeStart",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_VISITED_LOCATION Current IslandNorth IslandWest, RANDOM 0.125, !YEAR 1 4, !IS_PASSIVE_FESTIVAL_TODAY SquidFest, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !IS_PASSIVE_FESTIVAL_TODAY NightMarket",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_EarthquakeVolcano_Stop false",
+					"AddMail Current StartEarthquakeIsland received",
+                    ],
+				},
+			"kath.weathering_EarthquakeFlag": {
+				"Id": "kath.weathering_EarthquakeFlag",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current VolcanoIsland, RANDOM 0.65, !YEAR 1 4, !IS_PASSIVE_FESTIVAL_TODAY SquidFest, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !IS_PASSIVE_FESTIVAL_TODAY NightMarket",
+                "Actions": [
+                    "AddMail Current VolcanoEruption received",
+					"AddConversationTopic WCDEruption 4",
+                    ],
+				},
+			"kath.weathering_EarthquakeVolcano_Stop": {
+				"Id": "kath.weathering_EarthquakeVolcano_Stop",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current VolcanoEruption, RANDOM 0.85, !YEAR 1 4, !IS_PASSIVE_FESTIVAL_TODAY SquidFest, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !IS_PASSIVE_FESTIVAL_TODAY NightMarket",
+                "Actions": [
+					"MarkActionApplied All kath.weathering_EarthquakeStart false",
+					"RemoveMail Current VolcanoEruption All",
+					"RemoveMail Current VolcanoIsland All",
+					"RemoveMail Current EarthquakeIsland All",
+                    ],
+				},
+	//VolcanoDebuffTrigger (doesn't work really)
+			/*"kath.weathering_LavaDebuff": {
+				"Id": "kath.weathering_LavaDebuff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_LOCATION_NAME VolcanoDungeon0 VolcanoDungeon1 VolcanoDungeon2 VolcanoDungeon3 VolcanoDungeon4 VolcanoDungeon6 VolcanoDungeon7 VolcanoDungeon8 VolcanoDungeon9 Caldera",
+                "Actions": [
+                    "AddBuff AshLungVolcano",
+					"MarkActionApplied All kath.weathering_LavaDebuff_Remove false",
+                    ],
+				},
+			"kath.weathering_LavaDebuff_Remove": {
+				"Id": "kath.weathering_LavaDebuff_Remove",
+                "Trigger": "LocationChanged",
+                "Condition": "!PLAYER_LOCATION_NAME VolcanoDungeon0 VolcanoDungeon1 VolcanoDungeon2 VolcanoDungeon3 VolcanoDungeon4 VolcanoDungeon6 VolcanoDungeon7 VolcanoDungeon8 VolcanoDungeon9 Caldera",
+                "Actions": [
+					"RemoveBuff AshLungVolcano",
+					"MarkActionApplied All kath.weathering_LavaDebuff false",
+                    ],
+				},*/
+	//Special
+			"kath.weathering_EarthquakeStartOnce": {
+				"Id": "kath.weathering_EarthquakeStartOnce",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_VISITED_LOCATION Current IslandNorth IslandWest, PLAYER_STAT Any boatRidesToIsland 5 99, !IS_PASSIVE_FESTIVAL_TODAY SquidFest, !IS_PASSIVE_FESTIVAL_TODAY DesertFestival, !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !IS_PASSIVE_FESTIVAL_TODAY NightMarket",
+                "Actions": [
+					"AddMail Current EarthquakeIslandOnce received",
+                    ],
+				},
+			"kath.weathering_EarthquakeVolcano": {
+				"Id": "kath.weathering_EarthquakeVolcano",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current VolcanoIslandOnce, WEATHER Here kath.weathering_Ash",
+                "Actions": [
+					"AddMail Current VolcanoEruptionOnce received",
+					"AddConversationTopic WCDEruption 4",
+                    ],
+				},
+			"kath.weathering_EarthquakeVolcanoEruption": {
+				"Id": "kath.weathering_EarthquakeVolcanoEruption",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current VolcanoEruptionOnce, WEATHER Here kath.weathering_Ash",
+                "Actions": [
+					"AddMail Current TriggerStop2 tomorrow",
+					"AddMail Current TriggerStop1 received",
+                    ],
+				},
+			"kath.weathering_EarthquakeStartOnce_Stop": {
+				"Id": "kath.weathering_EarthquakeStartOnce_Stop",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current TriggerStop1",
+                "Actions": [
+					"RemoveMail Current EarthquakeIslandOnce All",
+					"RemoveMail Current VolcanoIslandOnce All",
+                    ],
+				},
+			"kath.weathering_Earthquake_Stop": {
+				"Id": "kath.weathering_Earthquake_Stop",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current TriggerStop2",
+                "Actions": [
+					"RemoveMail Current VolcanoEruptionOnce All",
+                    ],
+				},
+			},
+		},
+
+
+
+		{
+		"Action": "EditData",
+    	"Target": "Data/mail",
+    	"Entries":{ 
+			"NoSprinklersToday": "{{i18n: No.Sprinklers1.LetterText}}[letterbg Mods/kath.weathering/Letters 0][textcolor black][#]{{i18n: No.Sprinklers1.LetterTitle}}",
+			"NoSprinklersSub": "{{i18n: No.Sprinklers2.LetterText}}[letterbg Mods/kath.weathering/Letters 0][textcolor black]%item money 2000 3500 %%[#]{{i18n: No.Sprinklers2.LetterTitle}}",
+			"NoSprinklersAgain": "{{i18n: No.Sprinklers3.LetterText}}[letterbg Mods/kath.weathering/Letters 0][textcolor black]%item money 800 2000 %%[#]{{i18n: No.Sprinklers3.LetterTitle}}",
+			"NoSprinklersSubAgain": "{{i18n: No.Sprinklers4.LetterText}}[letterbg Mods/kath.weathering/Letters 0][textcolor black]%item money 3500 8000 %%[#]{{i18n: No.Sprinklers4.LetterTitle}}",
+			"AcidRainSoil": "{{i18n: AcidRain.Soil.LetterText}}[letterbg Mods/kath.weathering/Letters 0][textcolor black][#]{{i18n: AcidRain.Soil.LetterTitle}}",
+			"MudRainSoil": "{{i18n: MudRain.Soil.LetterText}}[letterbg Mods/kath.weathering/Letters 0][textcolor black][#]{{i18n: MudRain.Soil.LetterTitle}}",
+			"StartEarthquakeIsland": null,
+			"EarthquakeIsland": null,
+			"VolcanoIsland": null,
+			"VolcanoEruption": null,
+			"EarthquakeIslandOnce": null,
+			"VolcanoEruptionOnce": null,
+			"TriggerStop1": null,
+			"TriggerStop2": "{{i18n: Volcano.Lava.LetterText}}[letterbg Mods/kath.weathering/Letters 0][textcolor black][#]{{i18n: Volcano.Lava.LetterTitle}}",
+			"HeavyRainMapFlag": null,
+			"HurryMapFlag": null,
+			"HeatWaveMapFlag": null,
+			"WildfireMapFlag": null,
+			"NadoOnce": null,
+			"TriggerStopNadoOnce": null,
+			},
+		},
+]
+}

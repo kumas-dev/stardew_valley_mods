@@ -1,0 +1,209 @@
+{
+	"Changes": [	
+        {
+      	    "LogName": "Add Buffs and Debuffs",
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+				"Notthefish1": {
+    			"DisplayName": "{{i18n: Rot.1}}",
+    			"Description": "{{i18n: Rot.2}}",
+    			"IsDebuff": true,
+    			"GlowColor": null,
+    			"Duration": 50,
+    			"MaxDuration": -1,
+    			"IconTexture": "Mods/kath.weathering/Buffs",
+    			"IconSpriteIndex": 4,
+    			"Effects":  {
+      				"FarmingLevel": 0.0,
+      				"FishingLevel": -4.0,
+      				"MiningLevel": 0.0,
+      				"LuckLevel": 0.0,
+      				"ForagingLevel": 0.0,
+      				"MaxStamina": -10.0,
+      				"MagneticRadius": 0.0,
+      				"Speed": 0.5,
+      				"Defense": 0.0,
+      				"Attack": 0.0
+    				},
+    			"ActionsOnApply": ["AddBuff 25"],
+    			"CustomFields": null
+                	},
+			},
+		},
+	{
+      	    "LogName": "Add Dryness Farm Island",
+            "Action": "EditMap",
+            "Target": "Maps/Island_W",
+			"FromFile": "assets/drypostfarm.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 71, "Y": 41, "Width": 1, "Height": 2 },
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+	},
+	{
+	      	"LogName": "Change message",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+			"NoSprinklers": "{{i18n: No.Sprinklers}}",
+				},
+			"When": {
+				"SprinklerDrought": "true",
+			},
+	},
+	{
+      	    "LogName": "Stop Sprinklers",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Farm_Combat, Maps/Farm_Fishing, Maps/Farm_Foraging, Maps/Farm_FourCorners, Maps/Farm_Island, Maps/Farm_Ranching, Maps/Farm-Mining",
+			"FromFile": "assets/dryfarms/{{TargetWithoutPath}}.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+			},
+	},
+	{
+      	    "LogName": "Stop Sprinklers Standard Farm",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Farm",
+			"FromFile": "assets/dryfarms/{{TargetWithoutPath}}.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+				"HasMod |contains=flashshifter.immersivefarm2remastered, flashshifter.GrandpasFarm": false,
+			},
+	},
+    {
+      	    "LogName": "Stop Sprinklers",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Island_W",
+			"FromFile": "assets/dryfarms/{{TargetWithoutPath}}.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+				"HasMod |contains=Lnh.IslandOverhaul": false,
+			},
+	},
+	
+//SVE Compat
+//Farms
+	{
+      	    "LogName": "Stop Sprinklers SVE Grandpa Farm",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Farm",
+			"FromFile": "assets/SVE/dry/farms/GrandpasFarm.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+				"HasMod |contains=flashshifter.GrandpasFarm": true,
+			},
+	},
+	{
+      	    "LogName": "Stop Sprinklers SVE IF2R",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Farm",
+			"FromFile": "assets/SVE/dry/farms/IF2R.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+				"HasMod |contains=flashshifter.immersivefarm2remastered": true,
+			},
+	},
+	{
+      	    "LogName": "Stop Sprinklers SVE GrampletonFields",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Custom_GrampletonFields",
+			"FromFile": "assets/SVE/dry/farms/GrampletonFields.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+				"HasMod |contains=flashshifter.GrampletonFields": true,
+			},
+	},
+	{
+      	    "LogName": "Stop Sprinklers SVE Garden",
+            "Action": "EditMap",
+			"PatchMode": "Overlay",
+            "Target": "Maps/Custom_Garden",
+			"FromFile": "assets/SVE/dry/farms/Garden.tmx",
+			"Priority": "Default",
+			"When": {
+				"SprinklerDrought": "true",
+			},
+	},
+//Desert
+    {
+      	    "LogName": "Add Dry Maps SVE Desert1",
+            "Action": "EditMap",
+            "Target": "Maps/Desert",
+			"FromFile": "assets/SVE/dry/drydesert1.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 14, "Height": 12 },
+			"ToArea": { "X": 0, "Y": 5, "Width": 14, "Height": 12 },
+			"Priority": "Default",
+	},
+    {
+      	    "LogName": "Add Dry Maps SVE Desert2",
+            "Action": "EditMap",
+            "Target": "Maps/Desert",
+			"FromFile": "assets/SVE/dry/drydesert2.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 35, "Height": 11 },
+			"ToArea": { "X": 25, "Y": 0, "Width": 35, "Height": 11 },
+			"Priority": "Default",
+	},
+    {
+      	    "LogName": "Add Dry Maps SVE Desert3",
+            "Action": "EditMap",
+            "Target": "Maps/Desert",
+			"FromFile": "assets/SVE/dry/drydesert3.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 5 },
+			"ToArea": { "X": 52, "Y": 38, "Width": 5, "Height": 5 },
+			"Priority": "Default",
+	},
+    {
+      	    "LogName": "Add Dry Maps SVE Desert4",
+            "Action": "EditMap",
+            "Target": "Maps/Desert",
+			"FromFile": "assets/SVE/dry/drydesert4.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 25, "Height": 22 },
+			"ToArea": { "X": 0, "Y": 33, "Width": 25, "Height": 22 },
+			"Priority": "Default",
+	},
+//Forest
+    {
+      	    "LogName": "Add Dry Maps SVE Forest1",
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+			"FromFile": "assets/SVE/dry/dryforest1.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 26, "Height": 14 },
+			"ToArea": { "X": 22, "Y": 16, "Width": 26, "Height": 14 },
+			"Priority": "Default",
+	},
+    {
+      	    "LogName": "Add Dry Maps SVE Forest2",
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+			"FromFile": "assets/SVE/dry/dryforest2.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 30, "Height": 12 },
+			"ToArea": { "X": 22, "Y": 30, "Width": 30, "Height": 12 },
+			"Priority": "Default",
+	},
+//Mountain
+    {
+      	    "LogName": "Add Dry Maps SVE Adventurer Summit",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AdventurerSummit",
+			"FromFile": "assets/SVE/dry/dryadsumm.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 24 },
+			"ToArea": { "X": 56, "Y": 2, "Width": 8, "Height": 24 },
+			"Priority": "Default",
+	},
+
+//End
+]
+}
