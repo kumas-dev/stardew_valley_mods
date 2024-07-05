@@ -10,7 +10,6 @@ config.json
 !SkipFishingMinigameDotnet5/config.json
 !DaLion/**/config.json
 !MasteryExtended/**/config.json
-!Life Cycle/**/config.json
 
 # cache
 \[AFM\] FarmTypeManager/data
