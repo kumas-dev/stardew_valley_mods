@@ -1,0 +1,15 @@
+{
+	"Name": "Balanced Dynamic Quarry",
+	"Author": "Theoddon",
+	"Version": "1.1.1",
+	"Description": "Improves quarries.",
+	"UniqueID": "Theoddon.BalancedDynamicQuarry",
+	"UpdateKeys": ["Nexus:21482"],
+	"ContentPackFor": {"UniqueID": "Esca.FarmTypeManager"},
+	"Dependencies": [
+		{
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"IsRequired": true
+		},
+	]
+}
