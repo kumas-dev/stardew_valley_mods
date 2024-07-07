@@ -7,14 +7,16 @@ SaveBackup/
 # config
 config.toml
 config.json
+!FixFontOption/config.json
+!Clear Glasses/config.toml
+!DynamicReflections/config.json
+!DynamicNightTime/config.json
 !SkipFishingMinigameDotnet5/config.json
 !Stardew Valley Balance Overhaul/**/config.json
 !Stardew Valley Expanded/**/config.json
 !Weather Wonders/**/config.json
 !Project Danger Weather/**/config.json
 !Tiny Totem Statue Obelisks/**/config.json
-!FixFontOption/config.json
-!Clear Glasses/**/config.toml
 
 # cache
 \[AFM\] FarmTypeManager/data
