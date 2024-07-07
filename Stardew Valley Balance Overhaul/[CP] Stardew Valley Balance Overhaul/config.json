@@ -25,7 +25,7 @@
   "Museum Rewards": "true",
   "Shops": "true",
   "Limited Shop Inventories": "true",
-  "Artisan Goods Gain Quantity": "false",
+  "Artisan Goods Gain Quantity": "true",
   "Merchants Buy More Items": "true",
   "Marnie Sells Auto-Petter": "true",
   "Harvey's Clinic Sells Life Elixirs": "true",
