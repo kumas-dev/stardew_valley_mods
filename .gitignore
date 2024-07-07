@@ -13,6 +13,8 @@ config.json
 !Weather Wonders/**/config.json
 !Project Danger Weather/**/config.json
 !Tiny Totem Statue Obelisks/**/config.json
+!FixFontOption/config.json
+!Clear Glasses/**/config.toml
 
 # cache
 \[AFM\] FarmTypeManager/data
