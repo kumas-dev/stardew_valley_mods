@@ -102,11 +102,11 @@
 "Weather.Blizzard": "눈보라",
 "Weather.Blizzard.Forecast": "찬바람이 불고 폭설이 예상됩니다. 기온이 급격히 낮아지고 시야가 확보되지 않으니 너무 오래 집을 떠나지 마세요. 페른 제도와 칼리코 사막은 영향을 받지 않습니다.",
 "Weather.Blizzard.ForecastIsland": "대륙이 먹구름과 차가운 기류에 뒤덮인 것으로 보입니다. 섬은 차가운 기류의 영향을 받지 않습니다.",
-"Weather.Blizzard.ForecastDesert": "차가운 바람이 불고 계곡에 폭설이 내릴 것으로 예상됩니다. 사막은 낮아진 기온에 영향을 받지 않습니다.",
+"Weather.Blizzard.ForecastDesert": "차가운 바람이 불고 계곡에 폭설이 내릴 것으로 예상됩니다. 칼리코 사막은 낮아진 기온에 영향을 받지 않습니다.",
 "Weather.BlizzardTotem": "차가운 바람이 다가온다...",
 
 "Weather.Sandstorm": "모래 폭풍",
-"Weather.Sandstorm.Forecast": "칼리코 사막에서의 강한 바람이 모래를 날리고 있습니다. 계곡 전역의 가시성이 낮아질 수 있습니다.",
+"Weather.Sandstorm.Forecast": "칼리코 사막에서의 강한 바람이 모래를 날리고 있습니다. 스타듀 밸리 전역의 가시성이 낮아질 수 있습니다.",
 "Weather.Sandstorm.ForecastIsland": "모래 입자가 바다를 가로질러 날아오는 것을 볼 수 있습니다. 다행히도 페른 제도는 영향을 받지 않을 만큼 충분히 멀리 떨어져 있습니다.",
 "Weather.Sandstorm.ForecastDesert": "칼리코 사막에 강풍이 불어 많은 양의 입자가 날리기 시작했습니다. 시야 확보가 어렵고 강풍과 모래로 인해 피해가 발생할 수 있으므로 실내에 머무르는 것이 좋습니다.",
 "Weather.SandstormTotem": "강한 바람이 다가온다...",
@@ -122,7 +122,7 @@
 "PostFlood.Message": "불편을 끼쳐드려 죄송합니다^수위가 아직 너무 높아서 이 이상 계속하기에는 너무 위험합니다^^-펀길 WCD 센터",
 
 "Weather.HeatWave": "폭염",
-"Weather.HeatWave.Forecast": "폭염으로 인한 기온 상승과 낮은 습도가 스타듀밸리에 영향을 미치고 있습니다. 모두 수분 섭취에 주의하세요!",
+"Weather.HeatWave.Forecast": "폭염으로 인한 기온 상승과 낮은 습도가 스타듀 밸리에 영향을 미치고 있습니다. 모두 수분 섭취에 주의하세요!",
 "Weather.HeatWave.ForecastIsland": "폭염으로 인한 기온 상승과 낮은 습도가 페른 제도에 영향을 미치고 있습니다. 모두 수분 섭취에 주의하세요!",
 "Weather.HeatWave.ForecastDesert": "폭염으로 인한 기온 상승과 낮은 습도가 칼리코 사막에 영향을 미치고 있습니다. 모두 수분 섭취에 주의하세요!",
 "Weather.HeatWaveTotem": "점점 더워지고 있습니다... 아니 저만 그래요?",
@@ -131,13 +131,13 @@
 "Dry.Message1": "통이 물고기와 쓰레기 가득 차 있습니다.^^옆에 적힌 메모: #수위가 낮아져 쓰레기와 물고기가 모두 노출되어버렸습니다.^햇빛에 노출되어 더 빨리 썩고 있으니 해당 지역을 피하세요^^-펀길 WCD 센터",
 "Dry.Message2": "흠... 새는 떠난 것 같지만 쪽지가 여기 있습니다.^^섬의 농장은 마법진 덕에 가뭄으로부터 보호되어 있다. #쪽지가 건조해서 많이 부서졌으니 계속 만지지 않는 것이 좋겠습니다.",
 "No.Sprinklers": "물이 거의 없어서, 지금은 스프링클러를 더 배치하는 것에 대해서 진지하게 생각할 수 없습니다...",
-"No.Sprinklers1.LetterTitle": "펀길 WCD 센터에서: 스프링클러에 대해",
+"No.Sprinklers1.LetterTitle": "펀길 WCD 센터: 스프링클러에 대해",
 "No.Sprinklers1.LetterText": "^^친애하는 농민 여러분,^가뭄으로 인해 농장에 많은 문제가 발생하지 않았기를 바랍니다.^폭염 다음날은 스프링클러가 오작동할 수 있으니 놀라지 마세요. 약간의 가뭄일 뿐입니다^^ 다음날이면 정상 작동할 것입니다.^^                            -펀길 WCD 센터",
-"No.Sprinklers2.LetterTitle": "펀길 WCD 센터에서: 작은 도움말",
+"No.Sprinklers2.LetterTitle": "펀길 WCD 센터: 작은 도움말",
 "No.Sprinklers2.LetterText": "^^친애하는 농민 여러분,^저희도 이번 가뭄이 그 어느 때보다 길었던 것을 이해하고 있습니다.^이 긴 폭염이 지나고 나면 여러분의 스프링클러가 다시 작동할 것을 확신합니다.^폭염과 이어진 가뭄으로 피해를 입으신 농민 분들께 이것이 작은 안도가 되길 바랍니다.^                            -펀길 WCD 센터",
-"No.Sprinklers3.LetterTitle": "펀길 WCD 센터에서: 폭염에 대해서",
-"No.Sprinklers3.LetterText": "^^농민 여러분,^이번 가뭄으로부터 농장의 데이터를 수집 할 수 있었습니다.^ 감사의 표시로 소액의 금액을 첨부했습니다.^^이 메일은 자동으로 전송되었습니다.^^                            -펀길 WCD 센터",
-"No.Sprinklers4.LetterTitle": "펀길 WCD 센터에서: 몇 가지 추가 도움말",
+"No.Sprinklers3.LetterTitle": "펀길 WCD 센터: 폭염에 대해서",
+"No.Sprinklers3.LetterText": "^^친애하는 농민 여러분,^이번 가뭄으로부터 농장의 데이터를 수집 할 수 있었습니다.^ 감사의 표시로 소액의 금액을 첨부했습니다.^^이 메일은 자동으로 전송되었습니다.^^                            -펀길 WCD 센터",
+"No.Sprinklers4.LetterTitle": "펀길 WCD 센터: 몇 가지 추가 도움말",
 "No.Sprinklers4.LetterText": "^^친애하는 농민 여러분,^기록적인 가뭄이 계속되고 있습니다!^이 긴 폭염이 끝나는 날 스프링클러가 다시 작동할 것을 확신합니다.^폭염과 가뭄으로 피해를 입으신 농민 분들께 작은 도움의 손길을 보냅니다.^                            -펀길 WCD 센터",
 "PostDry.Message": "통이 물고기와 쓰레기 가득 차 있습니다.^^적어도 지금은 냄새가 그렇게까지 나쁘진 않네요...#그래도 멀리 떨어져 있는게 낫겠어요.",
 
@@ -148,7 +148,7 @@
 "Weather.StarryTotem": "오늘 하늘이 더 밝아 보입니다.",
 
 "Weather.DryStorm": "마른 번개 폭풍",
-"Weather.DryStorm.Forecast": "이번 여름 스타듀밸리에서는 습도가 낮습니다. 강수량이 거의 또는 전혀 없는 번개 폭풍이 예상되므로 주의하십시오.",
+"Weather.DryStorm.Forecast": "이번 여름 스타듀 밸리에서는 습도가 낮습니다. 강수량이 거의 또는 전혀 없는 번개 폭풍이 예상되므로 주의하십시오.",
 "Weather.DryStorm.ForecastIsland": "이맘때는 습도가 낮습니다. 강수량이 거의 또는 전혀 없는 번개 폭풍이 예상되므로 주의하십시오.",
 "Weather.DryStorm.ForecastDesert": "펀길 공화국 주변에서 많은 번개 폭풍이 예상되므로 해당 지역 방문에 주의하십시오. 칼리코 사막은 이러한 습도 저하의 영향을 받지 않습니다.",
 "Weather.DryStormTotem": "멀리서 커다란 천둥의 소리가 들려옵니다...",
@@ -175,7 +175,7 @@
 "Weather.AcidRain.ForecastIsland": "주주시티의 스모그 증가로 인해 비의 산성화가 초래되었습니다. 이 산성비는 최근 가을 계절풍으로 인해 페른 제도에 도달했습니다. 밖에 있으면 건강에 해로울 수 있으므로 실내에 머물러주십시오.",
 "Weather.AcidRain.ForecastDesert": "주주시티의 스모그 증가로 인해 비의 산성화가 초래되었습니다. 밖에 있으면 건강에 해로울 수 있으므로 실내에 머물러주십시오.",
 "Weather.AcidRainTotem": "물이 끓는다!",
-"AcidRain.Soil.LetterTitle": "펀길 WCD 센터에서: 토양 영양소 I",
+"AcidRain.Soil.LetterTitle": "펀길 WCD 센터: 토양 영양소 I",
 "AcidRain.Soil.LetterText": "^^친애하는 농민 여러분,^이 산성비는 작물에 끔찍합니다!^이로인해 토양은 작물이 제대로 자라기 위한 주된 영양분을 잃었습니다.^작물이 죽는 것을 경험한다면 이것이 주요 원인 일 수 있습니다. 토양은 점차 풍부한 영양분을 되찾을 것입니다.^^                            -펀길 WCD 센터",
 
 "Weather.Darkness": "암흑 일식",
@@ -189,20 +189,20 @@
 "Weather.MudRain.ForecastIsland": "내일 비가 예상됩니다. 이번 비에는 칼리코 사막에서의 바람으로 인해 모래와 미네랄이 섞여 있습니다. 이 독특한 혼합으로 진흙비가 만들어졌습니다.",
 "Weather.MudRain.ForecastDesert": "내일 비가 예상됩니다. 이번 비에는 칼리코 사막에서의 바람으로 인해 모래와 미네랄이 섞여 있습니다. 이 독특한 혼합으로 진흙비가 만들어졌습니다.",
 "Weather.MudRainTotem": "식물에게 맛있는 물을!",
-"MudRain.Soil.LetterTitle": "펀길 WCD 센터에서: 토양 영양소  II",
+"MudRain.Soil.LetterTitle": "펀길 WCD 센터: 토양 영양소  II",
 "MudRain.Soil.LetterText": "^^친애하는 농민 여러분,^이 진흙 섞인 비는 작물을 위한 많은 양의 영양분이 함유되어 있습니다!^이로인해 토양은 작물이 제대로 자라기 위한 주된 영양분을 얻었습니다.^작물이 빠르게 성장하는 것을 경험한다면 이것이 주요 원인 일 수 있습니다. 슬프게도, 토양은 점차 이번 영양분 증가분을 잃어갈 것입니다.^^                            -펀길 WCD 센터",
 
 	//Added in 1.2
 "Weather.Ash": "화산재",
-"Weather.Ash.Forecast": "펀 제도는 최근 몇 차례 가벼운 지진이 발생했으며, 화산 활동으로 인해 화산재가 공중으로 분출되는 것이 눈에 띄었습니다. 펀 제도 방문 시 주의하시기 바랍니다.",
+"Weather.Ash.Forecast": "페른 제도는 최근 몇 차례 가벼운 지진이 발생했으며, 화산 활동으로 인해 화산재가 공중으로 분출되는 것이 눈에 띄었습니다. 페른 제도 방문 시 주의하시기 바랍니다.",
 "Weather.Ash.ForecastIsland": "최근 몇 차례 가벼운 지진이 발생했으며 화산재가 공중으로 분출되는 등 화산 활동이 눈에 띄고 있습니다. 리조트 방문 시 주의해 주시기 바랍니다.",
-"Weather.Ash.ForecastDesert": "펀 제도는 최근 몇 차례 가벼운 지진이 발생했으며, 화산 활동으로 인해 화산재가 공중으로 분출되는 것이 눈에 띄었습니다. 펀 제도 방문 시 주의하시기 바랍니다.",
+"Weather.Ash.ForecastDesert": "페른 제도는 최근 몇 차례 가벼운 지진이 발생했으며, 화산 활동으로 인해 화산재가 공중으로 분출되는 것이 눈에 띄었습니다. 페른 제도 방문 시 주의하시기 바랍니다.",
 "Weather.AshTotem": "땅이 가볍게 흔들리는데, 어쩌면 아무것도 아닐 수도 있습니다...",
 "Lava.Flow1": "용암 흐름으로 인해 계속할 수 없습니다...",
 "Lava.Flow2": "최근 용암이 흐르고 있어 이 지점을 넘어서는 것은 너무 위험합니다 #표지판의 나머지 부분은 바싹 타버렸습니다.",
 "Lava.Flow3": "흠... 새는 떠난 것 같은데, 여기 쪽지가 있네요^^섬의 농장은 화산으로부터 보호받고 있습니다...#쪽지의 나머지 부분은...바삭바삭?",
-"Volcano.Lava.LetterTitle": "Ferngill의 WCD 센터에서 제공합니다: 화산 소개",
-"Volcano.Lava.LetterText": "친애하는 농부님,^우리가 애칭으로 부르는 신더산은 최근 활발한 활동을 하고 있습니다^수치상으로는 곧 분화가 잦아들 것으로 보이지만 언제 다시 분화할지 모르기 때문에 계속 모니터링 하겠습니다^진저섬에 계시는 동안 잘 관리하시기 바랍니다^^ -퍼길의 WCD 센터",
+"Volcano.Lava.LetterTitle": "펀길 WCD 센터: 화산 소개",
+"Volcano.Lava.LetterText": "친애하는 농부님,^우리가 애칭으로 부르는 신더산은 최근 활발한 활동을 하고 있습니다^수치상으로는 곧 분화가 잦아들 것으로 보이지만 언제 다시 분화할지 모르기 때문에 계속 모니터링 하겠습니다^진저섬에 계시는 동안 잘 관리하시기 바랍니다^^ -펀길 WCD 센터",
 
 "Weather.North": "오로라",
 "Weather.North.Forecast": "최근의 태양 플레어 활동으로 인해 페르길 공화국에서도 오로라를 볼 수 있을 거예요! 밤의 장관을 즐기다 보면 마법 같은 일이 일어날지도 모릅니다.",
@@ -210,7 +210,7 @@
 "Weather.North.ForecastDesert": "최근 태양 플레어 활동으로 인해 스타듀 밸리에서 오로라를 볼 수 있을 거예요! 밤의 장관을 즐기다 보면 마법 같은 일이 일어날지도 모릅니다.",
 "Weather.NorthTotem": "태양이 다시 잘못 작동합니다...",
 
-"Weather.MeatBall": "미트볼의 작은 기회",
+"Weather.MeatBall": "하늘에서 음식이 내린다면",
 "Weather.MeatBall.Forecast": "음... 비가 온다고 하는데... 미트볼? 이거 맞아요?",
 "Weather.MeatBall.ForecastIsland": "음... 비가 온다고 하는데... 미트볼? 이거 맞아요?",
 "Weather.MeatBall.ForecastDesert": "음... 비가 온다고 하는데... 미트볼? 이거 맞아요?",
@@ -228,7 +228,7 @@
 "Weather.FFire.ForecastDesert": "최근 낮은 습도와 높은 기온으로 인해 산불 발생 가능성이 높아질 수 있으니, 기상기후재난센터의 권고에 따라 행동하세요.",
 "Weather.FFireTotem": "불꽃인가요?",
 "Fire.Warn1": "이 시점 이후에는 계속할 수 없습니다...",
-"Fire.Warn2": "불길이 너무 거세져서 계속 진행하기에는 너무 위험합니다^^-영길의 WCD 센터#울타리가 내화성이어서 불길을 막고 있습니다.",
+"Fire.Warn2": "불길이 너무 거세져서 계속 진행하기에는 너무 위험합니다^^-펀길 WCD 센터#울타리가 내화성이어서 불길을 막고 있습니다.",
 "PostFire.Warn": "타는 나무 냄새가 여전히 공기 중에 스며들어 있습니다.",
 
 "Weather.Smog": "스모그",
@@ -276,7 +276,7 @@
 "Debuff.Weathering6": "어둠의 공포",
 "Debuff.Weathering6.description": "여기가 어디인가요?",
 	//Added in 1.2
-"Debuff.Weathering7": "잿빛 폐",
+"Debuff.Weathering7": "폐질환",
 "Debuff.Weathering7.description": "이 공기에서는 숨쉬기가 어렵습니다.",
 "Debuff.Weathering8.description": "이 공기는 숨쉬기가 어렵습니다. 여기는 더 안 좋은 것 같아요...",
 "Debuff.Weathering9": "스모크",
@@ -285,7 +285,7 @@
 "Debuff.Weathering10.description": "이 공기는 몸에 좋지 않습니다...",
 "Debuff.Weathering11": "메뚜기 떼",
 "Debuff.Weathering11.description": "어디에나 있습니다!",
-"Debuff.Weathering12": "Dread",
+"Debuff.Weathering12": "두려움",
 "Debuff.Weathering12.description": "그럴까요, 아닐까요?",
 
 //Buff Positive
@@ -318,16 +318,16 @@
 
 
 //Unimplemented
-"Weather.Fog": "화창한 안개 낀 아침",
-"Weather.Fog.Forecast": "짙은 안개가 펑길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼었다가 늦은 저녁에 걷힐 것으로 예상됩니다.",
-"Weather.Fog.ForecastIsland": "펀 아일랜드에 짙은 안개가 끼고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 맑아질 것으로 예상됩니다.",
-"Weather.Fog.ForecastDesert": "짙은 안개가 펑길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼었다가 늦은 저녁에 걷힐 것으로 예상됩니다.",
+"Weather.Fog": "안개(맑음)",
+"Weather.Fog.Forecast": "짙은 안개가 펀길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼었다가 늦은 저녁에 걷힐 것으로 예상됩니다.",
+"Weather.Fog.ForecastIsland": "섬에 짙은 안개가 끼고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 맑아질 것으로 예상됩니다.",
+"Weather.Fog.ForecastDesert": "짙은 안개가 펀길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼었다가 늦은 저녁에 걷힐 것으로 예상됩니다.",
 "Weather.FogTotem": "밖이 약간 흐릿해 보입니다.",
 
-"Weather.FogRain": "비 내리는 안개 낀 아침",
-"Weather.FogRain.Forecast": "짙은 안개가 펑길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 걷힐 것으로 예상됩니다. 하루 종일 비가 내릴 것으로 예상됩니다.",
-"Weather.FogRain.ForecastIsland": "펀 아일랜드에 짙은 안개가 끼고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 걷힐 것으로 예상됩니다. 하루 종일 비가 내릴 것으로 예상됩니다.",
-"Weather.FogRain.ForecastDesert": "짙은 안개가 펑길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 걷힐 것으로 예상됩니다. 하루 종일 비가 내릴 것으로 예상됩니다.",
+"Weather.FogRain": "안개(비)",
+"Weather.FogRain.Forecast": "짙은 안개가 펀길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 걷힐 것으로 예상됩니다. 하루 종일 비가 내릴 것으로 예상됩니다.",
+"Weather.FogRain.ForecastIsland": "섬에 짙은 안개가 끼고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 걷힐 것으로 예상됩니다. 하루 종일 비가 내릴 것으로 예상됩니다.",
+"Weather.FogRain.ForecastDesert": "짙은 안개가 펀길로 향하고 있습니다. 아침에는 안개가 매우 짙게 끼다가 늦은 저녁에 걷힐 것으로 예상됩니다. 하루 종일 비가 내릴 것으로 예상됩니다.",
 
 "Weather.Sleet": "눈비",
 "Weather.Sleet.Forecast": "내일은 비와 눈이 예상되니 모두 조심하세요!",
