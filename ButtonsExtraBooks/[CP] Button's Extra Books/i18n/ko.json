@@ -42,7 +42,7 @@
 
 	"QiNotebook.Book.Name": "미스터 치의 노트북",
 	"QiNotebook.Book.Description": "이 노트는 더 많은 랜덤 치 보석을 찾는 데 도움이 됩니다.",
-	"QiNotebook.Book.Message": '"행운을 빌어, 아이."',
+	"QiNotebook.Book.Message": "\"행운을 빌어, 아이.\"",
 	"QiNotebook.Power.Description": "랜덤 치 보석을 찾을 확률이 증가합니다.",
 
 	"PetGifts.Book.Name": "긍정적 강화",
@@ -76,7 +76,7 @@
 	"Sketchbook.Power.Description": "유물 위치에서 더 좋은 아이템을 발견할 수 있습니다.",
 
 	// MAIL //
-	"Mail.ArtisanGrange.Text": "페른길 공화국 장인 길드는 당신의 고품질 장인 상품에 대한 헌신을 인정하게 되어 자랑스럽게 생각합니다. 스타듀 밸리 박람회에서의 최근 전시를 기념하여, 기계 활용을 더 효율적으로 할 수 있도록 돕는 매뉴얼을 동봉합니다.",
+	"Mail.ArtisanGrange.Text": "펀길 공화국 장인 길드는 당신의 고품질 장인 상품에 대한 헌신을 인정하게 되어 자랑스럽게 생각합니다. 스타듀 밸리 박람회에서의 최근 전시를 기념하여, 기계 활용을 더 효율적으로 할 수 있도록 돕는 매뉴얼을 동봉합니다.",
 	"Mail.ArtisanGrange.Title": "장인 길드",
 
 	"Mail.JunimoScrap.Crop.Text": "우리는 당신을 위해 이 추가 작물을 키우기 위해 정말 열심히 일했어요! 농장을 우리에게 맡겨줘서 고마워요!",
