@@ -1,0 +1,18 @@
+{
+  "AddCookingMenu": false,
+  "AddCookingSkillAndRecipes": false,
+  "AddCookingToolProgression": false,
+  "AddSeasonings": false,
+  "CanUseTownKitchens": false,
+  "FoodHealingTakesTime": true,
+  "FoodBuffsStartHidden": false,
+  "FoodCanBurn": false,
+  "PlayMenuAnimation": false,
+  "PlayCookingAnimation": false,
+  "ShowFoodRegenBar": true,
+  "RememberSearchFilter": true,
+  "DefaultSearchFilter": "None",
+  "DefaultSearchSorter": "Name",
+  "ResizeKoreanFonts": false,
+  "DebugMode": false
+}
