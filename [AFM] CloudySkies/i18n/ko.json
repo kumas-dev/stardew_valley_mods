@@ -29,13 +29,13 @@
 	"setting.replace-tv-menu": "TV 날씨 채널 교체",
 	"setting.replace-tv-menu.about": "활성화하면 TV의 날씨 채널을 더 많은 위치의 날씨 표시를 지원하는 사용자 지정 버전으로 대체합니다.",
 
-	"setting.custom-ginger-isle": "사용자 지정 생강 섬 아트 사용",
+	"setting.custom-ginger-isle": "사용자 지정 진저 섬 아트 사용",
 	"setting.custom-ginger-isle.about": "활성화하면 사용자 지정 TV 날씨 채널의 진저아일랜드 아트를 다른 채널에 더 잘 어울리는 사용자 지정 아트로 교체합니다.",
 
 	"tv.select-location": "위치를 선택합니다:",
 
 	"location.stardew-valley": "스타듀 밸리",
-	"location.calico-desert": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5861]",
+	"location.calico-desert": "칼리코 사막",
 
 	"weather.sunny": "맑음",
 	"weather.rain": "비",

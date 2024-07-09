@@ -6,12 +6,13 @@
     "button.mod-options": "모드 옵션",
 
     // mod list UI
-    "list.editable-heading": "모드 목록",
+    "list.editable-heading": "모드 구성",
     "list.not-editable-heading": "타이틀 화면에서 편집:",
+    "list.keybindings": "키 바인딩",
 
     // mod config pages
     "config.buttons.cancel": "취소",
-    "config.buttons.reset-to-default": "기본",
+    "config.buttons.reset-to-default": "기본값",
     "config.buttons.save": "저장",
     "config.buttons.save-and-close": "저장 후 닫기",
 
@@ -24,8 +25,8 @@
     /*********
     ** Config options for Generic Mod Config Menu itself
     *********/
-    "options.open-menu-key.name": "메뉴 오픈 단축키",
-    "options.open-menu-key.desc": "메뉴 실행 단축키 설정.",
+    "options.open-menu-key.name": "메뉴 키 열기",
+    "options.open-menu-key.desc": "메뉴를 여는 키 바인딩입니다.",
     "options.scroll-speed.name": "스크롤 속도",
-    "options.scroll-speed.desc": "구성 메뉴를 스크롤할 때 이동할 열의 수."
+    "options.scroll-speed.desc": "구성 메뉴를 스크롤할 때 오프셋할 필드 행 수입니다."
 }

@@ -1,0 +1,12 @@
+{
+        "config.wind_prob_name": "바람 부는 날 확률",
+	"config.wind_prob_tooltip": "하루 동안의 바람 확률 [기본값: 0.5]",
+        "config.wind_bushes_name": "부시 흔들기",
+	"config.wind_bushes_tooltip": "부시가 바람의 영향을 받는지 여부 [기본값: 켜짐]",
+        "config.wind_crops_name": "작물 흔들기",
+	"config.wind_crops_tooltip": "작물이 바람의 영향을 받는지 여부 [기본값: 켜짐]",
+        "config.wind_grass_name": "잔디 흔들기",
+	"config.wind_grass_tooltip": "잔디가 바람의 영향을 받는지 여부 [기본값: 켜짐]",
+        "config.wind_trees_name": "나무 흔들기",
+	"config.wind_trees_tooltip": "나무(일반 또는 과일)가 바람의 영향을 받는지 여부 [기본값: 켜짐]"
+}

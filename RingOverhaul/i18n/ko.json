@@ -21,7 +21,7 @@
   "ConfigJukeboxRing": "주크박스 반지",
   "ConfigJukeboxRingWorksInRain": "비 올때 주크박스 반지 활성화",
   "ConfigMinorRingCraftingChanges": "사소한 반지 제작 변경",
-  "ConfigMinorRingCraftingChangesDescription": "더 저렴한 '튼튼한 반지'와 '전사 반지''",
+  "ConfigMinorRingCraftingChangesDescription": "더 저렴한 '튼튼한 반지'와 '전사 반지'",
   "ConfigRemoveCITooltip": "결합된 반지에서\n게딱지 반지\n그리고 면역의 띠 툴팁 제거",
   "ConfigRemoveLTooltip": "결합된 반지에서\n행운의 반지 툴팁 제거",
   "ConfigOldGlowStoneRingRecipe": "오래된 발광석 반지 레시피",
@@ -29,4 +29,4 @@
   "ConfigOldIridiumBandRecipeDescription": "'이리듐 밴드 변경 활성화' 설정을 비활성화하면 이 설정이 강제로 활성화됩니다",
   "ConfigIridiumBandChangesEnabled": "이리듐 밴드 변경 활성화",
   "ConfigIridiumBandChangesEnabledDescription": "이 설정을 비활성화하면 '오래된 이리듐 밴드 레시피' 설정이 강제로 활성화됩니다"
-  }
+}
