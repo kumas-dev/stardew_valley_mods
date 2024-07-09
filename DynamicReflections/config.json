@@ -2,7 +2,7 @@
   "AreWaterReflectionsEnabled": false,
   "AreMirrorReflectionsEnabled": false,
   "ArePuddleReflectionsEnabled": false,
-  "AreNPCReflectionsEnabled": false,
+  "AreNPCReflectionsEnabled": true,
   "AreSkyReflectionsEnabled": true,
   "WaterReflectionSettings": {
     "AreReflectionsEnabled": true,

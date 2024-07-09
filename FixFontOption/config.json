@@ -4,7 +4,7 @@
   "EnableFixDialogueFontLineSpace": true,
   "DialogueFontLineSpace": 42,
   "EnableFixSmallFontLineSpace": true,
-  "SmallFontLineSpace": 37,
+  "SmallFontLineSpace": 30,
   "EnableFixFontPixelZoom": true,
   "FontPixelZoom": 1.0,
   "EnableFixFontColor": false,
