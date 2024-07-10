@@ -8,7 +8,6 @@ SaveBackup/
 config.toml
 config.json
 !FixFontOption/config.json
-!Clear Glasses/config.toml
 !DynamicReflections/config.json
 !DynamicNightTime/config.json
 !SkipFishingMinigameDotnet5/config.json
