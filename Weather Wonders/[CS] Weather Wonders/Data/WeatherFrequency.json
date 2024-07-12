@@ -233,6 +233,30 @@
 				{
 					"Id": "Kana.WeatherWonders_HeatwaveScripted",
 					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BloodMoonStart",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BloodMoonScripted",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BlueMoonStart",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_BlueMoonScripted",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HarvestMoonStart",
+					"BeforeId": "Default"
+				},
+				{
+					"Id": "Kana.WeatherWonders_HarvestMoonScripted",
+					"BeforeId": "Default"
 				}
 			]
 		},
