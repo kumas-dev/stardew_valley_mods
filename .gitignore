@@ -8,6 +8,7 @@ SaveBackup/
 config.toml
 config.json
 !\[AFM\] SpaceCore/config.json
+!\[AFM\] CloudySkies/config.json
 !FixFontOption/config.json
 !DynamicReflections/config.json
 !DynamicNightTime/config.json
