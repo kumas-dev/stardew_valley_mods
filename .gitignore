@@ -8,15 +8,10 @@ SaveBackup/
 config.toml
 config.json
 !\[AFM\] SpaceCore/config.json
-!\[AFM\] CloudySkies/config.json
 !FixFontOption/config.json
-!DynamicReflections/config.json
-!DynamicNightTime/config.json
 !SkipFishingMinigameDotnet5/config.json
 !Stardew Valley Balance Overhaul/**/config.json
 !Stardew Valley Expanded/**/config.json
-!Weather Wonders/**/config.json
-!Project Danger Weather/**/config.json
 !LoveOfCooking/**/config.json
 
 # cache
