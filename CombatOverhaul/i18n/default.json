@@ -1,0 +1,4 @@
+﻿{
+  "buff.health_description": "+{{value}} health per second",
+  "buff.stamina_description": "+{{value}} stamina per second"
+}

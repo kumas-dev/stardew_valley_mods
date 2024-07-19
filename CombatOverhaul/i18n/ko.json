@@ -1,0 +1,4 @@
+﻿{
+  "buff.health_description": "초당 체력 +{{value}}",
+  "buff.stamina_description": "초당 기력 +{{value}}"
+}
