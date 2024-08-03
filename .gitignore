@@ -7,6 +7,8 @@ SaveBackup/
 # config
 config.toml
 config.json
+
+!Core/SpaceCore/config.json
 !FixFontOption/config.json
 !SkipFishingMinigameDotnet5/config.json
 !Stardew Valley Balance Overhaul/**/config.json
