@@ -1,0 +1,10 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        //Strings의 개괄 데이터
+        {
+            "Action": "Include",
+            "FromFile": "assets/Strings/StringsFromCSFiles.json",
+        },
+    ]
+}
