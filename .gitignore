@@ -7,7 +7,6 @@ SaveBackup/
 # config
 config.toml
 config.json
-!\[AFM\] SpaceCore/config.json
 !FixFontOption/config.json
 !SkipFishingMinigameDotnet5/config.json
 !Stardew Valley Balance Overhaul/**/config.json
@@ -15,7 +14,7 @@ config.json
 !LoveOfCooking/**/config.json
 
 # cache
-\[AFM\] FarmTypeManager/data
+Core/FarmTypeManager/data
 *_SaveData.save
 
 # temporary
