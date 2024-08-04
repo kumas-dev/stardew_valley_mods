@@ -1,0 +1,13 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "mods/Stardew Valley/Joja.json,mods/Stardew Valley/Sandy.json, mods/Stardew Valley/SeedShop.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "mods/Stardew Valley Expanded/Joja.json"
+        }
+    ]
+}

@@ -1,0 +1,265 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Fields": {
+                "(O)472": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day parsnipSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Parsnip Seeds
+                "(O)473": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day beanStarter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Bean Starter
+                "(O)474": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day cauliflowerSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Cauliflower Seeds
+                "(O)475": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day potatoSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Potato Seeds
+                "(O)427": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day tulipBulb 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Tulip Bulb
+                "(O)477": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day kaleSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Kale Seeds
+                "(O)429": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day jazzSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Jazz Seeds
+                "(O)476": {
+                    "Condition": "SEASON spring, YEAR 2, SYNCED_RANDOM day garlicSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Garlic Seeds
+                "(O)273": {
+                    "Condition": "SEASON spring, YEAR 2, SYNCED_RANDOM day riceShoot 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Rice Shoot
+                "(O)479": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day melonSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Melon Seeds
+                "(O)480": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day tomatoSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Tomato Seeds
+                "(O)481": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day blueberrySeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Blueberry Seeds
+                "(O)482": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day pepperSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Pepper Seeds
+                "WheatSeeds_Summer": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day wheatSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Wheat Seeds
+                "(O)484": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day radishSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Radish Seeds
+                "(O)453": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day poppySeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Poppy Seeds
+                "(O)455": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day spangleSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Spangle Seeds
+                "(O)302": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day hopsStarter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Hops Starter
+                "CornSeeds_Summer": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day cornSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Corn Seeds
+                "SunflowerSeeds_Summer": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day sunflowerSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Sunflower Seeds
+                "(O)485": {
+                    "Condition": "SEASON summer, YEAR 2, SYNCED_RANDOM day redCabbageSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Red Cabbage Seeds
+                "(O)490": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day pumpkinSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Pumpkin Seeds
+                "CornSeeds_Fall": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day cornSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Corn Seeds
+                "(O)488": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day eggplantSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Eggplant Seeds
+                "(O)491": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day bokChoySeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Bok Choy Seeds
+                "(O)492": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day yamSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Yam Seeds
+                "(O)493": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day cranberrySeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Cranberry Seeds
+                "WheatSeeds_Fall": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day wheatSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Wheat Seeds
+                "SunflowerSeeds_Fall": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day sunflowerSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Sunflower Seeds
+                "(O)425": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day fairySeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Fairy Seeds
+                "(O)299": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day amaranthSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Amaranth Seeds
+                "(O)301": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day grapeStarter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Grape Starter
+                "(O)489": {
+                    "Condition": "SEASON fall, YEAR 2, SYNCED_RANDOM day artichokeSeeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Artichoke Seeds
+                "GrassStarter": {
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Grass Starter
+                "(O)245": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Sugar
+                "(O)246": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Wheat Flour
+                "(O)423": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Rice
+                "(O)247": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Oil
+                "(O)419": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Vinegar
+                "(O)368": {
+                    "Condition": "DAYS_PLAYED 15",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Basic Fertilizer
+                "(O)370": {
+                    "Condition": "DAYS_PLAYED 15",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Basic Retaining Soil
+                "(O)465": {
+                    "Condition": "DAYS_PLAYED 15",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Speed-Gro
+                "(O)369": {
+                    "Condition": "YEAR 2",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Quality Fertilizer
+                "(O)371": {
+                    "Condition": "YEAR 2",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Quality Retaining Soil
+                "(O)466": {
+                    "Condition": "YEAR 2",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Deluxe Speed-Gro
+                "(O)628": {
+                    "Condition": "SYNCED_RANDOM day cherrySapling 0.3",
+                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStockLimit": "Player"
+                }, // Cherry Sapling
+                "(O)629": {
+                    "Condition": "SYNCED_RANDOM day apricotSapling 0.3",
+                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStockLimit": "Player"
+                }, // Apricot Sapling
+                "(O)630": {
+                    "Condition": "SYNCED_RANDOM day orangeSapling 0.3",
+                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStockLimit": "Player"
+                }, // Orange Sapling
+                "(O)631": {
+                    "Condition": "SYNCED_RANDOM day peachSapling 0.3",
+                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStockLimit": "Player"
+                }, // Peach Sapling
+                "(O)632": {
+                    "Condition": "SYNCED_RANDOM day pomegranateSapling 0.3",
+                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStockLimit": "Player"
+                }, // Pomegranate Sapling
+                "(O)633": {
+                    "Condition": "SYNCED_RANDOM day appleSapling 0.3",
+                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStockLimit": "Player"
+                }, // Apple Sapling
+                "(O)458": {
+                    "Condition": "SYNCED_RANDOM day bouquet 0.3",
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player"
+                } // Bouquet
+            }
+        }
+    ]
+}

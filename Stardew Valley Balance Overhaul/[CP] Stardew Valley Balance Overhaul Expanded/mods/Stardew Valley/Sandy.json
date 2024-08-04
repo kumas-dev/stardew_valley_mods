@@ -1,0 +1,71 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy", "Items"],
+            "Fields": {
+                "(O)802": {
+                    "Condition": "SYNCED_RANDOM day sandy_cactus_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Cactus Seeds
+                "(O)478": {
+                    "Condition": "SYNCED_RANDOM day sandy_rhubarb_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Rhubarb Seeds
+                "(O)486": {
+                    "Condition": "SYNCED_RANDOM day sandy_starfruit_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Starfruit Seeds
+                "(O)494": {
+                    "Condition": "SYNCED_RANDOM day sandy_beet_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                }, // Beet Seeds
+                "(BC)196": {
+                    "Condition": "SYNCED_RANDOM day sandy_seasonal_plant 0.5",
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player"
+                }, // Seasonal Plant
+                "(O)88": {
+                    "Condition": "DAY_OF_WEEK Monday",
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Coconut
+                "(O)90": {
+                    "Condition": "DAY_OF_WEEK Tuesday",
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Cactus Fruit
+                "(O)749": {
+                    "Condition": "DAY_OF_WEEK Wednesday",
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Omni Geode
+                "(O)466": {
+                    "Condition": "DAY_OF_WEEK Thursday",
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Deluxe Speed-Gro
+                "(O)340": {
+                    "Condition": "DAY_OF_WEEK Friday",
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Honey
+                "(O)371": {
+                    "Condition": "DAY_OF_WEEK Saturday",
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Quality Retaining Soil
+                "(O)233": {
+                    "Condition": "DAY_OF_WEEK Sunday",
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                } // Ice Cream
+            }
+        }
+    ]
+}

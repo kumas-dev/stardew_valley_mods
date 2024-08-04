@@ -1,0 +1,201 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Joja", "Items"],
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Fields": {
+                "(BC)272": {
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 502261, SYNCED_RANDOM day joja_auto_petter 0.1",
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player"
+                }, // Auto-Petter
+                "(O)167": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Joja Cola
+                "(O)472": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day joja_parsnip_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Parsnip Seeds
+                "(O)473": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day joja_bean_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Bean Starter
+                "(O)474": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day joja_cauliflower_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Cauliflower Seeds
+                "(O)475": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day joja_potato_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Potato Seeds
+                "(O)427": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day joja_tulip_bulb 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Tulip Bulb
+                "(O)429": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day joja_jazz_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Jazz Seeds
+                "(O)477": {
+                    "Condition": "SEASON spring, SYNCED_RANDOM day joja_kale_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Kale Seeds
+                "(O)480": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_tomato_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Tomato Seeds
+                "(O)482": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_pepper_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Pepper Seeds
+                "WheatSeeds_Summer": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_wheat_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Wheat Seeds
+                "(O)484": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_radish_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Radish Seeds
+                "(O)479": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_melon_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Melon Seeds
+                "(O)302": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_hops_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Hops Starter
+                "(O)453": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_poppy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Poppy Seeds
+                "(O)455": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_spangle_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Spangle Seeds
+                "SunflowerSeeds_Summer": {
+                    "Condition": "SEASON summer, SYNCED_RANDOM day joja_sunflower_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Sunflower Seeds
+                "(O)487": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_corn_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Corn Seeds
+                "(O)488": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_eggplant_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Eggplant Seeds
+                "WheatSeeds_Fall": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_wheat_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Wheat Seeds
+                "(O)490": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_pumpkin_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Pumpkin Seeds
+                "(O)299": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_amaranth_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Amaranth Seeds
+                "(O)301": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_grape_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Grape Starter
+                "(O)492": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_yam_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Yam Seeds
+                "(O)491": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_bok_choy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Bok Choy Seeds
+                "(O)493": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_cranberry_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Cranberry Seeds
+                "SunflowerSeeds_Fall": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_sunflower_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Sunflower Seeds
+                "(O)425": {
+                    "Condition": "SEASON fall, SYNCED_RANDOM day joja_fairy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}",
+                    "AvailableStockLimit": "Player"
+                },
+                // Fairy Seeds
+                "(O)297": {
+                    "AvailableStock": 10,
+                    "AvailableStockLimit": "Player"
+                }, // Grass Starter
+                "(O)245": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Sugar
+                "(O)246": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                }, // Wheat Flour
+                "(O)423": {
+                    "AvailableStock": 5,
+                    "AvailableStockLimit": "Player"
+                } // Rice
+            }
+        }
+    ]
+}
