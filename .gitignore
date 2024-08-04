@@ -10,10 +10,8 @@ config.json
 
 !Core/SpaceCore/config.json
 !FixFontOption/config.json
-!SkipFishingMinigameDotnet5/config.json
 !Stardew Valley Balance Overhaul/**/config.json
 !Stardew Valley Expanded/**/config.json
-!LoveOfCooking/**/config.json
 
 # cache
 Core/FarmTypeManager/data
