@@ -2,6 +2,25 @@
     "Format": "2.0.0",
     "Changes": [
         {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": ["(BC)24", "OutputRules"],
+            "Entries": {
+                "Default_GoldenEgg": null,
+                "Default_OstrichEgg": null
+            } // Disabled Default Egg
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop", "Items"],
+            "Fields": {
+                "theoddon.AutoPetter": {
+                    "Condition": "IS_COMMUNITY_CENTER_COMPLETE, SYNCED_RANDOM day animal_shop_auto_petter 0.1"
+                } // Auto-Petter
+            }
+        },
+        {
             "Action": "Include",
             "FromFile": "mods/Stardew Valley/Joja.json,mods/Stardew Valley/Sandy.json, mods/Stardew Valley/SeedShop.json"
         },

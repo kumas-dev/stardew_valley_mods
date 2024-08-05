@@ -144,161 +144,213 @@
                 }, // Grape Starter
 
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Parsnip_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_parsnip_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_parsnip_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Parsnip Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Potato_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_potato_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_potato_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Cauliflower_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cauliflower_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cauliflower_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Cauliflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Tulip_Bulb": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tulip_bulb 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tulip_bulb 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Tulip Bulb
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Jazz_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_jazz_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_jazz_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Jazz Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Kale_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_kale_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_kale_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Kale Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Bean_Starter": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_bean_starter 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_bean_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Bean Starter
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Melon_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_melon_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_melon_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Melon Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Tomato_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tomato_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tomato_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Tomato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Blueberry_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_blueberry_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_blueberry_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Blueberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Pepper_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pepper_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pepper_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Pepper Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Wheat_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_wheat_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_wheat_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Wheat Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Radish_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_radish_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_radish_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Radish Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Corn_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_corn_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_corn_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Corn Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Hops_Starter": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_hops_starter 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_hops_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Hops Starter
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Poppy_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_poppy_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_poppy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Poppy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Spangle_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_spangle_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_spangle_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Spangle Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Sunflower_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_sunflower_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_sunflower_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Sunflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Pumpkin_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pumpkin_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pumpkin_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Pumpkin Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Eggplant_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_eggplant_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_eggplant_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Eggplant Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Bok_Choy": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_BokChoy _seedS 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_BokChoy_seedS 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Bok Choy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Amaranth_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_amaranth_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_amaranth_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Amaranth Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Yam_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_yam_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_yam_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Yam Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Cranberry_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cranberry_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cranberry_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Cranberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Fairy_Seeds": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_fairy_seeds 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_fairy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Fairy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Grape_Starter": {
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_grape_starter 0.3"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_grape_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Grape Starter
 
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Parsnip_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_parsnip_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_parsnip_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Parsnip Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Potato_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_potato_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_potato_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Cauliflower_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cauliflower_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cauliflower_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Cauliflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Tulip_Bulb": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tulip_bulb 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tulip_bulb 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Tulip Bulb
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Jazz_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_jazz_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_jazz_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Jazz Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Kale_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_kale_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_kale_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Kale Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Bean_Starter": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_bean_starter 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_bean_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Bean Starter
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Melon_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_melon_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_melon_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Melon Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Tomato_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tomato_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_tomato_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Tomato Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Blueberry_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_blueberry_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_blueberry_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Blueberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Pepper_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pepper_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pepper_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Pepper Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Wheat_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_wheat_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_wheat_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Wheat Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Radish_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_radish_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_radish_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Radish Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Corn_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_corn_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_corn_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Corn Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Hops_Starter": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_hops_starter 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_hops_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Hops Starter
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Poppy_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_poppy_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_poppy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Poppy Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Spangle_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_spangle_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_spangle_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Spangle Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Sunflower_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_sunflower_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_sunflower_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Sunflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Pumpkin_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pumpkin_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_pumpkin_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Pumpkin Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Eggplant_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_eggplant_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_eggplant_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Eggplant Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Bok_Choy": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_bok_choy_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_bok_choy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Bok Choy Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Amaranth_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_amaranth_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_amaranth_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Amaranth Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Yam_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_yam_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_yam_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Yam Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Cranberry_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cranberry_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_cranberry_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Cranberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Fairy_Seeds": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_fairy_seeds 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_fairy_seeds 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 }, // Fairy Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Grape_Starter": {
-                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_grape_starter 0.3"
+                    "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay, SYNCED_RANDOM day joja_grape_starter 0.3",
+                    "AvailableStock": "{{Random: 10, 20}}"
                 } // Grape Starter
             }
         },
