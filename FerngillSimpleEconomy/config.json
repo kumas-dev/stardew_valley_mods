@@ -1,8 +1,8 @@
 {
-  "MaxCalculatedSupply": 1000,
+  "MaxCalculatedSupply": 500,
   "MinDelta": -50,
   "MaxDelta": 0,
-  "StdDevSupply": 150,
+  "StdDevSupply": 0,
   "StdDevDelta": 5,
   "StdDevDeltaInSeason": 12,
   "StdDevDeltaOutOfSeason": 5,
