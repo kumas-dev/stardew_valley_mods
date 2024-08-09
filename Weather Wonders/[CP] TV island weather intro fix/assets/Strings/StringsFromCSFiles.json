@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "When": {
+        "Language": "ko"
+      },
+      "entries": {
+        "TV_IslandWeatherIntro": "",
+      }
+    }
+  ]
+}

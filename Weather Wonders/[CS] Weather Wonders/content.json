@@ -1,0 +1,439 @@
+{
+	"Format": "2.3.0",
+	"ConfigSchema": {
+		"Warning": {
+			"Section": "Warning",
+			"AllowBlank": true
+		},
+		// Config: Acid Rain
+		"AcidRain": {
+			"Section": "AcidRain",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"AcidRainDamageCrops": {
+			"Section": "AcidRain",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Blizzard
+		"Blizzard": {
+			"Section": "Blizzard",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BlizzardSlowdownPlayer": {
+			"Section": "Blizzard",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BlizzardDensity": {
+			"Section": "Blizzard",
+			"AllowValues": "Less, More",
+			"Default": "Less"
+		},
+		// Config: Cloudy
+		"Cloudy": {
+			"Section": "Cloudy",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Deluge
+		"Deluge": {
+			"Section": "Deluge",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"DelugeSpawnDebris": {
+			"Section": "Deluge",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Drizzle
+		"Drizzle": {
+			"Section": "Drizzle",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Dry Lightning
+		"DryLightning": {
+			"Section": "DryLightning",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Hailstorm
+		"Hailstorm": {
+			"Section": "Hailstorm",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HailstormDamagePlayer": {
+			"Section": "Hailstorm",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Heatwave
+		"Heatwave": {
+			"Section": "Heatwave",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveMoreFireflies": {
+			"Section": "Heatwave",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveDrainsStamina": {
+			"Section": "Heatwave",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveDryWater": {
+			"Section": "Heatwave",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HeatwaveMusic": {
+			"Section": "Heatwave",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Mist
+		"Mist": {
+			"Section": "Mist",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"MistMusic": {
+			"Section": "Mist",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Muddy Rain
+		"MuddyRain": {
+			"Section": "MuddyRain",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"MuddyRainFertilizeDirt": {
+			"Section": "MuddyRain",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Rain-Snow Mix
+		"RainSnowMix": {
+			"Section": "RainSnowMix",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Blood Moon
+		"BloodMoon": {
+			"Section": "BloodMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BloodMoonSpawnMonsters": {
+			"Section": "BloodMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BloodMoonSkillDebuff": {
+			"Section": "BloodMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BloodMoonMusic": {
+			"Section": "BloodMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BloodMoonSoundEffect": {
+			"Section": "BloodMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Blue Moon
+		"BlueMoon": {
+			"Section": "BlueMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BlueMoonLuckBuff": {
+			"Section": "BlueMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BlueMoonMusic": {
+			"Section": "BlueMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"BlueMoonSoundEffect": {
+			"Section": "BlueMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Harvest Moon
+		"HarvestMoon": {
+			"Section": "HarvestMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HarvestMoonBoostGrow": {
+			"Section": "HarvestMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HarvestMoonSkillBuff": {
+			"Section": "HarvestMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HarvestMoonMusic": {
+			"Section": "HarvestMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"HarvestMoonSoundEffect": {
+			"Section": "HarvestMoon",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Earthquake
+		"Earthquake": {
+			"Section": "Earthquake",
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Config: Extras
+		"ClockIcons": {
+			"Section": "Extras",
+			"AllowValues": "Enabled, Disabled",
+			"Default": "Enabled"
+		},
+		"Wind": {
+			"Section": "Extras",
+			"AllowValues": "Enabled, Disabled",
+			"Default": "Enabled"
+		},
+		"SnowStyle": {
+			"Section": "Extras",
+			"AllowValues": "Vanilla, Custom",
+			"Default": "Vanilla"
+		}
+	},
+	"Changes": [
+		// Assets: General
+		{
+			"LogName": "Load WW's Icons",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Icons",
+			"FromFile": "assets/Icons.png"
+		},
+		{
+			"LogName": "Load WW's TV",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/TV",
+			"FromFile": "assets/TV.png"
+		},
+		{
+			"LogName": "Load WW's Clouds",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Clouds",
+			"FromFile": "assets/Clouds.png"
+		},
+		{
+			"LogName": "Load WW's Fog",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Fog",
+			"FromFile": "assets/Fog.png"
+		},
+		{
+			"LogName": "Load WW's Wind Blown",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/WindBlown",
+			"FromFile": "assets/WindBlown.png"
+		},
+		{
+			"LogName": "Load WW's Long Wind Blown",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/LongWindBlown",
+			"FromFile": "assets/LongWindBlown.png"
+		},
+		{
+			"LogName": "Load WW's Buffs Icons",
+			"Action": "Load",
+			"Target": "Mods/Kana.WeatherWonders/Buffs",
+			"FromFile": "assets/Buffs.png"
+		},
+		// Data: General
+		{
+			"LogName": "Load WW's Weather Consequences",
+			"Action": "Include",
+			"FromFile": "Data/Consequences.json"
+		},
+		{
+			"LogName": "Load WW's Critters",
+			"Action": "Include",
+			"FromFile": "Data/Critters.json"
+		},
+		{
+			"LogName": "Load WW's Buffs Effects",
+			"Action": "Include",
+			"FromFile": "Data/Buffs.json"
+		},
+		{
+			"LogName": "Load WW's Clock Icons",
+			"Action": "Include",
+			"FromFile": "Data/ClockIcons.json",
+			"When": {
+				"ClockIcons": "Enabled"
+			}
+		},
+		// Data: Weathers
+		{
+			"LogName": "Load WW's Blizzard",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Blizzard.json",
+			"When": {
+				"Blizzard": true
+			}
+		},
+		{
+			"LogName": "Load WW's Acid Rain",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/AcidRain.json",
+			"When": {
+				"AcidRain": true
+			}
+		},
+		{
+			"LogName": "Load WW's Cloudy",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Cloudy.json",
+			"When": {
+				"Cloudy": true
+			}
+		},
+		{
+			"LogName": "Load WW's Deluge",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Deluge.json",
+			"When": {
+				"Deluge": true
+			}
+		},
+		{
+			"LogName": "Load WW's Drizzle",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Drizzle.json",
+			"When": {
+				"Drizzle": true
+			}
+		},
+		{
+			"LogName": "Load WW's Dry Lightning",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/DryLightning.json",
+			"When": {
+				"DryLightning": true
+			}
+		},
+		{
+			"LogName": "Load WW's Hailstorm",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Hailstorm.json",
+			"When": {
+				"Hailstorm": true
+			}
+		},
+		{
+			"LogName": "Load WW's Heatwave",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Heatwave.json",
+			"When": {
+				"Heatwave": true
+			}
+		},
+		{
+			"LogName": "Load WW's Mist",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Mist.json",
+			"When": {
+				"Mist": true
+			}
+		},
+		{
+			"LogName": "Load WW's Muddy Rain",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/MuddyRain.json",
+			"When": {
+				"MuddyRain": true
+			}
+		},
+		{
+			"LogName": "Load WW's Rain-Snow Mix",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/RainSnowMix.json",
+			"When": {
+				"RainSnowMix": true
+			}
+		},
+		{
+			"LogName": "Load WW's Wind",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Wind.json",
+			"When": {
+				"Wind": "Enabled"
+			}
+		},
+		{
+			"LogName": "Load WW's Alternative Snow",
+			"Action": "Include",
+			"FromFile": "Data/WeatherTypes/Snow.json",
+			"When": {
+				"SnowStyle": "Custom"
+			}
+		},
+		// Data: Nightly Events
+		{
+			"LogName": "Load WW's Earthquake",
+			"Action": "Include",
+			"FromFile": "Data/NightlyEvents/Earthquake.json",
+			"When": {
+				"Earthquake": true
+			}
+		},
+		// Data: Lunar Events
+		{
+			"LogName": "Load WW's Blood Moon",
+			"Action": "Include",
+			"FromFile": "Data/LunarEvents/BloodMoon.json",
+			"When": {
+				"BloodMoon": true
+			}
+		},
+		{
+			"LogName": "Load WW's Blue Moon",
+			"Action": "Include",
+			"FromFile": "Data/LunarEvents/BlueMoon.json",
+			"When": {
+				"BlueMoon": true
+			}
+		},
+		{
+			"LogName": "Load WW's Harvest Moon",
+			"Action": "Include",
+			"FromFile": "Data/LunarEvents/HarvestMoon.json",
+			"When": {
+				"HarvestMoon": true
+			}
+		},
+		// Data: Weather Frequency
+		{
+			"LogName": "Load WW's Weather Frequency",
+			"Action": "Include",
+			"FromFile": "Data/WeatherFrequency.json"
+		}
+	]
+}
