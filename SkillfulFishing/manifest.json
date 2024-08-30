@@ -1,10 +1,10 @@
 ﻿{
-  "Name": "SkipFishingMinigame",
+  "Name": "SkillfulFishing",
   "Author": "kumas",
   "Version": "0.0.1",
   "Description": "",
-  "UniqueID": "kumas.SkipFishingMinigame",
-  "EntryDll": "SkipFishingMinigame.dll",
+  "UniqueID": "kumas.SkillfulFishing",
+  "EntryDll": "SkillfulFishing.dll",
   "MinimumApiVersion": "4.0.0",
   "UpdateKeys": []
 }
