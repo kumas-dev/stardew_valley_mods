@@ -1,0 +1,15 @@
+{
+    "Name": "Artisan Goods Gain Quantity",
+    "Author": "kumas",
+    "Version": "1.0.0",
+    "Description": "",
+    "UniqueID": "kumas.ArtisanGoodsGainQuantity",
+    "UpdateKeys": [],
+    "ContentPackFor": { "UniqueID": "Pathoschild.ContentPatcher" },
+    "Dependencies": [
+        {
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": false
+        }
+    ]
+}
