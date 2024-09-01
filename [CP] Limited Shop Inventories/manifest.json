@@ -1,0 +1,15 @@
+{
+    "Name": "Limited Shop Inventories",
+    "Author": "kumas",
+    "Version": "1.0.0",
+    "Description": "",
+    "UniqueID": "kumas.LimitedShopInventories",
+    "UpdateKeys": [],
+    "ContentPackFor": { "UniqueID": "Pathoschild.ContentPatcher" },
+    "Dependencies": [
+        {
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": false
+        }
+    ]
+}
