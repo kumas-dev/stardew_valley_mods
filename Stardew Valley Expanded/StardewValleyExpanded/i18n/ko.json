@@ -14,5 +14,14 @@
 	"installationchecker.help.message": "만약 도움이 필요하시다면, 언제든지 저희 디스코드 서버로 오세요! https://discord.gg/TBevpV28",
 	"installationchecker.start": "모드가 제대로 설치되었는지 확인하는 중...",
 	"installationchecker.credits": "(이 설치 검사기는 shekurika 와 moe 의 도움으로 만들어졌습니다.)",
-	"installationchecker.success": "설치 검사가 완료되었습니다. 아무 이상 없습니다!"
+	"installationchecker.success": "설치 검사가 완료되었습니다. 아무 이상 없습니다!",
+	"shield-with-level": "레벨 {{level}} 방패",
+	"greatsword-with-level": "레벨 {{level}} 대검",
+	"wand-with-level": "레벨 {{level}} 완드",
+	"sun-totem-message": "저 멀리에 구름이 모여듭니다...",
+	"wind-totem-message": "저 멀리에 구름이 모여듭니다...",
+	"cant-use-now": "이 물건은 지금 사용할 수 없습니다.",
+	"furniture-catalogue-2-description": "가구 카탈로그 2판입니다.",
+	"invasion-warning-on": "내일 밤부터 괴물의 침입이 시작될 겁니다...",
+	"invasion-warning-off": "내일 밤부터 괴물의 침입이 멈출 겁니다..."
 }

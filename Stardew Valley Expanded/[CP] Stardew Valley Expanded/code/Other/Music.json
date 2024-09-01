@@ -247,7 +247,7 @@
                     "StreamedVorbis": false,
                     "Looped": true
                 },
-               // Highlands Cavern - 
+               // Highlands Cavern (Vanilla Theme) >>>>> (no longer used)
                 "FlashShifter.StardewValleyExpandedCP_SDVMagicalShoes": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_SDVMagicalShoes",
                     "Category": "Music",
@@ -285,7 +285,7 @@
                         "{{AbsoluteFilePath: assets/Music/TruckStartUp.ogg}}"
                     ],
                     "StreamedVorbis": false,
-                    "Looped": true
+                    "Looped": false
                 },
                 // Scarlett 8-Heart Scene
                 "FlashShifter.StardewValleyExpandedCP_TruckOnHighway": {
@@ -295,7 +295,7 @@
                         "{{AbsoluteFilePath: assets/Music/TruckOnHighway.ogg}}"
                     ],
                     "StreamedVorbis": false,
-                    "Looped": true
+                    "Looped": false
                 },
                 // Scarlett 8-Heart Scene
                 "FlashShifter.StardewValleyExpandedCP_GrampletonCoastline": {
@@ -303,6 +303,69 @@
                     "Category": "Music",
                     "FilePaths": [
                         "{{AbsoluteFilePath: assets/Music/GrampletonCoastline.ogg}}"
+                    ],
+                    "StreamedVorbis": false,
+                    "Looped": true
+                },
+				
+				//SVE 1.15 soundtracks
+				
+				// Highlands
+                "FlashShifter.StardewValleyExpandedCP_HighlandsTheme": {
+                    "ID": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/HighlandsTheme.ogg}}"
+                    ],
+                    "StreamedVorbis": false,
+                    "Looped": true
+                },
+				// Highlands Rainy
+                "FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain": {
+                    "ID": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/HighlandsTheme_Rain.ogg}}"
+                    ],
+                    "StreamedVorbis": false,
+                    "Looped": true
+                },
+				// Highlands Cavern
+                "FlashShifter.StardewValleyExpandedCP_CrystalCavern": {
+                    "ID": "FlashShifter.StardewValleyExpandedCP_CrystalCavern",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/CrystalCavern.ogg}}"
+                    ],
+                    "StreamedVorbis": false,
+                    "Looped": true
+                },
+				// Forbidden Maze
+                "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze": {
+                    "ID": "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/ForbiddenMaze.ogg}}"
+                    ],
+                    "StreamedVorbis": false,
+                    "Looped": true
+                },
+				// Lovely Day - Scarlett's Theme
+                "FlashShifter.StardewValleyExpandedCP_LovelyDay": {
+                    "ID": "FlashShifter.StardewValleyExpandedCP_LovelyDay",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/LovelyDay.ogg}}"
+                    ],
+                    "StreamedVorbis": false,
+                    "Looped": true
+                },
+				// Forbidden Maze Ambient
+                "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze_Ambient": {
+                    "ID": "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze_Ambient",
+                    "Category": "Ambient",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/ForbiddenMaze_Ambient.ogg}}"
                     ],
                     "StreamedVorbis": false,
                     "Looped": true
