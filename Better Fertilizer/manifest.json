@@ -1,0 +1,12 @@
+{
+  "Name": "Better Fertilizer",
+  "Author": "ForgedBrass",
+  "Version": "2.0.0",
+  "Description": "Changes the apperance of fertilizer to make it easier to see.",
+  "UniqueID": "ForgedBrass.BetterFertilizer",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": ["Nexus:7254"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
