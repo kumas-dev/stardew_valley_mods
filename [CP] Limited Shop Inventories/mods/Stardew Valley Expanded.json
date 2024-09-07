@@ -76,7 +76,7 @@
                     "AvailableStock": "{{Random: 5, 10, 15, 20}}",
                     "AvailableStockLimit": "Player"
                 }, // Bean Starter
-                "FlashShifter.StardewValleyExpandedCP_Butternut_squash_seed": {
+                "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed": {
                     "AvailableStock": "{{Random: 5, 10, 15, 20}}",
                     "AvailableStockLimit": "Player"
                 }, // Butternut Squash Seeds
