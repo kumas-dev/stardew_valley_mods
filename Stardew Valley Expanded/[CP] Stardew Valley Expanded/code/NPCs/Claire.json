@@ -907,7 +907,7 @@
             },
             {
               "Tag": "horror",
-              "Response": "dislike",
+              "Response": "like",
               "Whitelist": [],
               "SpecialResponses": {
                 "BeforeMovie": {

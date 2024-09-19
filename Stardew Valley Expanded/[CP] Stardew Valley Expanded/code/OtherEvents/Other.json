@@ -129,7 +129,7 @@
                 "PlayerKilled": "none/-100 -100/farmer 6 6 1 Lance 8 6 3/changeLocation Custom_HighlandsOutpost/positionOffset farmer 20 0 true/positionOffset Lance -25 0 true/pause 500/message \"{{i18n:Lance.PlayerKilled.01}}\"/pause 900/playMusic FlashShifter.StardewValleyExpandedCP_SDV_FireplaceSound/pause 600/viewport 7 6 true/pause 1500/shake Lance 500/pause 250/speak Lance \"{{i18n:Lance.PlayerKilled.02}}\"/pause 1000/speak Lance \"{{i18n:Lance.PlayerKilled.03}}\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/hospitaldeath/faceDirection farmer 2 true/end position 6 6"
             },
         },
-        { //Edits death strings
+        { //Edits Highlands death strings
             "Action": "EditData",
             "Target": "Strings/StringsFromCSFiles",
             "When": {
@@ -152,7 +152,7 @@
                 "PlayerKilled": "none/-100 -100/farmer 24 19 0 Camilla 24 16 2/changeLocation Custom_GaldoranVoid/pause 500/message \"{{i18n:Camilla.PlayerKilled.01}}\"/pause 900/playMusic FlashShifter.StardewValleyExpandedCP_CastleVillageOutpostMusic/pause 600/viewport 24 18 true/pause 1500/shake Camilla 200/pause 200/showFrame Camilla 16 true/pause 450/speak Camilla \"{{i18n:Camilla.PlayerKilled.02}}\"/pause 300/showFrame Camilla 0 true/pause 650/speak Camilla \"{{i18n:Camilla.PlayerKilled.03}}\"/pause 800/move Camilla 0 1 2/pause 800/showFrame Camilla 1 true/pause 300/shake Camilla 700/pause 600/screenFlash 1/playSound wand/warp farmer -20 -20/pause 400/showFrame Camilla 0 true/pause 450/globalFade/viewport -1000 -1000/changeLocation Custom_CastleVillageOutpost/stopMusic/SVE_BadlandsDeath/faceDirection farmer 2 true/end position 31 28"
             },
         },
-        { //Edits death strings
+        { //Edits Badlands death strings
             "Action": "EditData",
             "Target": "Strings/StringsFromCSFiles",
             "When": {
@@ -169,23 +169,25 @@
             "Target": "Data/Events/Hospital",
             "When": {
                 "LocationName": "Custom_ForbiddenMaze",
-				"HasFlag: anyPlayer|contains=HenchmanHouseFixed": true
+				"HasFlag: anyPlayer|contains=HenchmanHouseFixed": true,
+				"HasMod|contains=Aimon111.WitchSwampOverhaulCP": false
             },
             "Update": "OnLocationChange",
             "Entries": {
-                "PlayerKilled": "none/-1000 -1000/farmer -15 2 2 SVE_Henchman 24 16 2/changeLocation Custom_HenchmanHouse/pause 1500/speak SVE_Henchman \"{{i18n:Henchman.Event.Death}}\"/pause 1000/faceDirection farmer 2 true/end position 2 5"
+                "PlayerKilled": "none/-1000 -1000/farmer -15 2 2 SVE_Henchman 24 16 2/changeLocation Custom_HenchmanHouse/pause 1500/speak SVE_Henchman \"{{i18n:Henchman.Event.Death}}\"/pause 1000/hospitaldeath/faceDirection farmer 2 true/end position 2 5"
             },
         },
-        { //Edits death strings
+        { //Edits Marshland death strings
             "Action": "EditData",
             "Target": "Strings/StringsFromCSFiles",
             "When": {
-                "LocationName": "Custom_ForbiddenMaze",
-				"HasFlag: anyPlayer|contains=HenchmanHouseRepaired": true
+                "LocationName": "Custom_ForbiddenMaze, Custom_HenchmanHouse, Custom_HenchmanBackyard",
+				"HasFlag: anyPlayer|contains=HenchmanHouseFixed": true,
+				"HasMod|contains=Aimon111.WitchSwampOverhaulCP": false
             },
             "Update": "OnLocationChange",
             "Entries": {
-                "Event.cs.1068": "{{i18n:Henchman.Event.Death}}",
+                "Event.cs.1068": "{{i18n:Henchman.Event.Death2}}",
                 "Event.cs.1070": "{{i18n:Henchman.Event.Death2}}",
             },
         },

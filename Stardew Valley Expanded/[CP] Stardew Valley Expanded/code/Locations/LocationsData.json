@@ -841,7 +841,7 @@
                             "Track": "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze"
                         },
                     ],
-				    "CanHaveGreenRainSpawns": false,
+				    //"CanHaveGreenRainSpawns": false,
                     "Fish": [
                         //SVE Fish
                         {
@@ -1720,7 +1720,7 @@
                     ]
                 },
                 "Custom_Highlands": {
-                    "DisplayName": "{{i18n:Highlands}}",
+                    "DisplayName": "{{i18n:DisplayName.Highlands}}",
                     "DefaultArrivalTile": {
                         "X": 129,
                         "Y": 142,
@@ -3701,17 +3701,15 @@
            "Target": "Data/Events/Custom_ForbiddenMaze",
            "FromFile": "assets/blank.json"
         },
-        {
+        /*{
            "Action": "EditData",
            "Target": "Data/Events/Custom_ForbiddenMaze",
 		   "When": { 
 		     "HasFlag: anyPlayer|contains=HenchmanHouseRepaired": true
 		    },
              "Entries": {
-               "PlayerKilled": "none/-1000 -1000/farmer 6 6 2 SVE_Henchman 24 16 2/changeLocation Custom_HenchmanHouse/pause 1500/speak SVE_Henchman \"{{i18n:Henchman.Event.Death}}\"/pause 1000/faceDirection farmer 2 true/end"
+               "PlayerKilled": "none/-1000 -1000/farmer 6 6 2 SVE_Henchman 24 16 2/changeLocation Custom_HenchmanHouse/pause 1500/speak SVE_Henchman \"{{i18n:Henchman.Event.Death}}\"/pause 1000/hospitaldeath/faceDirection farmer 2 true/end"
             }
-        },
-		
-		//Add Forbidden Maze <<
+        },*/
     ]
 }

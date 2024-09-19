@@ -35,6 +35,32 @@
             "FromFile": "assets/Maps/Buildings/Winery.tmx"
         },
 		
+		//Loads Custom Paint Masks
+		{
+            "Action": "Load",
+            "Target": "Buildings/SVE_PremiumBarn_PaintMask",
+            "FromFile": "assets/Buildings/PremiumBarn_PaintMask.png"
+        },
+		{
+            "Action": "Load",
+            "Target": "Buildings/SVE_PremiumCoop_PaintMask",
+            "FromFile": "assets/Buildings/PremiumCoop_PaintMask.png"
+        },
+		{
+            "Action": "Load",
+            "Target": "Buildings/SVE_Winery_PaintMask",
+            "FromFile": "assets/Buildings/Winery_PaintMask.png"
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/PaintData",
+            "Entries": {
+			    "FlashShifter.StardewValleyExpandedCP_PremiumBarn": "Building/-10 0/Roof/-10 5/Trim/-5 0",
+				"FlashShifter.StardewValleyExpandedCP_PremiumCoop": "Building/-12 0/Roof/-10 5/Trim/-10 5",
+				"FlashShifter.StardewValleyExpandedCP_Winery": "Building/-10 0/Roof/-10 5/Trim/-5 5",
+		    }
+		},
+		
 		//Custom Building Data
         {
             "Action": "EditData",

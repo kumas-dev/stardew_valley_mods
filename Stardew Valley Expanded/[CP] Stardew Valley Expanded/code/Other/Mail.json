@@ -1,6 +1,6 @@
 {
     "Changes": [
-        { //ADD MAIL
+        {
             "Action": "EditData",
             "Target": "Data/Mail",
             "Entries": {
@@ -59,6 +59,17 @@
 				"GusOrangeChicken": "{{i18n:Mail.GusOrangeChicken}}",
 				"HenchmanFired": "{{i18n:Mail.HenchmanFired}}",
 				"SusanCooking": "{{i18n:Mail.SusanCooking}}",
+            }
+        },
+		
+		//Marsh Tonic mail if Aimon's mod is not installed
+		{
+            "Action": "EditData",
+            "Target": "Data/Mail",
+			"When": {
+	          "HasMod|contains=Aimon111.WitchSwampOverhaulCP": false
+	        },
+            "Entries": {
 				"HenchmanMarshTonics": "{{i18n:Mail.HenchmanMarshTonics}}",
             }
         },
@@ -82,6 +93,9 @@
 		{
             "Action": "EditData",
             "Target": "Data/TriggerActions",
+			"When": {
+	          "HasMod|contains=Aimon111.WitchSwampOverhaulCP": false
+	        },
             "Entries": {
               "{{ModID}}_HenchmanTonics": {
                 "Id": "{{ModID}}_HenchmanTonics",

@@ -25,10 +25,10 @@
   "Config.DisableGaldoranTheme.name": "Disable Galdoran Theme",
   "Config.WarpLocation.name": "Warp Location",
   "Config.EnchantedGroveWarpX.name": "Enchanted Grove Warp X",
-  "Config.EnchantedGrovwWarpY.name": "Enchanted Grove Warp Y",
+  "Config.EnchantedGroveWarpY.name": "Enchanted Grove Warp Y",
   "Config.WarpLocation.description": "'default' places the warp one tile below the bunny statue on SVE and vanilla maps. 'Custom' allows the warp point to be moved around on the farm. 'Grandpa's Shed' moves the warp point off the farm. Using a farm mod that adds a new farm type will place the warp by Grandpa's Shed regardless of choice. Selecting 'Grandpa's Shed' when playing on an SVE map will be the same as selecting 'default'.",
   "Config.EnchantedGroveWarpX.description": "Select the X coordinate for the warp point. Only matters when picking 'custom' for WarpLocation.",
-  "Config.EnchantedGrovwWarpY.description": "Select the Y coordinate for the warp point. Only matters when picking 'custom' for WarpLocation.",
+  "Config.EnchantedGroveWarpY.description": "Select the Y coordinate for the warp point. Only matters when picking 'custom' for WarpLocation.",
   "Config.SeasonalEdits.description": "Adds leaves to all building roofs during fall and snow to many objects during winter (fences, stop signs, plants, etc). Automatically adjusts colors if players have Starblue Valley or Eemie recolors installed.",
   "Config.ReplaceDefaultFences.description": "Replaces the standard fences with the matching static fences found throughout exterior locations. Automatically adjusts colors if players have Starblue Valley or Eemie recolors installed.",
   "Config.ReplaceHardwoodFences.description": "Replaces the hardwood fences with the matching static fences found throughout exterior locations. Automatically adjusts colors if players have Starblue Valley or Eemie recolors installed.",
@@ -111,6 +111,7 @@
   
   //1.15 Strings
   "String.1044": "The small home is completely overgrown.",
+  "String.1045": "The door is locked. There's a faint glow to the far right...",
   
   //1.15 Objects
   "object.pear.name": "Pear",
@@ -261,7 +262,7 @@
   "object.swamp-flower.name": "Swamp Flower",
   "object.swamp-flower.description": "A common flower found in the marshlands.",
   "object.supernatural-goo.name": "Supernatural Goo",
-  "object.supernatural-goo.description": "A sticky substance with a feint ghostly glow.",
+  "object.supernatural-goo.description": "A sticky substance with a faint ghostly glow.",
   "object.sludge.name": "Sludge",
   "object.sludge.description": "Has a very foul odor...",
   "object.swamp-essence.name": "Swamp Essence",
@@ -386,6 +387,7 @@
   "animal.goose.description": "Loved geese will lay eggs once every other day. Lives in the Coop.",
   "animal.bear.name": "Bear",
   "animal.bear.description": "One of Bear's buddies who'll ocassionally find jars of honey. Comes as an adult and lives in the barn. Doesn't consume hay or grass.",
+  "animal.goose.hatched": "A new baby goose hatched!",
   
   //1.15 Machines
   "machine.butter-churner.name": "Butter Churner",
@@ -410,7 +412,7 @@
   "Mail.MartinCooking": "Hey!^I was eating lunch at work the other day, and I thought maybe you'd like my mom's recipe!^She always makes me a grilled cheese sandwich to bring to work. Somehow, it always stays perfectly crispy!  ^   -Martin%item cookingRecipe %%[#]Better When Fresh",
   "Mail.MorganCooking": "Hi, @!^Sometimes when I feel a little homesick, I make my mom's specialty - glazed pears. I thought you would enjoy trying some too. It's really nice after a long day of studying, or farming, I guess. Give it a shot and see!  ^   -Morgan%item cookingRecipe %%[#]A Taste of Home",
   "Mail.LanceCooking": "Greetings,^Adventurers must maintain a healthy diet. I try to steer clear of excess carbohydrates, myself.^But when I do have a treat, Pineapple Custard Crepes are my favorite. I hope you enjoy them too - in moderation. With a warrior's resolve. ^   -Lance%item cookingRecipe %%[#]Dessert of Warriors",
-  "Mail.GusOrangeChicken": "Hey @,^I dug up an old recipe that's now featured on the saloon menu... Grampleton orange chicken! The sweet, tangy, and spiced sauce I make for this dish can cheer up anyone feeling down. Please check in on Sophia for me.   ^    -Gus[#]Grampleton Orange Chicken",
+  "Mail.GusOrangeChicken": "Hey @,^I dug up an old recipe that's now featured on the saloon menu... Grampleton orange chicken! The sweet, tangy, and spiced sauce I make for this dish can cheer up anyone feeling down. Drop by the saloon soon to try it out!   ^    -Gus[#]Grampleton Orange Chicken",
   "Mail.HenchmanFired": "You...^^You took something from my employer's home, causing me to lose my job...^... ... ...^Now I'm homeless. You must help... or else...^... ... ...^Come visit me at the marshlands. I will wait.^^    -Henchman[#]A Goblin in need",
   "Mail.HenchmanMarshTonics": "I forgot about the dozen marsh tonics I stored underneath my floor. Now that I have my job back I don't need them. They may be covered in a thick layer of dust but their effects are still potent!  ^   -Henchman%item object FlashShifter.StardewValleyExpandedCP_Marsh_Tonic 12 %%[#]Dusty Marsh Tonics",
   
@@ -739,7 +741,7 @@
   "Henchman.Dialogue.19": "I was prepared to move on from my home, but you helped save it. Thanks.$0#$e#If it didn't work out... I'd move in with my cousin.",
   "Henchman.Dialogue.20": "Many strange structures around here. Remnants of an old civilization...$0#$e#I hope they liked roasted alligator as much as I do!$1",
   "Henchman.Event.Death": "*sniff*... *sniff*... Human!?$0",
-  "Henchman.Event.Death2": "Henchman saved me and didn't ask for anything in return...",
+  "Henchman.Event.Death2": "Henchman saved me and didn't ask for anything in return... ",
   "Henchman.Questline.01": "A Witch Offering",
   "Henchman.Questline.02": "The Henchman lost his home and job because of me. To please the witch, I must venture into the Marshlands and collect potion ingredients.",
   "Henchman.Questline.03": "Drop off 50 swamp flowers to Henchman's home.",
@@ -2676,7 +2678,7 @@
   "Lance.funLeave.Spring_10": "Jolyne requested me today. You know where I'll be.$0",
   "Lance.funReturn.Spring_14": "I defeated a slime and obtained a 'slime berry'. Maybe you can cultivate it? [770]$1#$e#Wh-What? That isn't a 'slime berry'?$2#$e#*chuckle* This is exactly why I needed your help all that time ago.$5#$e#I hope we have more moments like this.$4",
   "Lance.funLeave.Spring_17": "Good morning, my love.$0#$e#I have business with Jolyne today. I'll return tomorrow.",
-  "Lance.funReturn.Spring_28.": "The Highland monsters are changing their colors. Summer is on the rise.$0",
+  "Lance.funReturn.Spring_28": "The Highland monsters are changing their colors. Summer is on the rise.$0",
   "Lance.funLeave.Summer_7": "I'm mapping out where Wilderness Golems nest today.$0",
   "Lance.funReturn.Summer_7": "'Monster Fruit' is strangely delicious. It almost tastes like a stardrop.$1",
   "Lance.funLeave.Summer_16": "Several shipments of supplies are being delivered to the Adventurer Guild today.$0#$b#I wonder what the contents will contain...$5#$b#I'll let you know tonight.$1",
@@ -11424,7 +11426,7 @@
   "EnchantedGrove.Galdora.Met.13": "My, my. Well done.$1",
   "EnchantedGrove.Galdora.Met.14": "Well, I suppose I'll return you to that adorable farm of yours.$0#$b#Next time you feel the urge to adventure, consider lending Castle Village your aid.$5",
   "EnchantedGrove.Galdora.Met.15": "Camilla: *chuckle*",
-  "EnchantedGrove.Galdora.Met.16": "Ah, I see you've made your acquaintance with Camilla, the Witch of Castle Village.$0#$e#Galdora has many marvels and horrors within its borders. Camilla is just one of them.$0#$e#Inform me if you come across any 'Void Souls' in the badlands. They'd help my arcane studies immensely.$0",
+  "EnchantedGrove.Galdora.Met.16": "Ah, I see you've yet again made your acquaintance with Camilla, the Witch of Castle Village.$0#$e#Galdora has many marvels and horrors within its borders. Camilla is just one of them.$0#$e#Inform me if you come across any 'Void Souls' in the badlands. They'd help my arcane studies immensely.$0",
   "EnchantedGrove.Badlands.01": "Hmm? @?",
   "EnchantedGrove.Badlands.02": "...$0",
   "EnchantedGrove.Badlands.03": "Oh. You haven't made each other's acquaintance.$0",

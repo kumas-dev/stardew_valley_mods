@@ -11457,56 +11457,6 @@
             "MonsterName": "Ghost",
             "Settings": {
               "SpawnWeight": 1,
-              "HP": 250,
-              "Damage": 55,
-              "DodgeChance": 15,
-              "ExtraLoot": true,
-              "Loot": [
-                "Swamp Essence"
-              ],
-              "Sprite": "Characters/Monsters/ToxicBubble"
-            }
-          }
-        ],
-        "UniqueAreaID": "Toxic Bubble Spawns",
-        "MapName": "Custom_ForbiddenMaze",
-        "MinimumSpawnsPerDay": 10,
-        "MaximumSpawnsPerDay": 18,
-        "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [
-          "153,117;1,37"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "High",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 600,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": 14,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "GameStateQueries": [],
-          "CPConditions": {},
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
-        },
-        "DaysUntilSpawnsExpire": 1
-      },
-      {
-        "MonsterTypes": [
-          {
-            "MonsterName": "Ghost",
-            "Settings": {
-              "SpawnWeight": 1,
               "SeesPlayersAtSpawn": true,
               "HP": 250,
               "Damage": 55,

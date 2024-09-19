@@ -305,11 +305,8 @@
     {
       "Action": "EditData",
       "Target": "data/events/farm",
-	  "When": {
-	    "DaysPlayed": 31
-	  },
       "Entries": {
-        "1000077": "kindadumbautumn/-200 -200/farmer 2 2 2 Susan 3 3 0/skippable/pause 1500/speak Susan \"{{i18n:Susan.Intro.01}}\"/pause 1000/faceDirection Susan 1 true/pause 900/faceDirection Susan 0/pause 600/speak Susan \"{{i18n:Susan.Intro.02}}\"/pause 250/end dialogue Susan \"{{i18n:Susan.Intro.03}}\"",
+        "1000077/j 30": "kindadumbautumn/-200 -200/farmer 2 2 2 Susan 3 3 0/skippable/pause 1500/speak Susan \"{{i18n:Susan.Intro.01}}\"/pause 1000/faceDirection Susan 1 true/pause 900/faceDirection Susan 0/pause 600/speak Susan \"{{i18n:Susan.Intro.02}}\"/pause 250/end dialogue Susan \"{{i18n:Susan.Intro.03}}\"",
       },
     },
     //SUSAN 2 HEART EVENT

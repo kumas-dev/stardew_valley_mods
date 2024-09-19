@@ -285,8 +285,8 @@
                     },
                     //Summer
                     {
-                        "Id": "FlashShifter.StardewValleyExpandedCP_Butternut_squash_Seed",
-                        "ItemId": "FlashShifter.StardewValleyExpandedCP_Butternut_squash_Seed",
+                        "Id": "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed",
+                        "ItemId": "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed",
                         "Condition": "SEASON Summer, !PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
                        // "Price": "54"
                     },
@@ -435,8 +435,8 @@
                     },
                     //Summer
                     {
-                        "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Butternut_squash_seed",
-                        "ItemId": "FlashShifter.StardewValleyExpandedCP_Butternut_squash_seed",
+                        "Id": "FlashShifter.StardewValleyExpandedCP_Warehouse_Butternut_Squash_Seed",
+                        "ItemId": "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed",
                         "Condition": "PLAYER_HAS_SEEN_EVENT Any 502261, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
 
                     },
@@ -591,8 +591,8 @@
                     },
                     //Summer
                     {
-                        "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Butternut_squash_seed",
-                        "ItemId": "FlashShifter.StardewValleyExpandedCP_Butternut_squash_seed",
+                        "Id": "FlashShifter.StardewValleyExpandedCP_JojaDay_Butternut_Squash_Seed",
+                        "ItemId": "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed",
                         "Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"
 
                     },

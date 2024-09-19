@@ -26,10 +26,10 @@
     "Config.DisableGaldoranTheme.name": "갈도란 테마 UI 비활성화",
     "Config.WarpLocation.name": "좌표 위치",
     "Config.EnchantedGroveWarpX.name": "마법의 숲 좌표 X",
-    "Config.EnchantedGrovwWarpY.name": "마법의 숲 좌표 Y",
+    "Config.EnchantedGroveWarpY.name": "마법의 숲 좌표 Y",
     "Config.WarpLocation.description": "'default'는 워프 지점을 sve 및 바닐라 맵의 기존 조각상 앞으로 지정합니다. 'Custom'은 워프 지점을 농장 이곳저곳으로 이동시켜 지정할 수 있습니다. 'Grandpa's Shed'는 워프 지점을 농장 밖으로 지정합니다. 다른 농장 모드를 사용할 시, 플레이어의 선택과 관계 없이 'Grandpa's Shed' 옵션으로 고정됩니다. SVE 전용 맵에서 플레이할 때, 'Grandpa's Shed' 옵션을 선택하면, 'default' 옵션으로 고정됩니다.",
     "Config.EnchantedGroveWarpX.description": "워프 지점의 X 좌표를 선택합니다. 좌표 위치를 'CUSTOM' 으로 선택했을 때 조정하는 옵션입니다.",
-    "Config.EnchantedGrovwWarpY.description": "워프 지점의 Y 좌표를 선택합니다. 좌표 위치를 'CUSTOM' 으로 선택했을 때 조정하는 옵션입니다.",
+    "Config.EnchantedGroveWarpY.description": "워프 지점의 Y 좌표를 선택합니다. 좌표 위치를 'CUSTOM' 으로 선택했을 때 조정하는 옵션입니다.",
     "Config.SeasonalEdits.description": "가을에는 모든 건물 지붕에 낙엽을, 겨울에는 여러 오브젝트(울타리, 표지판, 식물 등)에 눈을 추가해줍니다. 플레이어가 Starblue Valley 나 Eemie 리컬러를 설치했을 경우 자동으로 색상을 조정합니다.",
     "Config.ReplaceDefaultFences.description": "농장에 기본적으로 설치 된 울타리를 기본형 울타리로 교체합니다. 플레이어가 Starblue Valley 나 Eemie 리컬러를 설치했을 경우 자동으로 색상을 조정합니다.",
     "Config.ReplaceHardwoodFences.description": "농장에 기본적으로 설치 된 울타리를 단단한 나무 울타리로 교체합니다. 플레이어가 Starblue Valley 나 Eemie 리컬러를 설치했을 경우 자동으로 색상을 조정합니다.",
@@ -112,6 +112,7 @@
 
     //1.15 Strings
     "String.1044": "작은 집이 완전히 무성해졌습니다.",
+    "String.1045": "문이 잠겨 있습니다. 오른쪽 끝에서 희미한 빛이 납니다...",
 
     //1.15 Objects
     "object.pear.name": "배",
@@ -387,6 +388,7 @@
     "animal.goose.description": "사랑받는 거위는 이틀에 한 번씩 알을 낳습니다. 닭장에 살고 있습니다.",
     "animal.bear.name": "곰",
     "animal.bear.description": "곰의 친구 중 한 명으로 가끔 꿀이 든 병을 찾아옵니다. 성체가 되어 헛간에서 생활합니다. 건초나 풀은 먹지 않습니다.",
+    "animal.goose.hatched": "새로운 새끼 거위가 태어났다!",
 
     // 1.15 Machines
     "machine.butter-churner.name": "버터 제조기",

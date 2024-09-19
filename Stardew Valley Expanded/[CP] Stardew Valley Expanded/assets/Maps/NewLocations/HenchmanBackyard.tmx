@@ -2,7 +2,6 @@
 <map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="66" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="11">
  <properties>
   <property name="AmbientLight" value="160 130 120"/>
-  <property name="LocationContext" value="Island"/>
   <property name="Music" value="FlashShifter.StardewValleyExpandedCP_ForbiddenMaze_Ambient"/>
   <property name="Warp" value="31 40 Custom_ForbiddenMaze 115 0 32 40 Custom_ForbiddenMaze 116 0"/>
  </properties>
