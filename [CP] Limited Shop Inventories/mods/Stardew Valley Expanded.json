@@ -269,7 +269,7 @@
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Bean_Starter": {
                     "AvailableStock": "{{Random: 5, 10, 15, 20}}"
                 }, // Bean Starter
-                "FlashShifter.StardewValleyExpandedCP_JojaDay_Butternut_squash_seed": {
+                "FlashShifter.StardewValleyExpandedCP_JojaDay_Butternut_Squash_Seed": {
                     "AvailableStock": "{{Random: 5, 10, 15, 20}}"
                 }, // Butternut Squash Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Melon_Seeds": {
