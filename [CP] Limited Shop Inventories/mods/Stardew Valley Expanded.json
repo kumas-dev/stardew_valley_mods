@@ -181,7 +181,7 @@
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Bean_Starter": {
                     "AvailableStock": "{{Random: 5, 10, 15, 20}}"
                 }, // Bean Starter
-                "FlashShifter.StardewValleyExpandedCP_Warehouse_Butternut_squash_seed": {
+                "FlashShifter.StardewValleyExpandedCP_Warehouse_Butternut_Squash_Seed": {
                     "AvailableStock": "{{Random: 5, 10, 15, 20}}"
                 }, // Butternut Squash Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Melon_Seeds": {
