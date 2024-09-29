@@ -1,5 +1,5 @@
 {
-  "Format": "2.2.0",
+  "Format": "2.3.0",
   //Hey. You. Yes, you. The person who opened the Content Json. There are spoilers in here!
   "ConfigSchema": {
     "WarpLocation": {
@@ -111,6 +111,11 @@
       "Default": "false",
       "Description": "Monsters receive a significant buff in damage dealt to players (double), with slight increases in HP. Shadow Brutes and Mummies have large HP and damage buffs.",
     },
+	"ReduceCrimsonBadlandsMonsterSpawns": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Reduces how many monsters spawn in the Crimson Badlands by a large margin. Makes the area easier to traverse and reduces lag.",
+    },
     "OlderSophiaPortraits": {
       "AllowValues": "true, false",
       "Default": "false",
@@ -143,6 +148,17 @@
     },
   },
   "DynamicTokens": [
+    {
+      "Name": "ReduceCrimsonBadlandsMonsterSpawnsToken",
+      "Value": "AddMail",
+    },
+    {
+      "Name": "ReduceCrimsonBadlandsMonsterSpawnsToken",
+      "Value": "RemoveMail",
+      "When": {
+        "ReduceCrimsonBadlandsMonsterSpawns": "false"
+      }
+    },
     //// Map where Ench Grove warp is placed
     {
       "Name": "SelectedWarpMap",
@@ -884,6 +900,21 @@
         }
       }
     },*/
+	
+	//Crimson Badlands less monsters config trigger action data
+	{
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "SVE_ReduceCrimsonBadlandsMonsterSpawns": {
+              "Id": "SVE_ReduceCrimsonBadlandsMonsterSpawns",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{ReduceCrimsonBadlandsMonsterSpawnsToken}} Current SVE_ReduceCrimsonBadlandsMonsterSpawns received",
+              "MarkActionApplied": false
+          }
+      }
+    },
     {
       "Action": "Load",
       "Priority": "Low",
@@ -985,6 +1016,18 @@
       "Priority": "Low",
       "Target": "Maps/Custom_HenchmanBackyard",
       "FromFile": "assets/Maps/NewLocations/HenchmanBackyard.tmx",
+    },
+	{
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Maps/Custom_DinoIsland_North",
+      "FromFile": "assets/Maps/NewLocations/DinoIsland_North.tmx",
+    },
+	{
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Maps/Custom_DinoIsland_South",
+      "FromFile": "assets/Maps/NewLocations/DinoIsland_South.tmx",
     },
     {
       "Action": "Load",
@@ -1386,7 +1429,7 @@
     { //Adds custom tilesheets and allows other modders to target SVE assets
       "Action": "Load",
       "Priority": "Low",
-      "Target": "Maps/spring_z_extras,Maps/summer_z_extras,Maps/fall_z_extras,Maps/winter_z_extras,Maps/spring_SVE_Tilesheet2,Maps/summer_SVE_Tilesheet2,Maps/fall_SVE_Tilesheet2,Maps/winter_SVE_Tilesheet2,Maps/spring_z_Waterfalls,Maps/summer_z_Waterfalls,Maps/fall_z_Waterfalls,Maps/winter_z_Waterfalls,Maps/spring_ValleyBackdrop,Maps/summer_ValleyBackdrop,Maps/fall_ValleyBackdrop,Maps/winter_ValleyBackdrop,Maps/spring_GrampletonSuburbsTilesheet,Maps/summer_GrampletonSuburbsTilesheet,Maps/fall_GrampletonSuburbsTilesheet,Maps/winter_GrampletonSuburbsTilesheet,Maps/spring_MorrisModernHouse,Maps/summer_MorrisModernHouse,Maps/fall_MorrisModernHouse,Maps/winter_MorrisModernHouse,Maps/HanksGarage_Tilesheet,Maps/Lighthouse,Maps/EmilyBedEvent,Maps/VanillaCraftables,Maps/VanillaCursors,Maps/VanillaFloors,Maps/VanillaFlooring,Maps/VanillaFurniture,Maps/VanillaSpringObjects,Maps/VanillaWallsAndFloors,Maps/ForbiddenMaze_Shadow,Maps/ForbiddenMaze_Darkness,Maps/z_SVEbuildingShadow,Maps/z_FireLight,Maps/AuroraVineyardPicture,Maps/StardustFarmPicture,Maps/z_SVE_Halloween2Shadow,Maps/z_RailwayTilesheet,Maps/z_CastleVillage,Maps/z_Leaves_Roofs,Maps/z_Leaves,Maps/z_mine,Maps/z_RedEyes,Maps/GuntherExpedition2_Shadows,Maps/JunimoWoods_Shadow,Maps/ForestWest_Shadow,Maps/MovieTheater_Blank,Maps/SpriteSpring_Effects,Maps/SpriteSpring_Shadows,Maps/z_WizardTowerLights,Maps/z_WizardBasementLights,Maps/z_CalderaLights,Maps/IridiumQuarry,Maps/IridiumQuarry_Shadow,Maps/zGrandpasFarm_UnderCanopyShadow,Maps/zGrandpasFarm_CanopyShadow,Maps/EnchantedGrove_CrimsonLight,Maps/EnchantedGrove_Shadows,Maps/EnchantedGrove_Colors,Maps/EnchantedGrove_WarpLights,Maps/CastleVillage_Tilesheet,Maps/Outpost_CrimsonLight,Maps/CrimsonBadlandsMap,Maps/Galdora_Interface,Maps/z_Island_S_CoralReefs,Maps/z_Island_W_CoralReefs,Maps/z_Island_SE_CoralReefs,Maps/AtlantisTilesheet,Maps/AtlantisTilesheet_MaskEffect,Maps/AtlantisTilesheetRuins,Maps/BathroomTilesheet,Maps/SpriteSpringCave_Effects,Maps/SandstormEffect,Maps/RemoveBenchChairTiles,Maps/Arcade_Couch,Maps/JojaPetStore,Maps/spring_ShearwaterBridgeRenovated,Maps/summer_ShearwaterBridgeRenovated,Maps/fall_ShearwaterBridgeRenovated,Maps/winter_ShearwaterBridgeRenovated,Maps/ShearwaterBridgeConeBarricade,Maps/Highlands_CanopyTreeShadows,Maps/HighlandsBackground,Maps/HighlandsCavern_OreTilesheet,Maps/HighlandsCavern_ShadowTilesheet,Maps/HighlandsCavern_LightingTilesheet,Maps/spring_RedBaneberry_Tilesheet,Maps/summer_RedBaneberry_Tilesheet,Maps/fall_RedBaneberry_Tilesheet,Maps/winter_RedBaneberry_Tilesheet,Maps/FirstSlashGuildBuilding,Maps/VoidDen_Tilesheet,Maps/JojaEmporiumWarpCircle,Maps/SakuraVineyardDiningRoomTilesheet,Maps/GrampletonTrainStationTilesheet,Maps/SakuraVineyardTilesheet,Maps/CherryBlossomPetals,Maps/ZCCC_Entrance_Tilesheet,Maps/ZCCC_FoodCourt_Tilesheet,Maps/ZCCC_Courtyard_NPCs,Maps/ZCCC_MainHall_Tilesheet,Maps/ZCCC_Stage_Tilesheet,Maps/ZCCC_VendorFloor_Tilesheet,Maps/ZuzuCityStreet_Tilesheet,Maps/ZuzuCity",
+      "Target": "Maps/spring_z_extras,Maps/summer_z_extras,Maps/fall_z_extras,Maps/winter_z_extras,Maps/spring_SVE_Tilesheet2,Maps/summer_SVE_Tilesheet2,Maps/fall_SVE_Tilesheet2,Maps/winter_SVE_Tilesheet2,Maps/spring_z_Waterfalls,Maps/summer_z_Waterfalls,Maps/fall_z_Waterfalls,Maps/winter_z_Waterfalls,Maps/spring_ValleyBackdrop,Maps/summer_ValleyBackdrop,Maps/fall_ValleyBackdrop,Maps/winter_ValleyBackdrop,Maps/spring_GrampletonSuburbsTilesheet,Maps/summer_GrampletonSuburbsTilesheet,Maps/fall_GrampletonSuburbsTilesheet,Maps/winter_GrampletonSuburbsTilesheet,Maps/spring_MorrisModernHouse,Maps/summer_MorrisModernHouse,Maps/fall_MorrisModernHouse,Maps/winter_MorrisModernHouse,Maps/HanksGarage_Tilesheet,Maps/Lighthouse,Maps/EmilyBedEvent,Maps/VanillaCraftables,Maps/VanillaCursors,Maps/VanillaFloors,Maps/VanillaFlooring,Maps/VanillaFurniture,Maps/VanillaSpringObjects,Maps/VanillaWallsAndFloors,Maps/DinoIsland_North_Mask,Maps/ForbiddenMaze_Shadow,Maps/ForbiddenMaze_Darkness,Maps/z_SVEbuildingShadow,Maps/z_FireLight,Maps/AuroraVineyardPicture,Maps/StardustFarmPicture,Maps/z_SVE_Halloween2Shadow,Maps/z_RailwayTilesheet,Maps/z_CastleVillage,Maps/z_Leaves_Roofs,Maps/z_Leaves,Maps/z_mine,Maps/z_RedEyes,Maps/GuntherExpedition2_Shadows,Maps/JunimoWoods_Shadow,Maps/ForestWest_Shadow,Maps/MovieTheater_Blank,Maps/SpriteSpring_Effects,Maps/SpriteSpring_Shadows,Maps/z_WizardTowerLights,Maps/z_WizardBasementLights,Maps/z_CalderaLights,Maps/IridiumQuarry,Maps/IridiumQuarry_Shadow,Maps/zGrandpasFarm_UnderCanopyShadow,Maps/zGrandpasFarm_CanopyShadow,Maps/EnchantedGrove_CrimsonLight,Maps/EnchantedGrove_Shadows,Maps/EnchantedGrove_Colors,Maps/EnchantedGrove_WarpLights,Maps/CastleVillage_Tilesheet,Maps/Outpost_CrimsonLight,Maps/CrimsonBadlandsMap,Maps/Galdora_Interface,Maps/z_Island_S_CoralReefs,Maps/z_Island_W_CoralReefs,Maps/z_Island_SE_CoralReefs,Maps/AtlantisTilesheet,Maps/AtlantisTilesheet_MaskEffect,Maps/AtlantisTilesheetRuins,Maps/BathroomTilesheet,Maps/SpriteSpringCave_Effects,Maps/SandstormEffect,Maps/RemoveBenchChairTiles,Maps/Arcade_Couch,Maps/JojaPetStore,Maps/spring_ShearwaterBridgeRenovated,Maps/summer_ShearwaterBridgeRenovated,Maps/fall_ShearwaterBridgeRenovated,Maps/winter_ShearwaterBridgeRenovated,Maps/ShearwaterBridgeConeBarricade,Maps/Highlands_CanopyTreeShadows,Maps/HighlandsBackground,Maps/HighlandsCavern_OreTilesheet,Maps/HighlandsCavern_ShadowTilesheet,Maps/HighlandsCavern_LightingTilesheet,Maps/spring_RedBaneberry_Tilesheet,Maps/summer_RedBaneberry_Tilesheet,Maps/fall_RedBaneberry_Tilesheet,Maps/winter_RedBaneberry_Tilesheet,Maps/FirstSlashGuildBuilding,Maps/VoidDen_Tilesheet,Maps/JojaEmporiumWarpCircle,Maps/SakuraVineyardDiningRoomTilesheet,Maps/GrampletonTrainStationTilesheet,Maps/SakuraVineyardTilesheet,Maps/CherryBlossomPetals,Maps/ZCCC_Entrance_Tilesheet,Maps/ZCCC_FoodCourt_Tilesheet,Maps/ZCCC_Courtyard_NPCs,Maps/ZCCC_MainHall_Tilesheet,Maps/ZCCC_Stage_Tilesheet,Maps/ZCCC_VendorFloor_Tilesheet,Maps/ZuzuCityStreet_Tilesheet,Maps/ZuzuCity",
       "FromFile": "Assets/Tilesheets/{{TargetWithoutPath}}.png",
     },
     { //Mist effect tilesheets

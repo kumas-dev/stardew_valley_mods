@@ -9686,6 +9686,56 @@
       },
       {
         "SpringItemIndex": [
+          "Swirl Stone"
+        ],
+        "SummerItemIndex": [
+          "Swirl Stone"
+        ],
+        "FallItemIndex": [
+          "Swirl Stone"
+        ],
+        "WinterItemIndex": [
+          "Swirl Stone"
+        ],
+        "UniqueAreaID": "Crimson Badlands Swirl Stone - 33% chance of an extra spawn",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Any"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "46,146;33,121"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "RANDOM 0.33"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
           "Dewdrop Berry"
         ],
         "SummerItemIndex": [
@@ -13624,7 +13674,60 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "HP": 245,
+              "SpawnWeight": 1,
+              "Damage": 40,
+              "SeesPlayersAtSpawn": true,
+              "Sprite": "Characters/Monsters/BadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Timed Serpent Aggros - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 35,
+        "MaximumSpawnsPerDay": 35,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "2,2;1,1",
+          "238,2;237,1",
+          "238,154;237,153",
+          "2,154;1,153"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 20,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13673,7 +13776,60 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "HP": 245,
+              "SpawnWeight": 1,
+              "Damage": 40,
+              "SeesPlayersAtSpawn": true,
+              "Sprite": "Characters/Monsters/BadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Timed Serpent Aggros - across entire map sides (not corners) - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 50,
+        "MaximumSpawnsPerDay": 50,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "239,58;238,19",
+          "225,155;18,154",
+          "1,57;0,19",
+          "72,1;13,0"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 20,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13722,7 +13878,60 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "HP": 245,
+              "SpawnWeight": 1,
+              "Damage": 40,
+              "SeesPlayersAtSpawn": true,
+              "Sprite": "Characters/Monsters/BadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Timed Serpent Swarm Aggros - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 50,
+        "MaximumSpawnsPerDay": 50,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "238,6;234,1",
+          "238,154;233,149",
+          "5,154;1,150",
+          "5,5;1,1"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 50,
+          "MaximumSimultaneousSpawns": 8,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13745,8 +13954,8 @@
         ],
         "UniqueAreaID": "Large Badlands Serpent Spawns",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 26,
-        "MaximumSpawnsPerDay": 26,
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 30,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -13773,7 +13982,62 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Royal Serpent",
+            "Settings": {
+              "SpawnWeight": 1,
+              "Segments": 2,
+              "SeesPlayersAtSpawn": true,
+              "HP": 850,
+              "Damage": 65,
+              "DodgeChance": 10,
+              "Sprite": "Characters/Monsters/RoyalBadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Large Badlands Serpent Spawns - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 15,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "239,58;238,19",
+          "225,155;18,154",
+          "1,57;0,19",
+          "72,1;13,0"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 20,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13895,7 +14159,85 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Wilderness Golem",
+            "Settings": {
+              "SpawnWeight": 1,
+              "SeesPlayersAtSpawn": false,
+              "HP": 80,
+              "Damage": 100,
+              "DodgeChance": 33,
+              "ExtraLoot": false,
+              "Loot": [
+                684
+              ],
+              "Sprite": "Characters/Monsters/SandScorpion"
+            }
+          }
+        ],
+        "UniqueAreaID": "Sand Scorpion Dens 1 - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 35,
+        "MaximumSpawnsPerDay": 35,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "167,115;162,111",
+          "175,152;171,144",
+          "181,70;177,67",
+          "196,34;192,30",
+          "223,48;219,44",
+          "140,134;134,128",
+          "149,88;143,83",
+          "169,45;164,40",
+          "112,107;101,100",
+          "121,154;112,146",
+          "119,61;114,56",
+          "218,123;214,120",
+          "201,52;198,50",
+          "79,77;73,72",
+          "193,99;190,97",
+          "49,91;44,85",
+          "86,125;77,118",
+          "30,69;25,66",
+          "97,26;89,21",
+          "127,35;124,32",
+          "65,110;61,106",
+          "92,146;89,141",
+          "68,135;65,132",
+          "40,112;36,107"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 70,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13970,7 +14312,86 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Wilderness Golem",
+            "Settings": {
+              "SpawnWeight": 1,
+              "SeesPlayersAtSpawn": false,
+              "HP": 80,
+              "Damage": 100,
+              "DodgeChance": 33,
+              "ExtraLoot": false,
+              "Loot": [
+                684,
+                684
+              ],
+              "Sprite": "Characters/Monsters/SandScorpion"
+            }
+          }
+        ],
+        "UniqueAreaID": "Sand Scorpion Dens 2 - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 17,
+        "MaximumSpawnsPerDay": 17,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "167,115;162,111",
+          "175,152;171,144",
+          "181,70;177,67",
+          "196,34;192,30",
+          "223,48;219,44",
+          "140,134;134,128",
+          "149,88;143,83",
+          "169,45;164,40",
+          "112,107;101,100",
+          "121,154;112,146",
+          "119,61;114,56",
+          "218,123;214,120",
+          "201,52;198,50",
+          "79,77;73,72",
+          "193,99;190,97",
+          "49,91;44,85",
+          "86,125;77,118",
+          "30,69;25,66",
+          "97,26;89,21",
+          "127,35;124,32",
+          "65,110;61,106",
+          "92,146;89,141",
+          "68,135;65,132",
+          "40,112;36,107"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 35,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -14044,7 +14465,85 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Wilderness Golem",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 80,
+              "Damage": 100,
+              "DodgeChance": 33,
+              "ExtraLoot": false,
+              "Loot": [
+                684,
+                684
+              ],
+              "Sprite": "Characters/Monsters/SandScorpion"
+            }
+          }
+        ],
+        "UniqueAreaID": "Sand Scorpion Dens 2 - timed spawns - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 20,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "167,115;162,111",
+          "175,152;171,144",
+          "181,70;177,67",
+          "196,34;192,30",
+          "223,48;219,44",
+          "140,134;134,128",
+          "149,88;143,83",
+          "169,45;164,40",
+          "112,107;101,100",
+          "121,154;112,146",
+          "119,61;114,56",
+          "218,123;214,120",
+          "201,52;198,50",
+          "79,77;73,72",
+          "193,99;190,97",
+          "49,91;44,85",
+          "86,125;77,118",
+          "30,69;25,66",
+          "97,26;89,21",
+          "127,35;124,32",
+          "65,110;61,106",
+          "92,146;89,141",
+          "68,135;65,132",
+          "40,112;36,107"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 40,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -20251,7 +20750,113 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "purple slime",
+            "Settings": {
+              "SpawnWeight": 2,
+              "Damage": 35,
+              "DodgeChance": 5,
+              "Color": "220 20 60",
+              "SeesPlayersAtSpawn": true,
+              "Loot": [
+                287
+              ]
+            }
+          },
+          {
+            "MonsterName": "Mummy",
+            "Settings": {
+              "SpawnWeight": 6,
+              "Damage": 65,
+              "DodgeChance": 5,
+              "ExtraLoot": false,
+              "SeesPlayersAtSpawn": true,
+              "Loot": [
+                768,
+                287
+              ],
+              "Sprite": "Characters/Monsters/EvilMummy"
+            }
+          },
+          {
+            "MonsterName": "Skeleton",
+            "Settings": {
+              "SpawnWeight": 6,
+              "Damage": 40,
+              "DodgeChance": 8,
+              "ExtraLoot": false,
+              "SeesPlayersAtSpawn": true,
+              "Loot": [
+                881,
+                287
+              ],
+              "Sprite": "Characters/Monsters/SkeletonDangerous"
+            }
+          },
+          {
+            "MonsterName": "Skeleton Mage",
+            "Settings": {
+              "HP": 1000,
+              "SpawnWeight": 1,
+              "Damage": 50,
+              "DodgeChance": 10,
+              "SeesPlayersAtSpawn": true,
+              "ExtraLoot": false,
+              "Sprite": "Characters/Monsters/SkeletonMageDangerous",
+              "Loot": [
+                "Void Pebble",
+                881,
+                287
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Crimson Badlands Primary Timed Spawns - Bomb drops - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 60,
+        "MaximumSpawnsPerDay": 60,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "175,154;44,154",
+          "64,153,33,113",
+          "34,13;10,5",
+          "68,10;45,8",
+          "7,63;2,25",
+          "227,140;226,114",
+          "227,65;227,43"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 5,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -20451,7 +21056,107 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "purple slime",
+            "Settings": {
+              "SpawnWeight": 6,
+              "Damage": 35,
+              "SeesPlayersAtSpawn": true,
+              "DodgeChance": 5,
+              "Color": "220 20 60"
+            }
+          },
+          {
+            "MonsterName": "Mummy",
+            "Settings": {
+              "SpawnWeight": 5,
+              "Damage": 65,
+              "DodgeChance": 5,
+              "SeesPlayersAtSpawn": true,
+              "ExtraLoot": false,
+              "Loot": [
+                768
+              ],
+              "Sprite": "Characters/Monsters/EvilMummy"
+            }
+          },
+          {
+            "MonsterName": "Skeleton",
+            "Settings": {
+              "SpawnWeight": 4,
+              "Damage": 40,
+              "DodgeChance": 8,
+              "SeesPlayersAtSpawn": true,
+              "ExtraLoot": false,
+              "Loot": [
+                881
+              ],
+              "Sprite": "Characters/Monsters/SkeletonDangerous"
+            }
+          },
+          {
+            "MonsterName": "Skeleton Mage",
+            "Settings": {
+              "HP": 1000,
+              "SpawnWeight": 1,
+              "Damage": 50,
+              "DodgeChance": 10,
+              "ExtraLoot": false,
+              "SeesPlayersAtSpawn": true,
+              "Sprite": "Characters/Monsters/SkeletonMageDangerous",
+              "Loot": [
+                "Void Pebble",
+                881
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Crimson Badlands Primary Timed Spawns - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 180,
+        "MaximumSpawnsPerDay": 180,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "175,154;44,154",
+          "64,153,33,113",
+          "34,13;10,5",
+          "68,10;45,8",
+          "7,63;2,25",
+          "227,140;226,114",
+          "227,65;227,43"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 9,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -20556,7 +21261,116 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "purple slime",
+            "Settings": {
+              "SpawnWeight": 6,
+              "Damage": 35,
+              "SeesPlayersAtSpawn": true,
+              "DodgeChance": 5,
+              "Color": "220 20 60"
+            }
+          },
+          {
+            "MonsterName": "Mummy",
+            "Settings": {
+              "SpawnWeight": 5,
+              "Damage": 65,
+              "DodgeChance": 5,
+              "SeesPlayersAtSpawn": true,
+              "ExtraLoot": false,
+              "Loot": [
+                768
+              ],
+              "Sprite": "Characters/Monsters/EvilMummy"
+            }
+          },
+          {
+            "MonsterName": "Skeleton",
+            "Settings": {
+              "SpawnWeight": 4,
+              "Damage": 40,
+              "DodgeChance": 8,
+              "SeesPlayersAtSpawn": true,
+              "ExtraLoot": false,
+              "Loot": [
+                881
+              ],
+              "Sprite": "Characters/Monsters/SkeletonDangerous"
+            }
+          },
+          {
+            "MonsterName": "Skeleton Mage",
+            "Settings": {
+              "HP": 1000,
+              "SpawnWeight": 1,
+              "Damage": 50,
+              "DodgeChance": 10,
+              "ExtraLoot": false,
+              "Sprite": "Characters/Monsters/SkeletonMageDangerous",
+              "SeesPlayersAtSpawn": true,
+              "Loot": [
+                "Void Pebble",
+                881
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Crimson Badlands Primary Timed Spawns - Specific Coordinates - Reduced",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 200,
+        "MaximumSpawnsPerDay": 200,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "166,155;166,155",
+          "135,155;135,155",
+          "120,155;120,155",
+          "110,155;110,155",
+          "100,155;100,155",
+          "49,7;49,7",
+          "60,8;60,8",
+          "12,15;12,15",
+          "3,46;3,46",
+          "210,149;210,149",
+          "198,151;198,151",
+          "186,153;186,153",
+          "33,141;33,141",
+          "50,148;50,148",
+          "58,108;58,108",
+          "27,118;27,118"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 20,
+          "MaximumSimultaneousSpawns": 5,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag|contains=SVE_ReduceCrimsonBadlandsMonsterSpawns": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },

@@ -99,13 +99,22 @@
       },
 	  {
          "Action": "Load", "Priority": "Low",
+         "Target": "Mods/FlashShifter.StardewValleyExpandedCP/KittyfishAquariumFish",
+         "FromFile": "Assets/TileSheets/SVE_AquariumFish_Kittyfish.png",
+      },
+	  {
+         "Action": "Load", "Priority": "Low",
          "Target": "Mods/FlashShifter.StardewValleyExpandedCP/TheresEvenMoreAquariumFish",
          "FromFile": "Assets/TileSheets/SVE_AquariumFish_TheresEvenMore.png",
       },
+	  
+	  //AQUARIUM DATA
+	  
       {
          "Action": "EditData",
          "Target": "Data/AquariumFish",
          "Entries": {
+		    "FlashShifter.StardewValleyExpandedCP_Kittyfish": "0/float/////Mods\\FlashShifter.StardewValleyExpandedCP\\KittyfishAquariumFish",
             "FlashShifter.StardewValleyExpandedCP_Puppyfish": "0/float/////Mods\\FlashShifter.StardewValleyExpandedCP\\AquariumFish",
             "FlashShifter.StardewValleyExpandedCP_Void_Eel": "1/eel/////Mods\\FlashShifter.StardewValleyExpandedCP\\AquariumFish",
             "FlashShifter.StardewValleyExpandedCP_Minnow": "3/fish/////Mods\\FlashShifter.StardewValleyExpandedCP\\AquariumFish",
@@ -145,24 +154,6 @@
 			"FlashShifter.StardewValleyExpandedCP_Fiber_Goby": "11/static/11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12/11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12/11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12/11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 12 12/Mods\\FlashShifter.StardewValleyExpandedCP\\TheresEvenMoreAquariumFish",
 			"FlashShifter.StardewValleyExpandedCP_Swamp_Crab": "13/front_crawl/13 13 13 13 13 13 13 13 13 14 14 13 13 13 13 13 14 14 14 13 13 13 13 13 13 13 13 14 14 14 14 14 13 13 13 13/13 13 13 13 13 13 13 13 13 13 13 13 13 13 14 14/13 13 13 13 13 13 14 14 13 13 13 13 13 13 13 13 13 13 14 14/14 14 13 13 13 13 13 13 13 13 13 13/Mods\\FlashShifter.StardewValleyExpandedCP\\TheresEvenMoreAquariumFish",
          },
-      },
-      { //Add Kittyfish data to aquarium
-         "Action": "EditData",
-         "Target": "Data/AquariumFish",
-         "When": {
-            "HasSeenEvent": "69069247"
-         },
-         "Entries": {
-            "FlashShifter.StardewValleyExpandedCP_Kittyfish": "0/float/////Mods\\FlashShifter.StardewValleyExpandedCP\\KittyfishAquariumFish"
-         },
-         "Update": "OnTimeChange"
-      },
-      { //Add Kittyfish image to aquarium tilesheet
-         "Action": "Load", "Priority": "Low",
-         "Target": "Mods/FlashShifter.StardewValleyExpandedCP/KittyfishAquariumFish",
-         //"When": { "HasSeenEvent": "69069247" },
-         "FromFile": "Assets/TileSheets/SVE_AquariumFish_Kittyfish.png",
-         //"Update": "OnTimeChange"
       },
 	  
       //FISH POND DATA

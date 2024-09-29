@@ -370,6 +370,16 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
+				// Lava Ambient
+                "FlashShifter.StardewValleyExpandedCP_ChurningLava_Ambient": {
+                    "ID": "FlashShifter.StardewValleyExpandedCP_ChurningLava_Ambient",
+                    "Category": "Ambient",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/ChurningLavaAmbient.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
             },
         },
     ]

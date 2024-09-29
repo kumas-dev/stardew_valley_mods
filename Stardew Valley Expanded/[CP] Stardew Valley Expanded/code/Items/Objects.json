@@ -2590,6 +2590,7 @@
                     "ContextTags": [
                         "color_gold",
 						"dye_strong",
+						"seedmaker_banned"
                     ]
                 },
 				"FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed": {
@@ -3722,7 +3723,6 @@
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [
                         "color_gold",
-						"egg_item"
                     ]
                 },
 				"FlashShifter.StardewValleyExpandedCP_Goose_Mayonnaise": {

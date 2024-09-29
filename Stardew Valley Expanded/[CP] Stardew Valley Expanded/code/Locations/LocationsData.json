@@ -923,6 +923,18 @@
                         "MapPath": "Maps\\Custom_HenchmanHouse"
                     },
                 },
+				"Custom_DinoIsland_South": {
+                    "CreateOnLoad": {
+                        "AlwaysActive": false,
+                        "MapPath": "Maps\\Custom_DinoIsland_South"
+                    },
+                },
+				"Custom_DinoIsland_North": {
+                    "CreateOnLoad": {
+                        "AlwaysActive": false,
+                        "MapPath": "Maps\\Custom_DinoIsland_North"
+                    },
+                },
                 "Custom_CrimsonBadlands": {
                     "DisplayName": "{{i18n:LocationData.Crimson_Badlands}}",
                     "DefaultArrivalTile": {

@@ -324,6 +324,24 @@
                     "Height": 3
                }
           },
+		  //Forager's Nooks and Crannies Secret Woods Compatibility Patch
+           {
+            "Action": "EditMap",
+            "Target": "Maps/Woods",
+            "FromFile": "Assets/Maps/MapPatches/WoodsFaerieForageSVEPatch.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 13,
+                "Height": 10
+            },
+            "PatchMode": "Replace",
+            "When": 
+            {
+                "HasMod: |contains=wildflour.foragelocations": true,
+            },
+            "Priority": "Early",
+          },
           { //Patches purple star icon to down arrow for sign usage
                "Action": "EditImage",
                "Target": "LooseSprites/font_bold",
