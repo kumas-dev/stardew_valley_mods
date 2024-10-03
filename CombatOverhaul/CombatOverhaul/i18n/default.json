@@ -1,6 +1,0 @@
-﻿{
-  "buff.health_description": "+{{value}} health per second",
-  "buff.stamina_description": "+{{value}} stamina per second",
-  "config.regeneration_rate": "Regeneration Rate",
-  "config.half_reduction_threshold": "Half Reduction Threshold"
-}

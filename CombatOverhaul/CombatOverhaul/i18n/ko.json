@@ -1,6 +1,0 @@
-﻿{
-  "buff.health_description": "초당 체력 +{{value}}",
-  "buff.stamina_description": "초당 기력 +{{value}}",
-  "config.regeneration_rate": "회복 비율",
-  "config.half_reduction_threshold": "절반 감소 임계값"
-}
