@@ -1,0 +1,108 @@
+{
+  "Changes": [
+  //Festival_NightMarket_MagicBoat_Day1
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "ZoeyHoshi.RSVForageCrop_RidgeAzoreanFlowerSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "ZoeyHoshi.RSVForageCrop_RidgesideMonkshoodSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "ZoeyHoshi.RSVForageCrop_MountainArugulaSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  },
+  //Festival_NightMarket_MagicBoat_Day2
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "ZoeyHoshi.RSVForageCrop_ForestAmancaySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "ZoeyHoshi.RSVForageCrop_MountainHokkaidoSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "ZoeyHoshi.RSVForageCrop_VioletDevilsClawSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  },
+  //Festival_NightMarket_MagicBoat_Day3
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "ZoeyHoshi.RSVForageCrop_HighlandButterwortSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "ZoeyHoshi.RSVForageCrop_LavaLilySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "ZoeyHoshi.RSVForageCrop_SummitSnowbellSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "ZoeyHoshi.RSVForageCrop_AutumnDropBerrySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "ZoeyHoshi.RSVForageCrop_HighlandChardSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }]
+}

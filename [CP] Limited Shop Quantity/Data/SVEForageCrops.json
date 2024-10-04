@@ -1,0 +1,109 @@
+{
+  "Changes": [
+  //AnimalShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AnimalShop", "Items", "ZoeyHoshi.SVEForageCrops_ThistleSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  },
+  //Dwarf
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "ZoeyHoshi.SVEForageCrops_Red_BaneberrySeeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "ZoeyHoshi.SVEForageCrops_Poison_MushroomSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "ZoeyHoshi.SVEForageCrops_Mushroom_ColonySeeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  },
+  //FishShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "ZoeyHoshi.SVEForageCrops_Dulse_SeaweedSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  },
+  //Raccoon
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "ZoeyHoshi.SVEForageCrops_Four_Leaf_CloverSeed"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "ZoeyHoshi.SVEForageCrops_RafflesiaSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "ZoeyHoshi.SVEForageCrops_BearberrySeeds"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "ZoeyHoshi.SVEForageCrops_Dewdrop_BerrySeeds"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  },
+  //SeedShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "ZoeyHoshi.SVEForageCrops_Ferngill_PrimroseSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "ZoeyHoshi.SVEForageCrops_GoldenrodSeed"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "ZoeyHoshi.SVEForageCropsWinter_Star_Rose_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }]
+}

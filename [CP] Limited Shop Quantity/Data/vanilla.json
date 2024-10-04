@@ -1,0 +1,1919 @@
+{
+  "Changes": [
+  //SeedShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)472"], //Parsnip Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)473"], //Bean Starter
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)474"], //Cauliflower Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)475"], //Potato Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)427"], //Tulip Bulb
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)477"], //Kale Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)429"], //Jazz Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)476"], //Garlic Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)273"], //Rice Shoot
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)479"], //Melon Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)480"], //Tomato Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)481"], //Blueberry Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)482"], //Pepper Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "WheatSeeds_Summer"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)484"], //Radish Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)453"], //Poppy Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)455"], //Spangle Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)302"], //Hops Starter
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "CornSeeds_Summer"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "SunflowerSeeds_Summer"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)485"], //Red Cabbage Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)490"], //Pumpkin Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "CornSeeds_Fall"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)488"], //Eggplant Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)491"], //Bok Choy Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)492"], //Yam Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)493"], //Cranberry Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "WheatSeeds_Fall"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "SunflowerSeeds_Fall"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)425"], //Fairy Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)299"], //Amaranth Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)301"], //Grape Starter
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)489"], //Artichoke Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "GrassStarter"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)245"], //Sugar
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)246"], //Wheat Flour
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)423"], //Rice
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)247"], //Oil
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)419"], //Vinegar
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)368"], //Basic Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)370"], //Basic Retaining Soil
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)465"], //Speed-Gro
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)369"], //Quality Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)371"], //Quality Retaining Soil
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)466"], //Deluxe Speed-Gro
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)628"], //Cherry Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)629"], //Apricot Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)630"], //Orange Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)631"], //Peach Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)632"], //Pomegranate Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)633"], //Apple Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)458"], //Bouquet
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  },
+  //Joja
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)167"], //Joja Cola
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)472"], //Parsnip Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)473"], //Bean Starter
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)474"], //Cauliflower Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)475"], //Potato Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)427"], //Tulip Bulb
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)477"], //Kale Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)429"], //Jazz Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)479"], //Melon Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)480"], //Tomato Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)482"], //Pepper Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "WheatSeeds_Summer"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)484"], //Radish Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)453"], //Poppy Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)455"], //Spangle Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)302"], //Hops Starter
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "SunflowerSeeds_Summer"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)490"], //Pumpkin Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)487"], //Corn Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)488"], //Eggplant Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)491"], //Bok Choy Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)492"], //Yam Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)493"], //Cranberry Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "WheatSeeds_Fall"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "SunflowerSeeds_Fall"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)425"], //Fairy Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)299"], //Amaranth Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)301"], //Grape Starter
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)489"], //Artichoke Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)297"], //Grass Starter
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)245"], //Sugar
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)246"], //Wheat Flour
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)423"], //Rice
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(BC)272"], //Auto-Petter
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //AdventureShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AdventureShop", "Items", "(O)441"], //Explosive Ammo
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  },
+  //AnimalShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AnimalShop", "Items", "(O)178"], //Hay
+    "Entries": {
+      "AvailableStock": "{{Abundant Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AnimalShop", "Items", "(BC)104"], //Heater
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AnimalShop", "Items", "(BC)165"], //Auto-Grabber
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Blacksmith
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "CopperOre_YearOne"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "IronOre_YearOne"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "Coal_YearOne"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "GoldOre_YearOne"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "CopperOre_AfterYearOne"],
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "IronOre_AfterYearOne"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "Coal_AfterYearOne"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "GoldOre_AfterYearOne"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  },
+  //Carpenter
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(O)388"], //Wood
+    "Entries": {
+      "AvailableStock": "{{Abundant Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(O)390"], //Stone
+    "Entries": {
+      "AvailableStock": "{{Abundant Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(BC)208"], //Workbench
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(BC)216"], //Mini-Fridge
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "WoodChipper_BeforeWinterYearOne"],
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "WoodChipper_AfterYearOne"],
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Casino
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Casino", "Items", "(BC)126"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //DesertFestival_EggShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertFestival_EggShop", "Items", "StrawberrySeeds_Monday"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertFestival_EggShop", "Items", "(O)288"], //Mega Bomb
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertFestival_EggShop", "Items", "StrawberrySeeds_Wednesday"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  },
+  //DesertTrade
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)275"], //Artifact Trove
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "WarpTotemDesert_ForOmniGeodes"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)253"], //Triple Shot Espresso
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)226"], //Spicy Eel
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)288"], //Mega Bomb
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)287"], //Bomb
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)178"], //Hay
+    "Entries": {
+      "AvailableStock": "{{Abundant Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)771"], //Fiber
+    "Entries": {
+      "AvailableStock": "{{Abundant Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)428"], //Cloth
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)424"], //Cheese
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)495"], //Spring Seeds
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)496"], //Summer Seeds
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)497"], //Fall Seeds
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(O)498"], //Winter Seeds
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "(BC)71"], //Staircase
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  },
+  //Dwarf
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "(O)773"], //Life Elixir
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "(O)772"], //Oil of Garlic
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "(O)286"], //Cherry Bomb
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "(O)287"], //Bomb
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "(O)288"], //Mega Bomb
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "(O)243"], //Miner's Treat
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Dwarf", "Items", "(BC)138"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Festival_EggFestival_Pierre
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_EggFestival_Pierre", "Items", "(O)745"], //Strawberry Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  },
+  //Festival_FeastOfTheWinterStar_Pierre
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_FeastOfTheWinterStar_Pierre", "Items", "(O)253|(O)Powdermelon|(O)248|(O)82"], //Item 1
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_FeastOfTheWinterStar_Pierre", "Items", "(O)84|(O)205|(O)442|(O)216"], //Item 2
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_FeastOfTheWinterStar_Pierre", "Items", "(O)78|(O)141|(O)372|(O)412"], //Item 3
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Festival_FlowerDance_Pierre
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_FlowerDance_Pierre", "Items", "(BC)137"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Festival_NightMarket_MagicBoat_Day1
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)472"], //Parsnip Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)473"], //Bean Starter
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)474"], //Cauliflower Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)475"], //Potato Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)427"], //Tulip Bulb
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)477"], //Kale Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)429"], //Jazz Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(O)476"], //Garlic Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(BC)139"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day1", "Items", "(BC)140"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Festival_NightMarket_MagicBoat_Day2
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)479"], //Melon Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)480"], //Tomato Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)481"], //Blueberry Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)482"], //Pepper Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)483"], //Wheat Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)484"], //Radish Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)453"], //Poppy Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)455"], //Spangle Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)302"], //Hops Starter
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)487"], //Corn Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)431"], //Sunflower Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(O)485"], //Red Cabbage Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(BC)139"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day2", "Items", "(BC)140"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Festival_NightMarket_MagicBoat_Day3
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)487"], //Corn Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)488"], //Eggplant Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)490"], //Pumpkin Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)491"], //Bok Choy Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)492"], //Yam Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)493"], //Cranberry Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)483"], //Wheat Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)425"], //Fairy Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)299"], //Amaranth Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)301"], //Grape Starter
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)431"], //Sunflower Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(O)489"], //Artichoke Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(BC)139"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Festival_NightMarket_MagicBoat_Day3", "Items", "(BC)140"], //Rarecrow
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //FishShop
+  {    
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)219"], //Trout Soup
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)685"], //Bait
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4, 5] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)DeluxeBait"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)703"], //Magnet
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)710"], //Crab Pot
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)SonarBobber"],
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)686"], //Spinner
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)694"], //Trap Bobber
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)692"], //Lead Bobber
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)693"], //Treasure Hunter
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)695"], //Cork Bobber
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)691"], //Barbed Hook
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)687"], //Dressed Spinner
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Hospital
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Hospital", "Items", "(O)349"], //Energy Tonic
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Hospital", "Items", "(O)351"], //Muscle Remedy
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  },
+  //IceCreamStand
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IceCreamStand", "Items", "(O)233"], //Ice Cream
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  },
+  //IslandTrade
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)688"], //Warp Totem: Farm
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)831"], //Tarot Tuber
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)833"], //Pineapple Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)791"], //Golden Coconut
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)69"], //Banana Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)835"], //Mango Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)292"], //Mahogany Seed
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)896"], //Galaxy Soul
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Raccoon
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)292"], //Mahogany Seed
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)CarrotSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)SummerSquashSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)BroccoliSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)PowdermelonSeeds"],
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)770"], //Mixed Seeds
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)872"], //Fairy Dust
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)GoldenMysteryBox"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)279"], //Magic Rock Candy
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //ResortBar
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)873"], //Pina Colada
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)346"], //Beer
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)303"], //Pale Ale
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)459"], //Mead
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)612"], //Cranberry Candy
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "MangoWine"],
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //Saloon
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)346"], //Beer
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)196"], //Salad
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)216"], //Bread
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)224"], //Spaghetti
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)206"], //Pizza
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)395"], //Coffee
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  },
+  //Sandy
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)802"], //Cactus Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)478"], //Rhubarb Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)486"], //Starfruit Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)494"], //Beet Seeds
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)90"], //Cactus Fruit
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)466"], //Deluxe Speed-Gro
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)340"], //Honey
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)371"], //Quality Retaining Soil
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)233"], //Ice Cream
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  },
+  //ShadowShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ShadowShop", "Items", "(O)305"], //Void Egg
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ShadowShop", "Items", "(O)ButterflyPowder"],
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //VolcanoShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["VolcanoShop", "Items", "(O)286"], //Cherry Bomb
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["VolcanoShop", "Items", "(O)287"], //Bomb
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["VolcanoShop", "Items", "(O)288"], //Mega Bomb
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["VolcanoShop", "Items", "(O)244|(O)237"], //Roots Platter or Super Meal
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }]
+}

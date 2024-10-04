@@ -1,0 +1,13 @@
+{
+  "Changes": [
+  //SeedShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "Dolly.FoodPackaging_PierreShop.PackagingPaper"],
+    "Entries": {
+      "AvailableStock": "{{Abundant Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  }]
+}

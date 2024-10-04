@@ -1,0 +1,670 @@
+{
+  "Changes": [
+  //FlashShifter.StardewValleyExpandedCP_YellowJunimoVendor
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FlashShifter.StardewValleyExpandedCP_YellowJunimoVendor", "Items", "FlashShifter.StardewValleyExpandedCP_BlueGrassStarter"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  },
+  //FlashShifter.StardewValleyExpandedCP_ZoeyVendor
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FlashShifter.StardewValleyExpandedCP_ZoeyVendor", "Items", "FlashShifter.StardewValleyExpandedCP_BlueGrassStarter"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FlashShifter.StardewValleyExpandedCP_ZoeyVendor", "Items", "FlashShifter.StardewValleyExpandedCP_Joja_Berry_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FlashShifter.StardewValleyExpandedCP_ZoeyVendor", "Items", "FlashShifter.StardewValleyExpandedCP_Joja_Veggie_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  },
+  //Joja
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Parsnip_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Potato_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Cauliflower_Seeds, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Tulip_Bulb"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Jazz_Seeds, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Kale_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Bean_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Melon_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Tomato_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Blueberry_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Pepper_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Wheat_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Radish_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Corn_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Hops_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Spangle_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Sunflower_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Pumpkin_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Eggplant_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Bok_Choy"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Amaranth_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Yam_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Cranberry_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Fairy_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Grape_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Parsnip_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Potato_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Cauliflower_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Tulip_Bulb"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Jazz_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Kale_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Bean_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Melon_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Tomato_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Blueberry_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Pepper_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Wheat_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Radish_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Corn_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Hops_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Poppy_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Spangle_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Sunflower_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Pumpkin_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Eggplant_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Bok_Choy"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Amaranth_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Yam_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Cranberry_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Fairy_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_Warehouse_Grape_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Parsnip_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+                        // "Price": 15,
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Potato_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Cauliflower_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Tulip_Bulb"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Jazz_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Kale_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Bean_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Melon_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Tomato_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Blueberry_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Pepper_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Wheat_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Radish_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Corn_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Hops_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Poppy_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Spangle_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Sunflower_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Pumpkin_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Eggplant_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Bok_Choy"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Amaranth_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Yam_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Cranberry_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Fairy_Seeds"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "FlashShifter.StardewValleyExpandedCP_JojaDay_Grape_Starter"],
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  },
+  //Saloon
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken"],
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }]
+}
+
+

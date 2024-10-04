@@ -1,0 +1,13 @@
+{
+  "Changes": [
+  //Carpenter
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "AlanBF.BigFridge"],
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }]
+}

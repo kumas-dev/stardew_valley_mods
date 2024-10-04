@@ -1,0 +1,27 @@
+{
+    "Name": "Limited Shop Quantity",
+    "Author": "VegasOctober",
+    "Version": "1.2.0",
+    "Description": "Limits certain item quantities in shops for a more challenging and diverse experience",
+    "UniqueID": "VegasOctober.LimitedShopQuantity",
+    "MinimumGameVersion": "1.6.0",
+    "UpdateKeys": ["Nexus: 27400"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+      { "IsRequired": false, "UniqueID": "AlanBF.BigFridge" },
+      { "IsRequired": false, "UniqueID": "Cornucopia.GrowableForage" },
+      { "IsRequired": false, "UniqueID": "Cornucopia.MoreCrops" },
+      { "IsRequired": false, "UniqueID": "Cornucopia.MoreFlowers" },
+      { "IsRequired": false, "UniqueID": "Dolly.FoodPackaging" },
+      { "IsRequired": false, "UniqueID": "FlashShifter.StardewValleyExpandedCP" },
+      { "IsRequired": false, "UniqueID": "jeWel.MoreBooks" },
+      { "IsRequired": false, "UniqueID": "mitekano23.ItemSourcePlus" },
+      { "IsRequired": false, "UniqueID": "Rafseazz.RSVCP" },
+      { "IsRequired": false, "UniqueID": "supert.adventureguildexpanded" },
+      { "IsRequired": false, "UniqueID": "Wizadroid.RSVFC" },
+      { "IsRequired": false, "UniqueID": "ZoeyHoshi.RSVForageCrop" },
+      { "IsRequired": false, "UniqueID": "ZoeyHoshi.SVEForageCrops" },
+    ],
+}

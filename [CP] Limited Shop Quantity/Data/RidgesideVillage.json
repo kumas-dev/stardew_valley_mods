@@ -1,0 +1,259 @@
+{
+  "Changes": [
+  //RSVHeapsStore
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem1"], //Grass Starter
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem2"], //Sugar
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem3"], //Wheat Flour
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem4"], //Rice
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem5"], //Oil
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem6"], //Vinegar
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem8"], //Basic Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem9"], //Basic Retaining Soil
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem11"], //Speed-Gro
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem7"], //Quality Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem10"], //Quality Retaining Soil
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem12"], //Deluxe Speed-Gro
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem13"], //Quality Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem14"], //Basic Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem15"], //Basic Retaining Soil
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem16"], //Quality Retaining Soil
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem17"], //Speed-Gro
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem18"], //Deluxe Speed-Gro
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Rafseazz.RSVCP.HeapsItem19"], //Quality Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3 ,4] }],
+    },
+  },
+  //RSVJioShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVJioShop", "Items", "Rafseazz.RSVCP.CultShopItem1"], //Mistbloom Syrup
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVJioShop", "Items", "Rafseazz.RSVCP.CultShopItem6"], //Warp Totem: Ridge
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3] }],
+    },
+  },
+  //RSVKimpoiShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem1"], //Cherry Pluot Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem2"], //Highland Jostaberry Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem3"], //Mountain Plumcot Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem4"], //Northern Limequat Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem5"], //Paradise Rangpur Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem6"], //Tropi Ugli Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem7"], //Desert Tangelo Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem8"], //Ember Blood Lime Sapling
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVKimpoiShop", "Items", "Rafseazz.RSVCP.KimpoiShopItem9"], //Tree Fertilizer
+    "Entries": {
+      "AvailableStock": "{{Plentiful Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4, 5] }],
+    },
+  },
+  //RSVMalayaShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVMalayaShop", "Items", "Rafseazz.RSVCP.MalayaShopItem1"], //Juice
+    "Entries": {
+      "AvailableStock": "{{Common Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }]
+}

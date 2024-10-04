@@ -1,0 +1,31 @@
+{
+  "Changes": [
+  //Blacksmith
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "386"], //Iridium Ore
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  },
+  //Carpenter
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "709"], //Hardwood
+    "Entries": {
+      "AvailableStock": "{{Rare Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "330"], //Clay
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2 ,3, 4] }],
+    },
+  }]
+}

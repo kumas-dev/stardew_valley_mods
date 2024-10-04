@@ -1,0 +1,99 @@
+{
+  "Format": "2.3.0",
+  "ConfigSchema": {
+    "Abundant Base Quantity": { //100-500
+      "Default": 100,
+      "Description": "The quantity for abundant goods sold at stores. This value is multiplied by 1, 2, 3, 4, or 5 randomly to determine the resulting daily quantity."
+    },
+    "Plentiful Base Quantity": { //50-250
+      "Default": 50,
+      "Description": "The quantity for plentiful goods sold at stores. This value is multiplied by 1, 2, 3, 4, or 5 randomly to determine the resulting daily quantity."
+    },
+    "Common Base Quantity": { //10-40
+      "Default": 10,
+      "Description": "The quantity for common goods sold at stores. This value is multiplied by 1, 2, 3, or 4 randomly to determine the resulting daily quantity."
+    },
+    "Limited Base Quantity": { //5-20
+      "Default": 5,
+      "Description": "The quantity for limited goods sold at stores. This value is multiplied by 1, 2, 3, or 4 randomly to determine the resulting daily quantity."
+    },
+    "Rare Base Quantity": { //3-9
+      "Default": 3,
+      "Description": "The quantity for rare goods sold at stores. This value is multiplied by 1, 2, or 3 randomly to determine the resulting daily quantity."
+    },
+    "Scarce Base Quantity": { //1-2
+      "Default": 1,
+      "Description": "The quantity for scarce goods sold at stores. This value is multiplied by 1 or 2 randomly to determine the resulting daily quantity."
+    },
+  },
+  "Changes": [{
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/vanilla.json",
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/AdventurersGuildExpanded.json",
+    "When": { "HasMod": "supert.adventureguildexpanded" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/BigFridge.json",
+    "When": { "HasMod": "AlanBF.BigFridge" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/CornucopiaMoreCrops.json",
+    "When": { "HasMod": "Cornucopia.MoreCrops" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/CornucopiaMoreFlowers.json",
+    "When": { "HasMod": "Cornucopia.MoreFlowers" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/FoodPackaging.json",
+    "When": { "HasMod": "Dolly.FoodPackaging" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/GrowableForageAndCropBushes.json",
+    "When": { "HasMod": "Cornucopia.GrowableForage" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/ItemSourcePlus.json",
+    "When": { "HasMod": "mitekano23.ItemSourcePlus" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/MoreBooks.json",
+    "When": { "HasMod": "jeWel.MoreBooks" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/RidgesideCrops.json",
+    "When": { "HasMod": "Wizadroid.RSVFC" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/RidgesideVillage.json",
+    "When": { "HasMod": "Rafseazz.RSVCP" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/StardewValleyExpanded.json",
+    "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/RidgesideForageCrops.json",
+    "When": { "HasMod": "ZoeyHoshi.RSVForageCrop" },
+  }, {
+    "LogName": "Limited Shop Quantity",
+    "Action": "Include",
+    "FromFile": "Data/SVEForageCrops.json",
+    "When": { "HasMod": "ZoeyHoshi.SVEForageCrops" },
+  }]
+}

@@ -1,0 +1,33 @@
+{
+  "Changes": [
+  //DesertTrade
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["DesertTrade", "Items", "mitekano23.(BC)272"], //Auto-Petter
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //FishShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "mitekano23.(O)856"], //Curiosity Lure
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  },
+  //IslandTrade
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "mitekano23.(O)289"], //Ostrich Egg
+    "Entries": {
+      "AvailableStock": "{{Scarce Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2] }],
+    },
+  }]
+}

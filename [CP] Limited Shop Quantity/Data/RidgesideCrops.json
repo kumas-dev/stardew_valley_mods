@@ -1,0 +1,167 @@
+{
+  "Changes": [
+  //RSVHeapsStore
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_RidgeCherrySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_MountainArugulaSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_RidgeAzoreanFlowerSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_RidgesideMonkshoodSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_MountainChicoSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_RidgeWildAppleSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_ForestAmancaySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_MountainHokkaidoSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_VioletDevilsClawSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_AutumnDropBerrySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_HighlandChardSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_LavaLilySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_SummitSnowbellSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_HighlandButterwortSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_FrostClumpBerrySeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_RidgesideClementineSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_AuroreanIrisSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["RSVHeapsStore", "Items", "Wizadroid.RSVFC_SierraWintergreenSeeds"],
+    "Priority": "Late",
+    "Entries": {
+      "AvailableStock": "{{Limited Base Quantity}}",
+      "AvailableStockModifiers": [{ "Modification": "Multiply", "RandomAmount": [1, 2, 3, 4] }],
+    },
+  }]
+}
