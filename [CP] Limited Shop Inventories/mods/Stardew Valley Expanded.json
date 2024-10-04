@@ -3,34 +3,6 @@
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": ["Joja", "PriceModifiers"],
-            "When": {
-                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
-            },
-            "Entries": {
-                "NonMemberMarkup": {
-                    "Condition": "!PLAYER_HAS_MAIL Current JojaMember",
-                    "Modification": "Multiply",
-                    "Amount": 1.25,
-                    "RandomAmount": null
-                },
-                "EarlyGameMarkdown": {
-                    "Condition": "PLAYER_HAS_MAIL Current JojaMember, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
-                    "Modification": "Multiply",
-                    "Amount": 1.0,
-                    "RandomAmount": null
-                },
-                "JojaDayMarkDown": {
-                    "Condition": "PLAYER_HAS_MAIL Current JojaMember, IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay",
-                    "Modification": "Multiply",
-                    "Amount": 0.8,
-                    "RandomAmount": null
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Shops",
             "TargetField": ["Joja", "Items"],
             "When": {
                 "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
@@ -45,292 +17,292 @@
                     "AvailableStockLimit": "Player"
                 }, // Joja Cola
                 "FlashShifter.StardewValleyExpandedCP_Cucumber_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Cucumber Seeds
                 "FlashShifter.StardewValleyExpandedCP_Parsnip_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Parsnip Seeds
                 "FlashShifter.StardewValleyExpandedCP_Potato_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Cauliflower_Seeds, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Cauliflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_Tulip_Bulb": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Tulip Bulb
                 "FlashShifter.StardewValleyExpandedCP_Jazz_Seeds, !IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Jazz Seeds
                 "FlashShifter.StardewValleyExpandedCP_Kale_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Kale Seeds
                 "FlashShifter.StardewValleyExpandedCP_Bean_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Bean Starter
                 "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Butternut Squash Seeds
                 "FlashShifter.StardewValleyExpandedCP_Melon_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Melon Seeds
                 "FlashShifter.StardewValleyExpandedCP_Tomato_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Tomato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Blueberry_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Blueberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_Pepper_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Pepper Seeds
                 "FlashShifter.StardewValleyExpandedCP_Wheat_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Wheat Seeds
                 "FlashShifter.StardewValleyExpandedCP_Radish_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Radish Seeds
                 "FlashShifter.StardewValleyExpandedCP_Corn_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Corn Seeds
                 "FlashShifter.StardewValleyExpandedCP_Hops_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Hops Starter
                 "FlashShifter.StardewValleyExpandedCP_Spangle_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Spangle Seeds
                 "FlashShifter.StardewValleyExpandedCP_Sunflower_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Sunflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_Sweet_Potato_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Sweet Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Pumpkin_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Pumpkin Seeds
                 "FlashShifter.StardewValleyExpandedCP_Eggplant_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Eggplant Seeds
                 "FlashShifter.StardewValleyExpandedCP_Bok_Choy": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Bok Choy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Amaranth_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Amaranth Seeds
                 "FlashShifter.StardewValleyExpandedCP_Yam_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Yam Seeds
                 "FlashShifter.StardewValleyExpandedCP_Cranberry_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Cranberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_Fairy_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Fairy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Grape_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Grape Starter
 
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Cucumber_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Cucumber Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Parsnip_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Parsnip Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Potato_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Cauliflower_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Cauliflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Tulip_Bulb": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Tulip Bulb
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Jazz_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Jazz Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Kale_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Kale Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Bean_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Bean Starter
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Butternut_Squash_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Butternut Squash Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Melon_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Melon Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Tomato_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Tomato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Blueberry_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Blueberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Pepper_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Pepper Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Wheat_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Wheat Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Radish_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Radish Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Corn_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Corn Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Hops_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Hops Starter
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Poppy_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Poppy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Spangle_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Spangle Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Sunflower_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Sunflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Sweet_Potato_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Sweet Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Pumpkin_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Pumpkin Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Eggplant_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Eggplant Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Bok_Choy": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Bok Choy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Amaranth_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Amaranth Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Yam_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Yam Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Cranberry_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Cranberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Fairy_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Fairy Seeds
                 "FlashShifter.StardewValleyExpandedCP_Warehouse_Grape_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Grape Starter
 
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Cucumber_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Cucumber Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Parsnip_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Parsnip Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Potato_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Cauliflower_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Cauliflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Tulip_Bulb": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Tulip Bulb
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Jazz_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Jazz Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Kale_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Kale Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Bean_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Bean Starter
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Butternut_Squash_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Butternut Squash Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Melon_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Melon Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Tomato_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Tomato Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Blueberry_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Blueberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Pepper_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Pepper Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Wheat_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Wheat Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Radish_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Radish Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Corn_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Corn Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Hops_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Hops Starter
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Poppy_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Poppy Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Spangle_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Spangle Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Sunflower_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Sunflower Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Sweet_Potato_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Sweet Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Pumpkin_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Pumpkin Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Eggplant_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Eggplant Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Bok_Choy": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Bok Choy Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Amaranth_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Amaranth Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Yam_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Yam Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Cranberry_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Cranberry Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Fairy_Seeds": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 }, // Fairy Seeds
                 "FlashShifter.StardewValleyExpandedCP_JojaDay_Grape_Starter": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}"
+                    "AvailableStock": 20
                 } // Grape Starter
             }
         },
@@ -343,27 +315,27 @@
             },
             "Fields": {
                 "FlashShifter.StardewValleyExpandedCP_Cucumber_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Cucumber Seeds
                 "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Butternut Squash Seeds
                 "FlashShifter.StardewValleyExpandedCP_Sweet_Potato_Seed": {
-                    "AvailableStock": "{{Random: 5, 10, 15, 20}}",
+                    "AvailableStock": 20,
                     "AvailableStockLimit": "Player"
                 }, // Sweet Potato Seeds
                 "FlashShifter.StardewValleyExpandedCP_Pear_Sapling": {
-                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStock": 3,
                     "AvailableStockLimit": "Player"
                 }, // Pear Sapling
                 "FlashShifter.StardewValleyExpandedCP_Nectarine_Sapling": {
-                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStock": 3,
                     "AvailableStockLimit": "Player"
                 }, // Nectarine Sapling
                 "FlashShifter.StardewValleyExpandedCP_Persimmon_Sapling": {
-                    "AvailableStock": "{{Random: 1, 2, 3}}",
+                    "AvailableStock": 3,
                     "AvailableStockLimit": "Player"
                 }, // Persimmon Sapling
                 "FlashShifter.StardewValleyExpandedCP_Birch_Syrup": {
