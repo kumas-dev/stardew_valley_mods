@@ -10,6 +10,18 @@
         {
             "UniqueID": "FlashShifter.StardewValleyExpandedCP",
             "IsRequired": false
+        },
+        {
+            "UniqueID": "6480.blueegg",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Cornucopia.ArtisanMachines",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Cornucopia.MoreCrops",
+            "IsRequired": false
         }
     ]
 }

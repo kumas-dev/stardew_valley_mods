@@ -1,0 +1,220 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_Beeswax",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Beeswax
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_GlassNoodles",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Glass Noodles
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_RiceNoodles",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Rice Noodles
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_WheatNoodles",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Wheat Noodles
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Essential Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_Zoodles",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Zoodles
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Extended Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_BuckwheatNoodles",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Buckwheat Noodles
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_SemolinaNoodles",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Semolina Noodles
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_WholeGrainNoodles",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Whole Grain Noodles
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Extended Trees
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_Extruder",
+                "OutputRules",
+                "Cornucopia_ChewingGum",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Extruder - Cornucopia Chewing Gum
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedTreesPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        }
+    ]
+}

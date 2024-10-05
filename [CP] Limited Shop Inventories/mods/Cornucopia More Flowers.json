@@ -1,0 +1,319 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Fields": {
+                "Cornucopia.MoreFlowers_CropSeedsSpringCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsSummerCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsFallCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsWinterCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsSpringRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsSummerRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsFallRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsWinterRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_BushSeeds": {
+                    "AvailableStock": "{{Rare Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_FruitTreeSaplings": {
+                    "AvailableStock": "{{Scarce Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Joja", "Items"],
+            "Priority": "Default+2",
+            "Fields": {
+                "Cornucopia.MoreFlowers_CropSeedsSpringCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsSummerCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsFallCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsWinterCommon": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsSpringRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsSummerRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsFallRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia.MoreFlowers_CropSeedsWinterRare": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy", "Items"],
+            "Fields": {
+                "Cornucopia_LotusSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia_CalicoRoseSeeds": {
+                    "AvailableStock": "{{Rare Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3]
+                        }
+                    ]
+                },
+                "Cornucopia_FairyDusterSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia_HibiscusSapling": {
+                    "AvailableStock": "{{Scarce Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2]
+                        }
+                    ]
+                },
+                "Cornucopia_YlangYlangSapling": {
+                    "AvailableStock": "{{Scarce Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop", "Items"],
+            "Fields": {
+                "Cornucopia_BeeBalmSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia_ButtercupSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia_HoneysuckleSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia_PinkCatSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia_WolfsbaneSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["IslandTrade", "Items"],
+            "Fields": {
+                "Cornucopia_PitcherPlantSeeds": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                },
+                "Cornucopia_RafflesiaSeeds": {
+                    "AvailableStock": "{{Scarce Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2]
+                        }
+                    ]
+                },
+                "Cornucopia_RosePrismaticSeeds": {
+                    "AvailableStock": "{{Scarce Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

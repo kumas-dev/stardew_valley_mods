@@ -1,0 +1,115 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)FlashShifter.StardewValleyExpandedCP_Butter_Churner",
+                "OutputRules"
+            ],
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_ChurnerRulesId": null,
+                "Default_GoatMilk": {
+                    "Id": "Default_GoatMilk",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)436"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "MinStack": 2,
+                            "StackModifiers": [
+                                {
+                                    "Id": "DoubleQuality",
+                                    "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                                    "Modification": "Multiply",
+                                    "Amount": "2",
+                                    "RandomAmount": null
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 60
+                },
+                "Default_LargeGoatMilk": {
+                    "Id": "Default_LargeGoatMilk",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)438"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "MinStack": 2,
+                            "Quality": 2,
+                            "StackModifiers": [
+                                {
+                                    "Id": "DoubleQuality",
+                                    "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                                    "Modification": "Multiply",
+                                    "Amount": "2",
+                                    "RandomAmount": null
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 60
+                },
+                "Default_Milk": {
+                    "Id": "Default_Milk",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)184"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DoubleQuality",
+                                    "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                                    "Modification": "Multiply",
+                                    "Amount": "2",
+                                    "RandomAmount": null
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 60
+                },
+                "Default_LargeMilk": {
+                    "Id": "Default_LargeMilk",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)186"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Butter",
+                            "Quality": 2,
+                            "StackModifiers": [
+                                {
+                                    "Id": "DoubleQuality",
+                                    "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                                    "Modification": "Multiply",
+                                    "Amount": "2",
+                                    "RandomAmount": null
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 60
+                }
+            }
+        }
+    ]
+}

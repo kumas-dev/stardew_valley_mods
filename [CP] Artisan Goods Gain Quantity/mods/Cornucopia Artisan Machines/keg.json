@@ -1,0 +1,122 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules",
+                "Cornucopia_CoconutMilk",
+                "OutputItem",
+                "#0"
+            ], // Keg - Cornucopia Coconut Milk
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules",
+                "Cornucopia_NutMilk",
+                "OutputItem",
+                "#0"
+            ], // Keg - Cornucopia Nut Milk
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules",
+                "Cornucopia_NutMilk",
+                "OutputItem",
+                "#1"
+            ], // Keg - Cornucopia Nut Milk
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Essential Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules",
+                "Cornucopia_SoyMilk",
+                "OutputItem",
+                "#0"
+            ], // Keg - Cornucopia Soy Milk
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Extended Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules",
+                "Cornucopia_OatMilk",
+                "OutputItem",
+                "#0"
+            ], // Keg - Cornucopia Oat Milk
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        }
+    ]
+}
