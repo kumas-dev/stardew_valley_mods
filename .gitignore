@@ -9,9 +9,7 @@ config.toml
 config.json
 
 !Core/SpaceCore/config.json
-!FixFontOption/config.json
-!FerngillSimpleEconomy/config.json
-!Stardew Valley Balance Overhaul/**/config.json
+!LoveOfCooking/**/config.json
 !Stardew Valley Expanded/**/config.json
 
 # cache
