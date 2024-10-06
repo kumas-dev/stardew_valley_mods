@@ -1,0 +1,90 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Priority": "Late",
+            "Fields": {
+                "FlashShifter.StardewValleyExpandedCP_Sweet_Potato_Seed": {
+                    "DisplayName": "펀길 고구마 씨앗"
+                },
+                "Cornucopia_SweetPotatoSeeds": {
+                    "DisplayName": "고구마 씨앗"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Sweet_Potato": {
+                    "DisplayName": "펀길 고구마"
+                },
+                "Cornucopia_SweetPotato": {
+                    "DisplayName": "고구마"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Cucumber_Seed": {
+                    "DisplayName": "펀길 오이 씨앗"
+                },
+                "Cornucopia_CucumberSeeds": {
+                    "DisplayName": "오이 씨앗"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Cucumber": {
+                    "DisplayName": "펀길 오이"
+                },
+                "Cornucopia_Cucumber": {
+                    "DisplayName": "오이"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed": {
+                    "DisplayName": "펀길 땅콩호박 씨앗"
+                },
+                "Cornucopia_ButternutSquashSeeds": {
+                    "DisplayName": "땅콩호박 씨앗"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Butternut_Squash": {
+                    "DisplayName": "펀길 땅콩호박"
+                },
+                "Cornucopia_ButternutSquash": {
+                    "DisplayName": "땅콩호박"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Persimmon_Sapling": {
+                    "DisplayName": "펀길 감나무 묘목"
+                },
+                "Cornucopia_PersimmonSapling": {
+                    "DisplayName": "감나무 묘목"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Persimmon": {
+                    "DisplayName": "펀길 감"
+                },
+                "Cornucopia_Persimmon": {
+                    "DisplayName": "감"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Pear_Sapling": {
+                    "DisplayName": "펀길 배나무 묘목"
+                },
+                "Cornucopia_PearSapling": {
+                    "DisplayName": "배나무 묘목"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Pear": {
+                    "DisplayName": "펀길 배"
+                },
+                "Cornucopia_Pear": {
+                    "DisplayName": "배"
+                },
+                "FlashShifter.StardewValleyExpandedCP_Butter": {
+                    "DisplayName": "펀길 버터"
+                },
+                "Cornucopia_Butter": {
+                    "DisplayName": "버터"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Priority": "Late",
+            "Fields": {
+                "FlashShifter.StardewValleyExpandedCP_Butter_Churner": {
+                    "DisplayName": "펀길 버터 제조기"
+                },
+                "Cornucopia_ButterChurn": {
+                    "DisplayName": "버터 제조기"
+                }
+            }
+        }
+    ]
+}
