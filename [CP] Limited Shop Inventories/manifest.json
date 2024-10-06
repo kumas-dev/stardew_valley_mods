@@ -22,6 +22,10 @@
         {
             "UniqueID": "Cornucopia.GrowableForage",
             "IsRequired": false
+        },
+        {
+            "UniqueID": "jeWel.MoreBooksCode",
+            "IsRequired": false
         }
     ]
 }

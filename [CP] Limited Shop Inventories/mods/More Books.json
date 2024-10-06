@@ -1,0 +1,53 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Carpenter", "Items"],
+            "When": {
+                "HasMod|contains = jeWel.MoreBooksCode": true,
+                "jeWel.MoreBooksCode/ConfigCarpenterCatalogueRead": true
+            },
+            "Fields": {
+                "709": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                }, // Hardwood
+                "330": {
+                    "AvailableStock": "{{Limited Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                } // Clay
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith", "Items"],
+            "When": {
+                "HasMod|contains = jeWel.MoreBooksCode": true,
+                "jeWel.MoreBooksCode/ConfigOreCatalogueRead": true
+            },
+            "Fields": {
+                "386": {
+                    "AvailableStock": "{{Common Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                } // Iridium Ore
+            }
+        }
+    ]
+}

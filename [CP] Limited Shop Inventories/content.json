@@ -58,6 +58,13 @@
             "When": {
                 "HasMod|contains = Cornucopia.GrowableForage": true
             }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "mods/More Books.json",
+            "When": {
+                "HasMod|contains = jeWel.MoreBooksCode": true
+            }
         }
     ]
 }
