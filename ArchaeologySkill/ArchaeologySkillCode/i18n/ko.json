@@ -1,5 +1,5 @@
 ﻿{
-    "skill.name": "고고학",
+    "skill.name": "탐사",
     "skill.perk": "채굴 시 추가 아이템 획득 확률 +{{bonus}}%",
     "skill.perk_bonus": "채굴 시 {{rarity}} 등급의 보너스 아이템 획득 확률",
 
@@ -7,30 +7,30 @@
     "config.AlternativeSkillPageIcon.tooltip": "재시작 필요. 페이지 아이콘을 붓과 바위에서 삽으로 변경합니다.",
 
     "config.ExperienceFromArtifactSpots": "유물 지점 경험치 획득",
-    "config.ExperienceFromArtifactSpots.tooltip": "특정 유물 지점에서 채굴할 때 획득하는 고고학 경험치.",
+    "config.ExperienceFromArtifactSpots.tooltip": "특정 유물 지점에서 채굴할 때 획득하는 탐사 경험치.",
 
     "config.ExperienceFromMinesDigging": "광산과 해골 동굴 경험치 획득",
-    "config.ExperienceFromMinesDigging.tooltip": "광산이나 해골 동굴에서 채굴할 때 얻는 고고학 경험치.",
+    "config.ExperienceFromMinesDigging.tooltip": "광산이나 해골 동굴에서 채굴할 때 얻는 탐사 경험치.",
 
     "config.ExperienceFromBuriedAndPannedItem": "매장된 아이템 및 팬닝 경험치 획득",
-    "config.ExperienceFromBuriedAndPannedItem.tooltip": "점토 등 무작위 아이템을 발굴하거나 팬닝할 때 얻는 고고학 경험치.",
+    "config.ExperienceFromBuriedAndPannedItem.tooltip": "점토 등 무작위 아이템을 발굴하거나 팬닝할 때 얻는 탐사 경험치.",
 
     "config.ExperienceFromWaterShifter": "물 체집기 경험치 획득",
-    "config.ExperienceFromWaterShifter.tooltip": "물 체집기에서 수확할 때 얻는 고고학 경험치.",
+    "config.ExperienceFromWaterShifter.tooltip": "물 체집기에서 수확할 때 얻는 탐사 경험치.",
 
     "config.ExperienceFromResearchTable": "연구 테이블 경험치 획득",
     "config.ExperienceFromResearchTable.tooltip": "이 설정은 현재 아무런 기능이 없습니다.",
 
     "config.ExperienceFromAncientBattery": "고대 배터리 경험치 획득",
-    "config.ExperienceFromAncientBattery.tooltip": "고대 배터리에서 수확할 때 얻는 고고학 경험치.",
+    "config.ExperienceFromAncientBattery.tooltip": "고대 배터리에서 수확할 때 얻는 탐사 경험치.",
 
     "config.ExperienceFromPreservationChamber": "보존실 경험치 획득",
-    "config.ExperienceFromPreservationChamber.tooltip": "보존실에서 수확할 때 얻는 고고학 경험치.",
+    "config.ExperienceFromPreservationChamber.tooltip": "보존실에서 수확할 때 얻는 탐사 경험치.",
 
     "config.ExperienceFromHPreservationChamber": "단단한 목재 보존실 경험치 획득",
-    "config.ExperienceFromHPreservationChamber.tooltip": "단단한 목재 보존실에서 수확할 때 얻는 고고학 경험치.",
+    "config.ExperienceFromHPreservationChamber.tooltip": "단단한 목재 보존실에서 수확할 때 얻는 탐사 경험치.",
 
-    "moonslime.Archaeology.skill_book.levelup": "고고학에 대해 몇 가지를 배웠습니다.",
+    "moonslime.Archaeology.skill_book.levelup": "탐사에 대해 몇 가지를 배웠습니다.",
 
     "moonslime.Archaeology.water_shifter.name": "물 체집기",
     "moonslime.Archaeology.water_shifter.description": "물을 떠서 섬유로 고정하고, 다음 날 확인해보세요. \n강, 호수, 바다에서 모두 사용 가능합니다.",
