@@ -4,7 +4,7 @@
     "skill.perk.rare": "희귀 드롭 확률 +{{bonusPercent}}%",
     "skill.perk.mega_drops": "매우 희귀한 드롭을 얻을 확률.",
     "skill.perk.double_mega_drops": "믿을 수 없을 만큼 희귀한 드롭을 얻을 확률.",
-    "skill.required_level": "필요한 쓰레기 수거 레벨: {{level}}",
+    "skill.required_level": "필요한 탐색 레벨: {{level}}",
 
     "profession.Recycler.name": "재활용 전문가",
     "profession.Recycler.desc": "재활용 기계를 저렴한 비용으로 제작할 수 있습니다.",

@@ -11,15 +11,15 @@
     "FrontierName.HiddenCave": "숨겨진 동굴",
 
     //Map Strings
-    "SignPost": " Farm^` 산맥^> 펠리컨 마을^= 마니의 목장",
+    "SignPost": " 농장^` 산맥^> 펠리컨 마을^= 마니의 목장",
     "Minecarts": "이 광산 수레는 작동하지 않는 것 같다...",
     "minecart.Right": "농장 - 오른쪽",
     "minecart.Left": "농장 - 왼쪽",
     "minecart.Middle": "농장 - 중앙",
-    "minecart.Ravine": "국경지대 - 계곡",
-    "minecart.Mountain": "국경지대 - 산맥 방향",
-    "minecart.Grassland": "국경지대 - 풀밭",
-    "minecart.Beach": "국경지대 - 해안가",
+    "minecart.Ravine": "국경 - 계곡",
+    "minecart.Mountain": "국경 - 산맥 방향",
+    "minecart.Grassland": "국경 - 풀밭",
+    "minecart.Beach": "국경 - 해안가",
 
     //Events
     "OpeningEvent.01": "안녕! 네가 @구나.#$b#내 이름은 로빈이야. 팰리컨 마을에서 목수 일을 하고 있단다. 루이스 시장님이 네게 새 농장으로 가는 길을 알려주도록 날 보내셨어. 시장님도 근처에 계셔. 너가 도착하기만 기다리고 계시거든. #$b#자,여기야!",
