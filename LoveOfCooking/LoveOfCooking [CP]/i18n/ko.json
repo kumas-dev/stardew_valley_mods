@@ -185,10 +185,10 @@
 
 	// Tier 1:
 	// Path 1: Cooking
-	"menu.cooking_skill.tier1_path1.name": "수셰프",
+	"menu.cooking_skill.tier1_path1.name": "부주방장",
 	"menu.cooking_skill.tier1_path1.description": "조미료가 레시피의 품질을 더욱 향상시킵니다.",
 	// Path 2: Eating (CONFIG: Food restores over time)
-	"menu.cooking_skill.tier1_path2.name": "빠른 섭취자",
+	"menu.cooking_skill.tier1_path2.name": "포식가",
 	"menu.cooking_skill.tier1_path2.description": "음식이 에너지를 더 빠르게 회복시킵니다.",
 	// Path 2: Eating (CONFIG: Food restores instantly)
 	"menu.cooking_skill.tier1_path2_alt.name": "대식가",
@@ -196,10 +196,10 @@
 
 	// Tier 2: Path 1
 	// Choice A: Gifting
-	"menu.cooking_skill.tier2_path1a.name": "수석 셰프",
+	"menu.cooking_skill.tier2_path1a.name": "주방장",
 	"menu.cooking_skill.tier2_path1a.description": "요리된 음식을 선물로 주면 더 빨리 친해집니다.",
 	// Choice B: Selling
-	"menu.cooking_skill.tier2_path1b.name": "5성급 요리사",
+	"menu.cooking_skill.tier2_path1b.name": "명인",
 	"menu.cooking_skill.tier2_path1b.description": "요리된 음식의 가치가 {{SaleValue}}% 더 높습니다.",
 
 	// Tier 2: Path B
