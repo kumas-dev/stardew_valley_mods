@@ -10,6 +10,18 @@
         {
             "UniqueID": "FlashShifter.StardewValleyExpandedCP",
             "IsRequired": false
+        },
+        {
+            "UniqueID": "Cornucopia.MoreCrops",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Cornucopia.MoreFlowers",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Cornucopia.GrowableForage",
+            "IsRequired": false
         }
     ]
 }
