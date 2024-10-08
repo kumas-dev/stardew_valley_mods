@@ -1,0 +1,18 @@
+{
+  "config.section.Fishing Trawler Resprites.name": "拖网渔船贴图重置",
+  "config.Murphy's Trawler.name": "墨菲的船",
+  "config.Murphy's Trawler.values.New": "新版",
+  "config.Murphy's Trawler.values.Original": "原版 (Vanilla)",
+  "config.Murphy's Portraits.name": "墨菲的肖像",
+  "config.Murphy's Portraits.values.New": "新版",
+  "config.Murphy's Portraits.values.Original": "原版 (Vanilla)",
+  "config.Murphy's Overworld Sprites.name": "墨菲在游戏中的外观",
+  "config.Murphy's Overworld Sprites.values.New": "新版",
+  "config.Murphy's Overworld Sprites.values.Original": "原版 (Vanilla)",
+  "config.Bailing Bucket.name": "水斗贴图",
+  "config.Bailing Bucket.values.New": "新版",
+  "config.Bailing Bucket.values.Original": "原版 (Vanilla)",
+  "config.Trident.name": "三叉戟贴图",
+  "config.Trident.values.New": "新版",
+  "config.Trident.values.Original": "原版 (Vanilla)",
+}
