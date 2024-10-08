@@ -1,0 +1,68 @@
+﻿{
+  // mail
+  "mail.frs.intro": "재무부^펀길 국세청^^^{{honorific}} 납세자님,^^이 편지는 당신이 펠리컨 마을, 스타듀 밸리로의 최근 주소 변경이 접수 및 등록되었음을 알리기 위해 보내드립니다. 앞으로의 모든 우편물은 {{farm}} 농장으로 발송될 것입니다.^^저희는 연방 소득세 납부가 각 계절의 첫 번째 날 종료될 예정임을 상기드립니다. 편의를 위해, 의무 금액은 자동으로 귀하의 잔액에서 공제됩니다. 만약 잔액이 부족할 경우, 펀길 국세법 제501(c)(1)조에 따라 {{fine}}의 벌금이 부과되며, 스타듀 은행에서 연이율 {{interest}}의 이자를 적용한 대출이 발행됩니다.^^^감사합니다,^^로라 D. 프레토^펀길 국세청 이사[#]주소 변경 확인서",
+  "mail.frs.notice": "재무부^펀길 국세청^^^{{honorific}} 납세자님,^^이 편지는 이번 계절 말까지 {{due}}g의 누적 소득세가 자동으로 공제될 것임을 알려드립니다.^^재정 상태에 대해 문의 사항이 있는 경우 이 편지를 보관해 두시기 바랍니다.^^^감사합니다,^^로라 D. 프레토^펀길 국세청 이사[#]FRS 월간 통지서",
+  "mail.frs.deduction": "재무부^펀길 국세청^^^{{honorific}} 납세자님,^^이 편지는 이번 계절에 누적된 소득세가 {{accrued}}g임을 알려드립니다. 최근의 환경 보호 활동 덕분에 펀길 국세법 제501(c)(3)조에 따라 {{deductible}}의 세금 감면 혜택을 받게 되었습니다.^^따라서 최종 납부 소득세인 {{final}}g이 {{when}} 자동으로 공제될 예정입니다.^^재정 상태에 대해 문의 사항이 있는 경우 이 편지를 보관해 두시기 바랍니다.^^^감사합니다,^^로라 D. 프레토^펀길 국세청 이사[#]FRS 감면 통지서",
+  "mail.frs.deduction.max": "재무부^펀길 국세청^^^{{honorific}} 납세자님,^^이 편지는 이번 계절에 누적된 소득세가 {{accrued}}g임을 알려드립니다. 최근의 환경 보호 활동 덕분에 펀길 국세법 제501(c)(3)조에 따라 전액 감면 혜택을 받게 되었습니다. 따라서 이번 계절 동안 귀하의 계좌에서는 차감이 발생하지 않을 것입니다.^^재정 상태에 대해 문의 사항이 있는 경우 이 편지를 보관해 두시기 바랍니다.^^^감사합니다,^^로라 D. 프레토^펀길 국세청 이사[#]FRS 감면 통지서",
+  "mail.frs.outstanding": "재무부^펀길 국세청^^^{{honorific}} 납세자님,^^이 편지는 지난 계절에 부과된 소득세 {{due}}g이 잔액에서 전액 공제되지 않았음을 알려드립니다. 펀길 국세법 제501(c)(1)조에 따라 추가 {{fine}}의 벌금이 부과되며, 귀하의 미지급 부채 {{outstanding}}g가 전액 상환될 때까지 {{farm}} 농장의 모든 수입에 대해 압류 조치가 이루어질 것입니다. 추가 이자는 연이율 {{interest}}로 적용되므로 신속한 상환을 권장드립니다.^^재정 상태에 대해 문의 사항이 있는 경우 이 편지를 보관해 두시기 바랍니다.^^^감사합니다,^^로라 D. 프레토^펀길 국세청 이사[#]FRS 월간 통지서",
+  "mail.lewis.intro": "@,^펠리컨 타운에 온 걸 환영하네! 새 집에 잘 적응하고 있길 바라네. 친절한 조언 하나 하자면, {{farm}} 농장의 새로운 주인이 된 자네는 농장 재산세를 책임져야 하네. 매년 카운티에서 현지 농지에 대해 사용가치 평가(UVA)를 진행하는데, 이는 농지의 사용 여부에 따라 세금이 책정된다는 뜻일세. 다시 말해, 사용하지 않는 땅은 경작 중인 땅보다 *더 많은* 세금이 부과될 걸세. 그러니 얼른 그 잔해들을 정리하는 게 좋을 걸세!^^고인이 되신 자네의 할아버지께서 작년까지 모든 세금을 해결하셨으니, 내년까지는 걱정할 필요 없네. 내가 시작에 도움이 될 만한 패키지를 보내 두었으니 도움이 되길 바라네. 자네의 농장이 번창하는 모습을 기대하고 있네! ^ 감사합니다, 루이스 시장[#]펠리컨 타운 재산세 안내",
+  "mail.lewis.notice": "@,^자네도 알고 있듯이, 내가 펠리컨 타운의 시장으로서 맡은 임무 중 하나가 마을의 모든 재산에 대한 세금을 부과하는 것이네. 지난 회계 연도 동안 카운티에서 {{farm}} 농장의 재산 가치를 UVA 평가한 결과, {{valuation}}g로 책정되었네. 그에 따라 자네는 해당 세금 기간에 대한 총 재산세로 {{due}}g를 납부해야 하네. 이 금액은 봄 {{day}}일에 자네 계좌에서 자동으로 차감될 걸세. ^펠리컨 타운을 대표하여, 자네가 우리 공동체에 지속적으로 기여해주어 깊이 감사하고 있네. ^ 감사합니다, 루이스 시장[#]펠리컨 타운 재산세 안내",
+  "mail.lewis.outstanding": "@,^자네 계좌에 이번 세금 기간의 재산세를 전액 충당할 자금이 부족한 것 같구만. 카운티 정책에 따라 유감스럽게도 {{fine}}의 연체 벌금이 부과될 예정이네. 미납된 {{outstanding}}g는 스타듀 은행에 넘겨질 것이며, 해당 은행은 자네가 전액 납부할 때까지 출하 소득을 압류할 권한이 있네. 또한, 연 이자율 {{interest}}이 적용될 걸세. ^어려운 시기를 겪고 있다면 펠리컨 타운 주민들이 자네를 지원해 줄 거라는 걸 잊지 말게나. ^ 감사합니다, 루이스 시장[#]펠리컨 타운 재산세 안내",
+
+  // other
+  "hud.tax.debit": "{{amount}}g이 세금 납부를 위해 귀하의 계좌에서 차감되었습니다.",
+  "hud.debt.debit": "미지급 채무 해결을 위해 어제의 출하 수입에서 {{amount}}g이 공제되었습니다.",
+  "honorific.male": "존경하는",
+  "honorific.female": "존경하는",
+  "when.tonight": "오늘 밤",
+  "when.day": "현재 계절의 {{day}}일에",
+
+
+  /************
+  *** GMCM ***
+  ************/
+
+  // income
+  "gmcm.sections.txs.income": "소득세",
+  "gmcm.tax_rate_per_income_bracket.title": "소득 구간별 세율",
+  "gmcm.tax_rate_per_income_bracket.desc": "각 소득 구간에 적용되는 세율입니다. 각 쌍에서 첫 번째 숫자는 해당 구간의 소득 한도를 나타내고, 두 번째 숫자는 해당 구간 내 소득의 과세 비율을 나타냅니다.",
+  "gmcm.income_bracket.title": "소득 구간",
+  "gmcm.income_bracket.desc": "이 구간의 소득 한도입니다. 이전 구간과 이 숫자 사이의 모든 소득은 해당 세율로 과세됩니다.",
+  "gmcm.tax_rate.title": "세율",
+  "gmcm.tax_rate.desc": "이 구간 내 소득의 과세 비율입니다.",
+  "gmcm.income_tax_lateness_fine.title": "연체 벌금",
+  "gmcm.income_tax_lateness_fine.desc": "소득세가 제때 납부되지 않을 경우 미납 금액에 부과되는 일회성 벌금 비율입니다.",
+  "gmcm.deductible_animal_expenses.title": "공제 가능한 동물 비용",
+  "gmcm.deductible_animal_expenses.desc": "동물 구매 및 공급에 소비된 금액의 몇 퍼센트가 공제 가능한지 설정합니다.",
+  "gmcm.deductible_building_expenses.title": "공제 가능한 건물 비용",
+  "gmcm.deductible_building_expenses.desc": "농장 건물 건설에 소비된 금액의 몇 퍼센트가 공제 가능한지 설정합니다.",
+  "gmcm.deductible_seed_expenses.title": "공제 가능한 씨앗 비용",
+  "gmcm.deductible_seed_expenses.desc": "씨앗 구매에 소비된 금액의 몇 퍼센트가 공제 가능한지 설정합니다.",
+  "gmcm.deductible_tool_expenses.title": "공제 가능한 도구 비용",
+  "gmcm.deductible_tool_expenses.desc": "도구 구매 및 업그레이드에 소비된 금액의 몇 퍼센트가 공제 가능한지 설정합니다.",
+  "gmcm.deductible_extras.title": "기타 공제 항목",
+  "gmcm.deductible_extras.desc": "특정 항목에 소비된 금액의 몇 퍼센트가 공제 가능한지 설정합니다. 항목은 수동으로 추가해야 합니다.",
+  "gmcm.deductible_extras.label.key": "항목 이름",
+  "gmcm.deductible_extras.label.value": "공제 퍼센트",
+  "gmcm.income_tax_day.title": "납부일",
+  "gmcm.income_tax_day.desc": "소득세가 부과되는 계절의 날입니다.",
+
+  // property
+  "gmcm.sections.txs.property": "재산세",
+  "gmcm.property_tax_lateness_fine.title": "연체 벌금",
+  "gmcm.property_tax_lateness_fine.desc": "재산세가 제때 납부되지 않을 경우 미납 금액에 부과되는 일회성 벌금 비율입니다.",
+  "gmcm.unused_tile_tax_rate.title": "미사용 타일 세율",
+  "gmcm.unused_tile_tax_rate.desc": "생산적으로 사용되지 않은 타일에 부과되는 세율입니다.",
+  "gmcm.used_tile_tax_rate.title": "사용된 타일 세율",
+  "gmcm.used_tile_tax_rate.desc": "농업, 가축 또는 임업에 사용된 타일에 부과되는 세율입니다.",
+  "gmcm.building_tax_rate.title": "건물 타일 세율",
+  "gmcm.building_tax_rate.desc": "건설된 건물이 차지하는 타일에 부과되는 세율입니다 (마법 건물 제외).",
+  "gmcm.exempt_magical_buildings.title": "마법 건물 면제",
+  "gmcm.exempt_magical_buildings.desc": "마법 건물(예: 마법사의 탑에서 소환된 건물)이 재산세에서 면제되는지 여부입니다.",
+  "gmcm.property_tax_day.title": "납부일",
+  "gmcm.property_tax_day.desc": "재산세가 부과되는 계절의 날입니다.",
+
+  // other
+  "gmcm.annual_interest.title": "연간 이자율",
+  "gmcm.annual_interest.desc": "미결제 채무에 대해 연간 부과되는 이자율입니다. 이자는 연간 이자율의 1/112 비율로 매일 누적됩니다."
+}
