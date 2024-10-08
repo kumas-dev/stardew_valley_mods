@@ -10,6 +10,7 @@ config.json
 
 !Core/SpaceCore/config.json
 !LoveOfCooking/**/config.json
+!Life Cycle/**/config.json
 !Weather Wonders/**/config.json
 !mouahraras Module Collection/**/config.json
 !Stardew Valley Expanded/**/config.json

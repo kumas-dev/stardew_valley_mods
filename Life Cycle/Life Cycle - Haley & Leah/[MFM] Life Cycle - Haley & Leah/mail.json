@@ -1,0 +1,17 @@
+// Korean Translation By 아빠양
+[
+    {
+        "Id": "LifeCycle.HaleyLeah",
+        "Title": "헤일리와 레아의 결혼 청첩장",
+        "Text": "^     @ (이)에게,^     오늘, 여름 27일, 5시, 마을 광장에서 열리는^     우리 결혼식에 초대합니다.", 
+        "LetterBG": "HaleyLeah.png",
+        "WhichBG": 0,
+        "TextColor": 0, // -1 = Dark Red, 0 = Black, 1 = Sky Blue, 2 = Red, 3 = Blue Violet, 4 = White, 5 = Orange Red, 6 = Lime Green, 7 = Cyan, 8 = Darkest Gray
+
+        // CONDITIONS FOR DELIVERY
+        "Date": "27 summer Y3", // Must be that date or after it. "[1-28] [spring|summer|fall|winter] Y[1-999]"
+        "Weather": "sunny",
+        "EventsSeen": [59020039], // Require one of the events to have been seen by the player.
+        "RequireAllEventsSeen":  true, // If true, require that all the events in the "EventsSeen" list to have been seen by the player. Default is false.
+    }
+]
