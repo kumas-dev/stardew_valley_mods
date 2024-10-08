@@ -1,0 +1,10 @@
+{
+  "SandboxLayout": "false",
+  "LargerGreenhouse": "false",
+  "RemoveGreenhouseObjects": "false",
+  "RemovePicnicTable": "false",
+  "SmallerBackyardFence": "false",
+  "InstantlyUnlockBridge": "false",
+  "InstantlyUnlockDesertShortcut": "false",
+  "MistEffects": "true"
+}
