@@ -1,0 +1,566 @@
+{
+	"Changes": [
+		// Blizzard Assets
+		{
+			"LogName": "Load WW's Blizzard Sound",
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"Kana.WeatherWonders_BlizzardSound": {
+					"ID": "Kana.WeatherWonders_BlizzardSound",
+					"Category": "Ambient",
+					"FilePaths": [
+						"{{AbsoluteFilePath: assets/BlizzardSound.ogg}}"
+					],
+					"StreamedVorbis": false,
+					"Looped": true
+				}
+			}
+		},
+		// Blizzard Weather
+		{
+			"LogName": "Load Blizzard Weather (Denser)",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {
+				"Kana.WeatherWonders_Blizzard": {
+					"Id": "Kana.WeatherWonders_Blizzard",
+					"DisplayName": "{{i18n: Weather.Blizzard}}",
+					"Forecast": "{{i18n: Weather.Blizzard.Forecast}}",
+					"IconTexture": "Mods/Kana.WeatherWonders/Icons",
+					"IconSource": {
+						"X": 12,
+						"Y": 0
+					},
+					"TVTexture": "Mods/Kana.WeatherWonders/TV",
+					"TVSource": {
+						"X": 0,
+						"Y": 78
+					},
+					"MusicOverride": "Kana.WeatherWonders_BlizzardSound",
+					"MusicFrequencyOutside": 100,
+					"MusicFrequencyInside": 15,
+					"IsSnowing": true,
+					"IsRaining": true,
+					"IsDebrisWeather": true,
+					"UseNightTiles": false,
+					"SpawnCritters": false,
+					"SpawnFrogs": false,
+					"SpawnClouds": false,
+					"Layers": [
+						{
+							"Id": "BlizzardFog1",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard1}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard1}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardSnowParticles6",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.65,
+							"ViewSpeed": "-3, -3",
+							"Scale": 4.0
+						},
+						{
+							"Id": "BlizzardSnowParticles5",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.6,
+							"ViewSpeed": "-5, -5",
+							"Scale": 6.0
+						},
+						{
+							"Id": "BlizzardSnowParticles4",
+							"Type": "Snow",
+							"Opacity": 0.55,
+							"ViewSpeed": "-7, -7",
+							"Scale": 8.0
+						},
+						{
+							"Id": "BlizzardFog2",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard2}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard2}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardSnowParticles3",
+							"Type": "Snow",
+							"Opacity": 0.65,
+							"ViewSpeed": "-4, -4",
+							"Scale": 4.0
+						},
+						{
+							"Id": "BlizzardSnowParticles2",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.6,
+							"ViewSpeed": "-6, -6",
+							"Scale": 6.0
+						},
+						{
+							"Id": "BlizzardSnowParticles1",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.55,
+							"ViewSpeed": "-8, -8",
+							"Scale": 8.0
+						},
+						{
+							"Id": "BlizzardWindBlown",
+							"Type": "Rain",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/WindBlown",
+							"Source": {
+								"X": 0,
+								"Y": 0,
+								"Width": 32,
+								"Height": 32
+							},
+							"Frames": 16,
+							"Scale": 4,
+							"FlipHorizontal": false,
+							"FlipVertical": false,
+							"Speed": "16, 0",
+							"Count": 8,
+							"Color": "White",
+							"Opacity": 0.3,
+							"Vibrancy": 2
+						},
+						{
+							"Id": "BlizzardTint1",
+							"Type": "Color",
+							"Mode": "Normal",
+							"Color": "White",
+							"Opacity": "{{LayerOpacityBlizzard3}}"
+						}
+					],
+					"Lighting": [
+						{
+							"Id": "BlizzardTint2",
+							"AmbientColor": "255, 200, 80",
+							"AmbientOutdoorOpacity": null,
+							"LightingTint": "orangered",
+							"LightingTintOpacity": 0.6,
+							"PostLightingTint": "darkblue",
+							"PostLightingTintOpacity": 0.35
+						}
+					],
+					"Effects": [
+						{
+							"Id": "BlizzardEffect1",
+							"Type": "Buff",
+							"BuffId": "Kana.WeatherWonders_Cold",
+							"Condition": "LOCATION_IS_OUTDOORS Here, PLAYER_LOCATION_CONTEXT Current Default"
+						}
+					]
+				}
+			},
+			"When": {
+				"BlizzardSlowdownPlayer": true,
+				"BlizzardDensity": "More"
+			}
+		},
+		{
+			"LogName": "Load Blizzard Weather (Denser, No Slowdown Effect)",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {
+				"Kana.WeatherWonders_Blizzard": {
+					"Id": "Kana.WeatherWonders_Blizzard",
+					"DisplayName": "{{i18n: Weather.Blizzard}}",
+					"Forecast": "{{i18n: Weather.Blizzard.Forecast}}",
+					"IconTexture": "Mods/Kana.WeatherWonders/Icons",
+					"IconSource": {
+						"X": 12,
+						"Y": 0
+					},
+					"TVTexture": "Mods/Kana.WeatherWonders/TV",
+					"TVSource": {
+						"X": 0,
+						"Y": 78
+					},
+					"MusicOverride": "Kana.WeatherWonders_BlizzardSound",
+					"MusicFrequencyOutside": 100,
+					"MusicFrequencyInside": 15,
+					"IsSnowing": true,
+					"IsRaining": true,
+					"IsDebrisWeather": true,
+					"UseNightTiles": false,
+					"SpawnCritters": false,
+					"SpawnFrogs": false,
+					"SpawnClouds": false,
+					"Layers": [
+						{
+							"Id": "BlizzardFog1",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard1}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard1}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardSnowParticles6",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.65,
+							"ViewSpeed": "-3, -3",
+							"Scale": 4.0
+						},
+						{
+							"Id": "BlizzardSnowParticles5",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.6,
+							"ViewSpeed": "-5, -5",
+							"Scale": 6.0
+						},
+						{
+							"Id": "BlizzardSnowParticles4",
+							"Type": "Snow",
+							"Opacity": 0.55,
+							"ViewSpeed": "-7, -7",
+							"Scale": 8.0
+						},
+						{
+							"Id": "BlizzardFog2",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard2}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard2}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardSnowParticles3",
+							"Type": "Snow",
+							"Opacity": 0.65,
+							"ViewSpeed": "-4, -4",
+							"Scale": 4.0
+						},
+						{
+							"Id": "BlizzardSnowParticles2",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.6,
+							"ViewSpeed": "-6, -6",
+							"Scale": 6.0
+						},
+						{
+							"Id": "BlizzardSnowParticles1",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.55,
+							"ViewSpeed": "-8, -8",
+							"Scale": 8.0
+						},
+						{
+							"Id": "BlizzardWindBlown",
+							"Type": "Rain",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/WindBlown",
+							"Source": {
+								"X": 0,
+								"Y": 0,
+								"Width": 32,
+								"Height": 32
+							},
+							"Frames": 16,
+							"Scale": 4,
+							"FlipHorizontal": false,
+							"FlipVertical": false,
+							"Speed": "16, 0",
+							"Count": 8,
+							"Color": "White",
+							"Opacity": 0.3,
+							"Vibrancy": 2
+						},
+						{
+							"Id": "BlizzardTint1",
+							"Type": "Color",
+							"Mode": "Normal",
+							"Color": "White",
+							"Opacity": "{{LayerOpacityBlizzard3}}"
+						}
+					],
+					"Lighting": [
+						{
+							"Id": "BlizzardTint2",
+							"AmbientColor": "255, 200, 80",
+							"AmbientOutdoorOpacity": null,
+							"LightingTint": "orangered",
+							"LightingTintOpacity": 0.6,
+							"PostLightingTint": "darkblue",
+							"PostLightingTintOpacity": 0.35
+						}
+					],
+					"Effects": []
+				}
+			},
+			"When": {
+				"BlizzardSlowdownPlayer": false,
+				"BlizzardDensity": "More"
+			}
+		},
+		{
+			"LogName": "Load Blizzard Weather",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {
+				"Kana.WeatherWonders_Blizzard": {
+					"Id": "Kana.WeatherWonders_Blizzard",
+					"DisplayName": "{{i18n: Weather.Blizzard}}",
+					"Forecast": "{{i18n: Weather.Blizzard.Forecast}}",
+					"IconTexture": "Mods/Kana.WeatherWonders/Icons",
+					"IconSource": {
+						"X": 12,
+						"Y": 0
+					},
+					"TVTexture": "Mods/Kana.WeatherWonders/TV",
+					"TVSource": {
+						"X": 0,
+						"Y": 78
+					},
+					"MusicOverride": "Kana.WeatherWonders_BlizzardSound",
+					"MusicFrequencyOutside": 100,
+					"MusicFrequencyInside": 15,
+					"IsSnowing": true,
+					"IsRaining": true,
+					"IsDebrisWeather": true,
+					"UseNightTiles": false,
+					"SpawnCritters": false,
+					"SpawnFrogs": false,
+					"SpawnClouds": false,
+					"Layers": [
+						{
+							"Id": "BlizzardFog1",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard1}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard1}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardFog2",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard2}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard2}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardWindBlown",
+							"Type": "Rain",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/WindBlown",
+							"Source": {
+								"X": 0,
+								"Y": 0,
+								"Width": 32,
+								"Height": 32
+							},
+							"Frames": 16,
+							"Scale": 4,
+							"FlipHorizontal": false,
+							"FlipVertical": false,
+							"Speed": "16, 0",
+							"Count": 8,
+							"Color": "White",
+							"Opacity": 0.3,
+							"Vibrancy": 2
+						},
+						{
+							"Id": "BlizzardTint1",
+							"Type": "Color",
+							"Mode": "Normal",
+							"Color": "White",
+							"Opacity": "{{LayerOpacityBlizzard3}}"
+						},
+						{
+							"Id": "BlizzardSnowParticles2",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.65,
+							"ViewSpeed": "-4, -4",
+							"Scale": 4.0
+						},
+						{
+							"Id": "BlizzardSnowParticles2",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.6,
+							"ViewSpeed": "-6, -6",
+							"Scale": 6.0
+						},
+						{
+							"Id": "BlizzardSnowParticles1",
+							"Type": "Snow",
+							"Opacity": 0.55,
+							"ViewSpeed": "-8, -8",
+							"Scale": 8.0
+						}
+					],
+					"Lighting": [
+						{
+							"Id": "BlizzardTint2",
+							"AmbientColor": "255, 200, 80",
+							"AmbientOutdoorOpacity": null,
+							"LightingTint": "orangered",
+							"LightingTintOpacity": 0.6,
+							"PostLightingTint": "darkblue",
+							"PostLightingTintOpacity": 0.35
+						}
+					],
+					"Effects": [
+						{
+							"Id": "BlizzardEffect1",
+							"Type": "Buff",
+							"BuffId": "Kana.WeatherWonders_Cold",
+							"Condition": "LOCATION_IS_OUTDOORS Here, PLAYER_LOCATION_CONTEXT Current Default"
+						}
+					]
+				}
+			},
+			"When": {
+				"BlizzardSlowdownPlayer": true,
+				"BlizzardDensity": "Less"
+			}
+		},
+		{
+			"LogName": "Load Blizzard Weather (No Slowdown Effect)",
+			"Action": "EditData",
+			"Target": "Mods/leclair.cloudyskies/WeatherData",
+			"Entries": {
+				"Kana.WeatherWonders_Blizzard": {
+					"Id": "Kana.WeatherWonders_Blizzard",
+					"DisplayName": "{{i18n: Weather.Blizzard}}",
+					"Forecast": "{{i18n: Weather.Blizzard.Forecast}}",
+					"IconTexture": "Mods/Kana.WeatherWonders/Icons",
+					"IconSource": {
+						"X": 12,
+						"Y": 0
+					},
+					"TVTexture": "Mods/Kana.WeatherWonders/TV",
+					"TVSource": {
+						"X": 0,
+						"Y": 78
+					},
+					"MusicOverride": "Kana.WeatherWonders_BlizzardSound",
+					"MusicFrequencyOutside": 100,
+					"MusicFrequencyInside": 15,
+					"IsSnowing": true,
+					"IsRaining": true,
+					"IsDebrisWeather": true,
+					"UseNightTiles": false,
+					"SpawnCritters": false,
+					"SpawnFrogs": false,
+					"SpawnClouds": false,
+					"Layers": [
+						{
+							"Id": "BlizzardFog1",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard1}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard1}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardFog2",
+							"Type": "TextureScroll",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/Fog",
+							"Speed": "{{ScrollSpeedBlizzard2}}",
+							"Scale": 2,
+							"Opacity": "{{LayerOpacityBlizzard2}}",
+							"Color": "White"
+						},
+						{
+							"Id": "BlizzardWindBlown",
+							"Type": "Rain",
+							"Mode": "Normal",
+							"Texture": "Mods/Kana.WeatherWonders/WindBlown",
+							"Source": {
+								"X": 0,
+								"Y": 0,
+								"Width": 32,
+								"Height": 32
+							},
+							"Frames": 16,
+							"Scale": 4,
+							"FlipHorizontal": false,
+							"FlipVertical": false,
+							"Speed": "16, 0",
+							"Count": 8,
+							"Color": "White",
+							"Opacity": 0.3,
+							"Vibrancy": 2
+						},
+						{
+							"Id": "BlizzardTint1",
+							"Type": "Color",
+							"Mode": "Normal",
+							"Color": "White",
+							"Opacity": "{{LayerOpacityBlizzard3}}"
+						},
+						{
+							"Id": "BlizzardSnowParticles2",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.65,
+							"ViewSpeed": "-4, -4",
+							"Scale": 4.0
+						},
+						{
+							"Id": "BlizzardSnowParticles2",
+							"Type": "Snow",
+							"Condition": "!IS_EVENT",
+							"Opacity": 0.6,
+							"ViewSpeed": "-6, -6",
+							"Scale": 6.0
+						},
+						{
+							"Id": "BlizzardSnowParticles1",
+							"Type": "Snow",
+							"Opacity": 0.55,
+							"ViewSpeed": "-8, -8",
+							"Scale": 8.0
+						}
+					],
+					"Lighting": [
+						{
+							"Id": "BlizzardTint2",
+							"AmbientColor": "255, 200, 80",
+							"AmbientOutdoorOpacity": null,
+							"LightingTint": "orangered",
+							"LightingTintOpacity": 0.6,
+							"PostLightingTint": "darkblue",
+							"PostLightingTintOpacity": 0.35
+						}
+					],
+					"Effects": []
+				}
+			},
+			"When": {
+				"BlizzardSlowdownPlayer": false,
+				"BlizzardDensity": "Less"
+			}
+		}
+	]
+}

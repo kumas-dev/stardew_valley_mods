@@ -10,6 +10,7 @@ config.json
 
 !Core/SpaceCore/config.json
 !LoveOfCooking/**/config.json
+!Weather Wonders/**/config.json
 !Stardew Valley Expanded/**/config.json
 
 # cache
