@@ -1,0 +1,16 @@
+﻿{
+  "Name": "DaLion.ProfessionsFix",
+  "Author": "kumas",
+  "Version": "0.0.1",
+  "Description": "",
+  "UniqueID": "kumas.DaLion.ProfessionsFix",
+  "EntryDll": "DaLion.ProfessionsFix.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+    {
+      "UniqueID": "DaLion.Professions",
+      "IsRequired": true
+    }
+  ]
+}
