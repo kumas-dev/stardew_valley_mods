@@ -1,0 +1,8 @@
+{
+    "AutoSwingWeapon.name": "무기 자동 휘두르기",
+    "InstantClubsSpecialAttack.name": "클럽 연속 특수 공격",
+    "InstantClubsSpecialAttack.tooltip": "오른쪽 클릭/행동 버튼을 누르고 있으면 클럽 무기로 특수 지면 강타를 수행합니다.",
+    "AlwaysFaceTheCursor.name": "항상 커서 방향을 바라보기",
+    "DisableChangeFacingDirection.name": "방향 변경 비활성화",
+    "DisableChangeFacingDirection.tooltip": "비활성화되면, \"항상 커서 방향을 바라보기\" 기능이 작동하지 않습니다."
+}
