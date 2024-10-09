@@ -1,6 +1,6 @@
 {
   "SandboxLayout": "false",
-  "LargerGreenhouse": "false",
+  "LargerGreenhouse": "true",
   "RemoveGreenhouseObjects": "false",
   "RemovePicnicTable": "false",
   "SmallerBackyardFence": "false",
