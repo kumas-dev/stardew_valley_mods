@@ -1,0 +1,15 @@
+{
+  //Settings Title
+  "BombProtectionSettings": "폭탄 보호 설정",
+  //Setting Choices
+  "Player": "플레이어",
+  "Craftables": "제작품 & 수액통",
+  "Flooring": "바닥재",
+  "Crop": "작물",
+  "Grass": "잔디",
+  "Trees": "나무",
+  "FruitTrees": "과일 나무",
+  "TreeWithTappers": "수액통이 달린 나무",
+  "ForagedMinerals": "채집한 광물/식물/버섯 & 유물 지점"
+  }
+  

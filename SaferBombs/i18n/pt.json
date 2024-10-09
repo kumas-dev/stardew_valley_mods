@@ -1,0 +1,12 @@
+{
+//Settings
+"BombProtectionSettings":"Bomb",
+"Player": "P",
+"Craftables": "Cers",
+"Flooring": "Fg",
+"Crop": "cp",
+"Grass": "Grs",
+"Trees": "Tr",
+"FruitTrees": "Fru",
+"TreeWithTappers": "Tappers",
+"ForagedMinerals": "Foraots"}
