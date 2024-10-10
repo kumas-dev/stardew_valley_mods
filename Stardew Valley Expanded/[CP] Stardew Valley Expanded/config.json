@@ -15,7 +15,7 @@
   "AlternativeCraftables": "false",
   "RemoveObjectsFromGrandpasShed": "false",
   "RemoveSouthernCactusesFromDesert": "false",
-  "DisableSVEJojaMartShop": "false",
+  "DisableSVEJojaMartShop": "true",
   "BalancedCrafting": "false",
   "HarderBuildingConstruction": "false",
   "StrongerMonsters": "false",
@@ -25,5 +25,5 @@
   "MatureEvents": "false",
   "ShorterPathToBlueMoonVineyard": "false",
   "UseGaldoranThemeAllTimes": "false",
-  "DisableGaldoranTheme": "false"
+  "DisableGaldoranTheme": "true"
 }
