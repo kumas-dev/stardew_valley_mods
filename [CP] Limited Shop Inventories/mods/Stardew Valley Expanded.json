@@ -1146,22 +1146,6 @@
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": ["Blacksmith", "Items"],
-            "Fields": {
-                "FlashShifter.StardewValleyExpandedCP_Anvil": {
-                    "AvailableStock": "{{Scarce Base Quantity}}",
-                    "AvailableStockModifiers": [
-                        {
-                            "Modification": "Multiply",
-                            "RandomAmount": [1, 2]
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Shops",
             "TargetField": ["IceCreamStand", "Items"],
             "Fields": {
                 "FlashShifter.StardewValleyExpandedCP_Ice_Cream_Sundae": {
