@@ -63,7 +63,14 @@
             "Action": "Include",
             "FromFile": "mods/More Books.json",
             "When": {
-                "HasMod|contains = jeWel.MoreBooksCode": true
+                "HasMod|contains = jeWel.MoreBooks": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "mods/Love Of Cooking.json",
+            "When": {
+                "HasMod|contains = blueberry.LoveOfCooking.CP": true
             }
         }
     ]

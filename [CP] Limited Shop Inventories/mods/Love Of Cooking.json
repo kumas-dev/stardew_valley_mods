@@ -1,0 +1,36 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop", "Items"],
+            "Fields": {
+                "blueberry.LoveOfCooking_chocolate": {
+                    "AvailableStock": "{{Common Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                } // Chocolate
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Joja", "Items"],
+            "Fields": {
+                "blueberry.LoveOfCooking_chocolate": {
+                    "AvailableStock": "{{Common Base Quantity}}",
+                    "AvailableStockModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "RandomAmount": [1, 2, 3, 4]
+                        }
+                    ]
+                } // Chocolate
+            }
+        }
+    ]
+}
