@@ -65,13 +65,13 @@
             "When": {
                 "HasMod|contains = jeWel.MoreBooks": true
             }
-        },
-        {
-            "Action": "Include",
-            "FromFile": "mods/Love Of Cooking.json",
-            "When": {
-                "HasMod|contains = blueberry.LoveOfCooking.CP": true
-            }
         }
+        // {
+        //     "Action": "Include",
+        //     "FromFile": "mods/Love Of Cooking.json",
+        //     "When": {
+        //         "HasMod|contains = blueberry.LoveOfCooking.CP": true
+        //     }
+        // }
     ]
 }
