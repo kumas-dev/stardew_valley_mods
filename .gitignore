@@ -9,8 +9,6 @@ config.toml
 config.json
 
 !Core/SpaceCore/config.json
-!CombatControlsRedux/config.json
-!FerngillSimpleEconomy/**/config.json
 !LoveOfCooking/**/config.json
 !Life Cycle/**/config.json
 !DaLion/**/config.json
