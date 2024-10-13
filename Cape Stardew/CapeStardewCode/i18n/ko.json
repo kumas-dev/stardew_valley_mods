@@ -1,0 +1,18 @@
+{
+  "OrbQuestion_Translated": "구슬을 사용하시겠습니까?",
+  "Yes_Translated": "네",
+  "No_Translated": "아니요",
+  "ResetTeleport_Translated": "텔레포트 지점이 초기화되었습니다!",
+  "SetTeleport_Translated": "텔레포트 위치가 설정되었습니다!",
+  "TeleportNotSet_Translated": "잘못된 텔레포트 위치입니다.",
+  "Teleported_Translated": "텔레포트 되었습니다!",
+
+  "SetPortalQuestion_Translated": "여기에 텔레포트 위치를 설정하시겠습니까?",
+  "PortalNotSet_Translated": "텔레포트 위치가 설정되지 않았습니다.",
+  "ResetPortalQuestion_Translated": "텔레포트 위치를 초기화하시겠습니까?",
+  "Yes_Translated": "네",
+  "No_Translated": "아니요",
+  "ResetTeleport_Translated": "텔레포트 위치가 초기화되었습니다.",
+  "PortalNotReset_Translated": "텔레포트 위치가 초기화되지 않았습니다."
+
+}
