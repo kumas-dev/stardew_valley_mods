@@ -3247,6 +3247,7 @@
                     "Id": "FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
                     "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+					"CanUseTrainingRod": false,
                 },
 				"FlashShifter.StardewValleyExpandedCP_Starfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Starfish",
