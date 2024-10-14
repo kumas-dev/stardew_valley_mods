@@ -61,7 +61,11 @@
 						{
 							"Sounds": [
 								{
-									"Id": "bubbles"
+									"Id": "Ship"
+								},
+								{
+									"Id": "bubbles",
+									"Delay": 0
 								}
 							],
 							"TemporarySprites": [
