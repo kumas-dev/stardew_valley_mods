@@ -49,6 +49,9 @@
     "Config.ShorterPathToBlueMoonVineyard.description": "잉걸불 수액 숲에서 블루문 포도밭으로 가는 길을 보다 짧게 바꿔줍니다.",
     "Config.UseGaldoranThemeAllTimes.description": "어떤 곳에서든 갈도란 지역 전용 UI를 사용합니다.",
     "Config.DisableGaldoranTheme.description": "갈도란 지역 전용 UI를 사용하지 않습니다.(다른 UI 모드가 적용될 수 있도록 함.)",
+    "Config.ChallengingMarshlands": "금지된 미로에서 유령 무리와 늪 괴물의 출현이 증가합니다. 플레이어는 더 많은 채집물을 발견할 수 있습니다.",
+    "Config.ChallengingBadlands": "진홍빛 황무지에서 몬스터의 출현이 급격히 증가하며, 지형을 횡단하는 난이도가 크게 상승합니다. 진정한 모험가를 위한 시험입니다. 이 설정은 매우 많은 리소스를 소모하므로, 강력한 PC 사용을 권장합니다.",
+    "Config.ChallengingHighlandsCavern": "몬스터 출현이 증가합니다. 플레이어는 더 많은 보석과 광물을 발견할 수 있습니다.",
 
     //Location Names
     "DisplayName.MiscellaneousLocations": "기타 위치",

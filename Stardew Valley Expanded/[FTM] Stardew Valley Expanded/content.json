@@ -9739,8 +9739,8 @@
         ],
         "UniqueAreaID": "Void Soul spawns",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 8,
-        "MaximumSpawnsPerDay": 17,
+        "MinimumSpawnsPerDay": 7,
+        "MaximumSpawnsPerDay": 14,
         "IncludeTerrainTypes": [
           "Any"
         ],
@@ -9791,8 +9791,8 @@
         ],
         "UniqueAreaID": "Void Soul extra spawns - Challenging",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 5,
-        "MaximumSpawnsPerDay": 10,
+        "MinimumSpawnsPerDay": 6,
+        "MaximumSpawnsPerDay": 12,
         "IncludeTerrainTypes": [
           "Any"
         ],
@@ -9845,8 +9845,8 @@
         ],
         "UniqueAreaID": "Red Slime Egg Spawns",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 7,
-        "MaximumSpawnsPerDay": 14,
+        "MinimumSpawnsPerDay": 6,
+        "MaximumSpawnsPerDay": 9,
         "IncludeTerrainTypes": [
           "Any"
         ],
@@ -9897,8 +9897,8 @@
         ],
         "UniqueAreaID": "Red Slime Egg Extra Spawns - Challenging",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 4,
-        "MaximumSpawnsPerDay": 8,
+        "MinimumSpawnsPerDay": 5,
+        "MaximumSpawnsPerDay": 10,
         "IncludeTerrainTypes": [
           "Any"
         ],
@@ -11997,8 +11997,8 @@
         ],
         "UniqueAreaID": "Swamp Golem Spawns",
         "MapName": "Custom_ForbiddenMaze",
-        "MinimumSpawnsPerDay": 40,
-        "MaximumSpawnsPerDay": 50,
+        "MinimumSpawnsPerDay": 50,
+        "MaximumSpawnsPerDay": 65,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -12053,8 +12053,8 @@
             "Settings": {
               "SpawnWeight": 1,
               "SeesPlayersAtSpawn": false,
-              "HP": 220,
-              "Damage": 40,
+              "HP": 250,
+              "Damage": 45,
               "DodgeChance": 0,
               "ExtraLoot": true,
               "Loot": [
@@ -12067,8 +12067,8 @@
         ],
         "UniqueAreaID": "Swamp Golem Spawns - Challenging",
         "MapName": "Custom_ForbiddenMaze",
-        "MinimumSpawnsPerDay": 70,
-        "MaximumSpawnsPerDay": 90,
+        "MinimumSpawnsPerDay": 90,
+        "MaximumSpawnsPerDay": 125,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -12124,7 +12124,7 @@
               "SpawnWeight": 1,
               "SeesPlayersAtSpawn": false,
               "HP": 220,
-              "Damage": 40,
+              "Damage": 37,
               "DodgeChance": 0,
               "ExtraLoot": true,
               "Loot": [
@@ -12179,7 +12179,80 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "iridium golem",
+            "Settings": {
+              "SpawnWeight": 1,
+              "SeesPlayersAtSpawn": false,
+              "HP": 250,
+              "Damage": 45,
+              "DodgeChance": 0,
+              "ExtraLoot": true,
+              "Loot": [
+                "Sludge",
+                "Sludge",
+                771
+              ],
+              "Sprite": "Characters/Monsters/SwampGolem"
+            }
+          }
+        ],
+        "UniqueAreaID": "Swamp Golem Spawns - iridium golem behavior - Challenging",
+        "MapName": "Custom_ForbiddenMaze",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 45,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,155;0,0",
+          "133,135;35,0",
+          "147,151;49,136",
+          "152,135;134,21"
+        ],
+        "ExcludeCoordinates": [
+          "124,19;107,0",
+          "91,19;86,16",
+          "20,16;15,13",
+          "24,12;23,10",
+          "12,17;11,15",
+          "55,62;48,59",
+          "60,130;57,127",
+          "82,144;79,141",
+          "127,52;126,50",
+          "134,53;131,50",
+          "142,72;140,69",
+          "83,21;82,19"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 30,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -12277,8 +12350,8 @@
         ],
         "UniqueAreaID": "Toxic Bubble timed Spawns",
         "MapName": "Custom_ForbiddenMaze",
-        "MinimumSpawnsPerDay": 40,
-        "MaximumSpawnsPerDay": 50,
+        "MinimumSpawnsPerDay": 45,
+        "MaximumSpawnsPerDay": 60,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -12334,7 +12407,7 @@
         "UniqueAreaID": "Toxic Bubble timed Spawns - Challenging",
         "MapName": "Custom_ForbiddenMaze",
         "MinimumSpawnsPerDay": 100,
-        "MaximumSpawnsPerDay": 100,
+        "MaximumSpawnsPerDay": 120,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -12348,7 +12421,7 @@
         "SpawnTiming": {
           "StartTime": 600,
           "EndTime": 2600,
-          "MinimumTimeBetweenSpawns": 20,
+          "MinimumTimeBetweenSpawns": 10,
           "MaximumSimultaneousSpawns": 2,
           "OnlySpawnIfAPlayerIsPresent": true,
           "SpawnSound": ""
@@ -14638,6 +14711,57 @@
           {
             "MonsterName": "Serpent",
             "Settings": {
+              "HP": 175,
+              "SpawnWeight": 1,
+              "Damage": 30,
+              "SeesPlayersAtSpawn": true,
+              "Sprite": "Characters/Monsters/BadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Timed Serpent Aggros - Weaker variants",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 45,
+        "MaximumSpawnsPerDay": 60,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "2,2;1,1",
+          "238,2;237,1",
+          "238,154;237,153",
+          "2,154;1,153"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
               "HP": 245,
               "SpawnWeight": 1,
               "Damage": 40,
@@ -14751,7 +14875,7 @@
         "UniqueAreaID": "Timed Serpent Aggros - across entire map sides (not corners) - Challenging",
         "MapName": "Custom_CrimsonBadlands",
         "MinimumSpawnsPerDay": 80,
-        "MaximumSpawnsPerDay": 80,
+        "MaximumSpawnsPerDay": 100,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -23158,8 +23282,8 @@
         ],
         "UniqueAreaID": "Crimson Badlands Primary Spawns - Static",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 175,
-        "MaximumSpawnsPerDay": 175,
+        "MinimumSpawnsPerDay": 200,
+        "MaximumSpawnsPerDay": 200,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -23171,7 +23295,7 @@
           "StartTime": 600,
           "EndTime": 600,
           "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": 175,
+          "MaximumSimultaneousSpawns": 200,
           "OnlySpawnIfAPlayerIsPresent": false,
           "SpawnSound": ""
         },
@@ -23250,8 +23374,8 @@
         ],
         "UniqueAreaID": "Crimson Badlands Primary Spawns - Timed Static",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 150,
-        "MaximumSpawnsPerDay": 150,
+        "MinimumSpawnsPerDay": 120,
+        "MaximumSpawnsPerDay": 120,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -23260,8 +23384,8 @@
         "ExcludeCoordinates": [],
         "StrictTileChecking": "High",
         "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 2600,
+          "StartTime": 800,
+          "EndTime": 2300,
           "MinimumTimeBetweenSpawns": 10,
           "MaximumSimultaneousSpawns": 10,
           "OnlySpawnIfAPlayerIsPresent": true,
