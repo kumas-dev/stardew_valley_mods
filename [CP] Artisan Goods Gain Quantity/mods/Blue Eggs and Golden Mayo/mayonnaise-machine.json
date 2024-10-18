@@ -66,6 +66,15 @@
                     }
                 ]
             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": ["(BC)24", "OutputRules"], // May
+            "Entries": {
+                "Default_OstrichEgg": null,
+                "Default_GoldenEgg": null
+            }
         }
     ]
 }
