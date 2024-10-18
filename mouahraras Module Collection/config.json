@@ -1,7 +1,7 @@
 {
   "ArcadeGamesPayToPlay": true,
-  "ArcadeGamesPayToPlayCoinPerJotPKGame": 1,
-  "ArcadeGamesPayToPlayCoinPerJKGame": 1,
+  "ArcadeGamesPayToPlayCoinPerJotPKGame": 5,
+  "ArcadeGamesPayToPlayCoinPerJKGame": 5,
   "ArcadeGamesPayToPlayKonamiCode": true,
   "ArcadeGamesPayToPlayNonRealisticLeaderboard": true,
   "ShopsBetterAnimalPurchase": true,
