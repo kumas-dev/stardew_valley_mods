@@ -8,7 +8,7 @@
   "ImmersiveShadows": "true",
   "MistEffects": "true",
   "SVECommunityBundles": "true",
-  "HardSVECommunityBundles": "false",
+  "HardSVECommunityBundles": "true",
   "RetexturedFarmhouseKitchen": "true",
   "RemoveWineryDecorations": "false",
   "OriginalMinesEntrance": "false",
