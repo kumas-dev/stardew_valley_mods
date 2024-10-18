@@ -1,0 +1,389 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_GarlicMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia Garlic Mayonnaise Gold
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_GarlicMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia Garlic Mayonnaise
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_SpicyMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia Spicy Mayonnaise Gold
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_SpicyMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia Spicy Mayonnaise
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_TruffleMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia Truffle Mayonnaise Gold
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_TruffleMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia Truffle Mayonnaise
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Essential Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_AvocadoMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia Avocado Mayonnaise Gold
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_AvocadoMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia Avocado Mayonnaise
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_BlackPepperMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia BlackPepper Mayonnaise Gold
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_BlackPepperMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia BlackPepper Mayonnaise
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_OliveOilMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia Olive Oil Mayonnaise Gold
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_OliveOilMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia Olive Oil Mayonnaise
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Extended Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_WasabiMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia Wasabi Mayonnaise Gold
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_WasabiMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia Wasabi Mayonnaise
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Extended Herbs
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_DillMayonnaise",
+                "OutputItem",
+                "#0"
+            ], // Mayonnaise Machine - Cornucopia Dill Mayonnaise Gold
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules",
+                "Cornucopia_DillMayonnaise",
+                "OutputItem",
+                "#1"
+            ], // Mayonnaise Machine - Cornucopia Dill Mayonnaise
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        }
+    ]
+}

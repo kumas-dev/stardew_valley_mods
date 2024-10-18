@@ -1,0 +1,37 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "mods/Stardew Valley/bait-maker.json, mods/Stardew Valley/cheese-press.json, mods/Stardew Valley/dehydrator.json, mods/Stardew Valley/keg.json, mods/Stardew Valley/loom.json, mods/Stardew Valley/mayonnaise-machine.json, mods/Stardew Valley/mill.json, mods/Stardew Valley/oil-maker.json, mods/Stardew Valley/preserves-jar.json, mods/Stardew Valley/seed-maker.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "mods/Stardew Valley Expanded/butter-churner.json, mods/Stardew Valley Expanded/mayonnaise-machine.json, mods/Stardew Valley Expanded/yarn-spooler.json",
+            "When": {
+                "HasMod|contains = FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "mods/Blue Eggs and Golden Mayo/mayonnaise-machine.json",
+            "When": {
+                "HasMod|contains = 6480.blueegg": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "mods/Cornucopia More Crops/cheese-press.json, mods/Cornucopia More Crops/dehydrator.json, mods/Cornucopia More Crops/keg.json, mods/Cornucopia More Crops/loom.json, mods/Cornucopia More Crops/oil-maker.json",
+            "When": {
+                "HasMod|contains = Cornucopia.MoreCrops": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "mods/Cornucopia Artisan Machines/alembic.json, mods/Cornucopia Artisan Machines/butter-churn.json, mods/Cornucopia Artisan Machines/cheese-press.json, mods/Cornucopia Artisan Machines/compact-mill.json, mods/Cornucopia Artisan Machines/dehydrator.json, mods/Cornucopia Artisan Machines/dryingrack.json, mods/Cornucopia Artisan Machines/extruder.json, mods/Cornucopia Artisan Machines/juicer.json, mods/Cornucopia Artisan Machines/keg.json, mods/Cornucopia Artisan Machines/mayonnaise-machine.json, mods/Cornucopia Artisan Machines/mill.json, mods/Cornucopia Artisan Machines/oil-maker.json, mods/Cornucopia Artisan Machines/preserves-jar.json, mods/Cornucopia Artisan Machines/vinegar-keg.json, mods/Cornucopia Artisan Machines/wax-barrel.json, mods/Cornucopia Artisan Machines/yogurt-jar.json",
+            "When": {
+                "HasMod|contains = Cornucopia.ArtisanMachines": true
+            }
+        }
+    ]
+}
