@@ -1,0 +1,370 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_ButterMilk",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Butter Milk
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_ButterLargeMilk",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Butter Large Milk
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_ButterGoatMilk",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Butter Goat Milk
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_ButterLargeGoatMilk",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Butter Large Goat Milk
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_CoconutButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Coconut Butter
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_CookieButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Cookie Butter
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_HoneyButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Honey Butter
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_MapleButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Maple Butter
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_Margarine",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Margarine
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_SunButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Sun Butter
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_NutButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Nut Butter
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_ButterDefault",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Butter
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Essential Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_CocoaButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cocoa Butter
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_PeanutButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Peanut Butter
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_SoyButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Soy Butter
+            "When": {
+                "HasMod": "Cornucopia.MoreCrops"
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        },
+        // Extended Crops
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Cornucopia_ButterChurn",
+                "OutputRules",
+                "Cornucopia_GranolaButter",
+                "OutputItem",
+                "#0"
+            ], // Cornucopia Butter Churn - Cornucopia Granola Butter
+            "When": {
+                "HasReadLetter |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true
+            },
+            "Entries": {
+                "StackModifiers": [
+                    {
+                        "Id": "DoubleQuality",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Multiply",
+                        "Amount": "2",
+                        "RandomAmount": null
+                    }
+                ]
+            }
+        }
+    ]
+}

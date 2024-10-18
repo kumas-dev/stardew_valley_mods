@@ -1,6 +1,0 @@
-{
-    "Config.ActionButton.Name": "동작 버튼 속도",
-    "Config.ActionButton.Tooltip": "게임이 동작 버튼 입력에 반응하는 속도입니다.",
-    "Config.UseToolButton.Name": "도구 사용 버튼 속도",
-    "Config.UseToolButton.Tooltip": "게임이 도구 사용 버튼 입력에 반응하는 속도입니다."
-}
