@@ -33,12 +33,22 @@
                 "#0"
             ], // Cheese Press - Large Goat Milk
             "Entries": {
+                "MinStack": "2",
+                "MaxStack": "2",
+                "Quality": "0",
                 "StackModifiers": [
                     {
-                        "Id": "DoubleQuality",
+                        "Id": "DoubleQuality1",
                         "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
-                        "Modification": "Multiply",
-                        "Amount": "2",
+                        "Modification": "Add",
+                        "Amount": "1",
+                        "RandomAmount": null
+                    },
+                    {
+                        "Id": "DoubleQuality2",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Add",
+                        "Amount": "1",
                         "RandomAmount": null
                     }
                 ]
@@ -77,12 +87,22 @@
                 "#0"
             ], // Cheese Press - Large Milk
             "Entries": {
+                "MinStack": "2",
+                "MaxStack": "2",
+                "Quality": "0",
                 "StackModifiers": [
                     {
-                        "Id": "DoubleQuality",
+                        "Id": "DoubleQuality1",
                         "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
-                        "Modification": "Multiply",
-                        "Amount": "2",
+                        "Modification": "Add",
+                        "Amount": "1",
+                        "RandomAmount": null
+                    },
+                    {
+                        "Id": "DoubleQuality2",
+                        "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.30\" \"ITEM_QUALITY Input 4 4, RANDOM 0.50\"",
+                        "Modification": "Add",
+                        "Amount": "1",
                         "RandomAmount": null
                     }
                 ]
