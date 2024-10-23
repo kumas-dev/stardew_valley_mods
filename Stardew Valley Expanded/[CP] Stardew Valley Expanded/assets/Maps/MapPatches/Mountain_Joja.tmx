@@ -2418,7 +2418,7 @@
   </object>
   <object id="41" name="TileData" x="144" y="336" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 90"/>
+    <property name="Action" value="Garbage Robin"/>
    </properties>
   </object>
  </objectgroup>

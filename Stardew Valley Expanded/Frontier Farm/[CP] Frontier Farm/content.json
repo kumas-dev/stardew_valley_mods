@@ -17,6 +17,14 @@
       "AllowValues": "true, false",
       "Default": "false"
     },
+	"RemoveEasternVerticalFence": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+	"RemoveStonePathways": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
 	"SmallerBackyardFence": {
       "AllowValues": "true, false",
       "Default": "false"
@@ -738,6 +746,25 @@
 	
     //Configurations
     
+
+	//RemoveStonePathways
+	{
+      "Action": "EditMap",
+      "Target": "Maps/Farm_FrontierFarm",
+      "FromFile": "assets/MapPatches/FrontierFarm_RemoveStonePathways.tmx",
+	  "PatchMode": "Overlay",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 156,
+        "Height": 65
+      },
+      "When": {
+        "FarmType": "FrontierFarm",
+		"RemoveStonePathways": true,
+		"SandboxLayout": false
+      }
+    },
 	//Removes Picnic Table
     {
       "Action": "EditMap",
@@ -754,6 +781,22 @@
 		"RemovePicnicTable": true
       }
     },
+	//Remove Vertical Fence
+	{
+      "Action": "EditMap",
+      "Target": "Maps/Farm_FrontierFarm",
+      "FromFile": "assets/MapPatches/FrontierFarm_VerticalFenceRemoved.tmx",
+      "ToArea": {
+        "X": 131,
+        "Y": 30,
+        "Width": 5,
+        "Height": 27
+      },
+      "When": {
+        "FarmType": "FrontierFarm",
+		"RemoveEasternVerticalFence": true
+      }
+    },	
 	//Smaller Backyard Fence
     {
       "Action": "EditMap",

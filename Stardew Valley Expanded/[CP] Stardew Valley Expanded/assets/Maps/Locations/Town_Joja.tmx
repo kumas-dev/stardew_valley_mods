@@ -4823,7 +4823,7 @@
   </object>
   <object id="109" name="TileData" x="1056" y="832" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 5"/>
+    <property name="Action" value="Garbage Jenkins"/>
    </properties>
   </object>
   <object id="110" name="TileData" x="1072" y="832" width="16" height="16">
@@ -4998,7 +4998,7 @@
   </object>
   <object id="144" name="TileData" x="832" y="1008" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 3"/>
+    <property name="Action" value="Garbage Evelyn"/>
    </properties>
   </object>
   <object id="145" name="TileData" x="912" y="1008" width="16" height="16">
@@ -5028,7 +5028,7 @@
   </object>
   <object id="150" name="TileData" x="752" y="1120" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 4"/>
+    <property name="Action" value="Garbage Saloon"/>
    </properties>
   </object>
   <object id="151" name="TileData" x="688" y="1136" width="16" height="16">
@@ -5198,7 +5198,7 @@
   </object>
   <object id="184" name="TileData" x="1440" y="1296" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 7"/>
+    <property name="Action" value="Garbage Blacksmith"/>
    </properties>
   </object>
   <object id="185" name="TileData" x="1504" y="1296" width="16" height="16">
@@ -5253,7 +5253,7 @@
   </object>
   <object id="195" name="TileData" x="432" y="1344" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 1"/>
+    <property name="Action" value="Garbage EmilyAndHaley"/>
    </properties>
   </object>
   <object id="196" name="TileData" x="1040" y="1344" width="16" height="16">
@@ -5288,7 +5288,7 @@
   </object>
   <object id="202" name="TileData" x="896" y="1360" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 6"/>
+    <property name="Action" value="Garbage Mayor"/>
    </properties>
   </object>
   <object id="203" name="TileData" x="928" y="1360" width="16" height="16">
@@ -5343,7 +5343,7 @@
   </object>
   <object id="213" name="TileData" x="80" y="1424" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 0"/>
+    <property name="Action" value="Garbage JodiAndKent"/>
    </properties>
   </object>
   <object id="214" name="TileData" x="192" y="1424" width="16" height="16">
@@ -5398,7 +5398,7 @@
   </object>
   <object id="224" name="TileData" x="1728" y="1456" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 2"/>
+    <property name="Action" value="Garbage Museum"/>
    </properties>
   </object>
   <object id="225" name="TileData" x="1376" y="1472" width="16" height="16">
@@ -5758,22 +5758,22 @@
   </object>
   <object id="429" name="TileData" x="672" y="1056" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 60"/>
+    <property name="Action" value="Garbage SaloonHidden"/>
    </properties>
   </object>
   <object id="430" name="TileData" x="1616" y="752" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 61"/>
+    <property name="Action" value="Garbage JojaMart"/>
    </properties>
   </object>
   <object id="431" name="TileData" x="1472" y="1232" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 62"/>
+    <property name="Action" value="Garbage BlacksmithHidden"/>
    </properties>
   </object>
   <object id="432" name="TileData" x="736" y="816" width="16" height="16">
    <properties>
-    <property name="Action" value="Garbage 68"/>
+    <property name="Action" value="Garbage Pierre"/>
    </properties>
   </object>
  </objectgroup>

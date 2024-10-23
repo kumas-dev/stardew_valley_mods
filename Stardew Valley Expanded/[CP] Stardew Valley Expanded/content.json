@@ -118,6 +118,11 @@
       "Default": "false",
       "Description": "Dramatically increases monster spawns and difficulty traversing the Crimson Badlands - the adventurer's true test. This toggle is very resource intensive, so having a strong PC is recommended.",
     },
+	"LowMemoryBadlands": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Massively reduces monster spawns in the Crimson Badlands to conserve memory for weak devices.",
+    },
     "OlderSophiaPortraits": {
       "AllowValues": "true, false",
       "Default": "false",
@@ -182,7 +187,18 @@
       "When": {
         "ChallengingHighlandsCavern": "false"
       }
-    },	
+    },
+	{
+      "Name": "LowMemoryBadlandsToken",
+      "Value": "AddMail",
+    },
+    {
+      "Name": "LowMemoryBadlandsToken",
+      "Value": "RemoveMail",
+      "When": {
+        "LowMemoryBadlands": "false"
+      }
+    },
     //// Map where Ench Grove warp is placed
     {
       "Name": "SelectedWarpMap",
@@ -934,7 +950,7 @@
               "Id": "SVE_ChallengingBadlands",
               "Trigger": "DayStarted",
               "HostOnly": true,
-              "Action": "{{ChallengingBadlandsToken}} Current SVE_ChallengingBadlands",
+              "Action": "{{ChallengingBadlandsToken}} Current SVE_ChallengingBadlands received",
               "MarkActionApplied": false
           }
       }
@@ -947,7 +963,7 @@
               "Id": "SVE_ChallengingMarshlands",
               "Trigger": "DayStarted",
               "HostOnly": true,
-              "Action": "{{ChallengingMarshlandsToken}} Current SVE_ChallengingMarshlands",
+              "Action": "{{ChallengingMarshlandsToken}} Current SVE_ChallengingMarshlands received",
               "MarkActionApplied": false
           }
       }
@@ -960,12 +976,25 @@
               "Id": "SVE_ChallengingHighlandsCavern",
               "Trigger": "DayStarted",
               "HostOnly": true,
-              "Action": "{{ChallengingHighlandsCavernToken}} Current SVE_ChallengingHighlandsCavern",
+              "Action": "{{ChallengingHighlandsCavernToken}} Current SVE_ChallengingHighlandsCavern received",
               "MarkActionApplied": false
           }
       }
     },
-    
+	{
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "SVE_LowMemoryBadlands": {
+              "Id": "SVE_LowMemoryBadlands",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{LowMemoryBadlandsToken}} Current SVE_LowMemoryBadlands received",
+              "MarkActionApplied": false
+          }
+      }
+    },
+	
 	//Custom Locations
     {
       "Action": "Load",

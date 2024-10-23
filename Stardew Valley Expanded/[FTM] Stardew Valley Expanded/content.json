@@ -9007,8 +9007,7 @@
           680
         ],
         "SummerItemIndex": [
-          680,
-          437
+          680
         ],
         "FallItemIndex": [
           437
@@ -12337,8 +12336,8 @@
             "Settings": {
               "SpawnWeight": 1,
               "SeesPlayersAtSpawn": true,
-              "HP": 200,
-              "Damage": 45,
+              "HP": 180,
+              "Damage": 40,
               "DodgeChance": 0,
               "ExtraLoot": true,
               "Loot": [
@@ -12350,8 +12349,8 @@
         ],
         "UniqueAreaID": "Toxic Bubble timed Spawns",
         "MapName": "Custom_ForbiddenMaze",
-        "MinimumSpawnsPerDay": 45,
-        "MaximumSpawnsPerDay": 60,
+        "MinimumSpawnsPerDay": 35,
+        "MaximumSpawnsPerDay": 50,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -12449,9 +12448,9 @@
             "Settings": {
               "SpawnWeight": 1,
               "SeesPlayersAtSpawn": true,
-              "HP": 350,
+              "HP": 750,
               "Damage": 40,
-              "DodgeChance": 0,
+              "DodgeChance": 33,
               "ExtraLoot": true,
               "Loot": [
                 "Swamp Essence",
@@ -12462,10 +12461,10 @@
             }
           }
         ],
-        "UniqueAreaID": "Putrid Swamp Ghost Spawns",
+        "UniqueAreaID": "Putrid Swamp Ghost Spawns - after crimson badlands treasure cave event",
         "MapName": "Custom_ForbiddenMaze",
         "MinimumSpawnsPerDay": 1,
-        "MaximumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 3,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -12491,11 +12490,10 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "GameStateQueries": [
-            "RANDOM 0.75"
-          ],
+          "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingMarshlands": "false"
+            "HasFlag |contains=SVE_ChallengingMarshlands": "false",
+            "HasSeenEvent: AnyPlayer|contains=1925178": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -12568,7 +12566,7 @@
               "SpawnWeight": 1,
               "SeesPlayersAtSpawn": true,
               "HP": 1,
-              "Damage": 45,
+              "Damage": 36,
               "DodgeChance": 0,
               "ExtraLoot": true,
               "Loot": [
@@ -12580,7 +12578,7 @@
         ],
         "UniqueAreaID": "Toxic Bubble Haunted Skull Timed Spawns",
         "MapName": "Custom_ForbiddenMaze",
-        "MinimumSpawnsPerDay": 15,
+        "MinimumSpawnsPerDay": 20,
         "MaximumSpawnsPerDay": 30,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
@@ -12610,6 +12608,63 @@
           "GameStateQueries": [],
           "CPConditions": {
             "HasFlag |contains=SVE_ChallengingMarshlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Haunted Skull",
+            "Settings": {
+              "SpawnWeight": 1,
+              "SeesPlayersAtSpawn": true,
+              "HP": 1,
+              "Damage": 36,
+              "DodgeChance": 0,
+              "ExtraLoot": true,
+              "Loot": [
+                "Swamp Essence"
+              ],
+              "Sprite": "Characters/Monsters/ToxicBubble_Variant"
+            }
+          }
+        ],
+        "UniqueAreaID": "Toxic Bubble Haunted Skull Timed Spawns - more spawn after treasure cave event",
+        "MapName": "Custom_ForbiddenMaze",
+        "MinimumSpawnsPerDay": 15,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "1,1;1,1",
+          "154,1;154,1",
+          "154,154;154,154",
+          "1,154;1,154"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 30,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "false",
+            "HasSeenEvent: AnyPlayer|contains=1925178": "true"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -12722,7 +12777,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -12836,7 +12893,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -12950,7 +13009,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13064,7 +13125,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13178,7 +13241,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13292,7 +13357,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13348,7 +13415,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13462,7 +13531,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13576,7 +13647,9 @@
           "GameStateQueries": [
             "RANDOM 0.10"
           ],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingMarshlands": "true"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -13687,8 +13760,8 @@
         ],
         "UniqueAreaID": "Toxic Bubble Haunted Skull Rare Swarm",
         "MapName": "Custom_ForbiddenMaze",
-        "MinimumSpawnsPerDay": 120,
-        "MaximumSpawnsPerDay": 120,
+        "MinimumSpawnsPerDay": 70,
+        "MaximumSpawnsPerDay": 70,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -14173,7 +14246,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -14221,7 +14296,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -14297,7 +14374,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -14658,6 +14737,579 @@
       {
         "MonsterTypes": [
           {
+            "MonsterName": "Mummy",
+            "Settings": {
+              "SpawnWeight": 5,
+              "Damage": 65,
+              "DodgeChance": 5,
+              "SeesPlayersAtSpawn": false,
+              "ExtraLoot": false,
+              "Loot": [
+                768
+              ],
+              "Sprite": "Characters/Monsters/EvilMummy"
+            }
+          },
+          {
+            "MonsterName": "Skeleton",
+            "Settings": {
+              "SpawnWeight": 4,
+              "Damage": 40,
+              "DodgeChance": 8,
+              "SeesPlayersAtSpawn": false,
+              "ExtraLoot": false,
+              "Loot": [
+                881
+              ],
+              "Sprite": "Characters/Monsters/SkeletonDangerous"
+            }
+          },
+          {
+            "MonsterName": "Skeleton Mage",
+            "Settings": {
+              "HP": 1000,
+              "SpawnWeight": 1,
+              "Damage": 50,
+              "DodgeChance": 10,
+              "ExtraLoot": false,
+              "SeesPlayersAtSpawn": false,
+              "Sprite": "Characters/Monsters/SkeletonMageDangerous",
+              "Loot": [
+                "Void Pebble",
+                881
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Crimson Badlands Primary Spawns - Static - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 80,
+        "MaximumSpawnsPerDay": 80,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "213,152;17,22"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 80,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "HP": 245,
+              "SpawnWeight": 1,
+              "Damage": 40,
+              "SeesPlayersAtSpawn": true,
+              "Sprite": "Characters/Monsters/BadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Timed Serpent Aggros - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 50,
+        "MaximumSpawnsPerDay": 70,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "2,2;1,1",
+          "238,2;237,1",
+          "238,154;237,153",
+          "2,154;1,153"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true",
+            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "HP": 245,
+              "SpawnWeight": 1,
+              "Damage": 40,
+              "SeesPlayersAtSpawn": true,
+              "Sprite": "Characters/Monsters/BadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Timed Serpent Aggros - across entire map sides (not corners) - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 40,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "239,58;238,19",
+          "225,155;18,154",
+          "1,57;0,19",
+          "72,1;13,0"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 30,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true",
+            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Royal Serpent",
+            "Settings": {
+              "SpawnWeight": 1,
+              "Segments": 2,
+              "SeesPlayersAtSpawn": true,
+              "HP": 850,
+              "Damage": 65,
+              "DodgeChance": 10,
+              "Sprite": "Characters/Monsters/RoyalBadlandsSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Large Badlands Serpent Spawns - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "239,58;238,19",
+          "225,155;18,154",
+          "1,57;0,19",
+          "72,1;13,0"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 30,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true",
+            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 2000,
+              "Damage": 75,
+              "DodgeChance": 20,
+              "SeesPlayersAtSpawn": true,
+              "Loot": [
+                "Void Pebble",
+                769,
+                769,
+                769,
+                226
+              ],
+              "Sprite": "Characters/Monsters/CorruptSerpent"
+            }
+          }
+        ],
+        "UniqueAreaID": "Corrupt Serpent Timed Spawns - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 5,
+        "MaximumSpawnsPerDay": 8,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "0,155;0,100"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "None",
+        "SpawnTiming": {
+          "StartTime": 830,
+          "EndTime": 2500,
+          "MinimumTimeBetweenSpawns": 100,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true",
+            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Wilderness Golem",
+            "Settings": {
+              "SpawnWeight": 1,
+              "SeesPlayersAtSpawn": false,
+              "HP": 80,
+              "Damage": 120,
+              "DodgeChance": 33,
+              "ExtraLoot": false,
+              "Loot": [
+                684
+              ],
+              "Sprite": "Characters/Monsters/SandScorpion"
+            }
+          }
+        ],
+        "UniqueAreaID": "Sand Scorpion Dens - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 45,
+        "MaximumSpawnsPerDay": 45,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "167,115;162,111",
+          "175,152;171,144",
+          "181,70;177,67",
+          "196,34;192,30",
+          "223,48;219,44",
+          "140,134;134,128",
+          "149,88;143,83",
+          "169,45;164,40",
+          "112,107;101,100",
+          "121,154;112,146",
+          "119,61;114,56",
+          "218,123;214,120",
+          "201,52;198,50",
+          "79,77;73,72",
+          "193,99;190,97",
+          "49,91;44,85",
+          "86,125;77,118",
+          "30,69;25,66",
+          "97,26;89,21",
+          "127,35;124,32",
+          "65,110;61,106",
+          "92,146;89,141",
+          "68,135;65,132",
+          "40,112;36,107"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 60,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true",
+            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "purple slime",
+            "Settings": {
+              "SpawnWeight": 6,
+              "Damage": 35,
+              "SeesPlayersAtSpawn": true,
+              "DodgeChance": 5,
+              "Color": "220 20 60"
+            }
+          }
+        ],
+        "UniqueAreaID": "Crimson Badlands Red Slime Aggro Timed Spawns - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 40,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "175,154;44,154",
+          "64,153,33,113",
+          "34,13;10,5",
+          "68,10;45,8",
+          "7,63;2,25",
+          "227,140;226,114",
+          "227,65;227,43"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": true,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Mummy",
+            "Settings": {
+              "SpawnWeight": 5,
+              "Damage": 65,
+              "DodgeChance": 5,
+              "ExtraLoot": false,
+              "Loot": [
+                768
+              ],
+              "Sprite": "Characters/Monsters/EvilMummy"
+            }
+          },
+          {
+            "MonsterName": "Skeleton",
+            "Settings": {
+              "SpawnWeight": 4,
+              "Damage": 40,
+              "DodgeChance": 8,
+              "ExtraLoot": false,
+              "Loot": [
+                881
+              ],
+              "Sprite": "Characters/Monsters/SkeletonDangerous"
+            }
+          },
+          {
+            "MonsterName": "Skeleton Mage",
+            "Settings": {
+              "HP": 1000,
+              "SpawnWeight": 1,
+              "Damage": 50,
+              "DodgeChance": 10,
+              "ExtraLoot": false,
+              "Sprite": "Characters/Monsters/SkeletonMageDangerous",
+              "Loot": [
+                "Void Pebble",
+                881
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Crimson Badlands Primary Spawns Starting Area - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "224,147;162,118",
+          "213,117;177,76",
+          "219,117;214,106",
+          "225,75;181,45",
+          "220,44;192,22"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 30,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Mummy",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 2000,
+              "Damage": 110,
+              "DodgeChance": 15,
+              "ExtraLoot": false,
+              "Loot": [
+                "Void Pebble",
+                769,
+                769,
+                768
+              ],
+              "Sprite": "Characters/Monsters/CorruptMummy"
+            }
+          }
+        ],
+        "UniqueAreaID": "Crimson Badlands Boneyard Guards - Low Memory",
+        "MapName": "Custom_CrimsonBadlands",
+        "MinimumSpawnsPerDay": 18,
+        "MaximumSpawnsPerDay": 18,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "231,155;72,0",
+          "72,104;0,0"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 18,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "true"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
             "MonsterName": "Serpent",
             "Settings": {
               "HP": 245,
@@ -14699,7 +15351,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -14750,7 +15403,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -14801,7 +15455,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -14852,7 +15507,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -14903,7 +15559,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -14954,7 +15611,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15005,7 +15663,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15058,7 +15717,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15111,7 +15771,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15161,7 +15822,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15211,7 +15873,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15287,7 +15950,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15363,7 +16027,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15439,7 +16104,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -15514,7 +16181,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -15590,7 +16258,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -15665,7 +16335,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -15739,7 +16411,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -15790,7 +16464,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -15841,7 +16517,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -15893,7 +16571,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -15945,7 +16625,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -16079,7 +16761,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -16133,7 +16817,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -16188,7 +16874,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -22819,7 +23506,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -22905,7 +23594,9 @@
           "WeatherToday": [],
           "WeatherTomorrow": [],
           "GameStateQueries": [],
-          "CPConditions": {},
+          "CPConditions": {
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
+          },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
@@ -23008,7 +23699,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -23112,7 +23804,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -23308,7 +24001,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -23400,7 +24094,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "false"
+            "HasFlag |contains=SVE_ChallengingBadlands": "false",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -23498,7 +24193,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -23605,7 +24301,8 @@
           "WeatherTomorrow": [],
           "GameStateQueries": [],
           "CPConditions": {
-            "HasFlag |contains=SVE_ChallengingBadlands": "true"
+            "HasFlag |contains=SVE_ChallengingBadlands": "true",
+            "HasFlag |contains=SVE_LowMemoryBadlands": "false"
           },
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
@@ -24481,7 +25178,7 @@
             "MonsterName": "Royal Serpent",
             "Settings": {
               "SpawnWeight": 10,
-              "HP": 6000,
+              "HP": 5000,
               "Damage": 95,
               "DodgeChance": 30,
               "SeesPlayersAtSpawn": true,
@@ -24523,7 +25220,7 @@
             "MonsterName": "Royal Serpent",
             "Settings": {
               "SpawnWeight": 1,
-              "HP": 6000,
+              "HP": 5000,
               "Damage": 95,
               "DodgeChance": 30,
               "SeesPlayersAtSpawn": true,
@@ -24564,8 +25261,8 @@
         ],
         "UniqueAreaID": "Apophis Boss Monster - Rare Boss Rush Event where players are not meant to survive",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 50,
-        "MaximumSpawnsPerDay": 50,
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 40,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
@@ -24576,7 +25273,7 @@
         "SpawnTiming": {
           "StartTime": 600,
           "EndTime": 2600,
-          "MinimumTimeBetweenSpawns": 40,
+          "MinimumTimeBetweenSpawns": 50,
           "MaximumSimultaneousSpawns": 1,
           "OnlySpawnIfAPlayerIsPresent": true,
           "SpawnSound": "shadowpeep"
