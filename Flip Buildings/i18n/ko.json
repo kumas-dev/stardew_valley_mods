@@ -1,7 +1,0 @@
-﻿{
-	"Carpenter_Flip": "건물 뒤집기",
-	"Carpenter_SelectBuilding_Flip": "뒤집을 건물을 선택하세요",
-	"Carpenter_CannotFlip": "이 건물은 뒤집을 수 없습니다",
-	"Carpenter_CannotFlip_Permission": "이 건물을 뒤집을 권한이 없습니다",
-	"Carpenter_CannotFlip_PlayerHere": "건물에 플레이어가 있는 동안은 뒤집을 수 없습니다"
-}
