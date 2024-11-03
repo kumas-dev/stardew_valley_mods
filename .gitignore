@@ -8,7 +8,6 @@ SaveBackup/
 config.toml
 config.json
 
-!mouahraras Module Collection/**/config.json
 !Stardew Valley Expanded/**/config.json
 
 # cache
