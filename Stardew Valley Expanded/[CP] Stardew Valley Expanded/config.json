@@ -23,6 +23,7 @@
   "ChallengingHighlandsCavern": "true",
   "ChallengingBadlands": "true",
   "LowMemoryBadlands": "false",
+  "LowMemoryHighlands": "false",
   "OlderSophiaPortraits": "false",
   "VanillaSandyPortraits": "false",
   "MatureEvents": "true",
