@@ -22,6 +22,7 @@
     "Config.VanillaSandyPortraits.name": "바닐라 스타일의 샌디 초상화",
     "Config.MatureEvents.name": "성숙한 이벤트",
     "Config.ShorterPathToBlueMoonVineyard.name": "블루문 포도밭으로 가는 길을 보다 짧게 하기",
+    "Config.GaldoranGemMuseumMoveable": "갈도란 보석을 스타듀밸리 박물관에 기부할 수 있도록 허용합니다. SVE 1.15.5 업데이트에서 아이템 유형이 변경되었을 때 이미 기부된 보석을 다른 위치로 옮기려 할 경우 발생할 수 있는 진행 불가 문제를 방지합니다.",
     "Config.UseGaldoranThemeAllTimes.name": "어디서든 갈도란 테마 UI 사용",
     "Config.DisableGaldoranTheme.name": "갈도란 테마 UI 비활성화",
     "Config.WarpLocation.name": "좌표 위치",
@@ -113,7 +114,48 @@
     "DisplayName.WizardsBasement": "마법사의 지하실",
     "DisplayName.DiamondCavern": "다이아몬드 동굴",
   
-  //1.15 Strings
+  //Bundle Strings
+  "spring.crops.bundle": "봄 작물",
+  "summer.crops.bundle": "여름 작물",
+  "fall.crops.bundle": "가을 작물",
+  "quality.crops.bundle": "고품질 작물",
+  "animal.bundle": "동물",
+  "artisan.bundle": "장인",
+  "spring.foraging.bundle": "봄 채집",
+  "summer.foraging.bundle": "여름 채집",
+  "fall.foraging.bundle": "가을 채집",
+  "winter.foraging.bundle": "겨울 채집",
+  "construction.bundle": "건축",
+  "exotic.foraging.bundle": "특수 채집",
+  "river.fish.bundle": "강 물고기",
+  "lake.fish.bundle": "호수 물고기",
+  "ocean.fish.bundle": "바다 물고기",
+  "night.fish.bundle": "밤 낚시",
+  "speciality.fish.bundle": "특별한 물고기",
+  "crab.pot.bundle": "게집이 통발",
+  "blacksmith.bundle": "대장장이",
+  "geologist.bundle": "지질학자",
+  "adventurer.bundle": "모험가",
+  "vault.1.bundle": "2,500골드",
+  "vault.2.bundle": "5,000골드",
+  "vault.3.bundle": "10,000골드",
+  "vault.4.bundle": "25,000골드",
+  "vault.5.bundle": "5,000골드",
+  "vault.6.bundle": "10,000골드",
+  "vault.7.bundle": "20,000골드",
+  "vault.8.bundle": "50,000골드",
+  "chef.bundle": "요리사",
+  "field.research.bundle": "현장 연구",
+  "enchanter.bundle": "마법사",
+  "dye.bundle": "염료",
+  "fodder.bundle": "사료",
+  "the.missing.bundle": "잃어버린",
+  
+  
+  
+  
+  
+  //1.15 Misc Strings
   "String.1044": "조그마하던 집이 완벽해졌습니다.",
   "String.1045": "문이 잠겨 있습니다. 우측 어림에서 빛이 새어나옵니다...",
   "Death.String.1": "...{2}?",
@@ -404,8 +446,10 @@
   //1.15 Machines
   "machine.butter-churner.name": "버터 제조기",
   "machine.butter-churner.description": "우유를 버터로 만듭니다.",
+  "machine.butter-churner.invalid": "버터를 만들려면 우유가 더 필요합니다.",
   "machine.yarn-spooler.name": "방직기",
   "machine.yarn-spooler.description": "낙타 털을 실로 만듭니다.",
+  "machine.yarn-spooler.invalid": "실을 잣으려면 낙타 털이 더 필요합니다.",
 
   // 1.15 Weapons
   "weapon.monster-splitter.name": "괴물 분쇄기",
@@ -7647,7 +7691,7 @@
   "Marlon.CharacterDialogue.013": "안녕.$0#$e#뭐 도움이라도 필요한가?$0",
   "Marlon.CharacterDialogue.014": "안녕, 탐험은 잘 돼 가나?$0#$e#더 좋은 무기가 필요하면, 모험가 길드의 상점을 이용해보는 건 어때.$0",
   "Marlon.CharacterDialogue.015": "광산을 내려갈 때는 외진 곳은 항상 조심하라고, @. 무엇이 너를 기다리고 있을지 모르니까.$0#$e#항상 몸 조심하라고.$0",
-  "Marlon.CharacterDialogue.016": "...$0#$e#*끄으응*... 오늘 날씨가 참 좋군?$0#$e#%말론은 돌아섭니다. 몹시 바쁜 것처럼 보입니다.$0",
+  "Marlon.CharacterDialogue.016": "...$0#$e#오늘 날씨가 참 좋군?$0#$e#%말론은 돌아섭니다. 몹시 바쁜 것처럼 보입니다.$0",
   "Marlon.CharacterDialogue.017": "안녕, @.$0#$e#스타듀 밸리에 서식하는 몬스터나 전투 기술에 대한 궁금증이 있다면 망설이지 말고 바로바로 물어보라고.$0",
   "Marlon.CharacterDialogue.018": "널 보면 알리시아가 생각나. 그 친구는 보수가 얼마건 상관없이 항상 사람들을 보호했었지.$0#$e#계속 고생하라고, @.$0",
   "Marlon.CharacterDialogue.019": "안녕.$0#$e#난 네가 생각하는 만큼 수다쟁이가 아니라고.$0",
@@ -7659,7 +7703,7 @@
   "Marlon.CharacterDialogue.025": "혹시나 광산 밖에서 몬스터를 발견하면 즉시 내게 알려줘야 해.$0#$e#위험해지기 전에 내가 바로 처리해야 하니까.$0",
   "Marlon.CharacterDialogue.026": "거스의 스타드롭 주점에서는 언제나 맛있는 음식과 술을 판매한다네.$0#$e#광산을 탐험할 때 챙겨갈 음식을 찾는다면 살롱만큼 괜찮은 곳도 찾기 힘들 거야.$0",
   "Marlon.CharacterDialogue.027": "항상 고맙다, @. 네가 그동안 해 준 일, 정말 고맙게 생각해.$0#$e#좋은 하루 보내라고.$0",
-  "Marlon.CharacterDialogue.028": "안녕.$0#$e#*끄으응*... 주말에 무슨 계획이라도 있나?$0#$e#흠. 그렇군. 흥미롭군.#$e#...$0#$e#%말론은 더 이상 당신과 얘기하고 싶어 하지 않는 것 같습니다.",
+  "Marlon.CharacterDialogue.028": "안녕.$0#$e#주말에 무슨 계획이라도 있나?$0#$e#흠. 그렇군. 흥미롭군.#$e#...$0#$e#%말론은 더 이상 당신과 얘기하고 싶어 하지 않는 것 같습니다.",
   "Marlon.CharacterDialogue.029": "조만간 라스모디우스를 만나러 마법사의 탑에 가야 해. 보관 중인 무기나 장비 몇 개에 마법을 새로 걸어야 하거든.$0",
   "Marlon.CharacterDialogue.030": "넌 길드의 자랑이다, @. 지금처럼만 하라고.$0",
   "Marlon.CharacterDialogue.031": "검, 단도, 아니면 둔기? 네가 어떤 무기를 선택하느냐에 따라서 네 전투 방식을 좌우한다고.$0#$e#나? 난 검을 주로 사용하지. 단도는 사정거리가 짧다 보니 아차 하는 순간 몬스터에게 공격을 당할 수도 있고, 둔기는 무겁기 때문에 속도가 느리거든.$0",
@@ -10538,7 +10582,7 @@
   "String.739": "'하늘을 나는 내 인생'^'저자. 잭슨 심슨'",
   "String.740": "맥주 캔이 여기 저기 널려 있습니다.",
   //SebastianRoomSVE
-  "String.741": "*우웩* 담배 냄새에 절어 있습니다.",
+  "String.741": "묘한 모양을 한 꽃병이다.",
   "String.742": "'메가 스테이션'",
   "String.743": "이 텔레비전에는 스티커가 덕지 덕지 붙어 있습니다.",
   "String.744": "'그린친 : 파괴자' 공포 영화 포스터군요. 배우의 연기가 끝내줬었죠.",
