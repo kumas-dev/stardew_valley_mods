@@ -3,16 +3,9 @@ ConsoleCommands/
 ErrorHandler/
 SaveBackup/
 
-
 # config
 config.toml
 config.json
-
-!Stardew Valley Expanded/**/config.json
-
-# cache
-Core/FarmTypeManager/data
-*_SaveData.save
 
 # temporary
 _Temporary/
