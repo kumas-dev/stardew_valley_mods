@@ -11,7 +11,7 @@
 	"installationchecker.mod.parents": "관련 요구사항: {{parents}}",
 	"installationchecker.smapi.outdated": "SMAPI 가 구버전입니다! 최신 버전으로 업데이트해주세요!",
 	"installationchecker.component.missing": "\n\n\n대규모 확장 모드가 잘못 설치된 것 같습니다.\n부디 https://smapi.io/log 에 방문하셔서 사이트 안내에 따라 오류 로그를 확인하세요.\n스크롤을 움직여 붉은 글자를 확인 후, 어떤 오류인지 확인합니다.\n\n\n",
-	"installationchecker.help.message": "만약 도움이 필요하시다면, 언제든지 저희 디스코드 서버로 오세요! https://discord.gg/TBevpV28",
+	"installationchecker.help.message": "만약 도움이 필요하시다면, 언제든지 저희 디스코드 서버로 오세요! https://discord.gg/svexpanded",
 	"installationchecker.start": "모드가 제대로 설치되었는지 확인하는 중...",
 	"installationchecker.credits": "(이 설치 검사기는 shekurika 와 moe 의 도움으로 만들어졌습니다.)",
 	"installationchecker.success": "설치 검사가 완료되었습니다. 아무 이상 없습니다!",

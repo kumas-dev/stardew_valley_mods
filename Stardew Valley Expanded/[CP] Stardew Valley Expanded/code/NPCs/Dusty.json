@@ -10,6 +10,16 @@
         },
         //DUSTY NPC
         {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Dusty": {
+                    "DisplayName": "{{i18n:Dusty.DisplayName}}",
+                    "CanSocialize": "FALSE"
+                }
+            }
+        },
+        {
             "Action": "Load", "Priority": "Low",
             "Target": "Portraits/Dusty",
             "FromFile": "Assets/CharacterFiles/Portraits/Dusty/Dusty.png"

@@ -402,7 +402,7 @@
           {
                "Action": "Load",  
                "Target": "Maps/Town",
-               "FromFile": "Assets/Maps/MapPatches/Town_Joja.tmx",
+               "FromFile": "Assets/Maps/Locations/Town_Joja.tmx",
                "When": {
                     "HasSeenEvent: hostPlayer|contains=5553210": true
                }
@@ -1190,7 +1190,7 @@
           },
           { //Leaf patches
                "Action": "EditMap",
-               "Target": "Maps/Town",
+               "Target": "Maps/Town, Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2",
                "FromFile": "Assets/Maps/MapPatches/Town_Leaves.tbin",
                "When": {
                     "Season": "Fall",

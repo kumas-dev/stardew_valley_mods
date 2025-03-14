@@ -5,6 +5,7 @@
   "RemovePicnicTable": "false",
   "RemoveEasternVerticalFence": "false",
   "RemoveStonePathways": "false",
+  "RemoveTreeHidingBackyardMouseStatue": "false",
   "SmallerBackyardFence": "false",
   "InstantlyUnlockBridge": "false",
   "InstantlyUnlockDesertShortcut": "false",
