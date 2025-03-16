@@ -169,8 +169,8 @@
             "Target": "Data/Powers",
             "Entries": {
                  "FlashShifter.StardewValleyExpanded_AnimalMastery": {
-                   "DisplayName": "{{i18n:power.cheese-mastery.name}}",
-                   "Description": "{{i18n:power.cheese-mastery.description}}",
+                   "DisplayName": "{{i18n:power.animal-mastery.name}}",
+                   "Description": "{{i18n:power.animal-mastery.description}}",
                    "TexturePath": "Mods\\FlashShifter.StardewValleyExpandedCP\\AnimalMastery",
                    "TexturePosition": {
                       "X": 0,
