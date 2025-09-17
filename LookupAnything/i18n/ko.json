@@ -61,12 +61,11 @@
     "friendship-status.kicked-out": "내쫓음",
 
     // custom content (shows which mod added an item, NPC, etc)
-    // TODO
-    "added-by-mod": "Added by mod",
+    "added-by-mod": "모드에서 추가됨",
     "added-by-mod.summary": "{{modName}}",
 
     // internal ID
-    "internal-id": "Internal ID", // TODO
+    "internal-id": "내부 ID",
 
 
     /*********
@@ -120,10 +119,10 @@
     "location.forest.island-tip": "섬 (큰 섬의 남쪽 끝)",
     "location.forest.lake": "숲 호수",
     "location.forest.river": "숲 강",
-    "location.HarveyRoom": "Harvey's Room", // TODO
-    "location.LeoTreeHouse": "Treehouse", // TODO
-    "location.SandyHouse": "Oasis", // TODO
-    "location.SebastianRoom": "Sebastian's Room", // TODO
+    "location.HarveyRoom": "하비의 방",
+    "location.LeoTreeHouse": "나무집",
+    "location.SandyHouse": "오아시스",
+    "location.SebastianRoom": "세바스찬의 방",
     "location.submarine": "야시장 잠수함",
     "location.town.northmost-bridge": "마을 (최북단의 다리)",
     "location.undergroundMine": "광산",
@@ -186,7 +185,7 @@
     "animal.produce-ready": "생산물 준비 완료",
     "animal.growth": "성장 단계",
     "animal.sells-for": "판매 가격: ",
-    "animal.golden-cracker": "Golden animal cracker", // also used for fish ponds // TODO
+    "animal.golden-cracker": "황금 동물 크래커", // also used for fish ponds
 
     // values
     "animal.complaints.hungry": "어제 먹이를 먹지 못함.",
@@ -195,8 +194,8 @@
     "animal.complaints.no-heater": "겨울에 난방기가 없음.",
     "animal.complaints.not-petted": "오늘 쓰다듬 받지 못함.",
     "animal.complaints.wild-animal-attack": "밤중에 야생 동물들에게 습격당함.",
-    "animal.golden-cracker.none": "None. Add a golden animal cracker to double produced items.", // TODO
-    "animal.golden-cracker.applied": "Applied; produced items are doubled.", // TODO
+    "animal.golden-cracker.none": "없음. 황금 동물 크래커를 추가하면 생산량이 두 배가 됩니다.",
+    "animal.golden-cracker.applied": "적용됨; 생산 아이템이 두 배로 증가합니다.",
 
 
     /*********
@@ -317,8 +316,8 @@
     "crop.summary.drops-X-to-Y": "{{min}} ~ {{max}}개의 추가 작물을 ({{percent}}%의 확률로 획득 가능)",
     "crop.summary.harvest-once": "{{daysToFirstHarvest}}일 후에 수확 가능",
     "crop.summary.harvest-multi": "{{daysToFirstHarvest}}일 후에 수확 가능, 그 후 매 {{daysToNextHarvests}}일마다 주기적 수확 가능.",
-    "crop.summary.farming-xp": "gives +{{amount}} farming XP per harvest", // TODO
-    "crop.summary.foraging-xp": "gives +{{amount}} foraging XP per harvest", // TODO
+    "crop.summary.farming-xp": "수확 시 농사 경험치 +{{amount}} 획득",
+    "crop.summary.foraging-xp": "수확 시 채집 경험치 +{{amount}} 획득",
     "crop.summary.seasons": "{{seasons}}에 자람",
     "crop.summary.sells-for": "판매 가격: {{price}}",
     "crop.harvest.too-late": "작물을 수확하기엔 너무 늦은 계절이다 (다음 수확까지 {{date}}일 걸림)",
@@ -335,7 +334,7 @@
     "item.dislikes-this": "싫어함",
     "item.hates-this": "증오함",
     "item.needed-for": "필요함",
-    "item.flavor": "Flavor", // TODO // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
+    "item.flavor": "맛", // links to the flavor item (e.g. 'Blueberry' for Blueberry Wine)
     "item.number-owned": "보유함",
     "item.number-cooked": "요리됨",
     "item.number-crafted": "제작됨",
@@ -360,7 +359,7 @@
     "item.needed-for.gourmet-chef": "도전과제 '미식가 요리사' ({{recipes}}을/를 요리하세요)",
     "item.needed-for.craft-master": "도전과제 '제작의 달인' ({{recipes}}을/를 제작하세요)",
     "item.needed-for.quests": "현재 퀘스트 ({{quests}})",
-    "item.needed-for.trash-bear": "trash bear (deliver one)", // TODO
+    "item.needed-for.trash-bear": "쓰레기고 곰 (하나 전달)",
     "item.unknown-recipes": "알 수 없는 레시피 {{count}}개",
     "item.sells-to.shipping-box": "출하 상자",
     "item.recipes-for-ingredient.entry": "{{name}} ({{count}}개 필요)",
@@ -368,9 +367,9 @@
     "item.recipes-for-machine.same-as-input": "[넣는 아이템과 동일]", // e.g. crystalarium produces same item that was put in
     "item.recipes-for-machine.too-complex": "이 기계 규칙은 너무 복잡해서 표시할 수 없습니다.",
     "item.number-owned.summary": "당신은 이것들을 {{count}}개 보유 중.",
-    "item.number-owned-flavored.summary": "you own {{count}} ({{name}}) or {{baseCount}} ({{baseName}}) of these", // TODO // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
+    "item.number-owned-flavored.summary": "이것들을 {{count}}개 ({{name}}) 또는 {{baseCount}}개 ({{baseName}}) 보유 중", // e.g. "you own 5 (Sturgeon Roe) or 20 (Roe) of these"
     "item.number-crafted.summary": "당신은 이것들을 {{count}}개 제작했음.",
-    "item.internal-id.summary": "{{itemId}} (globally unique 'qualified ID': {{qualifiedItemId}})", // TODO
+    "item.internal-id.summary": "{{itemId}} (전역 고유 ID: {{qualifiedItemId}})",
 
 
     /*********
@@ -426,7 +425,7 @@
     "item.fish-spawn-rules.time": "시간: {{times}}",
     "item.fish-spawn-rules.weather-sunny": "날씨: 맑은 날",
     "item.fish-spawn-rules.weather-rainy": "날씨: 비 오는 날",
-    "item.uncaught-fish": "{{count}} uncaught fish", // TODO
+    "item.uncaught-fish": "잡지 못한 물고기 {{count}}마리",
 
 
     /*********
@@ -511,7 +510,7 @@
     "npc.neutral-gifts": "그저그런 선물",
     "npc.dislikes-gifts": "싫어하는 선물",
     "npc.hates-gifts": "혐오하는 선물",
-    "npc.schedule": "Today's schedule", // TODO
+    "npc.schedule": "오늘의 스케줄",
 
     // values
     "npc.can-romance.married": "당신은 이미 결혼했다!", // < turns into a heart (Korean does not support emoji)
@@ -521,12 +520,12 @@
     "npc.friendship.need-points": "호감도 UP까지 {{count}}점",
     "npc.undiscovered-gift-taste": "공개되지 않은 품목 {{count}}개",
     "npc.unowned-gift-taste": "소유하지 않은 품목 {{count}}개",
-    "npc.schedule.current-position": "Currently at {{locationName}} ({{x}}, {{y}}).", // TODO
-    "npc.schedule.no-entries": "No schedule loaded.", // TODO
-    "npc.schedule.not-following-schedule": "Currently not following a schedule. This usually means the NPC is doing special behaviors (e.g. at the movie theater).", //  TODO
-    "npc.schedule.entry": "{{time}}: walk to {{locationName}} ({{x}}, {{y}}).", // TODO
-    "npc.schedule.farmhand.unknown-position": "Currently in an unknown location on the host.", // TODO
-    "npc.schedule.farmhand.unknown-schedule": "In multiplayer, NPCs are managed by the host so their schedule isn't available.", // TODO
+    "npc.schedule.current-position": "현재 {{locationName}} ({{x}}, {{y}})에 있습니다.",
+    "npc.schedule.no-entries": "로드된 스케줄이 없습니다.",
+    "npc.schedule.not-following-schedule": "현재 스케줄을 따르지 않습니다. 보통 NPC가 특별한 행동을 하고 있음을 의미합니다 (예: 영화관에서).",
+    "npc.schedule.entry": "{{time}}: {{locationName}} ({{x}}, {{y}})로 이동.",
+    "npc.schedule.farmhand.unknown-position": "현재 호스트에서 알 수 없는 위치에 있습니다.",
+    "npc.schedule.farmhand.unknown-schedule": "멀티플레이에서 NPC들은 호스트가 관리하므로 스케줄을 확인할 수 없습니다.",
 
 
     /*********
@@ -652,13 +651,13 @@
     "tile.description": "지도상의 타일 위치. 이는 당신이 '타일 찾아보기(tile lookup)'를 활성화 했기 때문에 표시됨.",
     "tile.game-location": "위치",
     "tile.map-name": "맵 이름",
-    "tile.map-properties": "Map properties", // TODO
-    "tile.layer-tile": "{{layer}} tile", // TODO
+    "tile.map-properties": "맵 속성",
+    "tile.layer-tile": "{{layer}} 타일",
     "tile.layer-tile-none": "타일",
 
     // values
-    "tile.map-properties.value": "{{name}}: {{value}}", // TODO
-    "tile.layer-tile.appearance": "index {{index}} from tilesheet '{{tilesheetId}}' (path: '{{tilesheetPath}}')", // TODO
+    "tile.map-properties.value": "{{name}}: {{value}}",
+    "tile.layer-tile.appearance": "타일시트 '{{tilesheetId}}'의 인덱스 {{index}} (경로: '{{tilesheetPath}}'))",
     "tile.layer-tile.blend-mode": "혼합 모드: {{value}}",
     "tile.layer-tile.index-property": "건물 인덱스: {{name}}: {{value}}",
     "tile.layer-tile.tile-property": "건물: {{name}}: {{value}}",
@@ -721,8 +720,8 @@
     // progression mode
     "config.title.progression": "진행 모드",
 
-    "config.progression.show-uncaught-fish-spawn-rules.name": "Show uncaught fish spawn rules", // TODO
-    "config.progression.show-uncaught-fish-spawn-rules.desc": "Whether to show spawn conditions for fish you haven't caught yet.", // TODO
+    "config.progression.show-uncaught-fish-spawn-rules.name": "잡지 못한 물고기 스폰 규칙 보기",
+    "config.progression.show-uncaught-fish-spawn-rules.desc": "아직 잡지 못한 물고기의 스폰 조건을 보여줄지 여부.",
 
     "config.progression.show-unknown-gift-tastes.name": "모르는 선물 취향 보기",
     "config.progression.show-unknown-gift-tastes.desc": "게임 내에서 아직 알지 못한 선물 취향을 표시할지 여부(예: 대화 텍스트 또는 실험을 통해).",
