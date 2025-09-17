@@ -308,8 +308,8 @@
     "gmcm.enable_golden_ostrich_mayo.desc": "장인 제작 설비가 더 일관성 있게 작동하도록 하기 위해 황금 달걀과 타조알이 재료로 쓰이게 할지 여부",
     "gmcm.immersive_dairy_yield.title": "확장된 일일 생산품",
     "gmcm.immersive_dairy_yield.desc": "큰 계란 또는 큰 우유 1개로 장인 제작품을 생산 시 제작품 2개가 나올 때 하나는 금별, 하나는 일반 품질로 나오도록 설정합니다.",
-    "gmcm.breeder_friendly_animal_multiplier.title": "Breeder Animal Value Multiplier",
-    "gmcm.breeder_friendly_animal_multiplier.desc": "The multiplier applied to the value of max-friendship animals sold by Breeder. This should only be used to compensate for third-party profit balancing mods.",
+    "gmcm.breeder_friendly_animal_multiplier.title": "사육사 동물 가격 배율",
+    "gmcm.breeder_friendly_animal_multiplier.desc": "사육사가 판매하는 최대 우정도 동물의 가격에 적용되는 배율입니다. 서드파티 수익 밸런스 모드를 보상하기 위해서만 사용해야 합니다.",
 
     // ecologist & gemologist
     "gmcm.sections.prfs.ecologist_gemologist": "환경 전문가 & 보석 공학자",
@@ -336,7 +336,7 @@
     "gmcm.tracking_pointer_bob_rate.desc": "유물 또는 보물이 묻힌 지점을 표기하는 포인터의 흔들림의 정도를 조정합니다.",
     "gmcm.disable_always_track.title": "추적 표시 비활성화",
     "gmcm.disable_always_track.desc": "활성화하면, 유물 또는 보물 추적 화살표는 모드키를 누르고 있을 때만 표시됩니다.",
-    "gmcm.use_legacy_prospector_hunt.title": "Use Legacy Prospector Hunt",
+    "gmcm.use_legacy_prospector_hunt.title": "기존 탐광가 추적 시스템 사용",
     "gmcm.use_legacy_prospector_hunt.desc": "보물 추적 시에 나오는 사운드 큐 대신 기존의 보라색 화살표를 사용합니다. 청각 장애인에게 유효한 옵션입니다.",
 
     // angler & aquarist
