@@ -2,7 +2,7 @@
   "Skills": {
     "EnableSkillReset": true,
     "SkillResetCostMultiplier": 1.0,
-    "ForgetRecipesOnSkillReset": true,
+    "ForgetRecipesOnSkillReset": false,
     "AllowMultipleResets": false,
     "SkillExpMultiplierPerReset": 1.1,
     "BaseMultipliers": {
@@ -34,7 +34,7 @@
   "EnableGoldenOstrichMayo": true,
   "ImmersiveDairyYield": true,
   "BeesAreAnimals": true,
-  "BreederFriendlyAnimalMultiplier": 10.0,
+  "BreederFriendlyAnimalMultiplier": 2.0,
   "ForagesNeededForBestQuality": 30,
   "MineralsNeededForBestQuality": 30,
   "TreasureHuntTriggerModifier": 1.0,
