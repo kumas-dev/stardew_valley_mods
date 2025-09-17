@@ -8,8 +8,9 @@ SaveBackup/
 config.toml
 config.json
 
+!Core/SpaceCore/config.json
 !Stardew Valley Expanded/**/config.json
-!Ridgeside Village/**/config.json
+!DaLion/**/config.json
 
 # cache
 Core/FarmTypeManager/data
@@ -17,5 +18,6 @@ Core/FarmTypeManager/data
 
 # temporary
 _Temporary/
+SMAPI*/
 
 .DS_Store
