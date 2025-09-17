@@ -14,6 +14,7 @@ config.json
 
 # cache
 Core/FarmTypeManager/data
+UIInfoSuite2/data
 *_SaveData.save
 
 # temporary
