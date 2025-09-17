@@ -1,0 +1,141 @@
+{
+    "Changes": [
+        { // Existing Museum Rewards
+            "Action": "EditData",
+            "Target": "Data/MuseumRewards",
+            "Fields": {
+                "museum5": {
+                    "RewardItemId": "(O)474", // Cauliflower Seeds
+                    "RewardItemCount": "9"
+                },
+                "museum10": {
+                    "RewardItemId": "(O)681", // Rain Totem
+                    "RewardItemCount": "2"
+                },
+                "museum15": {
+                    "RewardItemId": "(O)479", // Melon Seeds
+                    "RewardItemCount": "9"
+                },
+                "museum20": {
+                    "RewardItemId": "(O)486", // Starfruit Seeds
+                    "RewardItemCount": "5"
+                },
+                "museum25": {
+                    "RewardItemId": "(F)1541", // A Night On Eco-Hill Painting  
+                    "RewardItemCount": "1"
+                },
+                "museum30": {
+                    "RewardItemId": "(O)490", // Pumpkin Seeds
+                    "RewardItemCount": "9"
+                },
+                "museum35": {
+                    "RewardItemId": "(O)253", // Triple Shot Espresso
+                    "RewardItemCount": "10"
+                },
+                "museum60": {
+                    "RewardItemId": "(O)797", // Pearl
+                    "RewardItemCount": "1"
+                },
+                "museum70": {
+                    "RewardItemId": "(O)MysteryBox", // Mystery Box
+                    "RewardItemCount": "5"
+                },
+                "museum80": {
+                    "RewardItemId": "(F)1669", // Lg. Futan Bear
+                    "RewardItemCount": "1"
+                },
+                "museum90": {
+                    "RewardItemId": "(O)279", // Magic Rock Candy
+                    "RewardItemCount": "1"
+                }
+            },
+            "When": {
+                "Museum Rewards": true
+            }
+        },
+        { // Added Museum Rewards
+            "Action": "EditData",
+            "Target": "Data/MuseumRewards",
+            "Entries": {
+                "museum45": {
+                    "TargetContextTags": [
+                        {
+                            "Tag": "",
+                            "Count": "45"
+                        }
+                    ],
+                    "RewardItemId": "(O)688", // Warp Totem: Farm
+                    "RewardItemCount": "5",
+                    "RewardItemIsSpecial": false,
+                    "RewardItemIsRecipe": false,
+                    "RewardActions": null,
+                    "FlagOnCompletion": true,
+                    "CustomFields": null
+                },
+                "museum55": {
+                    "TargetContextTags": [
+                        {
+                            "Tag": "",
+                            "Count": "55"
+                        }
+                    ],
+                    "RewardItemId": "(O)872", // Fairy Dust
+                    "RewardItemCount": "10",
+                    "RewardItemIsSpecial": false,
+                    "RewardItemIsRecipe": false,
+                    "RewardActions": null,
+                    "FlagOnCompletion": true,
+                    "CustomFields": null
+                },
+                "museum65": {
+                    "TargetContextTags": [
+                        {
+                            "Tag": "",
+                            "Count": "65"
+                        }
+                    ],
+                    "RewardItemId": "(F)1554", // Jade Hills Painting
+                    "RewardItemCount": "1",
+                    "RewardItemIsSpecial": false,
+                    "RewardItemIsRecipe": false,
+                    "RewardActions": null,
+                    "FlagOnCompletion": true,
+                    "CustomFields": null
+                },
+                "museum75": {
+                    "TargetContextTags": [
+                        {
+                            "Tag": "",
+                            "Count": "75"
+                        }
+                    ],
+                    "RewardItemId": "(O)PrizeTicket", // Prize Ticket
+                    "RewardItemCount": "5",
+                    "RewardItemIsSpecial": false,
+                    "RewardItemIsRecipe": false,
+                    "RewardActions": null,
+                    "FlagOnCompletion": true,
+                    "CustomFields": null
+                },
+                "museum85": {
+                    "TargetContextTags": [
+                        {
+                            "Tag": "",
+                            "Count": "85"
+                        }
+                    ],
+                    "RewardItemId": "(O)StardropTea", // Stardrop Tea
+                    "RewardItemCount": "3",
+                    "RewardItemIsSpecial": false,
+                    "RewardItemIsRecipe": false,
+                    "RewardActions": null,
+                    "FlagOnCompletion": true,
+                    "CustomFields": null
+                }
+            },
+            "When": {
+                "Museum Rewards": true
+            }
+        }
+    ]
+}

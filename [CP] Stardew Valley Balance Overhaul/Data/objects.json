@@ -1,0 +1,2627 @@
+{
+	"Changes": [
+		{ // Sell Prices
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"190": { // Cauliflower
+					"Price": "190"
+				},
+				"248": { // Garlic
+					"Price": "85"
+				},
+				"188": { // Green Bean
+					"Price": "65"
+				},
+				"250": { // Kale
+					"Price": "130"
+				},
+				"24": { // Parsnip
+					"Price": "65"
+				},
+				"192": { // Potato
+					"Price": "95"
+				},
+				"252": { // Rhubarb
+					"Price": "225"
+				},
+				"400": { // Strawberry
+					"Price": "80"
+				},
+				"433": { // Coffee Bean
+					"Price": "5"
+				},
+				"454": { // Ancient Fruit
+					"Price": "250"
+				},
+				"90": { // Cactus Fruit
+					"Price": "75"
+				},
+				"Carrot": { // Carrot
+					"Price": "55"
+				},
+				"258": { // Blueberry
+					"Price": "30"
+				},
+				"270": { // Corn
+					"Price": "65"
+				},
+				"304": { // Hops
+					"Price": "25"
+				},
+				"260": { // Hot Pepper
+					"Price": "40"
+				},
+				"254": { // Melon
+					"Price": "190"
+				},
+				"264": { // Radish
+					"Price": "100"
+				},
+				"266": { // Red Cabbage
+					"Price": "195"
+				},
+				"268": { // Starfruit
+					"Price": "220"
+				},
+				"256": { // Tomato
+					"Price": "70"
+				},
+				"262": { // Wheat
+					"Price": "45"
+				},
+				"830": { // Taro Root
+					"Price": "130"
+				},
+				"832": { // Pineapple
+					"Price": "185"
+				},
+				"SummerSquash": { // Summer Squash
+					"Price": "40"
+				},
+				"300": { // Amaranth
+					"Price": "140"
+				},
+				"274": { // Artichoke
+					"Price": "120"
+				},
+				"284": { // Beet
+					"Price": "95"
+				},
+				"278": { // Bok Choy
+					"Price": "95"
+				},
+				"282": { // Cranberries
+					"Price": "50"
+				},
+				"272": { // Eggplant
+					"Price": "60"
+				},
+				"398": { // Grape
+					"Price": "65"
+				},
+				"276": { // Pumpkin
+					"Price": "220"
+				},
+				"280": { // Yam
+					"Price": "155"
+				},
+				"Broccoli": { // Broccoli
+					"Price": "65"
+				},
+				"815": { // Tea Leaves
+					"Price": "50"
+				},
+				"Powdermelon": { // Powdermelon
+					"Price": "105"
+				},
+				"417": { // Sweet Gem Berry
+					"Price": "1500"
+				},
+				"271": { // Unmilled Rice
+					"Price": "80"
+				},
+				"482": { // Pepper Seeds
+					"Price": "15"
+				},
+				"486": { // Starfruit Seeds
+					"Price": "50"
+				},
+				"597": { // Blue Jazz
+					"Price": "145"
+				},
+				"591": { // Tulip
+					"Price": "135"
+				},
+				"376": { // Poppy
+					"Price": "145"
+				},
+				"593": { // Summer Spangle
+					"Price": "155"
+				},
+				"595": { // Fairy Rose
+					"Price": "165"
+				},
+				"421": { // Sunflower
+					"Price": "90"
+				},
+				"429": { // Blue Jazz Seed
+					"Price": "40"
+				},
+				"427": { // Tulip Seed
+					"Price": "35"
+				},
+				"453": { // Poppy Seed
+					"Price": "40"
+				},
+				"455": { // Summer Spangle Seed
+					"Price": "40"
+				},
+				"425": { // Fairy Rose Seed
+					"Price": "45"
+				},
+				"431": { // Sunflower Seed
+					"Price": "30"
+				},
+				"176": { // Egg
+					"Price": "65"
+				},
+				"180": { // Egg
+					"Price": "65"
+				},
+				"305": { // Void Egg
+					"Price": "130"
+				},
+				"442": { // Duck Egg
+					"Price": "260"
+				},
+				"440": { // Wool
+					"Price": "460"
+				},
+				"107": { // Dinosaur Egg
+					"Price": "875"
+				},
+				"928": { // Golden Egg
+					"Price": "250"
+				},
+				"184": { // Milk
+					"Price": "75"
+				},
+				"436": { // Goat Milk
+					"Price": "150"
+				},
+				"289": { // Ostrich Egg
+					"Price": "1000"
+				},
+				"174": { // Large Egg
+					"Price": "130"
+				},
+				"182": { // Large Egg
+					"Price": "130"
+				},
+				"444": { // Duck Feather
+					"Price": "520"
+				},
+				"446": { // Rabbit's Foot
+					"Price": "920"
+				},
+				"186": { // Large Milk
+					"Price": "150"
+				},
+				"438": { // L. Goat Milk
+					"Price": "300"
+				},
+				"306": { // Mayonnaise
+					"Price": "130"
+				},
+				"308": { // Void Mayonnaise
+					"Price": "260"
+				},
+				"307": { // Duck Mayonnaise
+					"Price": "520"
+				},
+				"428": { // Cloth
+					"Price": "920"
+				},
+				"430": { // Truffle
+					"Price": "270"
+				},
+				"432": { // Truffle Oil
+					"Price": "540"
+				},
+				"807": { // Dinosaur Mayonnaise
+					"Price": "1750"
+				},
+				"424": { // Cheese
+					"Price": "150"
+				},
+				"426": { // Goat Cheese
+					"Price": "300"
+				},
+				"634": { // Apricot
+					"Price": "100"
+				},
+				"638": { // Cherry
+					"Price": "110"
+				},
+				"91": { // Banana
+					"Price": "110"
+				},
+				"834": { // Mango
+					"Price": "105"
+				},
+				"635": { // Orange
+					"Price": "100"
+				},
+				"636": { // Peach
+					"Price": "110"
+				},
+				"613": { // Apple
+					"Price": "105"
+				},
+				"637": { // Pomegranate
+					"Price": "110"
+				},
+				"629": { // Apricot Sapling
+					"Price": "550"
+				},
+				"628": { // Cherry Sapling
+					"Price": "600"
+				},
+				"69": { // Banana Sapling
+					"Price": "600"
+				},
+				"835": { // Mango Sapling
+					"Price": "575"
+				},
+				"630": { // Orange Sapling
+					"Price": "550"
+				},
+				"631": { // Peach Sapling
+					"Price": "600"
+				},
+				"633": { // Apple Sapling
+					"Price": "575"
+				},
+				"632": { // Pomegranate Sapling
+					"Price": "600"
+				},
+				"74": { // Prismatic Shard
+					"Price": "1500"
+				},
+				"72": { // Diamond
+					"Price": "500"
+				},
+				"70": { // Jade
+					"Price": "200"
+				},
+				"68": { // Topaz
+					"Price": "150"
+				},
+				"66": { // Amethyst
+					"Price": "150"
+				},
+				"64": { // Ruby
+					"Price": "250"
+				},
+				"62": { // Aquamarine
+					"Price": "200"
+				},
+				"60": { // Emerald
+					"Price": "250"
+				},
+				"749": { // Omni Geode
+					"Price": "100"
+				},
+				"275": { // Artifact Trove
+					"Price": "100"
+				},
+				"82": { // Fire Quartz
+					"Price": "150"
+				},
+				"86": { // Earth Crystal
+					"Price": "120"
+				},
+				"80": { // Quartz
+					"Price": "50"
+				},
+				"84": { // Frozen Tear
+					"Price": "100"
+				},
+				"848": { // Cinder Shard
+					"Price": "125"
+				},
+				"338": { // Refined Quartz
+					"Price": "100"
+				},
+				"382": { // Coal
+					"Price": "30"
+				},
+				"378": { // Copper Ore
+					"Price": "10"
+				},
+				"380": { // Iron Ore
+					"Price": "20"
+				},
+				"384": { // Gold Ore
+					"Price": "35"
+				},
+				"386": { // Iridium Ore
+					"Price": "75"
+				},
+				"909": { // Radioactive Ore
+					"Price": "150"
+				},
+				"334": { // Copper Bar
+					"Price": "100"
+				},
+				"335": { // Iron Bar
+					"Price": "200"
+				},
+				"336": { // Gold Bar
+					"Price": "350"
+				},
+				"337": { // Iridium Bar
+					"Price": "750"
+				},
+				"910": { // Radioactive Bar
+					"Price": "1500"
+				},
+				"814": { // Squid Ink
+					"Price": "150"
+				},
+				"769": { // Void Essence
+					"Price": "60"
+				},
+				"768": { // Solar Essence
+					"Price": "60"
+				},
+				"767": { // Bat Wing
+					"Price": "30"
+				},
+				"684": { // Bug Meat
+					"Price": "15"
+				},
+				"766": { // Slime
+					"Price": "10"
+				},
+				"881": { // Bone Fragment
+					"Price": "20"
+				},
+				"96": { // Dwarf Scroll I
+					"Price": "100"
+				},
+				"97": { // Dwarf Scroll II
+					"Price": "100"
+				},
+				"98": { // Dwarf Scroll III
+					"Price": "100"
+				},
+				"99": { // Dwarf Scroll IV
+					"Price": "100"
+				},
+				"100": { // Chipped Amphora
+					"Price": "100"
+				},
+				"101": { // Arrowhead
+					"Price": "120"
+				},
+				"103": { // Ancient Doll
+					"Price": "180"
+				},
+				"104": { // Elvish Jewelry
+					"Price": "300"
+				},
+				"105": { // Chewing Stick
+					"Price": "150"
+				},
+				"106": { // Ornamental Fan
+					"Price": "300"
+				},
+				"108": { // Rare Disc
+					"Price": "300"
+				},
+				"109": { // Ancient Sword
+					"Price": "100"
+				},
+				"110": { // Rusty Spoon
+					"Price": "70"
+				},
+				"111": { // Rusty Spur
+					"Price": "70"
+				},
+				"112": { // Rusty Cog
+					"Price": "70"
+				},
+				"113": { // Chicken Statue
+					"Price": "150"
+				},
+				"114": { // Ancient Seed
+					"Price": "100"
+				},
+				"115": { // Prehistoric Tool
+					"Price": "150"
+				},
+				"116": { // Dried Starfish
+					"Price": "120"
+				},
+				"117": { // Anchor
+					"Price": "200"
+				},
+				"118": { // Glass Shards
+					"Price": "40"
+				},
+				"119": { // Bone Flute
+					"Price": "300"
+				},
+				"120": { // Prehistoric Handaxe
+					"Price": "100"
+				},
+				"121": { // Dwarvish Helm
+					"Price": "300"
+				},
+				"122": { // Dwarf Gadget
+					"Price": "500"
+				},
+				"123": { // Ancient Drum
+					"Price": "300"
+				},
+				"124": { // Golden Mask
+					"Price": "500"
+				},
+				"125": { // Golden Relic
+					"Price": "500"
+				},
+				"126": { // Strange Doll
+					"Price": "750"
+				},
+				"127": { // Strange Doll
+					"Price": "750"
+				},
+				"579": { // Prehistoric Scapula
+					"Price": "200"
+				},
+				"580": { // Prehistoric Tibia
+					"Price": "200"
+				},
+				"581": { // Prehistoric Skull
+					"Price": "200"
+				},
+				"582": { // Skeletal Hand
+					"Price": "200"
+				},
+				"583": { // Prehistoric Rib
+					"Price": "200"
+				},
+				"584": { // Prehistoric Vertebra
+					"Price": "200"
+				},
+				"585": { // Skeletal Tail
+					"Price": "200"
+				},
+				"586": { // Nautilus Fossil
+					"Price": "200"
+				},
+				"587": { // Amphibian Fossil
+					"Price": "200"
+				},
+				"588": { // Palm Fossil
+					"Price": "200"
+				},
+				"589": { // Trilobite
+					"Price": "100"
+				},
+				"823": { // Fossilized Leg
+					"Price": "200"
+				},
+				"824": { // Fossilized Ribs
+					"Price": "200"
+				},
+				"820": { // Fossilized Skull
+					"Price": "200"
+				},
+				"821": { // Fossilized Spine
+					"Price": "200"
+				},
+				"822": { // Fossilized Tail
+					"Price": "200"
+				},
+				"828": { // Mummified Frog
+					"Price": "200"
+				},
+				"827": { // Mummified Bat
+					"Price": "200"
+				},
+				"825": { // Snake Skull
+					"Price": "200"
+				},
+				"826": { // Snake Vertebrae
+					"Price": "200"
+				},
+				"538": { // Alamite
+					"Price": "225"
+				},
+				"542": { // Calcite
+					"Price": "115"
+				},
+				"548": { // Jamborite
+					"Price": "225"
+				},
+				"549": { // Jagoite
+					"Price": "175"
+				},
+				"552": { // Malachite
+					"Price": "150"
+				},
+				"555": { // Nekoite
+					"Price": "120"
+				},
+				"556": { // Orpiment
+					"Price": "120"
+				},
+				"558": { // Thunder Egg
+					"Price": "150"
+				},
+				"566": { // Celestine
+					"Price": "190"
+				},
+				"568": { // Sandstone
+					"Price": "90"
+				},
+				"569": { // Granite
+					"Price": "115"
+				},
+				"571": { // Limestone
+					"Price": "25"
+				},
+				"574": { // Mudstone
+					"Price": "40"
+				},
+				"576": { // Slate
+					"Price": "165"
+				},
+				"557": { // Petrified Slime
+					"Price": "180"
+				},
+				"564": { // Opal
+					"Price": "225"
+				},
+				"541": { // Aerinite
+					"Price": "190"
+				},
+				"544": { // Esperite
+					"Price": "150"
+				},
+				"545": { // Fluorapatite
+					"Price": "300"
+				},
+				"546": { // Geminite
+					"Price": "225"
+				},
+				"550": { // Kyanite
+					"Price": "250"
+				},
+				"551": { // Lunarite
+					"Price": "300"
+				},
+				"559": { // Pyrite
+					"Price": "180"
+				},
+				"560": { // Ocean Stone
+					"Price": "275"
+				},
+				"561": { // Ghost Crystal
+					"Price": "300"
+				},
+				"567": { // Marble
+					"Price": "165"
+				},
+				"572": { // Soapstone
+					"Price": "180"
+				},
+				"573": { // Hematite
+					"Price": "225"
+				},
+				"577": { // Fairy Stone
+					"Price": "250"
+				},
+				"562": { // Tigerseye
+					"Price": "275"
+				},
+				"565": { // Fire Opal
+					"Price": "350"
+				},
+				"540": { // Baryte
+					"Price": "75"
+				},
+				"543": { // Dolomite
+					"Price": "300"
+				},
+				"547": { // Helvite
+					"Price": "450"
+				},
+				"554": { // Lemon Stone
+					"Price": "300"
+				},
+				"563": { // Jasper
+					"Price": "225"
+				},
+				"570": { // Basalt
+					"Price": "265"
+				},
+				"575": { // Obsidian
+					"Price": "300"
+				},
+				"578": { // Star Shards
+					"Price": "500"
+				},
+				"539": { // Bixite
+					"Price": "300"
+				},
+				"553": { // Neptunite
+					"Price": "400"
+				},
+				"16": { // Wild Horseradish
+					"Price": "70"
+				},
+				"18": { // Daffodil
+					"Price": "50"
+				},
+				"20": { // Leek
+					"Price": "80"
+				},
+				"22": { // Dandelion
+					"Price": "60"
+				},
+				"399": { // Spring Onion
+					"Price": "15"
+				},
+				"396": { // Spice Berry
+					"Price": "80"
+				},
+				"402": { // Sweet Pea
+					"Price": "65"
+				},
+				"404": { // Common Mushroom
+					"Price": "65"
+				},
+				"406": { // Wild Plum
+					"Price": "85"
+				},
+				"408": { // Hazelnut
+					"Price": "85"
+				},
+				"296": { // Salmonberry
+					"Price": "15"
+				},
+				"410": { // Blackberry
+					"Price": "25"
+				},
+				"412": { // Winter Root
+					"Price": "65"
+				},
+				"414": { // Crystal Fruit
+					"Price": "80"
+				},
+				"416": { // Snow Yam
+					"Price": "70"
+				},
+				"418": { // Crocus
+					"Price": "55"
+				},
+				"283": { // Holly
+					"Price": "50"
+				},
+				"259": { // Fiddlehead Fern
+					"Price": "110"
+				},
+				"281": { // Chanterelle
+					"Price": "120"
+				},
+				"420": { // Red Mushroom
+					"Price": "75"
+				},
+				"422": { // Purple Mushroom
+					"Price": "130"
+				},
+				"257": { // Morel
+					"Price": "120"
+				},
+				"88": { // Coconut
+					"Price": "100"
+				},
+				"791": { // Golden Coconut
+					"Price": "200"
+				},
+				"388": { // Wood
+					"Price": "4"
+				},
+				"390": { // Stone
+					"Price": "5"
+				},
+				"92": { // Sap
+					"Price": "5"
+				},
+				"709": { // Hardwood
+					"Price": "25"
+				},
+				"771": { // Fiber
+					"Price": "5"
+				},
+				"330": { // Clay
+					"Price": "40"
+				},
+				"178": { // Hay
+					"Price": "3"
+				},
+				"685": { // Bait
+					"Price": "2"
+				},
+				"774": { // Wild Bait
+					"Price": "10"
+				},
+				"DeluxeBait": { // Deluxe Bait
+					"Price": "10"
+				},
+				"908": { // Magic Bait
+					"Price": "25"
+				},
+				"ChallengeBait": { // Challenge Bait
+					"Price": "20"
+				},
+				"309": { // Acorn
+					"Price": "10"
+				},
+				"310": { // Maple Seed
+					"Price": "10"
+				},
+				"311": { // Pine Cone
+					"Price": "10"
+				},
+				"292": { // Mahogany Seed
+					"Price": "50"
+				},
+				"829": { // Ginger
+					"Price": "90"
+				},
+				"78": { // Cave Carrot
+					"Price": "75"
+				},
+				"340": { // Honey
+					"Price": "250" //Proccesses to 150g
+				},
+				"724": { // Maple Syrup
+					"Price": "200"
+				},
+				"725": { // Oak Resin
+					"Price": "150"
+				},
+				"726": { // Pine Tar
+					"Price": "100"
+				},
+				"MysticSyrup": { // Mystic Syrup
+					"Price": "500"
+				},
+				"787": { // Battery Pack
+					"Price": "300"
+				},
+				"297": { // Grass Starter
+					"Price": "25"
+				},
+				"251": { // Tea Sapling
+					"Price": "50"
+				},
+				"874": { // Bug Steak
+					"Price": "50"
+				},
+				"403": { // Field Snack
+					"Price": "20"
+				},
+				"812": { // Roe
+					"Price": "50"
+				},
+				"447": { // Aged Roe
+					"Price": "100"
+				},
+				"445": { // Caviar
+					"Price": "300"
+				},
+				"245": { // Sugar
+					"Price": "30"
+				},
+				"246": { // Wheat Flour
+					"Price": "50"
+				},
+				"423": { // Rice
+					"Price": "100"
+				},
+				"247": { // Oil
+					"Price": "100"
+				},
+				"419": { // Vinegar
+					"Price": "100"
+				},
+				"395": { // Coffee
+					"Price": "140"
+				},
+				"303": { // Pale Ale
+					"Price": "90"
+				},
+				"346": { // Beer
+					"Price": "160"
+				},
+				"614": { // Green Tea
+					"Price": "200"
+				},
+				"Raisins": { // Raisins
+					"Price": "500"
+				},
+				"128": { // Pufferfish
+					"Price": "155"
+				},
+				"129": { // Anchovy
+					"Price": "55"
+				},
+				"130": { // Tuna
+					"Price": "115"
+				},
+				"131": { // Sardine
+					"Price": "55"
+				},
+				"132": { // Bream
+					"Price": "60"
+				},
+				"136": { // Largemouth Bass
+					"Price": "85"
+				},
+				"137": { // Smallmouth Bass
+					"Price": "55"
+				},
+				"138": { // Rainbow Trout
+					"Price": "75"
+				},
+				"139": { // Salmon
+					"Price": "85"
+				},
+				"140": { // Walleye
+					"Price": "75"
+				},
+				"141": { // Perch
+					"Price": "60"
+				},
+				"142": { // Carp
+					"Price": "50"
+				},
+				"143": { // Catfish
+					"Price": "135"
+				},
+				"144": { // Pike
+					"Price": "95"
+				},
+				"145": { // Sunfish
+					"Price": "55"
+				},
+				"146": { // Red Mullet
+					"Price": "90"
+				},
+				"147": { // Herring
+					"Price": "55"
+				},
+				"148": { // Eel
+					"Price": "115"
+				},
+				"149": { // Octopus
+					"Price": "215"
+				},
+				"150": { // Red Snapper
+					"Price": "65"
+				},
+				"151": { // Squid
+					"Price": "135"
+				},
+				"154": { // Sea Cucumber
+					"Price": "65"
+				},
+				"155": { // Super Cucumber
+					"Price": "155"
+				},
+				"156": { // Ghostfish
+					"Price": "85"
+				},
+				"164": { // Sandfish
+					"Price": "100"
+				},
+				"165": { // Scorpion Carp
+					"Price": "225"
+				},
+				"267": { // Flounder
+					"Price": "85"
+				},
+				"269": { // Midnight Carp
+					"Price": "110"
+				},
+				"698": { // Sturgeon
+					"Price": "155"
+				},
+				"699": { // Tiger Trout
+					"Price": "95"
+				},
+				"700": { // Bullhead
+					"Price": "85"
+				},
+				"701": { // Tilapia
+					"Price": "85"
+				},
+				"702": { // Chub
+					"Price": "60"
+				},
+				"704": { // Dorado
+					"Price": "155"
+				},
+				"705": { // Albacore
+					"Price": "95"
+				},
+				"706": { // Shad
+					"Price": "75"
+				},
+				"707": { // Lingcod
+					"Price": "165"
+				},
+				"708": { // Halibut
+					"Price": "85"
+				},
+				"734": { // Woodskip
+					"Price": "110"
+				},
+				"795": { // Void Salmon
+					"Price": "160"
+				},
+				"796": { // Slimejack
+					"Price": "100"
+				},
+				"836": { // Stingray
+					"Price": "155"
+				},
+				"837": { // Lionfish
+					"Price": "85"
+				},
+				"838": { // Blue Discus
+					"Price": "95"
+				},
+				"158": { // Stonefish
+					"Price": "150"
+				},
+				"161": { // Ice Pip
+					"Price": "250"
+				},
+				"162": { // Lava Eel
+					"Price": "290"
+				},
+				"798": { // Midnight Squid
+					"Price": "135"
+				},
+				"799": { // Spook Fish
+					"Price": "165"
+				},
+				"800": { // Blobfish
+					"Price": "250"
+				},
+				"159": { // Crimsonfish
+					"Price": "2000"
+				},
+				"160": { // Angler
+					"Price": "1500"
+				},
+				"163": { // Legend
+					"Price": "3000"
+				},
+				"775": { // Glacierfish
+					"Price": "2000"
+				},
+				"682": { // Mutant Carp
+					"Price": "1500"
+				},
+				"898": { // Son of Crimsonfish
+					"Price": "900"
+				},
+				"899": { // Ms. Angler
+					"Price": "800"
+				},
+				"900": { // Legend II
+					"Price": "1000"
+				},
+				"902": { // Glacierfish Jr.
+					"Price": "900"
+				},
+				"901": { // Radioactive Carp
+					"Price": "800"
+				},
+				"715": { // Lobster
+					"Price": "160"
+				},
+				"372": { // Clam
+					"Price": "70"
+				},
+				"716": { // Crayfish
+					"Price": "120"
+				},
+				"717": { // Crab
+					"Price": "140"
+				},
+				"718": { // Cockle
+					"Price": "80"
+				},
+				"719": { // Mussel
+					"Price": "60"
+				},
+				"720": { // Shrimp
+					"Price": "100"
+				},
+				"721": { // Snail
+					"Price": "100"
+				},
+				"722": { // Periwinkle
+					"Price": "60"
+				},
+				"723": { // Oyster
+					"Price": "70"
+				},
+				"152": { // Seaweed
+					"Price": "35"
+				},
+				"153": { // Green Algae
+					"Price": "25"
+				},
+				"157": { // White Algae
+					"Price": "40"
+				},
+				"194": { // Fried Egg
+					"Price": "70"
+				},
+				"195": { // Omelet
+					"Price": "155"
+				},
+				"196": { // Salad
+					"Price": "265"
+				},
+				"197": { // Cheese Cauliflower
+					"Price": "375"
+				},
+				"198": { // Baked Fish
+					"Price": "180"
+				},
+				"199": { // Parsnip Soup
+					"Price": "265"
+				},
+				"200": { // Vegetable Medley
+					"Price": "170"
+				},
+				"201": { // Complete Breakfast
+					"Price": "570"
+				},
+				"202": { // Fried Calamari
+					"Price": "315"
+				},
+				"203": { // Strange Bun
+					"Price": "405"
+				},
+				"204": { // Lucky Lunch
+					"Price": "310"
+				},
+				"205": { // Fried Mushroom
+					"Price": "315"
+				},
+				"206": { // Pizza
+					"Price": "295"
+				},
+				"207": { // Bean Hotpot
+					"Price": "145"
+				},
+				"208": { // Glazed Yams
+					"Price": "205"
+				},
+				"209": { // Carp Surprise
+					"Price": "220"
+				},
+				"210": { // Hashbrowns
+					"Price": "215"
+				},
+				"211": { // Pancakes
+					"Price": "160"
+				},
+				"212": { // Salmon Dinner
+					"Price": "390"
+				},
+				"213": { // Fish Taco
+					"Price": "560"
+				},
+				"214": { // Crispy Bass
+					"Price": "260"
+				},
+				"215": { // Pepper Poppers
+					"Price": "210"
+				},
+				"216": { // Bread
+					"Price": "55"
+				},
+				"218": { // Tom Kha Soup
+					"Price": "290"
+				},
+				"219": { // Trout Soup
+					"Price": "110"
+				},
+				"220": { // Chocolate Cake
+					"Price": "160"
+				},
+				"221": { // Pink Cake
+					"Price": "420"
+				},
+				"222": { // Rhubarb Pie
+					"Price": "335"
+				},
+				"223": { // Cookie
+					"Price": "160"
+				},
+				"224": { // Spaghetti
+					"Price": "130"
+				},
+				"225": { // Fried Eel
+					"Price": "235"
+				},
+				"226": { // Spicy Eel
+					"Price": "170"
+				},
+				"227": { // Sashimi
+					"Price": "70"
+				},
+				"228": { // Maki Roll
+					"Price": "220"
+				},
+				"229": { // Tortilla
+					"Price": "70"
+				},
+				"230": { // Red Plate
+					"Price": "325"
+				},
+				"231": { // Eggplant Parmesan
+					"Price": "175"
+				},
+				"232": { // Rice Pudding
+					"Price": "225"
+				},
+				"233": { // Ice Cream
+					"Price": "115"
+				},
+				"234": { // Blueberry Tart
+					"Price": "195"
+				},
+				"235": { // Autumn's Bounty
+					"Price": "415"
+				},
+				"236": { // Pumpkin Soup
+					"Price": "325"
+				},
+				"237": { // Super Meal
+					"Price": "290"
+				},
+				"238": { // Cranberry Sauce
+					"Price": "90"
+				},
+				"239": { // Stuffing
+					"Price": "210"
+				},
+				"240": { // Farmer's Lunch
+					"Price": "240"
+				},
+				"241": { // Survival Burger
+					"Price": "210"
+				},
+				"242": { // Dish O' The Sea
+					"Price": "360"
+				},
+				"243": { // Miner's Treat
+					"Price": "280"
+				},
+				"244": { // Roots Platter
+					"Price": "155"
+				},
+				"253": { // Triple Shot Espresso
+					"Price": "460"
+				},
+				"265": { // Seafoam Pudding
+					"Price": "280"
+				},
+				"456": { // Algae Soup
+					"Price": "110"
+				},
+				"457": { // Pale Broth
+					"Price": "90"
+				},
+				"604": { // Plum Pudding
+					"Price": "275"
+				},
+				"605": { // Artichoke Dip
+					"Price": "215"
+				},
+				"606": { // Stir Fry
+					"Price": "405"
+				},
+				"607": { // Roasted Hazelnuts
+					"Price": "280"
+				},
+				"608": { // Pumpkin Pie
+					"Price": "415"
+				},
+				"609": { // Radish Salad
+					"Price": "330"
+				},
+				"610": { // Fruit Salad
+					"Price": "350"
+				},
+				"611": { // Blackberry Cobbler
+					"Price": "145"
+				},
+				"612": { // Cranberry Candy
+					"Price": "205"
+				},
+				"618": { // Bruschetta
+					"Price": "250"
+				},
+				"648": { // Coleslaw
+					"Price": "470"
+				},
+				"649": { // Fiddlehead Risotto
+					"Price": "325"
+				},
+				"651": { // Poppyseed Muffin
+					"Price": "250"
+				},
+				"727": { // Chowder
+					"Price": "160"
+				},
+				"728": { // Fish Stew
+					"Price": "340"
+				},
+				"729": { // Escargot
+					"Price": "205"
+				},
+				"730": { // Lobster Bisque
+					"Price": "260"
+				},
+				"731": { // Maple Bar
+					"Price": "310"
+				},
+				"732": { // Crab Cakes
+					"Price": "390"
+				},
+				"733": { // Shrimp Cocktail
+					"Price": "265"
+				},
+				"903": { // Ginger Ale
+					"Price": "130"
+				},
+				"904": { // Banana Pudding
+					"Price": "235"
+				},
+				"905": { // Mango Sticky Rice
+					"Price": "335"
+				},
+				"906": { // Poi
+					"Price": "570"
+				},
+				"907": { // Tropical Curry
+					"Price": "360"
+				},
+				"921": { // Squid Ink Ravioli
+					"Price": "200"
+				},
+				"773": { // Life Elixir
+					"Price": "490"
+				},
+				"772": { // Oil of Garlic
+					"Price": "1045"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true
+			}
+		},
+		{ // Gems (Lumisteria Glimmering Clumps and Nodes)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"72": { // Diamond
+					"Price": "250"
+				},
+				"70": { // Jade
+					"Price": "100"
+				},
+				"68": { // Topaz
+					"Price": "75"
+				},
+				"66": { // Amethyst
+					"Price": "75"
+				},
+				"64": { // Ruby
+					"Price": "125"
+				},
+				"62": { // Aquamarine
+					"Price": "100"
+				},
+				"60": { // Emerald
+					"Price": "125"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=Lumisteria.GlimmeringClumpsNodes": true
+			}
+		},
+		{ // Vanilla Mead
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"459": { // Mead
+					"Price": "450"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=selph.FlavoredMead": false,
+				"HasMod|contains=BetterHoneyMeadCP": false
+			}
+		},
+		{ // Flavor Mead
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"459": { // Mead
+					"Price": "300"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod": "selph.FlavoredMead, NCarigon.BetterHoneyMeadCP"
+			}
+		},
+		{ // Offset Tapper Aging (Walk of Life)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"724": { // Maple Syrup
+					"Price": "150"
+				},
+				"725": { // Oak Resin
+					"Price": "110"
+				},
+				"726": { // Pine Tar
+					"Price": "75"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=DaLion.Professions": true
+			}
+		},
+		{ // Apples Event (SVE)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"268": { // Starfruit
+					"Price": "240"
+				}
+			},
+			"When": {
+				"HasSeenEvent: anyPlayer| contains=7776009": true,
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{ // Sofia Event (SVE)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"398": { // Grape
+					"Price": "75"
+				}
+			},
+			"When": {
+				"Spouse": "Sophia",
+				"HasSeenEvent: anyPlayer| contains=8185300": true,
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{ // Andy Special Order (SVE)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"400": { // Strawberry
+					"Price": "90"
+				}
+			},
+			"When": {
+				"HasSeenEvent: anyPlayer| contains=5407915": true,
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{ // Morgan Event (SVE)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"176": { // Egg
+					"Price": "70"
+				},
+				"180": { // Egg
+					"Price": "70"
+				},
+				"305": { // Void Egg
+					"Price": "140"
+				},
+				"442": { // Duck Egg
+					"Price": "265"
+				},
+				"440": { // Wool
+					"Price": "480"
+				},
+				"107": { // Dinosaur Egg
+					"Price": "900"
+				},
+				"928": { // Golden Egg
+					"Price": "300"
+				},
+				"184": { // Milk
+					"Price": "80"
+				},
+				"436": { // Goat Milk
+					"Price": "160"
+				},
+				"289": { // Ostrich Egg
+					"Price": "1100"
+				},
+				"174": { // Large Egg
+					"Price": "140"
+				},
+				"182": { // Large Egg
+					"Price": "140"
+				},
+				"444": { // Duck Feather
+					"Price": "550"
+				},
+				"446": { // Rabbit's Foot
+					"Price": "960"
+				},
+				"186": { // Large Milk
+					"Price": "160"
+				},
+				"438": { // L. Goat Milk
+					"Price": "320"
+				},
+				"306": { // Mayonnaise
+					"Price": "140"
+				},
+				"308": { // Void Mayonnaise
+					"Price": "280"
+				},
+				"307": { // Duck Mayonnaise
+					"Price": "530"
+				},
+				"428": { // Cloth
+					"Price": "960"
+				},
+				"430": { // Truffle
+					"Price": "280"
+				},
+				"432": { // Truffle Oil
+					"Price": "560"
+				},
+				"807": { // Dinosaur Mayonnaise
+					"Price": "1800"
+				},
+				"424": { // Cheese
+					"Price": "160"
+				},
+				"426": { // Goat Cheese
+					"Price": "320"
+				}
+			},
+			"When": {
+				"HasSeenEvent: anyPlayer| contains=5978939": true,
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{ // Susan Special Order (SVE)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"303": { // Pale Ale
+					"Price": "100"
+				},
+				"346": { // Beer
+					"Price": "180"
+				},
+				"459": { // Mead
+					"Price": "250"
+				}
+			},
+			"When": {
+				"HasSeenEvent: anyPlayer| contains=5407917": true,
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{ // Susan Special Order (SVE + Cornucopia)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"303": { // Pale Ale
+					"Price": "180"
+				}
+			},
+			"When": {
+				"HasSeenEvent: anyPlayer| contains=5407917": true,
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod|contains=Cornucopia.GrowableForage": true
+			}
+		},
+		{ // Chocolate Cake Adjustment (Cornucopia More Crops)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"220": {
+					"Price": "265"
+				} // Chocolate Cake
+			},
+			"When": {
+				"HasMod|contains=Cornucopia.MoreCrops": true
+			}
+		},
+		{ // Food Adjustment (Cornucopia Artisan Machines)
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"213": { // Fish Taco
+					"Price": "555"
+				},
+				"204": { // Lucky Lunch
+					"Price": "285"
+				},
+				"905": { // Mango Sticky Rice
+					"Price": "575"
+				},
+				"224": { // Spaghetti
+					"Price": "280"
+				},
+				"226": { // Spicy Eel
+					"Price": "170"
+				},
+				"921": { // Squid Ink Ravioli
+					"Price": "455"
+				},
+				"218": { // Tom Kha Soup
+					"Price": "540"
+				},
+				"229": { // Tortilla
+					"Price": "55"
+				},
+				"907": { // Tropical Curry
+					"Price": "590"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+		},
+		{ // Bobber Sell Prices
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"686": { // Spinner
+					"Price": "150"
+				},
+				"694": { // Trap Bobber
+					"Price": "150"
+				},
+				"693": { // Treasure Hunter
+					"Price": "250"
+				},
+				"695": { // Cork Bobber
+					"Price": "200"
+				},
+				"691": { // Barbed Hook
+					"Price": "200"
+				},
+				"687": { // Dressed Spinner
+					"Price": "150"
+				}
+			},
+			"When": {
+				"Merge: {{Prices & Inventories}}, {{Sell Prices & Adjustments}}": true
+			}
+		},
+		{ // Stricter Seed Maker
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [
+				"417", // Sweet Gem Berry
+				"ContextTags"
+			],
+			"Entries": {
+				"#-1": "seedmaker_banned"
+			},
+			"When": {
+				"Sell Prices & Adjustments": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": [
+				"454", // Ancient Fruit
+				"ContextTags"
+			],
+			"Entries": {
+				"#-1": "seedmaker_banned"
+			},
+			"When": {
+				"Sell Prices & Adjustments": true
+			}
+		},
+		{ // Food
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"194": { // Fried Egg
+					"Edibility": "30"
+				},
+				"195": { // Omelet
+					"Edibility": "60"
+				},
+				"206": { // Pizza
+					"Edibility": "70"
+				},
+				"216": { // Bread
+					"Edibility": "30"
+				},
+				"224": { // Spaghetti
+					"Edibility": "50"
+				},
+				"227": { // Sashimi
+					"Edibility": "50"
+				},
+				"228": { // Maki Roll
+					"Edibility": "70"
+				},
+				"229": { // Tortilla
+					"Edibility": "30"
+				},
+				"196": { // Salad
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "2",
+								"MaxStamina": "30"
+							}
+						}
+					]
+				},
+				"197": { // Cheese Cauliflower
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Attack": "1",
+								"Defense": "1"
+							}
+						}
+					]
+				},
+				"198": { // Baked Fish
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"MaxStamina": "30"
+							}
+						}
+					]
+				},
+				"199": { // Parsnip Soup
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "1",
+								"MaxStamina": "30"
+							}
+						}
+					]
+				},
+				"201": { // Complete Breakfast
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "3",
+								"MaxStamina": "50"
+							}
+						}
+					]
+				},
+				"202": { // Fried Calamari
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"MagneticRadius": "32"
+							}
+						}
+					]
+				},
+				"203": { // Strange Bun
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"LuckLevel": "2"
+							}
+						}
+					]
+				},
+				"204": { // Lucky Lunch
+					"Buffs": [
+						{
+							"Duration": "1000",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"LuckLevel": "3"
+							}
+						}
+					]
+				},
+				"205": { // Fried Mushroom
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Attack": "2"
+							}
+						}
+					]
+				},
+				"207": { // Bean Hotspot
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MiningLevel": "2",
+								"MaxStamina": "30",
+								"MagneticRadius": "32"
+							}
+						}
+					]
+				},
+				"208": { // Glazed Yams
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "2",
+								"MagneticRadius": "32"
+							}
+						}
+					]
+				},
+				"209": { // Carp Surprise
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"MaxStamina": "50"
+							}
+						}
+					]
+				},
+				"210": { // Hashbrowns
+					"Edibility": "50",
+					"Buffs": [
+						{
+							"CustomAttributes": {
+								"FarmingLevel": "0"
+							}
+						}
+					]
+				},
+				"211": { // Pancakes
+					"Edibility": "50",
+					"Buffs": [
+						{
+							"CustomAttributes": {
+								"ForagingLevel": "0"
+							}
+						}
+					]
+				},
+				"212": { // Salmon Dinner
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"ForagingLevel": "1"
+							}
+						}
+					]
+				},
+				"213": { // Fish Taco
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"ForagingLevel": "3"
+							}
+						}
+					]
+				},
+				"214": { // Crispy Bass
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"MagneticRadius": "64"
+							}
+						}
+					]
+				},
+				"215": { // Pepper Poppers
+					"Buffs": [
+						{
+							"Duration": "500",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "2",
+								"Speed": "1"
+							}
+						}
+					]
+				},
+				"218": { // Tom Kha Soup
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "3",
+								"MaxStamina": "50"
+							}
+						}
+					]
+				},
+				"219": { // Trout Soup
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "1"
+							}
+						}
+					]
+				},
+				"220": { // Chocolate Cake
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1",
+								"MagneticRadius": "32",
+								"MaxStamina": "50"
+							}
+						}
+					]
+				},
+				"221": { // Pink Cake
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "2",
+								"MagneticRadius": "32",
+								"MaxStamina": "100"
+							}
+						}
+					]
+				},
+				"222": { // Rhubarb Pie
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "2",
+								"ForagingLevel": "2"
+							}
+						}
+					]
+				},
+				"223": { // Cookies
+					"Buffs": [
+						{
+							"Duration": "300",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1"
+							}
+						}
+					]
+				},
+				"225": { // Fried Eel
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"LuckLevel": "1"
+							}
+						}
+					]
+				},
+				"226": { // Spicy Eel
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"LuckLevel": "2",
+								"Speed": "1"
+							}
+						}
+					]
+				},
+				"230": { // Red Plate
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Defense": "3",
+								"MaxStamina": "50"
+							}
+						}
+					]
+				},
+				"231": { // Eggplant Parmesan
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MiningLevel": "1",
+								"Defense": "3"
+							}
+						}
+					]
+				},
+				"232": { // Rice Pudding
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MaxStamina": "100",
+								"MagneticRadius": "64"
+							}
+						}
+					]
+				},
+				"233": { // Ice Cream
+					"Buffs": [
+						{
+							"Duration": "300",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1"
+							}
+						}
+					]
+				},
+				"234": { // Blueberry Tart
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "2",
+								"MagneticRadius": "32"
+							}
+						}
+					]
+				},
+				"235": { // Autumn's Bounty
+					"Buffs": [
+						{
+							"Duration": "700",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "3",
+								"Defense": "2"
+							}
+						}
+					]
+				},
+				"236": { // Pumpkin Soup
+					"Buffs": [
+						{
+							"Duration": "700",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"LuckLevel": "2",
+								"Defense": "2"
+							}
+						}
+					]
+				},
+				"200": { // Vegetable Medley
+					"Buffs": [
+						{
+							"Duration": "500",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Attack": "1",
+								"Defense": "2"
+							}
+						}
+					]
+				},
+				"237": { // Super Meal
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MaxStamina": "100",
+								"Speed": "2"
+							}
+						}
+					]
+				},
+				"238": { // Cranberry Sauce
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MiningLevel": "2"
+							}
+						}
+					]
+				},
+				"239": { // Stuffing
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Defense": "3"
+							}
+						}
+					]
+				},
+				"240": { // Farmer's Lunch
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "2"
+							}
+						}
+					]
+				},
+				"241": { // Survival Burger
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "3"
+							}
+						}
+					]
+				},
+				"242": { // Dish O' The Sea
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "3"
+							}
+						}
+					]
+				},
+				"243": { // Miner's Treat
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MiningLevel": "3",
+								"MagneticRadius": "32"
+							}
+						}
+					]
+				},
+				"244": { // Roots Platter
+					"Buffs": [
+						{
+							"Duration": "500",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Attack": "3"
+							}
+						}
+					]
+				},
+				"253": { // Triple Shot Espresso
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1"
+							}
+						}
+					]
+				},
+				"265": { // Seafoam Pudding
+					"Buffs": [
+						{
+							"Duration": "500",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "4",
+								"MaxStamina": "30"
+							}
+						}
+					]
+				},
+				"456": { // Algae Soup
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "1"
+							}
+						}
+					]
+				},
+				"457": { // Pale Broth
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MagneticRadius": "64"
+							}
+						}
+					]
+				},
+				"604": { // Plum Pudding
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "2",
+								"MaxStamina": "30"
+							}
+						}
+					]
+				},
+				"605": { // Artichoke Dip
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Attack": "1",
+								"MiningLevel": "3"
+							}
+						}
+					]
+				},
+				"606": { // Stir Fry
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "2",
+								"MiningLevel": "2"
+							}
+						}
+					]
+				},
+				"607": { // Roasted Hazelnuts
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "2",
+								"Defense": "1"
+							}
+						}
+					]
+				},
+				"608": { // Pumpkin Pie
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"LuckLevel": "2",
+								"MagneticRadius": "32"
+							}
+						}
+					]
+				},
+				"609": { // Radish Salad
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "2",
+								"MagneticRadius": "32"
+							}
+						}
+					]
+				},
+				"610": { // Fruit Salad
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "3",
+								"LuckLevel": "1"
+							}
+						}
+					]
+				},
+				"611": { // Blackberry Cobbler
+					"Buffs": [
+						{
+							"Duration": "500",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "2",
+								"Speed": "2"
+							}
+						}
+					]
+				},
+				"612": { // Cranberry Candy
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MaxStamina": "50",
+								"Speed": "1",
+								"LuckLevel": "1"
+							}
+						}
+					]
+				},
+				"618": { // Bruschetta
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MiningLevel": "2",
+								"Defense": "2"
+							}
+						}
+					]
+				},
+				"648": { // Coleslaw
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "3",
+								"ForagingLevel": "2"
+							}
+						}
+					]
+				},
+				"649": { // Fiddlehead Risotto
+					"Buffs": [
+						{
+							"Duration": "1000",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Defense": "3"
+							}
+						}
+					]
+				},
+				"651": { // Poppyseed Muffin
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "2",
+								"Speed": "1",
+								"MaxStamina": "30"
+							}
+						}
+					]
+				},
+				"727": { // Chowder
+					"Buffs": [
+						{
+							"Duration": "1200",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2"
+							}
+						}
+					]
+				},
+				"728": { // Fish Stew
+					"Buffs": [
+						{
+							"Duration": "1200",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "4"
+							}
+						}
+					]
+				},
+				"729": { // Escargot
+					"Buffs": [
+						{
+							"Duration": "1200",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2"
+							}
+						}
+					]
+				},
+				"730": { // Lobster Bisque
+					"Buffs": [
+						{
+							"Duration": "1200",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "3",
+								"MaxStamina": "50"
+							}
+						}
+					]
+				},
+				"731": { // Maple Bar
+					"Buffs": [
+						{
+							"Duration": "1200",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FarmingLevel": "1",
+								"FishingLevel": "1",
+								"MiningLevel": "1"
+							}
+						}
+					]
+				},
+				"732": { // Crab Cakes
+					"Buffs": [
+						{
+							"Duration": "1200",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1",
+								"Defense": "1"
+							}
+						}
+					]
+				},
+				"733": { // Shrimp Cocktail
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"FishingLevel": "2",
+								"LuckLevel": "2"
+							}
+						}
+					]
+				},
+				"903": { // Ginger Ale
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"LuckLevel": "1"
+							}
+						}
+					]
+				},
+				"904": { // Banana Pudding
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"MiningLevel": "1",
+								"LuckLevel": "1",
+								"Defense": "1"
+							}
+						}
+					]
+				},
+				"905": { // Mango Sticky Rice
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Defense": "3",
+								"MagneticRadius": "64"
+							}
+						}
+					]
+				},
+				"906": { // Poi
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Attack": "1",
+								"ForagingLevel": "3"
+							}
+						}
+					]
+				},
+				"907": { // Tropical Curry
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "4"
+							}
+						}
+					]
+				},
+				"921": { // Squid Ink Ravioli
+					"Buffs": [
+						{
+							"Id": "Food",
+							"Duration": "400",
+							"CustomAttributes": {
+								"Attack": "1",
+								"MiningLevel": "1"
+							}
+						},
+						{
+							"Id": "SquidInkRavioli",
+							"BuffId": "28",
+							"Duration": "400",
+							"IsDebuff": false
+						}
+					]
+				},
+				"MossSoup": { // Moss Soup
+					"Buffs": [
+						{
+							"Duration": "800",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"ForagingLevel": "2"
+							}
+						}
+					]
+				},
+				"395": { // Coffee
+					"Buffs": [
+						{
+							"Duration": "200",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1"
+							}
+						}
+					]
+				},
+				"873": { // Pina Colada
+					"Buffs": [
+						{
+							"Duration": "600",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Attack": "2",
+								"Defense": "2",
+								"Speed": "1"
+							}
+						}
+					]
+				}
+			},
+			"When": {
+				"Food": true
+			}
+		},
+		{ // Button's Extra Books Patch
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"395": { // Coffee
+					"Buffs": [
+						{
+							"Duration": "{{Query: 200 * {{Spiderbuttons.ButtonsExtraBooksCore/ConfigCoffeeMultiplier}}}}",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1"
+							}
+						}
+					]
+				},
+				"253": { // Triple Shot Espresso
+					"Buffs": [
+						{
+							"Duration": "{{Query: 600 * {{Spiderbuttons.ButtonsExtraBooksCore/ConfigCoffeeMultiplier}}}}",
+							"IsDebuff": false,
+							"CustomAttributes": {
+								"Speed": "1"
+							}
+						}
+					]
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/HasCoffeePower": true,
+				"HasMod|contains=Spiderbuttons.ButtonsExtraBooksCore": true
+			}
+		}
+	]
+}

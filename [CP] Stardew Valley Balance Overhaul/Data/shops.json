@@ -1,0 +1,2683 @@
+{
+	"Changes": [
+		{ // The Stardrop Saloon
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Saloon",
+				"Items"
+			],
+			"Fields": {
+				"(O)346": { // Beer
+					"Price": "400",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)196": { // Salad
+					"Price": "300",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)216": { // Bread
+					"Price": "180",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)224": { // Spaghetti
+					"Price": "320",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)206": { // Pizza
+					"Price": "600",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)395": { // Coffee
+					"Price": "300",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Pierre's General Store
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)368": { // Basic Fertilizer
+					"Price": "50",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)369": { // Quality Fertilizer
+					"Price": "100",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)370": { // Basic Retaining Soil
+					"Price": "30",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)371": { // Quality Retaining Soil
+					"Price": "70",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)465": { // Speed-Gro
+					"Price": "50",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)466": { // Deluxe Speed-Gro
+					"Price": "100",
+					"IgnoreShopPriceModifiers": true
+				},
+				"RandomWallpaper": { // Wallpaper
+					"Price": "50",
+					"IgnoreShopPriceModifiers": true
+				},
+				"RandomFlooring": { // Flooring
+					"Price": "50",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Willy's Shop
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"FishShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)219": { // Trout Soup
+					"Price": "400",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)685": { // Bait
+					"Price": "10",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)DeluxeBait": { // Deluxe Bait
+					"Price": "100",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)710": { // Crab Pot
+					"Price": "1500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)SonarBobber": { // Sonar Bobber
+					"Price": "250",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)686": { // Spinner
+					"Price": "250",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)694": { // Trap Bobber
+					"Price": "250",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)693": { // Treasure Hunter
+					"Price": "300",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)695": { // Cork Bobber
+					"Price": "350",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)691": { // Barbed Hook
+					"Price": "350",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)687": { // Dressed Spinner
+					"Price": "500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)703": { // Magnet
+					"Price": "150",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Clint's Shop
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Blacksmith",
+				"Items"
+			],
+			"Fields": {
+				"CopperOre_YearOne": { // Copper Ore Year 1
+					"Price": "50",
+					"IgnoreShopPriceModifiers": true
+				},
+				"IronOre_YearOne": { // Iron Ore Year 1
+					"Price": "100",
+					"IgnoreShopPriceModifiers": true
+				},
+				"Coal_YearOne": { // Coal Year 1
+					"Price": "100",
+					"IgnoreShopPriceModifiers": true
+				},
+				"GoldOre_YearOne": { // Gold Ore Year 1
+					"Price": "200",
+					"IgnoreShopPriceModifiers": true
+				},
+				"CopperOre_AfterYearOne": { // Copper Ore Year 2
+					"Price": "100",
+					"IgnoreShopPriceModifiers": true
+				},
+				"IronOre_AfterYearOne": { // Iron Ore Year 2
+					"Price": "200",
+					"IgnoreShopPriceModifiers": true
+				},
+				"Coal_AfterYearOne": { // Coal Year 2
+					"Price": "200",
+					"IgnoreShopPriceModifiers": true
+				},
+				"GoldOre_AfterYearOne": { // Gold Ore Year 2
+					"Price": "400",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Harvey's Clinic
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Hospital",
+				"Items"
+			],
+			"Fields": {
+				"(O)349": { // Energy Tonic
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)351": { // Muscle Remedy
+					"Price": "500",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Adventure's Guild
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"AdventureShop",
+				"Items"
+			],
+			"Fields": {
+				"(W)44": { // Cutlass
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)27": { // Wood Mallet
+					"Price": "1250",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)10": { // Claymore
+					"Price": "1500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)7": { // Templar's Blade
+					"Price": "2000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)5": { // Bone Sword
+					"Price": "3000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)50": { // Steel Falchion
+					"Price": "4500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)9": { // Lava Katana
+					"Price": "20000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)4": { // Galaxy Sword
+					"Price": "40000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)23": { // Galaxy Dagger
+					"Price": "40000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(W)29": { // Galaxy Hammer
+					"Price": "40000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(B)508": { // Combat Boots
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(B)512": { // Firewalker Boots
+					"Price": "1500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(B)511": { // Dark Boots
+					"Price": "2000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(B)514": { // Space Boots
+					"Price": "3000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)529": { // Amethyst Ring
+					"Price": "500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)530": { // Topaz Ring
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)531": { // Aquamarine Ring
+					"Price": "1500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)532": { // Jade Ring
+					"Price": "1500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)533": { // Emerald Ring
+					"Price": "3000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)534": { // Ruby Ring
+					"Price": "3000",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Dwarf's Shop
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Dwarf",
+				"Items"
+			],
+			"Fields": {
+				"(O)773": { // Life Elixir
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)772": { // Oil of Garlic
+					"Price": "1500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)243": { // Miner's Treat
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)286": { // Cherry Bomb
+					"Price": "300",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)287": { // Bomb
+					"Price": "700",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)288": { // Mega Bomb
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Volcano Shop
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"VolcanoShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)244|(O)237": { // Roots Platter & Super Meal
+					"Price": "1200",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)286": { // Cherry Bomb
+					"Price": "300",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)287": { // Bomb
+					"Price": "700",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)288": { // Mega Bomb
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Resort Bar
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"ResortBar",
+				"Items"
+			],
+			"Fields": {
+				"(O)873": { // Pina Colada
+					"Price": "1200",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)346": { // Beer
+					"Price": "500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)303": { // Pale Ale
+					"Price": "500",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)459": { // Mead
+					"Price": "800",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)612": { // Cranberry Candy
+					"Price": "600",
+					"IgnoreShopPriceModifiers": true
+				},
+				"MangoWine": { // Mango Wine
+					"Price": "2000",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Traveling Merchant
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Traveler",
+				"Items"
+			],
+			"Fields": {
+				"(O)347": { // Rare Seed
+					"Price": "500",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true
+			}
+		},
+		{ // JojaMart
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"RandomWallpaper": { // Wallpaper
+					"Price": "50"
+				},
+				"RandomFlooring": { // Flooring
+					"Price": "50"
+				},
+				"(BC)272": { // Auto-Petter
+					"Price": "75000"
+				}
+			},
+			"When": {
+				"Prices & Inventories": true
+			}
+		},
+		{ // Island Trader
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"IslandTrade",
+				"Items"
+			],
+			"Fields": {
+				"(O)69": { // Banana Sapling
+					"TradeItemAmount": "3",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)835": { // Mango Sapling
+					"TradeItemAmount": "40",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true
+			}
+		},
+		{ // Island Trader (Limited Seed Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"IslandTrade",
+				"Items"
+			],
+			"Fields": {
+				"(O)69": { // Banana Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)835": { // Mango Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		},
+		{ // The Stardrop Saloon (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Saloon",
+				"Items"
+			],
+			"Fields": {
+				"(O)346": { // Beer
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)196": { // Salad
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)216": { // Bread
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)224": { // Spaghetti
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)206": { // Pizza
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)395": { // Coffee
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Willy's Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"FishShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)219": { // Trout Soup
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)685": { // Bait
+					"AvailableStock": "{{Bait Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)DeluxeBait": { // Deluxe Bait
+					"AvailableStock": "{{Bait Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)710": { // Crab Pot
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Clint's Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Blacksmith",
+				"Items"
+			],
+			"Fields": {
+				"CopperOre_YearOne": { // Copper Ore Year 1
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"IronOre_YearOne": { // Iron Ore Year 1
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"Coal_YearOne": { // Coal Year 1
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"GoldOre_YearOne": { // Gold Ore Year 1
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"CopperOre_AfterYearOne": { // Copper Ore Year 2
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"IronOre_AfterYearOne": { // Iron Ore Year 2
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"Coal_AfterYearOne": { // Coal Year 2
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"GoldOre_AfterYearOne": { // Gold Ore Year 2
+					"AvailableStock": "{{Ore & Coal Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Carpenter's Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Carpenter",
+				"Items"
+			],
+			"Fields": {
+				"(O)388": { // Wood
+					"AvailableStock": "{{Wood & Stone Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)390": { // Stone
+					"AvailableStock": "{{Wood & Stone Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Harvey's Clinic (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Hospital",
+				"Items"
+			],
+			"Fields": {
+				"(O)349": { // Energy Tonic
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)351": { // Muscle Remedy
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Dwarf's Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Dwarf",
+				"Items"
+			],
+			"Fields": {
+				"(O)773": { // Life Elixir
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)772": { // Oil of Garlic
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)243": { // Miner's Treat
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)286": { // Cherry Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)287": { // Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)288": { // Mega Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Volcano Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"VolcanoShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)244|(O)237": { // Roots Platter & Super Meal
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)286": { // Cherry Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)287": { // Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)288": { // Mega Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Resort Bar (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"ResortBar",
+				"Items"
+			],
+			"Fields": {
+				"(O)873": { // Pina Colada
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)346": { // Beer
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)303": { // Pale Ale
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)459": { // Mead
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)612": { // Cranberry Candy
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"MangoWine": { // Mango Wine
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Desert Trader (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"DesertTrade",
+				"Items"
+			],
+			"Fields": {
+				"(O)253": { // Triple Shot Espresso
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)226": { // Spicy Eel
+					"AvailableStock": "3",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)288": { // Mega Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)287": { // Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(BC)71": { // Staircase
+					"AvailableStock": "10",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Desert Festival - Egg Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"DesertFestival_EggShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)288": { // Mega Bomb
+					"AvailableStock": "{{Bomb Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"StrawberrySeeds_Monday": { // Starberry Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"StrawberrySeeds_Wednesday": { // Starberry Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.5
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)SkillBook_2": { // Woodcutter's Weekly
+					"AvailableStock": "1",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Desert Festival - Pam's Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"DesertFestival_Pam",
+				"Items"
+			],
+			"Fields": {
+				"(O)346": { // Beer
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)459": { // Mead
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)303": { // Pale Ale
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Krobus Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"ShadowShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)770": { // Mixed Seeds
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Casino (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Casino",
+				"Items"
+			],
+			"Fields": {
+				"(O)688": { // Warp Totem: Farm
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Ice Cream Stand (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"IceCreamStand",
+				"Items"
+			],
+			"Fields": {
+				"(O)233": { // Ice Cream
+					"AvailableStock": "5",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Oasis (Limited Seed Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Sandy",
+				"Items"
+			],
+			"Fields": {
+				"(O)802": { // Cactus Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)478": { // Rhubarb Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)486": { // Starfruit Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)494": { // Beet Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		},
+		{ // Egg Festival - Pierre's Shop (Limited Seed Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Festival_EggFestival_Pierre",
+				"Items"
+			],
+			"Fields": {
+				"(O)745": { // Strawberry Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		},
+		{ // Pierre's Shop (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)245": { // Sugar
+					"AvailableStock": "{{Cooking Ingredients Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)246": { // Wheat Flour
+					"AvailableStock": "{{Cooking Ingredients Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)423": { // Rice
+					"AvailableStock": "{{Cooking Ingredients Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)247": { // Oil
+					"AvailableStock": "{{Cooking Ingredients Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)419": { // Vinegar
+					"AvailableStock": "{{Cooking Ingredients Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"GrassStarter": { // Grass Starter
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)368": { // Basic Fertilizer
+					"AvailableStock": "{{Fertilizer Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)369": { // Quality Fertilizer
+					"AvailableStock": "{{Fertilizer Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)370": { // Basic Retaining Soil
+					"AvailableStock": "{{Fertilizer Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)371": { // Quality Retaining Soil
+					"AvailableStock": "{{Fertilizer Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)465": { // Speed-Gro
+					"AvailableStock": "{{Fertilizer Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)466": { // Deluxe Speed-Gro
+					"AvailableStock": "{{Fertilizer Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // Pierre's Shop (Limited Seed Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)472": { // Parsnip Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)473": { // Bean Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)474": { // Cauliflower Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)475": { // Potato Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)427": { // Tulip Bulb
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)477": { // Kale Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)429": { // Jazz Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)476": { // Garlic Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)273": { // Rice Shoot
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)479": { // Melon Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)480": { // Tomato Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)481": { // Blueberry Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)482": { // Pepper Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"WheatSeeds_Summer": { // Wheat Seeds Summer
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"WheatSeeds_Fall": { // Wheat Seeds Fall
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)484": { // Radish Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)453": { // Poppy Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)455": { // Spangle Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)302": { // Hops Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"CornSeeds_Summer": { // Corn Seeds Summer
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"CornSeeds_Fall": { // Corn Seeds Fall
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"SunflowerSeeds_Summer": { // Sunflower Seeds Summer
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"SunflowerSeeds_Fall": { // Sunflower Seeds Fall
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)485": { // Red Cabbage Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)488": { // Eggplant Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)490": { // Pumpkin Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)491": { // Bok Choy Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)492": { // Yam Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)493": { // Cranberry Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)425": { // Fairy Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)299": { // Amaranth Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)301": { // Grape Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)489": { // Artichoke Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Condition": "IS_COMMUNITY_CENTER_COMPLETE",
+							"Modification": "Multiply",
+							"RandomAmount": [
+								2.0
+							]
+						},
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)629": { // Apricot Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)628": { // Cherry Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)630": { // Orange Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)631": { // Peach Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)633": { // Apple Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				},
+				"(O)632": { // Pomegranate Sapling
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		},
+		{ // JojaMart (Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"(O)167": { // Jola Cola
+					"AvailableStock": "10",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)297": { // Grass Starter
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)245": { // Sugar
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)246": { // Wheat Flour
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)423": { // Rice
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Item Stock": true
+			}
+		},
+		{ // JojaMart (SVE - Limited Item Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"(O)247": { // Oil
+					"AvailableStock": "{{Cooking Ingredients Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)419": { // Vinegar
+					"AvailableStock": "{{Cooking Ingredients Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{ // JojaMart (Limited Seed Stock)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"(O)472": { // Parsnip Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)473": { // Bean Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)474": { // Cauliflower Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)475": { // Potato Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)427": { // Tulip Bulb
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)477": { // Kale Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)429": { // Jazz Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)479": { // Melon Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)480": { // Tomato Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)482": { // Pepper Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"WheatSeeds_Summer": { // Wheat Seats Summer
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"WheatSeeds_Fall": { // Wheat Seats Fall
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)484": { // Radish Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)453": { // Poppy Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)455": { // Spangle Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)302": { // Hops Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)487": { // Corn Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"SunflowerSeeds_Summer": { // Sunflower Seeds Summer
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"SunflowerSeeds_Fall": { // Sunflower Seeds Fall
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)488": { // Eggplant Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)490": { // Pumpkin Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)491": { // Bok Choy Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)492": { // Yam Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)493": { // Cranberry Seeds
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)425": { // Fairy Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)299": { // Amaranth Seeds
+					"AvailableStock": "{{Normal Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"(O)301": { // Grape Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{ // Pierre's Store - Fruit Trees Saplings
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)629": { // Apricot Sapling
+					"Price": "1600",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)628": { // Cherry Sapling
+					"Price": "1800",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)630": { // Orange Sapling
+					"Price": "1600",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)631": { // Peach Sapling
+					"Price": "1800",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)633": { // Apple Sapling
+					"Price": "1700",
+					"IgnoreShopPriceModifiers": true
+				},
+				"(O)632": { // Pomegranate Sapling
+					"Price": "1800",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true
+			}
+		},
+		{ // Merchants Buy More Items
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Fields": {
+				"Blacksmith": {
+					"SalableItemTags": [
+						"category_weapon",
+						"category_boots",
+						"category_ring",
+						"category_trinket",
+						"category_minerals",
+						"category_gem",
+						"category_metal_resources"
+					]
+				},
+				"FishShop": {
+					"SalableItemTags": [
+						"item_bamboopole",
+						"item_trainingrod",
+						"item_fiberglassrod",
+						"item_iridiumrod",
+						"category_bait",
+						"category_fish",
+						"category_sell_at_fish_shop",
+						"category_tackle"
+					]
+				},
+				"AnimalShop": {
+					"SalableItemTags": [
+						"item_shears",
+						"item_milkpail",
+						"category_sell_at_pierres_and_marnies",
+						"category_milk",
+						"category_egg",
+						"category_meat"
+					]
+				}
+			},
+			"When": {
+				"Merchants Buy More Items": true
+			}
+		},
+		{ // Merchants Buy More Items - Make Rods Sellable
+			"Action": "EditData",
+			"Target": "Data/Tools",
+			"Fields": {
+				"BambooPole": {
+					"SalePrice": "250"
+				},
+				"TrainingRod": {
+					"SalePrice": "15"
+				},
+				"FiberglassRod": {
+					"SalePrice": "900"
+				},
+				"IridiumRod": {
+					"SalePrice": "3750"
+				},
+				"MilkPail": {
+					"SalePrice": "500"
+				},
+				"Shears": {
+					"SalePrice": "500"
+				}
+			},
+			"When": {
+				"Merchants Buy More Items": true
+			}
+		},
+		{ // Marnie Sells Auto-Petter
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"AnimalShop",
+				"Items"
+			],
+			"Entries": {
+				"theoddon.AutoPetter": {
+					"Id": "theoddon.AutoPetter",
+					"ItemId": "(BC)272",
+					"Price": "100000",
+					"Condition": "IS_COMMUNITY_CENTER_COMPLETE"
+				}
+			},
+			"When": {
+				"Marnie Sells Auto-Petter": true
+			}
+		},
+		{ // Harvey's Clinic Sells Life Elixirs (Limited)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Hospital",
+				"Items"
+			],
+			"Entries": {
+				"(O)773": {
+					"Id": "(O)773",
+					"ItemId": "(O)773",
+					"Price": "1000",
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Harvey's Clinic Sells Life Elixirs": true,
+				"Limited Item Stock": true
+			}
+		},
+		{ // Harvey's Clinic Sells Life Elixirs (Unlimited)
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Hospital",
+				"Items"
+			],
+			"Entries": {
+				"(O)773": {
+					"Id": "(O)773",
+					"ItemId": "(O)773",
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				}
+			},
+			"When": {
+				"Harvey's Clinic Sells Life Elixirs": true,
+				"Limited Item Stock": false
+			}
+		}
+	]
+}

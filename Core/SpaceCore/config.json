@@ -1,0 +1,8 @@
+{
+  "CustomSkillPage": false,
+  "WalletLegacyStyle": false,
+  "WalletOnRightOfSkillPage": false,
+  "SupportAllProfessionsMod": false,
+  "SocialInteractions_AlwaysTrigger": false,
+  "SocialInteractions_TriggerModifier": "LeftControl"
+}

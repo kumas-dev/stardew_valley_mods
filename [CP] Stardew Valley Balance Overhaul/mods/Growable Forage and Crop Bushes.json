@@ -1,0 +1,562 @@
+{
+	"Changes": [
+		// Food
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"Cornucopia_SpringOnionSeeds": {
+					"Price": "5"
+				}, //Spring Onion Seeds
+				"399": {
+					"Price": "10"
+				}, //Spring Onion
+				"Cornucopia_CrocusSeeds": {
+					"Price": "5"
+				}, //Crocus Seeds
+				"Cornucopia_SweetPeaSeeds": {
+					"Price": "5"
+				}, //Sweet Pea Seeds
+				"Cornucopia_HazelnutSapling": {
+					"Price": "1000"
+				}, //Hazelnut Sapling
+				"Cornucopia_CoconutSapling": {
+					"Price": "1250"
+				} //Coconut Sapling
+			},
+			"When": {
+				"Sell Prices & Adjustments": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"Cornucopia_CommonMushroomSeeds": {
+					"Price": "300"
+				},
+				"Cornucopia_ChanterelleSeeds": {
+					"Price": "500"
+				},
+				"Cornucopia_MorelSeeds": {
+					"Price": "500"
+				},
+				"Cornucopia_HollySeeds": {
+					"Price": "250"
+				},
+				"Cornucopia_SalmonberrySeeds": {
+					"Price": "300"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=furyx639.CustomBush": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"399": {
+					"Price": "150"
+				}, // Pale Ale
+				"302": {
+					"Price": "750"
+				} // Hops Planter
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Hops Bush": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)163",
+				"OutputRules",
+				"PaleAle",
+				"OutputItem",
+				"#0"
+			], // Cask - Pale Ale
+			"Entries": {
+				"CustomData": {
+					"AgingMultiplier": "4"
+				}
+			},
+			"When": {
+				"Sell Prices & Adjustments": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Hops Bush": true,
+				"Cask Aging": "true"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "furyx639.CustomBush/Data",
+			"TargetField": [
+				"(O)481",
+				"ItemsProduced",
+				"#0"
+			],
+			"When": {
+				"HasMod": "furyx639.CustomBush"
+			},
+			"Entries": {
+				"MinStack": "3",
+				"MaxStack": "5"
+			}
+		},
+		// Shop Edits
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"(O)302": {
+					"Condition": null
+				}, // Hops Planter
+				"(O)301": {
+					"Condition": null
+				} // Grape Starter
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"FlashShifter.StardewValleyExpandedCP_Hops_Starter": {
+					"Condition": null
+				}, // Hops Planter
+				"FlashShifter.StardewValleyExpandedCP_Grape_Starter": {
+					"Condition": null
+				} // Grape Planter
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"Cornucopia_HazelnutSapling": {
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				} // Hazelnut Sapling
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"Cornucopia_HollySeeds": {
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"Cornucopia_BlackberrySeeds": {
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"Cornucopia_SalmonberrySeeds": {
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)302": { // Hops Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Hops Bush": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)301": { // Grape Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Grapes Bush": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Fields": {
+				"(O)481": { // Blueberry Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Blueberry Bush": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Items"
+			],
+			"Entries": {
+				"Cornucopia_SpringOnionSeeds": null,
+				"Cornucopia_SweetPeaSeeds": null,
+				"Cornucopia_CrocusSeeds": null
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"(O)302": { // Hops Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Hops Bush": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"(O)301": { // Grape Starter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Grapes Bush": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"FlashShifter.StardewValleyExpandedCP_Hops_Starter": { // Hops Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"FlashShifter.StardewValleyExpandedCP_Warehouse_Hops_Starter": { // Hops Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"FlashShifter.StardewValleyExpandedCP_JojaDay_Hops_Starter": { // Hops Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Hops Bush": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+				{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Fields": {
+				"FlashShifter.StardewValleyExpandedCP_Grape_Starter": { // Grape Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"FlashShifter.StardewValleyExpandedCP_Warehouse_Grape_Starter": { // Grape Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"FlashShifter.StardewValleyExpandedCP_JojaDay_Grape_Starter": { // Grape Planter
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true,
+				"Spiderbuttons.CMCT/Config: Cornucopia.GrowableForage, Grapes Bush": true,
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Joja",
+				"Items"
+			],
+			"Entries": {
+				"Cornucopia_SpringOnionSeeds": null,
+				"Cornucopia_SweetPeaSeeds": null,
+				"Cornucopia_CrocusSeeds": null
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Dwarf",
+				"Items"
+			],
+			"Fields": {
+				"Cornucopia_CommonMushroomSeeds": {
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"Cornucopia_ChanterelleSeeds": {
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				},
+				"Cornucopia_MorelSeeds": {
+					"AvailableStock": "{{Regrowing Seeds Stock}}",
+					"AvailableStockLimit": "Player",
+					"AvailableStockModifiers": [
+						{
+							"Modification": "Multiply",
+							"RandomAmount": [
+								1.30, 1.27, 1.24, 1.21, 1.18, 1.15, 1.12, 1.09, 1.06, 1.03, 1.0, 0.97, 0.94, 0.91, 0.88, 0.85, 0.82, 0.79, 0.76, 0.73, 0.70
+							]
+						}
+					]
+				}
+			},
+			"When": {
+				"Limited Seed Stock": true,
+				"HasMod|contains=furyx639.CustomBush": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"Sandy",
+				"Items"
+			],
+			"Fields": {
+				"Cornucopia_CoconutSapling": {
+					"AvailableStock": "2",
+					"AvailableStockLimit": "Player"
+				} // Coconut Sapling
+			},
+			"When": {
+				"Limited Seed Stock": true
+			}
+		}
+	]
+}

@@ -1,0 +1,75 @@
+{
+    "Changes": [
+        { // Animals
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Fields": {
+                "White Chicken": {
+                    "PurchasePrice": "750",
+                    "SellPrice": "1500"
+                },
+                "Brown Chicken": {
+                    "SellPrice": "1500"
+                },
+                "Blue Chicken": {
+                    "SellPrice": "1500"
+                },
+                "Void Chicken": {
+                    "SellPrice": "1500"
+                },
+                "Golden Chicken": {
+                    "SellPrice": "8000"
+                },
+                "Duck": {
+                    "PurchasePrice": "1000",
+                    "SellPrice": "2000"
+                },
+                "Rabbit": {
+                    "PurchasePrice": "2500",
+                    "SellPrice": "5000"
+                },
+                "Dinosaur": {
+                    "SellPrice": "7000"
+                },
+                "White Cow": {
+                    "PurchasePrice": "1000",
+                    "SellPrice": "2000"
+                },
+                "Brown Cow": {
+                    "SellPrice": "2000"
+                },
+                "Goat": {
+                    "PurchasePrice": "1500",
+                    "SellPrice": "3000"
+                },
+                "Sheep": {
+                    "PurchasePrice": "2500",
+                    "SellPrice": "5000"
+                },
+                "Pig": {
+                    "PurchasePrice": "3500",
+                    "SellPrice": "7000"
+                },
+                "Ostrich": {
+                    "SellPrice": "7000"
+                }
+            },
+            "When": {
+                "Sell Prices & Adjustments": true
+            }
+        },
+        { // Consistent Sheep Production
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Fields": {
+                "Sheep": {
+                    "ShopDescription": "{{i18n:Sheep}}",
+                    "FriendshipForFasterProduce": "-1"
+                }
+            },
+            "When": {
+                "Sell Prices & Adjustments": true
+            }
+        }
+    ]
+}
