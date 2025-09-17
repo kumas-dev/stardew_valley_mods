@@ -12,87 +12,6 @@
             "Contents": [
               {
                 "Category": "Weapon",
-                "Name": "Diamond Wand"
-              }
-            ]
-          }
-        ],
-        "SummerItemIndex": [
-          {
-            "Category": "Chest",
-            "Contents": [
-              {
-                "Category": "Weapon",
-                "Name": "Diamond Wand"
-              }
-            ]
-          }
-        ],
-        "FallItemIndex": [
-          {
-            "Category": "Chest",
-            "Contents": [
-              {
-                "Category": "Weapon",
-                "Name": "Diamond Wand"
-              }
-            ]
-          }
-        ],
-        "WinterItemIndex": [
-          {
-            "Category": "Chest",
-            "Contents": [
-              {
-                "Category": "Weapon",
-                "Name": "Diamond Wand"
-              }
-            ]
-          }
-        ],
-        "UniqueAreaID": "Diamond Wand Chest",
-        "MapName": "Custom_HighlandsOutpost",
-        "MinimumSpawnsPerDay": 1,
-        "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": [],
-        "IncludeCoordinates": [
-          "12,6;12,6"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "None",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 600,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "GameStateQueries": [],
-          "CPConditions": {
-            "HasSeenEvent": "65360187",
-            "HasSeenEvent|contains=67363138": "false"
-          },
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 1
-        },
-        "DaysUntilSpawnsExpire": 9001
-      },
-      {
-        "SpringItemIndex": [
-          {
-            "Category": "Chest",
-            "Contents": [
-              {
-                "Category": "Weapon",
                 "Name": "Monster Splitter"
               }
             ]
@@ -11968,6 +11887,8 @@
               "Damage": 60,
               "DodgeChance": 25,
               "ExtraLoot": true,
+              "StunImmunity": true,
+              "InstantKillImmunity": true,
               "Loot": [
                 "Mega Purple Mushroom",
                 422,
@@ -16885,6 +16806,8 @@
               "Damage": 100,
               "DodgeChance": 25,
               "ExtraLoot": false,
+              "StunImmunity": true,
+              "InstantKillImmunity": true,
               "Loot": [
                 "Galdoran Gem",
                 "Magic Lamp",
@@ -17532,14 +17455,16 @@
       {
         "MonsterTypes": [
           {
-            "MonsterName": "Wilderness Golem",
+            "MonsterName": "iridium golem",
             "Settings": {
               "HP": 10000,
               "Damage": 80,
               "SpawnWeight": 1,
               "DodgeChance": 25,
-              "SightRange": "8",
+              "SightRange": 8,
               "ExtraLoot": false,
+              "StunImmunity": true,
+              "InstantKillImmunity": true,
               "Loot": [
                 "Gold Slime Egg",
                 413,

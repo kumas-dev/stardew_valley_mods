@@ -2388,14 +2388,22 @@
                "ProducedItems": [
                   {
                      "RequiredPopulation": 0,
-                     "Chance": 0.60,
+                     "Chance": 1,
                      "ItemID": 812,
                      "MinQuantity": 1,
-                     "MaxQuantity": 1
-                  }
+                     "MaxQuantity": 7
+                  },
                ],
                "PopulationGates": null,
-			   "MaxPopulation": 1
+			      "MaxPopulation": 1,
+               "WaterColor": [
+                  {
+                     "Id": "Wolf Snapper Pond",
+                     "Color": "134 88 68",
+                     "MinPopulation": 1,
+                     "MinUnlockedPopulationGate": 0,
+                  }
+               ],
             },
          },
       },
@@ -2412,14 +2420,22 @@
                "ProducedItems": [
                   {
                      "RequiredPopulation": 0,
-                     "Chance": 0.40,
+                     "Chance": 1,
                      "ItemID": 812,
                      "MinQuantity": 1,
-                     "MaxQuantity": 1
+                     "MaxQuantity": 3
                   }
                ],
                "PopulationGates": null,
-			   "MaxPopulation": 1
+			      "MaxPopulation": 1,
+               "WaterColor": [
+                  {
+                     "Id": "Turretfish Pond",
+                     "Color": "188 188 188",
+                     "MinPopulation": 1,
+                     "MinUnlockedPopulationGate": 0,
+                  }
+               ]
             },
          },
       },
