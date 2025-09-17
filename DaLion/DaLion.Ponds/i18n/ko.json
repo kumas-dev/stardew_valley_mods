@@ -1,14 +1,10 @@
-﻿{
-  "$schema": "https://smapi.io/schemas/i18n.json",
+{
+    "$schema": "https://smapi.io/schemas/i18n.json",
 
-  "algae": "해초",
+    "algae": "해초",
 
-  /************
-  *** GMCM ***
-  ************/
-
-  "gmcm.days_until_algae_spawn.title": "해초 생성까지의 일수",
-  "gmcm.days_until_algae_spawn.desc": "빈 연못에 해초가 생성되기까지의 일수입니다.",
-  "gmcm.roe_production_chance_multiplier.title": "어란 생산 확률 배수",
-  "gmcm.roe_production_chance_multiplier.desc": "매일 물고기가 어란을 생산할 기본 확률에 적용되는 배수입니다."
+    "gmcm.days_until_algae_spawn.title": "해초 생성까지 일수",
+    "gmcm.days_until_algae_spawn.desc": "빈 연못에서 해초가 생성되기 시작할 때까지의 일수입니다.",
+    "gmcm.roe_production_chance_multiplier.title": "알 생산 확률 배수",
+    "gmcm.roe_production_chance_multiplier.desc": "물고기가 매일 알을 생산할 기본 확률에 대한 배수입니다."
 }

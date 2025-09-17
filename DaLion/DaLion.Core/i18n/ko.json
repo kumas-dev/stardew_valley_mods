@@ -1,0 +1,20 @@
+{
+    "$schema": "https://smapi.io/schemas/i18n.json",
+
+    "ui.buffs.burnt.damage": "-50% 피해량",
+    "ui.buffs.burnt.dot": "3초마다 -{{amount}} 체력 감소",
+    "ui.buffs.frozen.stuck": "움직일 수 없음",
+    "ui.buffs.frozen.vulnerable": "다음 공격에 취약",
+    "ui.buffs.jinxed.defense": "-50% 방어력",
+    "ui.buffs.jinxed.special": "특수 기술 사용 불가",
+    "ui.buffs.confused.name": "방향감각 상실",
+    "ui.buffs.confused.desc": "이동 방향이 반대로 됩니다.",
+    "ui.buffs.warrior.attack": "+{{value}} 공격력",
+
+    /************
+     *** GMCM ***
+     ************/
+
+    "gmcm.crop_wither_chance.title": "작물 시들기 확률",
+    "gmcm.crop_wither_chance.desc": "물을 주지 않았을 때 매일 작물이 시들 수 있는 확률입니다."
+}
