@@ -1,5 +1,5 @@
 {
-  "EnableComboHits": true,
+  "EnableComboHits": false,
   "ComboHitsPerWeaponType": {
     "DefenseSword": 4,
     "Club": 2
