@@ -12,6 +12,7 @@ config.json
 !Stardew Valley Expanded/**/config.json
 !DaLion/**/config.json
 !SkipFishingMinigame/**/config.json
+!Fishbot/**/config.json
 
 # cache
 Core/FarmTypeManager/data
