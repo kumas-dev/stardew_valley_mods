@@ -10,7 +10,7 @@
   "MaxSGPE": 1.93,
   "AutoEatFirstFood": false,
   "PauseAfterTime": 130,
-  "AlwaysEnabled": false,
+  "AlwaysEnabled": true,
   "EnableBubbleRadar": false,
   "FA_PredictFrames": 5,
   "FA_CenterBiasBarPercentage": 0.7,
