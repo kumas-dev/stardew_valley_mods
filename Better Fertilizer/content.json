@@ -1,0 +1,112 @@
+{
+   "Format": "1.18.0",
+   "Changes": [
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.de-DE",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.es-ES",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.fr-FR",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.hu-HU",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.it-IT",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.ja-JP",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.ko-KR",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.pt-BR",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.ru-RU",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.tr-TR",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},		{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/Cursors.nz-CN",
+			"FromFile": "assets/cursors.png",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		}
+			
+   ]
+}
